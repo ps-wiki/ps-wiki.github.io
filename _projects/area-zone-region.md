@@ -39,7 +39,7 @@ _Jinning’s Note: There is no clear definition, but my best guess is that it re
         {% include figure.liquid
         path="/assets/img/pswiki/PJM_zone_map.png"
         zoomable=true %}
-        PJM Transmission Zones Map (from <d-cite key="pjm"></d-cite>)
+        PJM Transmission Zones Map (from <d-cite key="pjm2023transmission"></d-cite>)
     </div>
 </div>
 
