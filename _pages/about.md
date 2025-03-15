@@ -5,6 +5,8 @@ permalink: /
 subtitle: An open wiki for power systems engineers, researchers, and students.
 ---
 
+Links: [Repository](https://github.com/ps-wiki/ps-wiki.github.io)
+
 ## Disclaimer
 
 What you should keep in mind when consulting this wiki:
