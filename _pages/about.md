@@ -1,6 +1,6 @@
 ---
 layout: about
-title: Power Systems Wiki
+title: about
 permalink: /
 subtitle: A collection of terminologies in power systems
 ---
