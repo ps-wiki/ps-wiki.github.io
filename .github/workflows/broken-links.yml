@@ -40,7 +40,8 @@ on:
       - "README.md"
       - "CUSTOMIZE.md"
       - "FAQ.md"
-      - "ISNTALL.md"
+      - "INSTALL.md"
+      - "pswiki/_wiki/vendors.md"
 
 jobs:
   link-checker:
