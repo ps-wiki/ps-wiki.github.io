@@ -172,7 +172,7 @@ ninja.data = [{
               window.location.href = "/wiki/electrical-resonance/";
             },},{id: "wiki-equal-area-criterion",
           title: 'Equal Area Criterion',
-          description: "EAC and an extended EAC. A method to determine the stability.",
+          description: "EAC and EEAC. A method to determine the stability.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/equal-area-criterion/";
             },},{id: "wiki-expected-unserved-energy",
@@ -182,7 +182,7 @@ ninja.data = [{
               window.location.href = "/wiki/expected-unserved-energy/";
             },},{id: "wiki-factors",
           title: 'Factors',
-          description: "System sensitivity matrices, such as GSF, PTDF, LODF, BODF, OTDF, etc.",
+          description: "Some sensitivity matrices, such as GSF, PTDF, LODF, BODF, OTDF, etc.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/factors/";
             },},{id: "wiki-fast-frequency-response",
@@ -392,7 +392,7 @@ ninja.data = [{
               window.location.href = "/wiki/rotor-angle-stability/";
             },},{id: "wiki-secondary-control",
           title: 'Secondary Control',
-          description: "Balancing services deployed in the “minutes” time frame.",
+          description: "Associated with Load-Frequency Control and Automatic Generation Control. Balancing services deployed in the “minutes” time frame.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/secondary-control/";
             },},{id: "wiki-security",
@@ -492,7 +492,7 @@ ninja.data = [{
               window.location.href = "/wiki/virtual-synchronous-machine/";
             },},{id: "wiki-voltage-dip",
           title: 'Voltage Dip',
-          description: "Short-duration decreases in RMS voltage.",
+          description: "Voltage Sag. Short-duration decreases in RMS voltage.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/voltage-dip/";
             },},{id: "wiki-voltage-limits",
