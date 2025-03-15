@@ -12,8 +12,8 @@ Links: [Repository](https://github.com/ps-wiki/ps-wiki.github.io)
 This wiki is designed to be a helpful resource for power systems engineers, researchers, and students.
 Here are some tips on how to make the most of it:
 
-1. **Navigating the Wiki**: Use the table of contents or search function to quickly find the terminology or topic you're interested in.
-1. **Understanding Entries**: Each term is defined based on excerpts from reliable sources such as papers, standards, and reports. Please note that these definitions are linguistic in nature.
+1. **Navigating the Wiki**: Use the table of wiki or search function to quickly find the terminology or topic you're interested in.
+1. **Understanding Entries**: Each term is defined based on excerpts from sources such as papers, standards, and reports. Please note that these definitions are linguistic in nature.
 1. **Contributing**: If you notice any errors or omissions, or if you have suggestions for improvement, feel free to open an issue or submit a pull request on the repository.
 1. **Staying Updated**: Terminologies in the power systems field can evolve. Check back periodically for updates and new entries.
 
