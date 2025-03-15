@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Secondary Control
-description: Balancing services deployed in the “minutes” time frame.
+description: "Associated with <u>Load-Frequency Control</u> and <u>Automatic Generation Control</u>. Balancing services deployed in the “minutes” time frame."
 tags: frequency, generator
 category: wiki
 bibliography: papers.bib

@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Primary Control
-description: A.k.a. Frequency Response.
+description: A.k.a. <u>Frequency Response</u>.
 tags: frequency, generator
 category: wiki
 bibliography: papers.bib

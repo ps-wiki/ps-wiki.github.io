@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Factors
-description: System sensitivity matrices, such as GSF, PTDF, LODF, BODF, OTDF, etc.
+description: Some sensitivity matrices, such as GSF, PTDF, LODF, BODF, OTDF, etc.
 tags: sensitivity
 category: wiki
 bibliography: papers.bib
@@ -48,7 +48,7 @@ Similarly, sensitivities can be calculated for the insertion of a presently open
 In this case, the LODF determines the percentage of the post-insertion line flow that will come from the other transmission line after the insertion.
 The "LODF" is better named a Line Closure Distribution Factor (LCDF) in this case.
 
-_Jinning's Note: LODF is a.k.a. Branch Outage Distribution Factor (BODF) in some references._
+_Jinning's Note: LODF is a.k.a. <u>Branch Outage Distribution Factor</u> (BODF) in some references._
 
 **Outage Transfer Distribution Factor** (OTDF) by NERC <d-cite key="nerc2024glossary"></d-cite>
 

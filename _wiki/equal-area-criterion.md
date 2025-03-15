@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Equal Area Criterion
-description: EAC and an extended EAC. A method to determine the stability.
+description: EAC and EEAC. A method to determine the stability.
 tags: transient-stability
 category: wiki
 bibliography: papers.bib
@@ -27,7 +27,7 @@ _Jinning's Note: another early reference to the Equal Area Criterion can be foun
 
 Compared to EAC, EEAC uses an approximate one-machine-infinite-bus (OMIB) equivalent of the multi-machine system.
 
-_Jinning's Note: OMIB is a.k.a. single machine infinite bus (SIMB). The term "Extended Equal Area Criterion" comes from the authors' response to a discussion on the paper:_
+_Jinning's Note: OMIB is a.k.a. <u>single machine infinite bus</u> (SIMB). The term "Extended Equal Area Criterion" comes from the authors' response to a discussion on the paper:_
 
 Y. Xue, Th. Van Cutsem, and M. Ribbens-Pavella: We are thankful to the discussers for their valuable and constructive comments.
 In order to answer their questions in detail, it is useful to first clarify some aspects of our method to which we henceforth refer to as the **“Extended Equal Area Criterion”** (EEAC).

@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Ramp
-description: A.k.a. Ramp Rate. The rate at which the interchange schedule or generator output is attained.
+description: A.k.a. <u>Ramp Rate</u>. The rate at which the interchange schedule or generator output is attained.
 tags: ramp, generator
 category: wiki
 bibliography: papers.bib

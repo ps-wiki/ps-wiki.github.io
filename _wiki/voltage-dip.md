@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Voltage Dip
-description: Short-duration decreases in RMS voltage.
+description: Voltage Sag. Short-duration decreases in RMS voltage.
 tags: power quality, voltage dips, voltage sags
 category: wiki
 bibliography: papers.bib
