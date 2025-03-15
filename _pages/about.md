@@ -20,21 +20,21 @@ Here are some tips on how to make the most of it:
 ## Common Acronyms
 
 |---------|-------------------------------------------------|
-| BES     | Bulk Electric System |
-| BPS     | Bulk Power System |
-| HVDC    | High Voltage Direct Current |
-| FACTS   | Flexible Alternating Current Transmission System |
-| IBR     | Inverter-Based Resources |
-| DER     | Distributed Energy Resources |
-| GSF     | Generator Shift Factor |
-| AGC     | Automatic Generation Control |
-| ACE     | Area Control Error |
-| FERC    | Federal Energy Regulatory Commission |
-| NERC    | North American Electric Reliability Corporation |
-| EPRI    | Electric Power Research Institute |
-| IEC     | International Electrotechnical Commission |
+| BES | Bulk Electric System |
+| BPS | Bulk Power System |
+| HVDC | High Voltage Direct Current |
+| FACTS | Flexible Alternating Current Transmission System |
+| IBR | Inverter-Based Resources |
+| DER | Distributed Energy Resources |
+| GSF | Generator Shift Factor |
+| AGC | Automatic Generation Control |
+| ACE | Area Control Error |
+| FERC | Federal Energy Regulatory Commission |
+| NERC | North American Electric Reliability Corporation |
+| EPRI | Electric Power Research Institute |
+| IEC | International Electrotechnical Commission |
 | ENTSO-E | European Network of Transmission System Operators for Electricity |
-| CIGRE   | International Council on Large Electric Systems |
+| CIGRE | International Council on Large Electric Systems |
 
 <br>
 
