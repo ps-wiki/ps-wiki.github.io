@@ -19,6 +19,11 @@ on:
       - "!.github/workflows/lighthouse-badger.yml"
       - "!.github/workflows/prettier.yml"
       - "!lighthouse_results/**"
+      - "README.md"
+      - "CUSTOMIZE.md"
+      - "FAQ.md"
+      - "INSTALL.md"
+      - "pswiki/_wiki/vendors.md"
   pull_request:
     branches:
       - master
