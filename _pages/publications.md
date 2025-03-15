@@ -2,7 +2,7 @@
 layout: page
 permalink: /references/
 title: references
-description: Most of the source papers can be found on my ResearchGate profile.
+description:
 nav: true
 nav_order: 2
 ---
