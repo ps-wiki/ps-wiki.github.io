@@ -5,7 +5,6 @@ permalink: /wiki/
 description:
 nav: true
 nav_order: 2
-display_categories: [wiki]
 horizontal: false
 ---
 
