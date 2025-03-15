@@ -52,6 +52,7 @@ jobs:
           args: --user-agent 'curl/7.54' 
             --exclude-path README.md
             --exclude-path CUSTOMIZE.md
+            --exclude-path CONTRIBUTING.md
             --exclude-path FAQ.md
             --exclude-path INSTALL.md
             --exclude-path pswiki/_wiki/vendors.md
