@@ -3,7 +3,6 @@ layout: distill
 title: Operating Reserve – Spinning
 description: Generation synchronized to the system and fully available to serve load within the Disturbance Recovery Period.
 tags: reserve, operation
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

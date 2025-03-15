@@ -3,7 +3,6 @@ layout: distill
 title: Frequency Response Measure
 description: The median of all Frequency Response observations reported annually.
 tags: frequency, balancing-authority
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

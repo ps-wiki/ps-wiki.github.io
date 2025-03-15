@@ -3,7 +3,6 @@ layout: distill
 title: Fault
 description: An event such as a short circuit, a broken wire, or an intermittent connection.
 tags: event
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

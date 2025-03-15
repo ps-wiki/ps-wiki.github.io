@@ -3,7 +3,6 @@ layout: distill
 title: Adequacy
 description: The ability to supply the demand and energy requirements of the end-use customers.
 tags: adequacy, reliability
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

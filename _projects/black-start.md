@@ -3,7 +3,6 @@ layout: distill
 title: black-start
 description: Establishing the voltage from around zero
 tags: operation
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

@@ -3,7 +3,6 @@ layout: distill
 title: Primary Control
 description: A.k.a. Frequency Response.
 tags: frequency, generator
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

@@ -3,7 +3,6 @@ layout: distill
 title: Frequency Response
 description: The ability of a system to react to a change in system frequency.
 tags: frequency, response, system
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

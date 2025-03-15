@@ -3,7 +3,6 @@ layout: distill
 title: Frequency Deviation
 description: A change in Interconnection frequency.
 tags: frequency, interconnection
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

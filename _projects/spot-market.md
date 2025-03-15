@@ -3,7 +3,6 @@ layout: distill
 title: Spot Market
 description: For short-term contractual commitments.
 tags: market, trading, FERC
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

@@ -3,7 +3,6 @@ layout: distill
 title: Resilience
 description: Concepts and its metrics.
 tags: resilience, index, IEEE, FERC
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

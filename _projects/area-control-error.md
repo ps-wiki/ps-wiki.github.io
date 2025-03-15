@@ -3,7 +3,6 @@ layout: distill
 title: Area Control Error
 description: ACE. The instantaneous difference between net actual and scheduled interchange.
 tags: frequency, control, balancing, interchange
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

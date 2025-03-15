@@ -3,7 +3,6 @@ layout: distill
 title: Expected Unserved Energy
 description: EUE. A measure of the capability to continuously serve loads.
 tags: adequacy
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

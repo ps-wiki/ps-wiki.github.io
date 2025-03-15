@@ -3,7 +3,6 @@ layout: distill
 title: Interconnection
 description: A geographic area where BPS components are synchronized.
 tags: entity, reliability, geography, NYISO, ISO
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

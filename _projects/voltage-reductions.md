@@ -3,7 +3,6 @@ layout: distill
 title: Voltage Reductions
 description: A.k.a brownouts
 tags: reliability
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

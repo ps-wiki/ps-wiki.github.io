@@ -3,7 +3,6 @@ layout: distill
 title: Factors
 description: System sensitivity matrices, such as GSF, PTDF, LODF, BODF, OTDF, etc.
 tags: sensitivity
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

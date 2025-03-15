@@ -3,7 +3,6 @@ layout: distill
 title: Markets
 description: Some electricity markets in North America
 tags: market, reliability, reserve, operation, PJM, NYISO, ISO
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

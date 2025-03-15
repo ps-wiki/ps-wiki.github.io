@@ -3,7 +3,6 @@ layout: distill
 title: Operating Reserve – Supplemental
 description: Generation or load available to serve load within the Disturbance Recovery Period.
 tags: reserve, operation
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

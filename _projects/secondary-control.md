@@ -3,7 +3,6 @@ layout: distill
 title: Secondary Control
 description: Balancing services deployed in the “minutes” time frame.
 tags: frequency, generator
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

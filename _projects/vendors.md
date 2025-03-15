@@ -3,7 +3,6 @@ layout: distill
 title: Vendors
 description: Power system vendors
 tags: software, vendor
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

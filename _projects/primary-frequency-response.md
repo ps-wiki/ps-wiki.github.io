@@ -3,7 +3,6 @@ layout: distill
 title: Primary Frequency Response
 description: PFR. Immediate proportional response to system Frequency Deviations.
 tags: frequency
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

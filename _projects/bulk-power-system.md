@@ -3,7 +3,6 @@ layout: distill
 title: Bulk Power System
 description: BPS. Facilities and control systems for an transmission network.
 tags: entity, transmission, IEEE
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

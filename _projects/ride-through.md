@@ -3,7 +3,6 @@ layout: distill
 title: Ride-through
 description: Ability to withstand voltage or frequency disturbances and continue operating.
 tags: stability, operation
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

@@ -3,7 +3,6 @@ layout: distill
 title: IBR
 description: Inverter-based Resources
 tags: generation
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

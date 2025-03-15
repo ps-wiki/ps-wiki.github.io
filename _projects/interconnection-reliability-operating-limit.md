@@ -3,7 +3,6 @@ layout: distill
 title: Interconnection Reliability Operating Limit
 description: A System Operating Limit that, if violated, could lead to instability or cascading outages.
 tags: reliability, operating-limit, interconnection
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

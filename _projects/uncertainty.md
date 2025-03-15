@@ -3,7 +3,6 @@ layout: distill
 title: Uncertainty
 description: Two types of uncertainty.
 tags: uncertainty, power systems
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

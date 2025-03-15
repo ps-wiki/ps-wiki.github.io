@@ -3,7 +3,6 @@ layout: distill
 title: Flowgate
 description: Portion of the transmission system used to analyze power flow impact.
 tags: transmission, power-flow
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

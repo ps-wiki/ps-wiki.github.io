@@ -3,7 +3,6 @@ layout: distill
 title: Contingency
 description: The unexpected failure or outage of a system component.
 tags: event
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

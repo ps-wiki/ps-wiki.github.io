@@ -3,7 +3,6 @@ layout: distill
 title: Cascading
 description: The uncontrolled successive loss of System Elements triggered by an incident
 tags: event, IEEE
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

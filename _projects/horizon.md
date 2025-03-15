@@ -3,7 +3,6 @@ layout: distill
 title: Horizon
 description: Time span
 tags: horizon, transmission, planning
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

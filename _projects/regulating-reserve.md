@@ -3,7 +3,6 @@ layout: distill
 title: Regulating Reserve
 description: Reserve for AGC to provide normal regulating margin.
 tags: reserve, regulation, AGC
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

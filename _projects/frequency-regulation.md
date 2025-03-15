@@ -3,7 +3,6 @@ layout: distill
 title: Frequency Regulation
 description: The ability of a Balancing Authority to help maintain Scheduled Frequency.
 tags: frequency
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

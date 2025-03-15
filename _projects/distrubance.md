@@ -3,7 +3,6 @@ layout: distill
 title: Disturbance
 description: Any perturbation or sudden loss of generation or interruption of load
 tags: event
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

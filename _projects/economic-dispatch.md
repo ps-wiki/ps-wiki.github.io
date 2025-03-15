@@ -3,7 +3,6 @@ layout: distill
 title: Economic Dispatch
 description: ED. Allocation of generating units for economical production.
 tags: dispatch, economics, operation, PJM, ISO
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

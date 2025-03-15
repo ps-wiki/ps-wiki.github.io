@@ -3,7 +3,6 @@ layout: distill
 title: Equal Area Criterion
 description: EAC and an extended EAC. A method to determine the stability.
 tags: transient-stability
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

@@ -3,7 +3,6 @@ layout: distill
 title: Localtional Marginal Price
 description: LMP. Marginal price for energy at the location delivered or received.
 tags: dispatch, economics, operation, PJM, ISO
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

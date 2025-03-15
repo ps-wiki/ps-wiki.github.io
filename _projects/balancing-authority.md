@@ -3,7 +3,6 @@ layout: distill
 title: Balancing Authoritiy
 description: The responsible entity within a Balancing Authority Area.
 tags: entity, frequency, balancing-authority
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

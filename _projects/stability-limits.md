@@ -3,7 +3,6 @@ layout: distill
 title: Stability Limits
 description: Limits based on voltage phase angle difference.
 tags: transmission-operation, PJM, ISO
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

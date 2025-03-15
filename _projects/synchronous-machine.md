@@ -3,7 +3,6 @@ layout: distill
 title: Synchronous Machine
 description: SM. An AC electrical machine operated with a constant electromagnetic field.
 tags: synchronous-machine, IEEE
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

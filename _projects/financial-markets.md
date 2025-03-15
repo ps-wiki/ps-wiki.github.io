@@ -3,7 +3,6 @@ layout: distill
 title: Financial Markets
 description: Trading financially settled products.
 tags: market, financial, trading, FERC
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

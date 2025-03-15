@@ -3,7 +3,6 @@ layout: distill
 title: Interruptible Demand
 description: Customer demand that can be interrupted by control or request of the system operator.
 tags: demand, reliability
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

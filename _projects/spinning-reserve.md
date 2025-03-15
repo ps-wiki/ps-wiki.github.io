@@ -3,7 +3,6 @@ layout: distill
 title: Spinning Reserve
 description: Synchronized generation and ready to serve additional demand.
 tags: reserve
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

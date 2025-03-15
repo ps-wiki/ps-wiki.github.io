@@ -3,7 +3,6 @@ layout: distill
 title: Oscillation
 description: A repetitive motion that can be either undamped, positively damped, or negatively damped.
 tags: event, oscillation
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

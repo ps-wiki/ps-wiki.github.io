@@ -3,7 +3,6 @@ layout: distill
 title: Futures Market
 description: For contracts for future delivery of a commodity or security.
 tags: market, trading, FERC
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

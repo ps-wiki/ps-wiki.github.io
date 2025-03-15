@@ -3,7 +3,6 @@ layout: distill
 title: Critical Inertia
 description: Minimum level of system inertia necessary to ensure deployment of frequency responsive reserves.
 tags: inertia, frequency, ERCOT, ISO
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

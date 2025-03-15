@@ -3,7 +3,6 @@ layout: distill
 title: Bulk Electric System
 description: BES. Transmission Elements and Power resources 100 kV or higher.
 tags: entity, transmission
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

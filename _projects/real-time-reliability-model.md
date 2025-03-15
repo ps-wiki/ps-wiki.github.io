@@ -3,7 +3,6 @@ layout: distill
 title: Real-Time Reliability Model
 description: A computer representation of the power system facilities.
 tags: reliability, transmission-operation, PJM, ISO
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

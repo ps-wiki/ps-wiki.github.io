@@ -3,7 +3,6 @@ layout: distill
 title: Transmission Expansion
 description: The addition or modification of facilities of the Transmission System.
 tags: transmission, transmission-expansion, NYISO, ISO
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

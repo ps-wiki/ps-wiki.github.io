@@ -3,7 +3,6 @@ layout: distill
 title: Flexibility
 description: The ability to respond to system changes and uncertainties.
 tags: flexibility, NYISO, ISO
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

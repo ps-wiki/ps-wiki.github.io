@@ -3,7 +3,6 @@ layout: distill
 title: Distribution Provider
 description: Provides and operates the “wires” between the transmission system and the end-use customer.
 tags: distribution, entity
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

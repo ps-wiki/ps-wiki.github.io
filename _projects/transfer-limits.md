@@ -3,7 +3,6 @@ layout: distill
 title: Transfer Limits
 description: Flow limitation across an interface to protect the system from large voltage drops or collapse.
 tags: transmission-operation, PJM, ISO
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

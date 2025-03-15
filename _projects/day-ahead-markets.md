@@ -3,7 +3,6 @@ layout: distill
 title: Day-ahead Markets
 description: Forward markets for electricity to be supplied the following day.
 tags: market, economics, FERC
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---

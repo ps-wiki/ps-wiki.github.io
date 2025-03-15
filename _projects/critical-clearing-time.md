@@ -3,7 +3,6 @@ layout: distill
 title: Critical Clearing Time
 description: CCT. The maximum permissible duration of the fault.
 tags: transient-stability
-importance: 2
 category: wiki
 bibliography: papers.bib
 ---
