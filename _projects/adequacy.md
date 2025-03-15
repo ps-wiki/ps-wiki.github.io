@@ -5,7 +5,6 @@ description: The ability to supply the demand and energy requirements of the end
 tags: adequacy, reliability
 importance: 2
 category: wiki
-giscus_comments: false
 bibliography: papers.bib
 ---
 

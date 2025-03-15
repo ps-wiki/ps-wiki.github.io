@@ -1,0 +1,18 @@
+---
+layout: distill
+title: Reliability
+description: The probability of satisfactory operation of a power system over the long run.
+tags: reliability, operation
+importance: 2
+category: wiki
+bibliography: papers.bib
+---
+
+**Reliability** <d-cite key="kundur2004stability"></d-cite>
+
+Reliability of a power system refers to the probability of its satisfactory operation over the long run.
+It denotes the ability to supply adequate electric service on a nearly continuous basis, with few interruptions over an extended time period.
+
+**Reliability** <d-cite key="nerc2013terminology"></d-cite>
+
+NERC defines the reliability of the interconnected Bulk-Power System in terms of two basic and functional aspects, [adequacy](/pswiki/adequacy), and [operating reliability](/pswiki/operating-reliability).
