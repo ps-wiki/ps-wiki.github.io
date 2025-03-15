@@ -149,6 +149,8 @@ collections:
     output: true
   projects:
     output: true
+  wiki:
+    output: true
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
