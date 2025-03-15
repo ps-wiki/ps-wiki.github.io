@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: A collection of terminologies in power systems
+subtitle: An open wiki for power systems engineers, researchers, and students.
 ---
 
 ## Disclaimer
