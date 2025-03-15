@@ -19,11 +19,6 @@ on:
       - "!.github/workflows/lighthouse-badger.yml"
       - "!.github/workflows/prettier.yml"
       - "!lighthouse_results/**"
-      - "README.md"
-      - "CUSTOMIZE.md"
-      - "FAQ.md"
-      - "INSTALL.md"
-      - "pswiki/_wiki/vendors.md"
   pull_request:
     branches:
       - master
@@ -42,11 +37,6 @@ on:
       - "!.github/workflows/lighthouse-badger.yml"
       - "!.github/workflows/prettier.yml"
       - "!lighthouse_results/**"
-      - "README.md"
-      - "CUSTOMIZE.md"
-      - "FAQ.md"
-      - "INSTALL.md"
-      - "pswiki/_wiki/vendors.md"
 
 jobs:
   link-checker:
@@ -59,4 +49,15 @@ jobs:
         with:
           fail: true
           # removed md files that include liquid tags
-          args: --user-agent 'curl/7.54' --exclude-path README.md --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/2018-12-22-distill.md --exclude-path _posts/2023-04-24-videos.md --exclude-path _books/the_godfather.md --verbose --no-progress './**/*.md' './**/*.html'
+          args: --user-agent 'curl/7.54' 
+            --exclude-path README.md
+            --exclude-path CUSTOMIZE.md
+            --exclude-path FAQ.md
+            --exclude-path INSTALL.md
+            --exclude-path pswiki/_wiki/vendors.md
+            --exclude-path _pages/404.md
+            --exclude-path _pages/blog.md
+            --exclude-path _posts/2018-12-22-distill.md
+            --exclude-path _posts/2023-04-24-videos.md
+            --exclude-path _books/the_godfather.md
+            --verbose --no-progress './**/*.md' './**/*.html'
