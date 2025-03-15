@@ -9,19 +9,26 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-references",
+  },{id: "nav-wiki",
+          title: "wiki",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/wiki/";
+          },
+        },{id: "nav-references",
           title: "references",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/references/";
           },
-        },{id: "nav-wiki",
-          title: "wiki",
+        },{id: "nav-change-log",
+          title: "change log",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/wiki/";
+            window.location.href = "/changelog/";
           },
         },{id: "books-the-godfather",
           title: 'The Godfather',
@@ -47,52 +54,52 @@ ninja.data = [{
           title: 'Area, Zone, Region',
           description: "Some geographical concepts in power systems",
           section: "Wiki",handler: () => {
-              window.location.href = "/projects/area-zone-region/";
+              window.location.href = "/wiki/area-zone-region/";
             },},{id: "wiki-automatic-generation-control",
           title: 'Automatic Generation Control',
           description: "AGC. Automatic regulation of the power output of generators",
           section: "Wiki",handler: () => {
-              window.location.href = "/projects/automatic-generation-control/";
+              window.location.href = "/wiki/automatic-generation-control/";
             },},{id: "wiki-balancing-authoritiy",
           title: 'Balancing Authoritiy',
           description: "The responsible entity within a Balancing Authority Area.",
           section: "Wiki",handler: () => {
-              window.location.href = "/projects/balancing-authority/";
+              window.location.href = "/wiki/balancing-authority/";
             },},{id: "wiki-bilateral-transaction",
           title: 'Bilateral Transaction',
           description: "A direct contract between a seller and buyer outside of a centralized market.",
           section: "Wiki",handler: () => {
-              window.location.href = "/projects/bilateral-transaction/";
+              window.location.href = "/wiki/bilateral-transaction/";
             },},{id: "wiki-black-start",
           title: 'black-start',
           description: "Establishing the voltage from around zero",
           section: "Wiki",handler: () => {
-              window.location.href = "/projects/black-start/";
+              window.location.href = "/wiki/black-start/";
             },},{id: "wiki-bulk-electric-system",
           title: 'Bulk Electric System',
           description: "BES. Transmission Elements and Power resources 100 kV or higher.",
           section: "Wiki",handler: () => {
-              window.location.href = "/projects/bulk-electric-system/";
+              window.location.href = "/wiki/bulk-electric-system/";
             },},{id: "wiki-bulk-power-system",
           title: 'Bulk Power System',
           description: "BPS. Facilities and control systems for an transmission network.",
           section: "Wiki",handler: () => {
-              window.location.href = "/projects/bulk-power-system/";
+              window.location.href = "/wiki/bulk-power-system/";
             },},{id: "wiki-capacity-markets",
           title: 'Capacity Markets',
           description: "A market for trading capacity credits.",
           section: "Wiki",handler: () => {
-              window.location.href = "/projects/capacity-markets/";
+              window.location.href = "/wiki/capacity-markets/";
             },},{id: "wiki-cascading",
           title: 'Cascading',
           description: "The uncontrolled successive loss of System Elements triggered by an incident",
           section: "Wiki",handler: () => {
-              window.location.href = "/projects/cascading/";
+              window.location.href = "/wiki/cascading/";
             },},{id: "wiki-co-located-load",
           title: 'Co-Located Load',
           description: "Load connected to the an existing or planned facility.",
           section: "Wiki",handler: () => {
-              window.location.href = "/projects/co-located-load/";
+              window.location.href = "/wiki/co-located-load/";
             },},{id: "wiki-common-information-model",
           title: 'Common Information Model',
           description: "CIM. A set of open standards for representing power system components",
