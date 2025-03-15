@@ -2,7 +2,7 @@
 layout: distill
 title: Bilateral Transaction
 description: A direct contract between a seller and buyer outside of a centralized market.
-permalink: /projects/bilateral-transaction/
+permalink: /wiki/bilateral-transaction/
 tags: market, transaction, FERC
 category: wiki
 bibliography: papers.bib
