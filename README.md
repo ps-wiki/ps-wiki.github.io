@@ -5,7 +5,7 @@ This wiki is an open reference designed to compile and share terminologies used 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ps-wiki/ps-wiki.github.io/blob/main/LICENSE)
 [![Deploy site](https://github.com/ps-wiki/ps-wiki.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/ps-wiki/ps-wiki.github.io/actions/workflows/deploy.yml)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![GitHub last commit (master)](https://img.shields.io/github/last-commit/ps-wiki/ps-wiki.github.io/master?label=last%20commit%20to%20master)](https://github.com/ps-wiki/ps-wiki.github.io/commits/master/)
+[![GitHub last commit (main)](https://img.shields.io/github/last-commit/ps-wiki/ps-wiki.github.io/main?label=last%20commit%20to%20master)](https://github.com/ps-wiki/ps-wiki.github.io/commits/main/)
 
 ## Why This Wiki Exists
 
