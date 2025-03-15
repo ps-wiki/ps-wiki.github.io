@@ -37,6 +37,10 @@ on:
       - "!.github/workflows/lighthouse-badger.yml"
       - "!.github/workflows/prettier.yml"
       - "!lighthouse_results/**"
+      - "README.md"
+      - "CUSTOMIZATION.md"
+      - "FAQ.md"
+      - "ISNTALL.md"
 
 jobs:
   link-checker:
