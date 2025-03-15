@@ -2,7 +2,7 @@
 layout: page
 title: wiki
 permalink: /wiki/
-description: A collection of terminologies in power systems.
+description:
 nav: true
 nav_order: 3
 display_categories: [wiki]
