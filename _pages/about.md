@@ -6,8 +6,7 @@ subtitle: An open wiki for power systems engineers, researchers, and students.
 ---
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ps-wiki/ps-wiki.github.io/blob/main/LICENSE)
-
-Links: [Repository](https://github.com/ps-wiki/ps-wiki.github.io)
+[![View ps-wiki.github.io on GitHub](https://img.shields.io/github/stars/ps-wiki/ps-wiki.github.io?color=232323&label=ps-wiki.github.io&logo=github&labelColor=232323)](https://github.com/ps-wiki/ps-wiki.github.io) [![Author ps-wiki](https://img.shields.io/badge/ps-wiki-b820f9?labelColor=b820f9&logo=githubsponsors&logoColor=fff)](https://github.com/ps-wiki)
 
 ## How to Use This Wiki
 
