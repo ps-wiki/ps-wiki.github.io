@@ -140,6 +140,11 @@ ninja.data = [{
           description: "Forward markets for electricity to be supplied the following day.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/day-ahead-markets/";
+            },},{id: "wiki-digital-twin",
+          title: 'Digital Twin',
+          description: "A virtual representation to reflect a physical object accurately.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/digital-twin/";
             },},{id: "wiki-der",
           title: 'DER',
           description: "Distributed Energy Resources",
@@ -510,6 +515,11 @@ ninja.data = [{
           description: "The ability of a power system to maintain steady voltages close to nominal value.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/voltage-stability/";
+            },},{id: "wiki-waveform-measurement-unit",
+          title: 'Waveform Measurement Unit',
+          description: "WMU, SMU. Sensor device to record synchro-waveforms.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/waveform-measurement-unit/";
             },},{id: "wiki-wholesale-markets",
           title: 'Wholesale Markets',
           description: "The purchase and sale from generators to resellers.",
