@@ -13,7 +13,7 @@ toc:
 
 ### 03-16
 
-- Add items: [<u>Digital Twin</u>](/wiki/digital-twin)
+- Add items: [<u>Digital Twin</u>](/wiki/digital-twin); [<u>Waveform Measurement Unit</u>](/wiki/waveform-measurement-unit)
 
 ### 03-15
 
