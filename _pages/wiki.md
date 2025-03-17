@@ -21,6 +21,12 @@ horizontal: false
 - [<u>Frequency Response</u>](/wiki/frequnecy-response) &nbsp; [<u>Primary Control</u>](/wiki/primary-control) &nbsp; [<u>Secondary Control</u>](/wiki/secondary-control) &nbsp; [<u>Tertiary Control</u>](/wiki/tertiary-control)
 - [<u>Frequency Deviation</u>](/wiki/frequency-deviation) &nbsp; [<u>Frequency Regulation</u>](/wiki/frequency-regulation)
 
+**Reserve**
+
+- [<u>Contingency Reserve</u>](/wiki/contingency-reserve) &nbsp; [<u>Regulating Reserve</u>](/wiki/regulating-reserve)
+- [<u>Spinning Reserve</u>](/wiki/spinning-reserve) &nbsp; [<u>Non-Spinning Reserve</u>](/wiki/non-spinning-reserve)
+- [<u>Operating Reserve</u>](/wiki/operting-reserve) [<u>Operating Reserve – Spinning</u>](/wiki/operating-reserve-spinning) &nbsp; [<u>Operating Reserve – Non-Spinning</u>](/wiki/operating-reserve-non-spinning)
+
 <br>
 
 <!-- pages/wiki.md -->

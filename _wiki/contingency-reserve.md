@@ -7,6 +7,8 @@ category: wiki
 bibliography: papers.bib
 ---
 
+Relevant items:  [Contingency Reserve](/wiki/contingency-reserve); [Regulating Reserve](/wiki/regulating-reserve)
+
 **Contingency Reserve** <d-cite key="nerc2024glossary"></d-cite>
 
 The provision of capacity deployed by the [Balancing Authority](/wiki/balancing-authority) to meet the Disturbance Control Standard (DCS) and other NERC and Regional Reliability Organization contingency requirements.
