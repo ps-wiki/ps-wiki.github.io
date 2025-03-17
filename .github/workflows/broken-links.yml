@@ -56,6 +56,7 @@ jobs:
             --exclude-path FAQ.md
             --exclude-path INSTALL.md
             --exclude-path _wiki/vendors.md
+            --exclude-path _wiki/area-zone-region.md
             --exclude-path _pages/404.md
             --exclude-path _pages/blog.md
             --exclude-path _posts/2018-12-22-distill.md
