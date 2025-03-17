@@ -14,6 +14,7 @@ toc:
 ### 03-16
 
 - Add items: [<u>Digital Twin</u>](/wiki/digital-twin); [<u>Waveform Measurement Unit</u>](/wiki/waveform-measurement-unit)
+- Add a definition of control area from HIFLD in [<u>Area, Zone, Region</u>](/wiki/area-zone-region)
 
 ### 03-15
 
