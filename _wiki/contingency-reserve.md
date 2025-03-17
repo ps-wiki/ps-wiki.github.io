@@ -7,7 +7,7 @@ category: wiki
 bibliography: papers.bib
 ---
 
-Relevant items:  [Contingency Reserve](/wiki/contingency-reserve); [Regulating Reserve](/wiki/regulating-reserve)
+Relevant items: [Contingency Reserve](/wiki/contingency-reserve); [Regulating Reserve](/wiki/regulating-reserve)
 
 **Contingency Reserve** <d-cite key="nerc2024glossary"></d-cite>
 

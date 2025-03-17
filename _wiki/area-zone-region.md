@@ -20,6 +20,7 @@ Its boundary coincides with one or more Balancing Authority Areas.
 **Control Area** <d-cite key="ferc2020glossary"></d-cite>
 
 An electric power system or combination of electric power systems to which a common automatic control scheme is applied in order to:
+
 - Match, at all times, the power output of the generators within the electric power system(s) and capacity and energy purchased from entities outside the electric power system(s), with the load in the electric power system(s).
 - Maintain, within the limits of Good Utility Practice, scheduled interchange with other Control Areas.
 - Maintain the frequency of the electric power system(s) within reasonable limits in accordance with Good Utility Practice.
