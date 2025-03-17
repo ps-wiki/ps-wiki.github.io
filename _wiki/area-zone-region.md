@@ -10,7 +10,7 @@ bibliography: papers.bib
 
 **Balancing Authority Area** <d-cite key="nerc2024glossary"></d-cite>
 
-The collection of generation, transmission, and loads within the metered boundaries of the Balancing Authority.
+The collection of generation, transmission, and loads within the metered boundaries of the [Balancing Authority](/wiki/balancing-authority).
 The Balancing Authority maintains load-resource balance within this area.
 
 **Reliability Coordinator Area** <d-cite key="nerc2024glossary"></d-cite>
@@ -21,19 +21,24 @@ Its boundary coincides with one or more Balancing Authority Areas.
 **Control Area** <d-cite key="ferc2020glossary"></d-cite>
 
 An electric power system or combination of electric power systems to which a common automatic control scheme is applied in order to:
-
 - Match, at all times, the power output of the generators within the electric power system(s) and capacity and energy purchased from entities outside the electric power system(s), with the load in the electric power system(s).
 - Maintain, within the limits of Good Utility Practice, scheduled interchange with other Control Areas.
 - Maintain the frequency of the electric power system(s) within reasonable limits in accordance with Good Utility Practice.
 - Provide sufficient generating capacity to maintain operating reserves in accordance with Good Utility Practice.
+
+Another definition from HIFLD:
+
+Control Areas, also known as Balancing Authority Areas, are controlled by Balancing Authorities, who are responsible for monitoring and balancing the generation, load, and transmission of electric power within their region, often comprised of the retail service territories of numerous electric power utilities.
+
+URL: <https://hifld-geoplatform.hub.arcgis.com/datasets/geoplatform::control-areas/about>
+
+Map of [Control Areas](https://hifld-geoplatform.hub.arcgis.com/maps/db7622e5ebdd40428fcafbd1615d621a)
 
 **Loss Zone** <d-cite key="matpower"></d-cite>
 
 In MATPOWER, there is a bus parameter named "ZONE", and it means loss zone.
 
 **Zone**
-
-_Jinning’s Note: There is no clear definition, but my best guess is that it refers to different areas within a Bulk-Power System._
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
