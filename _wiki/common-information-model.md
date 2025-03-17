@@ -2,7 +2,6 @@
 layout: distill
 title: Common Information Model
 description: CIM. A set of open standards for representing power system components
-permlink: /wiki/common-information-model/
 tags: data-format
 category: wiki
 bibliography: papers.bib

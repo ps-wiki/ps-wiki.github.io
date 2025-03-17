@@ -2,7 +2,6 @@
 layout: distill
 title: Contingency Reserve
 description: Capacity deployed by the Balancing Authority to meet the Disturbance Control Standard.
-permlink: /pswiki/contingency-reserve/
 tags: reserve, contingency, balancing-authority
 category: wiki
 bibliography: papers.bib
