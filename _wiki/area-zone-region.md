@@ -2,7 +2,6 @@
 layout: distill
 title: Area, Zone, Region
 description: Some geographical concepts in power systems
-permalink: /wiki/area-zone-region/
 tags: balancing-authority, area, zone, region
 category: wiki
 bibliography: papers.bib

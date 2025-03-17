@@ -2,7 +2,6 @@
 layout: distill
 title: Co-Located Load
 description: Load connected to the an existing or planned facility.
-permalink: /wiki/co-located-load/
 tags: load, transmission, ISO, PJM
 category: wiki
 bibliography: papers.bib

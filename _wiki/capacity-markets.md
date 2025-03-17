@@ -2,7 +2,6 @@
 layout: distill
 title: Capacity Markets
 description: A market for trading capacity credits.
-permalink: /wiki/capacity-markets/
 tags: market, capacity, economics, FERC
 category: wiki
 bibliography: papers.bib

@@ -2,7 +2,6 @@
 layout: distill
 title: Automatic Generation Control
 description: AGC. Automatic regulation of the power output of generators
-permalink: /wiki/automatic-generation-control/
 tags: frequency, generation, FERC
 category: wiki
 bibliography: papers.bib
