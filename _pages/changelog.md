@@ -11,6 +11,10 @@ toc:
 
 ## 2025
 
+### 03-16
+
+- Add items: [<u>Digital Twin</u>](/wiki/digital-twin)
+
 ### 03-15
 
 - Refactor change-log
