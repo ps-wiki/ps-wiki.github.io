@@ -125,6 +125,11 @@ ninja.data = [{
           description: "CPS2. A standard intended to limit unscheduled flows",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/control-performance-standard-2/";
+            },},{id: "wiki-converter-driven-stability",
+          title: 'Converter-Driven Stability',
+          description: "Converter-interfaced generation&#39;s impact on stability",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/converter-driven-stability/";
             },},{id: "wiki-critical-clearing-time",
           title: 'Critical Clearing Time',
           description: "CCT. The maximum permissible duration of the fault.",
