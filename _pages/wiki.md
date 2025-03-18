@@ -10,7 +10,7 @@ horizontal: false
 
 **Reliability, Security, and Stability**
 
-- [<u>Stability</u>](/wiki/stability) &nbsp; [<u>Resonance Stability</u>](/wiki/resonance-stability) &nbsp; [<u>Rotor Angle Stability</u>](/wiki/rotor-angle-stability) &nbsp; [<u>Voltage Stability</u>](/wiki/voltage-stability) &nbsp; [<u>Frequency Stability</u>](/wiki/frequency-stability)
+- [<u>Stability</u>](/wiki/stability) &nbsp; [<u>Resonance Stability</u>](/wiki/resonance-stability) &nbsp; [<u>Rotor Angle Stability</u>](/wiki/rotor-angle-stability) &nbsp; [<u>Voltage Stability</u>](/wiki/voltage-stability) &nbsp; [<u>Frequency Stability</u>](/wiki/frequency-stability) &nbsp; [<u>Converter-Driven Stability</u>](/wiki/converter-driven-stability)
 - [<u>Security</u>](/wiki/security) &nbsp; [<u>Security Constrained Economic Dispatch</u>](/wiki/economic-dispatch)
 - [<u>Reliability</u>](/wiki/reliability) &nbsp; [<u>Operating Reliability</u>](/wiki/operating-reliability) &nbsp; [<u>Adequacy</u>](/wiki/adequacy) &nbsp; [<u>Real-Time Reliability Model</u>](/wiki/real-time-reliability-model)
 
