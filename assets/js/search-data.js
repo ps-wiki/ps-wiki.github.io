@@ -30,12 +30,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/changelog/";
           },
-        },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "wiki-adequacy",
+        },{id: "wiki-adequacy",
           title: 'Adequacy',
           description: "The ability to supply the demand and energy requirements of the end-use customers.",
           section: "Wiki",handler: () => {
@@ -370,6 +365,11 @@ ninja.data = [{
           description: "The probability of satisfactory operation of a power system over the long run.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/reliability/";
+            },},{id: "wiki-remedial-action-scheme",
+          title: 'Remedial Action Scheme',
+          description: "RAS.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/remedial-action-scheme/";
             },},{id: "wiki-resilience",
           title: 'Resilience',
           description: "Concepts and its metrics.",
@@ -540,14 +540,14 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+          window.open("mailto:", "_blank");
         },
       },{
         id: 'social-inspire',
         title: 'Inspire HEP',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
+          window.open("https://inspirehep.net/authors/", "_blank");
         },
       },{
         id: 'social-rss',
@@ -561,14 +561,14 @@ ninja.data = [{
         title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
+          window.open("https://scholar.google.com/citations?user=", "_blank");
         },
       },{
         id: 'social-custom_social',
         title: 'Custom_social',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
+          window.open("", "_blank");
         },
       },{
       id: 'light-theme',
