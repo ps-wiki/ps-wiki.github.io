@@ -7,6 +7,8 @@ category: wiki
 bibliography: papers.bib
 ---
 
+Relevant items: [Stability](/wiki/stability); [Reliability](/wiki/reliability)
+
 **Security** <d-cite key="kundur2004stability"></d-cite>
 
 Security of a power system refers to the degree of risk in its ability to survive imminent disturbances (contingencies) without interruption of customer service.
