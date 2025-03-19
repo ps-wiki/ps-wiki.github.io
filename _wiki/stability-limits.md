@@ -1,15 +1,25 @@
 ---
 layout: distill
 title: Stability Limits
-description: Limits based on voltage phase angle difference.
+description: Stability related transmission limits
 tags: transmission-operation, PJM, ISO
 category: wiki
 bibliography: papers.bib
 ---
 
-**Stability Limits** by PJM <d-cite key="pjm2024m3"></d-cite> (p40, Revision 67)
+**Stability Limits** by PJM <d-cite key="pjm2024m3"></d-cite> (p60, Revision 67)
 
-Limits based on **voltage phase angle difference** to protect portions of the PJM RTO from separation or unstable operation.
+The PJM RTO established stability limits for preventing electrical separation of a generating unit or a portion of the PJM RTO. PJM recognizes three types of stability:
+- Steady State Stability - A gradual slow change to generation that is balanced by load.
+- Transient Stability - The ability of a generating unit or a group of generating units to maintain synchronism following a relatively severe and sudden system disturbance. The first few cycles are the most critical time period.
+- Dynamic Stability - The ability of a generating unit or a group of generating units to damp oscillations caused by relatively minor disturbances through the action of properly tuned control systems.
+
+**Stability Related Transmission Limits** by PJM <d-cite key="pjm2024m3"></d-cite> (p40, Revision 67)
+
+In addition to the thermal limits referenced in Section 2, PJM operates the PJM RTO considering voltage and stability related transmission limits as follows:
+- Voltage Limits – High, Low, and Load Dump actual voltage limits, High and Low emergency voltage limits for contingency simulation, and voltage drop limits for wide area transfer simulations to protect against wide area voltage collapse.
+- Transfer Limits – The MW flow limitation across an interface to protect the system from large voltage drops or collapse caused by any viable contingency.
+- Stability Limits – limit based on **voltage phase angle difference** to protect portions of the PJM RTO from separation or unstable operation.
 
 **Stability Limits** by PJM <d-cite key="pjm2024m11"></d-cite> (p82, Revision 133)
 
