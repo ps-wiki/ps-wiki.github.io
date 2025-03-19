@@ -16,6 +16,7 @@ toc:
 - Add items: [<u>Emergency</u>](/wiki/emergency); [<u>Transient Stability Assessment</u>](/wiki/transient-stability-assessment)
 - Revised items: [<u>Stability Limits</u>](/wiki/stability-limits); [<u>Real-Time Reliability Model</u>](/wiki/real-time-reliability-model)
 - Remove item of <u>Transfer Limits</u> as overlapping with <u>Stability Limits</u>
+- Update acronyms table
 
 ### 03-18
 
