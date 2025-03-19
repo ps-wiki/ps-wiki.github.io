@@ -14,7 +14,7 @@ toc:
 ### 03-19
 
 - Add items: [<u>Emergency</u>](/wiki/emergency); [<u>Transient Stability Assessment</u>](/wiki/transient-stability-assessment)
-- Major revision of [<u>Stability Limits</u>](/wiki/stability-limits)
+- Revised items: [<u>Stability Limits</u>](/wiki/stability-limits); [<u>Real-Time Reliability Model</u>](/wiki/real-time-reliability-model)
 - Remove item of <u>Transfer Limits</u> as overlapping with <u>Stability Limits</u>
 
 ### 03-18
