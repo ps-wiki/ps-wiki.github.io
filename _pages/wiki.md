@@ -28,6 +28,8 @@ horizontal: false
 - [<u>Spinning Reserve</u>](/wiki/spinning-reserve) &nbsp; [<u>Non-Spinning Reserve</u>](/wiki/non-spinning-reserve)
 - [<u>Operating Reserve</u>](/wiki/operting-reserve) [<u>Operating Reserve – Spinning</u>](/wiki/operating-reserve-spinning) &nbsp; [<u>Operating Reserve – Non-Spinning</u>](/wiki/operating-reserve-non-spinning)
 
+- [<u>Contingency</u>](/wiki/contingency) &nbsp; [<u>Emergency</u>](/wiki/emergency)
+
 <br>
 
 <!-- pages/wiki.md -->

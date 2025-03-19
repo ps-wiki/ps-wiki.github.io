@@ -7,9 +7,11 @@ category: wiki
 bibliography: papers.bib
 ---
 
+Relevant items: [Emergency](/wiki/emergency)
+
 **Contingency** <d-cite key="nerc2024glossary"></d-cite>
 
-The unexpected failure or outage of a system component, such as a generator, transmission line, circuit breaker, switch or other electrical element.
+The unexpected **failure** or **outage** of a system component, such as a generator, transmission line, circuit breaker, switch or other electrical element.
 
 **Most Severe Single Contingency** <d-cite key="nerc2024glossary"></d-cite>
 
