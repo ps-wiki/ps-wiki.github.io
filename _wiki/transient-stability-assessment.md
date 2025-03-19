@@ -24,7 +24,7 @@ Refer to Manual-37: Reliability Coordination for additional information.
 The typical controlling actions for transient voltage exceedance are switching of static reactive devices, such as capacitor and reactors, to maintain a strong pre-contingency voltage profile and reserving dynamic reactive output from SVCs, STATCOMs, and generators, for post-contingency voltage support.
 
 TSA computes stability limits by using real time network models.
-It **interfaces** with the EMS and uses the State Estimation solution.
+It **interfaces** with the [EMS](/wiki/real-time-reliability-model) and uses the State Estimation solution.
 Other input data includes the dynamic model for over 3000 generators and fault clearing times for specific equipment.
 For equipment without a specific fault clearing time, TSA will use zonal default clearing times.
 TSA also calculates and provides recommended stability control measures to prevent generator instability.
