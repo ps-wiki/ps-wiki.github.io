@@ -7,6 +7,10 @@ category: wiki
 bibliography: papers.bib
 ---
 
+**Distribution Factors** <d-cite key="pjm2024m3a"></d-cite> (p88, Revision 25)
+
+DFAX.
+
 **Participation Factors** <d-cite key="nerc2024glossary"></d-cite>
 
 A set of dispatch rules such that given a specific amount of load to serve, an **approximate generation** dispatch can be determined.
