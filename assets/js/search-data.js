@@ -175,6 +175,11 @@ ninja.data = [{
           description: "The behavior of power systems with conventional turbine-generators and variable speed induction generators.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/electrical-resonance/";
+            },},{id: "wiki-emergency",
+          title: 'Emergency',
+          description: "Abnormal system condition that requires automatic or immediate manual action.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/emergency/";
             },},{id: "wiki-equal-area-criterion",
           title: 'Equal Area Criterion',
           description: "EAC and EEAC. A method to determine the stability.",
@@ -352,7 +357,7 @@ ninja.data = [{
               window.location.href = "/wiki/ramp/";
             },},{id: "wiki-real-time-reliability-model",
           title: 'Real-Time Reliability Model',
-          description: "A computer representation of the power system facilities.",
+          description: "A.k.a. EMS model. A computer representation of the power system facilities.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/real-time-reliability-model/";
             },},{id: "wiki-regulating-reserve",
@@ -437,7 +442,7 @@ ninja.data = [{
               window.location.href = "/wiki/stability-limit/";
             },},{id: "wiki-stability-limits",
           title: 'Stability Limits',
-          description: "Limits based on voltage phase angle difference.",
+          description: "Stability related transmission limits",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/stability-limits/";
             },},{id: "wiki-stability",
@@ -475,11 +480,11 @@ ninja.data = [{
           description: "The SSR due to torsional interactions between series compensated lines and turbine-generator mechanical shafts.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/torsional-resonance/";
-            },},{id: "wiki-transfer-limits",
-          title: 'Transfer Limits',
-          description: "Flow limitation across an interface to protect the system from large voltage drops or collapse.",
+            },},{id: "wiki-transient-stability-assessment",
+          title: 'Transient Stability Assessment',
+          description: "Monitor and determine transient stability of the system",
           section: "Wiki",handler: () => {
-              window.location.href = "/wiki/transfer-limits/";
+              window.location.href = "/wiki/transient-stability-assessment/";
             },},{id: "wiki-transmission-expansion",
           title: 'Transmission Expansion',
           description: "The addition or modification of facilities of the Transmission System.",
