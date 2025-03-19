@@ -13,7 +13,7 @@ toc:
 
 ### 03-19
 
-- Add items: [<u>Emergency</u>](/wiki/emergency)
+- Add items: [<u>Emergency</u>](/wiki/emergency); [<u>Transient Stability Assessment</u>](/wiki/transient-stability-assessment)
 - Major revision of [<u>Stability Limits</u>](/wiki/stability-limits)
 - Remove item of <u>Transfer Limits</u> as overlapping with <u>Stability Limits</u>
 

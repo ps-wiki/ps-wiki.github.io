@@ -14,7 +14,7 @@ horizontal: false
 - [<u>Security</u>](/wiki/security) &nbsp; [<u>Security Constrained Economic Dispatch</u>](/wiki/economic-dispatch)
 - [<u>Reliability</u>](/wiki/reliability) &nbsp; [<u>Operating Reliability</u>](/wiki/operating-reliability) &nbsp; [<u>Adequacy</u>](/wiki/adequacy) &nbsp; [<u>Real-Time Reliability Model</u>](/wiki/real-time-reliability-model)
 
-- [<u>Small Signal Stability</u>](/wiki/small-signal-stability) &nbsp; [<u>Stability Limits</u>](/wiki/stability-limits)
+- [<u>Small Signal Stability</u>](/wiki/small-signal-stability) &nbsp; [<u>Stability Limits</u>](/wiki/stability-limits) &nbsp; [<u>Transient Stability Assessment</u>](/wiki/transient-stability-assessment)
 
 **Frequency**
 
