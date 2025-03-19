@@ -33,8 +33,8 @@ Here are some tips on how to make the most of it:
 <br>
 
 |---------|-------------------------------------------------|
-| AGC  | Automatic Generation Control |
-| ACE  | Area Control Error |
+| AGC | Automatic Generation Control |
+| ACE | Area Control Error |
 | IBR | Inverter-Based Resources |
 | DER | Distributed Energy Resources |
 | EMS | Energy Management System |

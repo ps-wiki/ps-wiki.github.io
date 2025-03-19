@@ -21,6 +21,7 @@ The model is only as accurate as the input data used to derive it; therefore, ti
 PJM’s Real-Time Reliability Model, also known as the EMS model, is a computer representation of the power system facilities in the PJM RTO and other Control Areas that may impact the reliable operation of the PJM system.
 The model, maintained by designated PJM support staff, resides on the PJM EMS.
 The PJM EMS Transmission Network Application (TNA) programs utilize the model to:
+
 - Calculate the real-time state of the electric system (using a State Estimator (SE)) and
 - Assess if the PJM system is operating within relevant, established limits.
 
