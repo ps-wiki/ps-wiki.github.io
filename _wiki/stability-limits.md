@@ -14,6 +14,10 @@ The PJM RTO established stability limits for preventing electrical separation of
 - Transient Stability - The ability of a generating unit or a group of generating units to maintain synchronism following a relatively severe and sudden system disturbance. The first few cycles are the most critical time period.
 - Dynamic Stability - The ability of a generating unit or a group of generating units to damp oscillations caused by relatively minor disturbances through the action of properly tuned control systems.
 
+PJM will operate the facilities that are under PJM operational control such that the PJM system will maintain angular and voltage stability following any single facility malfunction or failure.
+
+In general, stability is not a limiting constraint on the PJM RTO.
+
 **Stability Related Transmission Limits** by PJM <d-cite key="pjm2024m3"></d-cite> (p40, Revision 67)
 
 In addition to the thermal limits referenced in Section 2, PJM operates the PJM RTO considering voltage and stability related transmission limits as follows:
