@@ -15,6 +15,7 @@ toc:
 
 - Add items: [<u>Emergency</u>](/wiki/emergency)
 - Major revision of [<u>Stability Limits</u>](/wiki/stability-limits)
+- Remove item of <u>Transfer Limits</u> as overlapping with <u>Stability Limits</u>
 
 ### 03-18
 
