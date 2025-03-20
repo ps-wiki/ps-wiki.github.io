@@ -9,7 +9,9 @@ bibliography: papers.bib
 
 Relevant items: [Contingency](/wiki/contingency)
 
-**Contingency List** by ISO-NE <d-cite key="entsoe2019crac"></d-cite> (p8, Version 2.3)
+ISO-NE provides a contingency list in <d-cite key="isone2024op19j"></d-cite>
+
+**Contingency List** by ENTSO-E <d-cite key="entsoe2019crac"></d-cite> (p8, Version 2.3)
 
 A contingency list is a list of network elements to be simulated as disconnected during the contingency analysis study.
 The contingencies are identified by their mRID (which is an EIC Code or a CGMES Code).
