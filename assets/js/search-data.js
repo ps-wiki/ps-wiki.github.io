@@ -100,6 +100,16 @@ ninja.data = [{
           description: "CIM. A set of open standards for representing power system components",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/common-information-model/";
+            },},{id: "wiki-contingency-analysis",
+          title: 'Contingency Analysis',
+          description: "A list of network elements to be simulated as disconnected.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/contingency-analysis/";
+            },},{id: "wiki-contingency-list",
+          title: 'Contingency List',
+          description: "A list of network elements to be simulated as disconnected.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/contingency-list/";
             },},{id: "wiki-contingency-reserve",
           title: 'Contingency Reserve',
           description: "Capacity deployed by the Balancing Authority to meet the Disturbance Control Standard.",
