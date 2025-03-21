@@ -18,8 +18,8 @@ The contingencies are identified by their mRID (which is an EIC Code or a CGMES 
 
 **Contingency List** <d-cite key="baranowski2012operational"></d-cite>
 
-This paper presents various aspects of the contingency usage at PJM including the applications that utilize contingency lists, 
+This paper presents various aspects of the contingency usage at PJM including the applications that utilize contingency lists,
 modeling of contingencies and monitoring of contingency results.
 
-A separate contingency list is utilized for each application. 
+A separate contingency list is utilized for each application.
 Many of the contingencies are common however each application may use a subset of contingencies and may also have contingencies that are of special interest.
