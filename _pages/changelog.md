@@ -11,6 +11,10 @@ toc:
 
 ## 2025
 
+### 03-20
+
+- Add an elaboration in [<u>Contingency List</u>](/wiki/contingency-list)
+
 ### 03-19
 
 - Add items: [<u>Emergency</u>](/wiki/emergency); [<u>Transient Stability Assessment</u>](/wiki/transient-stability-assessment); <u>Contingency</u> by ISO-NE in [<u>Contingency</u>](/wiki/contingency); [<u>Contingency List</u>](/wiki/contingency-list) by ENTSO-E; [<u>Contingency Analysis</u>](/wiki/contingency-analysis)
