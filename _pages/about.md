@@ -37,15 +37,18 @@ Here are some tips on how to make the most of it:
 | ACE | Area Control Error |
 | IBR | Inverter-Based Resources |
 | DER | Distributed Energy Resources |
+| HVDC | High Voltage Direct Current |
+| FACTS | Flexible Alternating Current Transmission System |
+
+<br>
+
+|---------|-------------------------------------------------|
+| SOL | System Operating Limit |
+| IROL | Interconnection Reliability Operating Limit |
 | EMS | Energy Management System |
 | LMP | Locational Marginal Price |
 | GSF | Generator Shift Factor |
-| IBR | Inverter-Based Resources |
-| DER | Distributed Energy Resources |
-| GSF | Generator Shift Factor |
 | DFAX | Distribution Factors |
-| HVDC | High Voltage Direct Current |
-| FACTS | Flexible Alternating Current Transmission System |
 
 <br>
 
