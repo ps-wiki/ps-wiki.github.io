@@ -10,7 +10,7 @@ subtitle: An open wiki for power systems engineers, researchers, and students.
 
 ## How to Use This Wiki
 
-This wiki is designed to be a helpful resource for power systems engineers, researchers, and students.
+This wiki serves as a resource for power systems engineers, researchers, and students, providing quick access to and clear explanations of terminologies in the power systems field, particularly when multiple definitions or interpretations exist.
 Here are some tips on how to make the most of it:
 
 1. **Navigating the Wiki**: Use the table of wiki or search function to quickly find the terminology or topic you're interested in.
