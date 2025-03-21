@@ -11,11 +11,11 @@ nav_order: 3
 
 <!-- Bibsearch Feature -->
 
-| Quick links |
-|:------------|
-|North America| [PJM Manuals](https://www.pjm.com/library/manuals.aspx) &nbsp; [ISO-NE Operating Procedures](https://www.iso-ne.com/participate/rules-procedures/operating-procedures/) &nbsp; [NYISO Manuals, Technical Bulletins & Guides](https://www.nyiso.com/manuals-tech-bulletins-guides)
-| Europe | [ENTSO-E Manual of Procedures](https://www.entsoe.eu/data/transparency-platform/mop/)
-| Others | [Source BibTeX](https://github.com/ps-wiki/ps-wiki.github.io/blob/main/assets/bibliography/papers.bib)
+| Quick links   |
+| :------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| North America | [PJM Manuals](https://www.pjm.com/library/manuals.aspx) &nbsp; [ISO-NE Operating Procedures](https://www.iso-ne.com/participate/rules-procedures/operating-procedures/) &nbsp; [NYISO Manuals, Technical Bulletins & Guides](https://www.nyiso.com/manuals-tech-bulletins-guides) |
+| Europe        | [ENTSO-E Manual of Procedures](https://www.entsoe.eu/data/transparency-platform/mop/)                                                                                                                                                                                             |
+| Others        | [Source BibTeX](https://github.com/ps-wiki/ps-wiki.github.io/blob/main/assets/bibliography/papers.bib)                                                                                                                                                                            |
 
 <br>
 
