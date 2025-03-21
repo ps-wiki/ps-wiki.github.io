@@ -10,28 +10,28 @@ horizontal: false
 
 **Reliability, Security, and Stability**
 
-- [<u>Stability</u>](/wiki/stability) &nbsp; [<u>Resonance Stability</u>](/wiki/resonance-stability) &nbsp; [<u>Rotor Angle Stability</u>](/wiki/rotor-angle-stability) &nbsp; [<u>Voltage Stability</u>](/wiki/voltage-stability) &nbsp; [<u>Frequency Stability</u>](/wiki/frequency-stability) &nbsp; [<u>Converter-Driven Stability</u>](/wiki/converter-driven-stability)
-- [<u>Security</u>](/wiki/security) &nbsp; [<u>Security Constrained Economic Dispatch</u>](/wiki/economic-dispatch)
-- [<u>Reliability</u>](/wiki/reliability) &nbsp; [<u>Operating Reliability</u>](/wiki/operating-reliability) &nbsp; [<u>Adequacy</u>](/wiki/adequacy)
+- [Stability](/wiki/stability) &nbsp; [Resonance Stability](/wiki/resonance-stability) &nbsp; [Rotor Angle Stability](/wiki/rotor-angle-stability) &nbsp; [Voltage Stability](/wiki/voltage-stability) &nbsp; [Frequency Stability](/wiki/frequency-stability) &nbsp; [Converter-Driven Stability](/wiki/converter-driven-stability)
+- [Security](/wiki/security) &nbsp; [Security Constrained Economic Dispatch](/wiki/economic-dispatch)
+- [Reliability](/wiki/reliability) &nbsp; [Operating Reliability](/wiki/operating-reliability) &nbsp; [Adequacy](/wiki/adequacy)
 
-- [<u>Small Signal Stability</u>](/wiki/small-signal-stability)
+- [Small Signal Stability](/wiki/small-signal-stability)
 
-- [<u>Real-Time Reliability Model (a.k.a. EMS)</u>](/wiki/real-time-reliability-model) &nbsp; [<u>Transient Stability Assessment</u>](/wiki/transient-stability-assessment) &nbsp; [<u>Stability Limits</u>](/wiki/stability-limits)
+- [Real-Time Reliability Model (a.k.a. EMS)](/wiki/real-time-reliability-model) &nbsp; [Transient Stability Assessment](/wiki/transient-stability-assessment) &nbsp; [Stability Limits](/wiki/stability-limits)
 
 **Frequency**
 
-- [<u>FFR</u>](/wiki/fast-frequency-response) &nbsp; [<u>PFR</u>](/wiki/primary-frequency-response) &nbsp; [<u>AGC</u>](/wiki/automatic-generation-control) &nbsp; [<u>CPS1</u>](/wiki/control-performance-standard-1) &nbsp; [<u>CPS2</u>](/wiki/control-performance-standard-2) &nbsp; [<u>ACE</u>](/wiki/area-control-error)
-- [<u>Frequency Response</u>](/wiki/frequnecy-response) &nbsp; [<u>Primary Control</u>](/wiki/primary-control) &nbsp; [<u>Secondary Control</u>](/wiki/secondary-control) &nbsp; [<u>Tertiary Control</u>](/wiki/tertiary-control)
-- [<u>Frequency Deviation</u>](/wiki/frequency-deviation) &nbsp; [<u>Frequency Regulation</u>](/wiki/frequency-regulation)
+- [FFR](/wiki/fast-frequency-response) &nbsp; [PFR](/wiki/primary-frequency-response) &nbsp; [AGC](/wiki/automatic-generation-control) &nbsp; [CPS1](/wiki/control-performance-standard-1) &nbsp; [CPS2](/wiki/control-performance-standard-2) &nbsp; [ACE](/wiki/area-control-error)
+- [Frequency Response](/wiki/frequnecy-response) &nbsp; [Primary Control](/wiki/primary-control) &nbsp; [Secondary Control](/wiki/secondary-control) &nbsp; [Tertiary Control](/wiki/tertiary-control)
+- [Frequency Deviation](/wiki/frequency-deviation) &nbsp; [Frequency Regulation](/wiki/frequency-regulation)
 
 **Reserve**
 
-- [<u>Contingency Reserve</u>](/wiki/contingency-reserve) &nbsp; [<u>Regulating Reserve</u>](/wiki/regulating-reserve)
-- [<u>Spinning Reserve</u>](/wiki/spinning-reserve) &nbsp; [<u>Non-Spinning Reserve</u>](/wiki/non-spinning-reserve)
-- [<u>Operating Reserve</u>](/wiki/operting-reserve) [<u>Operating Reserve – Spinning</u>](/wiki/operating-reserve-spinning) &nbsp; [<u>Operating Reserve – Non-Spinning</u>](/wiki/operating-reserve-non-spinning)
+- [Contingency Reserve](/wiki/contingency-reserve) &nbsp; [Regulating Reserve](/wiki/regulating-reserve)
+- [Spinning Reserve](/wiki/spinning-reserve) &nbsp; [Non-Spinning Reserve](/wiki/non-spinning-reserve)
+- [Operating Reserve](/wiki/operting-reserve) &nbsp; [Operating Reserve – Spinning](/wiki/operating-reserve-spinning) &nbsp; [Operating Reserve – Non-Spinning](/wiki/operating-reserve-non-spinning)
 
-- [<u>Contingency</u>](/wiki/contingency) &nbsp; [<u>Contingency List</u>](/wiki/contingency-list) &nbsp; [<u>Contingency Analysis</u>](/wiki/contingency-analysis)
-- [<u>Emergency</u>](/wiki/emergency)
+- [Contingency](/wiki/contingency) &nbsp; [Contingency List](/wiki/contingency-list) &nbsp; [Contingency Analysis](/wiki/contingency-analysis)
+- [Emergency](/wiki/emergency)
 
 <br>
 
