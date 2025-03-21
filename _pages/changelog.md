@@ -11,6 +11,10 @@ toc:
 
 ## 2025
 
+### 03-21
+
+- Refactor the page wiki
+
 ### 03-20
 
 - Add an elaboration in [<u>Contingency List</u>](/wiki/contingency-list)
