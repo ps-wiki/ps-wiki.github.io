@@ -16,7 +16,7 @@ horizontal: false
 
 - [Small Signal Stability](/wiki/small-signal-stability)
 
-- [Real-Time Reliability Model (a.k.a. EMS)](/wiki/real-time-reliability-model) &nbsp; [Transient Stability Assessment](/wiki/transient-stability-assessment) &nbsp; [Stability Limits](/wiki/stability-limits)
+- [Real-Time Reliability Model (a.k.a. EMS model)](/wiki/real-time-reliability-model) &nbsp; [Transient Stability Assessment](/wiki/transient-stability-assessment) &nbsp; [Stability Limits](/wiki/stability-limits)
 
 **Frequency**
 
