@@ -13,7 +13,8 @@ toc:
 
 ### 03-21
 
-- Refactor the page wiki
+- Refactor the page wiki with a separate quick link page
+- Reorder the quick links of freuqency-related items
 
 ### 03-20
 

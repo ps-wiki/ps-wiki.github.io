@@ -9,9 +9,13 @@
 
 **Frequency**
 
-- [FFR](/wiki/fast-frequency-response) &nbsp; [PFR](/wiki/primary-frequency-response) &nbsp; [AGC](/wiki/automatic-generation-control) &nbsp; [CPS1](/wiki/control-performance-standard-1) &nbsp; [CPS2](/wiki/control-performance-standard-2) &nbsp; [ACE](/wiki/area-control-error)
-- [Frequency Response](/wiki/frequnecy-response) &nbsp; [Primary Control](/wiki/primary-control) &nbsp; [Secondary Control](/wiki/secondary-control) &nbsp; [Tertiary Control](/wiki/tertiary-control)
 - [Frequency Deviation](/wiki/frequency-deviation) &nbsp; [Frequency Regulation](/wiki/frequency-regulation)
+- [Area Control Error (ACE)](/wiki/area-control-error) &nbsp; [CPS1](/wiki/control-performance-standard-1) &nbsp; [CPS2](/wiki/control-performance-standard-2)
+- [Fast Frequency Response](/wiki/fast-frequency-response) &nbsp; [Critial Inertia](/wiki/critical-inertia)
+- [Primary Frequency Response](/wiki/primary-frequency-response) &nbsp;
+- [Frequency Response](/wiki/frequnecy-response) &nbsp; [Primary Control](/wiki/primary-control) &nbsp;
+- [Secondary Control](/wiki/secondary-control) &nbsp; [Automatic Generation Control (AGC)](/wiki/automatic-generation-control) &nbsp; 
+- [Tertiary Control](/wiki/tertiary-control)
 
 **Reserve**
 
