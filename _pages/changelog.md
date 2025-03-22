@@ -13,9 +13,9 @@ toc:
 
 ### 03-22
 
-- Rename item <u>Economic Dispatch</u> to [<u>Security Constrained Economic Dispatch</u>](/wiki/security-constrained-economic-dispatch) and remove the redundant content
-- Add items: [<u>Generation Redispatch</u>](/wiki/generation-redispatch) &nbsp; [<u>Reserve</u>](/wiki/reserve) &nbsp; [<u>Non-Synchronized Reserve</u>](/wiki/non-synchronized-reserve) &nbsp; [<u>Secondary Reserve</u>](/wiki/secondary-reserve) &nbsp; [<u>Contingency Reserve Service</u>](/wiki/contingency-reserve-service) &nbsp; [<u>Synchronized Reserve Service</u>](/wiki/synchronized-reserve-service) &nbsp; [<u>30-Minute Reserve Service</u>](/wiki/30-minute-reserve-service)
-- Expand the item [<u>Locational Marginal Price</u>](/wiki/locational-marginal-price) with more details
+- Rename item <u>Economic Dispatch</u> to [Security Constrained Economic Dispatch](/wiki/security-constrained-economic-dispatch) and remove the redundant content
+- Add items: [Generation Redispatch](/wiki/generation-redispatch) &nbsp; [Reserve](/wiki/reserve) &nbsp; [Non-Synchronized Reserve](/wiki/non-synchronized-reserve) &nbsp; [Secondary Reserve](/wiki/secondary-reserve) &nbsp; [Contingency Reserve Service](/wiki/contingency-reserve-service) &nbsp; [Synchronized Reserve Service](/wiki/synchronized-reserve-service) &nbsp; [30-Minute Reserve Service](/wiki/30-minute-reserve-service)
+- Expand the item [Locational Marginal Price](/wiki/locational-marginal-price) with more details
 
 ### 03-21
 
@@ -24,29 +24,29 @@ toc:
 
 ### 03-20
 
-- Add an elaboration in [<u>Contingency List</u>](/wiki/contingency-list)
+- Add an elaboration in [Contingency List](/wiki/contingency-list)
 
 ### 03-19
 
-- Add items: [<u>Emergency</u>](/wiki/emergency) &nbsp; [<u>Transient Stability Assessment</u>](/wiki/transient-stability-assessment) &nbsp; <u>Contingency</u> by ISO-NE in [<u>Contingency</u>](/wiki/contingency) &nbsp; [<u>Contingency List</u>](/wiki/contingency-list) by ENTSO-E &nbsp; [<u>Contingency Analysis</u>](/wiki/contingency-analysis)
-- Revised items: [<u>Stability Limits</u>](/wiki/stability-limits) &nbsp; [<u>Real-Time Reliability Model</u>](/wiki/real-time-reliability-model)
+- Add items: [Emergency](/wiki/emergency) &nbsp; [Transient Stability Assessment](/wiki/transient-stability-assessment) &nbsp; <u>Contingency</u> by ISO-NE in [Contingency](/wiki/contingency) &nbsp; [Contingency List](/wiki/contingency-list) by ENTSO-E &nbsp; [Contingency Analysis](/wiki/contingency-analysis)
+- Revised items: [Stability Limits](/wiki/stability-limits) &nbsp; [Real-Time Reliability Model](/wiki/real-time-reliability-model)
 - Remove item of <u>Transfer Limits</u> as overlapping with <u>Stability Limits</u>
 - Update acronyms table
 - Add some quick links in references page
 
 ### 03-18
 
-- Add items: [<u>Remedial Action Scheme</u>](/wiki/remedial-action-scheme)
+- Add items: [Remedial Action Scheme](/wiki/remedial-action-scheme)
 
 ### 03-17
 
-- Add relevant items in [<u>Stability</u>](/wiki/stability) &nbsp; [<u>Security</u>](/wiki/security) &nbsp; [<u>Reliability</u>](/wiki/reliability)
-- Add a placeholder item [<u>Converter-driven Stability</u>](/wiki/converter-driven-stability)
+- Add relevant items in [Stability](/wiki/stability) &nbsp; [Security](/wiki/security) &nbsp; [Reliability](/wiki/reliability)
+- Add a placeholder item [Converter-driven Stability](/wiki/converter-driven-stability)
 
 ### 03-16
 
-- Add items: [<u>Digital Twin</u>](/wiki/digital-twin) &nbsp; [<u>Waveform Measurement Unit</u>](/wiki/waveform-measurement-unit)
-- Add a definition of control area from HIFLD in [<u>Area, Zone, Region</u>](/wiki/area-zone-region)
+- Add items: [Digital Twin](/wiki/digital-twin) &nbsp; [Waveform Measurement Unit](/wiki/waveform-measurement-unit)
+- Add a definition of control area from HIFLD in [Area, Zone, Region](/wiki/area-zone-region)
 
 ### 03-15
 
@@ -92,11 +92,11 @@ Add items: <u>synchronous machine</u>, <u>virtual synchronous machine</u>, <u>su
 
 ### 01-29
 
-Add items: <u>Torsional Resonance</u> and [<u>Electrical Resonance</u>](/wiki/electrical-resonance)
+Add items: <u>Torsional Resonance</u> and [Electrical Resonance](/wiki/electrical-resonance)
 
 ### 01-28
 
-Add <u>Fault Ride-through</u> by IEEE in [<u>Ride-through</u>](/wiki/ride-through)
+Add <u>Fault Ride-through</u> by IEEE in [Ride-through](/wiki/ride-through)
 
 ### 01-28
 
