@@ -15,6 +15,7 @@ toc:
 
 - Rename item <u>Economic Dispatch</u> to [<u>Security Constrained Economic Dispatch</u>](/wiki/security-constrained-economic-dispatch) and remove the redundant content
 - Add items: [<u>Generation Redispatch</u>](/wiki/generation-redispatch)
+- Expand the item [<u>Locational Marginal Price</u>](/wiki/locational-marginal-price) with more details
 
 ### 03-21
 
