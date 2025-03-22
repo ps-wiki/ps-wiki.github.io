@@ -19,8 +19,8 @@
 
 **[Reserve](/wiki/reserve)**
 
-- [Contingency Reserve](/wiki/contingency-reserve) &nbsp; [Regulating Reserve](/wiki/regulating-reserve)
-- [Spinning Reserve](/wiki/spinning-reserve) &nbsp; [Non-Spinning Reserve](/wiki/non-spinning-reserve)
+- [Contingency Reserve (a.k.a. Primary Reserve)](/wiki/contingency-reserve) &nbsp; [Regulating Reserve](/wiki/regulating-reserve)
+- [Spinning Reserve (a.k.a. Synchronized Reserve)](/wiki/spinning-reserve) &nbsp; [Non-Spinning Reserve](/wiki/non-spinning-reserve) &nbsp; [Non-Synchronized Reserve](/wiki/non-synchronized-reserve)
 - [Operating Reserve](/wiki/operating-reserve)
   - [Operating Reserve – Spinning](/wiki/operating-reserve-spinning) &nbsp; [Operating Reserve – Non-Spinning](/wiki/operating-reserve-non-spinning)
 
