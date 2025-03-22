@@ -7,7 +7,7 @@ category: wiki
 bibliography: papers.bib
 ---
 
-Relevante items: [Security Constrained Economic Dispatch](/wiki/security-constrained-economic-dispatch), [Locational Marginal Price](/wiki/locational-marginal-price)
+Relevante items: [Security Constrained Economic Dispatch](/wiki/security-constrained-economic-dispatch) &nbsp; [Locational Marginal Price](/wiki/locational-marginal-price)
 
 **Unit Commitment** <d-cite key="pjm2024m14d"></d-cite>
 
@@ -28,7 +28,7 @@ The individual programs are:
 1. Study Network Analysis (STNET) — Creates a powerflow model for each hour of the next operating day based on the scheduled network topology, the generation and demand MW profile produced by SPD and the scheduled Tie Flow with adjacent Balancing Authorities.
    STNET performs AC contingency analysis using the contingency list from PJM EMS and creates generic constraints based on any violations that are detected.
 
-**Security Constrained Unit Commitment (SCUC)** <d-cite key="nyiso2024dayahead"></d-cite> (p8, Version 8.0)
+**Security Constrained Unit Commitment (SCUC)** by NYISO <d-cite key="nyiso2024dayahead"></d-cite> (p8, Version 8.0)
 
 The SCUC produces the generating unit commitment schedule and Firm Transaction schedules for the next day’s operation.
 Factors considered by SCUC are:
