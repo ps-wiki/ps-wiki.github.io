@@ -7,6 +7,8 @@ category: wiki
 bibliography: papers.bib
 ---
 
+Relevante items: [Security Constrained Economic Dispatch](/wiki/security-constrained-economic-dispatch), [Locational Marginal Price](/wiki/locational-marginal-price)
+
 **Unit Commitment** <d-cite key="pjm2024m14d"></d-cite>
 
 The resource commitment process includes the Markets Database (formerly the Unit Commitment Database or UCDB) and the functions of Hydro Scheduler and the Dispatch Management Tool (DMT).
