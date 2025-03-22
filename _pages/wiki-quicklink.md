@@ -24,6 +24,8 @@
 - [Operating Reserve](/wiki/operating-reserve)
   - [Operating Reserve – Spinning](/wiki/operating-reserve-spinning) &nbsp; [Operating Reserve – Non-Spinning](/wiki/operating-reserve-non-spinning)
 
+- [Contingency Reserve Service](/wiki/contingency-reserve-service)
+
 **Applications**
 
 - [Real-Time Reliability Model (a.k.a. EMS model)](/wiki/real-time-reliability-model)
