@@ -38,7 +38,9 @@
 
 **Operations**
 
-- [Security Constrained Unit Commitment (SCUC)](/wiki/security-constrained-unit-commitment) &nbsp; [Security Constrained Economic Dispatch (SCED)](/wiki/security-constrained-economic-dispatch)
-- [Locational Marginal Price (LMP)](/wiki/locational-marginal-price)
+- [Energy Market](/wiki/energy-market)
+  - [Day-Ahead Energy Market](/wiki/day-ahead-energy-market) &nbsp; [Real-Time Energy Market](/wiki/real-time-energy-market)
+  - [Security Constrained Unit Commitment (SCUC)](/wiki/security-constrained-unit-commitment) &nbsp; [Security Constrained Economic Dispatch (SCED)](/wiki/security-constrained-economic-dispatch)
+  - [Locational Marginal Price (LMP)](/wiki/locational-marginal-price)
 
 <br>

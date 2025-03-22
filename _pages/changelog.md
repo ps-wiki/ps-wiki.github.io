@@ -14,8 +14,9 @@ toc:
 ### 03-22
 
 - Rename item <u>Economic Dispatch</u> to [Security Constrained Economic Dispatch](/wiki/security-constrained-economic-dispatch) and remove the redundant content
-- Add items: [Generation Redispatch](/wiki/generation-redispatch) &nbsp; [Reserve](/wiki/reserve) &nbsp; [Non-Synchronized Reserve](/wiki/non-synchronized-reserve) &nbsp; [Secondary Reserve](/wiki/secondary-reserve) &nbsp; [Contingency Reserve Service](/wiki/contingency-reserve-service) &nbsp; [Synchronized Reserve Service](/wiki/synchronized-reserve-service) &nbsp; [30-Minute Reserve Service](/wiki/30-minute-reserve-service) &nbsp; [Security Constrained Unit Commitment](/wiki/security-constrained-unit-commitment)
+- Add items: [Generation Redispatch](/wiki/generation-redispatch) &nbsp; [Reserve](/wiki/reserve) &nbsp; [Non-Synchronized Reserve](/wiki/non-synchronized-reserve) &nbsp; [Secondary Reserve](/wiki/secondary-reserve) &nbsp; [Contingency Reserve Service](/wiki/contingency-reserve-service) &nbsp; [Synchronized Reserve Service](/wiki/synchronized-reserve-service) &nbsp; [30-Minute Reserve Service](/wiki/30-minute-reserve-service) &nbsp; [Security Constrained Unit Commitment](/wiki/security-constrained-unit-commitment) &nbsp; [Security Constrained Economic Dispatch](/wiki/security-constrained-economic-dispatch) &nbsp; [Energy Market](/wiki/energy-market) &nbsp; [Day-ahead Energy Market](/wiki/day-ahead-energy-market) &nbsp; [Real-time Energy Market](/wiki/real-time-energy-market)
 - Expand the item [Locational Marginal Price](/wiki/locational-marginal-price) with more details
+- Merge <u>Day Ahead Market</u> into [Day-ahead Energy Market](/wiki/day-ahead-energy-market)
 
 ### 03-21
 
