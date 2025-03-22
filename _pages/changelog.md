@@ -14,6 +14,7 @@ toc:
 ### 03-22
 
 - Rename item <u>Economic Dispatch</u> to [<u>Security Constrained Economic Dispatch</u>](/wiki/security-constrained-economic-dispatch) and remove the redundant content
+- Add items: [<u>Generation Redispatch</u>](/wiki/generation-redispatch)
 
 ### 03-21
 
