@@ -14,7 +14,7 @@
 - [Fast Frequency Response](/wiki/fast-frequency-response) &nbsp; [Critial Inertia](/wiki/critical-inertia)
 - [Primary Frequency Response](/wiki/primary-frequency-response) &nbsp;
 - [Frequency Response](/wiki/frequnecy-response) &nbsp; [Primary Control](/wiki/primary-control) &nbsp;
-- [Secondary Control](/wiki/secondary-control) &nbsp; [Automatic Generation Control (AGC)](/wiki/automatic-generation-control) &nbsp; 
+- [Secondary Control](/wiki/secondary-control) &nbsp; [Automatic Generation Control (AGC)](/wiki/automatic-generation-control) &nbsp;
 - [Tertiary Control](/wiki/tertiary-control)
 
 **Reserve**
