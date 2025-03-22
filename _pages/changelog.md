@@ -11,6 +11,10 @@ toc:
 
 ## 2025
 
+### 03-22
+
+- Rename item <u>Economic Dispatch</u> to [<u>Security Constrained Economic Dispatch</u>](/wiki/security-constrained-economic-dispatch) and remove the redundant content
+
 ### 03-21
 
 - Refactor the page wiki with a separate quick link page
