@@ -7,7 +7,7 @@ category: wiki
 bibliography: papers.bib
 ---
 
-Relevante items: [Security Constrained Unit Commitment](/wiki/security-constrained-unit-commitment), [Locational Marginal Price](/wiki/locational-marginal-price)
+Relevante items: [Security Constrained Unit Commitment](/wiki/security-constrained-unit-commitment) &nbsp; [Locational Marginal Price](/wiki/locational-marginal-price)
 
 **Economic Dispatch** <d-cite key="nerc2024glossary"></d-cite>
 
@@ -22,8 +22,6 @@ The <u>Security Constrained Economic Dispatch</u> (SCED) dispatches every genera
 The model is also used to calculate real-time Locational Marginal Prices.
 The model is created and maintained from input data received by PJM from various sources including Transmission Owners, Generation Owners, Load Serving Entities, and other Balancing Authorities.
 The model is only as accurate as the input data used to derive it; therefore, timely and accurate data updates are critical.
-
-Day Ahead Market Clearing Process is illustrated in <d-cite key="pjm2023dam"></d-cite>
 
 **Security Constraint Economic Dispatch** (SCED) by PJM <d-cite key="pjm2022cooptimization"></d-cite> (p1)
 
