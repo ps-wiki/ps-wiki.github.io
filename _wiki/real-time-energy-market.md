@@ -15,6 +15,7 @@ The Real-time Energy Market uses the Real-time Security Constrained Economic Dis
 The dispatch run considers resource offers, forecasted system conditions, and other inputs in its calculations.
 For more information regarding the RT SCED program, please refer to Section 2.5 of this Manual.
 Generators and Demand Resources may alter their bids for use in the Real-time Energy Market as defined in Section 9.1 of this Manual during the following periods:
+
 - During the Generation Rebidding Period which is defined from the time PJM posts the results of the Day-ahead Energy Market until 14:15.
 - Starting at 18:30 (typically after the Reliability Assessment and Commitment (RAC) Run is completed) and up to sixty-five (65) minutes prior to the start of the operating hour.
 
