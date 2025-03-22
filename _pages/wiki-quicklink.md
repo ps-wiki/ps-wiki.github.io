@@ -28,10 +28,13 @@
 
 - [Real-Time Reliability Model (a.k.a. EMS model)](/wiki/real-time-reliability-model)
 - [Transient Stability Assessment](/wiki/transient-stability-assessment)
-- [Security Constrained Economic Dispatch](/wiki/economic-dispatch)
 - [Stability Limits](/wiki/stability-limits)
 - [Contingency](/wiki/contingency)
   - [Contingency List](/wiki/contingency-list) &nbsp; [Contingency Analysis](/wiki/contingency-analysis)
 - [Emergency](/wiki/emergency)
+
+**Operations**
+- [Security Constrained Economic Dispatch (SCED)](/wiki/economic-dispatch)
+- [Locational Marginal Price (LMP)](/wiki/locational-marginal-price)
 
 <br>
