@@ -32,6 +32,7 @@ The individual programs are:
 
 The SCUC produces the generating unit commitment schedule and Firm Transaction schedules for the next day’s operation.
 Factors considered by SCUC are:
+
 - Current generating unit operating status
 - Constraints on the minimum up and down time of the generators
 - Generation and start up bid prices
