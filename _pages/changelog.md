@@ -14,7 +14,7 @@ toc:
 ### 03-22
 
 - Rename item <u>Economic Dispatch</u> to [<u>Security Constrained Economic Dispatch</u>](/wiki/security-constrained-economic-dispatch) and remove the redundant content
-- Add items: [<u>Generation Redispatch</u>](/wiki/generation-redispatch); [<u>Reserve</u>](/wiki/reserve); [<u>Non-Synchronized Reserve</u>](/wiki/non-synchronized-reserve); [<u>Secondary Reserve</u>](/wiki/secondary-reserve); [<u>Contingency Reserve Service</u>](/wiki/contingency-reserve-service); [<u>Synchronized Reserve Service</u>](/wiki/synchronized-reserve-service); [<u>30-Minute Reserve Service</u>](/wiki/30-minute-reserve-service)
+- Add items: [<u>Generation Redispatch</u>](/wiki/generation-redispatch) &nbsp; [<u>Reserve</u>](/wiki/reserve) &nbsp; [<u>Non-Synchronized Reserve</u>](/wiki/non-synchronized-reserve) &nbsp; [<u>Secondary Reserve</u>](/wiki/secondary-reserve) &nbsp; [<u>Contingency Reserve Service</u>](/wiki/contingency-reserve-service) &nbsp; [<u>Synchronized Reserve Service</u>](/wiki/synchronized-reserve-service) &nbsp; [<u>30-Minute Reserve Service</u>](/wiki/30-minute-reserve-service)
 - Expand the item [<u>Locational Marginal Price</u>](/wiki/locational-marginal-price) with more details
 
 ### 03-21
@@ -28,8 +28,8 @@ toc:
 
 ### 03-19
 
-- Add items: [<u>Emergency</u>](/wiki/emergency); [<u>Transient Stability Assessment</u>](/wiki/transient-stability-assessment); <u>Contingency</u> by ISO-NE in [<u>Contingency</u>](/wiki/contingency); [<u>Contingency List</u>](/wiki/contingency-list) by ENTSO-E; [<u>Contingency Analysis</u>](/wiki/contingency-analysis)
-- Revised items: [<u>Stability Limits</u>](/wiki/stability-limits); [<u>Real-Time Reliability Model</u>](/wiki/real-time-reliability-model)
+- Add items: [<u>Emergency</u>](/wiki/emergency) &nbsp; [<u>Transient Stability Assessment</u>](/wiki/transient-stability-assessment) &nbsp; <u>Contingency</u> by ISO-NE in [<u>Contingency</u>](/wiki/contingency) &nbsp; [<u>Contingency List</u>](/wiki/contingency-list) by ENTSO-E &nbsp; [<u>Contingency Analysis</u>](/wiki/contingency-analysis)
+- Revised items: [<u>Stability Limits</u>](/wiki/stability-limits) &nbsp; [<u>Real-Time Reliability Model</u>](/wiki/real-time-reliability-model)
 - Remove item of <u>Transfer Limits</u> as overlapping with <u>Stability Limits</u>
 - Update acronyms table
 - Add some quick links in references page
@@ -40,12 +40,12 @@ toc:
 
 ### 03-17
 
-- Add relevant items in [<u>Stability</u>](/wiki/stability); [<u>Security</u>](/wiki/security); [<u>Reliability</u>](/wiki/reliability)
+- Add relevant items in [<u>Stability</u>](/wiki/stability) &nbsp; [<u>Security</u>](/wiki/security) &nbsp; [<u>Reliability</u>](/wiki/reliability)
 - Add a placeholder item [<u>Converter-driven Stability</u>](/wiki/converter-driven-stability)
 
 ### 03-16
 
-- Add items: [<u>Digital Twin</u>](/wiki/digital-twin); [<u>Waveform Measurement Unit</u>](/wiki/waveform-measurement-unit)
+- Add items: [<u>Digital Twin</u>](/wiki/digital-twin) &nbsp; [<u>Waveform Measurement Unit</u>](/wiki/waveform-measurement-unit)
 - Add a definition of control area from HIFLD in [<u>Area, Zone, Region</u>](/wiki/area-zone-region)
 
 ### 03-15
