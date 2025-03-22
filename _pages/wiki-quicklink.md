@@ -24,7 +24,7 @@
 - [Operating Reserve](/wiki/operating-reserve)
   - [Operating Reserve – Spinning](/wiki/operating-reserve-spinning) &nbsp; [Operating Reserve – Non-Spinning](/wiki/operating-reserve-non-spinning)
 
-- [<u>Synchronized Reserve Service</u>](/wiki/synchronized-reserve-service) &nbsp; [Contingency Reserve Service](/wiki/contingency-reserve-service)
+- [Synchronized Reserve Service](/wiki/synchronized-reserve-service) &nbsp; [Contingency Reserve Service](/wiki/contingency-reserve-service) &nbsp; [30-Minute Reserve Service](/wiki/30-minute-reserve-service)
 
 **Applications**
 
