@@ -17,7 +17,7 @@
 - [Secondary Control](/wiki/secondary-control) &nbsp; [Automatic Generation Control (AGC)](/wiki/automatic-generation-control) &nbsp;
 - [Tertiary Control](/wiki/tertiary-control)
 
-**Reserve**
+**[Reserve](/wiki/reserve)**
 
 - [Contingency Reserve](/wiki/contingency-reserve) &nbsp; [Regulating Reserve](/wiki/regulating-reserve)
 - [Spinning Reserve](/wiki/spinning-reserve) &nbsp; [Non-Spinning Reserve](/wiki/non-spinning-reserve)
