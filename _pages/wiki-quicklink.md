@@ -38,7 +38,7 @@
 
 **Operations**
 
-- [Security Constrained Economic Dispatch (SCED)](/wiki/economic-dispatch)
+- [Security Constrained Unit Commitment (SCUC)](/wiki/security-constrained-unit-commitment) &nbsp; [Security Constrained Economic Dispatch (SCED)](/wiki/security-constrained-economic-dispatch)
 - [Locational Marginal Price (LMP)](/wiki/locational-marginal-price)
 
 <br>
