@@ -7,7 +7,7 @@ category: wiki
 bibliography: papers.bib
 ---
 
-Relevant items: [Stability](/wiki/stability); [Security](/wiki/security)
+Relevant items: [Stability](/wiki/stability) &nbsp; [Security](/wiki/security)
 
 **Reliability** <d-cite key="kundur2004stability"></d-cite>
 

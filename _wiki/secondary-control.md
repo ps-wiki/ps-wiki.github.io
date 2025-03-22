@@ -7,7 +7,7 @@ category: wiki
 bibliography: papers.bib
 ---
 
-Relevant items: [Fast Frequency Response](/wiki/fast-frequency-response); [Primary Control](/wiki/primary-control); [Tertiary Control](/wiki/tertiary-control); [Frequency Regulation](/wiki/frequency-regulation); [Automatic Generation Control](/wiki/automatic-generation-control); [Frequency Stability](/wiki/frequency-stability)
+Relevant items: [Fast Frequency Response](/wiki/fast-frequency-response) &nbsp; [Primary Control](/wiki/primary-control) &nbsp; [Tertiary Control](/wiki/tertiary-control) &nbsp; [Frequency Regulation](/wiki/frequency-regulation) &nbsp; [Automatic Generation Control](/wiki/automatic-generation-control) &nbsp; [Frequency Stability](/wiki/frequency-stability)
 
 **Secondary Control** <d-cite key="nerc2021balancing"></d-cite>
 

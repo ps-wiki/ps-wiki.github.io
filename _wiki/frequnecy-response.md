@@ -7,6 +7,8 @@ category: wiki
 bibliography: papers.bib
 ---
 
+Relevant items: [Primary Control](/wiki/primary-control)
+
 **Frequency Response** <d-cite key="nerc2024glossary"></d-cite>
 
 (Equipment) The ability of a system or elements of the system to react or respond to a change in system frequency.
