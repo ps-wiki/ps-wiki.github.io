@@ -30,7 +30,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/changelog/";
           },
-        },{id: "wiki-adequacy",
+        },{id: "wiki-30-minute-reserve-service",
+          title: '30-Minute Reserve Service',
+          description: "can be satisfied by online or offline resources that are able to respond in 30 minutes or less.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/30-minutes-reserve-service/";
+            },},{id: "wiki-adequacy",
           title: 'Adequacy',
           description: "The ability to supply the demand and energy requirements of the end-use customers.",
           section: "Wiki",handler: () => {
@@ -110,6 +115,11 @@ ninja.data = [{
           description: "A list of network elements to be simulated as disconnected.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/contingency-list/";
+            },},{id: "wiki-contingency-reserve-service",
+          title: 'Contingency Reserve Service',
+          description: "A.k.a. Primary Reserve. Can be satisfied in 10 minutes or less.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/contingency-reserve-service/";
             },},{id: "wiki-contingency-reserve",
           title: 'Contingency Reserve',
           description: "Capacity deployed by the Balancing Authority to meet the Disturbance Control Standard.",
@@ -145,11 +155,11 @@ ninja.data = [{
           description: "Minimum level of system inertia necessary to ensure deployment of frequency responsive reserves.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/critical-inertia/";
-            },},{id: "wiki-day-ahead-markets",
-          title: 'Day-ahead Markets',
+            },},{id: "wiki-day-ahead-energy-market",
+          title: 'Day Ahead Energy Market',
           description: "Forward markets for electricity to be supplied the following day.",
           section: "Wiki",handler: () => {
-              window.location.href = "/wiki/day-ahead-markets/";
+              window.location.href = "/wiki/day-ahead-energy-market/";
             },},{id: "wiki-digital-twin",
           title: 'Digital Twin',
           description: "A virtual representation to reflect a physical object accurately.",
@@ -175,11 +185,6 @@ ninja.data = [{
           description: "Any perturbation or sudden loss of generation or interruption of load",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/distrubance/";
-            },},{id: "wiki-economic-dispatch",
-          title: 'Economic Dispatch',
-          description: "ED. Allocation of generating units for economical production.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/economic-dispatch/";
             },},{id: "wiki-electrical-resonance",
           title: 'Electrical Resonance',
           description: "The behavior of power systems with conventional turbine-generators and variable speed induction generators.",
@@ -190,6 +195,11 @@ ninja.data = [{
           description: "Abnormal system condition that requires automatic or immediate manual action.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/emergency/";
+            },},{id: "wiki-energy-market",
+          title: 'Energy Market',
+          description: "",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/energy-market/";
             },},{id: "wiki-equal-area-criterion",
           title: 'Equal Area Criterion',
           description: "EAC and EEAC. A method to determine the stability.",
@@ -265,6 +275,11 @@ ninja.data = [{
           description: "For contracts for future delivery of a commodity or security.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/future-markets/";
+            },},{id: "wiki-generation-redispatch",
+          title: 'Generation Redispatch',
+          description: "Generators are adjusted away (off-cost) from their normal assignments (on-cost).",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/generation-redispatch/";
             },},{id: "wiki-horizon",
           title: 'Horizon',
           description: "Time span",
@@ -320,6 +335,11 @@ ninja.data = [{
           description: "Unconnected to the system but capable of serving demand within a specified time.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/non-spinning-reserve/";
+            },},{id: "wiki-non-synchronized-reserve",
+          title: 'Non-Synchronized Reserve',
+          description: "Reserve capability within 10 minutes not electrically synchronized to the system",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/non-synchronized-reserve/";
             },},{id: "wiki-operating-reliability",
           title: 'Operating Reliability',
           description: "The ability to withstand sudden disturbances while avoiding uncontrolled cascading blackouts or damage to equipment.",
@@ -345,11 +365,6 @@ ninja.data = [{
           description: "A repetitive motion that can be either undamped, positively damped, or negatively damped.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/oscillation/";
-            },},{id: "wiki-preface",
-          title: 'Preface',
-          description: "Disclaimer, acronyms, and change log",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/preface/";
             },},{id: "wiki-primary-control",
           title: 'Primary Control',
           description: "A.k.a. Frequency Response.",
@@ -365,6 +380,11 @@ ninja.data = [{
           description: "A.k.a. Ramp Rate. The rate at which the interchange schedule or generator output is attained.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/ramp/";
+            },},{id: "wiki-real-time-energy-market",
+          title: 'Real Time Energy Market',
+          description: "",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/real-time-energy-market/";
             },},{id: "wiki-real-time-reliability-model",
           title: 'Real-Time Reliability Model',
           description: "A.k.a. EMS model. A computer representation of the power system facilities.",
@@ -385,6 +405,11 @@ ninja.data = [{
           description: "RAS.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/remedial-action-scheme/";
+            },},{id: "wiki-reserve",
+          title: 'Reserve',
+          description: "The generating capability that is “standing by” ready for service in the event that something happens on the power system.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/reserve/";
             },},{id: "wiki-resilience",
           title: 'Resilience',
           description: "Concepts and its metrics.",
@@ -420,6 +445,21 @@ ninja.data = [{
           description: "Associated with Load-Frequency Control and Automatic Generation Control. Balancing services deployed in the “minutes” time frame.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/secondary-control/";
+            },},{id: "wiki-secondary-reserve",
+          title: 'Secondary Reserve',
+          description: "Reserve capability within a 10-to-30 minute interval.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/secondary-reserve/";
+            },},{id: "wiki-security-constraiend-economic-dispatch",
+          title: 'Security Constraiend Economic Dispatch',
+          description: "SCED. Allocation of generating units for economical production.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/security-constrained-economic-dispatch/";
+            },},{id: "wiki-security-constrained-unit-commitment",
+          title: 'Security Constrained Unit Commitment',
+          description: "SCUC. Resource Scheduling and Commitment",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/security-constrained-unit-commitment/";
             },},{id: "wiki-security",
           title: 'Security',
           description: "The degree of risk in a power system&#39;s ability to survive imminent disturbances.",
@@ -437,7 +477,7 @@ ninja.data = [{
               window.location.href = "/wiki/small-signal-stability/";
             },},{id: "wiki-spinning-reserve",
           title: 'Spinning Reserve',
-          description: "Synchronized generation and ready to serve additional demand.",
+          description: "A.k.a. Synchronized Reserve. Synchronized generation and ready to serve additional demand.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/spinning-reserve/";
             },},{id: "wiki-spot-market",
@@ -470,6 +510,11 @@ ninja.data = [{
           description: "Aligning a device&#39;s terminal voltage with another voltage source",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/synchronization/";
+            },},{id: "wiki-synchronized-reserve-service",
+          title: 'Synchronized Reserve Service',
+          description: "Can be satisfied by online resources in 10 minutes or less.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/synchronized-reserve-service/";
             },},{id: "wiki-synchronous-machine",
           title: 'Synchronous Machine',
           description: "SM. An AC electrical machine operated with a constant electromagnetic field.",

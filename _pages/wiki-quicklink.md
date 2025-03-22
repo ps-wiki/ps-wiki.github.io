@@ -17,21 +17,30 @@
 - [Secondary Control](/wiki/secondary-control) &nbsp; [Automatic Generation Control (AGC)](/wiki/automatic-generation-control) &nbsp;
 - [Tertiary Control](/wiki/tertiary-control)
 
-**Reserve**
+**[Reserve](/wiki/reserve)**
 
 - [Contingency Reserve](/wiki/contingency-reserve) &nbsp; [Regulating Reserve](/wiki/regulating-reserve)
-- [Spinning Reserve](/wiki/spinning-reserve) &nbsp; [Non-Spinning Reserve](/wiki/non-spinning-reserve)
+- [Spinning Reserve (a.k.a. Synchronized Reserve)](/wiki/spinning-reserve) &nbsp; [Non-Synchronized Reserve](/wiki/non-synchronized-reserve) &nbsp; [Secondary Reserve](/wiki/secondary-reserve) &nbsp; [Non-Spinning Reserve](/wiki/non-spinning-reserve)
 - [Operating Reserve](/wiki/operating-reserve)
+
   - [Operating Reserve – Spinning](/wiki/operating-reserve-spinning) &nbsp; [Operating Reserve – Non-Spinning](/wiki/operating-reserve-non-spinning)
+
+- [Synchronized Reserve Service](/wiki/synchronized-reserve-service) &nbsp; [Contingency Reserve Service](/wiki/contingency-reserve-service) &nbsp; [30-Minute Reserve Service](/wiki/30-minute-reserve-service)
 
 **Applications**
 
 - [Real-Time Reliability Model (a.k.a. EMS model)](/wiki/real-time-reliability-model)
 - [Transient Stability Assessment](/wiki/transient-stability-assessment)
-- [Security Constrained Economic Dispatch](/wiki/economic-dispatch)
 - [Stability Limits](/wiki/stability-limits)
 - [Contingency](/wiki/contingency)
   - [Contingency List](/wiki/contingency-list) &nbsp; [Contingency Analysis](/wiki/contingency-analysis)
 - [Emergency](/wiki/emergency)
+
+**Operations**
+
+- [Energy Market](/wiki/energy-market)
+  - [Day-Ahead Energy Market](/wiki/day-ahead-energy-market) &nbsp; [Real-Time Energy Market](/wiki/real-time-energy-market)
+  - [Security Constrained Unit Commitment (SCUC)](/wiki/security-constrained-unit-commitment) &nbsp; [Security Constrained Economic Dispatch (SCED)](/wiki/security-constrained-economic-dispatch)
+  - [Locational Marginal Price (LMP)](/wiki/locational-marginal-price)
 
 <br>
