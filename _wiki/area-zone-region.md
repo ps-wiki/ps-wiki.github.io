@@ -34,7 +34,7 @@ URL: <https://hifld-geoplatform.hub.arcgis.com/datasets/geoplatform::control-are
 
 Map of [Control Areas](https://hifld-geoplatform.hub.arcgis.com/maps/db7622e5ebdd40428fcafbd1615d621a)
 
-**Loss Zone** <d-cite key="matpower"></d-cite>
+**Loss Zone** <d-cite key="matpowerv71"></d-cite> (p139)
 
 In MATPOWER, there is a bus parameter named "ZONE", and it means loss zone.
 
