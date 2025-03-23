@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/wiki/";
           },
+        },{id: "nav-events",
+          title: "events",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/events/";
+          },
         },{id: "nav-references",
           title: "references",
           description: "",
@@ -30,7 +37,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/changelog/";
           },
-        },{id: "wiki-30-minute-reserve-service",
+        },{id: "projects-the-february-2021-cold-weather-outages-in-texas-and-the-south-central-united-states",
+          title: 'The February 2021 Cold Weather Outages in Texas and the South Central United...',
+          description: "The Texas Winter Storm of 2021, also known as Winter Storm Uri, caused widespread power outages, water shortages, and significant economic damage across Texas due to extreme cold weather and inadequate winterization of the state&#39;s energy infrastructure.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2021-texas-winter-storm/";
+            },},{id: "wiki-30-minute-reserve-service",
           title: '30-Minute Reserve Service',
           description: "can be satisfied by online or offline resources that are able to respond in 30 minutes or less.",
           section: "Wiki",handler: () => {
@@ -105,6 +117,11 @@ ninja.data = [{
           description: "CIM. A set of open standards for representing power system components",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/common-information-model/";
+            },},{id: "wiki-compliance-factor",
+          title: 'Compliance Factor',
+          description: "CF.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/compliance-factor/";
             },},{id: "wiki-contingency-analysis",
           title: 'Contingency Analysis',
           description: "A list of network elements to be simulated as disconnected.",

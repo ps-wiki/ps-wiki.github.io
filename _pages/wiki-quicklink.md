@@ -19,12 +19,10 @@
 
 **[Reserve](/wiki/reserve)**
 
+- [Operating Reserve](/wiki/operating-reserve)
+  - [Operating Reserve – Spinning](/wiki/operating-reserve-spinning) &nbsp; [Operating Reserve – Non-Spinning](/wiki/operating-reserve-non-spinning)
 - [Contingency Reserve](/wiki/contingency-reserve) &nbsp; [Regulating Reserve](/wiki/regulating-reserve)
 - [Spinning Reserve (a.k.a. Synchronized Reserve)](/wiki/spinning-reserve) &nbsp; [Non-Synchronized Reserve](/wiki/non-synchronized-reserve) &nbsp; [Secondary Reserve](/wiki/secondary-reserve) &nbsp; [Non-Spinning Reserve](/wiki/non-spinning-reserve)
-- [Operating Reserve](/wiki/operating-reserve)
-
-  - [Operating Reserve – Spinning](/wiki/operating-reserve-spinning) &nbsp; [Operating Reserve – Non-Spinning](/wiki/operating-reserve-non-spinning)
-
 - [Synchronized Reserve Service](/wiki/synchronized-reserve-service) &nbsp; [Contingency Reserve Service](/wiki/contingency-reserve-service) &nbsp; [30-Minute Reserve Service](/wiki/30-minute-reserve-service)
 
 **Applications**
