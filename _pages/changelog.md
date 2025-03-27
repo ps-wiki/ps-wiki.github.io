@@ -11,6 +11,10 @@ toc:
 
 ## 2025
 
+### 03-27
+
+- Update the item [Digital Twin](/wiki/digital-twin) with more details
+
 ### 03-22
 
 - Rename item <u>Economic Dispatch</u> to [Security Constrained Economic Dispatch](/wiki/security-constrained-economic-dispatch) and remove the redundant content
