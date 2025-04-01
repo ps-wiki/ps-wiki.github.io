@@ -15,7 +15,8 @@ It spans the object's lifecycle, is updated from real-time data and uses simulat
 **Digital Twin** <d-cite key="fuller2020digital"></d-cite>
 
 If the data flows between an existing physical object and a digital object, and they are fully integrated in both directions, this constituted the reference “Digital Twin”.
-A change made to the physical object automatically leads to a change in the digital object and vice versa.Figure 1. illustrates a Digital Twin.
+A change made to the physical object automatically leads to a change in the digital object and vice versa.
+Figure 1. illustrates a Digital Twin.
 
 <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid
