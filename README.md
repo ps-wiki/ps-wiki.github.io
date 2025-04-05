@@ -21,4 +21,4 @@ The website is adapted from the [al-folio](https://github.com/alshedivat/al-foli
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/ps-wiki/ps-wiki.github.io/blob/main/LICENSE).
+This project is licensed under the [CC-BY-NC 4.0](./LICENSE).
