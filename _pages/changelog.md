@@ -11,6 +11,10 @@ toc:
 
 ## 2025
 
+### 05-07
+
+- Add item <u>eGrid Subregions</u> in [Area, Zone, Region](/wiki/area-zone-region)
+
 ### 03-27
 
 - Update the item [Digital Twin](/wiki/digital-twin) with more details
