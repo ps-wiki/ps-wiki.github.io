@@ -11,6 +11,10 @@ toc:
 
 ## 2025
 
+### 05-12
+
+- Add item <u>Common Grid Model Exchange Standard (CGMES)</u> in [Common Information Model](/wiki/common-information-model)
+
 ### 05-07
 
 - Add item <u>eGrid Subregions</u> in [Area, Zone, Region](/wiki/area-zone-region)
