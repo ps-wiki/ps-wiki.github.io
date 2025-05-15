@@ -9,17 +9,20 @@ subtitle: An open wiki for power systems engineers, researchers, and students.
 [![GitHub Repo stars](https://img.shields.io/github/stars/ps-wiki/ps-wiki.github.io)](https://github.com/ps-wiki/ps-wiki.github.io)
 [![Author ps-wiki](https://img.shields.io/badge/ps-wiki-b820f9?labelColor=b820f9&logo=githubsponsors&logoColor=fff)](https://github.com/ps-wiki)
 
-## How to Use This Wiki
+## Introduction
 
-This wiki serves as a resource for power systems engineers, researchers, and students, providing quick access to and clear explanations of terminologies in the power systems field, particularly when multiple definitions or interpretations exist.
+This open-access wiki is designed to help power system professionals, researchers, and students quickly find clear, concise definitions of key terms and acronyms in the industry.
+Whenever a concept has multiple interpretations—whether in academic papers, technical standards, or industry reports—our goal is to present relevant definitions side by side, with citations to the original sources.
 Here are some tips on how to make the most of it:
 
-1. **Navigating the Wiki**: Use the table of wiki or search function to quickly find the terminology or topic you're interested in.
-1. **Understanding Entries**: Each term is defined based on excerpts from sources such as papers, standards, and reports. Please note that these definitions are linguistic in nature.
-1. **Staying Updated**: Terminologies in the power systems field can evolve. Check back periodically for updates and new entries.
-1. **Contributing**: If you notice any errors or omissions, or if you have suggestions for improvement, feel free to open an issue or submit a pull request on the repository.
+## How to Use
 
-## Common Acronyms
+1. **Browse or search**: Navigate via the wiki or use the search bar to locate terms instantly.
+1. **Compare definitions**: Some entries include excerpts from multiple sources—standards, peer-reviewed papers, and industry guidelines—so you can see how usage varies.
+1. **Stay current**: Terminology evolves as the field advances. We update entries regularly; check back for the latest additions and revisions.
+1. **Contribute**: Spot an error, omission, or new term? Please open an issue or submit a pull request on our GitHub repository.
+
+## Acronyms & Abbreviations
 
 |---------|-------------------------------------------------|
 | BES | Bulk Electric System |
@@ -59,9 +62,7 @@ Language is inherently ambiguous, and power system terminologies are no exceptio
 
 ## Disclaimer
 
-When consulting this wiki, please keep the following in mind:
-
-- **Not a primary reference:** Most items are excerpted from various sources.
-- **Not comprehensive:** Some important terminologies may be missing.
-- **Not authoritative:** The terminologies are not rigorously proven mathematical theories.
-- **Not up-to-date:** Terminologies are subject to interpretation and may change over time.
+- **Not a primary source:** We quote and cite definitions from existing standards, papers, and reports.
+- **Not exhaustive:** Some important terminologies may be missing.
+- **Not rigorous:** The terminologies are not rigorously proven mathematical theories.
+- **Subject to change:** As power systems evolve, definitions may be updated.
