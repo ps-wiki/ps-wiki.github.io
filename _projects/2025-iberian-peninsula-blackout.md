@@ -1,6 +1,7 @@
 ---
 layout: distill
 title: 2025 Iberian Peninsula blackout
+importance: 2
 description: On Monday, 28 April 2025, a major power blackout occurred across the Iberian Peninsula affecting mainland Portugal and peninsular Spain, where electric power was interrupted for about ten hours in most of the Peninsula and longer in some areas.
 bibliography: papers.bib
 ---
