@@ -37,8 +37,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/changelog/";
           },
-        },{id: "projects-the-february-2021-cold-weather-outages-in-texas-and-the-south-central-united-states",
-          title: 'The February 2021 Cold Weather Outages in Texas and the South Central United...',
+        },{id: "projects-2020-improve-transmission-line-ratings",
+          title: '2020 Improve Transmission Line Ratings',
+          description: "Dynamic Line Rating (DLR) is used to improve transmission line ratings.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2020-improve-transmission-line-ratings/";
+            },},{id: "projects-2021-cold-weather-outages-in-texas-and-the-south-central-united-states",
+          title: '2021 Cold Weather Outages in Texas and the South Central United States',
           description: "The Texas Winter Storm of 2021, also known as Winter Storm Uri, caused widespread power outages, water shortages, and significant economic damage across Texas due to extreme cold weather and inadequate winterization of the state&#39;s energy infrastructure.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2021-texas-winter-storm/";
@@ -47,11 +52,6 @@ ninja.data = [{
           description: "On Monday, 28 April 2025, a major power blackout occurred across the Iberian Peninsula affecting mainland Portugal and peninsular Spain, where electric power was interrupted for about ten hours in most of the Peninsula and longer in some areas.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2025-iberian-peninsula-blackout/";
-            },},{id: "projects-improve-transmission-line-ratings",
-          title: 'Improve Transmission Line Ratings',
-          description: "",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/improve-transmission-line-ratings/";
             },},{id: "wiki-30-minute-reserve-service",
           title: '30-Minute Reserve Service',
           description: "can be satisfied by online or offline resources that are able to respond in 30 minutes or less.",
