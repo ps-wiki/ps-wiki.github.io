@@ -11,6 +11,10 @@ toc:
 
 ## 2025
 
+### 05-15
+
+- Add [Improve Transmission Line Ratings](/projects/improve-transmission-line-ratings) in Events
+
 ### 05-12
 
 - Add item <u>Common Grid Model Exchange Standard (CGMES)</u> in [Common Information Model](/wiki/common-information-model)
