@@ -13,7 +13,6 @@ subtitle: An open wiki for power systems engineers, researchers, and students.
 
 This open-access wiki is designed to help power system professionals, researchers, and students quickly find clear, concise definitions of key terms and acronyms in the industry.
 Whenever a concept has multiple interpretations—whether in academic papers, technical standards, or industry reports—our goal is to present relevant definitions side by side, with citations to the original sources.
-Here are some tips on how to make the most of it:
 
 ## How to Use
 
