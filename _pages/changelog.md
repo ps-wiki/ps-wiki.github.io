@@ -13,8 +13,8 @@ toc:
 
 ### 05-15
 
-- Add [2025 Iberian Peninsula blackout](/projects/2025-iberian-peninsula-blackout) in Events
-- Add [Improve Transmission Line Ratings](/projects/improve-transmission-line-ratings) in Events
+- Add events: [2025 Iberian Peninsula blackout](/projects/2025-iberian-peninsula-blackout) and [Improve Transmission Line Ratings](/projects/improve-transmission-line-ratings)
+- Add item: <u>Dynamic Line Ratings</u> in [Dynamic Line Ratings](/wiki/dynamic-line-ratings) and some relevant definitions by MISO
 
 ### 05-12
 
