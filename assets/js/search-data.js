@@ -212,6 +212,11 @@ ninja.data = [{
           description: "Any perturbation or sudden loss of generation or interruption of load",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/distrubance/";
+            },},{id: "wiki-dynamic-line-ratings",
+          title: 'Dynamic Line Ratings',
+          description: "Minimum level of system inertia necessary to ensure deployment of frequency responsive reserves.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/dynamic-line-ratings/";
             },},{id: "wiki-electrical-resonance",
           title: 'Electrical Resonance',
           description: "The behavior of power systems with conventional turbine-generators and variable speed induction generators.",
