@@ -10,6 +10,7 @@ authors:
     url: https://jinningwang.github.io
 date: 2025-06-17
 ---
+
 **Cascading Outage** by IEEE <d-cite key="ieee2014cascading"></d-cite>
 
 A cascading outage is a sequence of events in which an initial disturbance, or a set of disturbances, triggers a sequence of one or more dependent component outages:
