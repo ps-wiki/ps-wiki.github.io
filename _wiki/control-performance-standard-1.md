@@ -65,7 +65,7 @@ Where $\epsilon1$ is a constant derived from a targeted frequency bound for each
 - Quebec Interconnection $\epsilon1 = 0.021~Hz$
 
 > A clock-minute average is the average of the reporting Balancing Authority’s valid measured variable (i.e., for Reporting ACE (RACE) and for Frequency Error) for each sampling cycle during a given clock-minute.
-> {: .block-warning }
+{: .block-warning }
 
 **Clock-Minute Average of Reporting ACE (RACE)**
 
@@ -86,7 +86,7 @@ CF_{\text{clock-minute}}= \left[ \left( \frac{RACE}{-10B} \right)_{\text{clock-m
 $$
 
 > Normally, 60 clock-minute averages of the reporting Balancing Authority’s Reporting ACE and Frequency Error will be used to compute the hourly average compliance factor
-> {: .block-warning }
+{: .block-warning }
 
 **Hourly Average Compliance Factor ($ CF\_{\text{clock-hour}} $)**
 
@@ -95,7 +95,7 @@ CF_{\text{clock-hour}}=\frac{\sum CF_{\text{clock-minute}}}{n_\text{clock-minute
 $$
 
 > The reporting Balancing Authority shall be able to recalculate and store each of the respective clock-hour averages ($CF_{\text{clock-hour average-month}}$) and the data samples for each 24-hour period (one for each clock-hour; i.e., hour ending (HE) 0100, HE 0200, ..., HE 2400).
-> {: .block-warning }
+{: .block-warning }
 
 **Monthly Compliance Factor ($CF_{\text{month}}$)**
 
@@ -117,4 +117,4 @@ $$
 
 > To ensure that the average Reporting ACE and Frequency Error calculated for any one-minute interval is representative of that time interval, it is necessary that at least 50 percent of both the Reporting ACE and Frequency Error sample data during the one-minute interval is valid.
 > If the recording of Reporting ACE or Frequency Error is interrupted such that less than 50 percent of the one-minute sample period data is available or valid, then that one-minute interval is excluded from the CPS1 calculation.
-> {: .block-warning }
+{: .block-warning }
