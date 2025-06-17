@@ -1,7 +1,7 @@
 ---
 layout: distill
-title: DER
-description: Distributed Energy Resources
+title: Distributed Energy Resources
+description: DER
 tags: generation, IEEE
 category: wiki
 bibliography: papers.bib
