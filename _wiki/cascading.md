@@ -2,7 +2,7 @@
 layout: distill
 title: Cascading
 description: The uncontrolled successive loss of System Elements triggered by an incident
-tags: event, IEEE
+tags: event, NERC
 category: wiki
 bibliography: papers.bib
 authors:
@@ -12,13 +12,11 @@ date: 2025-03-15
 last_update: 2025-06-17
 ---
 
-**Cascading** <d-cite key="nerc2024glossary"></d-cite>
+### Definition by NERC
 
-The uncontrolled **successive loss** of System Elements triggered by an incident at any location.
-Cascading results in widespread electric service interruption that cannot be restrained from sequentially spreading beyond an area predetermined by studies.
+Source: <d-cite key="nerc2024glossary"></d-cite>
 
-Note:
+> The uncontrolled **successive loss** of System Elements triggered by an incident at any location. Cascading results in widespread electric service interruption that cannot be restrained from sequentially spreading beyond an area predetermined by studies.
 
-- This version is approved by FERC on 1/21/2016.
-- Another version of the term "Cascading" was approved by FERC on 3/16/2007 and became inactive on 6/30/2016.
-- The term "Cascading Outages" was remanded by FERC on 12/27/2007.
+> This version is approved by FERC on 1/21/2016. Another version of the term "Cascading" was approved by FERC on 3/16/2007 and became inactive on 6/30/2016. The term "Cascading Outages" was remanded by FERC on 12/27/2007.
+{: .block-tip }
