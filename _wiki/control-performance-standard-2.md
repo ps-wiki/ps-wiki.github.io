@@ -9,7 +9,7 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_modified: 2025-06-16
+last_update: 2025-06-16
 ---
 
 **Control Performance Standard 2** (CPS2) <d-cite key="nerc2015bal001"></d-cite> (p22)

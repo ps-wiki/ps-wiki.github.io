@@ -9,7 +9,7 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_modified: 2025-05-07
+last_update: 2025-05-07
 ---
 
 **Balancing Authority Area** <d-cite key="nerc2024glossary"></d-cite>

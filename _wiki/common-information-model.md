@@ -9,7 +9,7 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_modified: 2025-06-17
+last_update: 2025-06-17
 ---
 
 **Common Information Model (CIM)** <d-cite key="epri2021cim"></d-cite>

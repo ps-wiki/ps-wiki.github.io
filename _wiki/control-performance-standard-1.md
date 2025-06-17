@@ -9,7 +9,7 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_modified: 2025-06-16
+last_update: 2025-06-16
 ---
 
 **Control Performance Standard 1** (CPS1) <d-cite key="nerc2021balancing"></d-cite> (p29)

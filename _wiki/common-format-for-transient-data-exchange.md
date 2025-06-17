@@ -9,7 +9,7 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_modified: 2025-06-17
+last_update: 2025-06-17
 ---
 
 **Common Format for Transient Data Exchange (COMTRADE) for Power Systems** <d-cite key="ieee1999comtrade"></d-cite> **INACTIVE NOW**

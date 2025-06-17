@@ -9,7 +9,7 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_modified: 2025-06-17
+last_update: 2025-06-17
 ---
 
 **black-start** <d-cite key="ieee2025std2988"></d-cite> (p14) by IEEE:
