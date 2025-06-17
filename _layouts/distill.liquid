@@ -67,6 +67,12 @@
       {% endif %}
 
       <d-article>
+        {% if page.last_modified %}
+          <p>
+            Last Modified: {{ page.last_modified | date: "%B %d, %Y" }}
+          </p>
+          <hr style="margin:0.5em;">
+        {% endif %}
         {% if page.toc %}
           <d-contents>
             <nav class="l-text figcaption">
