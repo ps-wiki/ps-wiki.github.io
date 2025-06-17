@@ -17,4 +17,4 @@ PJM calculates clock-minute averages of the instantaneous data and stores the on
 
 - ACE (one minute)
 - Frequency (one minute)
-- CF(compliance factor)
+- CF (compliance factor)
