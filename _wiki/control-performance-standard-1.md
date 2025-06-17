@@ -55,13 +55,14 @@ CF = \frac{CF_{\text{12-month}}}{\epsilon1^2}
 $$
 
 Where $\epsilon1$ is a constant derived from a targeted frequency bound for each Interconnection:
-- Eastern Interconnection $\epsilon1 = 0.018~Hz$ 
-- Western Interconnection $\epsilon1 = 0.0228~Hz$ 
-- ERCOT Interconnection $\epsilon1 = 0.030~Hz$ 
-- Quebec Interconnection $\epsilon1 = 0.021~Hz$ 
+
+- Eastern Interconnection $\epsilon1 = 0.018~Hz$
+- Western Interconnection $\epsilon1 = 0.0228~Hz$
+- ERCOT Interconnection $\epsilon1 = 0.030~Hz$
+- Quebec Interconnection $\epsilon1 = 0.021~Hz$
 
 > A clock-minute average is the average of the reporting Balancing Authority’s valid measured variable (i.e., for Reporting ACE (RACE) and for Frequency Error) for each sampling cycle during a given clock-minute.
-{: .block-warning }
+> {: .block-warning }
 
 **Clock-Minute Average of Reporting ACE (RACE)**
 
@@ -69,29 +70,29 @@ $$
 {\frac{RACE}{-10B}}_{\text{clock-minute}} = \frac{\frac{\sum RACE_{\text{sampling cycles in clock-minute}}}{n_\text{sampling cycles in clock-minute}}}{-10B}
 $$
 
-**Clock-Minute Average of Frequency Error ($ \Delta F_{\text{clock-minute}} $)**
+**Clock-Minute Average of Frequency Error ($ \Delta F\_{\text{clock-minute}} $)**
 
 $$
 \Delta F_{\text{clock-minute}} = \frac{\sum \Delta F_{\text{sampling cycles in clock-minute}}}{n_\text{sampling cycles in clock-minute}}
 $$
 
-**Balancing Authority's Clock-Minute Compliance Factor ($ CF_{\text{clock-minute}} $)**
+**Balancing Authority's Clock-Minute Compliance Factor ($ CF\_{\text{clock-minute}} $)**
 
 $$
 CF_{\text{clock-minute}}= \left[ \left( \frac{RACE}{-10B} \right)_{\text{clock-minut}e} * \Delta F_{\text{clock-minute}} \right]
 $$
 
 > Normally, 60 clock-minute averages of the reporting Balancing Authority’s Reporting ACE and Frequency Error will be used to compute the hourly average compliance factor
-{: .block-warning }
+> {: .block-warning }
 
-**Hourly Average Compliance Factor ($ CF_{\text{clock-hour}} $)**
+**Hourly Average Compliance Factor ($ CF\_{\text{clock-hour}} $)**
 
 $$
 CF_{\text{clock-hour}}=\frac{\sum CF_{\text{clock-minute}}}{n_\text{clock-minute samples in hour}}
 $$
 
 > The reporting Balancing Authority shall be able to recalculate and store each of the respective clock-hour averages ($CF_{\text{clock-hour average-month}}$) and the data samples for each 24-hour period (one for each clock-hour; i.e., hour ending (HE) 0100, HE 0200, ..., HE 2400).
-{: .block-warning }
+> {: .block-warning }
 
 **Monthly Compliance Factor ($CF_{\text{month}}$)**
 
@@ -112,5 +113,5 @@ CF_{\text{12-month}} = \frac{\sum_{i=1}^{12} (CF_{\text{month-i}}) (n_\text{one-
 $$
 
 > To ensure that the average Reporting ACE and Frequency Error calculated for any one-minute interval is representative of that time interval, it is necessary that at least 50 percent of both the Reporting ACE and Frequency Error sample data during the one-minute interval is valid.
-> If the recording of Reporting ACE or Frequency Error is interrupted such that less than 50 percent of the one-minute sample period data is available or valid, then that one-minute interval is excluded from the CPS1 calculation. 
-{: .block-warning }
+> If the recording of Reporting ACE or Frequency Error is interrupted such that less than 50 percent of the one-minute sample period data is available or valid, then that one-minute interval is excluded from the CPS1 calculation.
+> {: .block-warning }
