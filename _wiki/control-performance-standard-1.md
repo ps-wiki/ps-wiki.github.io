@@ -12,12 +12,16 @@ date: 2025-03-15
 last_update: 2025-06-17
 ---
 
-### Definition By NERC <d-cite key="nerc2021balancing"></d-cite> (p29)
+### Definition By NERC
+
+Source: <d-cite key="nerc2021balancing"></d-cite> p29
 
 - CPS1 assigns each Control Area a share of the responsibility for control of Interconnection frequency.
 - CPS1 is a **yearly** (i.e., rolling twelve month) standard that measures impact on frequency error, with a 100 percent minimum allowable score.
 
-### Explanation by NERC <d-cite key="nerc2015bal001background"></d-cite> (p3)
+### Explanation by NERC
+
+Source: <d-cite key="nerc2015bal001background"></d-cite> p3
 
 CPS1 is a:
 
@@ -25,7 +29,9 @@ CPS1 is a:
 - Measure of ACE in combination with the Interconnection’s frequency error
 - Based on an equation derived from frequency-based statistical theory
 
-### Calculation by NERC <d-cite key="nerc2015bal001"></d-cite> p5
+### Calculation by NERC
+
+Source: <d-cite key="nerc2015bal001"></d-cite> p5
 
 $$
 CPS1 = (2 - CF) * 100\%
@@ -79,37 +85,19 @@ $$
 **Monthly Compliance Factor ($CF_{\text{month}}$)**
 
 $$
-CF_{\text{clock-hour average-month}} = \frac{\sum_{\text{days-in-month}} CF_{\text{clock-hour} }{
-    \sum_{\text{days-in-month}} n_{\text{one-minute samples in clock-hour}}}
+CF_{\text{clock-hour average-month}} = \frac{\sum_{\text{days-in-month}} \left[ \left( CF_\text{clock-hour} \right) \left( n_\text{one-minute samples in clock-hour} \right) \right] }{
+\sum_{\text{days-in-month}} \left[n_{\text{one-minute samples in clock-hour}} \right]}
 $$
 
 $$
-CF_{clock-hour average-month} = 
-\frac{
-    \sum_{\text{days-in-month}} 
-    \left[
-        \left(CF_{clock-hour}}\right)
-        \left(n_{\text{one-minute samples in clock-hour}}\right)
-    \right]
-}{
-    \sum_{\text{days-in-month}} 
-    \left[
-        n_{\text{one-minute samples in clock-hour}}
-    \right]
-}
-$$
-
-$$
-\begin{split}
-CF_{month} = \frac{\sum_{days-in-month} \sum_{hours-in-day} [(CF_{clock-hour~average-month}) (n_{one-minute~samples~in~clock-hour~averages})]}{
-\sum_{days-in-month} \sum_{hours-in-day} [n_{one-minute~samples~in~clock-hour~averages}]}
-\end{split}
+CF_{\text{month}} = \frac{\sum_{\text{hours-in-day}} \left[ \left( CF_\text{clock-hour average-month} \right) \left( n_\text{one-minute samples in clock-hour-averages} \right) \right] }{
+\sum_{\text{hours-in-day}} \left[n_{\text{one-minute samples in clock-hour averages}} \right]}
 $$
 
 **12-Month Compliance Factor ($CF_{12-month}$)**
 
 $$
-CF_{12-month} = \frac{\sum_{i=1}^{12} [(CF_{month})_i (n_{one-minute~samples~in~month})_i]}{\sum_{i=1}^{12} (n_{one-minute~samples~in~month})_i}
+CF_{\text{12-month}} = \frac{\sum_{i=1}^{12} (CF_{\text{month-i}}) (n_\text{one-minute samples in month-i})}{\sum_{i=1}^{12} (n_\text{one-minute samples in month-i}) }
 $$
 
 > To ensure that the average Reporting ACE and Frequency Error calculated for any one-minute interval is representative of that time interval, it is necessary that at least 50 percent of both the Reporting ACE and Frequency Error sample data during the one-minute interval is valid.
