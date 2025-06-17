@@ -12,17 +12,21 @@ date: 2025-03-15
 last_update: 2025-06-17
 ---
 
-**Common Information Model (CIM)** <d-cite key="epri2021cim"></d-cite>
+### Definition by EPRI
 
-A set of **open standards** for representing power system components originally developed by the EPRI in North America and now a series of standards under the IEC.
+Source: <d-cite key="epri2021cim"></d-cite>
 
-**CIM** <d-cite key="anderson2023cim"></d-cite>
+> A set of **open standards** for representing power system components originally developed by the EPRI in North America and now a series of standards under the IEC.
 
-An abstract information model that can be used to model an electrical network and the various equipment used on the network. CIM is widely used for data exchange of bulk transmission power systems and is now beginning to find increasing use for distribution modeling and analysis. By using a common model, utilities, vendors, and researchers from both academia and industry can reduce the effort and cost of data integration, and instead focus on developing increased functionality for managing and optimizing the smart grid of the future.
+### Definition by PNNL
+
+Source: <d-cite key="anderson2023cim"></d-cite>
+
+> An abstract information model that can be used to model an electrical network and the various equipment used on the network. CIM is widely used for data exchange of bulk transmission power systems and is now beginning to find increasing use for distribution modeling and analysis. By using a common model, utilities, vendors, and researchers from both academia and industry can reduce the effort and cost of data integration, and instead focus on developing increased functionality for managing and optimizing the smart grid of the future.
 
 A brief history of CIM can be found in <d-cite key="wollenberg2015cimhistory"></d-cite>.
 
-A sample CIM file can be found at CIMpy at [https://github.com/sogno-platform/cimpy/tree/master/cimpy/examples/sampledata/CIGRE_MV](https://github.com/sogno-platform/cimpy/tree/master/cimpy/examples/sampledata/CIGRE_MV)
+A sample CIM file can be found at CIMpy at <https://github.com/sogno-platform/cimpy/tree/master/cimpy/examples/sampledata/CIGRE_MV>
 
 Two answers by Microsoft Copilot about CIM, RDF, UML, and XML, on 01-09-2025:
 
