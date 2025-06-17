@@ -5,9 +5,13 @@ permalink: /
 subtitle: An open wiki for power systems engineers, researchers, and students.
 ---
 
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://github.com/ps-wiki/ps-wiki.github.io/blob/main/LICENSE)
-[![GitHub Repo stars](https://img.shields.io/github/stars/ps-wiki/ps-wiki.github.io)](https://github.com/ps-wiki/ps-wiki.github.io)
-[![Author ps-wiki](https://img.shields.io/badge/ps-wiki-b820f9?labelColor=b820f9&logo=githubsponsors&logoColor=fff)](https://github.com/ps-wiki)
+<div class="header-section text-center">
+  <p class="lead"></p>
+</div>
+
+<div class="button-container text-center mb-5">
+  <a href="/wiki/" class="btn btn-primary btn-lg custom-button-style">Explore the Wiki Now</a>
+</div>
 
 ## Introduction
 
@@ -20,40 +24,6 @@ Whenever a concept has multiple interpretations—whether in academic papers, te
 1. **Compare definitions**: Some entries include excerpts from multiple sources—standards, peer-reviewed papers, and industry guidelines—so you can see how usage varies.
 1. **Stay current**: Terminology evolves as the field advances. We update entries regularly; check back for the latest additions and revisions.
 1. **Contribute**: Spot an error, omission, or new term? Please open an issue or submit a pull request on our GitHub repository.
-
-## Acronyms & Abbreviations
-
-|---------|-------------------------------------------------|
-| BES | Bulk Electric System |
-| BPS | Bulk Power System |
-| FERC | Federal Energy Regulatory Commission |
-| NERC | North American Electric Reliability Corporation |
-| EPRI | Electric Power Research Institute |
-| IEC | International Electrotechnical Commission |
-| ENTSO-E | European Network of Transmission System Operators for Electricity |
-| CIGRE | International Council on Large Electric Systems |
-
-<br>
-
-|---------|-------------------------------------------------|
-| AGC | Automatic Generation Control |
-| ACE | Area Control Error |
-| IBR | Inverter-Based Resources |
-| DER | Distributed Energy Resources |
-| HVDC | High Voltage Direct Current |
-| FACTS | Flexible Alternating Current Transmission System |
-
-<br>
-
-|---------|-------------------------------------------------|
-| SOL | System Operating Limit |
-| IROL | Interconnection Reliability Operating Limit |
-| EMS | Energy Management System |
-| LMP | Locational Marginal Price |
-| GSF | Generator Shift Factor |
-| DFAX | Distribution Factors |
-
-<br>
 
 ## Why This Wiki Exists
 
