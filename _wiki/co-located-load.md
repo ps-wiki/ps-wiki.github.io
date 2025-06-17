@@ -9,11 +9,11 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
+last_update: 2025-06-17
 ---
 
-**Co-Located Load** <d-cite key="pjm2024colocated"></d-cite> by PJM
+### Definition by PJM
 
-A co-located load configuration refers to end-use customer load that is physically connected to the facilities of an existing or planned Customer Facility on the Interconnection Customer’s side of the Point of Interconnection (“POI”) to the PJM Transmission System (co-located Customer Facility).
-Co-located load is **distinct** from and does **not** include Station Power load.
-Examples of co-located load include a **data center**, **crypto currency mining operation**, **hydrogen hub**, etc.
-Although co-located load is located behind the POI, it still is electrically **connected and synchronized** to the PJM Transmission System when consuming power and therefore benefits from the use of the Transmission System and Ancillary Services.
+Source: <d-cite key="pjm2024colocated"></d-cite>
+
+> A co-located load configuration refers to end-use customer load that is physically connected to the facilities of an existing or planned Customer Facility on the Interconnection Customer’s side of the Point of Interconnection (“POI”) to the PJM Transmission System (co-located Customer Facility). Co-located load is **distinct** from and does **not** include Station Power load. Examples of co-located load include a **data center**, **crypto currency mining operation**, **hydrogen hub**, etc. Although co-located load is located behind the POI, it still is electrically **connected and synchronized** to the PJM Transmission System when consuming power and therefore benefits from the use of the Transmission System and Ancillary Services.
