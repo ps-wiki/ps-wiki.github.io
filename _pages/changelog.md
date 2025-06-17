@@ -11,6 +11,11 @@ toc:
 
 ## 2025
 
+### 06-16
+
+- Format change: add last modified date
+- Changed item: [Control Performance Standard 1](/wiki/control-performance-standard-1), [Control Performance Standard 2](/wiki/control-performance-standard-2)
+
 ### 05-15
 
 - Add events: [2025 Iberian Peninsula blackout](/projects/2025-iberian-peninsula-blackout) and [Improve Transmission Line Ratings](/projects/improve-transmission-line-ratings)
