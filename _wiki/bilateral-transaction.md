@@ -9,9 +9,11 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
+last_update: 2025-06-17
 ---
 
-**Bilateral Transaction** <d-cite key="ferc2020glossary"></d-cite> by FERC
+### Definition by FERC
 
-A direct contract between a seller and buyer outside of a centralized market or exchange (e.g. Nymex or an RTO/ISO).
-In energy markets, the buyer or seller usually finds his or her matching counter-party through a broker (e.g. voice brokers, ICE, etc.).
+Source: <d-cite key="ferc2020glossary"></d-cite>
+
+> A direct contract between a seller and buyer outside of a centralized market or exchange (e.g. Nymex or an RTO/ISO). In energy markets, the buyer or seller usually finds his or her matching counter-party through a broker (e.g. voice brokers, ICE, etc.).
