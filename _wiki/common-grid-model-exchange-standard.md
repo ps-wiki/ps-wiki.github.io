@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Common Grid Model Exchange Standard
-description: CGMES. A set of open standards for representing power system components
+description: CGMES.
 tags: data-format
 category: wiki
 bibliography: papers.bib

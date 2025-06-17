@@ -11,18 +11,6 @@ authors:
 date: 2025-03-15
 last_modified: 2025-06-17
 ---
-**Common Grid Model Exchange Standard (CGMES)** <d-cite key="tc2021iec61970"></d-cite>
-
-IEC 61970-600-1:2021 covers the definition of Common Grid Model Exchange Standard (CGMES), defines the main rules and application’s requirements to meet business requirements for assembled and merged model to fit relevant business services. This document does not define the business requirements, business processes nor how applications are implemented.
-This document defines how relevant Common Information Model (CIM) standards work together so that specific business requirements can be resolved.
-It also includes extensions to the Common Information Model (CIM).
-The current extensions are defined in IEC 61970-301:2020 and will be covered in its future Amendment 1, but additional extensions can be defined in other standards in the IEC 61970-600-series.
-The extensions can be used to define additional profiles or to expand IEC 61970-450-series or IEC 61968-13 profiles.
-However, primary CGMES includes additional constraints on existing profiles and validation of assembled and merged models that is based on existing profiles.
-This can be done by making optional attributes and associations mandatory (required).
-In addition, this document includes the specification of the serialisation that must be supported by referring to an existing standard defined in IEC 61970-550-series, e.g. IEC 61970-552, and making relevant constraints related to it.
-The goal is to achieve interoperability between applications using CGMES in a high-performance environment with combined minimum effort so that relevant business processes are satisfied.
-This first edition cancels and replaces IEC TS 61970-600-1 published in 2017. This edition constitutes a technical revision.
 
 **Common Information Model (CIM)** <d-cite key="epri2021cim"></d-cite>
 
@@ -59,44 +47,3 @@ Summary of what CIM is not:
 - CIM is not a software application: It provides a common data model for information exchange but is not an executable program.
 - CIM is not a database: While it can be used to define data structures, it is not a database management system.
 - CIM is not a communication protocol: It defines data models and schemas but does not specify how data is transmitted between systems.
-
-**Common Format for Event Data Exchange (COMFEDE) for Power Systems** <d-cite key="ieee2010comfede"></d-cite> **INACTIVE NOW**
-
-This standard defines a common format for the data files needed for the exchange of various types of power network events in order to facilitate event data integration and analysis from multiple data sources and from different vendor devices.
-The flexibility provided by digital devices in recording network fault event data in the electric utility industry has generated the need for a standard format for the exchange of data.
-These data are being used with various devices to enhance and automate the analysis, testing, evaluation, and simulation of power systems and related protection schemes during fault and disturbance conditions.
-Since each source of data may use a different proprietary format, a common data format is necessary to facilitate the exchange of such data between applications.
-This will facilitate the use of proprietary data in diverse applications and allow users of one proprietary system to use digital data from other systems.
-**A sample file is given in the source file.**
-
-Versions:
-Inactive
-
-- Draft: PC37.239/D04, Mar 2010 - Dec 31, 2010
-- Reserved: C37.239-2010 - Nov 11, 2010
-- Draft: C37.239 - Jan 01, 2010
-
-**Common Format for Transient Data Exchange (COMTRADE) for Power Systems** <d-cite key="ieee1999comtrade"></d-cite> **INACTIVE NOW**
-
-A common format for data files and exchange medium used for the interchange of various types of fault, test, or simulation data for electrical power systems is defined. Sources of transient data are described, and the case of disketts as an exchange medium is recommended. issues of sampling rates, filters, and sample rate conversions for transient data being exchanged are discussed. Files for data exchange are specified, as is the organization of the data. **A sample file is given in the source file.**
-
-Versions:
-Superseded
-
-- C37.111-1999 - Oct 15, 1999
-- C37.111-1991 - Oct 21, 1991
-
-Inactive
-
-- Reserved: C37.111-2013 - Apr 30, 2013
-- Redline: C37.111-2013 - Apr 30, 2013
-- Draft: PC37.111/D4, Jan 2012 - Jul 24, 2012
-
-**Common Format for Exchange of Solved Load Flow Data** <d-cite key="ieee1973loadflow"></d-cite>
-
-Also referred as common data format (CDF).
-This format is presently (_Jinning's Note: this format was used around the 1970s rather than 2020s_) being used throughout most of the eastern and north central United States and parts of Canada.
-By publishing through the national organization, it is intended that a common reference be established and maintained for those who wish to use the format.
-The paper presents a detailed description of the format as well as procedures for making revisions and additions.
-
-A matpower function to convert an IEEE CDF data file into a MATPOWER case struct at [https://matpower.org/doc/ref-manual/legacy/functions/cdf2mpc.html#cdf2mpc](https://matpower.org/doc/ref-manual/legacy/functions/cdf2mpc.html#cdf2mpc)
