@@ -72,16 +72,16 @@ ninja.data = [{
           description: "ACE. The instantaneous difference between net actual and scheduled interchange.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/area-control-error/";
-            },},{id: "wiki-area-zone-region",
-          title: 'Area, Zone, Region',
-          description: "Some geographical concepts in power systems",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/area-zone-region/";
             },},{id: "wiki-automatic-generation-control",
           title: 'Automatic Generation Control',
           description: "AGC. Automatic regulation of the power output of generators",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/automatic-generation-control/";
+            },},{id: "wiki-balancing-authority-area",
+          title: 'Balancing Authority Area',
+          description: "Some geographical concepts in power systems",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/balancing-authority-area/";
             },},{id: "wiki-balancing-authoritiy",
           title: 'Balancing Authoritiy',
           description: "The responsible entity within a Balancing Authority Area.",
@@ -139,7 +139,7 @@ ninja.data = [{
               window.location.href = "/wiki/compliance-factor/";
             },},{id: "wiki-contingency-analysis",
           title: 'Contingency Analysis',
-          description: "A list of network elements to be simulated as disconnected.",
+          description: "Procedures to study a contingency.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/contingency-analysis/";
             },},{id: "wiki-contingency-list",
@@ -162,6 +162,11 @@ ninja.data = [{
           description: "The unexpected failure or outage of a system component.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/contingency/";
+            },},{id: "wiki-control-area",
+          title: 'Control Area',
+          description: "",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/control-area/";
             },},{id: "wiki-control-performance-standard-1",
           title: 'Control Performance Standard 1',
           description: "CPS1. A standard that measures impact on frequency error",
@@ -242,6 +247,11 @@ ninja.data = [{
           description: "Minimum level of system inertia necessary to ensure deployment of frequency responsive reserves.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/dynamic-line-ratings/";
+            },},{id: "wiki-egrid-subregions",
+          title: 'eGrid Subregions',
+          description: "",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/egrid-subregions/";
             },},{id: "wiki-electrical-resonance",
           title: 'Electrical Resonance',
           description: "The behavior of power systems with conventional turbine-generators and variable speed induction generators.",
@@ -452,11 +462,21 @@ ninja.data = [{
           description: "A.k.a. EMS model. A computer representation of the power system facilities.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/real-time-reliability-model/";
+            },},{id: "wiki-region",
+          title: 'Region',
+          description: "Bulk power system reliability regions in North America",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/region/";
             },},{id: "wiki-regulating-reserve",
           title: 'Regulating Reserve',
           description: "Reserve for AGC to provide normal regulating margin.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/regulating-reserve/";
+            },},{id: "wiki-reliability-coordinator-area",
+          title: 'Reliability Coordinator Area',
+          description: "The collection of generation, transmission, and loads within the boundaries of the Reliability Coordinator.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/reliability-coordinator-area/";
             },},{id: "wiki-reliability",
           title: 'Reliability',
           description: "The probability of satisfactory operation of a power system over the long run.",
@@ -657,6 +677,11 @@ ninja.data = [{
           description: "A pricing mechanism for a specific zone within a control area.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/zonal-price/";
+            },},{id: "wiki-zone",
+          title: 'Zone',
+          description: "",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/zone/";
             },},{
         id: 'social-email',
         title: 'email',
