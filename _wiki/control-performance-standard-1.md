@@ -29,6 +29,17 @@ CPS1 is a:
 - Measure of ACE in combination with the Interconnection’s frequency error
 - Based on an equation derived from frequency-based statistical theory
 
+### Simple Calculation by NERC
+
+Source: <d-cite key="nerc2021balancing"></d-cite> p24
+
+CPS1 captures these relationships using statistical measures to determine each BA’s contribution to such “noise” relative to what is deemed permissible.
+The CPS1 equation can be simplified as follows:
+
+$$
+\text{CPS1} (\text{in percent}) = 100 * \left[ 2 – (\text{Constant}) * (\text{frequency error}) * (\text{ACE}) \right]
+$$
+
 ### Calculation by NERC
 
 Source: <d-cite key="nerc2015bal001"></d-cite> p5
