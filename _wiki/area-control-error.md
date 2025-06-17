@@ -5,6 +5,10 @@ description: ACE. The instantaneous difference between net actual and scheduled 
 tags: frequency, control, balancing, interchange
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
 ---
 
 **Area Control Error** (ACE) <d-cite key="nerc2024glossary"></d-cite>

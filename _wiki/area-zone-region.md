@@ -5,6 +5,11 @@ description: Some geographical concepts in power systems
 tags: balancing-authority, area, zone, region
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
+last_modified: 2025-05-07
 ---
 
 **Balancing Authority Area** <d-cite key="nerc2024glossary"></d-cite>

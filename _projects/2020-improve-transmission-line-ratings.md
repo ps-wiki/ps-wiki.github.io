@@ -5,7 +5,6 @@ importance: 3
 description: Dynamic Line Rating (DLR) is used to improve transmission line ratings.
 bibliography: papers.bib
 ---
-
 **PPL Electric Utilities implemented DLR resulted in estimated annual savings of $23 million.** `<d-cite key="pjm2022dlr"></d-cite>`
 
 Initiated in 2020 by transmission owner PPL Electric Utilities and facilitated by PJM, PPL Electric Utilities has said it expects the activation of dynamic line rating (DLR) technology to expand capacity and promote market efficiency on three historically congested lines.

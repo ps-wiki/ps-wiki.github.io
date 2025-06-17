@@ -5,6 +5,10 @@ description: BES. Transmission Elements and Power resources 100 kV or higher.
 tags: entity, transmission
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
 ---
 
 **Bulk Electric System** (BES) <d-cite key="nerc2024glossary"></d-cite>

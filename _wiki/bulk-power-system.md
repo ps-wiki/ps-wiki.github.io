@@ -5,6 +5,10 @@ description: BPS. Facilities and control systems for an transmission network.
 tags: entity, transmission, IEEE
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
 ---
 
 **Bulk-Power System** (BPS) <d-cite key="ieee2018std1547"></d-cite> (p23) by IEEE

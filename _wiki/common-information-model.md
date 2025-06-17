@@ -5,8 +5,12 @@ description: CIM. A set of open standards for representing power system componen
 tags: data-format
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
+last_modified: 2025-06-17
 ---
-
 **Common Grid Model Exchange Standard (CGMES)** <d-cite key="tc2021iec61970"></d-cite>
 
 IEC 61970-600-1:2021 covers the definition of Common Grid Model Exchange Standard (CGMES), defines the main rules and application’s requirements to meet business requirements for assembled and merged model to fit relevant business services. This document does not define the business requirements, business processes nor how applications are implemented.
@@ -30,7 +34,7 @@ An abstract information model that can be used to model an electrical network an
 
 A brief history of CIM can be found in <d-cite key="wollenberg2015cimhistory"></d-cite>.
 
-A sample CIM file can be found at CIMpy at <https://github.com/sogno-platform/cimpy/tree/master/cimpy/examples/sampledata/CIGRE_MV>
+A sample CIM file can be found at CIMpy at [https://github.com/sogno-platform/cimpy/tree/master/cimpy/examples/sampledata/CIGRE_MV](https://github.com/sogno-platform/cimpy/tree/master/cimpy/examples/sampledata/CIGRE_MV)
 
 Two answers by Microsoft Copilot about CIM, RDF, UML, and XML, on 01-09-2025:
 
@@ -95,4 +99,4 @@ This format is presently (_Jinning's Note: this format was used around the 1970s
 By publishing through the national organization, it is intended that a common reference be established and maintained for those who wish to use the format.
 The paper presents a detailed description of the format as well as procedures for making revisions and additions.
 
-A matpower function to convert an IEEE CDF data file into a MATPOWER case struct at <https://matpower.org/doc/ref-manual/legacy/functions/cdf2mpc.html#cdf2mpc>
+A matpower function to convert an IEEE CDF data file into a MATPOWER case struct at [https://matpower.org/doc/ref-manual/legacy/functions/cdf2mpc.html#cdf2mpc](https://matpower.org/doc/ref-manual/legacy/functions/cdf2mpc.html#cdf2mpc)

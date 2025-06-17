@@ -5,6 +5,10 @@ description: Services necessary to support the transmission of electric power.
 tags: transmission, reliability, ancillary, FERC
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
 ---
 
 **Ancillary Services** <d-cite key="ferc2020glossary"></d-cite> by FERC

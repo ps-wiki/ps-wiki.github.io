@@ -5,6 +5,10 @@ description: AGC. Automatic regulation of the power output of generators
 tags: frequency, generation, FERC
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
 ---
 
 Relevant items: [Fast Frequency Response](/wiki/fast-frequency-response) &nbsp; [Primary Control](/wiki/primary-control) &nbsp; [Secondary Control](/wiki/secondary-control) &nbsp; [Tertiary Control](/wiki/tertiary-control) &nbsp; [Frequency Regulation](/wiki/frequency-regulation) &nbsp; [Frequency Stability](/wiki/frequency-stability)

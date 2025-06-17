@@ -5,6 +5,10 @@ description: A list of network elements to be simulated as disconnected.
 tags: event
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
 ---
 
 Relevant items: [Contingency](/wiki/contingency)

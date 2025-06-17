@@ -5,6 +5,10 @@ description: Capacity deployed by the Balancing Authority to meet the Disturbanc
 tags: reserve, contingency, balancing-authority
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
 ---
 
 Relevant items: [Contingency Reserve Service](/wiki/contingency-reserve-service)

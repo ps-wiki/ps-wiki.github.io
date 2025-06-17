@@ -5,6 +5,10 @@ description: The ability to supply the demand and energy requirements of the end
 tags: adequacy, reliability
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
 ---
 
 **Adequacy** <d-cite key="nerc2013terminology"></d-cite>

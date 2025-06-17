@@ -5,6 +5,10 @@ description: A.k.a. Primary Reserve. Can be satisfied in 10 minutes or less.
 tags: reserve, contingency, balancing-authority
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
 ---
 
 Relevant items: [Contingency Reserve](/wiki/contingency-reserve)

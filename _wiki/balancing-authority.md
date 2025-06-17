@@ -5,6 +5,10 @@ description: The responsible entity within a Balancing Authority Area.
 tags: entity, frequency, balancing-authority
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
 ---
 
 **Balancing Authoritiy** <d-cite key="nerc2024glossary"></d-cite>

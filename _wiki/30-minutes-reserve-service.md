@@ -5,6 +5,10 @@ description: can be satisfied by online or offline resources that are able to re
 tags: reserve
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
 ---
 
 Relevant items: [Contingency Reserve](/wiki/contingency-reserve)

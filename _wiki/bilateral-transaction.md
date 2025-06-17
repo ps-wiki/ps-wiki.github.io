@@ -5,6 +5,10 @@ description: A direct contract between a seller and buyer outside of a centraliz
 tags: market, transaction, FERC
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
 ---
 
 **Bilateral Transaction** <d-cite key="ferc2020glossary"></d-cite> by FERC

@@ -5,6 +5,10 @@ description: A market for trading capacity credits.
 tags: market, capacity, economics, FERC
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
 ---
 
 **Capacity Markets** <d-cite key="ferc2020glossary"></d-cite> by FERC

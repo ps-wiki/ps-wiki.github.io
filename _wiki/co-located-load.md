@@ -5,6 +5,10 @@ description: Load connected to the an existing or planned facility.
 tags: load, transmission, ISO, PJM
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
 ---
 
 **Co-Located Load** <d-cite key="pjm2024colocated"></d-cite> by PJM
