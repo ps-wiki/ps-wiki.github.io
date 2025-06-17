@@ -40,6 +40,9 @@ $$
 \text{CPS1} (\text{in percent}) = 100 * \left[ 2 – (\text{Constant}) * (\text{frequency error}) * (\text{ACE}) \right]
 $$
 
+> The size of this constant changes over time for BAs with variable bias, but the effect can be ignored when considering minute-to-minute operation. It is equal to -10 \* B / ε1^2
+> {: .block-tip }
+
 ### Calculation by NERC
 
 Source: <d-cite key="nerc2015bal001"></d-cite> p5
