@@ -2,7 +2,7 @@
 layout: distill
 title: Balancing Authority Area
 description: Some geographical concepts in power systems
-tags: balancing-authority, area, zone, region
+tags: geography
 category: wiki
 bibliography: papers.bib
 authors:
