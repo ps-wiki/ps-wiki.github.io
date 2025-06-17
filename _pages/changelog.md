@@ -15,7 +15,7 @@ This page records major changes in this wiki.
 
 ### 06-17
 
-- Change format to include last modified date
+- Change format to include last updated date
 - Revise terms
 - Simplify change log
 
