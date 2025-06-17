@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Cascading Outage
-description: The uncontrolled successive loss of System Elements triggered by an incident
+description: A sequence of events in which an initial disturbance triggers dependent component outages
 tags: event, IEEE
 category: wiki
 bibliography: papers.bib
