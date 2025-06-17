@@ -13,6 +13,8 @@ date: 2025-03-15
 
 Relevant items: [Contingency Reserve](/wiki/contingency-reserve)
 
-**30-Minute Reserve Service** <d-cite key="pjm2024m10"></d-cite> (p27, Revision 45)
+### Definition By PJM
 
-30-Minute Reserve Service: can be satisfied by online or offline resources that are able to respond in 30 minutes or less.
+Source: <d-cite key="pjm2024m10"></d-cite> p27, Revision 45
+
+> 30-Minute Reserve Service: can be satisfied by online or offline resources that are able to respond in 30 minutes or less.

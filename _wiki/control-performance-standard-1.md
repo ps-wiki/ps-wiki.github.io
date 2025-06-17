@@ -41,7 +41,7 @@ $$
 $$
 
 > The size of this constant changes over time for BAs with variable bias, but the effect can be ignored when considering minute-to-minute operation. It is equal to -10 \* B / ε1^2
-{: .block-tip }
+> {: .block-tip }
 
 ### Calculation by NERC
 
