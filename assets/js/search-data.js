@@ -387,6 +387,11 @@ ninja.data = [{
           description: "Some electricity markets in North America",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/markets/";
+            },},{id: "wiki-most-severe-single-contingency",
+          title: 'Most Severe Single Contingency',
+          description: "A single contingency that would result in the greatest loss of resource output.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/most-sevre-single-contingency/";
             },},{id: "wiki-non-spinning-reserve",
           title: 'Non-Spinning Reserve',
           description: "Unconnected to the system but capable of serving demand within a specified time.",
