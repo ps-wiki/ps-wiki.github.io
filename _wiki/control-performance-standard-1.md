@@ -98,8 +98,10 @@ $$
 CF_{\text{clock-hour}}=\frac{\sum CF_{\text{clock-minute}}}{n_\text{clock-minute samples in hour}}
 $$
 
+<!-- prettier-ignore-start -->
 > The reporting Balancing Authority shall be able to recalculate and store each of the respective clock-hour averages ($CF_{\text{clock-hour average-month}}$) and the data samples for each 24-hour period (one for each clock-hour; i.e., hour ending (HE) 0100, HE 0200, ..., HE 2400).
 {: .block-warning }
+<!-- prettier-ignore-end -->
 
 **Monthly Compliance Factor ($CF_{\text{month}}$)**
 
