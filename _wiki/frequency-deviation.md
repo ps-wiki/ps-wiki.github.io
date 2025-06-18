@@ -5,10 +5,17 @@ description: A change in Interconnection frequency.
 tags: frequency, interconnection
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
+last_update: 2025-06-18
 ---
 
-**Frequency Deviation** <d-cite key="nerc2024glossary"></d-cite>
+### Definition by NERC
 
-A change in Interconnection frequency.
+Source: <d-cite key="nerc2024glossary"></d-cite>
+
+> A change in Interconnection frequency.
 
 <br>
