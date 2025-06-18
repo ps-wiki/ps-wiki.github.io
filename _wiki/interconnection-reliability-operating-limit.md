@@ -5,13 +5,19 @@ description: A System Operating Limit that, if violated, could lead to instabili
 tags: reliability, operating-limit, interconnection
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
+last_update: 2025-06-18
 ---
 
-**Interconnection Reliability Operating Limit** <d-cite key="nerc2024glossary"></d-cite>
+### Definition by NERC
 
-A System Operating Limit that, if violated, could lead to instability, uncontrolled separation, or cascading outages that adversely impact the reliability of the [Bulk Electric System](/wiki/bulk-electric-system)
+Source: <d-cite key="nerc2024glossary"></d-cite>
 
-**Interconnection Reliability Operating Limit Tv** <d-cite key="nerc2024glossary"></d-cite>
+> A System Operating Limit that, if violated, could lead to instability, uncontrolled separation, or cascading outages that adversely impact the reliability of the [Bulk Electric System](/wiki/bulk-electric-system)
 
-**The maximum time** that an Interconnection Reliability Operating Limit can be violated before the risk to the interconnection or other Reliability Coordinator Area(s) becomes greater than acceptable.
-Each Interconnection Reliability Operating Limit’s Tv shall be less than or equal to 30 minutes.
+A similar term, **Interconnection Reliability Operating Limit Tv**, is defined as follows:
+
+> **The maximum time** that an Interconnection Reliability Operating Limit can be violated before the risk to the interconnection or other Reliability Coordinator Area(s) becomes greater than acceptable. Each Interconnection Reliability Operating Limit’s Tv shall be less than or equal to 30 minutes.
