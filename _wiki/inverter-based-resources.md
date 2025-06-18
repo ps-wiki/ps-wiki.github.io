@@ -1,21 +1,28 @@
 ---
 layout: distill
-title: IBR
-description: Inverter-based Resources
+title: Inverter-based Resources
+description: IBR
 tags: generation
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
+last_update: 2025-06-18
 ---
 
-**Inverter-based resources** (IBR) <d-cite key="nerc2023inverter"></d-cite>
+### Definition by NERC
 
-Refer generally to BPS-connected facilities that have a power electronic interface between the AC grid and the source of electricity.
+Source: <d-cite key="nerc2023inverter"></d-cite>
 
-**What types of IBR exist?**
+> Refer generally to BPS-connected facilities that have a power electronic interface between the AC grid and the source of electricity.
 
-Inverter-based resources include modern wind turbines, meaning type 3 and type 4 wind turbines, solar photovoltaic, and battery energy storage resources, as well as HVDC circuits and FACTs devices like static synchronous compensators and static volt-ampere reactive compensators.
+Two clarifications from the source reference are excerpted here:
 
-**What is the difference between IBR and DER?**
+> **What types of IBR exist?**
+> Inverter-based resources include modern wind turbines, meaning type 3 and type 4 wind turbines, solar photovoltaic, and battery energy storage resources, as well as HVDC circuits and FACTs devices like static synchronous compensators and static volt-ampere reactive compensators.
 
-- [DER](/wiki/distributed-energy-resources) are generating resources located on the **distribution** system.
-- DER **may or may not** use inverter technology to interface with the AC grid; however, they are distinctly different than BPS-connected inverter-based resources (connected to transmission and sub-transmission levels).
+> **What is the difference between IBR and DER?**
+> - [DER](/wiki/distributed-energy-resources) are generating resources located on the **distribution** system.
+> - DER **may or may not** use inverter technology to interface with the AC grid; however, they are distinctly different than BPS-connected inverter-based resources (connected to transmission and sub-transmission levels).
