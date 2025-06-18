@@ -7,8 +7,9 @@ category: wiki
 bibliography: papers.bib
 ---
 
-**Flowgate** <d-cite key="nerc2024glossary"></d-cite>
+### Definition by NERC
 
-1. A portion of the Transmission system through which the Interchange Distribution Calculator calculates the power flow from Interchange Transactions.
+Source: <d-cite key="nerc2024glossary"></d-cite>
 
-2. A mathematical construct, comprised of one or more monitored transmission Facilities and optionally one or more contingency Facilities, used to analyze the impact of power flows upon the Bulk Electric System.
+> 1. A portion of the Transmission system through which the Interchange Distribution Calculator calculates the power flow from Interchange Transactions.
+> 2. A mathematical construct, comprised of one or more monitored transmission Facilities and optionally one or more contingency Facilities, used to analyze the impact of power flows upon the Bulk Electric System.
