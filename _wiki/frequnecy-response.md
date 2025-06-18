@@ -5,12 +5,19 @@ description: The ability of a system to react to a change in system frequency.
 tags: frequency, response, system
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
+last_update: 2025-06-18
 ---
 
 Relevant items: [Primary Control](/wiki/primary-control)
 
-**Frequency Response** <d-cite key="nerc2024glossary"></d-cite>
+### Definition by NERC
 
-(Equipment) The ability of a system or elements of the system to react or respond to a change in system frequency.
+Source: <d-cite key="nerc2024glossary"></d-cite>
 
-(System) The sum of the change in demand, plus the change in generation, divided by the change in frequency, expressed in megawatts per 0.1 Hertz **(MW/0.1 Hz)**.
+> (Equipment) The ability of a system or elements of the system to react or respond to a change in system frequency.
+
+> (System) The sum of the change in demand, plus the change in generation, divided by the change in frequency, expressed in megawatts per 0.1 Hertz **(MW/0.1 Hz)**.
