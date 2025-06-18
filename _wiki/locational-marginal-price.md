@@ -14,7 +14,7 @@ last_update: 2025-06-18
 
 ### Definition by PJM
 
-Source: <d-cite key="pjm2024m11"></d-cite> p21, Revision 134
+Source: <d-cite key="pjm2025m11"></d-cite> p21, Revision 134
 
 > Locational Marginal Price (LMP) is defined as the marginal price for energy at the location where the energy is delivered or received and is based on forecasted system conditions and the latest approved Real-time security constrained economic dispatch program solution.
 > LMP is expressed in dollars per megawatt-hour ($/MWh).
