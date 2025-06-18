@@ -7,7 +7,8 @@ category: wiki
 bibliography: papers.bib
 ---
 
-**Futures Market** <d-cite key="ferc2020glossary"></d-cite> by FERC
+### Definition by FERC
 
-A market in which contracts for future delivery of a commodity or a security are bought and sold.
-Nymex is the primary futures market for energy commodities in the United States.
+Source: <d-cite key="ferc2020glossary"></d-cite>
+
+> A market in which contracts for future delivery of a commodity or a security are bought and sold. Nymex is the primary futures market for energy commodities in the United States.
