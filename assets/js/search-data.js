@@ -62,6 +62,11 @@ ninja.data = [{
           description: "The ability to supply the demand and energy requirements of the end-use customers.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/adequacy/";
+            },},{id: "wiki-ambient-adjusted-ratings",
+          title: 'Ambient-Adjusted Ratings',
+          description: "",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/ambient-adjusted-ratings/";
             },},{id: "wiki-ancillary-services",
           title: 'Ancillary Services',
           description: "Services necessary to support the transmission of electric power.",
@@ -202,6 +207,41 @@ ninja.data = [{
           description: "A virtual representation to reflect a physical object accurately.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/digital-twin/";
+            },},{id: "wiki-distributed-energy-resources",
+          title: 'Distributed Energy Resources',
+          description: "DER",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/distributed-energy-resources/";
+            },},{id: "wiki-distribution-factors",
+          title: 'Distribution Factors',
+          description: "DFAX.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/distribution-factors/";
+            },},{id: "wiki-distribution-provider",
+          title: 'Distribution Provider',
+          description: "Provides and operates the “wires” between the transmission system and the end-use customer.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/distribution-provider/";
+            },},{id: "wiki-distribution",
+          title: 'Distribution',
+          description: "The act of distributing gas or electric power to customers.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/distribution/";
+            },},{id: "wiki-disturbance",
+          title: 'Disturbance',
+          description: "Any perturbation or sudden loss of generation or interruption of load",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/distrubance/";
+            },},{id: "wiki-dynamic-line-ratings",
+          title: 'Dynamic Line Ratings',
+          description: "DLR. A grid enhancing technology (GET) that provides real-time ratings of transmission lines based on current weather conditions.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/dynamic-line-ratings/";
+            },},{id: "wiki-egrid-subregions",
+          title: 'eGrid Subregions',
+          description: "",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/egrid-subregions/";
             },},{id: "wiki-cascading-outage",
           title: 'Cascading Outage',
           description: "A sequence of events in which an initial disturbance triggers dependent component outages",
@@ -222,41 +262,16 @@ ninja.data = [{
           description: "CGMES.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/common-grid-model-exchange-standard/";
-            },},{id: "wiki-distributed-energy-resources",
-          title: 'Distributed Energy Resources',
-          description: "DER",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/distributed-energy-resources/";
-            },},{id: "wiki-distribution-provider",
-          title: 'Distribution Provider',
-          description: "Provides and operates the “wires” between the transmission system and the end-use customer.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/distribution-provider/";
-            },},{id: "wiki-distribution",
-          title: 'Distribution',
-          description: "The act of distributing gas or electric power to customers.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/distribution/";
-            },},{id: "wiki-disturbance",
-          title: 'Disturbance',
-          description: "Any perturbation or sudden loss of generation or interruption of load",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/distrubance/";
-            },},{id: "wiki-dynamic-line-ratings",
-          title: 'Dynamic Line Ratings',
-          description: "Minimum level of system inertia necessary to ensure deployment of frequency responsive reserves.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/dynamic-line-ratings/";
-            },},{id: "wiki-egrid-subregions",
-          title: 'eGrid Subregions',
-          description: "",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/egrid-subregions/";
             },},{id: "wiki-electrical-resonance",
           title: 'Electrical Resonance',
           description: "The behavior of power systems with conventional turbine-generators and variable speed induction generators.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/electrical-resonance/";
+            },},{id: "wiki-emergency-rating",
+          title: 'Emergency Rating',
+          description: "",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/emergency-rating/";
             },},{id: "wiki-emergency",
           title: 'Emergency',
           description: "Abnormal system condition that requires automatic or immediate manual action.",
@@ -277,11 +292,11 @@ ninja.data = [{
           description: "EUE. A measure of the capability to continuously serve loads.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/expected-unserved-energy/";
-            },},{id: "wiki-factors",
-          title: 'Factors',
-          description: "Some sensitivity matrices, such as GSF, PTDF, LODF, BODF, OTDF, etc.",
+            },},{id: "wiki-facility-rating",
+          title: 'Facility Rating',
+          description: "",
           section: "Wiki",handler: () => {
-              window.location.href = "/wiki/factors/";
+              window.location.href = "/wiki/facility-rating/";
             },},{id: "wiki-fast-frequency-response",
           title: 'Fast Frequency Response',
           description: "FFR. Power in response to frequency changes during the arresting phase",
@@ -302,8 +317,13 @@ ninja.data = [{
           description: "FTR. Compensation contract for transmission charges due to grid congestion.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/financial-transmission-right/";
-            },},{id: "wiki-flexibility",
-          title: 'Flexibility',
+            },},{id: "wiki-flexibility-reserve",
+          title: 'Flexibility Reserve',
+          description: "Addressing variability and uncertainty on longer timescales than operating reserves and regulation service",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/flexibility-reserve/";
+            },},{id: "wiki-system-flexibility",
+          title: 'System Flexibility',
           description: "The ability to respond to system changes and uncertainties.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/flexibility/";
@@ -347,11 +367,11 @@ ninja.data = [{
           description: "Generators are adjusted away (off-cost) from their normal assignments (on-cost).",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/generation-redispatch/";
-            },},{id: "wiki-horizon",
-          title: 'Horizon',
-          description: "Time span",
+            },},{id: "wiki-generation-shift-factor",
+          title: 'Generation Shift Factor',
+          description: "GSF",
           section: "Wiki",handler: () => {
-              window.location.href = "/wiki/horizon/";
+              window.location.href = "/wiki/generation-shift-factor/";
             },},{id: "wiki-interchange",
           title: 'Interchange',
           description: "Energy transfers that cross Balancing Authority boundaries.",
@@ -377,6 +397,11 @@ ninja.data = [{
           description: "Inverter-based Resources",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/inverter-based-resources/";
+            },},{id: "wiki-line-outage-distribution-factor",
+          title: 'Line Outage Distribution Factor',
+          description: "LODF",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/line-outage-distribution-factor/";
             },},{id: "wiki-localtional-marginal-price",
           title: 'Localtional Marginal Price',
           description: "LMP. Marginal price for energy at the location delivered or received.",
@@ -397,6 +422,11 @@ ninja.data = [{
           description: "Some electricity markets in North America",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/markets/";
+            },},{id: "wiki-power-transfer-distribution-factor",
+          title: 'Power Transfer Distribution Factor',
+          description: "PTDF",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/power-transfer-distribution-factor/";
             },},{id: "wiki-most-severe-single-contingency",
           title: 'Most Severe Single Contingency',
           description: "A single contingency that would result in the greatest loss of resource output.",
@@ -437,6 +467,16 @@ ninja.data = [{
           description: "A repetitive motion that can be either undamped, positively damped, or negatively damped.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/oscillation/";
+            },},{id: "wiki-outage-transfer-distribution-factor",
+          title: 'Outage Transfer Distribution Factor',
+          description: "OTDF",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/outage-transfer-distribution-factor/";
+            },},{id: "wiki-participation-factors",
+          title: 'Participation Factors',
+          description: "One definition is about dispath and another is about small-signal stability.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/participation-factors/";
             },},{id: "wiki-primary-control",
           title: 'Primary Control',
           description: "A.k.a. Frequency Response.",
@@ -627,6 +667,11 @@ ninja.data = [{
           description: "The addition or modification of facilities of the Transmission System.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/transmission-expansion/";
+            },},{id: "wiki-transmission-planning-horizon",
+          title: 'Transmission Planning Horizon',
+          description: "Planning period",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/transmission-planning-horizon/";
             },},{id: "wiki-uncertainty",
           title: 'Uncertainty',
           description: "Two types of uncertainty.",
