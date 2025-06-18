@@ -5,8 +5,13 @@ description: Any perturbation or sudden loss of generation or interruption of lo
 tags: event
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
+last_update: 2025-06-18
 ---
 
-**Disturbance** <d-cite key="nerc2024glossary"></d-cite>
+### Definition by NERC
 
-Means (i) any perturbation to the electric system, or (ii) the unexpected change in ACE that is caused by the sudden loss of generation or interruption of load.
+> Means (i) any perturbation to the electric system, or (ii) the unexpected change in ACE that is caused by the sudden loss of generation or interruption of load.
