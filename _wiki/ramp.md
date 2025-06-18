@@ -5,10 +5,17 @@ description: A.k.a. <u>Ramp Rate</u>. The rate at which the interchange schedule
 tags: ramp, generator
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
+last_update: 2025-06-18
 ---
 
-**Ramp Rate or Ramp** <d-cite key="nerc2024glossary"></d-cite>
+### Definition by NERC
 
-(Schedule) The rate, expressed in megawatts per minute, at which the interchange schedule is attained during the ramp period.
+Source: <d-cite key="nerc2024glossary"></d-cite>
 
-(Generator) The rate, expressed in megawatts per minute, that a generator changes its output.
+> (Schedule) The rate, expressed in megawatts per minute, at which the interchange schedule is attained during the ramp period.
+>
+> (Generator) The rate, expressed in megawatts per minute, that a generator changes its output.
