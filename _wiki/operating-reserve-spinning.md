@@ -5,13 +5,20 @@ description: Generation synchronized to the system and fully available to serve 
 tags: reserve, operation
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
+last_update: 2025-06-18
 ---
 
-**Operating Reserve – Spinning** <d-cite key="nerc2024glossary"></d-cite>
+### Definition by NERC
 
-The portion of Operating Reserve consisting of:
+Source: <d-cite key="nerc2024glossary"></d-cite>
 
-- Generation synchronized to the system and fully available to serve load within the Disturbance Recovery Period following the contingency event; or
-- Load fully removable from the system within the Disturbance Recovery Period following the contingency event.
+> The portion of Operating Reserve consisting of:
+> 
+> - Generation synchronized to the system and fully available to serve load within the Disturbance Recovery Period following the contingency event; or
+> - Load fully removable from the system within the Disturbance Recovery Period following the contingency event.
 
-Note: this definition is very similar to the [Operating Reserve – Supplemental](/wiki/operating-reserve-supplemental/), but the Supplemental Reserve includes the term "capable of being synchronized".
+This definition is very similar to the [Operating Reserve – Supplemental](/wiki/operating-reserve-supplemental/), but the Supplemental Reserve includes the term "capable of being synchronized".
