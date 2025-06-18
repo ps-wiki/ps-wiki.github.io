@@ -242,6 +242,41 @@ ninja.data = [{
           description: "",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/egrid-subregions/";
+            },},{id: "wiki-inverter-based-resources",
+          title: 'Inverter-based Resources',
+          description: "IBR",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/inverter-based-resources/";
+            },},{id: "wiki-line-outage-distribution-factor",
+          title: 'Line Outage Distribution Factor',
+          description: "LODF",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/line-outage-distribution-factor/";
+            },},{id: "wiki-localtional-marginal-price",
+          title: 'Localtional Marginal Price',
+          description: "LMP. Marginal price for energy at the location delivered or received.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/locational-marginal-price/";
+            },},{id: "wiki-loss-of-load-events",
+          title: 'Loss-of-Load Events',
+          description: "LOLEV. The number of events in which some system load is not served in a given year.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/loss-of-load-events/";
+            },},{id: "wiki-loss-of-load-expectation",
+          title: 'Loss-of-Load Expectation',
+          description: "LOLE. The number of days per year for which the available generation capacity is insufficient.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/loss-of-load-expectation/";
+            },},{id: "wiki-loss-of-load-hour",
+          title: 'Loss-of-Load Hour',
+          description: "LOLH. The number of hours per year where demand will exceed the generating capacity.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/loss-of-load-hour/";
+            },},{id: "wiki-loss-of-load-probability",
+          title: 'Loss-of-Load Probability',
+          description: "LOLP",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/loss-of-load-probability/";
             },},{id: "wiki-cascading-outage",
           title: 'Cascading Outage',
           description: "A sequence of events in which an initial disturbance triggers dependent component outages",
@@ -392,36 +427,16 @@ ninja.data = [{
           description: "Customer demand that can be interrupted by control or request of the system operator.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/interruptible-demand/";
-            },},{id: "wiki-ibr",
-          title: 'IBR',
-          description: "Inverter-based Resources",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/inverter-based-resources/";
-            },},{id: "wiki-line-outage-distribution-factor",
-          title: 'Line Outage Distribution Factor',
-          description: "LODF",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/line-outage-distribution-factor/";
-            },},{id: "wiki-localtional-marginal-price",
-          title: 'Localtional Marginal Price',
-          description: "LMP. Marginal price for energy at the location delivered or received.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/locational-marginal-price/";
-            },},{id: "wiki-loss-of-load-expectation",
-          title: 'Loss-of-Load Expectation',
-          description: "LOLE. The number of days per year for which the available generation capacity is insufficient.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/loss-of-load-expectation/";
-            },},{id: "wiki-loss-of-load-hour",
-          title: 'Loss-of-Load Hour',
-          description: "LOLH. The number of hours per year where demand will exceed the generating capacity.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/loss-of-load-hour/";
             },},{id: "wiki-markets",
           title: 'Markets',
           description: "Some electricity markets in North America",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/markets/";
+            },},{id: "wiki-participation-factors",
+          title: 'Participation Factors',
+          description: "One definition is about dispath and another is about small-signal stability.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/participation-factors/";
             },},{id: "wiki-power-transfer-distribution-factor",
           title: 'Power Transfer Distribution Factor',
           description: "PTDF",
@@ -472,11 +487,6 @@ ninja.data = [{
           description: "OTDF",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/outage-transfer-distribution-factor/";
-            },},{id: "wiki-participation-factors",
-          title: 'Participation Factors',
-          description: "One definition is about dispath and another is about small-signal stability.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/participation-factors/";
             },},{id: "wiki-primary-control",
           title: 'Primary Control',
           description: "A.k.a. Frequency Response.",
