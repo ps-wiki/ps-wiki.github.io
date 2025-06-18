@@ -5,9 +5,16 @@ description: Unconnected to the system but capable of serving demand within a sp
 tags: reserve
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
+last_update: 2025-06-18
 ---
 
-**Non-Spinning Reserve** <d-cite key="nerc2024glossary"></d-cite>
+### Definition by NERC
 
-1. That generating reserve **not connected** to the system but capable of serving demand **within a specified time**.
-2. Interruptible load that can be removed from the system in a specified time.
+Source: <d-cite key="nerc2024glossary"></d-cite>
+
+> 1. That generating reserve **not connected** to the system but capable of serving demand **within a specified time**.
+> 2. Interruptible load that can be removed from the system in a specified time.
