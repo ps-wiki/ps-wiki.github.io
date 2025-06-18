@@ -12,8 +12,6 @@ date: 2025-03-15
 last_update: 2025-06-18
 ---
 
-**Critical Inertia** <d-cite key="nerc2020ffr"></d-cite> (p31) by ERCOT
-
 ### Definition by ERCOT
 
 Source: <d-cite key="nerc2020ffr"></d-cite> p31
