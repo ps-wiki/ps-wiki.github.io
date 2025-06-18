@@ -177,26 +177,6 @@ ninja.data = [{
           description: "CPS2. A standard intended to limit unscheduled flows",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/control-performance-standard-2/";
-            },},{id: "wiki-cascading-outage",
-          title: 'Cascading Outage',
-          description: "A sequence of events in which an initial disturbance triggers dependent component outages",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/cascading-outage/";
-            },},{id: "wiki-common-format-for-event-data-exchange",
-          title: 'Common Format for Event Data Exchange',
-          description: "COMFEDE.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/common-format-for-event-data-exchange/";
-            },},{id: "wiki-common-format-for-exchange-of-solved-load-flow-data",
-          title: 'Common Format for Exchange of Solved Load Flow Data',
-          description: "A.k.a common data format (CDF).",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/common-format-for-exchange-of-solved-load-flow-data/";
-            },},{id: "wiki-common-grid-model-exchange-standard",
-          title: 'Common Grid Model Exchange Standard',
-          description: "CGMES.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/common-grid-model-exchange-standard/";
             },},{id: "wiki-converter-driven-stability",
           title: 'Converter-Driven Stability',
           description: "Converter-interfaced generation&#39;s impact on stability",
@@ -222,6 +202,26 @@ ninja.data = [{
           description: "A virtual representation to reflect a physical object accurately.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/digital-twin/";
+            },},{id: "wiki-cascading-outage",
+          title: 'Cascading Outage',
+          description: "A sequence of events in which an initial disturbance triggers dependent component outages",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/cascading-outage/";
+            },},{id: "wiki-common-format-for-event-data-exchange",
+          title: 'Common Format for Event Data Exchange',
+          description: "COMFEDE.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/common-format-for-event-data-exchange/";
+            },},{id: "wiki-common-format-for-exchange-of-solved-load-flow-data",
+          title: 'Common Format for Exchange of Solved Load Flow Data',
+          description: "A.k.a common data format (CDF).",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/common-format-for-exchange-of-solved-load-flow-data/";
+            },},{id: "wiki-common-grid-model-exchange-standard",
+          title: 'Common Grid Model Exchange Standard',
+          description: "CGMES.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/common-grid-model-exchange-standard/";
             },},{id: "wiki-distributed-energy-resources",
           title: 'Distributed Energy Resources',
           description: "DER",
