@@ -5,18 +5,24 @@ description: A virtual representation to reflect a physical object accurately.
 tags:
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
+last_update: 2025-06-18
 ---
 
-**Digital Twin** <d-cite key="ibm2021what"></d-cite>
+### Definition by IBM
 
-A digital twin is a virtual representation of an object or system designed to reflect a physical object accurately.
-It spans the object's lifecycle, is updated from real-time data and uses simulation, machine learning and reasoning to help make decisions.
+Source: <d-cite key="ibm2021what"></d-cite>
 
-**Digital Twin** <d-cite key="fuller2020digital"></d-cite>
+> A digital twin is a virtual representation of an object or system designed to reflect a physical object accurately. It spans the object's lifecycle, is updated from real-time data and uses simulation, machine learning and reasoning to help make decisions.
 
-If the data flows between an existing physical object and a digital object, and they are fully integrated in both directions, this constituted the reference “Digital Twin”.
-A change made to the physical object automatically leads to a change in the digital object and vice versa.
-Figure 1. illustrates a Digital Twin.
+### Definition in a Paper
+
+Source: <d-cite key="fuller2020digital"></d-cite>
+
+> If the data flows between an existing physical object and a digital object, and they are fully integrated in both directions, this constituted the reference “Digital Twin”. A change made to the physical object automatically leads to a change in the digital object and vice versa. Figure 1. illustrates a Digital Twin.
 
 <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid
@@ -25,9 +31,11 @@ Figure 1. illustrates a Digital Twin.
     Digital model, shadow and twin.
 </div>
 
+<br>
+
 Some other definitions collected in the review paper:
 
-- NASA 2012 [5] “A Digital Twin is an integrated multiphysics, multiscale, probabilistic simulation of an as-built vehicle or system that uses the best available physical models, sensor updates, fleet history, etc., to mirror the life of its corresponding flying twin.”
+> - NASA 2012 [5] “A Digital Twin is an integrated multiphysics, multiscale, probabilistic simulation of an as-built vehicle or system that uses the best available physical models, sensor updates, fleet history, etc., to mirror the life of its corresponding flying twin.”
 - Chen 2017 [6] “A digital twin is a computerized model of a physical device or system that represents all functional features and links with the working elements.”
 - Liu et al . 2018 [7] “The digital twin is actually a living model of the physical asset or system, which continually adapts to operational changes based on the collected online data and information, and can forecast the future of the corresponding physical counterpart.”
 - Zheng et al . 2018 [8] “A Digital Twin is a set of virtual information that fully describes a potential or actual physical production from the micro atomic level to the macro geometrical level.”
