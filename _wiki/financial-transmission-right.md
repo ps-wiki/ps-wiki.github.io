@@ -5,8 +5,15 @@ description: FTR. Compensation contract for transmission charges due to grid con
 tags: market, financial, transmission, FERC
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
+last_update: 2025-06-18
 ---
 
-**Financial Transmission Right** <d-cite key="ferc2020glossary"></d-cite> by FERC
+### Definition by FERC
 
-A contract that entitles the holder to receive or pay compensation for transmission charges that arise when grid congestion causes price differences due to the redispatch of generators.
+Source: <d-cite key="ferc2020glossary"></d-cite>
+
+> A financial transmission right (FTR) is a financial instrument that entitles the holder to receive or pay compensation for transmission charges that arise when grid congestion causes price differences due to the redispatch of generators. FTRs are used to hedge against congestion costs in the transmission system.
