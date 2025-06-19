@@ -9,15 +9,19 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-17
+last_update: 2025-06-19
 ---
 
 Relevant items: [Emergency](/wiki/emergency)
 
-**Contingency** by ISO-NE <d-cite key="isone2024op19"></d-cite> (p6, Revision 13.3)
+### Definition by ISO-NE
 
-A contingency is the unexpected failure or outage of a system component such as a generator, transmission line, circuit breaker, switch or other electrical element.
+Source: <d-cite key="isone2024op19"></d-cite> p6, Revision 13.3
 
-**Contingency** <d-cite key="nerc2024glossary"></d-cite>
+> A contingency is the unexpected failure or outage of a system component such as a generator, transmission line, circuit breaker, switch or other electrical element.
 
-The unexpected **failure** or **outage** of a system component, such as a generator, transmission line, circuit breaker, switch or other electrical element.
+### Definition by NERC
+
+Source: <d-cite key="nerc2024glossary"></d-cite>
+
+> The unexpected **failure** or **outage** of a system component, such as a generator, transmission line, circuit breaker, switch or other electrical element.
