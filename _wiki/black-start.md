@@ -9,10 +9,11 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-17
+last_update: 2025-06-19
 ---
 
-**black-start** <d-cite key="ieee2025std2988"></d-cite> (p14) by IEEE:
+### Definition in an IEEE Standard
 
-Black-start is the process of establishing the voltage from around zero, in terms of root mean
-square (rms), when an energy source is available.
+Source: <d-cite key="ieee2025std2988"></d-cite> p14
+
+> Black-start is the process of establishing the voltage from around zero, in terms of root mean square (rms), when an energy source is available.
