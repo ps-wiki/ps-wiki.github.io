@@ -5,14 +5,21 @@ description: Ability to withstand voltage or frequency disturbances and continue
 tags: stability, operation
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
+last_update: 2025-06-19
 ---
 
-**Ride-through** <d-cite key="ieee2018std1547"></d-cite> (p24) by IEEE
+### Definition in an IEEE Standard
 
-Ability to withstand voltage or frequency disturbances inside defined limits and to continue operating as specified.
+Source: <d-cite key="ieee2018std1547"></d-cite> p24
 
-**fault ride-through** (FRT) <d-cite key="ieee2025std2988"></d-cite> (p14) by IEEE:
+> Ability to withstand voltage or frequency disturbances inside defined limits and to continue operating as specified.
 
-Fault ride-through is the capability of staying connected during the occurrence of a fault beyond the equipment output terminals.
+### Definition in Another IEEE Standard
 
-<br>
+Source: <d-cite key="ieee2025std2988"></d-cite> p14
+
+> Fault ride-through is the capability of staying connected during the occurrence of a fault beyond the equipment output terminals.
