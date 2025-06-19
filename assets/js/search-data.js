@@ -139,7 +139,7 @@ ninja.data = [{
               window.location.href = "/wiki/common-information-model/";
             },},{id: "wiki-compliance-factor",
           title: 'Compliance Factor',
-          description: "CF.",
+          description: "CF",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/compliance-factor/";
             },},{id: "wiki-contingency-analysis",
@@ -242,6 +242,31 @@ ninja.data = [{
           description: "",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/egrid-subregions/";
+            },},{id: "wiki-electrical-resonance",
+          title: 'Electrical Resonance',
+          description: "The behavior of power systems with conventional turbine-generators and variable speed induction generators.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/electrical-resonance/";
+            },},{id: "wiki-emergency-rating",
+          title: 'Emergency Rating',
+          description: "",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/emergency-rating/";
+            },},{id: "wiki-emergency",
+          title: 'Emergency',
+          description: "Abnormal system condition that requires automatic or immediate manual action.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/emergency/";
+            },},{id: "wiki-energy-market",
+          title: 'Energy Market',
+          description: "",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/energy-market/";
+            },},{id: "wiki-equal-area-criterion",
+          title: 'Equal Area Criterion',
+          description: "EAC and EEAC. A method to determine the stability.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/equal-area-criterion/";
             },},{id: "wiki-localtional-marginal-price",
           title: 'Localtional Marginal Price',
           description: "LMP. Marginal price for energy at the location delivered or received.",
@@ -287,36 +312,16 @@ ninja.data = [{
           description: "CGMES",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/common-grid-model-exchange-standard/";
-            },},{id: "wiki-electrical-resonance",
-          title: 'Electrical Resonance',
-          description: "The behavior of power systems with conventional turbine-generators and variable speed induction generators.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/electrical-resonance/";
-            },},{id: "wiki-emergency-rating",
-          title: 'Emergency Rating',
-          description: "",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/emergency-rating/";
-            },},{id: "wiki-emergency",
-          title: 'Emergency',
-          description: "Abnormal system condition that requires automatic or immediate manual action.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/emergency/";
-            },},{id: "wiki-energy-market",
-          title: 'Energy Market',
-          description: "",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/energy-market/";
-            },},{id: "wiki-equal-area-criterion",
-          title: 'Equal Area Criterion',
-          description: "EAC and EEAC. A method to determine the stability.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/equal-area-criterion/";
             },},{id: "wiki-expected-unserved-energy",
           title: 'Expected Unserved Energy',
           description: "EUE. A measure of the capability to continuously serve loads.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/expected-unserved-energy/";
+            },},{id: "wiki-extended-equal-area-criterion",
+          title: 'Extended Equal Area Criterion',
+          description: "EEAC",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/extended-equal-area-criterion/";
             },},{id: "wiki-facility-rating",
           title: 'Facility Rating',
           description: "",
