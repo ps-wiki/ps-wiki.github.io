@@ -5,8 +5,15 @@ description: The Ramp Rate that a generating unit can achieve under normal condi
 tags: response, rate, generator
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
+last_update: 2025-06-19
 ---
 
-**Response Rate** <d-cite key="nerc2024glossary"></d-cite>
+### Definition by NERC
 
-The [Ramp Rate](/wiki/ramp) that a generating unit can achieve under normal operating conditions expressed in megawatts per minute (MW/Min).
+Source: <d-cite key="nerc2024glossary"></d-cite>
+
+> The [Ramp Rate](/wiki/ramp) that a generating unit can achieve under normal operating conditions expressed in megawatts per minute (MW/Min).
