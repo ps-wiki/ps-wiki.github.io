@@ -12,7 +12,7 @@ date: 2025-06-17
 last_update: 2025-06-19
 ---
 
-### Definition by IEEE
+### Definition in an IEEE Standard
 
 Source: <d-cite key="ieee1973loadflow"></d-cite>
 
