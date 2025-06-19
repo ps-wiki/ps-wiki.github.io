@@ -9,16 +9,16 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-17
+last_update: 2025-06-19
 ---
 
-### Definition by EPRI
+### Definition in an EPRI Technical Update
 
 Source: <d-cite key="epri2021cim"></d-cite>
 
 > A set of **open standards** for representing power system components originally developed by the EPRI in North America and now a series of standards under the IEC.
 
-### Definition by PNNL
+### Definition in an PNNL Technical Report
 
 Source: <d-cite key="anderson2023cim"></d-cite>
 
