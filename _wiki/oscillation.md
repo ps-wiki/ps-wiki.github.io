@@ -17,8 +17,9 @@ last_update: 2025-06-18
 Source: <d-cite key="powerworld2020oscillations"></d-cite>
 
 > An oscillation is just a repetitive motion that can be either undamped, positively damped (decaying with time), or negatively damped (growing with time).
-> 
+>
 > Types of oscillations include:
+>
 > - Transients: Usually high frequency and highly damped
 > - Local plant: Usually from 1 to 5 Hz
 > - Inter-area oscillations: From 0.15 to 1 Hz
