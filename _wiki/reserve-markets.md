@@ -19,7 +19,7 @@ Source: <d-cite key="pjm2024m11"></d-cite> p103, Revision 133
 > The PJM Reserve Markets provide PJM participants with a market-based system for the purchase and sale of the Synchronized Reserve, Primary Reserve, and 30-minute Reserve Services (“Reserves”).
 > The PJM Reserve Markets are conducted in both the Day-ahead Market and Real-time Market processes.
 > In the Day-ahead Market, PJM schedules Reserves on a simultaneously, co-optimized basis with Energy for each hour of the next Operating Day.
-> 
+>
 > In Real-time, PJM procures Reserves on a simultaneously, co-optimized basis with Energy for each hour and each interval. Both the Day-ahead and Real-time Reserve Markets are offer-based and procure resources to meet the required Reserve Services:
 >
 > - **Synchronized Reserve Service**: can only be satisfied by online resources that are able to respond in ten (10) minutes or less.

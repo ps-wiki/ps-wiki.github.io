@@ -2,7 +2,7 @@
 layout: distill
 title: Market Unit
 description:
-tags: market, reliability, reserve, operation, PJM, NYISO, ISO
+tags: market
 category: wiki
 bibliography: papers.bib
 authors:

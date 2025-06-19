@@ -23,7 +23,7 @@ Source: <d-cite key="nerc2024glossary"></d-cite>
 
 Source: <d-cite key="nyiso2025ancillary"></d-cite> p41, Version 9.0
 
-> Operating Reserve service provides backup generation and/or demand response in the event that the NYISO experiences a real-time power system Contingency requiring emergency corrective action. In order for the New York Control Area (NYCA) to respond in a timely fashion, the reserves must be available from qualified Resources located within the NYCA and within specific regions, as required by the NYSRC and other applicable reliability standards. 
+> Operating Reserve service provides backup generation and/or demand response in the event that the NYISO experiences a real-time power system Contingency requiring emergency corrective action. In order for the New York Control Area (NYCA) to respond in a timely fashion, the reserves must be available from qualified Resources located within the NYCA and within specific regions, as required by the NYSRC and other applicable reliability standards.
 
 > Types of Operating Reserves
 >
