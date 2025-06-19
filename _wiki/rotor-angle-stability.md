@@ -5,10 +5,15 @@ description: The ability to remain in synchronism under normal and disturbed con
 tags: stability, synchronism
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
+last_update: 2025-06-19
 ---
 
-**Rotor Angle Stability** <d-cite key="hatziargyriou2021stability"></d-cite>
+### Definition in an IEEE Article
 
-Rotor angle stability is concerned with the ability of the interconnected synchronous machines in a power system to **remain in synchronism** under normal operating conditions and to regain synchronism after being subjected to a small or large disturbance.
+Source: <d-cite key="hatziargyriou2021stability"></d-cite>
 
-<br>
+> Rotor angle stability is concerned with the ability of the interconnected synchronous machines in a power system to **remain in synchronism** under normal operating conditions and to regain synchronism after being subjected to a small or large disturbance.
