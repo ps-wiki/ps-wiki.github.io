@@ -9,7 +9,7 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-17
+last_update: 2025-06-19
 ---
 
 ### Definition by FERC
@@ -23,7 +23,7 @@ Source: <d-cite key="ferc2020glossary"></d-cite>
 - Maintain the frequency of the electric power system(s) within reasonable limits in accordance with Good Utility Practice.
 - Provide sufficient generating capacity to maintain operating reserves in accordance with Good Utility Practice.
 
-### Definition by HIFLD
+### Definition in a Dataset on HIFLD
 
 > Control Areas, also known as Balancing Authority Areas, are controlled by Balancing Authorities, who are responsible for monitoring and balancing the generation, load, and transmission of electric power within their region, often comprised of the retail service territories of numerous electric power utilities.
 
