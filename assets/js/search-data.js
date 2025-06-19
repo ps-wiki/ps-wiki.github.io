@@ -432,21 +432,6 @@ ninja.data = [{
           description: "Some electricity markets in North America",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/markets/";
-            },},{id: "wiki-participation-factors",
-          title: 'Participation Factors',
-          description: "One definition is about dispath and another is about small-signal stability.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/participation-factors/";
-            },},{id: "wiki-power-transfer-distribution-factor",
-          title: 'Power Transfer Distribution Factor',
-          description: "PTDF",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/power-transfer-distribution-factor/";
-            },},{id: "wiki-most-severe-single-contingency",
-          title: 'Most Severe Single Contingency',
-          description: "A single contingency that would result in the greatest loss of resource output.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/most-sevre-single-contingency/";
             },},{id: "wiki-non-spinning-reserve",
           title: 'Non-Spinning Reserve',
           description: "Unconnected to the system but capable of serving demand within a specified time.",
@@ -487,6 +472,16 @@ ninja.data = [{
           description: "OTDF",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/outage-transfer-distribution-factor/";
+            },},{id: "wiki-participation-factors",
+          title: 'Participation Factors',
+          description: "One definition is about dispath and another is about small-signal stability.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/participation-factors/";
+            },},{id: "wiki-power-transfer-distribution-factor",
+          title: 'Power Transfer Distribution Factor',
+          description: "PTDF",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/power-transfer-distribution-factor/";
             },},{id: "wiki-primary-control",
           title: 'Primary Control',
           description: "A.k.a. Frequency Response.",
@@ -502,6 +497,11 @@ ninja.data = [{
           description: "A.k.a. Ramp Rate. The rate at which the interchange schedule or generator output is attained.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/ramp/";
+            },},{id: "wiki-most-severe-single-contingency",
+          title: 'Most Severe Single Contingency',
+          description: "A single contingency that would result in the greatest loss of resource output.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/most-sevre-single-contingency/";
             },},{id: "wiki-real-time-energy-market",
           title: 'Real Time Energy Market',
           description: "",
