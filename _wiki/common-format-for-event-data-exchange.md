@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Common Format for Event Data Exchange
-description: COMFEDE.
+description: COMFEDE
 tags: data-format
 category: wiki
 bibliography: papers.bib
@@ -9,10 +9,10 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-06-17
-last_update: 2025-06-17
+last_update: 2025-06-19
 ---
 
-### Definition by IEEE
+### Definition in an IEEE Standard
 
 Source: <d-cite key="ieee2010comfede"></d-cite
 
