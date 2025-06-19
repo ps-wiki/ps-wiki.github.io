@@ -242,16 +242,6 @@ ninja.data = [{
           description: "",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/egrid-subregions/";
-            },},{id: "wiki-inverter-based-resources",
-          title: 'Inverter-based Resources',
-          description: "IBR",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/inverter-based-resources/";
-            },},{id: "wiki-line-outage-distribution-factor",
-          title: 'Line Outage Distribution Factor',
-          description: "LODF",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/line-outage-distribution-factor/";
             },},{id: "wiki-localtional-marginal-price",
           title: 'Localtional Marginal Price',
           description: "LMP. Marginal price for energy at the location delivered or received.",
@@ -284,17 +274,17 @@ ninja.data = [{
               window.location.href = "/wiki/cascading-outage/";
             },},{id: "wiki-common-format-for-event-data-exchange",
           title: 'Common Format for Event Data Exchange',
-          description: "COMFEDE.",
+          description: "COMFEDE",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/common-format-for-event-data-exchange/";
             },},{id: "wiki-common-format-for-exchange-of-solved-load-flow-data",
           title: 'Common Format for Exchange of Solved Load Flow Data',
-          description: "A.k.a common data format (CDF).",
+          description: "A.k.a. common data format (CDF)",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/common-format-for-exchange-of-solved-load-flow-data/";
             },},{id: "wiki-common-grid-model-exchange-standard",
           title: 'Common Grid Model Exchange Standard',
-          description: "CGMES.",
+          description: "CGMES",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/common-grid-model-exchange-standard/";
             },},{id: "wiki-electrical-resonance",
@@ -427,16 +417,36 @@ ninja.data = [{
           description: "Customer demand that can be interrupted by control or request of the system operator.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/interruptible-demand/";
+            },},{id: "wiki-inverter-based-resources",
+          title: 'Inverter-based Resources',
+          description: "IBR",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/inverter-based-resources/";
+            },},{id: "wiki-line-outage-distribution-factor",
+          title: 'Line Outage Distribution Factor',
+          description: "LODF",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/line-outage-distribution-factor/";
             },},{id: "wiki-markets",
           title: 'Markets',
           description: "Some electricity markets in North America",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/markets/";
+            },},{id: "wiki-multi-criteria-decision-analysis-based-metrics",
+          title: 'Multi-Criteria Decision Analysis-Based Metrics',
+          description: "(MCDA)-Based Metrics",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/multi-criteria-decision-analysis-based-metrics/";
             },},{id: "wiki-non-spinning-reserve",
           title: 'Non-Spinning Reserve',
           description: "Unconnected to the system but capable of serving demand within a specified time.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/non-spinning-reserve/";
+            },},{id: "wiki-non-storm-resilience-metric",
+          title: 'Non-Storm Resilience Metric',
+          description: "",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/non-storm-resilience-metric/";
             },},{id: "wiki-non-synchronized-reserve",
           title: 'Non-Synchronized Reserve',
           description: "Reserve capability within 10 minutes not electrically synchronized to the system",
@@ -477,6 +487,11 @@ ninja.data = [{
           description: "One definition is about dispath and another is about small-signal stability.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/participation-factors/";
+            },},{id: "wiki-performance-based-metrics",
+          title: 'Performance-Based Metrics',
+          description: "A.k.a. consequence-based metrics",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/performance-based-metrics/";
             },},{id: "wiki-power-transfer-distribution-factor",
           title: 'Power Transfer Distribution Factor',
           description: "PTDF",
@@ -497,11 +512,6 @@ ninja.data = [{
           description: "A.k.a. Ramp Rate. The rate at which the interchange schedule or generator output is attained.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/ramp/";
-            },},{id: "wiki-most-severe-single-contingency",
-          title: 'Most Severe Single Contingency',
-          description: "A single contingency that would result in the greatest loss of resource output.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/most-sevre-single-contingency/";
             },},{id: "wiki-real-time-energy-market",
           title: 'Real Time Energy Market',
           description: "",
@@ -534,7 +544,7 @@ ninja.data = [{
               window.location.href = "/wiki/reliability/";
             },},{id: "wiki-remedial-action-scheme",
           title: 'Remedial Action Scheme',
-          description: "RAS.",
+          description: "RAS",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/remedial-action-scheme/";
             },},{id: "wiki-reserve",
@@ -544,7 +554,7 @@ ninja.data = [{
               window.location.href = "/wiki/reserve/";
             },},{id: "wiki-resilience",
           title: 'Resilience',
-          description: "Concepts and its metrics.",
+          description: "",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/resilience/";
             },},{id: "wiki-resonance-stability",
@@ -572,6 +582,11 @@ ninja.data = [{
           description: "The ability to remain in synchronism under normal and disturbed conditions.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/rotor-angle-stability/";
+            },},{id: "wiki-most-severe-single-contingency",
+          title: 'Most Severe Single Contingency',
+          description: "A single contingency that would result in the greatest loss of resource output.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/most-sevre-single-contingency/";
             },},{id: "wiki-secondary-control",
           title: 'Secondary Control',
           description: "Associated with Load-Frequency Control and Automatic Generation Control. Balancing services deployed in the “minutes” time frame.",
@@ -632,6 +647,11 @@ ninja.data = [{
           description: "The ability to maintain equilibrium during normal and abnormal conditions.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/stability/";
+            },},{id: "wiki-storm-resilience-metric",
+          title: 'Storm Resilience Metric',
+          description: "",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/storm-resilience-metric/";
             },},{id: "wiki-subsynchronous-resonance",
           title: 'Subsynchronous Resonance',
           description: "SSR. A condition involving energy exchange at natural frequencies below the synchronous frequency.",
