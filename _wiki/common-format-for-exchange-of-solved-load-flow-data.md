@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Common Format for Exchange of Solved Load Flow Data
-description: A.k.a common data format (CDF).
+description: A.k.a. common data format (CDF)
 tags: data-format
 category: wiki
 bibliography: papers.bib
@@ -9,7 +9,7 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-06-17
-last_update: 2025-06-17
+last_update: 2025-06-19
 ---
 
 ### Definition by IEEE
@@ -25,4 +25,4 @@ Source: <d-cite key="ieee1973loadflow"></d-cite>
 
 <!-- prettier-ignore-end -->
 
-A matpower function to convert an IEEE CDF data file into a MATPOWER case struct at <https://matpower.org/doc/ref-manual/legacy/functions/cdf2mpc.html#cdf2mpc>
+A matpower function to convert an IEEE CDF data file into a MATPOWER case struct is available at <https://matpower.org/doc/ref-manual/legacy/functions/cdf2mpc.html#cdf2mpc>
