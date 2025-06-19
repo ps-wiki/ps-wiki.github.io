@@ -12,8 +12,6 @@ date: 2025-03-15
 last_update: 2025-06-19
 ---
 
-**System Flexibility** <d-cite key="nerc2010flexible"></d-cite>
-
 ### Definition by NERC
 
 Source: <d-cite key="nerc2010flexible"></d-cite>
