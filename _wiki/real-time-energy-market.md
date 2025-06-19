@@ -9,7 +9,7 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-18
+last_update: 2025-06-19
 ---
 
 Relevante items: [Security Constrained Unit Commitment](/wiki/security-constrained-unit-commitment) &nbsp; [Security Constrained Economic Dispatch](/wiki/security-constrained-economic-dispatch) &nbsp; [Locational Marginal Price](/wiki/locational-marginal-price) &nbsp; [Energy Market](/wiki/energy-market)
