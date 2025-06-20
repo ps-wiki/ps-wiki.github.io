@@ -5,14 +5,21 @@ description: A.k.a. Synchronized Reserve. Synchronized generation and ready to s
 tags: reserve
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
+last_update: 2025-06-19
 ---
 
-**Spinning Reserve** <d-cite key="nerc2024glossary"></d-cite>
+### Definition by NERC
 
-Unloaded generation that is synchronized and ready to serve additional demand.
+Source: <d-cite key="nerc2024glossary"></d-cite>
 
-<br>
+> Unloaded generation that is synchronized and ready to serve additional demand.
 
-**Synchronized Reserve** <d-cite key="pjm2024m10"></d-cite> (p27, Revision 45)
+### Definition by PJM
 
-Synchronized Reserve is reserve capability that can be converted fully into energy or load that can be removed from the system within 10 minutes of the request from the PJM dispatcher and must be provided by equipment electrically synchronized to the system. Resources committed to the Synchronized Reserve product can meet the Synchronized Reserve, Contingency (Primary) Reserve Service and the 30-Minute Reserve Service simultaneously.
+Source: <d-cite key="pjm2024m10"></d-cite> p27, Revision 45
+
+> Synchronized Reserve is reserve capability that can be converted fully into energy or load that can be removed from the system within 10 minutes of the request from the PJM dispatcher and must be provided by equipment electrically synchronized to the system. Resources committed to the Synchronized Reserve product can meet the Synchronized Reserve, Contingency (Primary) Reserve Service and the 30-Minute Reserve Service simultaneously.

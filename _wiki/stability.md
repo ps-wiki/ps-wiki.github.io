@@ -5,6 +5,11 @@ description: The ability to maintain equilibrium during normal and abnormal cond
 tags: stability
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
+last_update: 2025-06-19
 ---
 
 Relevant items: [Security](/wiki/security) &nbsp; [Reliability](/wiki/reliability)
