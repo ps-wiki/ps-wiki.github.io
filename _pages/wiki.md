@@ -2,10 +2,10 @@
 layout: page
 title: wiki
 permalink: /wiki/
-description:
+description: Glossary of terms used in power systems
 nav: true
 nav_order: 2
-horizontal: false
+horizontal: true
 ---
 
 <ul class="wiki-list">
