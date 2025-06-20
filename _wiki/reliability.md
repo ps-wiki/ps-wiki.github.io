@@ -14,7 +14,7 @@ last_update: 2025-06-19
 
 Relevant items: [Stability](/wiki/stability) &nbsp; [Security](/wiki/security)
 
-### Definition in an IEEE Article by a Joint Taskforce of IEEE and CIGRE
+### Definition in an IEEE Article by a Joint Task Force of IEEE and CIGRE
 
 Source: <d-cite key="kundur2004stability"></d-cite>
 
