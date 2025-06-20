@@ -30,14 +30,21 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/references/";
           },
-        },{id: "nav-change-log",
-          title: "change log",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/changelog/";
-          },
-        },{id: "projects-2020-improve-transmission-line-ratings",
+        },{id: "dropdown-archive",
+              title: "archive",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/wiki-tag/";
+              },
+            },{id: "dropdown-change-log",
+              title: "change log",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/changelog/";
+              },
+            },{id: "projects-2020-improve-transmission-line-ratings",
           title: '2020 Improve Transmission Line Ratings',
           description: "Dynamic Line Rating (DLR) is used to improve transmission line ratings.",
           section: "Projects",handler: () => {
@@ -54,7 +61,7 @@ ninja.data = [{
               window.location.href = "/projects/2025-iberian-peninsula-blackout/";
             },},{id: "wiki-30-minute-reserve-service",
           title: '30-Minute Reserve Service',
-          description: "can be satisfied by online or offline resources that are able to respond in 30 minutes or less.",
+          description: "Can be satisfied by online or offline resources that are able to respond in 30 minutes or less.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/30-minutes-reserve-service/";
             },},{id: "wiki-adequacy",
@@ -654,7 +661,7 @@ ninja.data = [{
               window.location.href = "/wiki/transmission-interconnection-procedures/";
             },},{id: "wiki-transmission-planning-horizon",
           title: 'Transmission Planning Horizon',
-          description: "Planning period",
+          description: "Planning perio",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/transmission-planning-horizon/";
             },},{id: "wiki-uncertainty",
