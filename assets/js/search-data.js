@@ -11,17 +11,10 @@ ninja.data = [{
     },
   },{id: "nav-wiki",
           title: "wiki",
-          description: "",
+          description: "Glossary of terms used in power systems",
           section: "Navigation",
           handler: () => {
             window.location.href = "/wiki/";
-          },
-        },{id: "nav-events",
-          title: "events",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/events/";
           },
         },{id: "nav-references",
           title: "references",
@@ -44,22 +37,7 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/changelog/";
               },
-            },{id: "projects-2020-improve-transmission-line-ratings",
-          title: '2020 Improve Transmission Line Ratings',
-          description: "Dynamic Line Rating (DLR) is used to improve transmission line ratings.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2020-improve-transmission-line-ratings/";
-            },},{id: "projects-2021-cold-weather-outages-in-texas-and-the-south-central-united-states",
-          title: '2021 Cold Weather Outages in Texas and the South Central United States',
-          description: "The Texas Winter Storm of 2021, also known as Winter Storm Uri, caused widespread power outages, water shortages, and significant economic damage across Texas due to extreme cold weather and inadequate winterization of the state&#39;s energy infrastructure.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2021-texas-winter-storm/";
-            },},{id: "projects-2025-iberian-peninsula-blackout",
-          title: '2025 Iberian Peninsula blackout',
-          description: "On Monday, 28 April 2025, a major power blackout occurred across the Iberian Peninsula affecting mainland Portugal and peninsular Spain, where electric power was interrupted for about ten hours in most of the Peninsula and longer in some areas.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2025-iberian-peninsula-blackout/";
-            },},{id: "wiki-30-minute-reserve-service",
+            },{id: "wiki-30-minute-reserve-service",
           title: '30-Minute Reserve Service',
           description: "Can be satisfied by online or offline resources that are able to respond in 30 minutes or less.",
           section: "Wiki",handler: () => {
