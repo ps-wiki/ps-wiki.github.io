@@ -2,7 +2,11 @@
 layout: distill
 title: Common Grid Model Exchange Standard
 description: CGMES.
-tags: data-format, iec-standard, standard
+tags:
+  - data-format
+  - iec
+  - iec-standard
+  - standard
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

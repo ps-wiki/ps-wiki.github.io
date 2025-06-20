@@ -2,7 +2,9 @@
 layout: distill
 title: Contingency Analysis
 description: Procedures to study a contingency.
-tags: contingency, system-operator
+tags:
+  - contingency
+  - system-operator
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

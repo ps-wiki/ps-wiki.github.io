@@ -2,7 +2,10 @@
 layout: distill
 title: Contingency
 description: The unexpected failure or outage of a system component.
-tags: contingency, system-operator, nerc
+tags:
+  - contingency
+  - system-operator
+  - nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

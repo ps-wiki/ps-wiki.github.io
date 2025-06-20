@@ -2,7 +2,9 @@
 layout: distill
 title: Capacity Markets
 description: A market for trading capacity credits.
-tags: market, capacity, ferc
+tags:
+  - market
+  - ferc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

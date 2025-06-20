@@ -2,7 +2,9 @@
 layout: distill
 title: Cascading
 description: The uncontrolled successive loss of System Elements triggered by an incident.
-tags: event, nerc
+tags:
+  - event
+    - nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

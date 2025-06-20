@@ -2,7 +2,9 @@
 layout: distill
 title: Compliance Factor
 description: CF.
-tags: frequency-control, system-operator
+tags:
+  - frequency-control
+  - system-operator
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
