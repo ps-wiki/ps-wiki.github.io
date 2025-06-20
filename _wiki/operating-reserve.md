@@ -8,7 +8,7 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-20
 ---
 
 ### Definition by NERC
@@ -17,6 +17,15 @@ Source: <d-cite key="nerc2024glossary"></d-cite>
 
 > That capability above firm system demand required to provide for regulation, load forecasting error, equipment forced and scheduled outages and local area protection.
 > It consists of spinning and non-spinning reserve.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid
+        path="/assets/img/pswiki/operating_reserve.png"
+        zoomable=true %}
+        Operating Reserves (from <d-cite key="nerc2021reserve"></d-cite>)
+    </div>
+</div>
 
 ### Definition by NYISO
 
