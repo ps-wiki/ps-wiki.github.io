@@ -20,7 +20,7 @@ Source: <d-cite key="nerc2021balancing"></d-cite>
 
 > Typically includes the balancing services deployed in the “minutes” time frame. Some resources, such as hydroelectric generation, can respond faster in many cases.
 > This control is accomplished using the Balancing Authority’s control computer (terms most often associated with this are **“Load-Frequency Control”** or [**“Automatic Generation Control”**](/wiki/automatic-generation-control/)) and the manual actions taken by the dispatcher to provide additional adjustments. Secondary Control also includes initial reserve deployment for disturbances.
-> 
+>
 > In short, Secondary Control maintains the minute-to-minute balance throughout the day and is used to restore frequency to its scheduled value, usually 60 Hz, following a disturbance.
 > Secondary Control is provided by both [**Spinning**](/wiki/spinning-reserve) and [**Non-Spinning Reserves**](/wiki/non-spinning-reserve).
 
