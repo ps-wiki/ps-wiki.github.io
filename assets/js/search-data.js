@@ -267,51 +267,6 @@ ninja.data = [{
           description: "EAC and EEAC. A method to determine the stability.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/equal-area-criterion/";
-            },},{id: "wiki-localtional-marginal-price",
-          title: 'Localtional Marginal Price',
-          description: "LMP. Marginal price for energy at the location delivered or received.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/locational-marginal-price/";
-            },},{id: "wiki-loss-of-load-events",
-          title: 'Loss-of-Load Events',
-          description: "LOLEV. The number of events in which some system load is not served in a given year.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/loss-of-load-events/";
-            },},{id: "wiki-loss-of-load-expectation",
-          title: 'Loss-of-Load Expectation',
-          description: "LOLE. The number of days per year for which the available generation capacity is insufficient.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/loss-of-load-expectation/";
-            },},{id: "wiki-loss-of-load-hour",
-          title: 'Loss-of-Load Hour',
-          description: "LOLH. The number of hours per year where demand will exceed the generating capacity.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/loss-of-load-hour/";
-            },},{id: "wiki-loss-of-load-probability",
-          title: 'Loss-of-Load Probability',
-          description: "LOLP",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/loss-of-load-probability/";
-            },},{id: "wiki-cascading-outage",
-          title: 'Cascading Outage',
-          description: "A sequence of events in which an initial disturbance triggers dependent component outages",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/cascading-outage/";
-            },},{id: "wiki-common-format-for-event-data-exchange",
-          title: 'Common Format for Event Data Exchange',
-          description: "COMFEDE",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/common-format-for-event-data-exchange/";
-            },},{id: "wiki-common-format-for-exchange-of-solved-load-flow-data",
-          title: 'Common Format for Exchange of Solved Load Flow Data',
-          description: "A.k.a. common data format (CDF)",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/common-format-for-exchange-of-solved-load-flow-data/";
-            },},{id: "wiki-common-grid-model-exchange-standard",
-          title: 'Common Grid Model Exchange Standard',
-          description: "CGMES",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/common-grid-model-exchange-standard/";
             },},{id: "wiki-expected-unserved-energy",
           title: 'Expected Unserved Energy',
           description: "EUE. A measure of the capability to continuously serve loads.",
@@ -352,11 +307,6 @@ ninja.data = [{
           description: "Addressing variability and uncertainty on longer timescales than operating reserves and regulation service",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/flexibility-reserve/";
-            },},{id: "wiki-system-flexibility",
-          title: 'System Flexibility',
-          description: "The ability to respond to system changes and uncertainties.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/flexibility/";
             },},{id: "wiki-flowgate",
           title: 'Flowgate',
           description: "Portion of the transmission system used to analyze power flow impact.",
@@ -387,56 +337,36 @@ ninja.data = [{
           description: "The ability of a system to react to a change in system frequency.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/frequnecy-response/";
-            },},{id: "wiki-futures-market",
-          title: 'Futures Market',
-          description: "For contracts for future delivery of a commodity or security.",
+            },},{id: "wiki-loss-of-load-hour",
+          title: 'Loss-of-Load Hour',
+          description: "LOLH. The number of hours per year where demand will exceed the generating capacity.",
           section: "Wiki",handler: () => {
-              window.location.href = "/wiki/future-markets/";
-            },},{id: "wiki-generation-redispatch",
-          title: 'Generation Redispatch',
-          description: "Generators are adjusted away (off-cost) from their normal assignments (on-cost).",
+              window.location.href = "/wiki/loss-of-load-hour/";
+            },},{id: "wiki-loss-of-load-probability",
+          title: 'Loss-of-Load Probability',
+          description: "LOLP",
           section: "Wiki",handler: () => {
-              window.location.href = "/wiki/generation-redispatch/";
-            },},{id: "wiki-generation-shift-factor",
-          title: 'Generation Shift Factor',
-          description: "GSF",
+              window.location.href = "/wiki/loss-of-load-probability/";
+            },},{id: "wiki-market-power",
+          title: 'Market Power',
+          description: "",
           section: "Wiki",handler: () => {
-              window.location.href = "/wiki/generation-shift-factor/";
-            },},{id: "wiki-interchange",
-          title: 'Interchange',
-          description: "Energy transfers that cross Balancing Authority boundaries.",
+              window.location.href = "/wiki/market-power/";
+            },},{id: "wiki-market-structure",
+          title: 'Market Structure',
+          description: "",
           section: "Wiki",handler: () => {
-              window.location.href = "/wiki/interchange/";
-            },},{id: "wiki-interconnection-reliability-operating-limit",
-          title: 'Interconnection Reliability Operating Limit',
-          description: "A System Operating Limit that, if violated, could lead to instability or cascading outages.",
+              window.location.href = "/wiki/market-structure/";
+            },},{id: "wiki-market-unit",
+          title: 'Market Unit',
+          description: "",
           section: "Wiki",handler: () => {
-              window.location.href = "/wiki/interconnection-reliability-operating-limit/";
-            },},{id: "wiki-interconnection",
-          title: 'Interconnection',
-          description: "A geographic area where BPS components are synchronized.",
+              window.location.href = "/wiki/market-unit/";
+            },},{id: "wiki-market",
+          title: 'Market',
+          description: "",
           section: "Wiki",handler: () => {
-              window.location.href = "/wiki/interconnection/";
-            },},{id: "wiki-interruptible-demand",
-          title: 'Interruptible Demand',
-          description: "Customer demand that can be interrupted by control or request of the system operator.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/interruptible-demand/";
-            },},{id: "wiki-inverter-based-resources",
-          title: 'Inverter-based Resources',
-          description: "IBR",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/inverter-based-resources/";
-            },},{id: "wiki-line-outage-distribution-factor",
-          title: 'Line Outage Distribution Factor',
-          description: "LODF",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/line-outage-distribution-factor/";
-            },},{id: "wiki-markets",
-          title: 'Markets',
-          description: "Some electricity markets in North America",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/markets/";
+              window.location.href = "/wiki/market/";
             },},{id: "wiki-multi-criteria-decision-analysis-based-metrics",
           title: 'Multi-Criteria Decision Analysis-Based Metrics',
           description: "(MCDA)-Based Metrics",
@@ -552,6 +482,11 @@ ninja.data = [{
           description: "RAS",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/remedial-action-scheme/";
+            },},{id: "wiki-reserve-markets",
+          title: 'Reserve Markets',
+          description: "A market-based system for the purchase and sale of the Reserves",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/reserve-markets/";
             },},{id: "wiki-reserve",
           title: 'Reserve',
           description: "The generating capability that is “standing by” ready for service in the event that something happens on the power system.",
@@ -587,6 +522,86 @@ ninja.data = [{
           description: "The ability to remain in synchronism under normal and disturbed conditions.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/rotor-angle-stability/";
+            },},{id: "wiki-cascading-outage",
+          title: 'Cascading Outage',
+          description: "A sequence of events in which an initial disturbance triggers dependent component outages",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/cascading-outage/";
+            },},{id: "wiki-common-format-for-event-data-exchange",
+          title: 'Common Format for Event Data Exchange',
+          description: "COMFEDE",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/common-format-for-event-data-exchange/";
+            },},{id: "wiki-common-format-for-exchange-of-solved-load-flow-data",
+          title: 'Common Format for Exchange of Solved Load Flow Data',
+          description: "A.k.a. common data format (CDF)",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/common-format-for-exchange-of-solved-load-flow-data/";
+            },},{id: "wiki-common-grid-model-exchange-standard",
+          title: 'Common Grid Model Exchange Standard',
+          description: "CGMES",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/common-grid-model-exchange-standard/";
+            },},{id: "wiki-futures-market",
+          title: 'Futures Market',
+          description: "For contracts for future delivery of a commodity or security.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/future-markets/";
+            },},{id: "wiki-generation-redispatch",
+          title: 'Generation Redispatch',
+          description: "Generators are adjusted away (off-cost) from their normal assignments (on-cost).",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/generation-redispatch/";
+            },},{id: "wiki-generation-shift-factor",
+          title: 'Generation Shift Factor',
+          description: "GSF",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/generation-shift-factor/";
+            },},{id: "wiki-interchange",
+          title: 'Interchange',
+          description: "Energy transfers that cross Balancing Authority boundaries.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/interchange/";
+            },},{id: "wiki-interconnection-reliability-operating-limit",
+          title: 'Interconnection Reliability Operating Limit',
+          description: "A System Operating Limit that, if violated, could lead to instability or cascading outages.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/interconnection-reliability-operating-limit/";
+            },},{id: "wiki-interconnection",
+          title: 'Interconnection',
+          description: "A geographic area where BPS components are synchronized.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/interconnection/";
+            },},{id: "wiki-interruptible-demand",
+          title: 'Interruptible Demand',
+          description: "Customer demand that can be interrupted by control or request of the system operator.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/interruptible-demand/";
+            },},{id: "wiki-inverter-based-resources",
+          title: 'Inverter-based Resources',
+          description: "IBR",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/inverter-based-resources/";
+            },},{id: "wiki-line-outage-distribution-factor",
+          title: 'Line Outage Distribution Factor',
+          description: "LODF",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/line-outage-distribution-factor/";
+            },},{id: "wiki-localtional-marginal-price",
+          title: 'Localtional Marginal Price',
+          description: "LMP. Marginal price for energy at the location delivered or received.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/locational-marginal-price/";
+            },},{id: "wiki-loss-of-load-events",
+          title: 'Loss-of-Load Events',
+          description: "LOLEV. The number of events in which some system load is not served in a given year.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/loss-of-load-events/";
+            },},{id: "wiki-loss-of-load-expectation",
+          title: 'Loss-of-Load Expectation',
+          description: "LOLE. The number of days per year for which the available generation capacity is insufficient.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/loss-of-load-expectation/";
             },},{id: "wiki-most-severe-single-contingency",
           title: 'Most Severe Single Contingency',
           description: "A single contingency that would result in the greatest loss of resource output.",
@@ -677,6 +692,11 @@ ninja.data = [{
           description: "SM. An AC electrical machine operated with a constant electromagnetic field.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/synchronous-machine/";
+            },},{id: "wiki-system-flexibility",
+          title: 'System Flexibility',
+          description: "The ability to respond to system changes and uncertainties.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/system-flexibility/";
             },},{id: "wiki-tertiary-control",
           title: 'Tertiary Control',
           description: "Actions taken to handle current and future contingencies.",
