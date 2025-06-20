@@ -2,7 +2,10 @@
 layout: distill
 title: Distribution Provider
 description: Provides and operates the “wires” between the transmission system and the end-use customer.
-tags: distribution, entity, nerc
+tags:
+  - distribution
+  - entity
+  - nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

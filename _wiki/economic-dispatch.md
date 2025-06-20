@@ -2,7 +2,9 @@
 layout: distill
 title: Economic Dispatch
 description: Allocation of generating units for economical production.
-tags: dispatch
+tags:
+  - dispatch
+  - nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
