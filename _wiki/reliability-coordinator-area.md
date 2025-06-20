@@ -1,7 +1,8 @@
 ---
 layout: distill
 title: Reliability Coordinator Area
-description: The collection of generation, transmission, and loads within the boundaries of the Reliability Coordinator.
+description: The collection of generation
+- transmission, and loads within the boundaries of the Reliability Coordinator.
 tags: geography
 bibliography: papers.bib
 authors:
@@ -15,4 +16,5 @@ last_update: 2025-05-07
 
 Source: <d-cite key="nerc2024glossary"></d-cite>
 
-> The collection of generation, transmission, and loads within the boundaries of the Reliability Coordinator. Its boundary coincides with one or more Balancing Authority Areas.
+> The collection of generation
+- transmission, and loads within the boundaries of the Reliability Coordinator. Its boundary coincides with one or more Balancing Authority Areas.

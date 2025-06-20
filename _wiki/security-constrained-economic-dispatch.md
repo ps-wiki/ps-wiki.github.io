@@ -29,7 +29,8 @@ Source: <d-cite key="pjm2024m3"></d-cite> p17, Revision 67
 
 Source: <d-cite key="pjm2022cooptimization"></d-cite> p1
 
-> SCED is a mathematical model that generates the most economic resource dispatch during Real-time operations while considering key system operating constraints, such as power balance, reserve requirements, transmission congestion, as well as resource parameters, such as ramp rates, minimum and maximum output capability. The overall objective function of the SCED algorithm is to minimize the total system product cost over the study interval(s).
+> SCED is a mathematical model that generates the most economic resource dispatch during Real-time operations while considering key system operating constraints, such as power balance, reserve requirements
+- transmission congestion, as well as resource parameters, such as ramp rates, minimum and maximum output capability. The overall objective function of the SCED algorithm is to minimize the total system product cost over the study interval(s).
 >
 > The Objective Function include:
 >

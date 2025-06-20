@@ -2,7 +2,8 @@
 layout: distill
 title: Emergency Rating
 description: A transmission facility rating that reflects operation for a specified, finite period.
-tags: system-operator, transmission
+tags: system-operator
+- transmission
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
