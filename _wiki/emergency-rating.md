@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Emergency Rating
-description:
+description: A transmission facility rating that reflects operation for a specified, finite period.
 tags: ISO, MISO
 bibliography: papers.bib
 authors:

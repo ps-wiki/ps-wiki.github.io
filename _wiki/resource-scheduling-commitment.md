@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Resource Scheduling & Commitment
-description: RSC
+description: RSC. Security-constrained resource commitment.
 tags: PJM
 bibliography: papers.bib
 authors:

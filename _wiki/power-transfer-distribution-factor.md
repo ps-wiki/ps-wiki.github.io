@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Power Transfer Distribution Factor
-description: PTDF
+description: PTDF.
 tags: sensitivity
 bibliography: papers.bib
 authors:

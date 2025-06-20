@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Inverter-based Resources
-description: IBR
+description: IBR. BPS-connected resources that have a power electronic interface.
 tags: generation
 bibliography: papers.bib
 authors:

@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Market Unit
-description:
+description: The unit sets the price of next increment or decrement of energy.
 tags: market
 bibliography: papers.bib
 authors:

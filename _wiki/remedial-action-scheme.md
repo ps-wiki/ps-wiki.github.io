@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Remedial Action Scheme
-description: RAS
+description: RAS.
 tags: reliability
 bibliography: papers.bib
 authors:

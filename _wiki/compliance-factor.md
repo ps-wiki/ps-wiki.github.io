@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Compliance Factor
-description: CF
+description: CF.
 tags: frequency, interconnection
 bibliography: papers.bib
 authors:

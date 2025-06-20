@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Cascading
-description: The uncontrolled successive loss of System Elements triggered by an incident
+description: The uncontrolled successive loss of System Elements triggered by an incident.
 tags: event, NERC
 bibliography: papers.bib
 authors:

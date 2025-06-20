@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Security Constrained Unit Commitment
-description: SCUC
+description: SCUC.
 tags: PJM
 bibliography: papers.bib
 authors:

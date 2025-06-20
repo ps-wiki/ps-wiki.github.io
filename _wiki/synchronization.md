@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Synchronization
-description: Aligning a device's terminal voltage with another voltage source
+description: Aligning a device's terminal voltage with another voltage source.
 tags: IEEE
 bibliography: papers.bib
 authors:

@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Transmission Planning Horizon
-description: Planning perio
+description: Transmission planning period.
 tags: horizon, transmission, planning
 bibliography: papers.bib
 authors:

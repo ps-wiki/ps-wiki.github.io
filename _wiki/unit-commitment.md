@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Unit Commitment
-description:
+description: To determine commitment of resources.
 tags: PJM
 bibliography: papers.bib
 authors:
@@ -11,7 +11,7 @@ date: 2025-03-15
 last_update: 2025-06-19
 ---
 
-Relevante items: [Security Constrained Economic Dispatch](/wiki/security-constrained-economic-dispatch) &nbsp; [Locational Marginal Price](/wiki/locational-marginal-price)
+Relevante items: [Resource Scheduling & Commitment](/wiki/resource-scheduling-commitment) &nbsp; [Locational Marginal Price](/wiki/locational-marginal-price)
 
 ### Definition by PJM
 

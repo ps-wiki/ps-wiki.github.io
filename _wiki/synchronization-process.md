@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Synchronization Process
-description:
+description: The process of the equipment to synchronize its terminal voltage with another voltage source.
 tags: IEEE
 bibliography: papers.bib
 authors:

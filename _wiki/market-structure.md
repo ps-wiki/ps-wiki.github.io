@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Market Structure
-description:
+description: The rules, mechanisms, and processes under which a market operates.
 tags: market
 bibliography: papers.bib
 authors:

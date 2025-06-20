@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Equal Area Criterion
-description: EAC and EEAC. A method to determine the stability.
+description: To determine the maximum permissible increase in mechanical power input for system stability.
 tags: transient-stability
 bibliography: papers.bib
 authors:

@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Resilience
-description:
+description: The ability to withstand and reduce the magnitude and/or duration of disruptive events.
 tags: resilience, index, FERC
 bibliography: papers.bib
 authors:

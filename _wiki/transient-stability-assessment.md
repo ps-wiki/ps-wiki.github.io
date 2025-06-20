@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Transient Stability Assessment
-description: TSA. Monitor and determine transient stability of the system
+description: TSA. Monitor and determine transient stability of the system.
 tags: stability
 bibliography: papers.bib
 authors:

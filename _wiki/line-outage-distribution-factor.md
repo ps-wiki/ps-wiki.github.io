@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Line Outage Distribution Factor
-description: LODF
+description: LODF.
 tags: sensitivity
 bibliography: papers.bib
 authors:

@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Security Constraiend Economic Dispatch
-description: SCED
+description: SCED.
 tags: dispatch, economics, operation, PJM, ISO
 bibliography: papers.bib
 authors:

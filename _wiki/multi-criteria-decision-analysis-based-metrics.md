@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Multi-Criteria Decision Analysis-Based Metrics
-description: (MCDA)-Based Metrics
+description: (MCDA)-Based Metrics.
 tags: resilience, index, IEEE
 bibliography: papers.bib
 authors:

@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Non-Storm Resilience Metric
-description:
+description: A metric focuses on robustness and the ability to withstand events.
 tags: resilience, index, IEEE
 bibliography: papers.bib
 authors:

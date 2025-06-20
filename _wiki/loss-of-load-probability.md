@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Loss-of-Load Probability
-description: LOLP
+description: LOLP.
 tags: adequacy
 bibliography: papers.bib
 authors:

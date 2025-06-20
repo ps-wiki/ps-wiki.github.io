@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Extended Equal Area Criterion
-description: EEAC
+description: Extend EAC to multi-machine systems.
 tags: transient-stability
 bibliography: papers.bib
 authors:

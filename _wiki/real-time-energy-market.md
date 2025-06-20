@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Real Time Energy Market
-description:
+description: Use dispatch run to determine the least cost solution to balance supply and demand.
 tags: PJM
 bibliography: papers.bib
 authors:

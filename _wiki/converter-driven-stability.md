@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Converter-Driven Stability
-description: Converter-interfaced generation's impact on stability
+description: Converter-interfaced generation's impact on stability.
 tags: stability
 bibliography: papers.bib
 authors:

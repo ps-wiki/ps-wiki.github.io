@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Outage Transfer Distribution Factor
-description: OTDF
+description: OTDF.
 tags: sensitivity
 bibliography: papers.bib
 authors:

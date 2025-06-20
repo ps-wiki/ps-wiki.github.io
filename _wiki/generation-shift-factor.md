@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Generation Shift Factor
-description: GSF
+description: GSF.
 tags: sensitivity
 bibliography: papers.bib
 authors:

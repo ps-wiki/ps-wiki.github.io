@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Common Grid Model Exchange Standard
-description: CGMES
+description: CGMES.
 tags: data-format
 bibliography: papers.bib
 authors:

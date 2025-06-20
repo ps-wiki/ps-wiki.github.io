@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Performance-Based Metrics
-description: A.k.a. consequence-based metrics
+description: A.k.a. consequence-based metrics. Quantitative approaches for assessing system resilience.
 tags: resilience, index, IEEE, FERC
 bibliography: papers.bib
 authors:

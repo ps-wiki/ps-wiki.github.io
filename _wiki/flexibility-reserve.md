@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Flexibility Reserve
-description: Addressing variability and uncertainty on longer timescales than operating reserves and regulation service
+description: Addressing variability and uncertainty on longer timescales than operating reserves and regulation service.
 tags: flexibility, ISO, NYISO
 bibliography: papers.bib
 authors:

@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Stability Limits
-description: Stability related transmission limits
+description: Stability related transmission limits.
 tags: transmission-operation, PJM, ISO
 bibliography: papers.bib
 authors:

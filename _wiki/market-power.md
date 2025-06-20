@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Market Power
-description:
+description: The ability to control or affect price.
 tags: market
 bibliography: papers.bib
 authors:

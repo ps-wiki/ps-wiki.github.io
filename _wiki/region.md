@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Region
-description: Bulk power system reliability regions in North America
+description: Bulk power system reliability regions in North America.
 tags: geography
 bibliography: papers.bib
 authors:

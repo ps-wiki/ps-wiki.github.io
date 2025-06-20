@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Transmission Interconnection Procedures
-description: TIP
+description: TIP.
 tags: transmission, transmission-expansion, NYISO, ISO
 bibliography: papers.bib
 authors:

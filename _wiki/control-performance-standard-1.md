@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Control Performance Standard 1
-description: CPS1. A standard that measures impact on frequency error
+description: CPS1. A standard that measures impact on frequency error.
 tags: frequency, interconnection
 bibliography: papers.bib
 authors:

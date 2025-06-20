@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Real-Time Reliability Model
-description: A.k.a. EMS model. A computer representation of the power system facilities.
+description: A.k.a. <u>EMS model</u>. A computer representation of the power system facilities.
 tags: reliability, transmission-operation, PJM, ISO
 bibliography: papers.bib
 authors:
