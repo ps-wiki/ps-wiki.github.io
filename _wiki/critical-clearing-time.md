@@ -2,13 +2,13 @@
 layout: distill
 title: Critical Clearing Time
 description: CCT. The maximum permissible duration of the fault.
-tags: transient-stability
+tags: stability, ieee-task-force, cigre
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-20
 ---
 
 ### Definition in an IEEE Article by a Joint Task Force of IEEE and CIGRE

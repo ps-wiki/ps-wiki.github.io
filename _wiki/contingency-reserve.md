@@ -2,7 +2,7 @@
 layout: distill
 title: Contingency Reserve
 description: Capacity deployed by the Balancing Authority to meet the Disturbance Control Standard.
-tags: reserve, contingency, balancing-authority
+tags: nerc, contingency
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

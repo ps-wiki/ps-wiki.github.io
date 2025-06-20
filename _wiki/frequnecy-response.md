@@ -2,13 +2,13 @@
 layout: distill
 title: Frequency Response
 description: The ability of a system to react to a change in system frequency.
-tags: frequency, response, system
+tags: frequency-control, nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-18
+last_update: 2025-06-20
 ---
 
 Relevant items: [Primary Control](/wiki/primary-control)

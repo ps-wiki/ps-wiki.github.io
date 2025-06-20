@@ -2,13 +2,13 @@
 layout: distill
 title: Loss-of-Load Expectation
 description: LOLE. The number of days per year for which the available generation capacity is insufficient.
-tags: adequacy
+tags: adequacy, nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-18
+last_update: 2025-06-20
 ---
 
 ### Definition by NERC

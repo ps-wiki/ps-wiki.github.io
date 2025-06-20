@@ -2,13 +2,13 @@
 layout: distill
 title: Contingency
 description: The unexpected failure or outage of a system component.
-tags: event
+tags: contingency, system-operator, nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-20
 ---
 
 Relevant items: [Emergency](/wiki/emergency)

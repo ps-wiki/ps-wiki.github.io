@@ -2,13 +2,13 @@
 layout: distill
 title: Flowgate
 description: Portion of the transmission system used to analyze power flow impact.
-tags: transmission, power-flow
+tags: transmission, nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-20
 ---
 
 ### Definition by NERC

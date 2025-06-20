@@ -2,13 +2,13 @@
 layout: distill
 title: Control Performance Standard 2
 description: CPS2. A standard intended to limit unscheduled flows.
-tags: frequency
+tags: frequency-control, nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-17
+last_update: 2025-06-20
 ---
 
 ### Definition by NERC

@@ -2,13 +2,13 @@
 layout: distill
 title: Contingency Reserve Service
 description: A.k.a. Primary Reserve. Can be satisfied in 10 minutes or less.
-tags: reserve, contingency, balancing-authority
+tags: reserve, system-operator, contingency
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-20
 ---
 
 Relevant items: [Contingency Reserve](/wiki/contingency-reserve)

@@ -2,13 +2,13 @@
 layout: distill
 title: Co-Located Load
 description: Load connected to the an existing or planned facility.
-tags: load, transmission, ISO
+tags: load, transmission, system-operator
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-17
+last_update: 2025-06-20
 ---
 
 ### Definition by PJM

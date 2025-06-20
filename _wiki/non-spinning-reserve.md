@@ -2,13 +2,13 @@
 layout: distill
 title: Non-Spinning Reserve
 description: Unconnected to the system but capable of serving demand within a specified time.
-tags: reserve
+tags: reserve, nercm generation
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-18
+last_update: 2025-06-20
 ---
 
 ### Definition by NERC

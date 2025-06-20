@@ -2,7 +2,7 @@
 layout: distill
 title: Cascading Outage
 description: A sequence of events in which an initial disturbance triggers dependent component outages.
-tags: event, IEEE
+tags: event, ieee
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

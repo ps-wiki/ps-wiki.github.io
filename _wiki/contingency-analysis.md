@@ -2,13 +2,13 @@
 layout: distill
 title: Contingency Analysis
 description: Procedures to study a contingency.
-tags: event
+tags: contingency, system-operator
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-17
+last_update: 2025-06-20
 ---
 
 Relevant items: [Contingency List](/wiki/contingency-list)

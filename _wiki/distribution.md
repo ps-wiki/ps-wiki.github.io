@@ -2,13 +2,13 @@
 layout: distill
 title: Distribution
 description: The act of distributing gas or electric power to customers.
-tags: distribution, gas, FERC
+tags: distribution, ferc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-18
+last_update: 2025-06-20
 ---
 
 ### Definition by FERC

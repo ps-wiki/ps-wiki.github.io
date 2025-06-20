@@ -2,13 +2,13 @@
 layout: distill
 title: Emergency Rating
 description: A transmission facility rating that reflects operation for a specified, finite period.
-tags: ISO
+tags: system-operator, transmission
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-18
+last_update: 2025-06-20
 ---
 
 ### Definition by MISO

@@ -2,13 +2,13 @@
 layout: distill
 title: Interruptible Demand
 description: Customer demand that can be interrupted by control or request of the system operator.
-tags: demand, reliability
+tags: reliability, nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-18
+last_update: 2025-06-20
 ---
 
 ### Definition by NERC

@@ -2,13 +2,13 @@
 layout: distill
 title: Non-Storm Resilience Metric
 description: A metric focuses on robustness and the ability to withstand events.
-tags: resilience, index, IEEE
+tags: resilience, metrics, ieee
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-20
 ---
 
 ### Definition in an IEEE Techical Report

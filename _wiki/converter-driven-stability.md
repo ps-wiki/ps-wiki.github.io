@@ -2,13 +2,13 @@
 layout: distill
 title: Converter-Driven Stability
 description: Converter-interfaced generation's impact on stability.
-tags: stability
+tags: stability, ieee-task-force
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-20
 ---
 
 ### Definition in an IEEE Article by a Task Force

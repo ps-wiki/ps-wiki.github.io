@@ -2,7 +2,7 @@
 layout: distill
 title: Balancing Authority Area
 description: The collection of generation, transmission, and loads within the metered boundaries of the Balancing Authority.
-tags: geography
+tags: geography, transmission
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

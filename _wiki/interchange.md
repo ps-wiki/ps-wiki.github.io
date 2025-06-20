@@ -2,13 +2,13 @@
 layout: distill
 title: Interchange
 description: Energy transfers that cross Balancing Authority boundaries.
-tags: energy-transfer
+tags: interchange, balancing-authority, nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-18
+last_update: 2025-06-20
 ---
 
 ### Definition by NERC

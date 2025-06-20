@@ -2,13 +2,13 @@
 layout: distill
 title: Inverter-based Resources
 description: IBR. BPS-connected resources that have a power electronic interface.
-tags: generation
+tags: generation, nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-18
+last_update: 2025-06-20
 ---
 
 ### Definition by NERC

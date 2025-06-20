@@ -2,13 +2,13 @@
 layout: distill
 title: Black Start
 description: Establishing the voltage from around zero
-tags: operation
+tags: operation, ieee-standard
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-20
 ---
 
 ### Definition in an IEEE Standard

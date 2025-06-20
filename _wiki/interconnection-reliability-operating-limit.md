@@ -2,13 +2,13 @@
 layout: distill
 title: Interconnection Reliability Operating Limit
 description: A System Operating Limit that, if violated, could lead to instability or cascading outages.
-tags: reliability, operating-limit, interconnection
+tags: reliability, interconnection, operation, nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-18
+last_update: 2025-06-20
 ---
 
 ### Definition by NERC

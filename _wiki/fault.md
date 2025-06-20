@@ -2,13 +2,13 @@
 layout: distill
 title: Fault
 description: An event such as a short circuit, a broken wire, or an intermittent connection.
-tags: event
+tags: event, nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-18
+last_update: 2025-06-20
 ---
 
 ### Definition by NERC

@@ -2,7 +2,7 @@
 layout: distill
 title: Common Format for Event Data Exchange
 description: COMFEDE. Inactive.
-tags: data-format
+tags: data-format, inactive, ieee-standard, standard
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

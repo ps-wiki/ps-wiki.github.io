@@ -2,13 +2,13 @@
 layout: distill
 title: Critical Inertia
 description: Minimum level of system inertia necessary to ensure deployment of frequency responsive reserves.
-tags: inertia, frequency, ISO
+tags: inertia, frequency-control, system-operator, nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-20
 ---
 
 ### Definition in a NERC Webinar by ERCOT

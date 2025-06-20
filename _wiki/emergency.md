@@ -2,13 +2,13 @@
 layout: distill
 title: Emergency
 description: Abnormal system condition that requires automatic or immediate manual action.
-tags: event
+tags: system-operator, transmission, nerc, reliability
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-20
 ---
 
 Relevant items: [Contingency](/wiki/contingency)
