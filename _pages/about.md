@@ -4,11 +4,6 @@ title: about
 permalink: /
 subtitle: An open wiki for power systems engineers, researchers, and students.
 ---
-
-<div class="header-section text-center">
-  <p class="lead"></p>
-</div>
-
 <div class="button-container text-center mb-5">
   <a href="/wiki/" class="btn btn-primary btn-lg custom-button-style">Explore the Wiki Now</a>
 </div>
