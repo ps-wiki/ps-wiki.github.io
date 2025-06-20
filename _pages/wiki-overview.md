@@ -11,6 +11,7 @@ horizontal: false
   {% assign sorted_wiki_terms = site.wiki | sort:"title" %}
 
 {% for term in sorted_wiki_terms %}
+
 <li>
 <a href="{{ term.url | relative_url }}">{{ term.title }}</a>
 {% if term.description %}
