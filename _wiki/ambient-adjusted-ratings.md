@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Ambient-Adjusted Ratings
-description: 
+description:
 tags: ISO, GET, transmission
 bibliography: papers.bib
 authors:
