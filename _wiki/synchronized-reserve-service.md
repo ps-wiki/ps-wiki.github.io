@@ -5,8 +5,15 @@ description: Can be satisfied by online resources in 10 minutes or less.
 tags: reserve
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
+last_update: 2025-06-19
 ---
 
-**Synchronized Reserve Service** <d-cite key="pjm2024m10"></d-cite> (p26, Revision 45)
+### Definition by PJM
 
-Synchronized Reserve Service: can only be satisfied by online resources that are able to respond in 10 minutes or less.
+Source: <d-cite key="pjm2024m10"></d-cite> p26, Revision 45
+
+> Synchronized Reserve Service: can only be satisfied by online resources that are able to respond in 10 minutes or less.
