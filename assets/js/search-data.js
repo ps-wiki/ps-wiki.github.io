@@ -342,11 +342,6 @@ ninja.data = [{
           description: "The ability of a system to react to a change in system frequency.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/frequnecy-response/";
-            },},{id: "wiki-loss-of-load-hour",
-          title: 'Loss-of-Load Hour',
-          description: "LOLH. The number of hours per year where demand will exceed the generating capacity.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/loss-of-load-hour/";
             },},{id: "wiki-loss-of-load-probability",
           title: 'Loss-of-Load Probability',
           description: "LOLP",
@@ -597,6 +592,131 @@ ninja.data = [{
           description: "",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/storm-resilience-metric/";
+            },},{id: "wiki-subsynchronous-resonance",
+          title: 'Subsynchronous Resonance',
+          description: "SSR. A condition involving energy exchange at natural frequencies below the synchronous frequency.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/subsynchronous-resonance/";
+            },},{id: "wiki-synchronization-process",
+          title: 'Synchronization Process',
+          description: "",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/synchronization-process/";
+            },},{id: "wiki-synchronization",
+          title: 'Synchronization',
+          description: "Aligning a device&#39;s terminal voltage with another voltage source",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/synchronization/";
+            },},{id: "wiki-synchronized-reserve-service",
+          title: 'Synchronized Reserve Service',
+          description: "Can be satisfied by online resources in 10 minutes or less.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/synchronized-reserve-service/";
+            },},{id: "wiki-synchronous-machine",
+          title: 'Synchronous Machine',
+          description: "SM. An AC electrical machine operated with a constant electromagnetic field.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/synchronous-machine/";
+            },},{id: "wiki-system-flexibility",
+          title: 'System Flexibility',
+          description: "The ability to respond to system changes and uncertainties.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/system-flexibility/";
+            },},{id: "wiki-tertiary-control",
+          title: 'Tertiary Control',
+          description: "Actions taken to handle current and future contingencies.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/tertiary-control/";
+            },},{id: "wiki-thermal-limit-operation-criteria",
+          title: 'Thermal Limit Operation Criteria',
+          description: "Techniques to control contingency or system violations.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/thermal-limit-operation-criteria/";
+            },},{id: "wiki-torsional-resonance",
+          title: 'Torsional Resonance',
+          description: "The SSR due to torsional interactions between series compensated lines and turbine-generator mechanical shafts.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/torsional-resonance/";
+            },},{id: "wiki-transient-stability-assessment",
+          title: 'Transient Stability Assessment',
+          description: "TSA. Monitor and determine transient stability of the system",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/transient-stability-assessment/";
+            },},{id: "wiki-transmission-expansion",
+          title: 'Transmission Expansion',
+          description: "The addition or modification of facilities of the Transmission System.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/transmission-expansion/";
+            },},{id: "wiki-transmission-interconnection-procedures",
+          title: 'Transmission Interconnection Procedures',
+          description: "TIP",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/transmission-interconnection-procedures/";
+            },},{id: "wiki-transmission-planning-horizon",
+          title: 'Transmission Planning Horizon',
+          description: "Planning period",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/transmission-planning-horizon/";
+            },},{id: "wiki-uncertainty",
+          title: 'Uncertainty',
+          description: "Two types of uncertainty",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/uncertainty/";
+            },},{id: "wiki-unit-commitment",
+          title: 'Unit Commitment',
+          description: "",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/unit-commitment/";
+            },},{id: "wiki-vendors",
+          title: 'Vendors',
+          description: "Power system vendors",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/vendors/";
+            },},{id: "wiki-virtual-synchronous-machine",
+          title: 'Virtual Synchronous Machine',
+          description: "VSM. Equipment that includes a DC/AC converter controlled to mimic a conventional synchronous machine.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/virtual-synchronous-machine/";
+            },},{id: "wiki-voltage-dip",
+          title: 'Voltage Dip',
+          description: "A.k.a. Voltage Sag. Short-duration decreases in RMS voltage",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/voltage-dip/";
+            },},{id: "wiki-voltage-limits",
+          title: 'Voltage Limits',
+          description: "Voltage limits to protect against wide area voltage collapse.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/voltage-limits/";
+            },},{id: "wiki-voltage-reductions",
+          title: 'Voltage Reductions',
+          description: "A.k.a brownouts",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/voltage-reductions/";
+            },},{id: "wiki-voltage-stability",
+          title: 'Voltage Stability',
+          description: "The ability of a power system to maintain steady voltages close to nominal value.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/voltage-stability/";
+            },},{id: "wiki-waveform-measurement-unit",
+          title: 'Waveform Measurement Unit',
+          description: "WMU, SMU. Sensor device to record synchro-waveforms.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/waveform-measurement-unit/";
+            },},{id: "wiki-wholesale-markets",
+          title: 'Wholesale Markets',
+          description: "The purchase and sale from generators to resellers.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/wholesale-markets/";
+            },},{id: "wiki-zonal-price",
+          title: 'Zonal Price',
+          description: "A pricing mechanism for a specific zone within a control area.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/zonal-price/";
+            },},{id: "wiki-zone",
+          title: 'Zone',
+          description: "",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/zone/";
             },},{id: "wiki-cascading-outage",
           title: 'Cascading Outage',
           description: "A sequence of events in which an initial disturbance triggers dependent component outages",
@@ -677,126 +797,16 @@ ninja.data = [{
           description: "LOLE. The number of days per year for which the available generation capacity is insufficient.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/loss-of-load-expectation/";
+            },},{id: "wiki-loss-of-load-hour",
+          title: 'Loss-of-Load Hour',
+          description: "LOLH. The number of hours per year where demand will exceed the generating capacity.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/loss-of-load-hour/";
             },},{id: "wiki-most-severe-single-contingency",
           title: 'Most Severe Single Contingency',
           description: "A single contingency that would result in the greatest loss of resource output.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/most-sevre-single-contingency/";
-            },},{id: "wiki-subsynchronous-resonance",
-          title: 'Subsynchronous Resonance',
-          description: "SSR. A condition involving energy exchange at natural frequencies below the synchronous frequency.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/subsynchronous-resonance/";
-            },},{id: "wiki-synchronization",
-          title: 'synchronization',
-          description: "Aligning a device&#39;s terminal voltage with another voltage source",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/synchronization/";
-            },},{id: "wiki-synchronized-reserve-service",
-          title: 'Synchronized Reserve Service',
-          description: "Can be satisfied by online resources in 10 minutes or less.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/synchronized-reserve-service/";
-            },},{id: "wiki-synchronous-machine",
-          title: 'Synchronous Machine',
-          description: "SM. An AC electrical machine operated with a constant electromagnetic field.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/synchronous-machine/";
-            },},{id: "wiki-system-flexibility",
-          title: 'System Flexibility',
-          description: "The ability to respond to system changes and uncertainties.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/system-flexibility/";
-            },},{id: "wiki-tertiary-control",
-          title: 'Tertiary Control',
-          description: "Actions taken to handle current and future contingencies.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/tertiary-control/";
-            },},{id: "wiki-thermal-limit-operation-criteria",
-          title: 'Thermal Limit Operation Criteria',
-          description: "Techniques to control contingency or system violations.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/thermal-limit-operation-criteria/";
-            },},{id: "wiki-torsional-resonance",
-          title: 'Torsional Resonance',
-          description: "The SSR due to torsional interactions between series compensated lines and turbine-generator mechanical shafts.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/torsional-resonance/";
-            },},{id: "wiki-transient-stability-assessment",
-          title: 'Transient Stability Assessment',
-          description: "Monitor and determine transient stability of the system",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/transient-stability-assessment/";
-            },},{id: "wiki-transmission-expansion",
-          title: 'Transmission Expansion',
-          description: "The addition or modification of facilities of the Transmission System.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/transmission-expansion/";
-            },},{id: "wiki-transmission-planning-horizon",
-          title: 'Transmission Planning Horizon',
-          description: "Planning period",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/transmission-planning-horizon/";
-            },},{id: "wiki-uncertainty",
-          title: 'Uncertainty',
-          description: "Two types of uncertainty.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/uncertainty/";
-            },},{id: "wiki-unit-commitment",
-          title: 'Unit Commitment',
-          description: "",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/unit-commitment/";
-            },},{id: "wiki-vendors",
-          title: 'Vendors',
-          description: "Power system vendors",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/vendors/";
-            },},{id: "wiki-virtual-synchronous-machine",
-          title: 'Virtual Synchronous Machine',
-          description: "VSM. Equipment that includes a DC/AC converter controlled to mimic a conventional synchronous machine.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/virtual-synchronous-machine/";
-            },},{id: "wiki-voltage-dip",
-          title: 'Voltage Dip',
-          description: "Voltage Sag. Short-duration decreases in RMS voltage.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/voltage-dip/";
-            },},{id: "wiki-voltage-limits",
-          title: 'Voltage Limits',
-          description: "Voltage limits to protect against wide area voltage collapse.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/voltage-limits/";
-            },},{id: "wiki-voltage-reductions",
-          title: 'Voltage Reductions',
-          description: "A.k.a brownouts",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/voltage-reductions/";
-            },},{id: "wiki-voltage-stability",
-          title: 'Voltage Stability',
-          description: "The ability of a power system to maintain steady voltages close to nominal value.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/voltage-stability/";
-            },},{id: "wiki-waveform-measurement-unit",
-          title: 'Waveform Measurement Unit',
-          description: "WMU, SMU. Sensor device to record synchro-waveforms.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/waveform-measurement-unit/";
-            },},{id: "wiki-wholesale-markets",
-          title: 'Wholesale Markets',
-          description: "The purchase and sale from generators to resellers.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/wholesale-markets/";
-            },},{id: "wiki-zonal-price",
-          title: 'Zonal Price',
-          description: "A pricing mechanism for a specific zone within a control area.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/zonal-price/";
-            },},{id: "wiki-zone",
-          title: 'Zone',
-          description: "",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/zone/";
             },},{
         id: 'social-email',
         title: 'email',
