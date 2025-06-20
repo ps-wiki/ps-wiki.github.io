@@ -5,7 +5,6 @@ permalink: /wiki/
 description: Glossary of terms used in power systems
 nav: true
 nav_order: 2
-horizontal: true
 ---
 
 <ul class="wiki-list">
