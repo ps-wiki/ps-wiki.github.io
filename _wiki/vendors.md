@@ -5,11 +5,16 @@ description: Power system vendors
 tags: software, vendor
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
+last_update: 2025-06-19
 ---
 
 Some software vendors for the power engineering are listed below:
 
-**EMTP**
+#### EMTP
 
 Electromagnetic transients program (EMTP) is the reference for EMT simulations and analysis of power systems.
 
@@ -29,7 +34,7 @@ Electromagnetic transients program (EMTP) is the reference for EMT simulations a
 
 </details>
 
-**EasyPower**
+#### EasyPower
 
 The EasyPower product suite delivers a full lineup of powerful electrical software tools for intelligently designing, analyzing, and monitoring electrical power systems.
 
@@ -47,7 +52,7 @@ The EasyPower product suite delivers a full lineup of powerful electrical softwa
 </div>
 </details>
 
-**PSCAD**
+#### PSCAD
 
 The World's Most Advanced Tool for Power Systems EMT Simulations
 
@@ -59,7 +64,7 @@ The World's Most Advanced Tool for Power Systems EMT Simulations
 </div>
 </details>
 
-**ETAP**
+#### ETAP
 
 provides market-leading software solutions for electrical systems, from design and engineering to operations and maintenance.
 
@@ -69,7 +74,7 @@ provides market-leading software solutions for electrical systems, from design a
 
 Note: cheked on 01-09-2025, <https://etap.com/home>
 
-**PowerFactory**
+#### PowerFactory
 
 by DIgSILENT, is a power system analysis software application for use in analysing generation, transmission, distribution and industrial systems. It covers the full range of functionality from standard features to highly sophisticated and advanced applications including windpower, distributed generation, real-time simulation and performance monitoring for system testing and supervision.
 
@@ -81,7 +86,7 @@ by DIgSILENT, is a power system analysis software application for use in analysi
 </div>
 </details>
 
-**NEPLAN Electricity**
+#### NEPLAN Electricity
 
 is a software tool to analyse, plan, optimize and simulate electrical networks. The strength of the software is the extremely user-friendly graphical interface with the extensive libraries for the network elements, protection devices and control circuits, which allows the user to perform study cases very efficiently. The software has a modular concept, is based on international standards, such as IEC, ANSI, IEEE, etc. and is customizable for the European and US market. It is used in transmission, distribution, generation / industrial networks amongst others for network and investment planning, power quality, multi-period optimization, protection setting and assessment, dynamic simulation (RMS/EMT). The stationary and dynamic models for 1-2-3 phase (with neutral and earth wire) AC and DC networks have a high accuracy and performance. Very big network (above 500’000 bus bars) could be easily handled by new IT-techniques and algorithm.
 
@@ -93,7 +98,7 @@ is a software tool to analyse, plan, optimize and simulate electrical networks. 
 </div>
 </details>
 
-**PowerWorld Simulator**
+#### PowerWorld Simulator
 
 is an interactive power system simulation package designed to simulate high voltage power system operation on a time frame ranging from several minutes to several days. The software contains a highly effective power flow analysis package capable of efficiently solving systems of up to 250,000 buses.
 
@@ -116,7 +121,7 @@ PowerWorld offers several optional add-ons in addition to the base Simulator Pac
 </div>
 </details>
 
-**Energy Exemplar**
+#### Energy Exemplar
 
 - PLEXOS, Co-optimization; Nodal and Zonal analysis; Renewables and ancillary markets; Hydro-optimization; Gas Planning; Multi-objective decision optimization
 - AURORA: Power Market Price Forecasting; Energy Portfolio Analysis; Optimized Resource Expansion; Power Market Risk Analysis
@@ -131,7 +136,7 @@ PowerWorld offers several optional add-ons in addition to the base Simulator Pac
 </div>
 </details>
 
-**PSS**
+#### PSS
 
 by Siemens, power system simulation and modeling software
 
@@ -154,7 +159,7 @@ by Siemens, power system simulation and modeling software
 </div>
 </details>
 
-**PlanOS**
+#### PlanOS
 
 by GE Vernova, a comprehensive software platform to confidently plan for a more reliable, resilient, and stable energy system.
 

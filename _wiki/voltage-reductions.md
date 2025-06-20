@@ -5,10 +5,15 @@ description: A.k.a brownouts
 tags: reliability
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
+last_update: 2025-06-19
 ---
 
-**Voltage Reductions** <d-cite key="nerc2013terminology"></d-cite>
+### Definition by NERC
 
-This is also referred to as “brownouts” because lights dim as voltage is lowered.
+Source: <d-cite key="nerc2013terminology"></d-cite>
 
-<br>
+> This is also referred to as “brownouts” because lights dim as voltage is lowered.

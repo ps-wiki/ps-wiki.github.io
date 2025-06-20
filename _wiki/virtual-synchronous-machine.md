@@ -5,22 +5,21 @@ description: VSM. Equipment that includes a DC/AC converter controlled to mimic 
 tags: synchronous-machine, power-electronics, IEEE
 category: wiki
 bibliography: papers.bib
+authors:
+  - name: Jinning Wang
+    url: https://jinningwang.github.io
+date: 2025-03-15
+last_update: 2025-06-19
 ---
 
-**virtual synchronous machine** (VSM) <d-cite key="ieee2025std2988"></d-cite> (p15)
+### Definition in an IEEE Standard
 
-A virtual synchronous machine is a piece of equipment that includes a DC/AC power electronic converter (PEC) controlled to mimic and, in some cases, to surpass the dynamics and behavior of a conventional [synchronous machine (SM)](/wiki/synchronous-machine) through the inherent [synchronization mechanism](/wiki/synchronization) of SM.
+Source: <d-cite key="ieee2025std2988"></d-cite>
 
-**virtual damping** <d-cite key="ieee2025std2988"></d-cite> (p15)
+> A virtual synchronous machine is a piece of equipment that includes a DC/AC power electronic converter (PEC) controlled to mimic and, in some cases, to surpass the dynamics and behavior of a conventional [synchronous machine (SM)](/wiki/synchronous-machine) through the inherent [synchronization mechanism](/wiki/synchronization) of SM.
 
-The damping effect that is implemented through a control function.
+> virtual damping: The damping effect that is implemented through a control function.
 
-**virtual impedance** <d-cite key="ieee2025std2988"></d-cite> (p15)
+> virtual impedance: The impedance that is implemented through a control function.
 
-The impedance that is implemented through a control function.
-
-**virtual inertia** <d-cite key="ieee2025std2988"></d-cite> (p15)
-
-The inertia that is implemented through a control function to emulate the physical inertia of an SM
-
-<br>
+> virtual inertia: The inertia that is implemented through a control function to emulate the physical inertia of an SM
