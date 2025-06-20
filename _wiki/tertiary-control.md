@@ -3,7 +3,6 @@ layout: distill
 title: Tertiary Control
 description: Actions taken to handle current and future contingencies.
 tags: frequency
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

@@ -3,7 +3,6 @@ layout: distill
 title: Multi-Criteria Decision Analysis-Based Metrics
 description: (MCDA)-Based Metrics
 tags: resilience, index, IEEE
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

@@ -3,7 +3,6 @@ layout: distill
 title: Ancillary Services
 description: Services necessary to support the transmission of electric power.
 tags: transmission, reliability, ancillary, FERC
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

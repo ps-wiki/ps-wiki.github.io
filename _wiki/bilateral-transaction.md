@@ -3,7 +3,6 @@ layout: distill
 title: Bilateral Transaction
 description: A direct contract between a seller and buyer outside of a centralized market.
 tags: market, transaction, FERC
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

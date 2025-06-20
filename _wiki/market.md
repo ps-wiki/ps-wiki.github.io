@@ -3,7 +3,6 @@ layout: distill
 title: Market
 description:
 tags: market
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

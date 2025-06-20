@@ -3,7 +3,6 @@ layout: distill
 title: black-start
 description: Establishing the voltage from around zero
 tags: operation
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

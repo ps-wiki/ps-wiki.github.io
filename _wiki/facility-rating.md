@@ -3,7 +3,6 @@ layout: distill
 title: Facility Rating
 description:
 tags: ISO, MISO
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

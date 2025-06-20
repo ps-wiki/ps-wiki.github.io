@@ -3,7 +3,6 @@ layout: distill
 title: Equal Area Criterion
 description: EAC and EEAC. A method to determine the stability.
 tags: transient-stability
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

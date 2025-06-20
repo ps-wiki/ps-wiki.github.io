@@ -3,7 +3,6 @@ layout: distill
 title: Spot Market
 description: For short-term contractual commitments.
 tags: market, trading, FERC
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

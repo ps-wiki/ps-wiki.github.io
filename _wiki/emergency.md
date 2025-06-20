@@ -3,7 +3,6 @@ layout: distill
 title: Emergency
 description: Abnormal system condition that requires automatic or immediate manual action.
 tags: event
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

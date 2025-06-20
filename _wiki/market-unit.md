@@ -3,7 +3,6 @@ layout: distill
 title: Market Unit
 description:
 tags: market
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

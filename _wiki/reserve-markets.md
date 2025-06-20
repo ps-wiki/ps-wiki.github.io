@@ -3,7 +3,6 @@ layout: distill
 title: Reserve Markets
 description: A market-based system for the purchase and sale of the Reserves
 tags: market, reliability, reserve, operation, PJM, NYISO, ISO
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

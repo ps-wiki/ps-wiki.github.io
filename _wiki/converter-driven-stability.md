@@ -3,7 +3,6 @@ layout: distill
 title: Converter-Driven Stability
 description: Converter-interfaced generation's impact on stability
 tags: stability
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

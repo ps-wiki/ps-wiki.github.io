@@ -3,7 +3,6 @@ layout: distill
 title: Subsynchronous Resonance
 description: SSR. A condition involving energy exchange at natural frequencies below the synchronous frequency.
 tags: resonance, stability
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

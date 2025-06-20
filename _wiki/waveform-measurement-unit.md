@@ -3,7 +3,6 @@ layout: distill
 title: Waveform Measurement Unit
 description: WMU, SMU. Sensor device to record synchro-waveforms.
 tags: IEEE
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

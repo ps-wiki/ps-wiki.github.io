@@ -3,7 +3,6 @@ layout: distill
 title: Day Ahead Energy Market
 description: Forward markets for electricity to be supplied the following day.
 tags: PJM
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

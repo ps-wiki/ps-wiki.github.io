@@ -3,7 +3,6 @@ layout: distill
 title: Primary Control
 description: A.k.a. <u>Frequency Response</u>.
 tags: frequency, generator
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

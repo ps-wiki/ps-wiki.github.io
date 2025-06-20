@@ -3,7 +3,6 @@ layout: distill
 title: Common Format for Exchange of Solved Load Flow Data
 description: A.k.a. common data format (CDF)
 tags: data-format
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

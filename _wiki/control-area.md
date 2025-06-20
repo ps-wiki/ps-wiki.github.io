@@ -3,7 +3,6 @@ layout: distill
 title: Control Area
 description:
 tags: geography
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

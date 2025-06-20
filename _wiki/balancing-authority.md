@@ -3,7 +3,6 @@ layout: distill
 title: Balancing Authoritiy
 description: The responsible entity within a Balancing Authority Area.
 tags: entity, geography
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

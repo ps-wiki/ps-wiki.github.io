@@ -3,7 +3,6 @@ layout: distill
 title: Zone
 description:
 tags: geography
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

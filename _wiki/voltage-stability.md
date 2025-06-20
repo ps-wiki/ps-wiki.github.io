@@ -3,7 +3,6 @@ layout: distill
 title: Voltage Stability
 description: The ability of a power system to maintain steady voltages close to nominal value.
 tags: stability, voltage
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

@@ -3,7 +3,6 @@ layout: distill
 title: Secondary Control
 description: Balancing services deployed in the minutes time frame
 tags: frequency, generator
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

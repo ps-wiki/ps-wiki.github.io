@@ -3,7 +3,6 @@ layout: distill
 title: Fast Frequency Response
 description: FFR. Power in response to frequency changes during the arresting phase
 tags: inertia, frequency, ERCOT, ISO
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

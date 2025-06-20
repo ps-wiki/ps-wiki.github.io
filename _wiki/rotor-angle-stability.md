@@ -3,7 +3,6 @@ layout: distill
 title: Rotor Angle Stability
 description: The ability to remain in synchronism under normal and disturbed conditions.
 tags: stability, synchronism
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

@@ -3,7 +3,6 @@ layout: distill
 title: Performance-Based Metrics
 description: A.k.a. consequence-based metrics
 tags: resilience, index, IEEE, FERC
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

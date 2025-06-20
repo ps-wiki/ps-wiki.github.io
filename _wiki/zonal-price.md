@@ -3,7 +3,6 @@ layout: distill
 title: Zonal Price
 description: A pricing mechanism for a specific zone within a control area.
 tags: market, zonal, price
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

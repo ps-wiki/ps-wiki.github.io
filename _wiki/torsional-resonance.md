@@ -3,7 +3,6 @@ layout: distill
 title: Torsional Resonance
 description: The SSR due to torsional interactions between series compensated lines and turbine-generator mechanical shafts.
 tags: resonance, stability
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

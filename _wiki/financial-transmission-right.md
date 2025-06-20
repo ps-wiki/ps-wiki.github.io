@@ -3,7 +3,6 @@ layout: distill
 title: Financial Transmission Right
 description: FTR. Compensation contract for transmission charges due to grid congestion.
 tags: market, financial, transmission, FERC
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

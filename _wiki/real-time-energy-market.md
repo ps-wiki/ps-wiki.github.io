@@ -3,7 +3,6 @@ layout: distill
 title: Real Time Energy Market
 description:
 tags: PJM
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

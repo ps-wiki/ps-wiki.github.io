@@ -3,7 +3,6 @@ layout: distill
 title: Secondary Reserve
 description: Reserve capability within a 10-to-30 minute interval.
 tags: reserve, contingency, balancing-authority
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

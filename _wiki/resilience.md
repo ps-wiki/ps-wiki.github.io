@@ -3,7 +3,6 @@ layout: distill
 title: Resilience
 description:
 tags: resilience, index, FERC
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

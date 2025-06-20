@@ -3,7 +3,6 @@ layout: distill
 title: Distributed Energy Resources
 description: DER
 tags: generation, IEEE
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

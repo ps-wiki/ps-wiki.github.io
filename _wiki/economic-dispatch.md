@@ -3,7 +3,6 @@ layout: distill
 title: Economic Dispatch
 description: Allocation of generating units for economical production.
 tags: dispatch, economics, operation, PJM, ISO
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

@@ -3,7 +3,6 @@ layout: distill
 title: Security Constrained Unit Commitment
 description: SCUC
 tags: PJM
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

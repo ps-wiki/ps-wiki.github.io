@@ -3,7 +3,6 @@ layout: distill
 title: Extended Equal Area Criterion
 description: EEAC
 tags: transient-stability
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

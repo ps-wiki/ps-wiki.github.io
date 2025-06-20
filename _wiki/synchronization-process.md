@@ -3,7 +3,6 @@ layout: distill
 title: Synchronization Process
 description:
 tags: IEEE
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

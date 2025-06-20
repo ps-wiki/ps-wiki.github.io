@@ -3,7 +3,6 @@ layout: distill
 title: Loss-of-Load Probability
 description: LOLP
 tags: adequacy
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

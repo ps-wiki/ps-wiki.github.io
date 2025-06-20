@@ -3,7 +3,6 @@ layout: distill
 title: Balancing Authority Area
 description: Some geographical concepts in power systems
 tags: geography
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

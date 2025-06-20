@@ -3,7 +3,6 @@ layout: distill
 title: Thermal Limit Operation Criteria
 description: Techniques to control contingency or system violations.
 tags: reliability, transmission-operation, PJM, ISO
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

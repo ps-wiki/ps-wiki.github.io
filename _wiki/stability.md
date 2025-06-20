@@ -3,7 +3,6 @@ layout: distill
 title: Stability
 description: The ability to maintain equilibrium during normal and abnormal conditions.
 tags: stability
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

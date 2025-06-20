@@ -3,7 +3,6 @@ layout: distill
 title: Distribution Factors
 description: DFAX.
 tags: sensitivity
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

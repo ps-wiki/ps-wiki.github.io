@@ -3,7 +3,6 @@ layout: distill
 title: Stability Limit
 description: The maximum power flow possible while maintaining system stability.
 tags: stability, power-flow
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

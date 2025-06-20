@@ -3,7 +3,6 @@ layout: distill
 title: Storm Resilience Metric
 description:
 tags: resilience, index, IEEE
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

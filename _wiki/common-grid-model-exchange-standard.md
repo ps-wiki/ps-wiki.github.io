@@ -3,7 +3,6 @@ layout: distill
 title: Common Grid Model Exchange Standard
 description: CGMES
 tags: data-format
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

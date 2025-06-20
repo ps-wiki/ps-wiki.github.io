@@ -1,9 +1,8 @@
 ---
 layout: distill
 title: Transmission Planning Horizon
-description: Planning period
+description: Planning perio
 tags: horizon, transmission, planning
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

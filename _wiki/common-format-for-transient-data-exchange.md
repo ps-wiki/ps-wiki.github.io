@@ -3,7 +3,6 @@ layout: distill
 title: Common Format for Transient Data Exchange
 description: COMTRADE.
 tags: data-format
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

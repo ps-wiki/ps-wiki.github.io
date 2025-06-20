@@ -3,7 +3,6 @@ layout: distill
 title: Ambient-Adjusted Ratings
 description:
 tags: ISO, MISO
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

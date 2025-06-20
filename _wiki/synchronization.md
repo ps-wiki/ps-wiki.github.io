@@ -3,7 +3,6 @@ layout: distill
 title: Synchronization
 description: Aligning a device's terminal voltage with another voltage source
 tags: IEEE
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

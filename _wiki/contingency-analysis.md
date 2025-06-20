@@ -3,7 +3,6 @@ layout: distill
 title: Contingency Analysis
 description: Procedures to study a contingency.
 tags: event
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

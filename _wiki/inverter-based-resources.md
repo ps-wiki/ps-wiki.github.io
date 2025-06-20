@@ -3,7 +3,6 @@ layout: distill
 title: Inverter-based Resources
 description: IBR
 tags: generation
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

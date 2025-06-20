@@ -3,7 +3,6 @@ layout: distill
 title: Common Format for Event Data Exchange
 description: COMFEDE
 tags: data-format
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

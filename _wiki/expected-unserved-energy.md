@@ -3,7 +3,6 @@ layout: distill
 title: Expected Unserved Energy
 description: EUE. A measure of the capability to continuously serve loads.
 tags: adequacy
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

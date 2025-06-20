@@ -3,7 +3,6 @@ layout: distill
 title: Transmission Interconnection Procedures
 description: TIP
 tags: transmission, transmission-expansion, NYISO, ISO
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

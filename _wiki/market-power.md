@@ -3,7 +3,6 @@ layout: distill
 title: Market Power
 description:
 tags: market
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

@@ -3,7 +3,6 @@ layout: distill
 title: Generation Shift Factor
 description: GSF
 tags: sensitivity
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

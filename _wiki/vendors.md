@@ -3,7 +3,6 @@ layout: distill
 title: Vendors
 description: Power system vendors
 tags: software, vendor
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

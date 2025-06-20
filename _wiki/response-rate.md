@@ -3,7 +3,6 @@ layout: distill
 title: Response Rate
 description: The Ramp Rate that a generating unit can achieve under normal conditions.
 tags: response, rate, generator
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

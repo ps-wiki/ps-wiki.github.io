@@ -3,7 +3,6 @@ layout: distill
 title: Unit Commitment
 description:
 tags: PJM
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

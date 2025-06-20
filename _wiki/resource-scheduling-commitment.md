@@ -3,7 +3,6 @@ layout: distill
 title: Resource Scheduling & Commitment
 description: RSC
 tags: PJM
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

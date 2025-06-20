@@ -3,7 +3,6 @@ layout: distill
 title: Resonance Stability
 description: The behavior of power systems under oscillatory energy exchange conditions.
 tags: resonance, stability, power systems
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

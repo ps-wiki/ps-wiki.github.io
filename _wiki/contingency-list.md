@@ -3,7 +3,6 @@ layout: distill
 title: Contingency List
 description: A list of network elements to be simulated as disconnected.
 tags: event
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

@@ -3,7 +3,6 @@ layout: distill
 title: Voltage Reductions
 description: A.k.a brownouts
 tags: reliability
-category: wiki
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
