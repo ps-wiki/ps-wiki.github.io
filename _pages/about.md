@@ -8,11 +8,6 @@ subtitle: An open wiki for power systems engineers, researchers, and students.
 <div class="button-row-container text-center mb-5">
   <div class="row justify-content-center">
     <div class="col-auto mb-3">
-      <a href="/wiki-overview/" class="btn btn-secondary btn-lg wiki-overview-button">
-        <i class="fas fa-info-circle"></i> Wiki Overview
-      </a>
-    </div>
-    <div class="col-auto mb-3">
       <a href="/wiki-tag/" class="btn btn-primary btn-lg wiki-tags-button">
         <i class="fas fa-tags"></i> Archive by Tag
       </a>
