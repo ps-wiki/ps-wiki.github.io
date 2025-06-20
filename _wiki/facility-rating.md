@@ -2,7 +2,7 @@
 layout: distill
 title: Facility Rating
 description:
-tags: ISO, MISO
+tags: ISO
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

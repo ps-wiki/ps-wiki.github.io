@@ -2,7 +2,7 @@
 layout: distill
 title: Generation Redispatch
 description: Generators are adjusted away (off-cost) from their normal assignments (on-cost).
-tags: dispatch, economics, operation, PJM, ISO
+tags: dispatch, operation, ISO
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

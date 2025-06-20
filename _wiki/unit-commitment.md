@@ -2,7 +2,7 @@
 layout: distill
 title: Unit Commitment
 description: To determine commitment of resources.
-tags: PJM
+tags: ISO
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

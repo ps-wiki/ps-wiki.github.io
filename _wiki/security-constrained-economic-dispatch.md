@@ -2,7 +2,7 @@
 layout: distill
 title: Security Constraiend Economic Dispatch
 description: SCED.
-tags: dispatch, economics, operation, PJM, ISO
+tags: dispatch, operation, ISO
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

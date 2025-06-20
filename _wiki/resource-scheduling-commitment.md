@@ -2,7 +2,7 @@
 layout: distill
 title: Resource Scheduling & Commitment
 description: RSC. Security-constrained resource commitment.
-tags: PJM
+tags: ISO
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

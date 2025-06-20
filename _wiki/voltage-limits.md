@@ -2,7 +2,7 @@
 layout: distill
 title: Voltage Limits
 description: Voltage limits to protect against wide area voltage collapse.
-tags: reliability, transmission-operation, PJM, ISO
+tags: reliability, transmission-operation, ISO
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

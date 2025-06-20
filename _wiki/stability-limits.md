@@ -2,7 +2,7 @@
 layout: distill
 title: Stability Limits
 description: Stability related transmission limits.
-tags: transmission-operation, PJM, ISO
+tags: transmission-operation, ISO
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

@@ -2,7 +2,7 @@
 layout: distill
 title: Market
 description: A venue where participants buy and sell products or services.
-tags: market, NYISO, ISO, PJM
+tags: market, ISO
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

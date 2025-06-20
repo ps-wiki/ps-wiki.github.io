@@ -2,7 +2,7 @@
 layout: distill
 title: Flexibility Reserve
 description: Addressing variability and uncertainty on longer timescales than operating reserves and regulation service.
-tags: flexibility, ISO, NYISO
+tags: flexibility, ISO
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

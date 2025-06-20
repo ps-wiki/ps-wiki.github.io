@@ -2,7 +2,7 @@
 layout: distill
 title: Transmission Expansion
 description: The addition or modification of facilities of the Transmission System.
-tags: transmission, transmission-expansion, NYISO, ISO
+tags: transmission, transmission-expansion, ISO
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
