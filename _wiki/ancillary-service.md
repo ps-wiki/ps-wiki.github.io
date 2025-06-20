@@ -2,16 +2,16 @@
 layout: distill
 title: Ancillary Services
 description: Services necessary to support the transmission of electric power.
-tags: transmission, reliability, FERC
+tags: transmission, reliability, FERC, NERC
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-17
+last_update: 2025-06-20
 ---
 
-### Definition by NERC
+### Definition by FERC
 
 Source: <d-cite key="ferc2020glossary"></d-cite>
 

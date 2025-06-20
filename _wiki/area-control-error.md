@@ -2,13 +2,13 @@
 layout: distill
 title: Area Control Error
 description: ACE. The instantaneous difference between net actual and scheduled interchange.
-tags: frequency, control, balancing, interchange
+tags: frequency-control, NERC
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-17
+last_update: 2025-06-20
 ---
 
 ### Definition By NERC
