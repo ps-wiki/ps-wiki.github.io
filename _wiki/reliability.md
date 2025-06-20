@@ -14,9 +14,7 @@ last_update: 2025-06-19
 
 Relevant items: [Stability](/wiki/stability) &nbsp; [Security](/wiki/security)
 
-**Reliability** <d-cite key="kundur2004stability"></d-cite>
-
-### Definition by IEEE
+### Definition in an IEEE Article by a Joint Taskforce of IEEE and CIGRE
 
 Source: <d-cite key="kundur2004stability"></d-cite>
 

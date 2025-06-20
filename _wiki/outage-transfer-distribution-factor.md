@@ -9,10 +9,8 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-18
+last_update: 2025-06-19
 ---
-
-**Outage Transfer Distribution Factor** (OTDF) by NERC <d-cite key="nerc2024glossary"></d-cite>
 
 ### Definition by NERC
 
