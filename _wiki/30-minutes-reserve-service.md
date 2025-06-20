@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: 30-Minute Reserve Service
-description: can be satisfied by online or offline resources that are able to respond in 30 minutes or less.
+description: Can be satisfied by online or offline resources that are able to respond in 30 minutes or less.
 tags: reserve
 category: wiki
 bibliography: papers.bib
