@@ -13,6 +13,11 @@ This page records major changes in this wiki.
 
 ## 2025
 
+### 06-19
+
+- Major update to the wiki structure
+- Scan all terms
+
 ### 06-17
 
 - Change format to include last updated date
