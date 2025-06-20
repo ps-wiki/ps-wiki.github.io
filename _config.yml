@@ -151,6 +151,7 @@ collections:
     output: true
   wiki:
     output: true
+    permalink: /wiki/:name/
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

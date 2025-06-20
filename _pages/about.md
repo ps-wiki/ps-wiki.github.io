@@ -5,8 +5,19 @@ permalink: /
 subtitle: An open wiki for power systems engineers, researchers, and students.
 ---
 
-<div class="button-container text-center mb-5">
-  <a href="/wiki/" class="btn btn-primary btn-lg custom-button-style">Explore the Wiki Now</a>
+<div class="button-row-container text-center mb-5">
+  <div class="row justify-content-center">
+    <div class="col-auto mb-3">
+      <a href="/wiki-overview/" class="btn btn-secondary btn-lg wiki-overview-button">
+        <i class="fas fa-info-circle"></i> Wiki Overview
+      </a>
+    </div>
+    <div class="col-auto mb-3">
+      <a href="/wiki/" class="btn btn-primary btn-lg wiki-button">
+        <i class="fas fa-book"></i> Explore the Wiki
+      </a>
+    </div>
+  </div>
 </div>
 
 ## Introduction
