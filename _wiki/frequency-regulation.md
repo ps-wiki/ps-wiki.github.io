@@ -2,7 +2,10 @@
 layout: distill
 title: Frequency Regulation
 description: The ability of a Balancing Authority to help maintain Scheduled Frequency.
-tags: frequency-control, balancing-authority
+tags:
+  - frequency-control
+  - balancing-authority
+  - nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

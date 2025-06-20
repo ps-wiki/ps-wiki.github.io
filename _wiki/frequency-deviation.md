@@ -2,7 +2,10 @@
 layout: distill
 title: Frequency Deviation
 description: A change in Interconnection frequency.
-tags: frequency-control, interconnection, nerc
+tags:
+  - frequency-control
+  - interconnection
+  - nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

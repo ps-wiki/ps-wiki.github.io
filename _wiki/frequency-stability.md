@@ -2,7 +2,10 @@
 layout: distill
 title: Frequency Stability
 description: The ability of a power system to maintain steady frequency following a severe system upset.
-tags: stability, ieee-task-force
+tags:
+  - stability
+  - ieee
+  - ieee-task-force
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

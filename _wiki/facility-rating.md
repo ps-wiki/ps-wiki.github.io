@@ -2,7 +2,8 @@
 layout: distill
 title: Facility Rating
 description:
-tags: system-operator
+tags:
+  - system-operator
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

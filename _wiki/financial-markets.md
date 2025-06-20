@@ -2,7 +2,9 @@
 layout: distill
 title: Financial Markets
 description: Trading financially settled products.
-tags: market, ferc
+tags:
+  - market
+  - ferc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
