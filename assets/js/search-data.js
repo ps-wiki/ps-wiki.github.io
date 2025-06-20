@@ -64,12 +64,12 @@ ninja.data = [{
               window.location.href = "/wiki/area-control-error/";
             },},{id: "wiki-automatic-generation-control",
           title: 'Automatic Generation Control',
-          description: "AGC. Automatic regulation of the power output of generators",
+          description: "AGC. Automatic regulation of the power output of generators.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/automatic-generation-control/";
             },},{id: "wiki-balancing-authority-area",
           title: 'Balancing Authority Area',
-          description: "Some geographical concepts in power systems",
+          description: "The collection of generation, transmission, and loads within the metered boundaries of the Balancing Authority.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/balancing-authority-area/";
             },},{id: "wiki-balancing-authoritiy",
@@ -83,7 +83,7 @@ ninja.data = [{
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/bilateral-transaction/";
             },},{id: "wiki-black-start",
-          title: 'black-start',
+          title: 'Black Start',
           description: "Establishing the voltage from around zero",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/black-start/";
@@ -104,7 +104,7 @@ ninja.data = [{
               window.location.href = "/wiki/capacity-markets/";
             },},{id: "wiki-cascading",
           title: 'Cascading',
-          description: "The uncontrolled successive loss of System Elements triggered by an incident",
+          description: "The uncontrolled successive loss of System Elements triggered by an incident.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/cascading/";
             },},{id: "wiki-co-located-load",
@@ -114,7 +114,7 @@ ninja.data = [{
               window.location.href = "/wiki/co-located-load/";
             },},{id: "wiki-common-format-for-transient-data-exchange",
           title: 'Common Format for Transient Data Exchange',
-          description: "COMTRADE.",
+          description: "COMTRADE. Inactive.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/common-format-for-transient-data-exchange/";
             },},{id: "wiki-common-information-model",
@@ -124,7 +124,7 @@ ninja.data = [{
               window.location.href = "/wiki/common-information-model/";
             },},{id: "wiki-compliance-factor",
           title: 'Compliance Factor',
-          description: "CF",
+          description: "CF.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/compliance-factor/";
             },},{id: "wiki-contingency-analysis",
@@ -154,22 +154,22 @@ ninja.data = [{
               window.location.href = "/wiki/contingency/";
             },},{id: "wiki-control-area",
           title: 'Control Area',
-          description: "",
+          description: "A.k.a. Balancing Authority Area.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/control-area/";
             },},{id: "wiki-control-performance-standard-1",
           title: 'Control Performance Standard 1',
-          description: "CPS1. A standard that measures impact on frequency error",
+          description: "CPS1. A standard that measures impact on frequency error.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/control-performance-standard-1/";
             },},{id: "wiki-control-performance-standard-2",
           title: 'Control Performance Standard 2',
-          description: "CPS2. A standard intended to limit unscheduled flows",
+          description: "CPS2. A standard intended to limit unscheduled flows.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/control-performance-standard-2/";
             },},{id: "wiki-converter-driven-stability",
           title: 'Converter-Driven Stability',
-          description: "Converter-interfaced generation&#39;s impact on stability",
+          description: "Converter-interfaced generation&#39;s impact on stability.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/converter-driven-stability/";
             },},{id: "wiki-critical-clearing-time",
@@ -194,7 +194,7 @@ ninja.data = [{
               window.location.href = "/wiki/digital-twin/";
             },},{id: "wiki-distributed-energy-resources",
           title: 'Distributed Energy Resources',
-          description: "DER",
+          description: "DER. A source of electric power that is not directly connected to a bulk power system.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/distributed-energy-resources/";
             },},{id: "wiki-distribution-factors",
@@ -214,9 +214,9 @@ ninja.data = [{
               window.location.href = "/wiki/distribution/";
             },},{id: "wiki-disturbance",
           title: 'Disturbance',
-          description: "Any perturbation or sudden loss of generation or interruption of load",
+          description: "Any perturbation or sudden loss of generation or interruption of load.",
           section: "Wiki",handler: () => {
-              window.location.href = "/wiki/distrubance/";
+              window.location.href = "/wiki/disturbance/";
             },},{id: "wiki-dynamic-line-ratings",
           title: 'Dynamic Line Ratings',
           description: "DLR. A grid enhancing technology (GET) that provides real-time ratings of transmission lines based on current weather conditions.",
@@ -227,11 +227,6 @@ ninja.data = [{
           description: "Allocation of generating units for economical production.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/economic-dispatch/";
-            },},{id: "wiki-egrid-subregions",
-          title: 'eGrid Subregions',
-          description: "",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/egrid-subregions/";
             },},{id: "wiki-electrical-resonance",
           title: 'Electrical Resonance',
           description: "The behavior of power systems with conventional turbine-generators and variable speed induction generators.",
@@ -239,7 +234,7 @@ ninja.data = [{
               window.location.href = "/wiki/electrical-resonance/";
             },},{id: "wiki-emergency-rating",
           title: 'Emergency Rating',
-          description: "",
+          description: "A transmission facility rating that reflects operation for a specified, finite period.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/emergency-rating/";
             },},{id: "wiki-emergency",
@@ -247,14 +242,9 @@ ninja.data = [{
           description: "Abnormal system condition that requires automatic or immediate manual action.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/emergency/";
-            },},{id: "wiki-energy-market",
-          title: 'Energy Market',
-          description: "",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/energy-market/";
             },},{id: "wiki-equal-area-criterion",
           title: 'Equal Area Criterion',
-          description: "EAC and EEAC. A method to determine the stability.",
+          description: "To determine the maximum permissible increase in mechanical power input for system stability.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/equal-area-criterion/";
             },},{id: "wiki-expected-unserved-energy",
@@ -264,7 +254,7 @@ ninja.data = [{
               window.location.href = "/wiki/expected-unserved-energy/";
             },},{id: "wiki-extended-equal-area-criterion",
           title: 'Extended Equal Area Criterion',
-          description: "EEAC",
+          description: "Extend EAC to multi-machine systems.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/extended-equal-area-criterion/";
             },},{id: "wiki-facility-rating",
@@ -294,7 +284,7 @@ ninja.data = [{
               window.location.href = "/wiki/financial-transmission-right/";
             },},{id: "wiki-flexibility-reserve",
           title: 'Flexibility Reserve',
-          description: "Addressing variability and uncertainty on longer timescales than operating reserves and regulation service",
+          description: "Addressing variability and uncertainty on longer timescales than operating reserves and regulation service.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/flexibility-reserve/";
             },},{id: "wiki-flowgate",
@@ -327,34 +317,24 @@ ninja.data = [{
           description: "The ability of a system to react to a change in system frequency.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/frequnecy-response/";
-            },},{id: "wiki-loss-of-load-probability",
-          title: 'Loss-of-Load Probability',
-          description: "LOLP",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/loss-of-load-probability/";
-            },},{id: "wiki-market-power",
-          title: 'Market Power',
-          description: "",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/market-power/";
             },},{id: "wiki-market-structure",
           title: 'Market Structure',
-          description: "",
+          description: "The rules, mechanisms, and processes under which a market operates.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/market-structure/";
             },},{id: "wiki-market-unit",
           title: 'Market Unit',
-          description: "",
+          description: "The unit sets the price of next increment or decrement of energy.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/market-unit/";
             },},{id: "wiki-market",
           title: 'Market',
-          description: "",
+          description: "A venue where participants buy and sell products or services.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/market/";
             },},{id: "wiki-multi-criteria-decision-analysis-based-metrics",
           title: 'Multi-Criteria Decision Analysis-Based Metrics',
-          description: "(MCDA)-Based Metrics",
+          description: "(MCDA)-Based Metrics.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/multi-criteria-decision-analysis-based-metrics/";
             },},{id: "wiki-non-spinning-reserve",
@@ -364,7 +344,7 @@ ninja.data = [{
               window.location.href = "/wiki/non-spinning-reserve/";
             },},{id: "wiki-non-storm-resilience-metric",
           title: 'Non-Storm Resilience Metric',
-          description: "",
+          description: "A metric focuses on robustness and the ability to withstand events.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/non-storm-resilience-metric/";
             },},{id: "wiki-non-synchronized-reserve",
@@ -399,7 +379,7 @@ ninja.data = [{
               window.location.href = "/wiki/oscillation/";
             },},{id: "wiki-outage-transfer-distribution-factor",
           title: 'Outage Transfer Distribution Factor',
-          description: "OTDF",
+          description: "OTDF.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/outage-transfer-distribution-factor/";
             },},{id: "wiki-participation-factors",
@@ -409,12 +389,12 @@ ninja.data = [{
               window.location.href = "/wiki/participation-factors/";
             },},{id: "wiki-performance-based-metrics",
           title: 'Performance-Based Metrics',
-          description: "A.k.a. consequence-based metrics",
+          description: "A.k.a. consequence-based metrics. Quantitative approaches for assessing system resilience.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/performance-based-metrics/";
             },},{id: "wiki-power-transfer-distribution-factor",
           title: 'Power Transfer Distribution Factor',
-          description: "PTDF",
+          description: "PTDF.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/power-transfer-distribution-factor/";
             },},{id: "wiki-primary-control",
@@ -434,7 +414,7 @@ ninja.data = [{
               window.location.href = "/wiki/ramp/";
             },},{id: "wiki-real-time-energy-market",
           title: 'Real Time Energy Market',
-          description: "",
+          description: "Use dispatch run to determine the least cost solution to balance supply and demand.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/real-time-energy-market/";
             },},{id: "wiki-real-time-reliability-model",
@@ -444,7 +424,7 @@ ninja.data = [{
               window.location.href = "/wiki/real-time-reliability-model/";
             },},{id: "wiki-region",
           title: 'Region',
-          description: "Bulk power system reliability regions in North America",
+          description: "Bulk power system reliability regions in North America.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/region/";
             },},{id: "wiki-regulating-reserve",
@@ -464,12 +444,12 @@ ninja.data = [{
               window.location.href = "/wiki/reliability/";
             },},{id: "wiki-remedial-action-scheme",
           title: 'Remedial Action Scheme',
-          description: "RAS",
+          description: "RAS.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/remedial-action-scheme/";
             },},{id: "wiki-reserve-markets",
           title: 'Reserve Markets',
-          description: "A market-based system for the purchase and sale of the Reserves",
+          description: "A market-based system for the purchase and sale of the Reserves.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/reserve-markets/";
             },},{id: "wiki-reserve",
@@ -479,7 +459,7 @@ ninja.data = [{
               window.location.href = "/wiki/reserve/";
             },},{id: "wiki-resilience",
           title: 'Resilience',
-          description: "",
+          description: "The ability to withstand and reduce the magnitude and/or duration of disruptive events.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/resilience/";
             },},{id: "wiki-resonance-stability",
@@ -489,7 +469,7 @@ ninja.data = [{
               window.location.href = "/wiki/resonance-stability/";
             },},{id: "wiki-resource-scheduling-amp-commitment",
           title: 'Resource Scheduling &amp;amp; Commitment',
-          description: "RSC",
+          description: "RSC. Security-constrained resource commitment.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/resource-scheduling-commitment/";
             },},{id: "wiki-response-rate",
@@ -514,7 +494,7 @@ ninja.data = [{
               window.location.href = "/wiki/rotor-angle-stability/";
             },},{id: "wiki-secondary-control",
           title: 'Secondary Control',
-          description: "Balancing services deployed in the minutes time frame",
+          description: "Balancing services deployed in the minutes time frame.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/secondary-control/";
             },},{id: "wiki-secondary-reserve",
@@ -524,12 +504,12 @@ ninja.data = [{
               window.location.href = "/wiki/secondary-reserve/";
             },},{id: "wiki-security-constraiend-economic-dispatch",
           title: 'Security Constraiend Economic Dispatch',
-          description: "SCED",
+          description: "SCED.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/security-constrained-economic-dispatch/";
             },},{id: "wiki-security-constrained-unit-commitment",
           title: 'Security Constrained Unit Commitment',
-          description: "SCUC",
+          description: "SCUC.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/security-constrained-unit-commitment/";
             },},{id: "wiki-security",
@@ -564,7 +544,7 @@ ninja.data = [{
               window.location.href = "/wiki/stability-limit/";
             },},{id: "wiki-stability-limits",
           title: 'Stability Limits',
-          description: "Stability related transmission limits",
+          description: "Stability related transmission limits.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/stability-limits/";
             },},{id: "wiki-stability",
@@ -574,9 +554,14 @@ ninja.data = [{
               window.location.href = "/wiki/stability/";
             },},{id: "wiki-storm-resilience-metric",
           title: 'Storm Resilience Metric',
-          description: "",
+          description: "Focused on the speed of system recovery during storm events.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/storm-resilience-metric/";
+            },},{id: "wiki-subregions",
+          title: 'Subregions',
+          description: "Geographic concepts for emission data by EPA.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/subregions/";
             },},{id: "wiki-subsynchronous-resonance",
           title: 'Subsynchronous Resonance',
           description: "SSR. A condition involving energy exchange at natural frequencies below the synchronous frequency.",
@@ -584,12 +569,12 @@ ninja.data = [{
               window.location.href = "/wiki/subsynchronous-resonance/";
             },},{id: "wiki-synchronization-process",
           title: 'Synchronization Process',
-          description: "",
+          description: "The process of the equipment to synchronize its terminal voltage with another voltage source.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/synchronization-process/";
             },},{id: "wiki-synchronization",
           title: 'Synchronization',
-          description: "Aligning a device&#39;s terminal voltage with another voltage source",
+          description: "Aligning a device&#39;s terminal voltage with another voltage source.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/synchronization/";
             },},{id: "wiki-synchronized-reserve-service",
@@ -624,7 +609,7 @@ ninja.data = [{
               window.location.href = "/wiki/torsional-resonance/";
             },},{id: "wiki-transient-stability-assessment",
           title: 'Transient Stability Assessment',
-          description: "TSA. Monitor and determine transient stability of the system",
+          description: "TSA. Monitor and determine transient stability of the system.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/transient-stability-assessment/";
             },},{id: "wiki-transmission-expansion",
@@ -634,22 +619,22 @@ ninja.data = [{
               window.location.href = "/wiki/transmission-expansion/";
             },},{id: "wiki-transmission-interconnection-procedures",
           title: 'Transmission Interconnection Procedures',
-          description: "TIP",
+          description: "TIP.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/transmission-interconnection-procedures/";
             },},{id: "wiki-transmission-planning-horizon",
           title: 'Transmission Planning Horizon',
-          description: "Planning perio",
+          description: "Transmission planning period.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/transmission-planning-horizon/";
             },},{id: "wiki-uncertainty",
           title: 'Uncertainty',
-          description: "Two types of uncertainty",
+          description: "Two types of uncertainty.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/uncertainty/";
             },},{id: "wiki-unit-commitment",
           title: 'Unit Commitment',
-          description: "",
+          description: "To determine commitment of resources.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/unit-commitment/";
             },},{id: "wiki-vendors",
@@ -704,12 +689,12 @@ ninja.data = [{
               window.location.href = "/wiki/zone/";
             },},{id: "wiki-cascading-outage",
           title: 'Cascading Outage',
-          description: "A sequence of events in which an initial disturbance triggers dependent component outages",
+          description: "A sequence of events in which an initial disturbance triggers dependent component outages.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/cascading-outage/";
             },},{id: "wiki-common-format-for-event-data-exchange",
           title: 'Common Format for Event Data Exchange',
-          description: "COMFEDE",
+          description: "COMFEDE. Inactive.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/common-format-for-event-data-exchange/";
             },},{id: "wiki-common-format-for-exchange-of-solved-load-flow-data",
@@ -719,7 +704,7 @@ ninja.data = [{
               window.location.href = "/wiki/common-format-for-exchange-of-solved-load-flow-data/";
             },},{id: "wiki-common-grid-model-exchange-standard",
           title: 'Common Grid Model Exchange Standard',
-          description: "CGMES",
+          description: "CGMES.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/common-grid-model-exchange-standard/";
             },},{id: "wiki-futures-market",
@@ -734,7 +719,7 @@ ninja.data = [{
               window.location.href = "/wiki/generation-redispatch/";
             },},{id: "wiki-generation-shift-factor",
           title: 'Generation Shift Factor',
-          description: "GSF",
+          description: "GSF.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/generation-shift-factor/";
             },},{id: "wiki-interchange",
@@ -759,12 +744,12 @@ ninja.data = [{
               window.location.href = "/wiki/interruptible-demand/";
             },},{id: "wiki-inverter-based-resources",
           title: 'Inverter-based Resources',
-          description: "IBR",
+          description: "IBR. BPS-connected resources that have a power electronic interface.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/inverter-based-resources/";
             },},{id: "wiki-line-outage-distribution-factor",
           title: 'Line Outage Distribution Factor',
-          description: "LODF",
+          description: "LODF.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/line-outage-distribution-factor/";
             },},{id: "wiki-localtional-marginal-price",
@@ -787,6 +772,16 @@ ninja.data = [{
           description: "LOLH. The number of hours per year where demand will exceed the generating capacity.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/loss-of-load-hour/";
+            },},{id: "wiki-loss-of-load-probability",
+          title: 'Loss-of-Load Probability',
+          description: "LOLP.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/loss-of-load-probability/";
+            },},{id: "wiki-market-power",
+          title: 'Market Power',
+          description: "The ability to control or affect price.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/market-power/";
             },},{id: "wiki-most-severe-single-contingency",
           title: 'Most Severe Single Contingency',
           description: "A single contingency that would result in the greatest loss of resource output.",
