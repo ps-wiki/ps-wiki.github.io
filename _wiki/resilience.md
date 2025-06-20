@@ -2,7 +2,7 @@
 layout: distill
 title: Resilience
 description: The ability to withstand and reduce the magnitude and/or duration of disruptive events.
-tags: resilience, index, FERC
+tags: resilience, metrics, ferc, nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

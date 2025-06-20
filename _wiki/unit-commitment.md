@@ -2,13 +2,13 @@
 layout: distill
 title: Unit Commitment
 description: To determine commitment of resources.
-tags: ISO
+tags: system-operator
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-20
 ---
 
 Relevante items: [Resource Scheduling & Commitment](/wiki/resource-scheduling-commitment) &nbsp; [Locational Marginal Price](/wiki/locational-marginal-price)

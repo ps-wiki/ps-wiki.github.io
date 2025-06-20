@@ -2,13 +2,13 @@
 layout: distill
 title: Transmission Expansion
 description: The addition or modification of facilities of the Transmission System.
-tags: transmission, transmission-expansion, ISO
+tags: transmission, system-operator
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-20
 ---
 
 ### Definition by NYISO

@@ -2,13 +2,15 @@
 layout: distill
 title: 30-Minute Reserve Service
 description: Can be satisfied by online or offline resources that are able to respond in 30 minutes or less.
-tags: reserve, system-operator
+tags:
+  - reserve
+  - system-operator
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-17
+last_update: 2025-06-20
 ---
 
 Relevant items: [Contingency Reserve](/wiki/contingency-reserve)

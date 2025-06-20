@@ -2,7 +2,9 @@
 layout: distill
 title: Adequacy
 description: The ability to supply the demand and energy requirements of the end-use customers.
-tags: reliability, nerc
+tags:
+  - reliability
+  - nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

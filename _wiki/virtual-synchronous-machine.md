@@ -2,13 +2,13 @@
 layout: distill
 title: Virtual Synchronous Machine
 description: VSM. Equipment that includes a DC/AC converter controlled to mimic a conventional synchronous machine.
-tags: synchronous-machine, power-electronics, IEEE
+tags: ieee, ieee-standard, generation
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-20
 ---
 
 ### Definition in an IEEE Standard

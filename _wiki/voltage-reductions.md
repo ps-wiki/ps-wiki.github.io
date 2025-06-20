@@ -2,13 +2,13 @@
 layout: distill
 title: Voltage Reductions
 description: A.k.a brownouts
-tags: reliability
+tags: nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-20
 ---
 
 ### Definition by NERC

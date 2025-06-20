@@ -2,13 +2,13 @@
 layout: distill
 title: Synchronization Process
 description: The process of the equipment to synchronize its terminal voltage with another voltage source.
-tags: IEEE
+tags: ieee, ieee-standard, synchronization
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-20
 ---
 
 ### Definition in an IEEE Standard

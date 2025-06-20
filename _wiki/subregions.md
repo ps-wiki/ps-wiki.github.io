@@ -2,7 +2,7 @@
 layout: distill
 title: Subregions
 description: Geographic concepts for emission data by EPA.
-tags: geography
+tags: geography, epa
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

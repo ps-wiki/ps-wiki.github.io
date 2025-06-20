@@ -2,13 +2,13 @@
 layout: distill
 title: Transmission Planning Horizon
 description: Transmission planning period.
-tags: horizon, transmission, planning
+tags: horizon, transmission, nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-18
+last_update: 2025-06-20
 ---
 
 ### Definition by NERC

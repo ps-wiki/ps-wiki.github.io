@@ -2,13 +2,13 @@
 layout: distill
 title: Wholesale Markets
 description: The purchase and sale from generators to resellers.
-tags: market, wholesale, FERC
+tags: market, ferc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-20
 ---
 
 **Wholesale Electricity Markets** <d-cite key="ferc2020glossary"></d-cite> by FERC

@@ -2,13 +2,13 @@
 layout: distill
 title: Synchronized Reserve Service
 description: Can be satisfied by online resources in 10 minutes or less.
-tags: reserve
+tags: reserve, system-operator
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-20
 ---
 
 ### Definition by PJM

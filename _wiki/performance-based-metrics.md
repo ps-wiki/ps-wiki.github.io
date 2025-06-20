@@ -2,13 +2,13 @@
 layout: distill
 title: Performance-Based Metrics
 description: A.k.a. consequence-based metrics. Quantitative approaches for assessing system resilience.
-tags: resilience, index, IEEE, FERC
+tags: resilience, metrics, ieee, ferc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-20
 ---
 
 ### Definition in an IEEE Techical Report by DOE GMLC
