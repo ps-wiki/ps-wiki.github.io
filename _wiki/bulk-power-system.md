@@ -2,7 +2,11 @@
 layout: distill
 title: Bulk Power System
 description: BPS. Facilities and control systems for an transmission network.
-tags: transmission, ieee-standard, nerc
+tags:
+  - transmission
+  - ieee
+  - ieee-standard
+  - nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
@@ -15,7 +19,9 @@ last_update: 2025-06-20
 
 Source: <d-cite key="ieee2018std1547"></d-cite> p23
 
-> Any electric generation resources, transmission lines, interconnections with neighboring systems, and associated equipment.
+> Any electric generation resources
+
+- transmission lines, interconnections with neighboring systems, and associated equipment.
 
 ### Definition by NERC
 

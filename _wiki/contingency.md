@@ -18,6 +18,7 @@ Relevant items: [Emergency](/wiki/emergency)
 Source: <d-cite key="isone2024op19"></d-cite> p6, Revision 13.3
 
 > A contingency is the unexpected failure or outage of a system component such as a generator
+
 - transmission line, circuit breaker, switch or other electrical element.
 
 ### Definition by NERC
@@ -25,4 +26,5 @@ Source: <d-cite key="isone2024op19"></d-cite> p6, Revision 13.3
 Source: <d-cite key="nerc2024glossary"></d-cite>
 
 > The unexpected **failure** or **outage** of a system component, such as a generator
+
 - transmission line, circuit breaker, switch or other electrical element.

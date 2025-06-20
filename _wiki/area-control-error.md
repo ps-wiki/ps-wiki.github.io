@@ -2,7 +2,9 @@
 layout: distill
 title: Area Control Error
 description: ACE. The instantaneous difference between net actual and scheduled interchange.
-tags: frequency-control, nerc
+tags:
+-frequency-control 
+-nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

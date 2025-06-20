@@ -1,10 +1,10 @@
 ---
 layout: distill
 title: Balancing Authority Area
-description: The collection of generation
-- transmission, and loads within the metered boundaries of the Balancing Authority.
-tags: geography
-- transmission
+description: The collection of generation, transmission, and loads within the metered boundaries of the Balancing Authority.
+tags:
+  - geography
+  - transmission
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
@@ -18,4 +18,5 @@ last_update: 2025-06-20
 Source: <d-cite key="nerc2024glossary"></d-cite>
 
 > The collection of generation
+
 - transmission, and loads within the metered boundaries of the [Balancing Authority](/wiki/balancing-authority). The Balancing Authority maintains load-resource balance within this area.

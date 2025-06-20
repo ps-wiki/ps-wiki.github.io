@@ -2,7 +2,8 @@
 layout: distill
 title: Security Constraiend Economic Dispatch
 description: SCED.
-tags: dispatch, operation, ISO
+tags: dispatch, operation
+- system-operator
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
@@ -30,23 +31,23 @@ Source: <d-cite key="pjm2024m3"></d-cite> p17, Revision 67
 Source: <d-cite key="pjm2022cooptimization"></d-cite> p1
 
 > SCED is a mathematical model that generates the most economic resource dispatch during Real-time operations while considering key system operating constraints, such as power balance, reserve requirements
+
 - transmission congestion, as well as resource parameters, such as ramp rates, minimum and maximum output capability. The overall objective function of the SCED algorithm is to minimize the total system product cost over the study interval(s).
->
-> The Objective Function include:
->
-> 1. Resource Energy Costs
-> 2. Price Responsive Demand Value
-> 3. Import Transaction Costs
-> 4. Export Transaction Value
-> 5. Regulation Reserve Costs
-> 6. Synchronized Reserve Costs
-> 7. Non-Synchronized Reserve Costs
-> 8. Secondary Reserve Costs
->
-> The Constraints include:
->
-> 1. Power Balance Constraint
-> 2. Transmission Constraints
-> 3. Resource Capacity Constraints
-> 4. Resource’s Ramp Rate Constraints
-> 5. Reserve Requirement Constraints
+  > The Objective Function include:
+  >
+  > 1. Resource Energy Costs
+  > 2. Price Responsive Demand Value
+  > 3. Import Transaction Costs
+  > 4. Export Transaction Value
+  > 5. Regulation Reserve Costs
+  > 6. Synchronized Reserve Costs
+  > 7. Non-Synchronized Reserve Costs
+  > 8. Secondary Reserve Costs
+  >
+  > The Constraints include:
+  >
+  > 1. Power Balance Constraint
+  > 2. Transmission Constraints
+  > 3. Resource Capacity Constraints
+  > 4. Resource’s Ramp Rate Constraints
+  > 5. Reserve Requirement Constraints

@@ -76,6 +76,7 @@ Note: cheked on 01-09-2025, <https://etap.com/home>
 #### PowerFactory
 
 by DIgSILENT, is a power system analysis software application for use in analysing generation
+
 - transmission, distribution and industrial systems. It covers the full range of functionality from standard features to highly sophisticated and advanced applications including windpower, distributed generation, real-time simulation and performance monitoring for system testing and supervision.
 
 <details>
