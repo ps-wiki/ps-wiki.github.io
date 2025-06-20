@@ -1,7 +1,7 @@
 ---
 layout: distill
-title: eGrid Subregions
-description:
+title: Subregions
+description: Geographic concepts for emission data by EPA.
 tags: geography
 bibliography: papers.bib
 authors:
