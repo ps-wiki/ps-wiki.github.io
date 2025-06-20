@@ -13,8 +13,13 @@ subtitle: An open wiki for power systems engineers, researchers, and students.
       </a>
     </div>
     <div class="col-auto mb-3">
+      <a href="/wiki-tag/" class="btn btn-primary btn-lg wiki-tags-button">
+        <i class="fas fa-tags"></i> Archive by Tag
+      </a>
+    </div>
+    <div class="col-auto mb-3">
       <a href="/wiki/" class="btn btn-primary btn-lg wiki-button">
-        <i class="fas fa-book"></i> Explore the Wiki
+        <i class="fas fa-book"></i> Explore Now
       </a>
     </div>
   </div>

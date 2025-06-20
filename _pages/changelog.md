@@ -3,7 +3,7 @@ layout: page
 permalink: /changelog/
 title: change log
 description:
-nav: true
+nav: false
 nav_order: 4
 toc:
   sidebar: left
