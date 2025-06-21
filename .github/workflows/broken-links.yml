@@ -64,5 +64,5 @@ jobs:
             --exclude-path _books/the_godfather.md
             --exclude-path _pages/publications.md
             --exclude-path _pages/wiki.md
-            --exclude-path _pages/wiki-tags.md
+            --exclude-path _pages/wiki-tag.md
             --verbose --no-progress './**/*.md' './**/*.html'
