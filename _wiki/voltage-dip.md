@@ -16,8 +16,6 @@ last_update: 2025-06-19
 
 Source: <d-cite key="bollen2003voltage"></d-cite>
 
-**Voltage Dips** <d-cite key="bollen2003voltage"></d-cite>
-
 > A voltage dip is a short-duration reduction in rms voltage. A three-phase unbalanced voltage dip is a short-duration reduction in rms voltage in at least one of the three phase or line voltages.
 
 ### Definition in a Website
