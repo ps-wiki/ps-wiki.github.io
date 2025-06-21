@@ -2,7 +2,8 @@
 layout: distill
 title: Small Signal Stability
 description: The ability to maintain synchronism when subjected to small disturbances.
-tags: stability
+tags:
+  - stability
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

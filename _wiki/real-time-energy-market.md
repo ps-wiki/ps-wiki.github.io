@@ -4,12 +4,13 @@ title: Real Time Energy Market
 description: Use dispatch run to determine the least cost solution to balance supply and demand.
 tags:
   - system-operator
+  - market
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-20
 ---
 
 Relevante items: [Security Constrained Unit Commitment](/wiki/security-constrained-unit-commitment) &nbsp; [Security Constrained Economic Dispatch](/wiki/security-constrained-economic-dispatch) &nbsp; [Locational Marginal Price](/wiki/locational-marginal-price) &nbsp; [Energy Market](/wiki/energy-market)

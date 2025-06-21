@@ -2,7 +2,12 @@
 layout: distill
 title: Stability
 description: The ability to maintain equilibrium during normal and abnormal conditions.
-tags: stability, nerc, ieee, ieee-task-force, cigre
+tags:
+  - stability
+  - nerc
+  - ieee
+  - ieee-task-force
+  - cigre
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

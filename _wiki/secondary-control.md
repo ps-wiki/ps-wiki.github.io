@@ -2,7 +2,10 @@
 layout: distill
 title: Secondary Control
 description: Balancing services deployed in the minutes time frame.
-tags: frequency, generator
+tags:
+  - frequency-control
+  - generation
+  - nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

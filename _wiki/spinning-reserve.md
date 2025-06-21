@@ -2,7 +2,8 @@
 layout: distill
 title: Spinning Reserve
 description: A.k.a. Synchronized Reserve. Synchronized generation and ready to serve additional demand.
-tags: reserve
+tags:
+  - reserve
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

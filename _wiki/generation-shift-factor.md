@@ -2,7 +2,9 @@
 layout: distill
 title: Generation Shift Factor
 description: GSF.
-tags: sensitivity, nerc
+tags:
+  - sensitivity
+  - nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

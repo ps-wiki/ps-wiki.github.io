@@ -2,7 +2,11 @@
 layout: distill
 title: Loss-of-Load Events
 description: LOLEV. The number of events in which some system load is not served in a given year.
-tags: adequacy, nerc
+tags:
+  - adequacy
+  - nerc
+  - metrics
+  - reliability
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

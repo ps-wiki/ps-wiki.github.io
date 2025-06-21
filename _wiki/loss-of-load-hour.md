@@ -2,7 +2,11 @@
 layout: distill
 title: Loss-of-Load Hour
 description: LOLH. The number of hours per year where demand will exceed the generating capacity.
-tags: adequacy, nerc
+tags:
+  - adequacy
+  - nerc
+  - metrics
+  - reliability
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

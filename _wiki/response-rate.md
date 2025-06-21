@@ -2,7 +2,9 @@
 layout: distill
 title: Response Rate
 description: The Ramp Rate that a generating unit can achieve under normal conditions.
-tags: response, rate, generator
+tags:
+  - generation
+  - nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

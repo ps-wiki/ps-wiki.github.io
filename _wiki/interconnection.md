@@ -2,7 +2,11 @@
 layout: distill
 title: Interconnection
 description: A geographic area where BPS components are synchronized.
-tags: reliability, geography, system-operator, nerc
+tags:
+  - reliability
+  - geography
+  - system-operator
+  - nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

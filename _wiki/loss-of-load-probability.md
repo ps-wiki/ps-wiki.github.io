@@ -2,7 +2,11 @@
 layout: distill
 title: Loss-of-Load Probability
 description: LOLP.
-tags: adequacy, nerc
+tags:
+  - adequacy
+  - nerc
+  - metrics
+  - reliability
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

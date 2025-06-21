@@ -2,7 +2,9 @@
 layout: distill
 title: Oscillation
 description: A repetitive motion that can be either undamped, positively damped, or negatively damped.
-tags: event, oscillation
+tags:
+  - event
+  - oscillation
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

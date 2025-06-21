@@ -2,7 +2,9 @@
 layout: distill
 title: Market Structure
 description: The rules, mechanisms, and processes under which a market operates.
-tags: market, ferc
+tags:
+  - market
+  - ferc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

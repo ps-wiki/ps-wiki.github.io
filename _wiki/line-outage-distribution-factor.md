@@ -2,7 +2,8 @@
 layout: distill
 title: Line Outage Distribution Factor
 description: LODF.
-tags: sensitivity
+tags:
+  - sensitivity
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

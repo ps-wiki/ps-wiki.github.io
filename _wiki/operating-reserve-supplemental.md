@@ -2,7 +2,9 @@
 layout: distill
 title: Operating Reserve – Supplemental
 description: Generation or load available to serve load within the Disturbance Recovery Period.
-tags: reserve, operation
+tags:
+  - reserve
+  - operation
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

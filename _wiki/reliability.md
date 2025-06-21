@@ -2,7 +2,9 @@
 layout: distill
 title: Reliability
 description: The probability of satisfactory operation of a power system over the long run.
-tags: reliability, operation
+tags:
+  - reliability
+  - operation
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

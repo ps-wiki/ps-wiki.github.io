@@ -2,7 +2,11 @@
 layout: distill
 title: Regulating Reserve
 description: Reserve for AGC to provide normal regulating margin.
-tags: reserve, regulation, nerc, frequency-control
+tags:
+  - reserve
+  - regulation
+  - nerc
+  - frequency-control
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

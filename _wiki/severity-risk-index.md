@@ -2,7 +2,9 @@
 layout: distill
 title: Severity Risk Index
 description: SRI. A daily metric that indicates performance of the BES.
-tags: metrics, nerc
+tags:
+  - metrics
+  - nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

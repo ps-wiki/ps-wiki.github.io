@@ -2,7 +2,8 @@
 layout: distill
 title: Outage Transfer Distribution Factor
 description: OTDF.
-tags: sensitivity
+tags:
+  - sensitivity
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

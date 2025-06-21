@@ -2,7 +2,10 @@
 layout: distill
 title: Generation Redispatch
 description: Generators are adjusted away (off-cost) from their normal assignments (on-cost).
-tags: dispatch, system-operator
+tags:
+  - dispatch
+  - generation
+  - system-operator
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
