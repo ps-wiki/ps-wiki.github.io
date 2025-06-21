@@ -33,8 +33,3 @@ Source: <d-cite key="epa2024gridregions"></d-cite>
         Map of eGRID Subregions (from <d-cite key="epa2024gridregions"></d-cite>)
     </div>
 </div>
-
-<br>
-<br>
-<br>
-<br>

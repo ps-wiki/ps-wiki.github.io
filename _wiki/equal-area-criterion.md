@@ -28,7 +28,3 @@ Another earlier reference to the Equal Area Criterion can be found in <d-cite ke
         Fig. 13.14 Response to a step change in mechanical power input (from <d-cite key="kundur1994Power"></d-cite>)
     </div>
 </div>
-
-<br>
-<br>
-<br>
