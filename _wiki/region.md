@@ -33,7 +33,3 @@ Source: <d-cite key="nerc2024glossary"></d-cite>
         Regional Maps (from <d-cite key="nerc2024tpl"></d-cite>)
     </div>
 </div>
-
-<br>
-<br>
-<br>

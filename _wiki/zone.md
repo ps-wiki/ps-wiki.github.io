@@ -30,7 +30,3 @@ Source: <d-cite key="pjm2023transmission"></d-cite>
 Source: <d-cite key="matpowerv71"></d-cite> p139
 
 In MATPOWER, there is a bus parameter named "ZONE", and it means loss zone.
-
-<br>
-<br>
-<br>

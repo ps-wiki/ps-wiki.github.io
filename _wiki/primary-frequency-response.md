@@ -26,5 +26,3 @@ Relevant news:
 - 2022 Feb., <d-cite key="pjm2022reliability"></d-cite> p1, _Based on PJM’s frequency response analysis and oscillation detection using highly granularity PMU data, in addition to NERC Resource Subcommittee analysis, there are no near term concerns with inertia in the EI._
 - 2021 Nov., <d-cite key="pjm2021capacity"></d-cite> p4, _PJM proposed "Reliability Products and Services" that involves Inertial in the Frequency Response._
 - 2021 March, <d-cite key="pjm2021reliability"></d-cite> p11, _Inertial and Primary Frequency Response: Generators that provide these types of frequency response are not explicitly compensated for this service under today’s rules._
-
-<br>

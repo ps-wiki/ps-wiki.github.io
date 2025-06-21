@@ -20,5 +20,3 @@ last_update: 2025-06-20
 Source: <d-cite key="kundur2004stability"></d-cite>
 
 > The maximum permissible duration of the fault for which the subsequent system response remains stable. This portion of stability analysis requires the knowledge of actions of protective relaying.
-
-<br>

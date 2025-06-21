@@ -93,6 +93,44 @@
           </d-contents>
         {% endif %}
         {{ content }}
+
+        {% assign sorted_wiki_terms = site.wiki | sort: 'title' %}
+
+        {% assign current_page_url_normalized = page.url | relative_url | replace_first: site.baseurl, '' | strip | split: '#' | first %}
+
+        {% assign previous_page = null %}
+        {% assign next_page = null %}
+        {% assign found_current_page = false %}
+
+        {% for wiki_page in sorted_wiki_terms %}
+          {% assign wiki_page_url_normalized = wiki_page.url | relative_url | replace_first: site.baseurl, '' | strip | split: '#' | first %}
+
+          {% if found_current_page %}
+            {% assign next_page = wiki_page %}
+            {% break %}
+          {% endif %}
+
+          {% if wiki_page_url_normalized == current_page_url_normalized %}
+            {% assign found_current_page = true %}
+          {% else %}
+            {% assign previous_page = wiki_page %}
+          {% endif %}
+        {% endfor %}
+
+        <div class="wiki-navigation-pointers mt-5">
+          <div class="navigation-links">
+            {% if previous_page %}
+              <p class="previous-link">
+                <a href="{{ previous_page.url | relative_url }}">Previous: {{ previous_page.title }}</a>
+              </p>
+            {% endif %}
+            {% if next_page %}
+              <p class="next-link">
+                <a href="{{ next_page.url | relative_url }}">Next: {{ next_page.title }}</a>
+              </p>
+            {% endif %}
+          </div>
+        </div>
       </d-article>
 
       <d-appendix>

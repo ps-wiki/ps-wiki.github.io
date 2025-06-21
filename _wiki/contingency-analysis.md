@@ -20,5 +20,3 @@ Relevant items: [Contingency List](/wiki/contingency-list)
 Source: <d-cite key="isone2024crop34007"></d-cite>
 
 The procedures to study a contingency are documented in the source reference.
-
-<br>
