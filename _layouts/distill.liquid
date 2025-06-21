@@ -17,38 +17,38 @@
   <d-front-matter>
     <script async type="text/json">
       {
-            "title": "{{ page.title }}",
-            "description": "{{ page.description }}",
-            "published": "{{ page.date | date: '%B %d, %Y' }}",
-            "authors": [
-              {% for author in page.authors %}
-              {
-                "author": "{{ author.name }}",
-                "authorURL": "{{ author.url }}",
-                "affiliations": [
-                  {
-                    "name": "{{ author.affiliations.name }}",
-                    "url": "{{ author.affiliations.url }}"
-                  }
-                ]
-              }{% if forloop.last == false %},{% endif %}
-              {% endfor %}
-            ],
-            "katex": {
-              "delimiters": [
+          "title": "{{ page.title }}",
+          "description": "{{ page.description }}",
+          "published": "{{ page.date | date: '%B %d, %Y' }}",
+          "authors": [
+            {% for author in page.authors %}
+            {
+              "author": "{{ author.name }}",
+              "authorURL": "{{ author.url }}",
+              "affiliations": [
                 {
-                  "left": "$",
-                  "right": "$",
-                  "display": false
-                },
-                {
-                  "left": "$$",
-                  "right": "$$",
-                  "display": true
+                  "name": "{{ author.affiliations.name }}",
+                  "url": "{{ author.affiliations.url }}"
                 }
               ]
-            }
+            }{% if forloop.last == false %},{% endif %}
+            {% endfor %}
+          ],
+          "katex": {
+            "delimiters": [
+              {
+                "left": "$",
+                "right": "$",
+                "display": false
+              },
+              {
+                "left": "$$",
+                "right": "$$",
+                "display": true
+              }
+            ]
           }
+        }
     </script>
   </d-front-matter>
 
@@ -93,6 +93,44 @@
           </d-contents>
         {% endif %}
         {{ content }}
+
+        {% assign sorted_wiki_terms = site.wiki | sort: 'title' %}
+
+        {% assign current_page_url_normalized = page.url | relative_url | replace_first: site.baseurl, '' | strip | split: '#' | first %}
+
+        {% assign previous_page = null %}
+        {% assign next_page = null %}
+        {% assign found_current_page = false %}
+
+        {% for wiki_page in sorted_wiki_terms %}
+          {% assign wiki_page_url_normalized = wiki_page.url | relative_url | replace_first: site.baseurl, '' | strip | split: '#' | first %}
+
+          {% if found_current_page %}
+            {% assign next_page = wiki_page %}
+            {% break %}
+          {% endif %}
+
+          {% if wiki_page_url_normalized == current_page_url_normalized %}
+            {% assign found_current_page = true %}
+          {% else %}
+            {% assign previous_page = wiki_page %}
+          {% endif %}
+        {% endfor %}
+
+        <div class="wiki-navigation-pointers mt-5">
+          <div class="row">
+            <div class="col text-start">
+              {% if previous_page %}
+                <a href="{{ previous_page.url | relative_url }}" class="btn btn-primary">&larr; {{ previous_page.title }}</a>
+              {% endif %}
+            </div>
+            <div class="col text-end">
+              {% if next_page %}
+                <a href="{{ next_page.url | relative_url }}" class="btn btn-primary">{{ next_page.title }} &rarr;</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
       </d-article>
 
       <d-appendix>
