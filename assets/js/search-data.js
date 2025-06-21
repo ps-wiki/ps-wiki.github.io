@@ -317,6 +317,81 @@ ninja.data = [{
           description: "The ability of a system to react to a change in system frequency.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/frequnecy-response/";
+            },},{id: "wiki-futures-market",
+          title: 'Futures Market',
+          description: "For contracts for future delivery of a commodity or security.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/future-markets/";
+            },},{id: "wiki-generation-redispatch",
+          title: 'Generation Redispatch',
+          description: "Generators are adjusted away (off-cost) from their normal assignments (on-cost).",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/generation-redispatch/";
+            },},{id: "wiki-generation-shift-factor",
+          title: 'Generation Shift Factor',
+          description: "GSF.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/generation-shift-factor/";
+            },},{id: "wiki-interchange",
+          title: 'Interchange',
+          description: "Energy transfers that cross Balancing Authority boundaries.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/interchange/";
+            },},{id: "wiki-interconnection-reliability-operating-limit",
+          title: 'Interconnection Reliability Operating Limit',
+          description: "A System Operating Limit that, if violated, could lead to instability or cascading outages.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/interconnection-reliability-operating-limit/";
+            },},{id: "wiki-interconnection",
+          title: 'Interconnection',
+          description: "A geographic area where BPS components are synchronized.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/interconnection/";
+            },},{id: "wiki-interruptible-demand",
+          title: 'Interruptible Demand',
+          description: "Customer demand that can be interrupted by control or request of the system operator.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/interruptible-demand/";
+            },},{id: "wiki-inverter-based-resources",
+          title: 'Inverter-based Resources',
+          description: "IBR. BPS-connected resources that have a power electronic interface.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/inverter-based-resources/";
+            },},{id: "wiki-line-outage-distribution-factor",
+          title: 'Line Outage Distribution Factor',
+          description: "LODF.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/line-outage-distribution-factor/";
+            },},{id: "wiki-localtional-marginal-price",
+          title: 'Localtional Marginal Price',
+          description: "LMP. Marginal price for energy at the location delivered or received.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/locational-marginal-price/";
+            },},{id: "wiki-loss-of-load-events",
+          title: 'Loss-of-Load Events',
+          description: "LOLEV. The number of events in which some system load is not served in a given year.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/loss-of-load-events/";
+            },},{id: "wiki-loss-of-load-expectation",
+          title: 'Loss-of-Load Expectation',
+          description: "LOLE. The number of days per year for which the available generation capacity is insufficient.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/loss-of-load-expectation/";
+            },},{id: "wiki-loss-of-load-hour",
+          title: 'Loss-of-Load Hour',
+          description: "LOLH. The number of hours per year where demand will exceed the generating capacity.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/loss-of-load-hour/";
+            },},{id: "wiki-loss-of-load-probability",
+          title: 'Loss-of-Load Probability',
+          description: "LOLP.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/loss-of-load-probability/";
+            },},{id: "wiki-market-power",
+          title: 'Market Power',
+          description: "The ability to control or affect price.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/market-power/";
             },},{id: "wiki-market-structure",
           title: 'Market Structure',
           description: "The rules, mechanisms, and processes under which a market operates.",
@@ -669,7 +744,7 @@ ninja.data = [{
               window.location.href = "/wiki/voltage-stability/";
             },},{id: "wiki-waveform-measurement-unit",
           title: 'Waveform Measurement Unit',
-          description: "WMU, SMU. Sensor device to record synchro-waveforms.",
+          description: "WMU, a.k.a. synchro-waveform measurement units (SMUs). Sensor device to record synchro-waveforms.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/waveform-measurement-unit/";
             },},{id: "wiki-wholesale-markets",
@@ -707,81 +782,6 @@ ninja.data = [{
           description: "CGMES.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/common-grid-model-exchange-standard/";
-            },},{id: "wiki-futures-market",
-          title: 'Futures Market',
-          description: "For contracts for future delivery of a commodity or security.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/future-markets/";
-            },},{id: "wiki-generation-redispatch",
-          title: 'Generation Redispatch',
-          description: "Generators are adjusted away (off-cost) from their normal assignments (on-cost).",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/generation-redispatch/";
-            },},{id: "wiki-generation-shift-factor",
-          title: 'Generation Shift Factor',
-          description: "GSF.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/generation-shift-factor/";
-            },},{id: "wiki-interchange",
-          title: 'Interchange',
-          description: "Energy transfers that cross Balancing Authority boundaries.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/interchange/";
-            },},{id: "wiki-interconnection-reliability-operating-limit",
-          title: 'Interconnection Reliability Operating Limit',
-          description: "A System Operating Limit that, if violated, could lead to instability or cascading outages.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/interconnection-reliability-operating-limit/";
-            },},{id: "wiki-interconnection",
-          title: 'Interconnection',
-          description: "A geographic area where BPS components are synchronized.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/interconnection/";
-            },},{id: "wiki-interruptible-demand",
-          title: 'Interruptible Demand',
-          description: "Customer demand that can be interrupted by control or request of the system operator.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/interruptible-demand/";
-            },},{id: "wiki-inverter-based-resources",
-          title: 'Inverter-based Resources',
-          description: "IBR. BPS-connected resources that have a power electronic interface.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/inverter-based-resources/";
-            },},{id: "wiki-line-outage-distribution-factor",
-          title: 'Line Outage Distribution Factor',
-          description: "LODF.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/line-outage-distribution-factor/";
-            },},{id: "wiki-localtional-marginal-price",
-          title: 'Localtional Marginal Price',
-          description: "LMP. Marginal price for energy at the location delivered or received.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/locational-marginal-price/";
-            },},{id: "wiki-loss-of-load-events",
-          title: 'Loss-of-Load Events',
-          description: "LOLEV. The number of events in which some system load is not served in a given year.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/loss-of-load-events/";
-            },},{id: "wiki-loss-of-load-expectation",
-          title: 'Loss-of-Load Expectation',
-          description: "LOLE. The number of days per year for which the available generation capacity is insufficient.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/loss-of-load-expectation/";
-            },},{id: "wiki-loss-of-load-hour",
-          title: 'Loss-of-Load Hour',
-          description: "LOLH. The number of hours per year where demand will exceed the generating capacity.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/loss-of-load-hour/";
-            },},{id: "wiki-loss-of-load-probability",
-          title: 'Loss-of-Load Probability',
-          description: "LOLP.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/loss-of-load-probability/";
-            },},{id: "wiki-market-power",
-          title: 'Market Power',
-          description: "The ability to control or affect price.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/market-power/";
             },},{id: "wiki-most-severe-single-contingency",
           title: 'Most Severe Single Contingency',
           description: "A single contingency that would result in the greatest loss of resource output.",
