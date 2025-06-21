@@ -4,7 +4,7 @@ title: Balancing Authoritiy
 description: The responsible entity within a Balancing Authority Area.
 tags:
   - entity
-  - balancing authority
+  - balancing-authority
   - nerc
 bibliography: papers.bib
 authors:

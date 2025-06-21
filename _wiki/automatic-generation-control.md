@@ -2,10 +2,10 @@
 layout: distill
 title: Automatic Generation Control
 description: AGC. Automatic regulation of the power output of generators.
-tags: 
--frequency-control 
--ferc 
--nerc
+tags:
+  - frequency-control
+  - ferc
+  - nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

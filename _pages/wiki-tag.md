@@ -16,7 +16,8 @@ horizontal: false
     {% for wiki_term in site.wiki %}
       {% if wiki_term.tags %}
         {% for tag in wiki_term.tags %}
-          {% assign all_wiki_tags = all_wiki_tags | append: tag | append: "," %}
+        {% assign cleaned_tag = tag | strip | downcase %}
+        {% assign all_wiki_tags = all_wiki_tags | append: cleaned_tag | append: "," %}
         {% endfor %}
       {% endif %}
     {% endfor %}
