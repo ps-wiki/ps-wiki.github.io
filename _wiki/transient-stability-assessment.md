@@ -2,7 +2,10 @@
 layout: distill
 title: Transient Stability Assessment
 description: TSA. Monitor and determine transient stability of the system.
-tags: stability, software, system-operator
+tags:
+  - stability
+  - software
+  - system-operator
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

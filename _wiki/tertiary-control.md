@@ -2,7 +2,9 @@
 layout: distill
 title: Tertiary Control
 description: Actions taken to handle current and future contingencies.
-tags: frequency-control, nerc
+tags:
+  - frequency-control
+  - nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

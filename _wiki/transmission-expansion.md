@@ -2,7 +2,9 @@
 layout: distill
 title: Transmission Expansion
 description: The addition or modification of facilities of the Transmission System.
-tags: transmission, system-operator
+tags:
+  - transmission
+  - system-operator
 bibliography: papers.bib
 authors:
   - name: Jinning Wang

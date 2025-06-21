@@ -2,7 +2,10 @@
 layout: distill
 title: System Flexibility
 description: The ability to respond to system changes and uncertainties.
-tags: flexibility, system-operator, nerc
+tags:
+  - flexibility
+  - system-operator
+  - nerc
 bibliography: papers.bib
 authors:
   - name: Jinning Wang
