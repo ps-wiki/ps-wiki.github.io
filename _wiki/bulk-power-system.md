@@ -19,9 +19,7 @@ last_update: 2025-06-20
 
 Source: <d-cite key="ieee2018std1547"></d-cite> p23
 
-> Any electric generation resources
-
-- transmission lines, interconnections with neighboring systems, and associated equipment.
+> Any electric generation resources, transmission lines, interconnections with neighboring systems, and associated equipment.
 
 ### Definition by NERC
 
