@@ -118,33 +118,21 @@
         {% endfor %}
 
         <div class="wiki-navigation-pointers mt-5">
-          <div class="edit-page-button text-center mb-3">
-            {% comment %}
-              Make sure site.repo and site.branch are defined in _config.yml
-              Example:
-              repo: your_username/your_repository_name
-              branch: main
-            {% endcomment %}
-            {% if site.repo and site.branch %}
-              {# page.path already gives the path from the site root, e.g., _wiki/your-page.md #}
-              <a href="https://github.com/{{ site.repo }}/edit/{{ site.branch }}/{{ page.path }}"
-                class="btn btn-info btn-sm"
-                target="_blank" rel="noopener noreferrer">
-                <i class="fas fa-edit"></i> Edit This Page
-              </a>
+          <div class="col-12 mb-2">
+            {% if previous_page %}
+              <a href="{{ previous_page.url | relative_url }}" class="wiki-nav-link"> Previous: {{ previous_page.title }} </a>
             {% endif %}
           </div>
 
-          <div class="navigation-links">
-            {% if previous_page %}
-              <p class="previous-link">
-                <a href="{{ previous_page.url | relative_url }}">Previous: {{ previous_page.title }}</a>
-              </p>
+          <div class="col-12 mb-2">
+            {% if site.repo and site.branch %}
+              <a href="https://github.com/{{ site.repo }}/edit/{{ site.branch }}/{{ page.path }}" class="wiki-nav-link"> Edit This Page </a>
             {% endif %}
+          </div>
+
+          <div class="col-12 mb-2">
             {% if next_page %}
-              <p class="next-link">
-                <a href="{{ next_page.url | relative_url }}">Next: {{ next_page.title }}</a>
-              </p>
+              <a href="{{ next_page.url | relative_url }}" class="wiki-nav-link"> Next: {{ next_page.title }} </a>
             {% endif %}
           </div>
         </div>
