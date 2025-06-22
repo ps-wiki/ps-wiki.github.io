@@ -3,11 +3,12 @@ title: Security Constrained Unit Commitment
 description: SCUC.
 tags:
   - system-operator
+  - nyiso
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-22
 ---
 
 Relevante items: [Security Constrained Economic Dispatch](/wiki/security-constrained-economic-dispatch) &nbsp; [Locational Marginal Price](/wiki/locational-marginal-price)

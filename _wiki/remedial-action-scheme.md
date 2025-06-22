@@ -3,11 +3,13 @@ title: Remedial Action Scheme
 description: RAS.
 tags:
   - reliability
+  - system-operator
+  - pjm
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-22
 ---
 
 ### Definition by PJM

@@ -3,6 +3,9 @@ title: Resource Scheduling & Commitment
 description: RSC. Security-constrained resource commitment.
 tags:
   - system-operator
+  - pjm
+  - market
+  - reserve
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
