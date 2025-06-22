@@ -20,6 +20,7 @@ We welcome contributions from the community! If you have suggestions, correction
 Built upon the [al-folio](https://github.com/alshedivat/al-folio) Jekyll theme, this website introduces significant enhancements, particularly in its new wiki section.
 
 A custom [wiki layout](./_layouts/wiki.liquid) adapted from the `distill` layout, has been developed to effectively host item-based terminologies. Key features include:
+
 - **Metadata Display**: Last update date, tags, and related item links
 - **Navigation**: Previous/Next item links for easy Browse
 - **Direct Editing**: A link to edit the item directly on GitHub
