@@ -67,6 +67,10 @@
       {% endif %}
 
       <d-article>
+        {% if page.last_update %}
+          <p>Last Updated: {{ page.last_update | date: '%B %d, %Y' }}</p>
+          <hr style="margin:0.5em;">
+        {% endif %}
         {% if page.toc %}
           <d-contents>
             <nav class="l-text figcaption">
@@ -89,6 +93,49 @@
           </d-contents>
         {% endif %}
         {{ content }}
+
+        {% assign sorted_wiki_terms = site.wiki | sort: 'title' %}
+
+        {% assign current_page_url_normalized = page.url | relative_url | replace_first: site.baseurl, '' | strip | split: '#' | first %}
+
+        {% assign previous_page = null %}
+        {% assign next_page = null %}
+        {% assign found_current_page = false %}
+
+        {% for wiki_page in sorted_wiki_terms %}
+          {% assign wiki_page_url_normalized = wiki_page.url | relative_url | replace_first: site.baseurl, '' | strip | split: '#' | first %}
+
+          {% if found_current_page %}
+            {% assign next_page = wiki_page %}
+            {% break %}
+          {% endif %}
+
+          {% if wiki_page_url_normalized == current_page_url_normalized %}
+            {% assign found_current_page = true %}
+          {% else %}
+            {% assign previous_page = wiki_page %}
+          {% endif %}
+        {% endfor %}
+
+        <div class="wiki-navigation-pointers mt-5">
+          <div class="col-12 mb-2">
+            {% if previous_page %}
+              <a href="{{ previous_page.url | relative_url }}" class="wiki-nav-link"> Previous: {{ previous_page.title }} </a>
+            {% endif %}
+          </div>
+
+          <div class="col-12 mb-2">
+            {% if site.repo and site.branch %}
+              <a href="https://github.com/{{ site.repo }}/edit/{{ site.branch }}/{{ page.path }}" class="wiki-nav-link"> Edit This Page </a>
+            {% endif %}
+          </div>
+
+          <div class="col-12 mb-2">
+            {% if next_page %}
+              <a href="{{ next_page.url | relative_url }}" class="wiki-nav-link"> Next: {{ next_page.title }} </a>
+            {% endif %}
+          </div>
+        </div>
       </d-article>
 
       <d-appendix>
