@@ -227,6 +227,7 @@ defaults:
       type: "wiki" # Apply specifically to files in the 'wiki' collection
     values:
       giscus_comments: true # Set giscus_comments to true by default
+      edit: true # Turn on edit button for wiki pages
 
 sass:
   style: compressed
@@ -643,3 +644,9 @@ jsonresume:
   - languages
   - interests
   - references
+
+# -----------------------------------------------------------------------------
+# Edit this page button
+# -----------------------------------------------------------------------------
+repo: ps-wiki/ps-wiki.github.io # your GitHub repo name
+branch: main # your GitHub branch name
