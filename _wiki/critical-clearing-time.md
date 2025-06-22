@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Critical Clearing Time
 description: CCT. The maximum permissible duration of the fault.
 tags:
@@ -7,7 +6,6 @@ tags:
   - ieee
   - ieee-task-force
   - cigre
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

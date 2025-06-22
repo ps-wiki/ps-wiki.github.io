@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Common Grid Model Exchange Standard
 description: CGMES.
 tags:
@@ -7,7 +6,6 @@ tags:
   - iec
   - iec-standard
   - standard
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

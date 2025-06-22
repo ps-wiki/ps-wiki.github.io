@@ -1,11 +1,9 @@
 ---
-layout: distill
 title: Control Area
 description: A.k.a. Balancing Authority Area.
 tags:
   - geography
   - ferc
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

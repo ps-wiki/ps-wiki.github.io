@@ -1,12 +1,10 @@
 ---
-layout: distill
 title: Market
 description: A venue where participants buy and sell products or services.
 tags:
   - market
   - ferc
   - system-operator
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

@@ -1,11 +1,9 @@
 ---
-layout: distill
 title: Market Unit
 description: The unit sets the price of next increment or decrement of energy.
 tags:
   - market
   - ferc
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

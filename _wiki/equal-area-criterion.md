@@ -1,10 +1,8 @@
 ---
-layout: distill
 title: Equal Area Criterion
 description: To determine the maximum permissible increase in mechanical power input for system stability.
 tags:
   - stability
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

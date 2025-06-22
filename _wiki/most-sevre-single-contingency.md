@@ -1,11 +1,9 @@
 ---
-layout: distill
 title: Most Severe Single Contingency
 description: A single contingency that would result in the greatest loss of resource output.
 tags:
   - event
   - nerc
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

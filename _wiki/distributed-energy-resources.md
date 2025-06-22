@@ -1,12 +1,10 @@
 ---
-layout: distill
 title: Distributed Energy Resources
 description: DER. A source of electric power that is not directly connected to a bulk power system.
 tags:
   - generation
   - ieee
   - ieee-standard
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

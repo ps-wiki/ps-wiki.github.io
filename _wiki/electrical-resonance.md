@@ -1,12 +1,10 @@
 ---
-layout: distill
 title: Electrical Resonance
 description: The behavior of power systems with conventional turbine-generators and variable speed induction generators.
 tags:
   - stability
   - ieee
   - ieee-task-force
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

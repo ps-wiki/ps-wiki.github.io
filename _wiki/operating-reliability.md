@@ -1,11 +1,9 @@
 ---
-layout: distill
 title: Operating Reliability
 description: The ability to withstand sudden disturbances while avoiding uncontrolled cascading blackouts or damage to equipment.
 tags:
   - reliability
   - operation
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

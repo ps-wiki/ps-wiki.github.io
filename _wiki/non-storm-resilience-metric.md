@@ -1,12 +1,10 @@
 ---
-layout: distill
 title: Non-Storm Resilience Metric
 description: A metric focuses on robustness and the ability to withstand events.
 tags:
   - resilience
   - metrics
   - ieee
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

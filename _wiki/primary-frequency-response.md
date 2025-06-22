@@ -1,10 +1,8 @@
 ---
-layout: distill
 title: Primary Frequency Response
 description: PFR. Immediate proportional response to system Frequency Deviations.
 tags:
   - frequency-control
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

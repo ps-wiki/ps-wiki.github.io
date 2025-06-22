@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Operating Reserve
 description: Capability above firm system demand required for regulation, load forecasting error, and outages.
 tags:
@@ -8,7 +7,6 @@ tags:
   - regulation
   - nerc
   - system-operator
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

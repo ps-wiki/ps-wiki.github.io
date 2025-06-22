@@ -1,12 +1,10 @@
 ---
-layout: distill
 title: Performance-Based Metrics
 description: A.k.a. consequence-based metrics. Quantitative approaches for assessing system resilience.
 tags:
   - resilience
   - metrics
   - ieee
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

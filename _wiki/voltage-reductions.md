@@ -1,10 +1,8 @@
 ---
-layout: distill
 title: Voltage Reductions
 description: A.k.a brownouts
 tags:
   - nerc
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

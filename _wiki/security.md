@@ -1,10 +1,8 @@
 ---
-layout: distill
 title: Security
 description: The degree of risk in a power system's ability to survive imminent disturbances.
 tags:
   - security
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

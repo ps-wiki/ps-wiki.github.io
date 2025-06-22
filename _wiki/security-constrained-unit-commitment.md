@@ -1,10 +1,8 @@
 ---
-layout: distill
 title: Security Constrained Unit Commitment
 description: SCUC.
 tags:
   - system-operator
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

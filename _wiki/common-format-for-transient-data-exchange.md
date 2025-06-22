@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Common Format for Transient Data Exchange
 description: COMTRADE. Inactive.
 tags:
@@ -8,7 +7,6 @@ tags:
   - ieee
   - ieee-standard
   - standard
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

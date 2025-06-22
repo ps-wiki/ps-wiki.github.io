@@ -1,12 +1,10 @@
 ---
-layout: distill
 title: Stability Limits
 description: Stability related transmission limits.
 tags:
   - transmission
   - system-operator
   - stability
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

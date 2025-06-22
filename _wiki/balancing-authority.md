@@ -1,12 +1,10 @@
 ---
-layout: distill
 title: Balancing Authoritiy
 description: The responsible entity within a Balancing Authority Area.
 tags:
   - entity
   - balancing-authority
   - nerc
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

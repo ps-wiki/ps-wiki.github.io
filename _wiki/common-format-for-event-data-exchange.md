@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Common Format for Event Data Exchange
 description: COMFEDE. Inactive.
 tags:
@@ -7,7 +6,6 @@ tags:
   - inactive
   - ieee-standard
   - standard
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

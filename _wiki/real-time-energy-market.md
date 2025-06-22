@@ -1,11 +1,9 @@
 ---
-layout: distill
 title: Real Time Energy Market
 description: Use dispatch run to determine the least cost solution to balance supply and demand.
 tags:
   - system-operator
   - market
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

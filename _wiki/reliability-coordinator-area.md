@@ -1,10 +1,8 @@
 ---
-layout: distill
 title: Reliability Coordinator Area
 description: The collection of generation, transmission, and loads within the boundaries of the Reliability Coordinator.
 tags:
   - geography
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

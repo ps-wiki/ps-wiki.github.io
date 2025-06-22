@@ -1,12 +1,10 @@
 ---
-layout: distill
 title: Non-Spinning Reserve
 description: Unconnected to the system but capable of serving demand within a specified time.
 tags:
   - reserve
   - nerc
   - generation
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

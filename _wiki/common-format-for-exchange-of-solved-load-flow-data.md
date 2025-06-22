@@ -1,12 +1,10 @@
 ---
-layout: distill
 title: Common Format for Exchange of Solved Load Flow Data
 description: A.k.a. common data format (CDF)
 tags:
   - data-format
   - ieee-standard
   - standard
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

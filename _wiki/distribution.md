@@ -1,11 +1,9 @@
 ---
-layout: distill
 title: Distribution
 description: The act of distributing gas or electric power to customers.
 tags:
   - distribution
   - ferc
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

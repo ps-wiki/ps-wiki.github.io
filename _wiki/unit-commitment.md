@@ -1,10 +1,8 @@
 ---
-layout: distill
 title: Unit Commitment
 description: To determine commitment of resources.
 tags:
   - system-operator
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

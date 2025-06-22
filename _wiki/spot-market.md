@@ -1,11 +1,9 @@
 ---
-layout: distill
 title: Spot Market
 description: For short-term contractual commitments.
 tags:
   - market
   - ferc
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

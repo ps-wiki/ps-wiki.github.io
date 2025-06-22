@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Loss-of-Load Probability
 description: LOLP.
 tags:
@@ -7,7 +6,6 @@ tags:
   - nerc
   - metrics
   - reliability
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

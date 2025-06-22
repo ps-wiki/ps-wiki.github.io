@@ -1,12 +1,10 @@
 ---
-layout: distill
 title: Rotor Angle Stability
 description: The ability to remain in synchronism under normal and disturbed conditions.
 tags:
   - stability
   - ieee
   - ieee-task-force
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

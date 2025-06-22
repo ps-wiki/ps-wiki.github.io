@@ -1,10 +1,8 @@
 ---
-layout: distill
 title: Resource Scheduling & Commitment
 description: RSC. Security-constrained resource commitment.
 tags:
   - system-operator
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

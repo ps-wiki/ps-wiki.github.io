@@ -1,12 +1,10 @@
 ---
-layout: distill
 title: Synchronization
 description: Aligning a device's terminal voltage with another voltage source.
 tags:
   - ieee
   - ieee-standard
   - synchronization
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

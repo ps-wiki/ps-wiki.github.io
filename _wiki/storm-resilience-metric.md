@@ -1,12 +1,10 @@
 ---
-layout: distill
 title: Storm Resilience Metric
 description: Focused on the speed of system recovery during storm events.
 tags:
   - resilience
   - metrics
   - ieee
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Interconnection
 description: A geographic area where BPS components are synchronized.
 tags:
@@ -7,7 +6,6 @@ tags:
   - geography
   - system-operator
   - nerc
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

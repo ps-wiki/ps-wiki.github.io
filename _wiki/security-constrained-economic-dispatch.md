@@ -1,12 +1,10 @@
 ---
-layout: distill
 title: Security Constraiend Economic Dispatch
 description: SCED.
 tags:
   - dispatch
   - operation
   - system-operator
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

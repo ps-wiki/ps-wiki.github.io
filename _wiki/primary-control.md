@@ -1,12 +1,10 @@
 ---
-layout: distill
 title: Primary Control
 description: A.k.a. <u>Frequency Response</u>.
 tags:
   - frequency-control
   - generation
   - nerc
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

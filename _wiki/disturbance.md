@@ -1,10 +1,8 @@
 ---
-layout: distill
 title: Disturbance
 description: Any perturbation or sudden loss of generation or interruption of load.
 tags:
   - event
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

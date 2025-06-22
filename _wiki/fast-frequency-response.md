@@ -1,12 +1,10 @@
 ---
-layout: distill
 title: Fast Frequency Response
 description: FFR. Power in response to frequency changes during the arresting phase
 tags:
   - inertia
   - frequency-control
   - system-operator
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

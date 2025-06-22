@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Ride-through
 description: Ability to withstand voltage or frequency disturbances and continue operating.
 tags:
@@ -7,7 +6,6 @@ tags:
   - operation
   - ieee
   - ieee-standard
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

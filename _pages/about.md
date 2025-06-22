@@ -8,13 +8,13 @@ subtitle: An open wiki for power systems engineers, researchers, and students.
 <div class="button-row-container text-center mb-5">
   <div class="row justify-content-center">
     <div class="col-auto mb-3">
-      <a href="/wiki-tag/" class="btn btn-primary btn-lg wiki-tags-button">
-        <i class="fas fa-tags"></i> Archive by Tag
+      <a href="/wiki/" class="btn btn-lg wiki-button" style="background-color: #007BFF; border-color: #007BFF; color: #FFFFFF;">
+        <i class="fas fa-search-plus"></i> Explore Now
       </a>
     </div>
     <div class="col-auto mb-3">
-      <a href="/wiki/" class="btn btn-primary btn-lg wiki-button">
-        <i class="fas fa-book"></i> Explore Now
+      <a href="/wiki-tag/" class="btn btn-lg wiki-tags-button" style="background-color: #28A745; border-color: #28A745; color: #FFFFFF;">
+        <i class="fas fa-filter"></i> Archive by Tags
       </a>
     </div>
   </div>

@@ -1,10 +1,8 @@
 ---
-layout: distill
 title: Remedial Action Scheme
 description: RAS.
 tags:
   - reliability
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
