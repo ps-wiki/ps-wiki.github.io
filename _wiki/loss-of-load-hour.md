@@ -6,7 +6,6 @@ tags:
   - nerc
   - metrics
   - reliability
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

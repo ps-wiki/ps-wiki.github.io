@@ -4,7 +4,6 @@ description: The purchase and sale from generators to resellers.
 tags:
   - market
   - ferc
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

@@ -4,7 +4,6 @@ description: The maximum power flow possible while maintaining system stability.
 tags:
   - stability
   - nerc
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

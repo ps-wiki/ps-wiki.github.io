@@ -5,7 +5,6 @@ tags:
   - resilience
   - metrics
   - ieee
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

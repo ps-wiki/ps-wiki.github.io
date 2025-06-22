@@ -4,7 +4,6 @@ description: The median of all Frequency Response observations reported annually
 tags:
   - frequency-control
   - balancing-authority
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

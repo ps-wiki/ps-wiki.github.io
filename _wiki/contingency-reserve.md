@@ -4,7 +4,6 @@ description: Capacity deployed by the Balancing Authority to meet the Disturbanc
 tags:
   - nerc
   - contingency
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

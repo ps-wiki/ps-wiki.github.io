@@ -4,7 +4,6 @@ description: A list of network elements to be simulated as disconnected.
 tags:
   - contingency
   - system-operator
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

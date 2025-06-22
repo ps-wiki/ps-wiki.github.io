@@ -4,7 +4,6 @@ description: EUE. A measure of the capability to continuously serve loads.
 tags:
   - adequacy
   - nerc
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

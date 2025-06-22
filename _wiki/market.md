@@ -5,7 +5,6 @@ tags:
   - market
   - ferc
   - system-operator
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

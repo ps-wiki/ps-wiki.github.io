@@ -4,7 +4,6 @@ description: Reserve capability within 10 minutes not electrically synchronized 
 tags:
   - reserve
   - system-operator
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

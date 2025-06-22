@@ -6,7 +6,6 @@ tags:
   - ieee
   - ieee-standard
   - nerc
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

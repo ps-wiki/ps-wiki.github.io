@@ -4,7 +4,6 @@ description: Geographic concepts for emission data by EPA.
 tags:
   - geography
   - epa
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

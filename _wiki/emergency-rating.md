@@ -4,7 +4,6 @@ description: A transmission facility rating that reflects operation for a specif
 tags:
   - system-operator
   - transmission
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

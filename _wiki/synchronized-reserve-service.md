@@ -4,7 +4,6 @@ description: Can be satisfied by online resources in 10 minutes or less.
 tags:
   - reserve
   - system-operator
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

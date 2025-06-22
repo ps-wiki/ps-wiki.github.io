@@ -5,7 +5,6 @@ tags:
   - transmission
   - system-operator
   - stability
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

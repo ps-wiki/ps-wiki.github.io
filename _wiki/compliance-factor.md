@@ -4,7 +4,6 @@ description: CF.
 tags:
   - frequency-control
   - system-operator
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

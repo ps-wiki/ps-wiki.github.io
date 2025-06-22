@@ -4,7 +4,6 @@ description: A.k.a. <u>Ramp Rate</u>. The rate at which the interchange schedule
 tags:
   - ramp
   - generator
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

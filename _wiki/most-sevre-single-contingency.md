@@ -4,7 +4,6 @@ description: A single contingency that would result in the greatest loss of reso
 tags:
   - event
   - nerc
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

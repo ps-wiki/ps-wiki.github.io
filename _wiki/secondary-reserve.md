@@ -4,7 +4,6 @@ description: Reserve capability within a 10-to-30 minute interval.
 tags:
   - reserve
   - contingency
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

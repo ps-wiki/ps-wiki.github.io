@@ -4,7 +4,6 @@ description: The uncontrolled successive loss of System Elements triggered by an
 tags:
   - event
   - nerc
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

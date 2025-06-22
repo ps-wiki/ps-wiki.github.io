@@ -2,7 +2,6 @@
 title: Uncertainty
 description: Two types of uncertainty.
 tags:
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

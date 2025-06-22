@@ -5,7 +5,6 @@ tags:
   - stability
   - ieee
   - ieee-task-force
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

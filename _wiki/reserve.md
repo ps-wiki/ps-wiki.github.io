@@ -3,7 +3,6 @@ title: Reserve
 description: The generating capability that is “standing by” ready for service in the event that something happens on the power system.
 tags:
   - reserve
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

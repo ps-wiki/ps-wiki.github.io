@@ -4,7 +4,6 @@ description: Can be satisfied by online or offline resources that are able to re
 tags:
   - reserve
   - system-operator
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

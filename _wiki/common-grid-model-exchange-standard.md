@@ -6,7 +6,6 @@ tags:
   - iec
   - iec-standard
   - standard
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

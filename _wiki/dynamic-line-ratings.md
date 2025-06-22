@@ -4,7 +4,6 @@ description: DLR. A grid enhancing technology (GET) that provides real-time rati
 tags:
   - system-operator
   - grid-enhancing-technology
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

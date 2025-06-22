@@ -5,7 +5,6 @@ tags:
   - ieee
   - ieee-standard
   - generation
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

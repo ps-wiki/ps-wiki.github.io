@@ -3,7 +3,6 @@ title: Region
 description: Bulk power system reliability regions in North America.
 tags:
   - geography
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

@@ -4,7 +4,6 @@ description: IBR. BPS-connected resources that have a power electronic interface
 tags:
   - generation
   - nerc
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

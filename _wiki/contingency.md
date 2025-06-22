@@ -5,7 +5,6 @@ tags:
   - contingency
   - system-operator
   - nerc
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

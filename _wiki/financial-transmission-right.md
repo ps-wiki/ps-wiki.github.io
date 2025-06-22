@@ -4,7 +4,6 @@ description: FTR. Compensation contract for transmission charges due to grid con
 tags:
   - market
   - ferc
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

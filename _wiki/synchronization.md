@@ -5,7 +5,6 @@ tags:
   - ieee
   - ieee-standard
   - synchronization
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

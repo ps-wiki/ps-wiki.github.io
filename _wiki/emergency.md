@@ -6,7 +6,6 @@ tags:
   - transmission
   - nerc
   - reliability
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

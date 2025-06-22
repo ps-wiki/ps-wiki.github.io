@@ -3,7 +3,6 @@ title: Zone
 description:
 tags:
   - geography
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

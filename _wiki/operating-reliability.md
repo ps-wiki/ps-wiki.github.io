@@ -4,7 +4,6 @@ description: The ability to withstand sudden disturbances while avoiding uncontr
 tags:
   - reliability
   - operation
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

@@ -4,7 +4,6 @@ description: Techniques to control contingency or system violations.
 tags:
   - reliability
   - system-operator
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

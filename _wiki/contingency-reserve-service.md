@@ -5,7 +5,6 @@ tags:
   - reserve
   - system-operator
   - contingency
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

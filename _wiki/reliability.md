@@ -4,7 +4,6 @@ description: The probability of satisfactory operation of a power system over th
 tags:
   - reliability
   - operation
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

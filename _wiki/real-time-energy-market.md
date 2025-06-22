@@ -4,7 +4,6 @@ description: Use dispatch run to determine the least cost solution to balance su
 tags:
   - system-operator
   - market
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

@@ -3,7 +3,6 @@ title: Power Transfer Distribution Factor
 description: PTDF.
 tags:
   - sensitivity
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

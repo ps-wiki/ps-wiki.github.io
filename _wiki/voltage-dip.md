@@ -3,7 +3,6 @@ title: Voltage Dip
 description: A.k.a. Voltage Sag. Short-duration decreases in RMS voltage
 tags:
   - power-quality
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

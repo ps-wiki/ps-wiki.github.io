@@ -4,7 +4,6 @@ description: ACE. The instantaneous difference between net actual and scheduled 
 tags:
   - frequency-control
   - nerc
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

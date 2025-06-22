@@ -5,7 +5,6 @@ tags:
   - frequency-control
   - interconnection
   - nerc
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

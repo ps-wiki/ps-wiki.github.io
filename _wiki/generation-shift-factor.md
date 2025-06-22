@@ -4,7 +4,6 @@ description: GSF.
 tags:
   - sensitivity
   - nerc
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

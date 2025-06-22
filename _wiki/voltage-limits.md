@@ -3,7 +3,6 @@ title: Voltage Limits
 description: Voltage limits to protect against wide area voltage collapse.
 tags:
   - system-operator
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

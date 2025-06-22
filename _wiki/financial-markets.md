@@ -4,7 +4,6 @@ description: Trading financially settled products.
 tags:
   - market
   - ferc
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

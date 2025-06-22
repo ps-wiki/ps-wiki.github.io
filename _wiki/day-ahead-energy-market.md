@@ -4,7 +4,6 @@ description: Forward markets for electricity to be supplied the following day.
 tags:
   - system-operator
   - market
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

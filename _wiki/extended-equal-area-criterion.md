@@ -3,7 +3,6 @@ title: Extended Equal Area Criterion
 description: Extend EAC to multi-machine systems.
 tags:
   - stability
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

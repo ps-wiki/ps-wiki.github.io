@@ -4,7 +4,6 @@ description: The ability to control or affect price.
 tags:
   - market
   - ferc
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

@@ -4,7 +4,6 @@ description: Generation or load available to serve load within the Disturbance R
 tags:
   - reserve
   - operation
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

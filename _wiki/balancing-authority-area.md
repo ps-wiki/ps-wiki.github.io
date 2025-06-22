@@ -4,7 +4,6 @@ description: The collection of generation, transmission, and loads within the me
 tags:
   - geography
   - transmission
-bibliography: papers.bib
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
