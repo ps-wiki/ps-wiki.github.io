@@ -1,6 +1,11 @@
 ---
 title: Control Area
 description: A.k.a. Balancing Authority Area.
+related:
+  - balancing-authority-area
+  - region
+  - zone
+  - subregions
 tags:
   - geography
   - ferc
@@ -8,7 +13,7 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-20
+last_update: 2025-06-22
 ---
 
 ### Definition by FERC

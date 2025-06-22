@@ -4,14 +4,18 @@ description: A list of network elements to be simulated as disconnected.
 tags:
   - contingency
   - system-operator
+  - isone
+  - pjm
+  - entsoe
+related:
+  - contingency-analysis
+  - contingency
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-20
+last_update: 2025-06-22
 ---
-
-Relevant items: [Contingency](/wiki/contingency)
 
 ### Definition by ISO-NE
 

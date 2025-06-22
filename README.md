@@ -1,6 +1,6 @@
 # Power Systems Wiki
 
-This wiki is an open reference designed to compile and share terminologies used in the power systems field.
+This wiki is an open reference designed to compile and share terminologies used in the power systems engineering.
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://github.com/ps-wiki/ps-wiki.github.io/blob/main/LICENSE)
 [![Deploy site](https://github.com/ps-wiki/ps-wiki.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/ps-wiki/ps-wiki.github.io/actions/workflows/deploy.yml)
@@ -15,9 +15,16 @@ Language is inherently ambiguous, and power system terminologies are no exceptio
 
 We welcome contributions from the community! If you have suggestions, corrections, or new terms to add, please open an issue or submit a pull request.
 
-## Website
+## Website Overview
 
-The website is adapted from the [al-folio](https://github.com/alshedivat/al-folio)
+Built upon the [al-folio](https://github.com/alshedivat/al-folio) Jekyll theme, this website introduces significant enhancements, particularly in its new wiki section.
+
+A custom [wiki layout](./_layouts/wiki.liquid) adapted from the `distill` layout, has been developed to effectively host item-based terminologies. Key features include:
+
+- **Metadata Display**: Last update date, tags, and related item links
+- **Navigation**: Previous/Next item links for easy Browse
+- **Direct Editing**: A link to edit the item directly on GitHub
+- **Community Engagement**: Integrated Giscus comments
 
 ## License
 

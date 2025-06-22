@@ -3,14 +3,21 @@ title: Primary Frequency Response
 description: PFR. Immediate proportional response to system Frequency Deviations.
 tags:
   - frequency-control
+  - nerc
+related:
+  - fast-frequency-response
+  - primary-control
+  - secondary-control
+  - tertiary-control
+  - frequency-regulation
+  - automatic-generation-control
+  - frequency-stability
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-18
+last_update: 2025-06-22
 ---
-
-Relevant items: [Fast Frequency Response](/wiki/fast-frequency-response) &nbsp; [Primary Control](/wiki/primary-control) &nbsp; [Secondary Control](/wiki/secondary-control) &nbsp; [Tertiary Control](/wiki/tertiary-control) &nbsp; [Frequency Regulation](/wiki/frequency-regulation) &nbsp; [Automatic Generation Control](/wiki/automatic-generation-control) &nbsp; [Frequency Stability](/wiki/frequency-stability)
 
 ### Definition by NERC
 

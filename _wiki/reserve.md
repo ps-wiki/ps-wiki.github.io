@@ -3,11 +3,13 @@ title: Reserve
 description: The generating capability that is “standing by” ready for service in the event that something happens on the power system.
 tags:
   - reserve
+  - system-operator
+  - pjm
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-22
 ---
 
 ### Definition by PJM

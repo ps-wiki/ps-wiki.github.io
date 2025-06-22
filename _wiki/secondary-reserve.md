@@ -4,11 +4,13 @@ description: Reserve capability within a 10-to-30 minute interval.
 tags:
   - reserve
   - contingency
+  - system-operator
+  - pjm
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-22
 ---
 
 ### Definition in by PJM

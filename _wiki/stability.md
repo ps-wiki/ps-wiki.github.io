@@ -7,14 +7,15 @@ tags:
   - ieee
   - ieee-task-force
   - cigre
+related:
+  - security
+  - reliability
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-20
+last_update: 2025-06-22
 ---
-
-Relevant items: [Security](/wiki/security) &nbsp; [Reliability](/wiki/reliability)
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">

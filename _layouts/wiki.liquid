@@ -68,9 +68,51 @@
 
       <d-article>
         {% if page.last_update %}
-          <p>Last Updated: {{ page.last_update | date: '%B %d, %Y' }}</p>
-          <hr style="margin:0.5em;">
+          <p><strong>Last Updated:</strong>&nbsp;&nbsp;{{ page.last_update | date: '%B %d, %Y' }}</p>
         {% endif %}
+
+        {% if page.tags and page.tags != empty %}
+          <div class="wiki-tags-container d-flex align-items-center">
+            <div class="d-flex flex-wrap align-items-baseline">
+              <p><strong>Tags:</strong>&nbsp;&nbsp;</p>
+              {% for tag in page.tags %}
+                {% assign tag_url = tag | slugify | prepend: '/wiki-tag/#' %}
+                <a href="{{ tag_url | relative_url }}" class="wiki-tag-link text-decoration-none"> #&nbsp;{{ tag }} </a>
+                {%- if forloop.last == false %}&nbsp;&nbsp;{% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+
+        {% if page.related and page.related != empty %}
+          <div class="wiki-related-container d-flex align-items-center mb-4">
+            <div class="d-flex flex-wrap align-items-baseline">
+              <p><strong>See Also:</strong>&nbsp;&nbsp;</p>
+              {% for related_slug in page.related %}
+                {% assign found_related_page = null %}
+                {% for wiki_page_item in site.wiki %}
+                  {% assign wiki_page_slug = wiki_page_item.url | split: '/' | last | replace: '.html', '' %}
+                  {% if wiki_page_slug == related_slug %}
+                    {% assign found_related_page = wiki_page_item %}
+                    {% break %} {# Found it, exit inner loop #}
+                  {% endif %}
+                {% endfor %}
+
+                {% if found_related_page %}
+                  <a href="{{ found_related_page.url | relative_url }}" class="wiki-related-link text-decoration-none">
+                    {{ found_related_page.title }}
+                  </a>
+                  {%- unless forloop.last %}&nbsp;&nbsp;{% endunless %}
+                {% else %}
+                  {# Optional: Display a warning if a related page slug is not found #}
+                  <span class="text-danger" title="Related page not found: {{ related_slug }}">{{ related_slug }} (Not Found)</span>
+                  {%- unless forloop.last %},&nbsp;{% endunless %}
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+
         {% if page.toc %}
           <d-contents>
             <nav class="l-text figcaption">

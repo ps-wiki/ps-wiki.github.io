@@ -5,6 +5,8 @@ tags:
   - market
   - ferc
   - system-operator
+  - nyiso
+  - pjm
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
