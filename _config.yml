@@ -228,6 +228,7 @@ defaults:
     values:
       giscus_comments: true # Set giscus_comments to true by default
       edit: true # Turn on edit button for wiki pages
+      layout: wiki
 
 sass:
   style: compressed
