@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Synchronized Reserve Service
 description: Can be satisfied by online resources in 10 minutes or less.
 tags:

@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Operating Reserve – Spinning
 description: Generation synchronized to the system and fully available to serve load within the Disturbance Recovery Period.
 tags:

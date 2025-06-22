@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Reliability
 description: The probability of satisfactory operation of a power system over the long run.
 tags:

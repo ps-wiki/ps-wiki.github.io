@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Distribution Factors
 description: DFAX.
 tags:

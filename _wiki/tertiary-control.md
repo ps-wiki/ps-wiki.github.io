@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Tertiary Control
 description: Actions taken to handle current and future contingencies.
 tags:

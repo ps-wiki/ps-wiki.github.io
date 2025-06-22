@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Subregions
 description: Geographic concepts for emission data by EPA.
 tags:

@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Voltage Dip
 description: A.k.a. Voltage Sag. Short-duration decreases in RMS voltage
 tags:

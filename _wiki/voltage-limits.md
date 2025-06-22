@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Voltage Limits
 description: Voltage limits to protect against wide area voltage collapse.
 tags:

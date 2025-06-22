@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Cascading
 description: The uncontrolled successive loss of System Elements triggered by an incident.
 tags:

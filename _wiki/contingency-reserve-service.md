@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Contingency Reserve Service
 description: A.k.a. Primary Reserve. Can be satisfied in 10 minutes or less.
 tags:

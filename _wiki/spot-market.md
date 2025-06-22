@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Spot Market
 description: For short-term contractual commitments.
 tags:

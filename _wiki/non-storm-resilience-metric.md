@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Non-Storm Resilience Metric
 description: A metric focuses on robustness and the ability to withstand events.
 tags:

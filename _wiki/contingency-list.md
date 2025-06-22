@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Contingency List
 description: A list of network elements to be simulated as disconnected.
 tags:

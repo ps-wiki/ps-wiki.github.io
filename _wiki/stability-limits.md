@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Stability Limits
 description: Stability related transmission limits.
 tags:

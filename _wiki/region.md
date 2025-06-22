@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Region
 description: Bulk power system reliability regions in North America.
 tags:

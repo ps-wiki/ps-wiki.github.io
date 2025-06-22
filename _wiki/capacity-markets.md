@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Capacity Markets
 description: A market for trading capacity credits.
 tags:

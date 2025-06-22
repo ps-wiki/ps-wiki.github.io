@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Vendors
 description: Power system vendors
 tags:

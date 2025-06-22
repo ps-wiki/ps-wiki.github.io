@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Extended Equal Area Criterion
 description: Extend EAC to multi-machine systems.
 tags:

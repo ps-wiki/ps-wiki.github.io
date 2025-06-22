@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Uncertainty
 description: Two types of uncertainty.
 tags:

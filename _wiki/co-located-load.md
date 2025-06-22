@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Co-Located Load
 description: Load connected to the an existing or planned facility.
 tags:

@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Remedial Action Scheme
 description: RAS.
 tags:

@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Common Grid Model Exchange Standard
 description: CGMES.
 tags:

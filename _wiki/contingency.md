@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Contingency
 description: The unexpected failure or outage of a system component.
 tags:

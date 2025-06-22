@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Market
 description: A venue where participants buy and sell products or services.
 tags:

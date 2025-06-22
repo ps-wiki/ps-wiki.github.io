@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Secondary Control
 description: Balancing services deployed in the minutes time frame.
 tags:

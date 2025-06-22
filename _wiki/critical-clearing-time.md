@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Critical Clearing Time
 description: CCT. The maximum permissible duration of the fault.
 tags:

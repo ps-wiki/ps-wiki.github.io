@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Non-Synchronized Reserve
 description: Reserve capability within 10 minutes not electrically synchronized to the system
 tags:

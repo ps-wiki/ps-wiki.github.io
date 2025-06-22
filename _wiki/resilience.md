@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Resilience
 description: The ability to withstand and reduce the magnitude and/or duration of disruptive events.
 tags:

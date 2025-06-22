@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Loss-of-Load Probability
 description: LOLP.
 tags:

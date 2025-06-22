@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Emergency Rating
 description: A transmission facility rating that reflects operation for a specified, finite period.
 tags:

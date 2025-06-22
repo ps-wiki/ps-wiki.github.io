@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Voltage Reductions
 description: A.k.a brownouts
 tags:

@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Financial Markets
 description: Trading financially settled products.
 tags:

@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Distribution
 description: The act of distributing gas or electric power to customers.
 tags:

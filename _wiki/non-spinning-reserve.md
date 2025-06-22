@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Non-Spinning Reserve
 description: Unconnected to the system but capable of serving demand within a specified time.
 tags:

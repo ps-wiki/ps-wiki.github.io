@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Transmission Interconnection Procedures
 description: TIP.
 tags:

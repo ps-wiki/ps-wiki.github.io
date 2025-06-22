@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Generation Redispatch
 description: Generators are adjusted away (off-cost) from their normal assignments (on-cost).
 tags:

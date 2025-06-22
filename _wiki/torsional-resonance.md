@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Torsional Resonance
 description: The SSR due to torsional interactions between series compensated lines and turbine-generator mechanical shafts.
 tags:

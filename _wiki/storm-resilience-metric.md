@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Storm Resilience Metric
 description: Focused on the speed of system recovery during storm events.
 tags:

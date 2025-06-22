@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Electrical Resonance
 description: The behavior of power systems with conventional turbine-generators and variable speed induction generators.
 tags:

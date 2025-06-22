@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Ancillary Services
 description: Services necessary to support the transmission of electric power.
 tags:

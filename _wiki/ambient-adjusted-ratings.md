@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Ambient-Adjusted Ratings
 description:
 tags:

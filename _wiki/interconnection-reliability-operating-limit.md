@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Interconnection Reliability Operating Limit
 description: A System Operating Limit that, if violated, could lead to instability or cascading outages.
 tags:

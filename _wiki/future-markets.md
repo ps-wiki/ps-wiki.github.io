@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Futures Market
 description: For contracts for future delivery of a commodity or security.
 tags:

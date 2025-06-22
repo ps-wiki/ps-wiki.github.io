@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: System Flexibility
 description: The ability to respond to system changes and uncertainties.
 tags:

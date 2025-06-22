@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Transmission Planning Horizon
 description: Transmission planning period.
 tags:

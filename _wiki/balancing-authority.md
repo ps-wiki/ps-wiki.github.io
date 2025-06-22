@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Balancing Authoritiy
 description: The responsible entity within a Balancing Authority Area.
 tags:

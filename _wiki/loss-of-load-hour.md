@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Loss-of-Load Hour
 description: LOLH. The number of hours per year where demand will exceed the generating capacity.
 tags:

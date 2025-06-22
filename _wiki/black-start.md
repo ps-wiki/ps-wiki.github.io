@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Black Start
 description: Establishing the voltage from around zero
 tags:

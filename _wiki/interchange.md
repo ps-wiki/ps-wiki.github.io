@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Interchange
 description: Energy transfers that cross Balancing Authority boundaries.
 tags:

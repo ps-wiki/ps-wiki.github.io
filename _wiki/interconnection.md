@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Interconnection
 description: A geographic area where BPS components are synchronized.
 tags:

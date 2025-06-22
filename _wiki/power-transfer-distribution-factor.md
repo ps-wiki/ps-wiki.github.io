@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Power Transfer Distribution Factor
 description: PTDF.
 tags:

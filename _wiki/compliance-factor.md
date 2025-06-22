@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Compliance Factor
 description: CF.
 tags:

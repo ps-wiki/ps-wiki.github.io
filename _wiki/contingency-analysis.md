@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Contingency Analysis
 description: Procedures to study a contingency.
 tags:

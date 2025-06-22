@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Reserve Markets
 description: A market-based system for the purchase and sale of the Reserves.
 tags:

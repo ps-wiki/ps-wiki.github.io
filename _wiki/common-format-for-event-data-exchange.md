@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Common Format for Event Data Exchange
 description: COMFEDE. Inactive.
 tags:

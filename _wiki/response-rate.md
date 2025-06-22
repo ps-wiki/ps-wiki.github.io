@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Response Rate
 description: The Ramp Rate that a generating unit can achieve under normal conditions.
 tags:

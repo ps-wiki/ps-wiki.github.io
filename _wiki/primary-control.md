@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Primary Control
 description: A.k.a. <u>Frequency Response</u>.
 tags:

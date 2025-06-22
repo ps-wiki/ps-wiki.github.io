@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Thermal Limit Operation Criteria
 description: Techniques to control contingency or system violations.
 tags:

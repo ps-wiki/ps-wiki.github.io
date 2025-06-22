@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Loss-of-Load Events
 description: LOLEV. The number of events in which some system load is not served in a given year.
 tags:

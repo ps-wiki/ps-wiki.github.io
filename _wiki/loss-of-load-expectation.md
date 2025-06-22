@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Loss-of-Load Expectation
 description: LOLE. The number of days per year for which the available generation capacity is insufficient.
 tags:

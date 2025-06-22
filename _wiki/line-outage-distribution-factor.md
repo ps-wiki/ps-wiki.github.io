@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Line Outage Distribution Factor
 description: LODF.
 tags:

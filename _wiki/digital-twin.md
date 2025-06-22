@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Digital Twin
 description: A virtual representation to reflect a physical object accurately.
 tags:

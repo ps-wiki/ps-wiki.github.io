@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Waveform Measurement Unit
 description: WMU, a.k.a. synchro-waveform measurement units (SMUs). Sensor device to record synchro-waveforms.
 tags:

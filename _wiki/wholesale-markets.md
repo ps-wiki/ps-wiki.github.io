@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Wholesale Markets
 description: The purchase and sale from generators to resellers.
 tags:

@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Bulk Power System
 description: BPS. Facilities and control systems for an transmission network.
 tags:

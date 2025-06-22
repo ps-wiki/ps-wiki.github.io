@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Frequency Stability
 description: The ability of a power system to maintain steady frequency following a severe system upset.
 tags:

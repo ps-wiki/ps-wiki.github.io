@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Virtual Synchronous Machine
 description: VSM. Equipment that includes a DC/AC converter controlled to mimic a conventional synchronous machine.
 tags:

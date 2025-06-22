@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Generation Shift Factor
 description: GSF.
 tags:

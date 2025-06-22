@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Security Constraiend Economic Dispatch
 description: SCED.
 tags:

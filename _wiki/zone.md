@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Zone
 description:
 tags:

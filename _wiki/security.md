@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Security
 description: The degree of risk in a power system's ability to survive imminent disturbances.
 tags:

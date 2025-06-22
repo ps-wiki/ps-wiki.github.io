@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Automatic Generation Control
 description: AGC. Automatic regulation of the power output of generators.
 tags:

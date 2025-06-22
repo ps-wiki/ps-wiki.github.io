@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Emergency
 description: Abnormal system condition that requires automatic or immediate manual action.
 tags:

@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Frequency Response Measure
 description: The median of all Frequency Response observations reported annually.
 tags:

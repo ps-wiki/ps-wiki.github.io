@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Facility Rating
 description:
 tags:

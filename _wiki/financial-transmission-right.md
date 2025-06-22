@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Financial Transmission Right
 description: FTR. Compensation contract for transmission charges due to grid congestion.
 tags:

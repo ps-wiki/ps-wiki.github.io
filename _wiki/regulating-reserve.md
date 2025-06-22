@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Regulating Reserve
 description: Reserve for AGC to provide normal regulating margin.
 tags:

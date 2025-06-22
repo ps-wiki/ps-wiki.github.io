@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Security Constrained Unit Commitment
 description: SCUC.
 tags:

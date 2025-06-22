@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Control Area
 description: A.k.a. Balancing Authority Area.
 tags:

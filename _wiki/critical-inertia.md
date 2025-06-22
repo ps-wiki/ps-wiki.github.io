@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Critical Inertia
 description: Minimum level of system inertia necessary to ensure deployment of frequency responsive reserves.
 tags:

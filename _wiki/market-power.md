@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Market Power
 description: The ability to control or affect price.
 tags:

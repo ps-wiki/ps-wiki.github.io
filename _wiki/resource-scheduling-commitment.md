@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Resource Scheduling & Commitment
 description: RSC. Security-constrained resource commitment.
 tags:

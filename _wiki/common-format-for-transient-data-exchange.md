@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Common Format for Transient Data Exchange
 description: COMTRADE. Inactive.
 tags:

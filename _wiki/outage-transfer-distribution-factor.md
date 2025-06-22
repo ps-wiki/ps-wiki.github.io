@@ -1,5 +1,4 @@
 ---
-layout: distill
 title: Outage Transfer Distribution Factor
 description: OTDF.
 tags:
