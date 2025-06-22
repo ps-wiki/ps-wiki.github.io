@@ -68,9 +68,22 @@
 
       <d-article>
         {% if page.last_update %}
-          <p>Last Updated: {{ page.last_update | date: '%B %d, %Y' }}</p>
-          <hr style="margin:0.5em;">
+          <p><strong>Last Updated:</strong>&nbsp;&nbsp;{{ page.last_update | date: '%B %d, %Y' }}</p>
         {% endif %}
+
+        {% if page.tags and page.tags != empty %}
+          <div class="wiki-tags-container d-flex align-items-center">
+            <div class="d-flex flex-wrap align-items-baseline">
+              <p><strong>Tags:</strong>&nbsp;&nbsp;</p>
+              {% for tag in page.tags %}
+                {% assign tag_url = tag | slugify | prepend: '/wiki-tag/#' %}
+                <a href="{{ tag_url | relative_url }}" class="wiki-tag-link text-decoration-none"> #&nbsp;{{ tag }} </a>
+                {%- if forloop.last == false %}&nbsp;&nbsp;{% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+
         {% if page.toc %}
           <d-contents>
             <nav class="l-text figcaption">
