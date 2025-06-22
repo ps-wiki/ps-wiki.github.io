@@ -102,7 +102,7 @@
                   <a href="{{ found_related_page.url | relative_url }}" class="wiki-related-link text-decoration-none">
                     {{ found_related_page.title }}
                   </a>
-                  {%- unless forloop.last %},&nbsp;{% endunless %}
+                  {%- unless forloop.last %}&nbsp;&nbsp;{% endunless %}
                 {% else %}
                   {# Optional: Display a warning if a related page slug is not found #}
                   <span class="text-danger" title="Related page not found: {{ related_slug }}">{{ related_slug }} (Not Found)</span>
