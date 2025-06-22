@@ -4,14 +4,14 @@ description: Procedures to study a contingency.
 tags:
   - contingency
   - system-operator
+related:
+  - contingency-list
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-20
+last_update: 2025-06-22
 ---
-
-Relevant items: [Contingency List](/wiki/contingency-list)
 
 ### Definition by ISO-NE
 

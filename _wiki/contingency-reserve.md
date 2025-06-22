@@ -4,14 +4,14 @@ description: Capacity deployed by the Balancing Authority to meet the Disturbanc
 tags:
   - nerc
   - contingency
+related:
+  - contingency-reserve-service
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-20
+last_update: 2025-06-22
 ---
-
-Relevant items: [Contingency Reserve Service](/wiki/contingency-reserve-service)
 
 ### Definition by NERC
 

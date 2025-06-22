@@ -4,14 +4,15 @@ description: The probability of satisfactory operation of a power system over th
 tags:
   - reliability
   - operation
+related:
+  - stability
+  - security
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
 last_update: 2025-06-22
 ---
-
-Relevant items: [Stability](/wiki/stability) &nbsp; [Security](/wiki/security)
 
 ### Definition in an IEEE Article by a Joint Task Force of IEEE and CIGRE
 

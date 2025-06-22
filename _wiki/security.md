@@ -3,14 +3,18 @@ title: Security
 description: The degree of risk in a power system's ability to survive imminent disturbances.
 tags:
   - security
+  - ieee
+  - ieee-task-force
+  - cigre
+related:
+  - stability
+  - reliability
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-19
+last_update: 2025-06-22
 ---
-
-Relevant items: [Stability](/wiki/stability) &nbsp; [Reliability](/wiki/reliability)
 
 ### Definition in an IEEE Article by a Joint Task Force of IEEE and CIGRE
 
