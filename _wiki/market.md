@@ -28,7 +28,7 @@ Source: <d-cite key="ferc2020glossary"></d-cite>
 Source: <d-cite key="neso2025electricity"></d-cite>
 
 > In an economic sense, markets enable the exchange of goods or services. They involve transactions between buyers and sellers, either directly or through mediating institutions.
-> 
+>
 > Markets can be literal, like a chain grocery store or local farmers’ market, where buyers can purchase commodities from vendors. In wider systems, however, markets can span beyond physical places. The real estate market and electricity market, for example, include wide geographical areas in which sellers compete.
 
 ### Markets in NYISO
