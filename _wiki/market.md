@@ -41,7 +41,7 @@ Source: <d-cite key="nyiso2024clean"></d-cite>
 > 2. The **Energy Market** secures electricity production to meet demand in real-time.
 > 3. The **Ancillary Market** secures flexibility services from suppliers to maintain balance in response to changing conditions on the electrical grid.
 
-### Definition by PJM
+### Markets in PJM
 
 Source: <d-cite key="pjm2024m11"></d-cite> p17, Revision 133
 
