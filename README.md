@@ -21,9 +21,9 @@ Built upon the [al-folio](https://github.com/alshedivat/al-folio) Jekyll theme, 
 
 A custom [wiki layout](./_layouts/wiki.liquid) adapted from the `distill` layout, has been developed to effectively host item-based terminologies. Key features include:
 
-- **Metadata Display**: Last update date, tags, and related item links
-- **Navigation**: Previous/Next item links for easy Browse
-- **Direct Editing**: A link to edit the item directly on GitHub
+- **Metadata Display**: Last update date, tags, and related term links
+- **Navigation**: Previous/Next term links for easy Browse
+- **Direct Editing**: A link to edit the term directly on GitHub
 - **Community Engagement**: Integrated Giscus comments
 
 ## License
