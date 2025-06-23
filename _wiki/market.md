@@ -7,11 +7,12 @@ tags:
   - system-operator
   - nyiso
   - pjm
+  - neso
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-20
+last_update: 2025-06-22
 ---
 
 ### Definition by FERC
@@ -21,6 +22,14 @@ Source: <d-cite key="ferc2020glossary"></d-cite>
 > A venue where participants buy and sell products or services.
 >
 > Usually there is agreement of product description and some standard terms to enable determination of value and price.
+
+### Definition by NESO
+
+Source: <d-cite key="neso2025electricity"></d-cite>
+
+> In an economic sense, markets enable the exchange of goods or services. They involve transactions between buyers and sellers, either directly or through mediating institutions.
+> 
+> Markets can be literal, like a chain grocery store or local farmers’ market, where buyers can purchase commodities from vendors. In wider systems, however, markets can span beyond physical places. The real estate market and electricity market, for example, include wide geographical areas in which sellers compete.
 
 ### Markets in NYISO
 
