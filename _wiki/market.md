@@ -8,6 +8,8 @@ tags:
   - nyiso
   - pjm
   - neso
+related:
+  - wholesale-markets
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
