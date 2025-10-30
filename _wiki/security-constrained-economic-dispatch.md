@@ -10,7 +10,7 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-22
+lastmod: 2025-06-22
 ---
 
 Relevante items: [Security Constrained Unit Commitment](/wiki/security-constrained-unit-commitment) &nbsp; [Locational Marginal Price](/wiki/locational-marginal-price)

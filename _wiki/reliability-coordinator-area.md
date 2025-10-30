@@ -7,7 +7,7 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-05-07
+lastmod: 2025-05-07
 ---
 
 ### Definition by NERC

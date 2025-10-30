@@ -8,7 +8,7 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-06-17
-last_update: 2025-06-20
+lastmod: 2025-06-20
 ---
 
 ### Definition by an IEEE Working Group

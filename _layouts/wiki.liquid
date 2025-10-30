@@ -67,8 +67,8 @@
       {% endif %}
 
       <d-article>
-        {% if page.last_update %}
-          <p><strong>Last Updated:</strong>&nbsp;&nbsp;{{ page.last_update | date: '%B %d, %Y' }}</p>
+        {% if page.lastmod %}
+          <p><strong>Last Updated:</strong>&nbsp;&nbsp;{{ page.lastmod | date: '%B %d, %Y' }}</p>
         {% endif %}
 
         {% if page.tags and page.tags != empty %}

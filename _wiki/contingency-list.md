@@ -14,7 +14,7 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-last_update: 2025-06-22
+lastmod: 2025-06-22
 ---
 
 ### Definition by ISO-NE
