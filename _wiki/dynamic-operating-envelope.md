@@ -22,7 +22,7 @@ for a given period of time and avoid adverse grid impacts.
 The operating envelope is created by allocating the grid’s marginal hosting capacity amongst the flexible resources.
 Allocation of the marginal hosting capacity may utilize a uniform, proportional, or economic based approach.
 
-### Definition in an IEEE Article
+### Definition in an Article
 
 Source: <d-cite key="alam2024dynamicenvelopes"></d-cite>
 

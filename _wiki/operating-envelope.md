@@ -12,7 +12,7 @@ date: 2025-10-30
 lastmod: 2025-10-30
 ---
 
-### Definition in an IEEE Article
+### Definition in an Article
 
 Source: <d-cite key="attarha2022networksecure"></d-cite>
 

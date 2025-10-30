@@ -15,7 +15,7 @@ Source: <d-cite key="ibm2021what"></d-cite>
 
 > A digital twin is a virtual representation of an object or system designed to reflect a physical object accurately. It spans the object's lifecycle, is updated from real-time data and uses simulation, machine learning and reasoning to help make decisions.
 
-### Definition in an IEEE Article
+### Definition in an Article
 
 Source: <d-cite key="fuller2020digital"></d-cite>
 

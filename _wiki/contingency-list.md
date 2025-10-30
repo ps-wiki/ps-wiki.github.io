@@ -29,7 +29,7 @@ Source: <d-cite key="entsoe2019crac"></d-cite> p8, Version 2.3
 
 > A contingency list is a list of network elements to be simulated as disconnected during the contingency analysis study. The contingencies are identified by their mRID (which is an EIC Code or a CGMES Code).
 
-### Definition in an IEEE Article
+### Definition in an Article
 
 Source: <d-cite key="baranowski2012operational"></d-cite>
 

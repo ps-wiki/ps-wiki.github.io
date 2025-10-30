@@ -10,7 +10,7 @@ date: 2025-03-15
 lastmod: 2025-06-19
 ---
 
-### Definition in an IEEE Article
+### Definition in an Article
 
 Source: <d-cite key="xue1988eeca"></d-cite>
 

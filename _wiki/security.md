@@ -16,7 +16,7 @@ date: 2025-03-15
 lastmod: 2025-06-22
 ---
 
-### Definition in an IEEE Article by a Joint Task Force of IEEE and CIGRE
+### Definition in an Article by a Joint Task Force of IEEE and CIGRE
 
 Source: <d-cite key="kundur2004stability"></d-cite>
 

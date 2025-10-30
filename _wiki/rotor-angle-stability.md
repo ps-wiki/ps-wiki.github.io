@@ -12,7 +12,7 @@ date: 2025-03-15
 lastmod: 2025-06-19
 ---
 
-### Definition in an IEEE Article by a Task Force
+### Definition in an Article by a Task Force
 
 Source: <d-cite key="hatziargyriou2021stability"></d-cite>
 
