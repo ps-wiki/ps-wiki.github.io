@@ -10,7 +10,7 @@ horizontal: false
 <div class="wiki-archive-page">
   <p><strong>{{ site.wiki | size }}</strong> terms in total</p>
 
-  <h2>All Wiki Tags</h2>
+  <h2>All Tags</h2>
   <ul class="tag-list list-inline">
     {% assign all_wiki_tags = "" %}
     {% for wiki_term in site.wiki %}
@@ -37,7 +37,7 @@ horizontal: false
 
   <hr>
 
-  <h2>Wiki Terms by Tag</h2>
+  <h2>Collections by Tag</h2>
   {% for tag in all_wiki_tags %}
     {% if tag != "" %}
     <h3 id="{{ tag | slugify }}">{{ tag }}</h3>
