@@ -3,7 +3,7 @@ title: Operating Reserve
 description: Capability above firm system demand required for regulation, load forecasting error, and outages.
 tags:
   - reserve
-  - operating
+  - operation
   - regulation
   - nerc
   - system-operator
