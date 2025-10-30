@@ -7,7 +7,7 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-10-30
-last_update: 2025-10-30
+last_updated: 2025-10-30
 ---
 
 ### Definition by EPRI
