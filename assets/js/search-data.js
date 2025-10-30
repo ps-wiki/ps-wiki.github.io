@@ -787,6 +787,16 @@ ninja.data = [{
           description: "A single contingency that would result in the greatest loss of resource output.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/most-sevre-single-contingency/";
+            },},{id: "wiki-dynamic-operating-envelope",
+          title: 'Dynamic Operating Envelope',
+          description: "DOE. Available capacity to import/export power without violating constraints.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/dynamic-operating-envelope/";
+            },},{id: "wiki-operating-envelope",
+          title: 'Operating Envelope',
+          description: "Allowed power to be transferred to/from the network.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/operating-envelope/";
             },},{
         id: 'social-email',
         title: 'email',
