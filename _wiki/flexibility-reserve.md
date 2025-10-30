@@ -6,6 +6,8 @@ tags:
   - reserve
   - system-operator
   - nyiso
+related:
+  - system-flexibility
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

@@ -5,6 +5,8 @@ tags:
   - flexibility
   - system-operator
   - nerc
+related:
+  - flexibility-reserve
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
