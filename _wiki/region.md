@@ -3,6 +3,12 @@ title: Region
 description: Bulk power system reliability regions in North America.
 tags:
   - geography
+related:
+  - zone
+  - subregions
+  - control-area
+  - balancing-authority-area
+  - reliability-coordinator-area
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

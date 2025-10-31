@@ -6,6 +6,8 @@ related:
   - region
   - zone
   - subregions
+  - balancing-authority-area
+  - reliability-coordinator-area
 tags:
   - geography
   - ferc

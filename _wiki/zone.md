@@ -5,6 +5,12 @@ tags:
   - geography
   - system-operator
   - pjm
+related:
+  - region
+  - subregions
+  - control-area
+  - balancing-authority-area
+  - reliability-coordinator-area
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

@@ -4,6 +4,12 @@ description: Geographic concepts for emission data by EPA.
 tags:
   - geography
   - epa
+related:
+  - zone
+  - region
+  - control-area
+  - balancing-authority-area
+  - reliability-coordinator-area
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
