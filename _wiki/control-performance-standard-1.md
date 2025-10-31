@@ -16,25 +16,24 @@ lastmod: 2025-06-20
 
 Source: <d-cite key="nerc2021balancing"></d-cite> p29
 
-- CPS1 assigns each Control Area a share of the responsibility for control of Interconnection frequency.
-- CPS1 is a **yearly** (i.e., rolling twelve month) standard that measures impact on frequency error, with a 100 percent minimum allowable score.
+> - CPS1 assigns each Control Area a share of the responsibility for control of Interconnection frequency.
+> - CPS1 is a **yearly** (i.e., rolling twelve month) standard that measures impact on frequency error, with a 100 percent minimum allowable score.
 
 ### Explanation by NERC
 
 Source: <d-cite key="nerc2015bal001background"></d-cite> p3
 
-CPS1 is a:
-
-- Statistical measure of ACE variability
-- Measure of ACE in combination with the Interconnection’s frequency error
-- Based on an equation derived from frequency-based statistical theory
+> CPS1 is a:
+> - Statistical measure of ACE variability
+> - Measure of ACE in combination with the Interconnection’s frequency error
+> - Based on an equation derived from frequency-based statistical theory
 
 ### Simple Calculation by NERC
 
 Source: <d-cite key="nerc2021balancing"></d-cite> p24
 
-CPS1 captures these relationships using statistical measures to determine each BA’s contribution to such “noise” relative to what is deemed permissible.
-The CPS1 equation can be simplified as follows:
+> CPS1 captures these relationships using statistical measures to determine each BA’s contribution to such “noise” relative to what is deemed permissible.
+> The CPS1 equation can be simplified as follows:
 
 $$
 \text{CPS1} (\text{in percent}) = 100 * \left[ 2 – (\text{Constant}) * (\text{frequency error}) * (\text{ACE}) \right]
