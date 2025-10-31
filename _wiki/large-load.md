@@ -5,7 +5,6 @@ tags:
   - nerc
 related:
   - reliability
-  - resource-adequacy
   - bulk-power-system
 authors:
   - name: Jinning Wang
