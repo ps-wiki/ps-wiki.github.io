@@ -24,6 +24,7 @@ Source: <d-cite key="nerc2021balancing"></d-cite> p29
 Source: <d-cite key="nerc2015bal001background"></d-cite> p3
 
 > CPS1 is a:
+>
 > - Statistical measure of ACE variability
 > - Measure of ACE in combination with the Interconnection’s frequency error
 > - Based on an equation derived from frequency-based statistical theory

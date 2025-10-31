@@ -18,7 +18,7 @@ lastmod: 2025-10-30
 
 Source: `<d-cite key="epri2022operatingenvelopes"></d-cite>` p3
 
-> Put simply, a dynamic operating envelope establishes the bounds within which a controlled resource (load or generation) can 
+> Put simply, a dynamic operating envelope establishes the bounds within which a controlled resource (load or generation) can
 > operate for a given period of time and avoid adverse grid impacts.
 > The operating envelope is created by allocating the grid’s marginal hosting capacity amongst the flexible resources.
 > Allocation of the marginal hosting capacity may utilize a uniform, proportional, or economic based approach.
