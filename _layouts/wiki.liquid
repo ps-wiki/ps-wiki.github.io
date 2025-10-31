@@ -104,7 +104,6 @@
                   </a>
                   {%- unless forloop.last %}&nbsp;&nbsp;{% endunless %}
                 {% else %}
-                  {# Optional: Display a warning if a related page slug is not found #}
                   <span class="text-danger" title="Related page not found: {{ related_slug }}">{{ related_slug }} (Not Found)</span>
                   {%- unless forloop.last %},&nbsp;{% endunless %}
                 {% endif %}
