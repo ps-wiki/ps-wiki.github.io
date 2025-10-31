@@ -13,7 +13,7 @@ lastmod: 2025-06-19
 
 ### Definition in an Article
 
-Source: `<d-cite key="xue1988eeca"></d-cite>`
+Source: <d-cite key="xue1988eeca"></d-cite>
 
 > Y. Xue, Th. Van Cutsem, and M. Ribbens-Pavella: We are thankful to the discussers for their valuable and constructive comments. In order to answer their questions in detail, it is useful to first clarify some aspects of our method to which we henceforth refer to as the **“Extended Equal Area Criterion”** (EEAC). The EEAC essentially pursues two objectives:
 > i) Devise an ultrafast technique to assess transient stability (in terms of CCT’s or margins as appropriate); this goal was met in this paper.

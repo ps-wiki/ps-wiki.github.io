@@ -17,13 +17,13 @@ lastmod: 2025-06-22
 
 ### Definition in an Article by a Joint Task Force of IEEE and CIGRE
 
-Source: `<d-cite key="kundur2004stability"></d-cite>`
+Source: <d-cite key="kundur2004stability"></d-cite>
 
 > Reliability of a power system refers to the probability of its satisfactory operation over the long run.
 > It denotes the ability to supply adequate electric service on a nearly continuous basis, with few interruptions over an extended time period.
 
 ### Definition by NERC
 
-Source: `<d-cite key="nerc2013terminology"></d-cite>`
+Source: <d-cite key="nerc2013terminology"></d-cite>
 
 > NERC defines the reliability of the interconnected Bulk-Power System in terms of two basic and functional aspects, [adequacy](/wiki/adequacy), and [operating reliability](/wiki/operating-reliability).

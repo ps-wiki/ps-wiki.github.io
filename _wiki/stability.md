@@ -40,25 +40,25 @@ lastmod: 2025-06-22
 
 ### Definition by NERC
 
-Source: `<d-cite key="nerc2024glossary"></d-cite>`
+Source: <d-cite key="nerc2024glossary"></d-cite>
 
 > The ability of an electric system to maintain a state of equilibrium during normal and abnormal conditions or disturbances.
 
 ### Definition in an Article by a Joint Task Force of IEEE and CIGRE
 
-Source: `<d-cite key="kundur2004stability"></d-cite>`
+Source: <d-cite key="kundur2004stability"></d-cite>
 
 > Stability of a power system refers to the continuance of intact operation following a disturbance. It depends on the operating condition and the nature of the physical disturbance.
 
 ### Revised Definition in an Article by a Task Force
 
-Source: `<d-cite key="hatziargyriou2021stability"></d-cite>`
+Source: <d-cite key="hatziargyriou2021stability"></d-cite>
 
 > Stability is the ability of an electric power system, for a given initial operating condition, to regain a state of operating equilibrium after being subjected to a physical disturbance, with most system variables bounded so that practically the entire system remains intact.
 
 ### Elaboration in an Article by a Joint Task Force of IEEE and CIGRE
 
-Source: `<d-cite key="kundur2004stability"></d-cite>`
+Source: <d-cite key="kundur2004stability"></d-cite>
 
 > Relationships between Reliability, Security, and Stability
 >

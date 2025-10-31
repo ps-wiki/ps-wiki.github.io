@@ -15,6 +15,6 @@ lastmod: 2025-06-19
 
 ### Definition in an Article by a Task Force
 
-Source: `<d-cite key="hatziargyriou2021stability"></d-cite>`
+Source: <d-cite key="hatziargyriou2021stability"></d-cite>
 
 > Rotor angle stability is concerned with the ability of the interconnected synchronous machines in a power system to **remain in synchronism** under normal operating conditions and to regain synchronism after being subjected to a small or large disturbance.
