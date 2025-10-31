@@ -797,6 +797,16 @@ ninja.data = [{
           description: "Allowed power to be transferred to/from the network.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/operating-envelope/";
+            },},{id: "wiki-flexibility-options",
+          title: 'Flexibility Options',
+          description: "Voluntary market products that  manage imbalances across electricity markets.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/flexibility-options/";
+            },},{id: "wiki-large-load",
+          title: 'Large Load',
+          description: "Load facility or aggregation at a single site that can pose reliability risks to the Bulk Power System.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/large-load/";
             },},{
         id: 'social-email',
         title: 'email',
