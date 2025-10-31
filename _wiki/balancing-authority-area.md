@@ -6,6 +6,12 @@ tags:
   - transmission
 related:
   - balancing-authority
+  - zone
+  - region
+  - subregions
+  - control-area
+  - balancing-authority-area
+  - reliability-coordinator-area
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
