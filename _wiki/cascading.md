@@ -4,6 +4,8 @@ description: The uncontrolled successive loss of System Elements triggered by an
 tags:
   - event
   - nerc
+related:
+  - cascading-outages
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
