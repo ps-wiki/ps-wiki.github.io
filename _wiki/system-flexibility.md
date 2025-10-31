@@ -7,6 +7,7 @@ tags:
   - nerc
 related:
   - flexibility-reserve
+  - flexibility-options
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

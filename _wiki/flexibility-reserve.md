@@ -8,6 +8,7 @@ tags:
   - nyiso
 related:
   - system-flexibility
+  - flexibility-options
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

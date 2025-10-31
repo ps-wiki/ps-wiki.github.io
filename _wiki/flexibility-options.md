@@ -7,6 +7,8 @@ tags:
   - operation
   - article
 related:
+  - system-flexibility
+  - flexibility-reserve
   - day-ahead-energy-market
   - real-time-energy-market
 authors:
