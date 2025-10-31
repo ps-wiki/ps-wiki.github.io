@@ -7,6 +7,7 @@ tags:
   - isone
   - pjm
   - entsoe
+  - article
 related:
   - contingency-analysis
   - contingency
@@ -19,19 +20,19 @@ lastmod: 2025-06-22
 
 ### Definition by ISO-NE
 
-Source: <d-cite key="isone2024op19j"></d-cite>
+Source: `<d-cite key="isone2024op19j"></d-cite>`
 
 ISO-NE provides a contingency list
 
 ### Definition by ENTSO-E
 
-Source: <d-cite key="entsoe2019crac"></d-cite> p8, Version 2.3
+Source: `<d-cite key="entsoe2019crac"></d-cite>` p8, Version 2.3
 
 > A contingency list is a list of network elements to be simulated as disconnected during the contingency analysis study. The contingencies are identified by their mRID (which is an EIC Code or a CGMES Code).
 
 ### Definition in an Article
 
-Source: <d-cite key="baranowski2012operational"></d-cite>
+Source: `<d-cite key="baranowski2012operational"></d-cite>`
 
 > This paper presents various aspects of the contingency usage at PJM including the applications that utilize contingency lists, modeling of contingencies and monitoring of contingency results.
 >

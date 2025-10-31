@@ -3,6 +3,7 @@ title: Operating Envelope
 description: Allowed power to be transferred to/from the network.
 tags:
   - operation
+  - article
 related:
   - dynamic-operating-envelope
 authors:
@@ -14,7 +15,7 @@ lastmod: 2025-10-30
 
 ### Definition in an Article
 
-Source: <d-cite key="attarha2022networksecure"></d-cite>
+Source: `<d-cite key="attarha2022networksecure"></d-cite>`
 
 An operating envelope is a convex set that defines the real and reactive power allowed to be transferred to/from the network at
 a given customer connection point, or for an aggregate of customers in a region.

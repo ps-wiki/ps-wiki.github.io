@@ -5,6 +5,7 @@ tags:
   - stability
   - ieee
   - ieee-task-force
+  - article
 related:
   - fast-frequency-response
   - primary-control
@@ -21,6 +22,6 @@ lastmod: 2025-06-22
 
 ### Definition in an Article by a Task Force
 
-Source: <d-cite key="kundur2004stability"></d-cite>
+Source: `<d-cite key="kundur2004stability"></d-cite>`
 
 > Frequency Stability refers to the ability of a power system to maintain steady frequency following a severe system upset resulting in a significant imbalance between generation and load.

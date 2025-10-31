@@ -6,6 +6,7 @@ tags:
   - ieee
   - ieee-task-force
   - cigre
+  - article
 related:
   - stability
   - reliability
@@ -18,7 +19,7 @@ lastmod: 2025-06-22
 
 ### Definition in an Article by a Joint Task Force of IEEE and CIGRE
 
-Source: <d-cite key="kundur2004stability"></d-cite>
+Source: `<d-cite key="kundur2004stability"></d-cite>`
 
 > Security of a power system refers to the degree of risk in its ability to survive imminent disturbances (contingencies) without interruption of customer service.
 > It relates to robustness of the system to imminent disturbances and, hence, depends on the system operating condition as well as the contingent probability of disturbances.

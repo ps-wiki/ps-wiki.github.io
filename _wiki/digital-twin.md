@@ -2,6 +2,7 @@
 title: Digital Twin
 description: A virtual representation to reflect a physical object accurately.
 tags:
+  - article
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
@@ -11,13 +12,13 @@ lastmod: 2025-06-19
 
 ### Definition by IBM
 
-Source: <d-cite key="ibm2021what"></d-cite>
+Source: `<d-cite key="ibm2021what"></d-cite>`
 
 > A digital twin is a virtual representation of an object or system designed to reflect a physical object accurately. It spans the object's lifecycle, is updated from real-time data and uses simulation, machine learning and reasoning to help make decisions.
 
 ### Definition in an Article
 
-Source: <d-cite key="fuller2020digital"></d-cite>
+Source: `<d-cite key="fuller2020digital"></d-cite>`
 
 > If the data flows between an existing physical object and a digital object, and they are fully integrated in both directions, this constituted the reference “Digital Twin”. A change made to the physical object automatically leads to a change in the digital object and vice versa. Figure 1. illustrates a Digital Twin.
 
