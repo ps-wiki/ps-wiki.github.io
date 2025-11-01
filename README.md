@@ -26,6 +26,26 @@ A custom [wiki layout](./_layouts/wiki.liquid) adapted from the `distill` layout
 - **Direct Editing**: A link to edit the term directly on GitHub
 - **Community Engagement**: Integrated Giscus comments
 
+## Database
+
+The folder `database` contains the source data and scripts for generating the wiki:
+- Folder `database/json` contains the source JSON files for the wiki.
+- Folder `database/pyscripts` contains Python scripts for processing the data.
+
+### Conda Environment
+
+Use the following command to create the conda environment for local development:
+
+```
+conda env create --file ./pswiki/database/environment.yml
+```
+
+Use the following command to export minimal-history export (only explicit user-installed packages)
+
+```
+conda env export --from-history --file ./pswiki/database/environment.yml
+```
+
 ## License
 
 This project is licensed under the [CC-BY-NC 4.0](./LICENSE).
