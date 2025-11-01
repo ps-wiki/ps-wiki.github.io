@@ -4,11 +4,13 @@ description: Extend EAC to multi-machine systems.
 tags:
   - stability
   - article
+related:
+  - equal-area-criterion
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-lastmod: 2025-06-19
+lastmod: 2025-11-01
 ---
 
 ### Definition in an Article
@@ -21,5 +23,5 @@ Source: <d-cite key="xue1988eeca"></d-cite>
 > To reach these objectives, the EEAC method has called upon one conjecture and one simplifying assumption. It is worth restating them and examining their implications in some detail.
 
 Compared to EAC, EEAC uses an approximate one-machine-infinite-bus (OMIB) equivalent of the multi-machine system.
-OMIB is a.k.a. `<u>`single machine infinite bus`</u>` (SIMB).
+OMIB is a.k.a. <u>single machine infinite bus</u> (SIMB).
 The term "Extended Equal Area Criterion" comes from the authors' response to a discussion on the paper.
