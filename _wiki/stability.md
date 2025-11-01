@@ -15,8 +15,10 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-lastmod: 2025-06-22
+lastmod: 2025-11-01
 ---
+
+### Revised Definition in an Article by a Task Force
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -38,6 +40,10 @@ lastmod: 2025-06-22
 
 <br>
 
+Source: <d-cite key="hatziargyriou2021stability"></d-cite>
+
+> Stability is the ability of an electric power system, for a given initial operating condition, to regain a state of operating equilibrium after being subjected to a physical disturbance, with most system variables bounded so that practically the entire system remains intact.
+
 ### Definition by NERC
 
 Source: <d-cite key="nerc2024glossary"></d-cite>
@@ -49,12 +55,6 @@ Source: <d-cite key="nerc2024glossary"></d-cite>
 Source: <d-cite key="kundur2004stability"></d-cite>
 
 > Stability of a power system refers to the continuance of intact operation following a disturbance. It depends on the operating condition and the nature of the physical disturbance.
-
-### Revised Definition in an Article by a Task Force
-
-Source: <d-cite key="hatziargyriou2021stability"></d-cite>
-
-> Stability is the ability of an electric power system, for a given initial operating condition, to regain a state of operating equilibrium after being subjected to a physical disturbance, with most system variables bounded so that practically the entire system remains intact.
 
 ### Elaboration in an Article by a Joint Task Force of IEEE and CIGRE
 
