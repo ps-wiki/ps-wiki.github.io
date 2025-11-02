@@ -1,6 +1,6 @@
 ---
 title: Zone
-description:
+description: 
 tags:
   - geography
   - system-operator
@@ -20,16 +20,18 @@ lastmod: 2025-06-22
 
 ### Definition by PJM
 
-Source: <d-cite key="pjm2023transmission"></d-cite>
-
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid
         path="/assets/img/pswiki/PJM_zone_map.png"
         zoomable=true %}
-        PJM Transmission Zones Map (from <d-cite key="pjm2023transmission"></d-cite>)
+                PJM Transmission Zones Map (from <d-cite key="pjm2023transmission"></d-cite>)
     </div>
 </div>
+
+<br>
+
+Source: <d-cite key="pjm2023transmission"></d-cite>
 
 ### Definition by MATPOWER
 

@@ -1,0 +1,33 @@
+{
+  "id": "loss-of-load-hour",
+  "title": "Loss-of-Load Hour",
+  "description": "LOLH. The number of hours per year where demand will exceed the generating capacity.",
+  "language": "en",
+  "tags": ["adequacy", "nerc", "metrics", "reliability"],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-20"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-nerc",
+        "title": "Definition by NERC",
+        "type": "definition",
+        "source_keys": ["nerc2013probabilistic"],
+        "page": null,
+        "body_md": "> Loss-of-Load Hour (LOLH) is generally defined as the number of hours per year where system demand will exceed the generating capacity.\n> LOLH is usually expressed in **hours per year**.\n> Any outage caused by inadequate resources regardless of geographic extent or load interrupted (it could be 1 MW for a single customer or the loss of the whole area load) counts as a LOLH.\n> An **LOLH of 0.1** means that **an hour of loss of load is expected for every 10 years**.\n> For a particular year, the resources available and load shapes for that year are used to calculate the metrics for that year.\n"
+      }
+    ]
+  }
+}

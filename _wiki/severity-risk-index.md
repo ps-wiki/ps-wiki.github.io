@@ -4,6 +4,7 @@ description: SRI. A daily metric that indicates performance of the BES.
 tags:
   - metrics
   - nerc
+related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

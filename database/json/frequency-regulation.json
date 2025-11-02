@@ -1,0 +1,33 @@
+{
+  "id": "frequency-regulation",
+  "title": "Frequency Regulation",
+  "description": "The ability of a Balancing Authority to help maintain Scheduled Frequency.",
+  "language": "en",
+  "tags": ["frequency-control", "balancing-authority", "nerc"],
+  "related": ["fast-frequency-response", "primary-control", "secondary-control", "tertiary-control", "automatic-generation-control"],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-22"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-nerc",
+        "title": "Definition by NERC",
+        "type": "definition",
+        "source_keys": ["nerc2024glossary"],
+        "page": null,
+        "body_md": "> The ability of a Balancing Authority to help the Interconnection maintain Scheduled Frequency. This assistance can include both turbine governor response and [Automatic Generation Control](/wiki/automatic-generation-control).\n"
+      }
+    ]
+  }
+}

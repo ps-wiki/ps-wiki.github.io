@@ -1,0 +1,33 @@
+{
+  "id": "operating-reserve-spinning",
+  "title": "Operating Reserve – Spinning",
+  "description": "Generation synchronized to the system and fully available to serve load within the Disturbance Recovery Period.",
+  "language": "en",
+  "tags": ["reserve", "operation"],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-18"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-nerc",
+        "title": "Definition by NERC",
+        "type": "definition",
+        "source_keys": ["nerc2024glossary"],
+        "page": null,
+        "body_md": "> The portion of Operating Reserve consisting of:\n>\n> - Generation synchronized to the system and fully available to serve load within the Disturbance Recovery Period following the contingency event; or\n> - Load fully removable from the system within the Disturbance Recovery Period following the contingency event.\n\nThis definition is very similar to the [Operating Reserve – Supplemental](/wiki/operating-reserve-supplemental/), but the Supplemental Reserve includes the term \"capable of being synchronized\".\n"
+      }
+    ]
+  }
+}

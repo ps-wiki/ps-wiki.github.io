@@ -5,14 +5,13 @@ tags:
   - system-operator
   - market
   - pjm
+related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
 lastmod: 2025-06-22
 ---
-
-Relevante items: [Security Constrained Unit Commitment](/wiki/security-constrained-unit-commitment) &nbsp; [Security Constrained Economic Dispatch](/wiki/security-constrained-economic-dispatch) &nbsp; [Locational Marginal Price](/wiki/locational-marginal-price) &nbsp; [Energy Market](/wiki/energy-market)
 
 ### Definition by PJM
 

@@ -1,6 +1,9 @@
 ---
 title: Control Area
 description: A.k.a. Balancing Authority Area.
+tags:
+  - geography
+  - ferc
 related:
   - balancing-authority-area
   - region
@@ -8,9 +11,6 @@ related:
   - subregions
   - balancing-authority-area
   - reliability-coordinator-area
-tags:
-  - geography
-  - ferc
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

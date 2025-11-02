@@ -1,0 +1,33 @@
+{
+  "id": "rotating-blackouts",
+  "title": "Rotating Blackouts",
+  "description": "When each set of distribution feeders is interrupted for a limited time and then rotated among individual feeders.",
+  "language": "en",
+  "tags": ["reliability"],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-19"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-nerc",
+        "title": "Definition by NERC",
+        "type": "definition",
+        "source_keys": ["nerc2013terminology"],
+        "page": null,
+        "body_md": "> When each set of distribution feeders is interrupted for a limited time, typically 20–30 minutes, and then those feeders are put back in service and another set is interrupted, and so on, rotating the outages among individual feeders.\n"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "waveform-measurement-unit",
+  "title": "Waveform Measurement Unit",
+  "description": "WMU, a.k.a. synchro-waveform measurement units (SMUs). Sensor device to record synchro-waveforms.",
+  "language": "en",
+  "tags": ["measurement", "ieee", "ieee-standard"],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-20"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-in-an-ieee-standard",
+        "title": "Definition in an IEEE Standard",
+        "type": "definition",
+        "source_keys": ["ieee2024std1547"],
+        "page": "p10",
+        "body_md": "> The sensor device to record synchro-waveforms may be referred to as waveform measurement unit (WMU). WMUs record time-synchronized waveform measurements of voltage and current at different locations of a power system. In some literature, synchro-waveforms are also referred to as time-synchronized point-on-wave (POW) measurements or time-synchronized sampled values (TSSVs). WMUs are also in some literature referred to as POW sensors or synchro-waveform measurement units (SMUs).\n"
+      }
+    ]
+  }
+}

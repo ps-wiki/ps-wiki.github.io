@@ -1,0 +1,33 @@
+{
+  "id": "critical-inertia",
+  "title": "Critical Inertia",
+  "description": "Minimum level of system inertia necessary to ensure deployment of frequency responsive reserves.",
+  "language": "en",
+  "tags": ["inertia", "frequency-control", "system-operator", "nerc"],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-20"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-in-a-nerc-webinar-by-ercot",
+        "title": "Definition in a NERC Webinar by ERCOT",
+        "type": "definition",
+        "source_keys": ["nerc2020ffr"],
+        "page": "p31",
+        "body_md": "> The minimum level of system inertia necessary to ensure that frequency responsive reserves (both FFR and PFR) have sufficient time to be deployed and prevent the operation of the first stage of UFLS after the largest credible contingency.\n\n<!-- prettier-ignore-start -->\n> Generally, the largest credible contingency is referred to as the Resource Loss Protection Criteria in BAL-003.\n{: .block-tip }\n<!-- prettier-ignore-end -->\n"
+      }
+    ]
+  }
+}

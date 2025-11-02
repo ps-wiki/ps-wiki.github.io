@@ -1,0 +1,42 @@
+{
+  "id": "participation-factors",
+  "title": "Participation Factors",
+  "description": "One definition is about dispath and another is about small-signal stability.",
+  "language": "en",
+  "tags": ["sensitivity"],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-18"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-nerc",
+        "title": "Definition by NERC",
+        "type": "definition",
+        "source_keys": ["nerc2024glossary"],
+        "page": null,
+        "body_md": "> A set of dispatch rules such that given a specific amount of load to serve, an **approximate generation** dispatch can be determined. To accomplish this, generators are assigned a percentage that they will contribute to serve load.\n"
+      },
+      {
+        "order": 2,
+        "id": "definition-in-a-book-regarding-small-signal-stability",
+        "title": "Definition in a Book Regarding Small-Signal Stability",
+        "type": "definition",
+        "source_keys": ["kundur1994Power"],
+        "page": "p716-717, first edition",
+        "body_md": "> One problem in using right and left eigenvectors individually for identifying the relationship between the states and the modes is that the elements of the eigenvectors are dependent on units and scaling associated with the state variables. As a solution to this problem, a matrix called the **participation matrix** ($P$), which combines the right and left eigenvectors as follows is proposed in reference 2 as a measure of the association between the state variables and the modes.\n\nMore details from the book are excerpted below for reference:\n\n$$ P = [ P_1 \\quad P_2 \\quad \\dots \\quad P_n ] $$ (12.49A)\n\nwith\n\n$$\nP_i =\n\\begin{bmatrix}\np_{1i} \\\\\np_{2i} \\\\\n\\vdots \\\\\np_{ni}\n\\end{bmatrix}\n=\n\\begin{bmatrix}\n\\phi_{1i} \\psi_{i1} \\\\\n\\phi_{2i} \\psi_{i2} \\\\\n\\vdots \\\\\n\\phi_{ni} \\psi_{in}\n\\end{bmatrix}\n$$ (12.49B)\n\nwhere\n\n$\\phi_{ki}$ = the element on the $k$th row and $i$th column of the modal matrix $\\Phi$\n<br>= $k$th entry of the right eigenvector $\\Phi_i$\n\n$\\psi_{ik}$ = the element on the $i$th row and $k$th column of the modal matrix $\\Psi$\n<br>= $k$th entry of the left eigenvector $\\Psi_i$\n\nThe element $p_{ki} = \\phi_{ki} \\psi_{ik}$ is termed the **participation factor**.\nIt is a measure of the relative participation of the $k$th state variable in the $i$th mode, and vice versa.\n\nSince $\\phi_{ki}$ measures the **activity** of $x_k$ in the $i$th mode and $\\psi_{ik}$ weighs the contribution of this activity to the mode, the product $p_{ki}$ measures the **net participation**.\nThe effect of multiplying the elements of the left and right eigenvectors is also to make $p_{ki}$ dimensionless (i.e., independent of the choice of units).\n\nIn view of the eigenvector normalization, the sum of the participation factors associated with any mode $\\sum_{i=1}^{n} p_{ki}$ or with any state variable $\\sum_{k=1}^{n} p_{ki}$ is equal to 1.\n\nFrom Equation 12.48, we see that the participation factor $p_{ki}$ is actually equal to the sensitivity of the eigenvalue $\\lambda_i$ to the diagonal element $a_{kk}$ of the state matrix $A$:\n\n$$ p_{ki} = \\frac{\\partial \\lambda_i}{\\partial a_{kk}} $$ (12.50)\n\nAs we will see in a number of examples in this chapter, the **participation factors are generally indicative of the relative participations** of the respective states in the corresponding modes.\n$$\n"
+      }
+    ]
+  }
+}

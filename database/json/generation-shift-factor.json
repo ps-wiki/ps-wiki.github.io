@@ -1,0 +1,33 @@
+{
+  "id": "generation-shift-factor",
+  "title": "Generation Shift Factor",
+  "description": "GSF.",
+  "language": "en",
+  "tags": ["sensitivity", "nerc"],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-20"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-nerc",
+        "title": "Definition by NERC",
+        "type": "definition",
+        "source_keys": ["nerc2024glossary"],
+        "page": null,
+        "body_md": "> A factor to be applied to a generator’s expected change in output to determine the amount of flow contribution that change in output will impose on an identified transmission facility or [Flowgate](/wiki/flowgate).\n"
+      }
+    ]
+  }
+}

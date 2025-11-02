@@ -1,0 +1,33 @@
+{
+  "id": "voltage-stability",
+  "title": "Voltage Stability",
+  "description": "The ability of a power system to maintain steady voltages close to nominal value.",
+  "language": "en",
+  "tags": ["stability", "ieee", "ieee-task-force", "article"],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-20"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-in-an-article-by-a-task-force",
+        "title": "Definition in an Article by a Task Force",
+        "type": "definition",
+        "source_keys": ["hatziargyriou2021stability"],
+        "page": null,
+        "body_md": "> Voltage stability refers to the ability of a power system to maintain steady voltages close to nominal value at all buses in the system after being subjected to a disturbance.\n"
+      }
+    ]
+  }
+}

@@ -4,6 +4,7 @@ description: A repetitive motion that can be either undamped, positively damped,
 tags:
   - event
   - oscillation
+related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

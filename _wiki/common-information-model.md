@@ -3,6 +3,7 @@ title: Common Information Model
 description: CIM. A set of open standards for representing power system components
 tags:
   - data-format
+related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

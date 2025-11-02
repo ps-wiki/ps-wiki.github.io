@@ -4,6 +4,7 @@ description: A direct contract between a seller and buyer outside of a centraliz
 tags:
   - market
   - ferc
+related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

@@ -1,0 +1,42 @@
+{
+  "id": "emergency",
+  "title": "Emergency",
+  "description": "Abnormal system condition that requires automatic or immediate manual action.",
+  "language": "en",
+  "tags": ["system-operator", "transmission", "nerc", "reliability", "pjm", "emergency"],
+  "related": ["contingency"],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-22"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-nerc",
+        "title": "Definition by NERC",
+        "type": "definition",
+        "source_keys": ["nerc2024glossary"],
+        "page": null,
+        "body_md": "> Any abnormal system **condition** that requires automatic or immediate manual action to prevent or limit the failure of transmission facilities or generation supply that could adversely affect the reliability of the Bulk Electric System.\n"
+      },
+      {
+        "order": 2,
+        "id": "another-definition-by-pjm",
+        "title": "Another Definition by PJM",
+        "type": "definition",
+        "source_keys": ["pjm2025m13"],
+        "page": "p7, Revision 95",
+        "body_md": "> The PJM Manual for Emergency Operations focuses on how PJM and the PJM Members are expected to respond to emergency conditions and is the designated PJM RC, BA and TOP Operating Plan to mitigate operating Emergencies per EOP-011. Emergency conditions include:\n>\n> - Any abnormal condition requiring manual or automatic action to maintain system frequency or to prevent loss of firm load, equipment damage, or tripping of system elements that could adversely affect the reliability of an electric system or the safety of persons or property.\n> - A fuel shortage requiring departure from normal operating procedures in order to minimize the use of such scarce fuel.\n> - A condition that requires implementation of emergency procedures as defined in the manuals.\n"
+      }
+    ]
+  }
+}

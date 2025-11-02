@@ -11,3 +11,9 @@ assets/libs/
 node_modules/
 vendor
 .idea
+
+# Ignore python cache files
+__pycache__/
+
+# local test wiki markdown files
+_wikitest/

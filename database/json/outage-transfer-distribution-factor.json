@@ -1,0 +1,42 @@
+{
+  "id": "outage-transfer-distribution-factor",
+  "title": "Outage Transfer Distribution Factor",
+  "description": "OTDF.",
+  "language": "en",
+  "tags": ["sensitivity"],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-19"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-nerc",
+        "title": "Definition by NERC",
+        "type": "definition",
+        "source_keys": ["nerc2024glossary"],
+        "page": null,
+        "body_md": "> In the post-contingency configuration of a system under study, the electric Power Transfer Distribution Factor (PTDF) with one or more system Facilities removed from service (outaged).\n"
+      },
+      {
+        "order": 2,
+        "id": "definition-by-powerworld",
+        "title": "Definition by PowerWorld",
+        "type": "definition",
+        "source_keys": ["powerworld2025manual"],
+        "page": "Sensitivities > Line Outage Distribution Factors > Line Outage Distribution Factors (LODFs)",
+        "body_md": "> An OTDF is similar to PTDF, except an OTDF provides a linearized approximation of the **post-outage change** in flow on a transmission line in response to a transaction between the Seller and the Buyer. The OTDF value is a function of PTDF values and LODF values.\n\nCalculations can be found in the source reference.\n"
+      }
+    ]
+  }
+}

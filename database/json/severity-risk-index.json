@@ -1,0 +1,42 @@
+{
+  "id": "severity-risk-index",
+  "title": "Severity Risk Index",
+  "description": "SRI. A daily metric that indicates performance of the BES.",
+  "language": "en",
+  "tags": ["metrics", "nerc"],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-20"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-nerc",
+        "title": "Definition by NERC",
+        "type": "definition",
+        "source_keys": ["nerc2020sri"],
+        "page": "p5",
+        "body_md": "> Severity Risk Index (SRI) is a **daily metric** where transmission loss, generation loss, and load loss events aggregate into a single value that indicates performance of the BES. The SRI values range from zero to 1000. Zero is a theoretical condition where no transmission, generation or load loss occurred during the entire day. To the corollary, a value of 1000 would represent a situation where every transmission, generation and load was lost during the entire day. The SRI was designed to be usable for the entirety of NERC as well as applied more granularly, such as at an interconnection level.\n"
+      },
+      {
+        "order": 2,
+        "id": "elaboration-by-nerc",
+        "title": "Elaboration by NERC",
+        "type": "definition",
+        "source_keys": ["nerc2024sor"],
+        "page": "p12",
+        "body_md": "> The SRI provides a quantitative measure that assesses the relative severity of the combined impact of load, generation, and transmission loss on the BPS daily and offers a comprehensive picture of the performance of the BPS, allowing NERC to assess year-on-year reliability trends.\n"
+      }
+    ]
+  }
+}

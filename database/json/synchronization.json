@@ -1,0 +1,33 @@
+{
+  "id": "synchronization",
+  "title": "Synchronization",
+  "description": "Aligning a device's terminal voltage with another voltage source.",
+  "language": "en",
+  "tags": ["ieee", "ieee-standard", "synchronization"],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-20"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-in-an-ieee-standard",
+        "title": "Definition in an IEEE Standard",
+        "type": "definition",
+        "source_keys": ["ieee2025std2988"],
+        "page": "p14",
+        "body_md": "> The mechanism that a voltage source keeps synchronization with another voltage source.\n"
+      }
+    ]
+  }
+}

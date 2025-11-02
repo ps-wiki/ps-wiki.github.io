@@ -1,0 +1,33 @@
+{
+  "id": "frequency-response",
+  "title": "Frequency Response",
+  "description": "The ability of a system to react to a change in system frequency.",
+  "language": "en",
+  "tags": ["frequency-control", "nerc"],
+  "related": ["primary-control"],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-22"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-nerc",
+        "title": "Definition by NERC",
+        "type": "definition",
+        "source_keys": ["nerc2024glossary"],
+        "page": null,
+        "body_md": "> (Equipment) The ability of a system or elements of the system to react or respond to a change in system frequency.\n\n> (System) The sum of the change in demand, plus the change in generation, divided by the change in frequency, expressed in megawatts per 0.1 Hertz **(MW/0.1 Hz)**.\n"
+      }
+    ]
+  }
+}

@@ -13,6 +13,11 @@ This page records major changes in this wiki.
 
 ## 2025
 
+### 11-01
+
+- Add JSON based database, now the term is mainly stored in JSON files
+- Add pyscripts to convert between JSON and MD
+
 ### 10-30
 
 - Add terms

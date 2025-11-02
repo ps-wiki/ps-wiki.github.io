@@ -1,0 +1,33 @@
+{
+  "id": "resilience",
+  "title": "Resilience",
+  "description": "The ability to withstand and reduce the magnitude and/or duration of disruptive events.",
+  "language": "en",
+  "tags": ["resilience", "metrics", "ferc", "nerc"],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-19"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-ferc-in-an-nerc-report",
+        "title": "Definition by FERC in an NERC Report",
+        "type": "definition",
+        "source_keys": ["nerc2018resilience"],
+        "page": "p8",
+        "body_md": "> FERC proposed to define resilience as the ability to withstand and reduce the magnitude and/or duration of disruptive events, which includes the capability to anticipate, absorb, adapt to, and/or rapidly recover from such an event.\n"
+      }
+    ]
+  }
+}

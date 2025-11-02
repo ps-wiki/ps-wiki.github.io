@@ -1,0 +1,33 @@
+{
+  "id": "common-format-for-event-data-exchange",
+  "title": "Common Format for Event Data Exchange",
+  "description": "COMFEDE. Inactive.",
+  "language": "en",
+  "tags": ["data-format", "inactive", "ieee-standard", "standard"],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-06-17",
+    "last_modified": "2025-06-20"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-in-an-ieee-standard",
+        "title": "Definition in an IEEE Standard",
+        "type": "definition",
+        "source_keys": [],
+        "page": "<d-cite key=\"ieee2010comfede\"></d-cite",
+        "body_md": "> This standard defines a common format for the data files needed for the exchange of various types of power network events in order to facilitate event data integration and analysis from multiple data sources and from different vendor devices. The flexibility provided by digital devices in recording network fault event data in the electric utility industry has generated the need for a standard format for the exchange of data. These data are being used with various devices to enhance and automate the analysis, testing, evaluation, and simulation of power systems and related protection schemes during fault and disturbance conditions. Since each source of data may use a different proprietary format, a common data format is necessary to facilitate the exchange of such data between applications. This will facilitate the use of proprietary data in diverse applications and allow users of one proprietary system to use digital data from other systems.\n\n<!-- prettier-ignore-start -->\n\n> Inactive\n> - Draft: PC37.239/D04, Mar 2010 - Dec 31, 2010\n> - Reserved: C37.239-2010 - Nov 11, 2010\n> - Draft: C37.239 - Jan 01, 2010\n{: .block-warning }\n<!-- prettier-ignore-end -->\n\nA sample file is given in the reference.\n"
+      }
+    ]
+  }
+}

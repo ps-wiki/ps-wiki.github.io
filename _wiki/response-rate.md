@@ -4,6 +4,7 @@ description: The Ramp Rate that a generating unit can achieve under normal condi
 tags:
   - generation
   - nerc
+related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
