@@ -61,7 +61,8 @@ def main():
     ap.add_argument("--in-dir", required=True, help="Directory with term JSON files (e.g., database/json).")
     ap.add_argument("--out-dir", required=True, help="Output directory for Markdown files (e.g., _wiki).")
     ap.add_argument("--pattern", default="*.json", help="Glob pattern for JSON files (default: *.json).")
-    ap.add_argument("--fail-fast", action="store_true", help="Stop on first error.")    ap.add_argument(
+    ap.add_argument("--fail-fast", action="store_true", help="Stop on first error.")
+    ap.add_argument(
         "--overwrite",
         action="store_true",
         help="Rewrite Markdown files even if identical (force consistency).",
