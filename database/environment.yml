@@ -4,4 +4,4 @@ channels:
   - defaults
 dependencies:
   - python==3.12
-prefix: /Users/jinningwang/work/miniconda3/envs/pswiki
+  - yaml
