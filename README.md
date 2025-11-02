@@ -33,6 +33,18 @@ The folder `database` contains the source data and scripts for generating the wi
 - Folder `database/json` contains the source JSON files for the wiki.
 - Folder `database/pyscripts` contains Python scripts for processing the data.
 
+Common commands for using the scripts are as follows:
+
+Convert all JSON files to Markdown files in the `_wiki` folder:
+```bash
+python database/pyscripts/json2md_all.py --in-dir database/json --out-dir _wiki --pattern "*.json"
+```
+
+Convert a single JSON file to a Markdown file:
+```bash
+python database/pyscripts/json2md.py --input database/json/stability.json --output _wiki/stability.md
+```
+
 ### Adding a new term
 
 There are two ways to add a new term to the wiki: using a Markdown file or a JSON file.
