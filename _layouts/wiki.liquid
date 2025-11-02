@@ -168,12 +168,8 @@
           <div class="col-12 mb-2">
             {% if site.repo and site.branch %}
               {% assign json_path = page.path | replace: '_wiki/', 'database/json/' | replace: '.md', '.json' %}
-              <a href="https://github.com/{{ site.repo }}/edit/{{ site.branch }}/{{ json_path }}" class="wiki-nav-link">
-                Edit Source JSON
-              </a>
-              &nbsp;|&nbsp;
-              <a href="https://github.com/{{ site.repo }}/edit/{{ site.branch }}/{{ page.path }}" class="wiki-nav-link">
-                Edit Markdown
+              <a href="https://github.com/{{ site.repo }}/edit/{{ site.branch }}/{{ json_path }}" 
+                class="wiki-nav-link"> Edit Source JSON
               </a>
             {% endif %}
           </div>
