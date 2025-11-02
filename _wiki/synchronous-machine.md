@@ -4,6 +4,7 @@ description: SM. An AC electrical machine operated with a constant electromagnet
 tags:
   - ieee
   - ieee-standard
+related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

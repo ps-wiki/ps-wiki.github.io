@@ -8,6 +8,7 @@ tags:
   - nerc
   - system-operator
   - nyiso
+related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
@@ -17,19 +18,21 @@ lastmod: 2025-06-22
 
 ### Definition by NERC
 
-Source: <d-cite key="nerc2024glossary"></d-cite>
-
-> That capability above firm system demand required to provide for regulation, load forecasting error, equipment forced and scheduled outages and local area protection.
-> It consists of spinning and non-spinning reserve.
-
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid
         path="/assets/img/pswiki/operating_reserve.png"
         zoomable=true %}
-        Operating Reserves (from <d-cite key="nerc2021reserve"></d-cite>)
+                Operating Reserves (from <d-cite key="nerc2021reserve"></d-cite>)
     </div>
 </div>
+
+<br>
+
+Source: <d-cite key="nerc2024glossary"></d-cite>
+
+> That capability above firm system demand required to provide for regulation, load forecasting error, equipment forced and scheduled outages and local area protection.
+> It consists of spinning and non-spinning reserve.
 
 ### Definition by NYISO
 

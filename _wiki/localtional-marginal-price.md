@@ -4,6 +4,7 @@ description: LMP. Marginal price for energy at the location delivered or receive
 tags:
   - market
   - system-operator
+related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

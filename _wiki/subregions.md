@@ -19,6 +19,17 @@ lastmod: 2025-06-20
 
 ### Definition by EPA
 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid
+        path="/assets/img/pswiki/egrid_subregions_map.png"
+        zoomable=true %}
+                Map of eGRID Subregions (from <d-cite key="epa2024gridregions"></d-cite>)
+    </div>
+</div>
+
+<br>
+
 Source: <d-cite key="epa2024gridregions"></d-cite>
 
 > For U.S. grid regions’ emission data, EPA provides recent and historic air emissions, including carbon dioxide (CO2), for U.S. portions of grid regions, States, and Puerto Rico.
@@ -28,12 +39,3 @@ Source: <d-cite key="epa2024gridregions"></d-cite>
 > eGRID is valuable to users seeking air emission data about the electric power sector in the United States. eGRID is typically used for greenhouse gas registries and inventories, carbon footprints, consumer information disclosure, emission inventories and standards, power market changes, and avoided emission estimate eGRID data are cited by many emission inventory and registry protocols, various emission calculation tools and applications, hundreds of academic papers, and consultants; it is used for many research applications and efforts.
 
 > eGRID annually updates its emission data and rates for each of its subregions. It also provides aggregated data by state, U.S. total, and by sets of electric grid boundaries, including NERC regions and eGRID subregions.
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid
-        path="/assets/img/pswiki/egrid_subregions_map.png"
-        zoomable=true %}
-        Map of eGRID Subregions (from <d-cite key="epa2024gridregions"></d-cite>)
-    </div>
-</div>

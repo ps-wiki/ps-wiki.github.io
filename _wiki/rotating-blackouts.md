@@ -3,6 +3,7 @@ title: Rotating Blackouts
 description: When each set of distribution feeders is interrupted for a limited time and then rotated among individual feeders.
 tags:
   - reliability
+related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

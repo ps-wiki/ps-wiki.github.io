@@ -1,10 +1,11 @@
 ---
 title: Ambient-Adjusted Ratings
-description:
+description: 
 tags:
   - system-operator
   - grid-enhancing-technology
   - transmission
+related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
