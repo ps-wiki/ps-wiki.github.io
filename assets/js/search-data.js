@@ -807,6 +807,11 @@ ninja.data = [{
           description: "Load facility or aggregation at a single site that can pose reliability risks to the Bulk Power System.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/large-load/";
+            },},{id: "wiki-interconnection-process",
+          title: 'Interconnection Process',
+          description: "A.k.a. Interconnection Study. Process for connecting new generation, transmission, and load facilities to the transmission system.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/interconnection-process/";
             },},{
         id: 'social-email',
         title: 'email',
