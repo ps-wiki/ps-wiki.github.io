@@ -14,3 +14,6 @@ vendor
 
 # Ignore python cache files
 __pycache__/
+
+# local test wiki markdown files
+_wikitest/
