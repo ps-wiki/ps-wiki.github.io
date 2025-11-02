@@ -3,11 +3,7 @@
   "title": "Common Format for Exchange of Solved Load Flow Data",
   "description": "A.k.a. common data format (CDF)",
   "language": "en",
-  "tags": [
-    "data-format",
-    "ieee-standard",
-    "standard"
-  ],
+  "tags": ["data-format", "ieee-standard", "standard"],
   "related": [],
   "version": "1.0.0",
   "breaking": false,
@@ -28,9 +24,7 @@
         "id": "definition-in-an-ieee-standard",
         "title": "Definition in an IEEE Standard",
         "type": "definition",
-        "source_keys": [
-          "ieee1973loadflow"
-        ],
+        "source_keys": ["ieee1973loadflow"],
         "page": null,
         "body_md": "> Also referred as common data format (CDF). This format is presently being used throughout most of the eastern and north central United States and parts of Canada. By publishing through the national organization, it is intended that a common reference be established and maintained for those who wish to use the format. The paper presents a detailed description of the format as well as procedures for making revisions and additions.\n\n<!-- prettier-ignore-start -->\n\n> A clarification on the word \"presently\": this format was used around the 1970s rather than today.\n{: .block-warning }\n\n<!-- prettier-ignore-end -->\n\nA matpower function to convert an IEEE CDF data file into a MATPOWER case struct is available at <https://matpower.org/doc/ref-manual/legacy/functions/cdf2mpc.html#cdf2mpc>\n"
       }

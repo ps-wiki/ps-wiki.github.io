@@ -3,15 +3,8 @@
   "title": "Contingency Reserve Service",
   "description": "A.k.a. Primary Reserve. Can be satisfied in 10 minutes or less.",
   "language": "en",
-  "tags": [
-    "reserve",
-    "system-operator",
-    "contingency",
-    "pjm"
-  ],
-  "related": [
-    "contingency-reserve"
-  ],
+  "tags": ["reserve", "system-operator", "contingency", "pjm"],
+  "related": ["contingency-reserve"],
   "version": "1.0.0",
   "breaking": false,
   "dates": {
@@ -31,9 +24,7 @@
         "id": "definition-by-pjm",
         "title": "Definition by PJM",
         "type": "definition",
-        "source_keys": [
-          "pjm2024m10"
-        ],
+        "source_keys": ["pjm2024m10"],
         "page": "p26, Revision 45",
         "body_md": "> Contingency (Primary) Reserve Service: can be satisfied by online or offline resources that are able to respond in 10 minutes or less.\n> **Note:** NERC utilizes the term Contingency Reserves, which are on/off-line reserves available within 15 minutes.\n> PJM criteria require response within 10 minutes.\n> For the purposes of this manual, **_Contingency and Primary reserves are interchangeable._**\n> Contingency (Primary) Reserve is reserve capability that can be converted fully into energy or load that can be removed from the system within 10 minutes of the request from the PJM dispatcher.\n"
       }

@@ -29,6 +29,7 @@ A custom [wiki layout](./_layouts/wiki.liquid) adapted from the `distill` layout
 ## Database
 
 The folder `database` contains the source data and scripts for generating the wiki:
+
 - Folder `database/json` contains the source JSON files for the wiki.
 - Folder `database/pyscripts` contains Python scripts for processing the data.
 
@@ -39,20 +40,18 @@ Below is an example structure of a JSON file for a term:
 
 ```json
 {
-  "id": "example-term", 
+  "id": "example-term",
   "title": "Example Term",
   "description": "A concise description of this concept.",
   "language": "en",
-  "tags": [ // existing tags: https://ps-wiki.github.io/wiki-tag/#all-tags
+  "tags": [
+    // existing tags: https://ps-wiki.github.io/wiki-tag/#all-tags
     "tag1",
     "tag2"
   ],
-  "related": [
-    "other-term-id-1",
-    "other-term-id-2"
-  ],
-  "version": "1.0.0",  // SemVer version of this term entry
-  "breaking": false,  // set to true if there are breaking changes of this term compared to previous version
+  "related": ["other-term-id-1", "other-term-id-2"],
+  "version": "1.0.0", // SemVer version of this term entry
+  "breaking": false, // set to true if there are breaking changes of this term compared to previous version
   "dates": {
     "created": "2025-11-01",
     "last_modified": "2025-11-01"
@@ -94,9 +93,7 @@ Below is an example structure of a JSON file for a term:
             "path": "/assets/img/pswiki/example-figure.png",
             "caption_md": "Fig. 1. Example figure caption. (from <d-cite key=\"example2024reference\"></d-cite>)",
             "zoomable": true,
-            "source_keys": [
-              "example2024reference"
-            ]
+            "source_keys": ["example2024reference"]
           }
         ]
       }

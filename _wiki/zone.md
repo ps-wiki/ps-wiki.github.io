@@ -1,6 +1,6 @@
 ---
 title: Zone
-description: 
+description:
 tags:
   - geography
   - system-operator

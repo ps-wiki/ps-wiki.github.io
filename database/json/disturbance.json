@@ -3,9 +3,7 @@
   "title": "Disturbance",
   "description": "Any perturbation or sudden loss of generation or interruption of load.",
   "language": "en",
-  "tags": [
-    "event"
-  ],
+  "tags": ["event"],
   "related": [],
   "version": "1.0.0",
   "breaking": false,

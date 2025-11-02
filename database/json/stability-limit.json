@@ -3,10 +3,7 @@
   "title": "Stability Limit",
   "description": "The maximum power flow possible while maintaining system stability.",
   "language": "en",
-  "tags": [
-    "stability",
-    "nerc"
-  ],
+  "tags": ["stability", "nerc"],
   "related": [],
   "version": "1.0.0",
   "breaking": false,
@@ -27,9 +24,7 @@
         "id": "definition-by-nerc",
         "title": "Definition by NERC",
         "type": "definition",
-        "source_keys": [
-          "nerc2024glossary"
-        ],
+        "source_keys": ["nerc2024glossary"],
         "page": null,
         "body_md": "> The maximum power flow possible through some particular point in the system while maintaining stability in the entire system or the part of the system to which the stability limit refers.\n"
       }

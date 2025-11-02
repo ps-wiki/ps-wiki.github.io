@@ -3,9 +3,7 @@
   "title": "Vendors",
   "description": "Power system vendors",
   "language": "en",
-  "tags": [
-    "software"
-  ],
+  "tags": ["software"],
   "related": [],
   "version": "1.0.0",
   "breaking": false,

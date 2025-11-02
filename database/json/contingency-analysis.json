@@ -3,13 +3,8 @@
   "title": "Contingency Analysis",
   "description": "Procedures to study a contingency.",
   "language": "en",
-  "tags": [
-    "contingency",
-    "system-operator"
-  ],
-  "related": [
-    "contingency-list"
-  ],
+  "tags": ["contingency", "system-operator"],
+  "related": ["contingency-list"],
   "version": "1.0.0",
   "breaking": false,
   "dates": {
@@ -29,9 +24,7 @@
         "id": "definition-by-iso-ne",
         "title": "Definition by ISO-NE",
         "type": "note",
-        "source_keys": [
-          "isone2024crop34007"
-        ],
+        "source_keys": ["isone2024crop34007"],
         "page": null,
         "body_md": "The procedures to study a contingency are documented in the source reference.\n"
       }

@@ -3,11 +3,7 @@
   "title": "Synchronized Reserve Service",
   "description": "Can be satisfied by online resources in 10 minutes or less.",
   "language": "en",
-  "tags": [
-    "reserve",
-    "system-operator",
-    "pjm"
-  ],
+  "tags": ["reserve", "system-operator", "pjm"],
   "related": [],
   "version": "1.0.0",
   "breaking": false,
@@ -28,9 +24,7 @@
         "id": "definition-by-pjm",
         "title": "Definition by PJM",
         "type": "definition",
-        "source_keys": [
-          "pjm2024m10"
-        ],
+        "source_keys": ["pjm2024m10"],
         "page": "p26, Revision 45",
         "body_md": "> Synchronized Reserve Service: can only be satisfied by online resources that are able to respond in 10 minutes or less.\n"
       }

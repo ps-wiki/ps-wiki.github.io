@@ -3,12 +3,7 @@
   "title": "Regulating Reserve",
   "description": "Reserve for AGC to provide normal regulating margin.",
   "language": "en",
-  "tags": [
-    "reserve",
-    "regulation",
-    "nerc",
-    "frequency-control"
-  ],
+  "tags": ["reserve", "regulation", "nerc", "frequency-control"],
   "related": [],
   "version": "1.0.0",
   "breaking": false,
@@ -29,9 +24,7 @@
         "id": "definition-by-nerc",
         "title": "Definition by NERC",
         "type": "definition",
-        "source_keys": [
-          "nerc2024glossary"
-        ],
+        "source_keys": ["nerc2024glossary"],
         "page": null,
         "body_md": "> An amount of reserve responsive to [Automatic Generation Control](/wiki/automatic-generation-control), which is sufficient to provide normal regulating margin.\n"
       }

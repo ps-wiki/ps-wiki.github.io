@@ -3,10 +3,7 @@
   "title": "Capacity Markets",
   "description": "A market for trading capacity credits.",
   "language": "en",
-  "tags": [
-    "market",
-    "ferc"
-  ],
+  "tags": ["market", "ferc"],
   "related": [],
   "version": "1.0.0",
   "breaking": false,
@@ -27,9 +24,7 @@
         "id": "definition-by-ferc",
         "title": "Definition by FERC",
         "type": "definition",
-        "source_keys": [
-          "ferc2020glossary"
-        ],
+        "source_keys": ["ferc2020glossary"],
         "page": null,
         "body_md": "> A market for the trading of capacity credits (the ability to produce electricity in the market area during a defined period) usually between parties obligated to deliver electricity to customers and power plant owners.\n"
       }

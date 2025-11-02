@@ -3,9 +3,7 @@
   "title": "Zonal Price",
   "description": "A pricing mechanism for a specific zone within a control area.",
   "language": "en",
-  "tags": [
-    "market"
-  ],
+  "tags": ["market"],
   "related": [],
   "version": "1.0.0",
   "breaking": false,
@@ -26,9 +24,7 @@
         "id": "definition-by-ferc",
         "title": "Definition by FERC",
         "type": "definition",
-        "source_keys": [
-          "ferc2020glossary"
-        ],
+        "source_keys": ["ferc2020glossary"],
         "page": null,
         "body_md": "> A pricing mechanism for a **specific zone within a control area**.\n"
       }

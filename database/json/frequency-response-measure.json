@@ -3,10 +3,7 @@
   "title": "Frequency Response Measure",
   "description": "The median of all Frequency Response observations reported annually.",
   "language": "en",
-  "tags": [
-    "frequency-control",
-    "balancing-authority"
-  ],
+  "tags": ["frequency-control", "balancing-authority"],
   "related": [],
   "version": "1.0.0",
   "breaking": false,
@@ -27,9 +24,7 @@
         "id": "definition-by-nerc",
         "title": "Definition by NERC",
         "type": "definition",
-        "source_keys": [
-          "nerc2024glossary"
-        ],
+        "source_keys": ["nerc2024glossary"],
         "page": null,
         "body_md": "> The median of all the [Frequency Response](/wiki/frequnecy-response) observations reported **annually** by [Balancing Authorities](/wiki/balancing-authority) or Frequency Response Sharing Groups for frequency events specified by the ERO. This will be calculated as **MW/0.1Hz**.\n"
       }

@@ -3,9 +3,7 @@
   "title": "Facility Rating",
   "description": "",
   "language": "en",
-  "tags": [
-    "system-operator"
-  ],
+  "tags": ["system-operator"],
   "related": [],
   "version": "1.0.0",
   "breaking": false,
@@ -26,9 +24,7 @@
         "id": "definition-by-miso",
         "title": "Definition by MISO",
         "type": "definition",
-        "source_keys": [
-          "miso2023ferc881"
-        ],
+        "source_keys": ["miso2023ferc881"],
         "page": "p10",
         "body_md": "> The maximum or minimum voltage, current, frequency, or real or reactive power flow through a facility that does not violate the applicable equipment rating of any equipment comprising the facility\n"
       }

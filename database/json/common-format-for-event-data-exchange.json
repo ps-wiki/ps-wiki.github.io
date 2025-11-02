@@ -3,12 +3,7 @@
   "title": "Common Format for Event Data Exchange",
   "description": "COMFEDE. Inactive.",
   "language": "en",
-  "tags": [
-    "data-format",
-    "inactive",
-    "ieee-standard",
-    "standard"
-  ],
+  "tags": ["data-format", "inactive", "ieee-standard", "standard"],
   "related": [],
   "version": "1.0.0",
   "breaking": false,

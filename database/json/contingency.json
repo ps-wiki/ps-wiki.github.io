@@ -3,16 +3,8 @@
   "title": "Contingency",
   "description": "The unexpected failure or outage of a system component.",
   "language": "en",
-  "tags": [
-    "contingency",
-    "system-operator",
-    "nerc"
-  ],
-  "related": [
-    "emergency",
-    "contingency-analysis",
-    "contingency-list"
-  ],
+  "tags": ["contingency", "system-operator", "nerc"],
+  "related": ["emergency", "contingency-analysis", "contingency-list"],
   "version": "1.0.0",
   "breaking": false,
   "dates": {
@@ -32,9 +24,7 @@
         "id": "definition-by-iso-ne",
         "title": "Definition by ISO-NE",
         "type": "definition",
-        "source_keys": [
-          "isone2024op19"
-        ],
+        "source_keys": ["isone2024op19"],
         "page": "p6, Revision 13.3",
         "body_md": "> A contingency is the unexpected failure or outage of a system component such as a generator, transmission line, circuit breaker, switch or other electrical element.\n"
       },
@@ -43,9 +33,7 @@
         "id": "definition-by-nerc",
         "title": "Definition by NERC",
         "type": "definition",
-        "source_keys": [
-          "nerc2024glossary"
-        ],
+        "source_keys": ["nerc2024glossary"],
         "page": null,
         "body_md": "> The unexpected **failure** or **outage** of a system component, such as a generator, transmission line, circuit breaker, switch or other electrical element.\n"
       }

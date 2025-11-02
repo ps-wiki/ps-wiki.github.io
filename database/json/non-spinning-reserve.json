@@ -3,11 +3,7 @@
   "title": "Non-Spinning Reserve",
   "description": "Unconnected to the system but capable of serving demand within a specified time.",
   "language": "en",
-  "tags": [
-    "reserve",
-    "nerc",
-    "generation"
-  ],
+  "tags": ["reserve", "nerc", "generation"],
   "related": [],
   "version": "1.0.0",
   "breaking": false,
@@ -28,9 +24,7 @@
         "id": "definition-by-nerc",
         "title": "Definition by NERC",
         "type": "definition",
-        "source_keys": [
-          "nerc2024glossary"
-        ],
+        "source_keys": ["nerc2024glossary"],
         "page": null,
         "body_md": "> 1. That generating reserve **not connected** to the system but capable of serving demand **within a specified time**.\n> 2. Interruptible load that can be removed from the system in a specified time.\n"
       }

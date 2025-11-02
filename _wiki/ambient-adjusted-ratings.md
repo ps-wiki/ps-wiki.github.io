@@ -1,6 +1,6 @@
 ---
 title: Ambient-Adjusted Ratings
-description: 
+description:
 tags:
   - system-operator
   - grid-enhancing-technology

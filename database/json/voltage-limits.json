@@ -3,11 +3,7 @@
   "title": "Voltage Limits",
   "description": "Voltage limits to protect against wide area voltage collapse.",
   "language": "en",
-  "tags": [
-    "system-operator",
-    "pjm",
-    "stability"
-  ],
+  "tags": ["system-operator", "pjm", "stability"],
   "related": [],
   "version": "1.0.0",
   "breaking": false,
@@ -28,9 +24,7 @@
         "id": "definition-by-pjm",
         "title": "Definition by PJM",
         "type": "definition",
-        "source_keys": [
-          "pjm2024m3"
-        ],
+        "source_keys": ["pjm2024m3"],
         "page": "p40, Revision 67",
         "body_md": "> High, Low, and Load Dump actual voltage limits, High and Low emergency voltage limits for contingency simulation, and voltage drop limits for wide area transfer simulations to protect against wide area voltage collapse.\n"
       }

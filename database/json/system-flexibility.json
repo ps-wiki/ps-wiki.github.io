@@ -3,15 +3,8 @@
   "title": "System Flexibility",
   "description": "The ability to respond to system changes and uncertainties.",
   "language": "en",
-  "tags": [
-    "flexibility",
-    "system-operator",
-    "nerc"
-  ],
-  "related": [
-    "flexibility-reserve",
-    "flexibility-options"
-  ],
+  "tags": ["flexibility", "system-operator", "nerc"],
+  "related": ["flexibility-reserve", "flexibility-options"],
   "version": "1.0.0",
   "breaking": false,
   "dates": {
@@ -31,9 +24,7 @@
         "id": "definition-by-nerc",
         "title": "Definition by NERC",
         "type": "definition",
-        "source_keys": [
-          "nerc2010flexible"
-        ],
+        "source_keys": ["nerc2010flexible"],
         "page": null,
         "body_md": "> System flexibility is defined as the ability of supply-side and demand-side resources to respond to system changes and uncertainties. Flexibility also includes the ability to store energy for delivery in the future and the operational flexibility to schedule/dispatch resources in the most efficient manner.\n"
       }

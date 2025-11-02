@@ -3,10 +3,7 @@
   "title": "Spot Market",
   "description": "For short-term contractual commitments.",
   "language": "en",
-  "tags": [
-    "market",
-    "ferc"
-  ],
+  "tags": ["market", "ferc"],
   "related": [],
   "version": "1.0.0",
   "breaking": false,
@@ -27,9 +24,7 @@
         "id": "definition-by-ferc",
         "title": "Definition by FERC",
         "type": "definition",
-        "source_keys": [
-          "ferc2020glossary"
-        ],
+        "source_keys": ["ferc2020glossary"],
         "page": null,
         "body_md": "> The natural gas market for contractual commitments that are short term (usually a month or less) and that begin in the near future (often the next day, or within days).\n>\n> In electricity, spot markets are usually organized markets for [day-ahead](/wiki/day-ahead-markets) and real-time electricity run by an independent system operator or regional transmission organization.\n"
       }

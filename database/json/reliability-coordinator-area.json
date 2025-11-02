@@ -3,16 +3,8 @@
   "title": "Reliability Coordinator Area",
   "description": "The collection of generation, transmission, and loads within the boundaries of the Reliability Coordinator.",
   "language": "en",
-  "tags": [
-    "geography"
-  ],
-  "related": [
-    "zone",
-    "region",
-    "subregions",
-    "control-area",
-    "balancing-authority-area"
-  ],
+  "tags": ["geography"],
+  "related": ["zone", "region", "subregions", "control-area", "balancing-authority-area"],
   "version": "1.0.0",
   "breaking": false,
   "dates": {
@@ -32,9 +24,7 @@
         "id": "definition-by-nerc",
         "title": "Definition by NERC",
         "type": "definition",
-        "source_keys": [
-          "nerc2024glossary"
-        ],
+        "source_keys": ["nerc2024glossary"],
         "page": null,
         "body_md": "> The collection of generation transmission, and loads within the boundaries of the Reliability Coordinator.\n> Its boundary coincides with one or more Balancing Authority Areas.\n"
       }

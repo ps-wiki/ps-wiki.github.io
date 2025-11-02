@@ -46,7 +46,6 @@ Source: <d-cite key="hatziargyriou2021stability"></d-cite>
 
 <br>
 
-
 > Stability is the ability of an electric power system, for a given initial operating condition, to regain a state of operating equilibrium after being subjected to a physical disturbance, with most system variables bounded so that practically the entire system remains intact.
 
 ### Definition by NERC
