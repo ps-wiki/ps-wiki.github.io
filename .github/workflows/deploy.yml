@@ -86,12 +86,23 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
-      - name: Install and Build 🔧
+      - name: Install OS packages (ImageMagick)
         run: |
-          sudo apt-get update && sudo apt-get install -y imagemagick
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+      - name: Install Python deps
+        run: |
           pip3 install --upgrade nbconvert
           pip3 install -r database/requirements.txt
-          python database/pyscripts/json2md_all.py --in-dir database/json --out-dir _wiki --pattern "*.json" --fail-fast
+      - name: Convert JSON → Markdown
+        run: |
+          python database/pyscripts/json2md_all.py \
+            --in-dir database/json \
+            --out-dir _wiki \
+            --pattern "*.json" \
+            --fail-fast
+      - name: Build Jekyll site
+        run: |
           export JEKYLL_ENV=production
           bundle exec jekyll build
       - name: Purge unused CSS 🧹
