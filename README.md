@@ -36,11 +36,13 @@ The folder `database` contains the source data and scripts for generating the wi
 Common commands for using the scripts are as follows:
 
 Convert all JSON files to Markdown files in the `_wiki` folder:
+
 ```bash
 python database/pyscripts/json2md_all.py --in-dir database/json --out-dir _wiki --pattern "*.json"
 ```
 
 Convert a single JSON file to a Markdown file:
+
 ```bash
 python database/pyscripts/json2md.py --input database/json/stability.json --output _wiki/stability.md
 ```
@@ -87,10 +89,11 @@ authors:
 ## Definition by Institution 1
 
 Source: <d-cite key="key1"></d-cite> p45
-<!-- ensure the key exists in assets/bibliography/papers.bib -->     
+
+<!-- ensure the key exists in assets/bibliography/papers.bib -->
 
 > The ability of an electric power system to maintain a state of equilibrium during normal and abnormal conditions or disturbances.
-       
+
 ## Elaboration in an Article
 
 Source: <d-cite key="key2"></d-cite>
@@ -160,9 +163,7 @@ Below is an example structure of a JSON file for a term:
         "id": "elaboration-in-article",
         "title": "Elaboration in an Article",
         "type": "definition",
-        "source_keys": [
-            "key2"
-        ],
+        "source_keys": ["key2"],
         "page": null,
         "body_md": "This section elaborates on the concept, its relevance, or provides historical context.\n",
         "figures": [
