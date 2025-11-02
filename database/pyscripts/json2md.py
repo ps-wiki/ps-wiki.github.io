@@ -197,6 +197,11 @@ def main():
     )
     parser.add_argument("-i", "--input", required=True, help="Path to the term JSON file.")
     parser.add_argument("-o", "--output", required=True, help="Output Markdown file path.")
+    parser.add_argument(
+        "--overwrite",
+        action="store_true",
+        help="Rewrite output even if it already exists (force consistency).",
+    )
     args = parser.parse_args()
 
     in_path = Path(args.input)
