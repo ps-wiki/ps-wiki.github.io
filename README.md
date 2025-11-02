@@ -32,6 +32,88 @@ The folder `database` contains the source data and scripts for generating the wi
 - Folder `database/json` contains the source JSON files for the wiki.
 - Folder `database/pyscripts` contains Python scripts for processing the data.
 
+### Example JSON File
+
+Use [stability.json](./database/json/stability.json) as a reference for creating new term entries.
+Below is an example structure of a JSON file for a term:
+
+```json
+{
+  "id": "example-term", 
+  "title": "Example Term",
+  "description": "A concise description of this concept.",
+  "language": "en",
+  "tags": [ // existing tags: https://ps-wiki.github.io/wiki-tag/#all-tags
+    "tag1",
+    "tag2"
+  ],
+  "related": [
+    "other-term-id-1",
+    "other-term-id-2"
+  ],
+  "version": "1.0.0",  // SemVer version of this term entry
+  "breaking": false,  // set to true if there are breaking changes of this term compared to previous version
+  "dates": {
+    "created": "2025-11-01",
+    "last_modified": "2025-11-01"
+  },
+  "authors": [
+    {
+      "name": "Contributor Name",
+      "url": "https://example.com"
+    },
+    {
+      "name": "Another Contributor",
+      "url": "https://example.org"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-institution1",
+        "title": "Definition by Institution 1",
+        "type": "definition", // "definition" for quoted content, "note" for others
+        "source_keys": [
+          "key1" // ensure the key exists in assets/bibliography/papers.bib
+        ],
+        "page": "p45", // or "p45, Revision 2" if applicable to indicate specific revision
+        "body_md": "> The ability of an electric power system to maintain a state of equilibrium during normal and abnormal conditions or disturbances.\n",
+        "figures": []
+      },
+      {
+        "order": 2,
+        "id": "elaboration-in-article",
+        "title": "Elaboration in an Article",
+        "type": "definition",
+        "source_keys": [],
+        "page": null,
+        "body_md": "This section elaborates on the concept, its relevance, or provides historical context.\n",
+        "figures": [
+          {
+            "path": "/assets/img/pswiki/example-figure.png",
+            "caption_md": "Fig. 1. Example figure caption. (from <d-cite key=\"example2024reference\"></d-cite>)",
+            "zoomable": true,
+            "source_keys": [
+              "example2024reference"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+Following conventions should be observed when creating or editing term JSON files:
+
+- File Naming: Each term is stored in a separate JSON file named `<term-id>.json`.
+- The `id` field should match the filename, e.g. stability.json → "id": "stability".
+- The `source_keys` in each section and figure should correspond to entries in the bibliography file located at `assets/bibliography/papers.bib`.
+- The `body_md` field contains the main content in Markdown format. Use standard Markdown syntax for headings, lists, and formatting.
+- Figures should be stored in the `assets/img/pswiki/` directory, and their paths should be correctly referenced in the JSON.
+- In each figure entry: 1) Use a relative path such as "/assets/img/pswiki/example-figure.png". 2) Include a concise caption_md (in Markdown) and the relevant source_keys. 3) Set "zoomable": true for figures intended to support click-to-zoom in Jekyll.
+
 ### Conda Environment
 
 Use the following command to create the conda environment for local development:
