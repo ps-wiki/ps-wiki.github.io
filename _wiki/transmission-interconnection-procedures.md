@@ -5,12 +5,14 @@ tags:
   - transmission
   - system-operator
   - nyiso
-related: []
+related:
+  - interconnection
+  - interconnection-process
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-lastmod: 2025-06-22
+lastmod: 2025-11-01
 ---
 
 ### Definition by NYISO

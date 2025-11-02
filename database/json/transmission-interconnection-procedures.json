@@ -4,12 +4,12 @@
   "description": "TIP.",
   "language": "en",
   "tags": ["transmission", "system-operator", "nyiso"],
-  "related": [],
+  "related": ["interconnection", "interconnection-process"],
   "version": "1.0.0",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-06-22"
+    "last_modified": "2025-11-01"
   },
   "authors": [
     {

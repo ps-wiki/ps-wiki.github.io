@@ -7,7 +7,7 @@
     "nyiso",
     "process"
   ],
-  "related": ["interconnection"],
+  "related": ["interconnection", "transmission-interconnection-process"],
   "version": "1.0.0",
   "breaking": false,
   "dates": {
