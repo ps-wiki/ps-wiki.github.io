@@ -7,6 +7,8 @@ Convert a single term JSON (lean schema) into a Jekyll Markdown file.
 Rules:
 - Front matter: title, description, tags, related, authors{name,url}, date (created), lastmod.
 - Sections sorted by `order` ascending (missing order go last).
+- tags/related/authors may be missing or empty -> emit [].
+- dates.created / dates.last_modified may be missing or empty -> derive 
 - Each section:
   - Figures (if any) appear BEFORE text, each figure block followed by a literal <br>.
   - Then a "Source: <d-cite key="..."></d-cite>" line; append page if provided.
@@ -14,7 +16,7 @@ Rules:
 - No new prose is introduced; body_md and caption_md are passed through as-is.
 
 Usage:
-  python database/pyscripts/json2md.py -i database/json/stability.json -o _wiki/stability2.md
+  python database/pyscripts/json2md.py -i database/json/stability.json -o _wiki/stability.md
 """
 
 import argparse
@@ -22,6 +24,7 @@ import json
 import sys
 from pathlib import Path
 from typing import List, Dict, Any
+from datetime import datetime
 
 
 # ---------- YAML helpers (very small, purpose-built) ----------
@@ -55,6 +58,32 @@ def yaml_authors_block(authors: List[Dict[str, Any]], indent: int = 0) -> str:
             lines.append(f"{ind}    url: {url}")
     return "\n".join(lines) + "\n"
 
+
+# ---------- file timestamp helpers ----------
+
+def iso_date_from_ts(ts: float) -> str:
+    """Return YYYY-MM-DD string from a POSIX timestamp (local time)."""
+    return datetime.fromtimestamp(ts).date().isoformat()
+
+
+def derive_file_dates(json_path: Path) -> Dict[str, str]:
+    """
+    Derive dates from the JSON file:
+      - created: st_birthtime if available (macOS), else st_ctime
+      - last_modified: st_mtime
+    """
+    st = json_path.stat()
+    created_ts = getattr(st, "st_birthtime", None)
+    if created_ts is None:  # Linux typically lacks birthtime
+        created_ts = st.st_ctime
+    lastmod_ts = st.st_mtime
+    return {
+        "created": iso_date_from_ts(created_ts),
+        "last_modified": iso_date_from_ts(lastmod_ts),
+    }
+
+
+# ---------- front matter ----------
 
 def render_front_matter(term: Dict[str, Any]) -> str:
     """Build the Jekyll front matter from the JSON term."""
@@ -182,6 +211,22 @@ def main():
     except Exception as e:
         print(f"ERROR: Failed to read/parse JSON: {e}", file=sys.stderr)
         sys.exit(1)
+
+    # ---- normalize optional fields ----
+    # tags/related/authors may be missing or None -> default to []
+    if not term.get("tags"):
+        term["tags"] = []
+    if not term.get("related"):
+        term["related"] = []
+    if not term.get("authors"):
+        term["authors"] = []
+
+    # dates may be missing/empty -> derive from file timestamps
+    file_dates = derive_file_dates(in_path)
+    dates = term.get("dates", {}) or {}
+    created = dates.get("created") or file_dates["created"]
+    lastmod = dates.get("last_modified") or file_dates["last_modified"]
+    term["dates"] = {"created": created, "last_modified": lastmod}
 
     md = convert_term_to_md(term)
 
