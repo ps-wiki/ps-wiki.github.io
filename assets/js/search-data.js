@@ -41,7 +41,7 @@ ninja.data = [{
           title: '30-Minute Reserve Service',
           description: "Can be satisfied by online or offline resources that are able to respond in 30 minutes or less.",
           section: "Wiki",handler: () => {
-              window.location.href = "/wiki/30-minutes-reserve-service/";
+              window.location.href = "/wiki/30-minute-reserve-service/";
             },},{id: "wiki-adequacy",
           title: 'Adequacy',
           description: "The ability to supply the demand and energy requirements of the end-use customers.",
@@ -56,7 +56,7 @@ ninja.data = [{
           title: 'Ancillary Services',
           description: "Services necessary to support the transmission of electric power.",
           section: "Wiki",handler: () => {
-              window.location.href = "/wiki/ancillary-service/";
+              window.location.href = "/wiki/ancillary-services/";
             },},{id: "wiki-area-control-error",
           title: 'Area Control Error',
           description: "ACE. The instantaneous difference between net actual and scheduled interchange.",
@@ -72,8 +72,8 @@ ninja.data = [{
           description: "The collection of generation, transmission, and loads within the metered boundaries of the Balancing Authority.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/balancing-authority-area/";
-            },},{id: "wiki-balancing-authoritiy",
-          title: 'Balancing Authoritiy',
+            },},{id: "wiki-balancing-authority",
+          title: 'Balancing Authority',
           description: "The responsible entity within a Balancing Authority Area.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/balancing-authority/";
@@ -307,21 +307,21 @@ ninja.data = [{
           description: "The median of all Frequency Response observations reported annually.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/frequency-response-measure/";
+            },},{id: "wiki-frequency-response",
+          title: 'Frequency Response',
+          description: "The ability of a system to react to a change in system frequency.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/frequency-response/";
             },},{id: "wiki-frequency-stability",
           title: 'Frequency Stability',
           description: "The ability of a power system to maintain steady frequency following a severe system upset.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/frequency-stability/";
-            },},{id: "wiki-frequency-response",
-          title: 'Frequency Response',
-          description: "The ability of a system to react to a change in system frequency.",
-          section: "Wiki",handler: () => {
-              window.location.href = "/wiki/frequnecy-response/";
             },},{id: "wiki-futures-market",
           title: 'Futures Market',
           description: "For contracts for future delivery of a commodity or security.",
           section: "Wiki",handler: () => {
-              window.location.href = "/wiki/future-markets/";
+              window.location.href = "/wiki/futures-market/";
             },},{id: "wiki-generation-redispatch",
           title: 'Generation Redispatch',
           description: "Generators are adjusted away (off-cost) from their normal assignments (on-cost).",
@@ -366,7 +366,7 @@ ninja.data = [{
           title: 'Localtional Marginal Price',
           description: "LMP. Marginal price for energy at the location delivered or received.",
           section: "Wiki",handler: () => {
-              window.location.href = "/wiki/locational-marginal-price/";
+              window.location.href = "/wiki/localtional-marginal-price/";
             },},{id: "wiki-loss-of-load-events",
           title: 'Loss-of-Load Events',
           description: "LOLEV. The number of events in which some system load is not served in a given year.",
@@ -561,7 +561,7 @@ ninja.data = [{
           title: 'Rotating Blackouts',
           description: "When each set of distribution feeders is interrupted for a limited time and then rotated among individual feeders.",
           section: "Wiki",handler: () => {
-              window.location.href = "/wiki/rotating-blackout/";
+              window.location.href = "/wiki/rotating-blackouts/";
             },},{id: "wiki-rotor-angle-stability",
           title: 'Rotor Angle Stability',
           description: "The ability to remain in synchronism under normal and disturbed conditions.",
@@ -581,7 +581,7 @@ ninja.data = [{
           title: 'Security Constraiend Economic Dispatch',
           description: "SCED.",
           section: "Wiki",handler: () => {
-              window.location.href = "/wiki/security-constrained-economic-dispatch/";
+              window.location.href = "/wiki/security-constraiend-economic-dispatch/";
             },},{id: "wiki-security-constrained-unit-commitment",
           title: 'Security Constrained Unit Commitment',
           description: "SCUC.",
@@ -786,7 +786,7 @@ ninja.data = [{
           title: 'Most Severe Single Contingency',
           description: "A single contingency that would result in the greatest loss of resource output.",
           section: "Wiki",handler: () => {
-              window.location.href = "/wiki/most-sevre-single-contingency/";
+              window.location.href = "/wiki/most-severe-single-contingency/";
             },},{id: "wiki-dynamic-operating-envelope",
           title: 'Dynamic Operating Envelope',
           description: "DOE. Available capacity to import/export power without violating constraints.",
