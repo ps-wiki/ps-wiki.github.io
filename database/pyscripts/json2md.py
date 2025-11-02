@@ -210,6 +210,10 @@ def main():
     if not in_path.exists():
         print(f"ERROR: JSON file not found: {in_path}", file=sys.stderr)
         sys.exit(1)
+    # --- Skip if exists and not overwrite ---
+    if out_path.exists() and not args.overwrite:
+        print(f"Skipping {out_path} (exists, use --overwrite to force).")
+        return
 
     try:
         term = json.loads(in_path.read_text(encoding="utf-8"))
