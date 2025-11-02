@@ -1,0 +1,45 @@
+{
+  "id": "balancing-authority-area",
+  "title": "Balancing Authority Area",
+  "description": "The collection of generation, transmission, and loads within the metered boundaries of the Balancing Authority.",
+  "language": "en",
+  "tags": [
+    "geography",
+    "transmission"
+  ],
+  "related": [
+    "balancing-authority",
+    "zone",
+    "region",
+    "subregions",
+    "control-area",
+    "reliability-coordinator-area"
+  ],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-11-01"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-nerc",
+        "title": "Definition by NERC",
+        "type": "definition",
+        "source_keys": [
+          "nerc2024glossary"
+        ],
+        "page": null,
+        "body_md": "> The collection of generation transmission, and loads within the metered boundaries of the Balancing Authority. The Balancing Authority maintains load-resource balance within this area.\n"
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "id": "contingency-list",
+  "title": "Contingency List",
+  "description": "A list of network elements to be simulated as disconnected.",
+  "language": "en",
+  "tags": [
+    "contingency",
+    "system-operator",
+    "isone",
+    "pjm",
+    "entsoe",
+    "article"
+  ],
+  "related": [
+    "contingency-analysis",
+    "contingency"
+  ],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-22"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-iso-ne",
+        "title": "Definition by ISO-NE",
+        "type": "note",
+        "source_keys": [
+          "isone2024op19j"
+        ],
+        "page": null,
+        "body_md": "ISO-NE provides a contingency list\n"
+      },
+      {
+        "order": 2,
+        "id": "definition-by-entso-e",
+        "title": "Definition by ENTSO-E",
+        "type": "definition",
+        "source_keys": [
+          "entsoe2019crac"
+        ],
+        "page": "p8, Version 2.3",
+        "body_md": "> A contingency list is a list of network elements to be simulated as disconnected during the contingency analysis study. The contingencies are identified by their mRID (which is an EIC Code or a CGMES Code).\n"
+      },
+      {
+        "order": 3,
+        "id": "definition-in-an-article",
+        "title": "Definition in an Article",
+        "type": "definition",
+        "source_keys": [
+          "baranowski2012operational"
+        ],
+        "page": null,
+        "body_md": "> This paper presents various aspects of the contingency usage at PJM including the applications that utilize contingency lists, modeling of contingencies and monitoring of contingency results.\n>\n> A separate contingency list is utilized for each application.\n> Many of the contingencies are common however each application may use a subset of contingencies and may also have contingencies that are of special interest.\n"
+      }
+    ]
+  }
+}

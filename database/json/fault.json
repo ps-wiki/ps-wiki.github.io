@@ -1,0 +1,38 @@
+{
+  "id": "fault",
+  "title": "Fault",
+  "description": "An event such as a short circuit, a broken wire, or an intermittent connection.",
+  "language": "en",
+  "tags": [
+    "event",
+    "nerc"
+  ],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-20"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-nerc",
+        "title": "Definition by NERC",
+        "type": "definition",
+        "source_keys": [
+          "nerc2024glossary"
+        ],
+        "page": null,
+        "body_md": "> An event occurring on an electric system such as a short circuit, a broken wire, or an intermittent connection.\n"
+      }
+    ]
+  }
+}

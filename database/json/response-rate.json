@@ -1,0 +1,38 @@
+{
+  "id": "response-rate",
+  "title": "Response Rate",
+  "description": "The Ramp Rate that a generating unit can achieve under normal conditions.",
+  "language": "en",
+  "tags": [
+    "generation",
+    "nerc"
+  ],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-19"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-nerc",
+        "title": "Definition by NERC",
+        "type": "definition",
+        "source_keys": [
+          "nerc2024glossary"
+        ],
+        "page": null,
+        "body_md": "> The [Ramp Rate](/wiki/ramp) that a generating unit can achieve under normal operating conditions expressed in megawatts per minute (MW/Min).\n"
+      }
+    ]
+  }
+}

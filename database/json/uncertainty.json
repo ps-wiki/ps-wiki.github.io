@@ -1,0 +1,35 @@
+{
+  "id": "uncertainty",
+  "title": "Uncertainty",
+  "description": "Two types of uncertainty.",
+  "language": "en",
+  "tags": [],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-20"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "elaboration-in-an-article",
+        "title": "Elaboration in an Article",
+        "type": "definition",
+        "source_keys": [
+          "hullermeier2021aleatoric"
+        ],
+        "page": null,
+        "body_md": "> Aleatoric (aka statistical) uncertainty refers to the notion of randomness, that is, the variability in the outcome of an experiment which is due to **inherently random effects**.\n\n> Epistemic (aka systematic) refers to uncertainty caused by a **lack of knowledge** (about the best model).\n> In other words, it refers to the **ignorance** of the agent or decision maker, and hence to the epistemic state of the agent instead of any underlying random phenomenon.\n\n> As opposed to uncertainty caused by randomness, uncertainty caused by ignorance can in principle be reduced on the basis of additional information. In other words, epistemic uncertainty refers to the **reducible** part of the (total) uncertainty, whereas aleatoric uncertainty refers to the **irreducible** part.\n"
+      }
+    ]
+  }
+}

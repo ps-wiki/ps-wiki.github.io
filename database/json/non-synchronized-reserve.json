@@ -1,0 +1,39 @@
+{
+  "id": "non-synchronized-reserve",
+  "title": "Non-Synchronized Reserve",
+  "description": "Reserve capability within 10 minutes not electrically synchronized to the system",
+  "language": "en",
+  "tags": [
+    "reserve",
+    "system-operator",
+    "pjm"
+  ],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-22"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-pjm",
+        "title": "Definition by PJM",
+        "type": "definition",
+        "source_keys": [
+          "pjm2024m10"
+        ],
+        "page": "p27, Revision 45",
+        "body_md": "> Non-Synchronized Reserve is reserve capability of a resource that can be fully converted into energy within 10 minutes of the request from the PJM dispatcher and is provided by equipment not electrically synchronized to the system.\n> Included as Non-Synchronized Reserve is the maximum output energy level of a resource which can be attained within 10 minutes from the\n> PJM dispatcher’s request to initiate the starting sequence.\n> Resources committed to the Non-Synchronized Reserve product can meet the Contingency (Primary) Reserve Service and the 30-Minute Reserve Service simultaneously.\n"
+      }
+    ]
+  }
+}

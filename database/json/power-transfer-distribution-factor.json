@@ -1,0 +1,48 @@
+{
+  "id": "power-transfer-distribution-factor",
+  "title": "Power Transfer Distribution Factor",
+  "description": "PTDF.",
+  "language": "en",
+  "tags": [
+    "sensitivity"
+  ],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-20"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-nerc",
+        "title": "Definition by NERC",
+        "type": "definition",
+        "source_keys": [
+          "nerc2024glossary"
+        ],
+        "page": null,
+        "body_md": "> In the pre-contingency configuration of a system under study, a measure of the responsiveness or change in electrical loadings on transmission system Facilities due to a change in electric power transfer from one area to another, expressed in percent (up to 100%) of the change in power transfer.\n"
+      },
+      {
+        "order": 2,
+        "id": "definition-by-powerworld",
+        "title": "Definition by PowerWorld",
+        "type": "definition",
+        "source_keys": [
+          "powerworld2025manual"
+        ],
+        "page": "Sensitivities -> Power Transfer Distribution Factors -> Power Transfer Distribution Factors",
+        "body_md": "> Power Transfer Distribution Factors indicate the **incremental change** in real power that occurs on transmission lines due to real power transfers between two regions. These regions can be defined by areas, zones, super areas, single buses, injection groups or the system slack. These values provide a **linearized approximation** of how the flow on the transmission lines and interfaces change in response to a transaction between the Seller (source) and the Buyer (sink). These values can then be visualized on the onelines using animated flows.\n"
+      }
+    ]
+  }
+}

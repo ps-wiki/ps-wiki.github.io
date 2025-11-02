@@ -1,0 +1,52 @@
+{
+  "id": "wholesale-markets",
+  "title": "Wholesale Markets",
+  "description": "The purchase and sale from generators to resellers.",
+  "language": "en",
+  "tags": [
+    "market",
+    "ferc",
+    "neso"
+  ],
+  "related": [
+    "market"
+  ],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-22"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-ferc",
+        "title": "Definition by FERC",
+        "type": "definition",
+        "source_keys": [
+          "ferc2020glossary"
+        ],
+        "page": null,
+        "body_md": "> The purchase and sale of electricity from **generators to resellers** (who sell to retail customers) along with the ancillary services needed to maintain reliability and power quality at the transmission level.\n"
+      },
+      {
+        "order": 2,
+        "id": "definition-by-neso",
+        "title": "Definition by NESO",
+        "type": "definition",
+        "source_keys": [
+          "neso2025electricity"
+        ],
+        "page": null,
+        "body_md": "> The wholesale electricity market is where electricity is bought and sold before being delivered to consumers. Its two main participants are generators and suppliers.\n>\n> In GB, suppliers purchase electricity from generators at a wholesale price, which reflects the cost of electricity generation to meet consumer demand at any given time.\n>\n> In the wholesale market, there are three main models that determine how wholesale electricity is priced. In Great Britain, we currently use a system called national pricing. This means that at any given moment, there’s one price for wholesale electricity across the country.\n>\n> The wholesale price of electricity depends on a range of factors, including the level of demand, carbon taxes, cost of fuel and availability of resources like wind and sun. This price therefore fluctuates throughout the day, which can affect which generators are most competitive in the wholesale market.\n"
+      }
+    ]
+  }
+}

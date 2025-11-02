@@ -1,0 +1,51 @@
+{
+  "id": "security-constraiend-economic-dispatch",
+  "title": "Security Constraiend Economic Dispatch",
+  "description": "SCED.",
+  "language": "en",
+  "tags": [
+    "dispatch",
+    "operation",
+    "system-operator",
+    "pjm"
+  ],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-22"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-pjm",
+        "title": "Definition by PJM",
+        "type": "definition",
+        "source_keys": [
+          "pjm2024m3"
+        ],
+        "page": "p17, Revision 67",
+        "body_md": "> PJM's Real-Time Reliability Model is a computer representation of the power system facilities in the PJM RTO and other Balancing Authorities that may impact the reliable operation of the PJM system.\n> The model resides and is maintained by the PJM staff on the PJM Energy Management System (EMS).\n> The PJM EMS Network Application programs utilize the model to continuously calculate the real-time state and determine the security of the PJM system.\n> The <u>Security Constrained Economic Dispatch</u> (SCED) dispatches every generator in the model.\n> The model is also used to calculate real-time Locational Marginal Prices.\n> The model is created and maintained from input data received by PJM from various sources including Transmission Owners, Generation Owners, Load Serving Entities, and other Balancing Authorities.\n> The model is only as accurate as the input data used to derive it; therefore, timely and accurate data updates are critical.\n"
+      },
+      {
+        "order": 2,
+        "id": "elaboration-by-pjm",
+        "title": "Elaboration by PJM",
+        "type": "definition",
+        "source_keys": [
+          "pjm2022cooptimization"
+        ],
+        "page": "p1",
+        "body_md": "> SCED is a mathematical model that generates the most economic resource dispatch during Real-time operations while considering key system operating constraints, such as power balance, reserve requirements\n\n- transmission congestion, as well as resource parameters, such as ramp rates, minimum and maximum output capability. The overall objective function of the SCED algorithm is to minimize the total system product cost over the study interval(s).\n  > The Objective Function include:\n  >\n  > 1. Resource Energy Costs\n  > 2. Price Responsive Demand Value\n  > 3. Import Transaction Costs\n  > 4. Export Transaction Value\n  > 5. Regulation Reserve Costs\n  > 6. Synchronized Reserve Costs\n  > 7. Non-Synchronized Reserve Costs\n  > 8. Secondary Reserve Costs\n  >\n  > The Constraints include:\n  >\n  > 1. Power Balance Constraint\n  > 2. Transmission Constraints\n  > 3. Resource Capacity Constraints\n  > 4. Resource’s Ramp Rate Constraints\n  > 5. Reserve Requirement Constraints\n"
+      }
+    ]
+  }
+}

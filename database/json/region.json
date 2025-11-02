@@ -1,0 +1,53 @@
+{
+  "id": "region",
+  "title": "Region",
+  "description": "Bulk power system reliability regions in North America.",
+  "language": "en",
+  "tags": [
+    "geography"
+  ],
+  "related": [
+    "zone",
+    "subregions",
+    "control-area",
+    "balancing-authority-area",
+    "reliability-coordinator-area"
+  ],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-17"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-nerc",
+        "title": "Definition by NERC",
+        "type": "definition",
+        "source_keys": [
+          "nerc2024glossary"
+        ],
+        "page": null,
+        "body_md": "> NERC divides North America into several regions for the purpose of reliability and coordination. Each region is responsible for ensuring the reliability of the bulk power system within its boundaries. The six regions are:\n>\n> - MRO: Midwest Reliability Organization\n> - NPCC: Northeast Power Coordinating Council\n> - RF: ReliabilityFirst\n> - SERC: SERC Reliability Corporation\n> - Texas RE: Texas Reliability Entity\n> - WECC: Western Electricity Coordinating Council\n",
+        "figures": [
+          {
+            "path": "/assets/img/pswiki/six_region.png",
+            "caption_md": "        Regional Maps (from <d-cite key=\"nerc2024tpl\"></d-cite>)",
+            "zoomable": true,
+            "source_keys": [
+              "nerc2024tpl"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

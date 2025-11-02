@@ -1,0 +1,54 @@
+{
+  "id": "control-area",
+  "title": "Control Area",
+  "description": "A.k.a. Balancing Authority Area.",
+  "language": "en",
+  "tags": [
+    "geography",
+    "ferc"
+  ],
+  "related": [
+    "balancing-authority-area",
+    "region",
+    "zone",
+    "subregions",
+    "balancing-authority-area",
+    "reliability-coordinator-area"
+  ],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-22"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-ferc",
+        "title": "Definition by FERC",
+        "type": "definition",
+        "source_keys": [
+          "ferc2020glossary"
+        ],
+        "page": null,
+        "body_md": "> An electric power system or combination of electric power systems to which a common automatic control scheme is applied in order to:\n>\n> - Match, at all times, the power output of the generators within the electric power system(s) and capacity and energy purchased from entities outside the electric power system(s), with the load in the electric power system(s).\n> - Maintain, within the limits of Good Utility Practice, scheduled interchange with other Control Areas.\n> - Maintain the frequency of the electric power system(s) within reasonable limits in accordance with Good Utility Practice.\n> - Provide sufficient generating capacity to maintain operating reserves in accordance with Good Utility Practice.\n"
+      },
+      {
+        "order": 2,
+        "id": "definition-in-a-dataset-on-hifld",
+        "title": "Definition in a Dataset on HIFLD",
+        "type": "definition",
+        "source_keys": [],
+        "page": null,
+        "body_md": "> Control Areas, also known as Balancing Authority Areas, are controlled by Balancing Authorities, who are responsible for monitoring and balancing the generation, load, and transmission of electric power within their region, often comprised of the retail service territories of numerous electric power utilities.\n\nURL: <https://hifld-geoplatform.hub.arcgis.com/datasets/geoplatform::control-areas/about>\n\nMap of [Control Areas](https://hifld-geoplatform.hub.arcgis.com/maps/db7622e5ebdd40428fcafbd1615d621a)\n"
+      }
+    ]
+  }
+}

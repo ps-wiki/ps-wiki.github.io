@@ -1,0 +1,39 @@
+{
+  "id": "performance-based-metrics",
+  "title": "Performance-Based Metrics",
+  "description": "A.k.a. consequence-based metrics. Quantitative approaches for assessing system resilience.",
+  "language": "en",
+  "tags": [
+    "resilience",
+    "metrics",
+    "ieee"
+  ],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-20"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-in-an-ieee-techical-report-by-doe-gmlc",
+        "title": "Definition in an IEEE Techical Report by DOE GMLC",
+        "type": "definition",
+        "source_keys": [
+          "chiu2020resilience"
+        ],
+        "page": "p13",
+        "body_md": "> Performance-based metrics (also known as **consequence-based metrics**) are generally quantitative approaches for answering the question, “How resilient is my system?”\n> These metrics interpret quantitative data that describe infrastructure performance during disruptive events.\n> The required data can be collected from historical events, subject matter estimates, and computational infrastructure models.\n> These metrics are suitable for benefit-cost and planning analyses because they measure the potential benefits and costs associated with proposed resilience improvements and investments.\n> Resilience metrics need to include a measure of consequences and the relevant statistical probability from the probability distribution of those consequences.\n"
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "30-minute-reserve-service",
+  "title": "30-Minute Reserve Service",
+  "description": "Can be satisfied by online or offline resources that are able to respond in 30 minutes or less.",
+  "language": "en",
+  "tags": [
+    "reserve",
+    "system-operator",
+    "pjm"
+  ],
+  "related": [
+    "contingency-reserve"
+  ],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-22"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-pjm",
+        "title": "Definition By PJM",
+        "type": "definition",
+        "source_keys": [
+          "pjm2024m10"
+        ],
+        "page": "p27, Revision 45",
+        "body_md": "> 30-Minute Reserve Service: can be satisfied by online or offline resources that are able to respond in 30 minutes or less.\n"
+      }
+    ]
+  }
+}

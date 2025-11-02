@@ -1,0 +1,42 @@
+{
+  "id": "reserve-markets",
+  "title": "Reserve Markets",
+  "description": "A market-based system for the purchase and sale of the Reserves.",
+  "language": "en",
+  "tags": [
+    "market",
+    "reliability",
+    "reserve",
+    "operation",
+    "system-operator",
+    "pjm"
+  ],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-22"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-pjm",
+        "title": "Definition by PJM",
+        "type": "definition",
+        "source_keys": [
+          "pjm2024m11"
+        ],
+        "page": "p103, Revision 133",
+        "body_md": "> The PJM Reserve Markets provide PJM participants with a market-based system for the purchase and sale of the Synchronized Reserve, Primary Reserve, and 30-minute Reserve Services (“Reserves”).\n> The PJM Reserve Markets are conducted in both the Day-ahead Market and Real-time Market processes.\n> In the Day-ahead Market, PJM schedules Reserves on a simultaneously, co-optimized basis with Energy for each hour of the next Operating Day.\n>\n> In Real-time, PJM procures Reserves on a simultaneously, co-optimized basis with Energy for each hour and each interval. Both the Day-ahead and Real-time Reserve Markets are offer-based and procure resources to meet the required Reserve Services:\n>\n> - **Synchronized Reserve Service**: can only be satisfied by online resources that are able to respond in ten (10) minutes or less.\n> - **Primary Reserve Service**: can be satisfied by online or offline resources that are able to respond in ten (10) minutes or less.\n> - **30-Minute Reserve Service**: can be satisfied by online or offline resources that are able to respond in thirty (30) minutes or less.\n>\n> PJM has three reserve products that can meet the required Reserve Services:\n>\n> - **Synchronized Reserve Product**: online resources that are able to respond in ten (10) minutes or less. The Synchronized Reserve product can satisfy the Synchronized Reserve, Primary Reserve, and 30-Minute Reserve Services.\n> - **Non-Synchronized Reserve Product**: offline resources that are able to respond in ten (10) minutes or less. The Non-Synchronized Reserve product can satisfy the Primary Reserve and 30-Minute Reserve Services.\n> - **Secondary Reserve Product**: online or offline resources that are able to respond between ten (10) and thirty (30) minutes. The Secondary Reserve product can satisfy only the 30-Minute Reserve Service.\n"
+      }
+    ]
+  }
+}

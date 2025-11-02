@@ -1,0 +1,53 @@
+{
+  "id": "reliability",
+  "title": "Reliability",
+  "description": "The probability of satisfactory operation of a power system over the long run.",
+  "language": "en",
+  "tags": [
+    "reliability",
+    "operation",
+    "article"
+  ],
+  "related": [
+    "stability",
+    "security"
+  ],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-22"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-in-an-article-by-a-joint-task-force-of-ieee-and-cigre",
+        "title": "Definition in an Article by a Joint Task Force of IEEE and CIGRE",
+        "type": "definition",
+        "source_keys": [
+          "kundur2004stability"
+        ],
+        "page": null,
+        "body_md": "> Reliability of a power system refers to the probability of its satisfactory operation over the long run.\n> It denotes the ability to supply adequate electric service on a nearly continuous basis, with few interruptions over an extended time period.\n"
+      },
+      {
+        "order": 2,
+        "id": "definition-by-nerc",
+        "title": "Definition by NERC",
+        "type": "definition",
+        "source_keys": [
+          "nerc2013terminology"
+        ],
+        "page": null,
+        "body_md": "> NERC defines the reliability of the interconnected Bulk-Power System in terms of two basic and functional aspects, [adequacy](/wiki/adequacy), and [operating reliability](/wiki/operating-reliability).\n"
+      }
+    ]
+  }
+}

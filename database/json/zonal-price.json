@@ -1,0 +1,37 @@
+{
+  "id": "zonal-price",
+  "title": "Zonal Price",
+  "description": "A pricing mechanism for a specific zone within a control area.",
+  "language": "en",
+  "tags": [
+    "market"
+  ],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-20"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-ferc",
+        "title": "Definition by FERC",
+        "type": "definition",
+        "source_keys": [
+          "ferc2020glossary"
+        ],
+        "page": null,
+        "body_md": "> A pricing mechanism for a **specific zone within a control area**.\n"
+      }
+    ]
+  }
+}

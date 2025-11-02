@@ -1,0 +1,38 @@
+{
+  "id": "operating-reliability",
+  "title": "Operating Reliability",
+  "description": "The ability to withstand sudden disturbances while avoiding uncontrolled cascading blackouts or damage to equipment.",
+  "language": "en",
+  "tags": [
+    "reliability",
+    "operation"
+  ],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-18"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-nerc",
+        "title": "Definition by NERC",
+        "type": "definition",
+        "source_keys": [
+          "nerc2013terminology"
+        ],
+        "page": null,
+        "body_md": "> The ability of the Bulk-Power System to withstand sudden disturbances, such as electric short circuits or the unanticipated loss of system elements from credible contingencies, while avoiding uncontrolled cascading blackouts or damage to equipment.\n"
+      }
+    ]
+  }
+}

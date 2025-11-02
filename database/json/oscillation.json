@@ -1,0 +1,38 @@
+{
+  "id": "oscillation",
+  "title": "Oscillation",
+  "description": "A repetitive motion that can be either undamped, positively damped, or negatively damped.",
+  "language": "en",
+  "tags": [
+    "event",
+    "oscillation"
+  ],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-18"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-powerworld",
+        "title": "Definition by PowerWorld",
+        "type": "definition",
+        "source_keys": [
+          "powerworld2020oscillations"
+        ],
+        "page": null,
+        "body_md": "> An oscillation is just a repetitive motion that can be either undamped, positively damped (decaying with time), or negatively damped (growing with time).\n>\n> Types of oscillations include:\n>\n> - Transients: Usually high frequency and highly damped\n> - Local plant: Usually from 1 to 5 Hz\n> - Inter-area oscillations: From 0.15 to 1 Hz\n> - Slower dynamics: Such as AGC, less than 0.15 Hz\n> - Subsynchronous resonance: 10 to 50 Hz (less than synchronous)\n"
+      }
+    ]
+  }
+}
