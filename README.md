@@ -33,7 +33,70 @@ The folder `database` contains the source data and scripts for generating the wi
 - Folder `database/json` contains the source JSON files for the wiki.
 - Folder `database/pyscripts` contains Python scripts for processing the data.
 
-### Example JSON File
+### Adding a new term
+
+There are two ways to add a new term to the wiki: using a Markdown file or a JSON file.
+
+#### Add new term from example Markdown file
+
+Use [stability.md](./_wiki/stability.md) as a reference for creating new term entries.
+After creating the Markdown file, convert it to JSON format using the provided script:
+
+```bash
+python ./pswiki/database/pyscripts/md_to_json.py --input ./pswiki/_wiki/stability.md --output ./pswiki/database/json/stability.json
+```
+
+An example structure of a Markdown file for a term is as follows:
+
+```markdown
+---
+id: example-term
+title: Example Term
+description: A concise description of this concept.
+language: en
+tags:
+  - tag1
+  - tag2
+related:
+  - other-term-id-1
+  - other-term-id-2
+version: 1.0.0 # SemVer version of this term entry
+breaking: false # set to true if there are breaking changes of this term compared to previous version
+dates:
+  created: 2025-11-01
+  last_modified: 2025-11-01
+authors:
+  - name: Contributor Name
+    url: https://example.com
+  - name: Another Contributor
+    url: https://example.org
+---
+
+## Definition by Institution 1
+
+Source: <d-cite key="key1"></d-cite> p45
+<!-- ensure the key exists in assets/bibliography/papers.bib -->     
+
+> The ability of an electric power system to maintain a state of equilibrium during normal and abnormal conditions or disturbances.
+       
+## Elaboration in an Article
+
+Source: <d-cite key="key2"></d-cite>
+
+> This section elaborates on the concept, its relevance, or provides historical context.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid
+        path="/assets/img/pswiki/example-figure.png"
+        zoomable=true %}
+                Fig. 1. Example figure caption. (from <d-cite key="example2024reference"></d-cite>)
+    </div>
+</div>
+<br>
+```
+
+#### Add new term from example JSON File
 
 Use [stability.json](./database/json/stability.json) as a reference for creating new term entries.
 Below is an example structure of a JSON file for a term:
@@ -85,7 +148,9 @@ Below is an example structure of a JSON file for a term:
         "id": "elaboration-in-article",
         "title": "Elaboration in an Article",
         "type": "definition",
-        "source_keys": [],
+        "source_keys": [
+            "key2"
+        ],
         "page": null,
         "body_md": "This section elaborates on the concept, its relevance, or provides historical context.\n",
         "figures": [
@@ -111,19 +176,9 @@ Following conventions should be observed when creating or editing term JSON file
 - Figures should be stored in the `assets/img/pswiki/` directory, and their paths should be correctly referenced in the JSON.
 - In each figure entry: 1) Use a relative path such as "/assets/img/pswiki/example-figure.png". 2) Include a concise caption_md (in Markdown) and the relevant source_keys. 3) Set "zoomable": true for figures intended to support click-to-zoom in Jekyll.
 
-### Conda Environment
+### Python scripts dependencies
 
-Use the following command to create the conda environment for local development:
-
-```
-conda env create --file ./pswiki/database/environment.yml
-```
-
-Use the following command to export minimal-history export (only explicit user-installed packages)
-
-```
-conda env export --from-history --file ./pswiki/database/environment.yml
-```
+Python dependencies are described in `./pswiki/database/requirements.txt`.
 
 ## License
 
