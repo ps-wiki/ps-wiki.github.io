@@ -4,7 +4,7 @@
   "description": "TIP.",
   "language": "en",
   "tags": ["transmission", "system-operator", "nyiso"],
-  "related": ["interconnection", "interconnection-process"],
+  "related": ["interconnection", "transmission-interconnection-procedures"],
   "version": "1.0.0",
   "breaking": false,
   "dates": {
