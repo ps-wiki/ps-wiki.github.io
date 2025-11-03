@@ -6,11 +6,11 @@
   "language": "en",
   "tags": ["nyiso", "process"],
   "related": ["interconnection", "transmission-interconnection-process"],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-11-01",
-    "last_modified": "2025-11-01"
+    "last_modified": "2025-11-02"
   },
   "authors": [
     {
@@ -22,7 +22,7 @@
     "sections": [
       {
         "order": 1,
-        "id": "definition-by-NYISO",
+        "id": "definition-by-nyiso",
         "title": "Definition by NYISO",
         "type": "definition",
         "source_keys": ["nyiso2025interconnectionprocess"],
