@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
+  "id": "financial-markets",
+  "title": "Financial Markets",
+  "description": "Trading financially settled products.",
+  "language": "en",
+  "tags": ["market", "ferc"],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-20"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-ferc",
+        "title": "Definition by FERC",
+        "type": "definition",
+        "source_keys": ["ferc2020glossary"],
+        "page": null,
+        "body_md": "> Markets where financially settled products (instruments) are traded (bought and sold). In commodity markets, it is markets where financially settled commodity derivatives are traded.\n> Nymex is purely financial, where any residual delivery obligations on the futures contracts are matched and settled physically off-exchange by the matched parties.\n> ICE trades both physically and financially settled products.\n> Brokers also do both physical and financial transactions.\n> Financial markets are also a term used for capital markets where stocks, bonds, T-Bills, foreign exchange, and other financial instruments are traded.\n"
+      }
+    ]
+  }
+}

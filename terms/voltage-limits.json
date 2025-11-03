@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
+  "id": "voltage-limits",
+  "title": "Voltage Limits",
+  "description": "Voltage limits to protect against wide area voltage collapse.",
+  "language": "en",
+  "tags": ["system-operator", "pjm", "stability"],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-22"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-pjm",
+        "title": "Definition by PJM",
+        "type": "definition",
+        "source_keys": ["pjm2024m3"],
+        "page": "p40, Revision 67",
+        "body_md": "> High, Low, and Load Dump actual voltage limits, High and Low emergency voltage limits for contingency simulation, and voltage drop limits for wide area transfer simulations to protect against wide area voltage collapse.\n"
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
+  "id": "loss-of-load-events",
+  "title": "Loss-of-Load Events",
+  "description": "LOLEV. The number of events in which some system load is not served in a given year.",
+  "language": "en",
+  "tags": ["adequacy", "nerc", "metrics", "reliability"],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-20"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-nerc",
+        "title": "Definition by NERC",
+        "type": "definition",
+        "source_keys": ["nerc2013probabilistic"],
+        "page": null,
+        "body_md": "> Loss-of-Load Events (LOLEV) is the **number of events** in which some system load is not served in a given year.\n> A LOLEV can last for one hour or for several contiguous hours and can involve the loss of one or several hundred megawatts of load.\n> TRE-ERCOT is the only Assessment Area to provide this metric in its regional assessment.\n"
+      }
+    ]
+  }
+}

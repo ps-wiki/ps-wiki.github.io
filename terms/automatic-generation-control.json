@@ -1,0 +1,43 @@
+{
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
+  "id": "automatic-generation-control",
+  "title": "Automatic Generation Control",
+  "description": "AGC. Automatic regulation of the power output of generators.",
+  "language": "en",
+  "tags": ["frequency-control", "ferc", "nerc"],
+  "related": ["fast-frequency-response", "primary-control", "secondary-control", "tertiary-control", "frequency-regulation", "frequency-stability"],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-22"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-nerc",
+        "title": "Definition by NERC",
+        "type": "definition",
+        "source_keys": ["nerc2024glossary"],
+        "page": null,
+        "body_md": "> Means equipment that automatically adjusts a Control Area’s generation from a central location to maintain its interchange schedule plus Frequency Bias.\n"
+      },
+      {
+        "order": 2,
+        "id": "definition-by-ferc",
+        "title": "Definition by FERC",
+        "type": "definition",
+        "source_keys": ["ferc2020glossary"],
+        "page": null,
+        "body_md": "> The automatic regulation of the power output of electric generators within a prescribed range in response to a change in system frequency, or tie-line loading, to maintain system frequency or scheduled interchange with other areas within predetermined limits.\n"
+      }
+    ]
+  }
+}

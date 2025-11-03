@@ -37,6 +37,13 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/changelog/";
               },
+            },{id: "dropdown-add-new-term",
+              title: "add new term",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/add-new/";
+              },
             },{id: "wiki-30-minute-reserve-service",
           title: '30-Minute Reserve Service',
           description: "Can be satisfied by online or offline resources that are able to respond in 30 minutes or less.",

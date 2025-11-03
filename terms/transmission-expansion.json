@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
+  "id": "transmission-expansion",
+  "title": "Transmission Expansion",
+  "description": "The addition or modification of facilities of the Transmission System.",
+  "language": "en",
+  "tags": ["transmission", "system-operator", "nyiso"],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-22"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-nyiso",
+        "title": "Definition by NYISO",
+        "type": "definition",
+        "source_keys": ["nyiso2023tei"],
+        "page": "p4, Version 4.2",
+        "body_md": "> A transmission expansion is the **addition or modification** of facilities of the NYS Transmission System that may be proposed or initiated by an Eligible Customer, including a TO, under Section 3.7 of or Attachment P to the NYISO OATT.\n"
+      }
+    ]
+  }
+}

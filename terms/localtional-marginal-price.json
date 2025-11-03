@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
+  "id": "localtional-marginal-price",
+  "title": "Localtional Marginal Price",
+  "description": "LMP. Marginal price for energy at the location delivered or received.",
+  "language": "en",
+  "tags": ["market", "system-operator"],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-20"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-pjm",
+        "title": "Definition by PJM",
+        "type": "definition",
+        "source_keys": ["pjm2025m11"],
+        "page": "p21, Revision 134",
+        "body_md": "> Locational Marginal Price (LMP) is defined as the marginal price for energy at the location where the energy is delivered or received and is based on forecasted system conditions and the latest approved Real-time security constrained economic dispatch program solution.\n> LMP is expressed in dollars per megawatt-hour ($/MWh).\n> LMP is a pricing approach that addresses Transmission System congestion and loss costs, as well as energy costs.\n> Therefore, each spot market energy customer pays an energy price that includes the full marginal cost of delivering an increment of energy to the purchaser’s location.\n\nMore details can be found in the source reference.\n"
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
+  "id": "contingency-reserve",
+  "title": "Contingency Reserve",
+  "description": "Capacity deployed by the Balancing Authority to meet the Disturbance Control Standard.",
+  "language": "en",
+  "tags": ["nerc", "contingency"],
+  "related": ["contingency-reserve-service"],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-22"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-nerc",
+        "title": "Definition by NERC",
+        "type": "definition",
+        "source_keys": ["nerc2024glossary"],
+        "page": null,
+        "body_md": "> The provision of capacity deployed by the [Balancing Authority](/wiki/balancing-authority) to meet the Disturbance Control Standard (DCS) and other NERC and Regional Reliability Organization contingency requirements.\n"
+      }
+    ]
+  }
+}

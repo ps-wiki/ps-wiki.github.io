@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
+  "id": "inverter-based-resources",
+  "title": "Inverter-based Resources",
+  "description": "IBR. BPS-connected resources that have a power electronic interface.",
+  "language": "en",
+  "tags": ["generation", "nerc"],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-20"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-nerc",
+        "title": "Definition by NERC",
+        "type": "definition",
+        "source_keys": ["nerc2023inverter"],
+        "page": null,
+        "body_md": "> Refer generally to BPS-connected facilities that have a power electronic interface between the AC grid and the source of electricity.\n\nTwo clarifications from the source reference are excerpted here:\n\n> **What types of IBR exist?**\n>\n> Inverter-based resources include modern wind turbines, meaning type 3 and type 4 wind turbines, solar photovoltaic, and battery energy storage resources, as well as HVDC circuits and FACTs devices like static synchronous compensators and static volt-ampere reactive compensators.\n\n> **What is the difference between IBR and DER?**\n>\n> - [DER](/wiki/distributed-energy-resources) are generating resources located on the **distribution** system.\n> - DER **may or may not** use inverter technology to interface with the AC grid; however, they are distinctly different than BPS-connected inverter-based resources (connected to transmission and sub-transmission levels).\n"
+      }
+    ]
+  }
+}

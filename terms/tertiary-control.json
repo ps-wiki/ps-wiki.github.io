@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
+  "id": "tertiary-control",
+  "title": "Tertiary Control",
+  "description": "Actions taken to handle current and future contingencies.",
+  "language": "en",
+  "tags": ["frequency-control", "nerc"],
+  "related": ["primary-control", "secondary-control", "frequency-regulation", "automatic-generation-control", "frequency-stability"],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-22"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-nerc",
+        "title": "Definition by NERC",
+        "type": "definition",
+        "source_keys": ["nerc2021balancing"],
+        "page": null,
+        "body_md": "> Encompasses actions taken to get resources in place to handle current and future contingencies. Reserve deployment and Reserve restoration following a disturbance are common types of Tertiary Control.\n"
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
+  "id": "day-ahead-energy-market",
+  "title": "Day Ahead Energy Market",
+  "description": "Forward markets for electricity to be supplied the following day.",
+  "language": "en",
+  "tags": ["system-operator", "market", "nyiso", "pjm", "ferc"],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-22"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-pjm",
+        "title": "Definition by PJM",
+        "type": "definition",
+        "source_keys": ["pjm2024m11"],
+        "page": "p19, Revision 133",
+        "body_md": "> The Day-ahead Energy Market is a forward market in which hourly clearing prices are calculated for each hour of the next operating day based on generation offers, demand bids, increment offers, decrement bids and bilateral transaction schedules submitted into the Day-ahead Energy Market.\n\nA brief graph is given in <d-cite key=\"pjm2023dam\"></d-cite>.\n"
+      },
+      {
+        "order": 2,
+        "id": "definition-by-nyiso",
+        "title": "Definition by NYISO",
+        "type": "definition",
+        "source_keys": ["nyiso2024dayahead"],
+        "page": "p7, Version 8.0",
+        "body_md": "> The following figure shows the interaction and data flow between the various functional components that involve the Day-Ahead process. Each of the blocks and major data flows is described after the figure.\n",
+        "figures": [
+          {
+            "path": "/assets/img/pswiki/day-ahead-scheduling-data-flow.png",
+            "caption_md": "        Figure 3: Day-Ahead Scheduling Data Flow (from <d-cite key=\"nyiso2024dayahead\"></d-cite>)",
+            "zoomable": true,
+            "source_keys": ["nyiso2024dayahead"]
+          }
+        ]
+      },
+      {
+        "order": 3,
+        "id": "definition-by-ferc",
+        "title": "Definition by FERC",
+        "type": "definition",
+        "source_keys": [],
+        "page": null,
+        "body_md": "> Forward markets for electricity to be supplied the following day. This market closes with acceptance by the independent system operator, power exchange, or scheduling coordinator of the final day-ahead schedule. Day-ahead is not a term commonly used for natural gas (“next day” is more common).\n"
+      }
+    ]
+  }
+}

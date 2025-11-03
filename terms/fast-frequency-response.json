@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
+  "id": "fast-frequency-response",
+  "title": "Fast Frequency Response",
+  "description": "FFR. Power in response to frequency changes during the arresting phase",
+  "language": "en",
+  "tags": ["inertia", "frequency-control", "system-operator"],
+  "related": ["primary-control", "secondary-control", "frequency-stability"],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-22"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-in-a-nerc-webinar-by-ercot",
+        "title": "Definition in a NERC Webinar by ERCOT",
+        "type": "definition",
+        "source_keys": ["nerc2020ffr"],
+        "page": null,
+        "body_md": "> Power injected to (or absorbed from) the grid in response to changes in measured or observed frequency during the **arresting phase** of a frequency excursion event to improve the **frequency nadir** or **initial rate-of-change of frequency**\n"
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
+  "id": "digital-twin",
+  "title": "Digital Twin",
+  "description": "A virtual representation to reflect a physical object accurately.",
+  "language": "en",
+  "tags": ["article"],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-19"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-ibm",
+        "title": "Definition by IBM",
+        "type": "definition",
+        "source_keys": ["ibm2021what"],
+        "page": null,
+        "body_md": "> A digital twin is a virtual representation of an object or system designed to reflect a physical object accurately. It spans the object's lifecycle, is updated from real-time data and uses simulation, machine learning and reasoning to help make decisions.\n"
+      },
+      {
+        "order": 2,
+        "id": "definition-in-an-article",
+        "title": "Definition in an Article",
+        "type": "definition",
+        "source_keys": ["fuller2020digital"],
+        "page": null,
+        "body_md": "> If the data flows between an existing physical object and a digital object, and they are fully integrated in both directions, this constituted the reference “Digital Twin”. A change made to the physical object automatically leads to a change in the digital object and vice versa. Figure 1. illustrates a Digital Twin.\n\n<div class=\"col-sm mt-3 mt-md-0\">\n\n<br>\n\nSome other definitions collected in the review paper:\n\n> - NASA 2012 [5] “A Digital Twin is an integrated multiphysics, multiscale, probabilistic simulation of an as-built vehicle or system that uses the best available physical models, sensor updates, fleet history, etc., to mirror the life of its corresponding flying twin.”\n> - Chen 2017 [6] “A digital twin is a computerized model of a physical device or system that represents all functional features and links with the working elements.”\n> - Liu et al . 2018 [7] “The digital twin is actually a living model of the physical asset or system, which continually adapts to operational changes based on the collected online data and information, and can forecast the future of the corresponding physical counterpart.”\n> - Zheng et al . 2018 [8] “A Digital Twin is a set of virtual information that fully describes a potential or actual physical production from the micro atomic level to the macro geometrical level.”\n> - Vrabič et al . 2018 [9] “A digital twin is a digital representation of a physical item or assembly using integrated simulations and service data. The digital representation holds information from multiple sources across the product life cycle. This information is continuously updated and is visualised in a variety of ways to predict current and future conditions, in both design and operational environments, to enhance decision making.”\n> - Madni 2019 [10] \"A Digital Twin is a virtual instance of a physical system (twin) that is continually updated with the latter’s performance, maintenance, and health status data throughout the physical system’s life cycle.”\n\n[5] E. Glaessgen and D. Stargel, \"The digital twin paradigm for future NASA and U.S. Air force vehicles,\" in Proc. 53rd AIAA/ASME/ASCE/AHS/ASC Struct., Struct. Dyn. Mater. Conf. 20th AIAA/ASME/AHS Adapt. Struct Conf. 14th AIAA, Apr. 2012, p. 1818.\n\n[6] Y. Chen, \"Integrated and intelligent manufacturing: Perspectives and enablers,\" Engineering, vol. 3, no. 5, pp. 588–595, Oct. 2017.\n\n[7] Z. Liu, N. Meyendorf, and N. Mrad, \"The role of data fusion in predictive maintenance using digital twin,\" in Proc. Annu. Rev. Prog. Quant. Nondestruct. Eval., Provo, UT, USA, 2018, Art. no. 020023.\n\n[8] Y. Zheng, S. Yang, and H. Cheng, \"An application framework of digital twin and its case study,\" J. Ambient Intell. Humanized Comput., vol. 10, no. 3, pp. 1141–1153, Jun. 2018.\n\n[9] R. Vrabič, J. A. Erkoyuncu, P. Butala, and R. Roy, \"Digital twins: Understanding the added value of integrated models for through-life engineering services,\" Procedia Manuf., vol. 16, pp. 139–146, Jan. 2018.\n\n[10] A. Madni, C. Madni, and S. Lucero, \"Leveraging digital twin technology in model-based systems engineering,\" Systems, vol. 7, no. 1, p. 7, Jan. 2019.\n",
+        "figures": [
+          {
+            "path": "https://uploads.disquscdn.com/images/d7a8c9970fa1766cba46a0c38bf445e70f78ed6afff3a76af9e4cbbfb9444ebd.jpg?w=800&h=453",
+            "caption_md": "    Digital model, shadow and twin.",
+            "zoomable": true,
+            "source_keys": []
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
+  "id": "torsional-resonance",
+  "title": "Torsional Resonance",
+  "description": "The SSR due to torsional interactions between series compensated lines and turbine-generator mechanical shafts.",
+  "language": "en",
+  "tags": ["stability", "ieee", "ieee-task-force", "article"],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-06-20"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-in-an-article-by-a-task-force",
+        "title": "Definition in an Article by a Task Force",
+        "type": "definition",
+        "source_keys": ["hatziargyriou2021stability"],
+        "page": null,
+        "body_md": "> The [SSR](/wiki/subsynchronous-resonance) due to torsional interactions between the series compensated line(s) and the turbine-generator mechanical shaft are well documented in the literature, particularly as it pertains to conventional synchronous generation.\n> According to the IEEE working group, subsynchronous oscillations are mainly classified into SSR and device-dependent subsynchronous oscillations (DDSSO).\n> SSR involves an electric power system condition where the network exchanges significant energy with a turbine-generator at one or more of the natural sub-synchronous torsional modes of oscillation of the combined turbine-generator mechanical shaft.\n> The oscillations can be poorly damped, undamped, or even negatively damped and growing, thus threatening the mechanical integrity of the turbine-generator shaft.\n> DDSSO arise due to the interaction of fast acting control devices, such as HVDC lines, static Var compensators (SVCs), static synchronous compensators (STATCOM), and power system stabilizers (PSS) with the torsional mechanical modes of nearby turbine-generators.\n> It should be noted, however, that DDSSO are **not always detrimental**; in some cases, the interaction can be beneficial and in fact improve torsional damping.\n> For this reason, in many cases devices such as SVCs may in fact be used as a means of providing a solution for SSR by improving torsional damping.\n"
+      }
+    ]
+  }
+}

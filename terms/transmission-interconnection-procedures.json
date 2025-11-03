@@ -1,0 +1,43 @@
+{
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
+  "id": "transmission-interconnection-procedures",
+  "title": "Transmission Interconnection Procedures",
+  "description": "TIP.",
+  "language": "en",
+  "tags": ["transmission", "system-operator", "nyiso"],
+  "related": ["interconnection", "transmission-interconnection-procedures"],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-11-01"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-nyiso",
+        "title": "Definition by NYISO",
+        "type": "definition",
+        "source_keys": ["nyiso2023tei"],
+        "page": "p4, Version 4.2",
+        "body_md": "> TIP evaluates the need for and identifies any Network Upgrade Facilities that would be required to accommodate the proposed transmission project.\n"
+      },
+      {
+        "order": 2,
+        "id": "elaboration-by-nyiso",
+        "title": "Elaboration by NYISO",
+        "type": "definition",
+        "source_keys": ["nyiso2023tei"],
+        "page": "p7, Version 4.2",
+        "body_md": "> The basic steps of the TIP are:\n>\n> - Initial Processing of the TIA;\n> - Scoping Meeting;\n> - Optional Feasibility Study;\n> - System Impact Study;\n> - Facilities Study;\n> - Engineering & Procurement Agreement (optional)\n> - Transmission Project Interconnection Agreement; and\n> - Construction, installation, registration and operation.\n\nSome explanations of the steps are excerpted below:\n\n> Optional Feasibility Study (OFES) is an option of the Transmission Developer, its purpose is to provide information to the Transmission Developer regarding the feasibility of the proposed interconnection in advance of embarking on a SIS.\n\n> The purpose of the System Impact Study (SIS) is to evaluate the impact of the proposed transmission project on the reliability of the NYS Transmission System and if study results indicate that the project, as proposed, would result in any adverse impact on reliability or violations of reliability standards and identify any Network Upgrades that would be required to mitigate any such adverse impact(s) or violation(s).\n\n> The main purpose and objective of the Facilities Study is to provide to the Customer good faith estimates of the cost and time to construct the new facilities identified in the SIS.\n"
+      }
+    ]
+  }
+}
