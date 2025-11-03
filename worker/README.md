@@ -76,6 +76,13 @@ Cloudflare assigns a free public URL:
 https://pswiki-api.<your-account>.workers.dev
 ```
 
+### Local API contracts testing
+
+After local development server is running, you can test the OpenAPI spec with:
+
+```bash
+python database/pyscripts/test_api.py --base-url http://localhost:8787 --validate-schema
+```
 
 ## 🔍 API Endpoints
 
