@@ -5,12 +5,12 @@
   "description": "DLR. A grid enhancing technology (GET) that provides real-time ratings of transmission lines based on current weather conditions.",
   "language": "en",
   "tags": ["system-operator", "grid-enhancing-technology"],
-  "related": [],
-  "version": "1.0.0",
+  "related": ["ambient-adjusted-ratings", "facility-rating"],
+  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-06-20"
+    "last_modified": "2025-11-02"
   },
   "authors": [
     {
