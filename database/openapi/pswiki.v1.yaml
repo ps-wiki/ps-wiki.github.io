@@ -7,7 +7,7 @@ info:
     name: CC BY-NC 4.0
     url: https://creativecommons.org/licenses/by-nc/4.0/
 servers:
-  - url: https://pswiki-api.<YOUR_ACCOUNT>.workers.dev
+  - url: https://pswiki-api.jinninggm.workers.dev
 
 # Explicitly declare "no authentication required" for all operations
 security: []
