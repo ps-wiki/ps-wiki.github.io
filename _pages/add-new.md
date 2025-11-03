@@ -19,7 +19,7 @@ After creating the Markdown file, convert it back to JSON format using the provi
 python database/pyscripts/md2json.py --input _wiki/stability.md --output database/json/stability.json
 ```
 
-*In the website deployment process, the JSON files are automatically converted back to Markdown for rendering.*
+_In the website deployment process, the JSON files are automatically converted back to Markdown for rendering._
 Note there can be minor formatting differences between the original Markdown and the converted Markdown due to the conversion process.
 
 # Add new term from example JSON File
