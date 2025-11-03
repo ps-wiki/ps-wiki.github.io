@@ -1,0 +1,8 @@
+name = "pswiki-api"
+main = "src/index.ts"
+compatibility_date = "2025-11-02"
+
+[vars]
+ORIGIN_BASE = "https://raw.githubusercontent.com/ps-wiki/ps-wiki.github.io/main/database/json"
+INDEX_URL   = "https://raw.githubusercontent.com/ps-wiki/ps-wiki.github.io/main/database/build/index.json"
+TAGS_URL    = "https://raw.githubusercontent.com/ps-wiki/ps-wiki.github.io/main/database/build/tags.json"

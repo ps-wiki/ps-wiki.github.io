@@ -49,7 +49,7 @@ ninja.data = [{
               window.location.href = "/wiki/adequacy/";
             },},{id: "wiki-ambient-adjusted-ratings",
           title: 'Ambient-Adjusted Ratings',
-          description: "",
+          description: "A transmission facility rating.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/ambient-adjusted-ratings/";
             },},{id: "wiki-ancillary-services",
@@ -259,7 +259,7 @@ ninja.data = [{
               window.location.href = "/wiki/extended-equal-area-criterion/";
             },},{id: "wiki-facility-rating",
           title: 'Facility Rating',
-          description: "",
+          description: "Physical limit of a facility",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/facility-rating/";
             },},{id: "wiki-fast-frequency-response",
@@ -714,7 +714,7 @@ ninja.data = [{
               window.location.href = "/wiki/unit-commitment/";
             },},{id: "wiki-vendors",
           title: 'Vendors',
-          description: "Power system vendors",
+          description: "Power system software vendors",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/vendors/";
             },},{id: "wiki-virtual-synchronous-machine",
@@ -759,7 +759,7 @@ ninja.data = [{
               window.location.href = "/wiki/zonal-price/";
             },},{id: "wiki-zone",
           title: 'Zone',
-          description: "",
+          description: "Geographical concept.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/zone/";
             },},{id: "wiki-cascading-outage",
