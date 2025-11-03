@@ -134,6 +134,10 @@ jobs:
           # (If you want the Worker to read from Pages instead of raw.githubusercontent.com)
           mkdir -p _site/terms
           cp database/json/*.json _site/terms/
+      - name: Publish OpenAPI spec 🌐
+        run: |
+          mkdir -p _site/api
+          cp database/openapi/pswiki.v1.yaml _site/api/openapi.yaml
       - name: Build Jekyll site 🏗️
         run: |
           export JEKYLL_ENV=production
