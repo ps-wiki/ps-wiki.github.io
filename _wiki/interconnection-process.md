@@ -6,11 +6,12 @@ tags:
   - process
 related:
   - interconnection
+  - transmission-interconnection-procedures
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io/
 date: 2025-11-01
-lastmod: 2025-11-01
+lastmod: 2025-11-02
 ---
 
 ### Definition by NYISO

@@ -7,7 +7,7 @@ tags:
   - nyiso
 related:
   - interconnection
-  - interconnection-process
+  - transmission-interconnection-procedures
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
