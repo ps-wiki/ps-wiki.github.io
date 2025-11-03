@@ -28,7 +28,7 @@ A custom [wiki layout](./_layouts/wiki.liquid) adapted from the `distill` layout
 
 ## REST API
 
-The PS-Wiki REST API provides read-only access to term data in JSON format.
+The [PS-Wiki REST API](https://github.com/ps-wiki/ps-wiki.github.io/blob/main/database/openapi/pswiki.v1.yaml) provides read-only access to term data in JSON format.
 It is deployed via [Cloudflare Workers](./worker) and documented using the OpenAPI 3.1.0 specification at <https://pswiki-api.jinninggm.workers.dev/openapi.json>
 
 Base URL: <https://pswiki-api.jinninggm.workers.dev>
