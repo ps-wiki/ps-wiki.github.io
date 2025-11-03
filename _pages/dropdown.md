@@ -9,4 +9,6 @@ children:
     permalink: /wiki-tag/
   - title: change log
     permalink: /changelog/
+  - title: add new term
+    permalink: /add-new/
 ---

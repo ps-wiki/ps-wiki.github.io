@@ -29,6 +29,7 @@ on:
       - "!FAQ.md"
       - "!INSTALL.md"
       - "!README.md"
+      - "!worker/**"
   pull_request:
     branches:
       - master
@@ -57,6 +58,7 @@ on:
       - "!FAQ.md"
       - "!INSTALL.md"
       - "!README.md"
+      - "!worker/**"
   workflow_dispatch:
 
 permissions:
@@ -110,34 +112,6 @@ jobs:
       - name: Build search index 🔍
         run: |
           python database/pyscripts/build_index.py
-      - name: Publish schema & API artifacts 📦
-        run: |
-          # Publish the schema (so $schema absolute URL resolves)
-          mkdir -p _site/schema/v1
-          cp database/schema/v1/term.schema.json _site/schema/v1/
-          if [ -f database/schema/CHANGELOG.md ]; then
-            mkdir -p _site/schema
-            cp database/schema/CHANGELOG.md _site/schema/
-          fi
-
-          # Publish API artifacts for the Worker
-          mkdir -p _site/api
-          cp database/build/index.json _site/api/
-          cp database/build/tags.json  _site/api/
-
-          # (Optional) If you maintain a static OpenAPI file too
-          if [ -f database/openapi/pswiki.v1.yaml ]; then
-            cp database/openapi/pswiki.v1.yaml _site/api/openapi.yaml
-          fi
-
-          # (Optional) Public copies of the source JSON terms for direct access
-          # (If you want the Worker to read from Pages instead of raw.githubusercontent.com)
-          mkdir -p _site/terms
-          cp database/json/*.json _site/terms/
-      - name: Publish OpenAPI spec 🌐
-        run: |
-          mkdir -p _site/api
-          cp database/openapi/pswiki.v1.yaml _site/api/openapi.yaml
       - name: Build Jekyll site 🏗️
         run: |
           export JEKYLL_ENV=production
@@ -146,6 +120,18 @@ jobs:
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+
+      - name: Publish API & schema artifacts 📦
+        run: |
+          mkdir -p _site/api _site/schema/v1 _site/terms
+          cp database/openapi/pswiki.v1.yaml _site/api/openapi.yaml
+          if [ -f database/build/index.json ]; then cp database/build/index.json _site/api/; fi
+          if [ -f database/build/tags.json  ]; then cp database/build/tags.json  _site/api/; fi
+          cp database/schema/v1/term.schema.json _site/schema/v1/
+          if [ -f database/schema/CHANGELOG.md ]; then cp database/schema/CHANGELOG.md _site/schema/; fi
+          # Optional: publish raw term JSONs
+          cp database/json/*.json _site/terms/
+
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
