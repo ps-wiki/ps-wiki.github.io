@@ -192,6 +192,15 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - worker/
+  - worker/**/*
+  - node_modules/
+  - pnpm-lock.yaml
+  - yarn.lock
+  - wrangler.toml
+  - .wrangler/
+  - scripts/
+  - dist/
 keep_files:
   - CNAME
   - .nojekyll
