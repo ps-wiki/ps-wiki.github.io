@@ -1,0 +1,117 @@
+openapi: 3.1.0
+info:
+  title: PS-Wiki API
+  version: 1.0.0
+  description: Read-only API to browse PS-Wiki terms for use with ChatGPT Actions.
+servers:
+  - url: https://pswiki-api.jinninggm.workers.dev
+paths:
+  /v1/terms:
+    get:
+      summary: Search or list terms
+      description: Matches id, title, description (as summary), and tags.
+      parameters:
+        - in: query
+          name: query
+          schema: { type: string }
+        - in: query
+          name: tag
+          schema: { type: string }
+        - in: query
+          name: limit
+          schema: { type: integer, minimum: 1, maximum: 100, default: 20 }
+        - in: query
+          name: cursor
+          schema: { type: string }
+          description: Opaque pagination cursor.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/TermSummary"
+                  next_cursor:
+                    type: [string, "null"]
+  /v1/terms/{id}:
+    get:
+      summary: Get a term by id
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema: { type: string }
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Term"
+        "404":
+          description: Not found
+  /v1/tags:
+    get:
+      summary: List tags and counts
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tags:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        tag: { type: string }
+                        count: { type: integer }
+  /v1/changes:
+    get:
+      summary: Terms updated since timestamp
+      parameters:
+        - in: query
+          name: since
+          required: true
+          schema: { type: string, format: date-time }
+          description: ISO 8601 timestamp or YYYY-MM-DD.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id: { type: string }
+                        updated_at: { type: string }
+components:
+  schemas:
+    TermSummary:
+      type: object
+      required: [id, title, updated_at]
+      additionalProperties: false
+      properties:
+        id: { type: string }
+        title: { type: string }
+        summary: { type: string }
+        tags:
+          type: array
+          items: { type: string }
+        updated_at: { type: string }
+    Term:
+      type: object
+      description: Full term JSON as stored in database/json/<id>.json.
+      additionalProperties: true
