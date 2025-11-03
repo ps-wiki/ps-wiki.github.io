@@ -101,6 +101,9 @@ jobs:
             --out-dir _wiki \
             --pattern "*.json" \
             --fail-fast
+      - name: Build search index
+        run: |
+          python database/pyscripts/build_index.py
       - name: Build Jekyll site
         run: |
           export JEKYLL_ENV=production
