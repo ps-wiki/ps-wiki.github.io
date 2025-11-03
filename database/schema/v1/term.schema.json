@@ -155,7 +155,7 @@
           "uniqueItems": true
         },
         "page": { "type": ["string", "null"] },
-        "body_md": { "type": "string", "minLength": 1 },
+        "body_md": { "type": "string"},
         "figures": {
           "type": "array",
           "items": { "$ref": "#/$defs/Figure" }
