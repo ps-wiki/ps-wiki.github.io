@@ -1,0 +1,166 @@
+openapi: 3.1.0
+info:
+  title: PS-Wiki API
+  version: 1.0.0
+  description: Read-only API to browse PS-Wiki terms for use with ChatGPT Actions.
+  license:
+    name: CC BY-NC 4.0
+    url: https://creativecommons.org/licenses/by-nc/4.0/
+servers:
+  - url: https://pswiki-api.<YOUR_ACCOUNT>.workers.dev
+
+# Explicitly declare "no authentication required" for all operations
+security: []
+
+paths:
+  /v1/terms:
+    get:
+      operationId: listTerms
+      summary: Search or list terms
+      description: Matches id, title, description (as summary), and tags.
+      parameters:
+        - in: query
+          name: query
+          schema: { type: string }
+          description: Free-text query.
+        - in: query
+          name: tag
+          schema: { type: string }
+          description: Filter by exact tag (case-insensitive).
+        - in: query
+          name: limit
+          schema: { type: integer, minimum: 1, maximum: 100, default: 20 }
+        - in: query
+          name: cursor
+          schema: { type: string }
+          description: Opaque pagination cursor from a previous response.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/TermSummary"
+                  next_cursor:
+                    type: [string, "null"]
+        "400":
+          description: Bad request (invalid parameter)
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Error" }
+
+  /v1/terms/{id}:
+    get:
+      operationId: getTerm
+      summary: Get a term by id
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema: { type: string }
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Term"
+        "404":
+          description: Not found
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Error" }
+        "400":
+          description: Bad request (missing/invalid id)
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Error" }
+
+  /v1/tags:
+    get:
+      operationId: listTags
+      summary: List tags and counts
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tags:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        tag: { type: string }
+                        count: { type: integer }
+        "400":
+          description: Bad request
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Error" }
+
+  /v1/changes:
+    get:
+      operationId: listChanges
+      summary: Terms updated since timestamp
+      parameters:
+        - in: query
+          name: since
+          required: true
+          schema: { type: string, format: date-time }
+          description: ISO 8601 timestamp or date (YYYY-MM-DD).
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id: { type: string }
+                        updated_at: { type: string }
+        "400":
+          description: Bad request (missing/invalid `since`)
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Error" }
+
+components:
+  schemas:
+    TermSummary:
+      type: object
+      required: [id, title, updated_at]
+      additionalProperties: false
+      properties:
+        id: { type: string }
+        title: { type: string }
+        summary: { type: string }
+        tags:
+          type: array
+          items: { type: string }
+        updated_at: { type: string, description: "ISO date (YYYY-MM-DD)" }
+
+    Term:
+      type: object
+      description: Full term JSON as stored in database/json/<id>.json.
+      additionalProperties: true
+
+    Error:
+      type: object
+      additionalProperties: true
+      properties:
+        error: { type: string }
+        message: { type: string }
+        status: { type: integer }
