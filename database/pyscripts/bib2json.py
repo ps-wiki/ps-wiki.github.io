@@ -156,11 +156,13 @@ def main():
             print("\nAll entries valid!")
     
     # Write JSON output
+    all_entries = list(set(e['type'] for e in entries.values()))
+    sorted_entry_types = sorted(all_entries)
     output_data = {
         "metadata": {
             "total_entries": len(entries),
             "source_file": Path(args.input).name,
-            "entry_types": list(set(e['type'] for e in entries.values()))
+            "entry_types": sorted_entry_types
         },
         "entries": entries
     }

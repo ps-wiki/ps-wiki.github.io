@@ -3,12 +3,12 @@
     "total_entries": 103,
     "source_file": "papers.bib",
     "entry_types": [
+        "article",
         "book",
-        "online",
-        "misc",
         "inproceedings",
-        "techreport",
-        "article"
+        "misc",
+        "online",
+        "techreport"
     ]
 },
   "entries": {    "ibm2021what": {
