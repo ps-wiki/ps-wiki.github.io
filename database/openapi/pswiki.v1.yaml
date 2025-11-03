@@ -81,96 +81,6 @@ paths:
             application/json:
               schema: { $ref: "#/components/schemas/Error" }
 
-  /v1/terms/{id}/bib:
-    get:
-      operationId: getTermBibliography
-      summary: Get bibliography for a term
-      description: >
-        Returns the term's cited references in the requested format. By default,
-        only entries actually cited by the term (via `content.sections[*].source_keys`) are returned.
-      parameters:
-        - in: path
-          name: id
-          required: true
-          schema: { type: string }
-        - in: query
-          name: format
-          schema:
-            type: string
-            enum: [bibtex, csl-json, ris]
-          description: Output format (default: bibtex). Also negotiable via Accept header.
-        - in: query
-          name: scope
-          schema:
-            type: string
-            enum: [used, all]
-            default: used
-          description: used = only cited by this term; all = all references associated with the term.
-      responses:
-        "200":
-          description: OK
-          content:
-            application/x-bibtex:
-              schema:
-                type: string
-                description: Concatenated BibTeX entries
-            application/vnd.citationstyles.csl+json:
-              schema:
-                type: array
-                items:
-                  $ref: "#/components/schemas/CslItem"
-            application/x-research-info-systems:
-              schema:
-                type: string
-                description: RIS text
-        "404":
-          description: Term or references not found
-          content:
-            application/json:
-              schema: { $ref: "#/components/schemas/Error" }
-        "400":
-          description: Bad request (invalid format/scope)
-          content:
-            application/json:
-              schema: { $ref: "#/components/schemas/Error" }
-
-  /v1/terms/{id}/sources:
-    get:
-      operationId: getTermSources
-      summary: Get structured source metadata for a term
-      parameters:
-        - in: path
-          name: id
-          required: true
-          schema: { type: string }
-        - in: query
-          name: scope
-          schema:
-            type: string
-            enum: [used, all]
-            default: used
-      responses:
-        "200":
-          description: OK
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  items:
-                    type: array
-                    items: { $ref: "#/components/schemas/CslItem" }
-        "404":
-          description: Not found
-          content:
-            application/json:
-              schema: { $ref: "#/components/schemas/Error" }
-        "400":
-          description: Bad request
-          content:
-            application/json:
-              schema: { $ref: "#/components/schemas/Error" }
-
   /v1/tags:
     get:
       operationId: listTags
@@ -246,32 +156,6 @@ components:
       type: object
       description: Full term JSON as stored in database/json/<id>.json.
       additionalProperties: true
-
-    CslItem:
-      type: object
-      additionalProperties: true
-      properties:
-        id: { type: string, description: "Bib key (e.g., nerc2024ltra)" }
-        type: { type: string }
-        title: { type: string }
-        author:
-          type: array
-          items:
-            type: object
-            properties:
-              given: { type: string }
-              family: { type: string }
-        issued:
-          type: object
-          properties:
-            "date-parts":
-              type: array
-              items:
-                type: array
-                items: { type: integer }
-        URL: { type: string }
-        container-title: { type: string }
-        bibtex_raw: { type: string, description: "Original BibTeX text for this entry, if available." }
 
     Error:
       type: object
