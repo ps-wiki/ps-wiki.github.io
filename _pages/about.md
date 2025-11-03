@@ -55,13 +55,19 @@ No authentication is required — all endpoints are public and read-only.
 
 #### Example Usage
 
-List or search terms
+List terms
+
+```bash
+curl "https://pswiki-api.jinninggm.workers.dev/v1/terms?limit=5"
+```
+
+Search terms by keyword "stability"
 
 ```bash
 curl "https://pswiki-api.jinninggm.workers.dev/v1/terms?query=stability&limit=5"
 ```
 
-Retrieve a term by ID
+Get a term by ID
 
 ```bash
 curl "https://pswiki-api.jinninggm.workers.dev/v1/terms/stability"
@@ -71,6 +77,12 @@ List all tags
 
 ```bash
 curl "https://pswiki-api.jinninggm.workers.dev/v1/tags"
+```
+
+Filter terms by tag "stability"
+
+```bash
+curl "https://pswiki-api.jinninggm.workers.dev/v1/terms?tag=stability"
 ```
 
 List terms updated since a date
