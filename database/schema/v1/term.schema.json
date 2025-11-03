@@ -3,7 +3,7 @@
   "$id": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "title": "PS-Wiki Term",
   "description": "Schema for a single power-systems wiki term. Lenient and API-ready.",
-  "x-schema-version": "1.0.0",
+  "x-schema-version": "1.0.1",
   "x-changelog-url": "https://ps-wiki.github.io/schema/CHANGELOG.md",
   "type": "object",
   "additionalProperties": false,
