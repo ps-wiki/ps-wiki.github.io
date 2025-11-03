@@ -5,7 +5,7 @@
   "description": "A.k.a. Interconnection Study. Process for connecting new generation, transmission, and load facilities to the transmission system.",
   "language": "en",
   "tags": ["nyiso", "process"],
-  "related": ["interconnection", "transmission-interconnection-process"],
+  "related": ["interconnection", "transmission-interconnection-procedures"],
   "version": "1.0.1",
   "breaking": false,
   "dates": {
