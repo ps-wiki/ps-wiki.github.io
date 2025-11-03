@@ -1,15 +1,16 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "control-area",
   "title": "Control Area",
   "description": "A.k.a. Balancing Authority Area.",
   "language": "en",
   "tags": ["geography", "ferc"],
-  "related": ["balancing-authority-area", "region", "zone", "subregions", "balancing-authority-area", "reliability-coordinator-area"],
-  "version": "1.0.0",
+  "related": ["balancing-authority-area", "region", "zone", "subregions", "reliability-coordinator-area"],
+  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-06-22"
+    "last_modified": "2025-11-02"
   },
   "authors": [
     {

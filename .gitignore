@@ -17,3 +17,6 @@ __pycache__/
 
 # local test wiki markdown files
 _wikitest/
+
+# Cloudflare Worker build cache
+worker/.wrangler

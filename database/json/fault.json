@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "fault",
   "title": "Fault",
   "description": "An event such as a short circuit, a broken wire, or an intermittent connection.",

@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "voltage-dip",
   "title": "Voltage Dip",
   "description": "A.k.a. Voltage Sag. Short-duration decreases in RMS voltage",

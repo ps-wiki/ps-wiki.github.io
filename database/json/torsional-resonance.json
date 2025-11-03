@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "torsional-resonance",
   "title": "Torsional Resonance",
   "description": "The SSR due to torsional interactions between series compensated lines and turbine-generator mechanical shafts.",

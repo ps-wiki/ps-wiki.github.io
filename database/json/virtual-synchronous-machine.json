@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "virtual-synchronous-machine",
   "title": "Virtual Synchronous Machine",
   "description": "VSM. Equipment that includes a DC/AC converter controlled to mimic a conventional synchronous machine.",

@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "day-ahead-energy-market",
   "title": "Day Ahead Energy Market",
   "description": "Forward markets for electricity to be supplied the following day.",

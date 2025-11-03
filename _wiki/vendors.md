@@ -1,6 +1,6 @@
 ---
 title: Vendors
-description: Power system vendors
+description: Power system software vendors
 tags:
   - software
 related: []
@@ -11,7 +11,7 @@ date: 2025-03-15
 lastmod: 2025-06-20
 ---
 
-### 
+### Power System Software Vendors
 
 Some software vendors for the power engineering are listed below:
 

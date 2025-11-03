@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "security",
   "title": "Security",
   "description": "The degree of risk in a power system's ability to survive imminent disturbances.",

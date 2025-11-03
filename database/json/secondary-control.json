@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "secondary-control",
   "title": "Secondary Control",
   "description": "Balancing services deployed in the minutes time frame.",

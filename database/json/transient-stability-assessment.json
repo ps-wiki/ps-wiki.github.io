@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "transient-stability-assessment",
   "title": "Transient Stability Assessment",
   "description": "TSA. Monitor and determine transient stability of the system.",

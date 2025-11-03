@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "ancillary-services",
   "title": "Ancillary Services",
   "description": "Services necessary to support the transmission of electric power.",

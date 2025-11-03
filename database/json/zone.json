@@ -1,15 +1,16 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "zone",
   "title": "Zone",
-  "description": "",
+  "description": "Geographical concept.",
   "language": "en",
   "tags": ["geography", "system-operator", "pjm"],
   "related": ["region", "subregions", "control-area", "balancing-authority-area", "reliability-coordinator-area"],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-06-22"
+    "last_modified": "2025-11-02"
   },
   "authors": [
     {

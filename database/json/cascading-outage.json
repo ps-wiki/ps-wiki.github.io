@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "cascading-outage",
   "title": "Cascading Outage",
   "description": "A sequence of events in which an initial disturbance triggers dependent component outages.",

@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "resilience",
   "title": "Resilience",
   "description": "The ability to withstand and reduce the magnitude and/or duration of disruptive events.",

@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "critical-inertia",
   "title": "Critical Inertia",
   "description": "Minimum level of system inertia necessary to ensure deployment of frequency responsive reserves.",

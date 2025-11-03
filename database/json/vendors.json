@@ -1,15 +1,16 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "vendors",
   "title": "Vendors",
-  "description": "Power system vendors",
+  "description": "Power system software vendors",
   "language": "en",
   "tags": ["software"],
   "related": [],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-06-20"
+    "last_modified": "2025-11-02"
   },
   "authors": [
     {
@@ -21,8 +22,8 @@
     "sections": [
       {
         "order": 1,
-        "id": "section-1",
-        "title": "",
+        "id": "power-system-software-vendors",
+        "title": "Power System Software Vendors",
         "type": "note",
         "source_keys": [],
         "page": null,
