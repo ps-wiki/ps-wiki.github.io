@@ -94,17 +94,47 @@ jobs:
         run: |
           pip3 install --upgrade nbconvert
           pip3 install -r database/requirements.txt
-      - name: Convert JSON → Markdown
+      - name: Validate JSON terms ✅
+        run: |
+          python database/pyscripts/validate_terms.py \
+            --dir database/json \
+            --schema database/schema/v1/term.schema.json \
+            --filename-match
+      - name: Convert JSON → Markdown 📝
         run: |
           python database/pyscripts/json2md_all.py \
             --in-dir database/json \
             --out-dir _wiki \
             --pattern "*.json" \
             --fail-fast
-      - name: Build search index
+      - name: Build search index 🔍
         run: |
           python database/pyscripts/build_index.py
-      - name: Build Jekyll site
+      - name: Publish schema & API artifacts 📦
+        run: |
+          # Publish the schema (so $schema absolute URL resolves)
+          mkdir -p _site/schema/v1
+          cp database/schema/v1/term.schema.json _site/schema/v1/
+          if [ -f database/schema/CHANGELOG.md ]; then
+            mkdir -p _site/schema
+            cp database/schema/CHANGELOG.md _site/schema/
+          fi
+
+          # Publish API artifacts for the Worker
+          mkdir -p _site/api
+          cp database/build/index.json _site/api/
+          cp database/build/tags.json  _site/api/
+
+          # (Optional) If you maintain a static OpenAPI file too
+          if [ -f database/openapi/pswiki.v1.yaml ]; then
+            cp database/openapi/pswiki.v1.yaml _site/api/openapi.yaml
+          fi
+
+          # (Optional) Public copies of the source JSON terms for direct access
+          # (If you want the Worker to read from Pages instead of raw.githubusercontent.com)
+          mkdir -p _site/terms
+          cp database/json/*.json _site/terms/
+      - name: Build Jekyll site 🏗️
         run: |
           export JEKYLL_ENV=production
           bundle exec jekyll build
