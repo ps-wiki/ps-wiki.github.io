@@ -1,13 +1,16 @@
 openapi: 3.1.0
 info:
   title: PS-Wiki API
-  version: 1.0.0
-  description: Read-only API to browse PS-Wiki terms for use with ChatGPT Actions.
+  version: 1.0.1
+  description: Read-only API to browse PS-Wiki terms and bibliography entries.
   license:
     name: CC BY-NC 4.0
     url: https://creativecommons.org/licenses/by-nc/4.0/
 servers:
   - url: https://pswiki-api.jinninggm.workers.dev
+    description: Production server
+  - url: http://localhost:8787
+    description: Local development server
 
 # Explicitly declare "no authentication required" for all operations
 security: []
