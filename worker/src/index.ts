@@ -122,7 +122,7 @@ function text(s: string, status = 200): Response {
 const DEFAULT_OPENAPI = JSON.stringify({
   openapi: "3.1.0",
   info: { title: "PS-Wiki API", version: "1.0.0", description: "Read-only access to PS-Wiki terms and tags." },
-  servers: [{ url: "https://YOUR-WORKER.example/api" }],
+  servers: [{ url: "https://pswiki-api.jinninggm.workers.dev" }],
   paths: {
     "/v1/terms": {
       get: {
