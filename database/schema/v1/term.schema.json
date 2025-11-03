@@ -11,6 +11,7 @@
   "required": ["id", "title", "description", "language", "version", "breaking", "dates", "authors", "content"],
 
   "properties": {
+    "$schema": { "type": "string", "format": "uri" },
     "id": {
       "type": "string",
       "pattern": "^[a-z0-9]+(?:[a-z0-9-]*[a-z0-9])?$",
