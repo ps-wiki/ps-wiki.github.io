@@ -237,7 +237,7 @@ Following conventions should be observed when creating or editing term JSON file
 
 ### Python scripts dependencies
 
-Python dependencies are described in `./pswiki/database/requirements.txt`.
+Python dependencies are described in `database/requirements.txt`
 
 ## License
 
