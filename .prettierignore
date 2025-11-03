@@ -13,3 +13,4 @@ _scripts/search.liquid.js
 _wiki/
 database/schema/
 worker/
+database/build/
