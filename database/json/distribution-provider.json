@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "distribution-provider",
   "title": "Distribution Provider",
   "description": "Provides and operates the “wires” between the transmission system and the end-use customer.",

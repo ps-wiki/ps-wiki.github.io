@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "participation-factors",
   "title": "Participation Factors",
   "description": "One definition is about dispath and another is about small-signal stability.",

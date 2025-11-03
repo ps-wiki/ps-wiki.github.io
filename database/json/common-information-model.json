@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "common-information-model",
   "title": "Common Information Model",
   "description": "CIM. A set of open standards for representing power system components",

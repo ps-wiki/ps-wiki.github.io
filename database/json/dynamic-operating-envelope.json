@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "dynamic-operating-envelope",
   "title": "Dynamic Operating Envelope",
   "description": "DOE. Available capacity to import/export power without violating constraints.",

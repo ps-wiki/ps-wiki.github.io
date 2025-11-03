@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "ramp",
   "title": "Ramp",
   "description": "A.k.a. <u>Ramp Rate</u>. The rate at which the interchange schedule or generator output is attained.",

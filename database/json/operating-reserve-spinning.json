@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "operating-reserve-spinning",
   "title": "Operating Reserve – Spinning",
   "description": "Generation synchronized to the system and fully available to serve load within the Disturbance Recovery Period.",

@@ -4,14 +4,17 @@ All notable changes to the **term schema** are documented here.
 This file is published at <https://ps-wiki.github.io/schema/CHANGELOG.md>.
 
 The schema follows **Semantic Versioning**:
-- **MAJOR** – incompatible (breaking) changes to the JSON structure or required fields  
-- **MINOR** – backward-compatible additions or relaxed rules  
+
+- **MAJOR** – incompatible (breaking) changes to the JSON structure or required fields
+- **MINOR** – backward-compatible additions or relaxed rules
 - **PATCH** – corrections or clarifications that don’t change validation behavior
 
 ---
 
 ## [1.0.0] – 2025-11-02
+
 ### Added
+
 - Initial release of `term.schema.json` (v1).
 - Fields defined:
   - Top-level: `id`, `title`, `description`, `language`, `tags`, `related`, `aliases`,
@@ -26,6 +29,7 @@ The schema follows **Semantic Versioning**:
   - `"x-changelog-url": "https://ps-wiki.github.io/schema/CHANGELOG.md"`
 
 ### Notes
+
 - This version corresponds to **API v1** of the planned REST interface.
 - Term JSON examples validated: `stability`, `30-minute-reserve-service`.
 - No deprecated fields at this stage.
@@ -33,6 +37,8 @@ The schema follows **Semantic Versioning**:
 ---
 
 ## [Unreleased]
+
 ### Planned
+
 - Add schema for reference list entries (`reference.schema.json`).
 - Add schema for glossary categories / index pages.

@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "contingency-reserve",
   "title": "Contingency Reserve",
   "description": "Capacity deployed by the Balancing Authority to meet the Disturbance Control Standard.",

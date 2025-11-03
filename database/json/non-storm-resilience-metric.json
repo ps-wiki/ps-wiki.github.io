@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "non-storm-resilience-metric",
   "title": "Non-Storm Resilience Metric",
   "description": "A metric focuses on robustness and the ability to withstand events.",

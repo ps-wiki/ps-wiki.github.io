@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "severity-risk-index",
   "title": "Severity Risk Index",
   "description": "SRI. A daily metric that indicates performance of the BES.",

@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "synchronous-machine",
   "title": "Synchronous Machine",
   "description": "SM. An AC electrical machine operated with a constant electromagnetic field.",

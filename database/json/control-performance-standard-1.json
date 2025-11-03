@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "control-performance-standard-1",
   "title": "Control Performance Standard 1",
   "description": "CPS1. A standard that measures impact on frequency error.",

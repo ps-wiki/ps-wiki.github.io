@@ -8,17 +8,7 @@
   "type": "object",
   "additionalProperties": false,
 
-  "required": [
-    "id",
-    "title",
-    "description",
-    "language",
-    "version",
-    "breaking",
-    "dates",
-    "authors",
-    "content"
-  ],
+  "required": ["id", "title", "description", "language", "version", "breaking", "dates", "authors", "content"],
 
   "properties": {
     "id": {
@@ -86,7 +76,7 @@
       "additionalProperties": false,
       "required": ["created", "last_modified"],
       "properties": {
-        "created":       { "type": "string", "format": "date" },
+        "created": { "type": "string", "format": "date" },
         "last_modified": { "type": "string", "format": "date" },
         "first_published": { "type": ["string", "null"], "format": "date" }
       }
@@ -119,7 +109,7 @@
       "required": ["name"],
       "properties": {
         "name": { "type": "string", "minLength": 1 },
-        "url":  { "type": ["string", "null"], "format": "uri" }
+        "url": { "type": ["string", "null"], "format": "uri" }
       }
     },
 
@@ -128,10 +118,10 @@
       "additionalProperties": false,
       "required": ["path"],
       "properties": {
-        "path":        { "type": "string", "minLength": 1 },
-        "caption_md":  { "type": ["string", "null"] },
-        "alt":         { "type": ["string", "null"], "description": "Alt text (recommended, optional for now)." },
-        "zoomable":    { "type": ["boolean", "null"], "default": false },
+        "path": { "type": "string", "minLength": 1 },
+        "caption_md": { "type": ["string", "null"] },
+        "alt": { "type": ["string", "null"], "description": "Alt text (recommended, optional for now)." },
+        "zoomable": { "type": ["boolean", "null"], "default": false },
         "source_keys": {
           "type": "array",
           "items": { "type": "string" },
@@ -155,16 +145,7 @@
         "type": {
           "type": "string",
           "description": "Extend as needed; these cover your current usage.",
-          "enum": [
-            "definition",
-            "note",
-            "example",
-            "figure-block",
-            "equation",
-            "derivation",
-            "table",
-            "reference"
-          ]
+          "enum": ["definition", "note", "example", "figure-block", "equation", "derivation", "table", "reference"]
         },
         "source_keys": {
           "type": "array",
@@ -172,7 +153,7 @@
           "items": { "type": "string" },
           "uniqueItems": true
         },
-        "page":    { "type": ["string", "null"] },
+        "page": { "type": ["string", "null"] },
         "body_md": { "type": "string", "minLength": 1 },
         "figures": {
           "type": "array",
