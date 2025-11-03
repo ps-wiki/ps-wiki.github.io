@@ -26,6 +26,52 @@ A custom [wiki layout](./_layouts/wiki.liquid) adapted from the `distill` layout
 - **Direct Editing**: A link to edit the term directly on GitHub
 - **Community Engagement**: Integrated Giscus comments
 
+## REST API
+
+The PS-Wiki REST API provides read-only access to term data in JSON format.
+It is deployed via [Cloudflare Workers](./worker) and documented using the OpenAPI 3.1.0 specification at <https://pswiki-api.jinninggm.workers.dev/openapi.json>
+
+Base URL: <https://pswiki-api.jinninggm.workers.dev>
+
+No authentication is required — all endpoints are public and read-only.
+
+### Endpoints Overview
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/v1/terms` | Search or list PS-Wiki terms |
+| GET | `/v1/terms/{id}` | Retrieve a specific term by ID |
+| GET | `/v1/tags` | List all tags and their term counts |
+| GET | `/v1/changes` | List terms updated since a given timestamp |
+
+### Example Usage
+
+1. List or search terms
+```bash
+curl "https://pswiki-api.jinninggm.workers.dev/v1/terms?query=stability&limit=5"
+```
+
+2. Retrieve a term by ID
+```bash
+curl "https://pswiki-api.jinninggm.workers.dev/v1/terms/stability"
+```
+
+3. List all tags
+```bash
+curl "https://pswiki-api.jinninggm.workers.dev/v1/tags"
+```
+
+4. List terms updated since a date
+```bash
+curl "https://pswiki-api.jinninggm.workers.dev/v1/changes?since=2025-07-01"
+```
+
+### Developer Notes
+
+- All timestamps use ISO 8601 format (YYYY-MM-DD or full date-time).
+- Pagination uses opaque cursors; pass `next_cursor` to retrieve the next page.
+- The `/v1/terms` and `/v1/terms/{id}` endpoints are suitable for integration with external AI clients.
+
 ## Database
 
 The folder `database` contains the source data and scripts for generating the wiki:
