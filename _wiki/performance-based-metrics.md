@@ -9,8 +9,8 @@ tags:
   - ieee
 related:
   - resilience
-  - non-storm-resilience-metrics
-  - storm-resilience-metrics
+  - non-storm-resilience-metric
+  - storm-resilience-metric
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
