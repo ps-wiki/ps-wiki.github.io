@@ -5,7 +5,7 @@
   "description": "Quantitative approaches for assessing system resilience.",
   "language": "en",
   "tags": ["resilience", "metrics", "ieee"],
-  "related": ["resilience", "non-storm-resilience-metrics", "storm-resilience-metrics"],
+  "related": ["resilience", "non-storm-resilience-metric", "storm-resilience-metric"],
   "aliases": ["Consequence-Based Metrics"],
   "version": "1.0.1",
   "breaking": false,
