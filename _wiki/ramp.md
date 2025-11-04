@@ -1,6 +1,8 @@
 ---
 title: Ramp
-description: A.k.a. <u>Ramp Rate</u>. The rate at which the interchange schedule or generator output is attained.
+aliases:
+  - Ramp Rate
+description: The rate at which the interchange schedule or generator output is attained.
 tags:
   - ramp
   - generator
@@ -8,8 +10,10 @@ related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
+version: 1.0.1
 date: 2025-03-15
-lastmod: 2025-06-18
+lastmod: 2025-11-03
+generated: 2025-11-03
 ---
 
 ### Definition by NERC

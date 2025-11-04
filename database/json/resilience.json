@@ -5,12 +5,12 @@
   "description": "The ability to withstand and reduce the magnitude and/or duration of disruptive events.",
   "language": "en",
   "tags": ["resilience", "metrics", "ferc", "nerc"],
-  "related": [],
-  "version": "1.0.0",
+  "related": ["performance-based-metrics", "storm-resilience-metric", "non-storm-resilience-metric"],
+  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-06-19"
+    "last_modified": "2025-11-03"
   },
   "authors": [
     {

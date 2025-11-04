@@ -1,16 +1,22 @@
 ---
 title: Spinning Reserve
-description: A.k.a. Synchronized Reserve. Synchronized generation and ready to serve additional demand.
+aliases:
+  - Synchronized Reserve
+description: Synchronized generation and ready to serve additional demand.
 tags:
   - reserve
   - system-operator
   - pjm
-related: []
+related:
+  - reserve
+  - non-spinning-reserve
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
+version: 1.0.1
 date: 2025-03-15
 lastmod: 2025-06-22
+generated: 2025-11-03
 ---
 
 ### Definition by NERC

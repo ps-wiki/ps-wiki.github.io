@@ -67,8 +67,28 @@
       {% endif %}
 
       <d-article>
+        {% if page.aliases and page.aliases != empty %}
+          <div class="wiki-aliases-container d-flex align-items-center mb-2">
+            <div class="d-flex flex-wrap align-items-baseline">
+              <p><strong>Also known as:</strong>&nbsp;&nbsp;</p>
+              {% for a in page.aliases %}
+                <u>{{ a }}</u>
+                {%- if forloop.last == false %}&nbsp;&nbsp;{% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+
         {% if page.lastmod %}
           <p><strong>Last Updated:</strong>&nbsp;&nbsp;{{ page.lastmod | date: '%B %d, %Y' }}</p>
+        {% endif %}
+
+        {% if page.version %}
+          <p><strong>Version:</strong>&nbsp;&nbsp;{{ page.version }}</p>
+        {% endif %}
+
+        {% if page.generated %}
+          <p><strong>Generated:</strong>&nbsp;&nbsp;{{ page.generated | date: '%B %d, %Y' }}</p>
         {% endif %}
 
         {% if page.tags and page.tags != empty %}
