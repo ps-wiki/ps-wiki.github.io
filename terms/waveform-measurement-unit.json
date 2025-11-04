@@ -2,15 +2,16 @@
   "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "waveform-measurement-unit",
   "title": "Waveform Measurement Unit",
-  "description": "WMU, a.k.a. synchro-waveform measurement units (SMUs). Sensor device to record synchro-waveforms.",
+  "description": "WMU. Sensor device to record synchro-waveforms.",
   "language": "en",
   "tags": ["measurement", "ieee", "ieee-standard"],
   "related": [],
-  "version": "1.0.0",
+  "aliases": ["Synchro-Waveform Measurement Unit (SMU)"],
+  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-06-20"
+    "last_modified": "2025-11-03"
   },
   "authors": [
     {

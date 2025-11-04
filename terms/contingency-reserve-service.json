@@ -2,15 +2,16 @@
   "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "contingency-reserve-service",
   "title": "Contingency Reserve Service",
-  "description": "A.k.a. Primary Reserve. Can be satisfied in 10 minutes or less.",
+  "description": "Reserve that can be satisfied in 10 minutes or less.",
   "language": "en",
   "tags": ["reserve", "system-operator", "contingency", "pjm"],
   "related": ["contingency-reserve"],
-  "version": "1.0.0",
+  "aliases": ["Primary Reserve"],
+  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-06-22"
+    "last_modified": "2025-11-03"
   },
   "authors": [
     {

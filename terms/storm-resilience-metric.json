@@ -5,12 +5,12 @@
   "description": "Focused on the speed of system recovery during storm events.",
   "language": "en",
   "tags": ["resilience", "metrics", "ieee"],
-  "related": [],
-  "version": "1.0.0",
+  "related": ["resilience", "performance-based-metrics", "non-storm-resilience-metric"],
+  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-06-20"
+    "last_modified": "2025-11-03"
   },
   "authors": [
     {

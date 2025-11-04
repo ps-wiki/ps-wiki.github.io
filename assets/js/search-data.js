@@ -146,7 +146,7 @@ ninja.data = [{
               window.location.href = "/wiki/contingency-list/";
             },},{id: "wiki-contingency-reserve-service",
           title: 'Contingency Reserve Service',
-          description: "A.k.a. Primary Reserve. Can be satisfied in 10 minutes or less.",
+          description: "Reserve that can be satisfied in 10 minutes or less.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/contingency-reserve-service/";
             },},{id: "wiki-contingency-reserve",
@@ -161,7 +161,7 @@ ninja.data = [{
               window.location.href = "/wiki/contingency/";
             },},{id: "wiki-control-area",
           title: 'Control Area',
-          description: "A.k.a. Balancing Authority Area.",
+          description: "Geographical concept.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/control-area/";
             },},{id: "wiki-control-performance-standard-1",
@@ -226,7 +226,7 @@ ninja.data = [{
               window.location.href = "/wiki/disturbance/";
             },},{id: "wiki-dynamic-line-ratings",
           title: 'Dynamic Line Ratings',
-          description: "DLR. A grid enhancing technology (GET) that provides real-time ratings of transmission lines based on current weather conditions.",
+          description: "A grid enhancing technology (GET) that provides real-time ratings of transmission lines based on current weather conditions.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/dynamic-line-ratings/";
             },},{id: "wiki-economic-dispatch",
@@ -471,7 +471,7 @@ ninja.data = [{
               window.location.href = "/wiki/participation-factors/";
             },},{id: "wiki-performance-based-metrics",
           title: 'Performance-Based Metrics',
-          description: "A.k.a. consequence-based metrics. Quantitative approaches for assessing system resilience.",
+          description: "Quantitative approaches for assessing system resilience.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/performance-based-metrics/";
             },},{id: "wiki-power-transfer-distribution-factor",
@@ -491,7 +491,7 @@ ninja.data = [{
               window.location.href = "/wiki/primary-frequency-response/";
             },},{id: "wiki-ramp",
           title: 'Ramp',
-          description: "A.k.a. Ramp Rate. The rate at which the interchange schedule or generator output is attained.",
+          description: "The rate at which the interchange schedule or generator output is attained.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/ramp/";
             },},{id: "wiki-real-time-energy-market",
@@ -501,7 +501,7 @@ ninja.data = [{
               window.location.href = "/wiki/real-time-energy-market/";
             },},{id: "wiki-real-time-reliability-model",
           title: 'Real-Time Reliability Model',
-          description: "A.k.a. EMS model. A computer representation of the power system facilities.",
+          description: "A computer representation of the power system facilities.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/real-time-reliability-model/";
             },},{id: "wiki-region",
@@ -611,7 +611,7 @@ ninja.data = [{
               window.location.href = "/wiki/small-signal-stability/";
             },},{id: "wiki-spinning-reserve",
           title: 'Spinning Reserve',
-          description: "A.k.a. Synchronized Reserve. Synchronized generation and ready to serve additional demand.",
+          description: "Synchronized generation and ready to serve additional demand.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/spinning-reserve/";
             },},{id: "wiki-spot-market",
@@ -731,7 +731,7 @@ ninja.data = [{
               window.location.href = "/wiki/virtual-synchronous-machine/";
             },},{id: "wiki-voltage-dip",
           title: 'Voltage Dip',
-          description: "A.k.a. Voltage Sag. Short-duration decreases in RMS voltage",
+          description: "Short-duration decreases in RMS voltage",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/voltage-dip/";
             },},{id: "wiki-voltage-limits",
@@ -751,7 +751,7 @@ ninja.data = [{
               window.location.href = "/wiki/voltage-stability/";
             },},{id: "wiki-waveform-measurement-unit",
           title: 'Waveform Measurement Unit',
-          description: "WMU, a.k.a. synchro-waveform measurement units (SMUs). Sensor device to record synchro-waveforms.",
+          description: "WMU. Sensor device to record synchro-waveforms.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/waveform-measurement-unit/";
             },},{id: "wiki-wholesale-markets",
@@ -781,7 +781,7 @@ ninja.data = [{
               window.location.href = "/wiki/common-format-for-event-data-exchange/";
             },},{id: "wiki-common-format-for-exchange-of-solved-load-flow-data",
           title: 'Common Format for Exchange of Solved Load Flow Data',
-          description: "A.k.a. common data format (CDF)",
+          description: "Data format",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/common-format-for-exchange-of-solved-load-flow-data/";
             },},{id: "wiki-common-grid-model-exchange-standard",
@@ -816,7 +816,7 @@ ninja.data = [{
               window.location.href = "/wiki/large-load/";
             },},{id: "wiki-interconnection-process",
           title: 'Interconnection Process',
-          description: "A.k.a. Interconnection Study. Process for connecting new generation, transmission, and load facilities to the transmission system.",
+          description: "Process for connecting new generation, transmission, and load facilities to the transmission system.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/interconnection-process/";
             },},{

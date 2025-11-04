@@ -2,15 +2,16 @@
   "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "real-time-reliability-model",
   "title": "Real-Time Reliability Model",
-  "description": "A.k.a. <u>EMS model</u>. A computer representation of the power system facilities.",
+  "description": "A computer representation of the power system facilities.",
   "language": "en",
   "tags": ["reliability", "transmission", "system-operator", "pjm"],
   "related": [],
-  "version": "1.0.0",
+  "aliases": ["EMS Model"],
+  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-06-22"
+    "last_modified": "2025-11-03"
   },
   "authors": [
     {
