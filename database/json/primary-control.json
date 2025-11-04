@@ -13,6 +13,7 @@
     "automatic-generation-control",
     "frequency-stability"
   ],
+  "aliases": ["Frequency Response"],
   "version": "1.0.0",
   "breaking": false,
   "dates": {
@@ -34,7 +35,7 @@
         "type": "definition",
         "source_keys": ["nerc2021balancing"],
         "page": null,
-        "body_md": "> More commonly known as [**Frequency Response**](/wiki/frequnecy-response/).\n> Frequency Response occurs within the first few seconds following a change in system frequency (disturbance) to stabilize the Interconnection.\n"
+        "body_md": "> More commonly known as **Frequency Response**.\n> Frequency Response occurs within the first few seconds following a change in system frequency (disturbance) to stabilize the Interconnection.\n"
       }
     ]
   }

@@ -5,12 +5,12 @@
   "description": "Unconnected to the system but capable of serving demand within a specified time.",
   "language": "en",
   "tags": ["reserve", "nerc", "generation"],
-  "related": [],
-  "version": "1.0.0",
+  "related": ["reserve", "spinning-reserve"],
+  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-06-20"
+    "last_modified": "2025-11-03"
   },
   "authors": [
     {

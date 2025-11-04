@@ -2,15 +2,16 @@
   "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "voltage-dip",
   "title": "Voltage Dip",
-  "description": "A.k.a. Voltage Sag. Short-duration decreases in RMS voltage",
+  "description": "Short-duration decreases in RMS voltage",
   "language": "en",
   "tags": ["power-quality", "article"],
   "related": [],
-  "version": "1.0.0",
+  "aliases": ["Voltage Sag"],
+  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-06-19"
+    "last_modified": "2025-11-03"
   },
   "authors": [
     {
