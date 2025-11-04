@@ -91,6 +91,7 @@ def render_front_matter(term: Dict[str, Any]) -> str:
     description = term.get("description", "")
     tags = term.get("tags", [])
     related = term.get("related", [])
+    aliases = term.get("aliases", [])
     authors = term.get("authors", [])
     dates = term.get("dates", {})
     created = dates.get("created", "")
@@ -100,6 +101,8 @@ def render_front_matter(term: Dict[str, Any]) -> str:
 
     fm = ["---"]
     fm.append(f"title: {title}")
+    if aliases:
+        fm.append(yaml_list_block("aliases", aliases).rstrip())
     fm.append(f"description: {description}")
     fm.append(yaml_list_block("tags", tags).rstrip())
     fm.append(yaml_list_block("related", related).rstrip())
