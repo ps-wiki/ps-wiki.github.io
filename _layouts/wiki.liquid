@@ -71,6 +71,14 @@
           <p><strong>Last Updated:</strong>&nbsp;&nbsp;{{ page.lastmod | date: '%B %d, %Y' }}</p>
         {% endif %}
 
+        {% if page.version %}
+          <p><strong>Version:</strong>&nbsp;&nbsp;{{ page.version }}</p>
+        {% endif %}
+
+        {% if page.generated %}
+          <p><strong>Generated:</strong>&nbsp;&nbsp;{{ page.generated | date: '%B %d, %Y' }}</p>
+        {% endif %}
+
         {% if page.tags and page.tags != empty %}
           <div class="wiki-tags-container d-flex align-items-center">
             <div class="d-flex flex-wrap align-items-baseline">

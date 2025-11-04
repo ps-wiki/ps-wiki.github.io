@@ -95,6 +95,8 @@ def render_front_matter(term: Dict[str, Any]) -> str:
     dates = term.get("dates", {})
     created = dates.get("created", "")
     lastmod = dates.get("last_modified", "")
+    version = term.get("version", "")
+    generated = datetime.now().strftime("%Y-%m-%d")
 
     fm = ["---"]
     fm.append(f"title: {title}")
@@ -102,8 +104,10 @@ def render_front_matter(term: Dict[str, Any]) -> str:
     fm.append(yaml_list_block("tags", tags).rstrip())
     fm.append(yaml_list_block("related", related).rstrip())
     fm.append(yaml_authors_block(authors).rstrip())
+    fm.append(f"version: {version}")
     fm.append(f"date: {created}")
     fm.append(f"lastmod: {lastmod}")
+    fm.append(f"generated: {generated}")
     fm.append("---")
     return "\n".join(fm) + "\n\n"
 
