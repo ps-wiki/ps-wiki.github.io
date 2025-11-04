@@ -1,6 +1,8 @@
 ---
 title: Interconnection Process
-description: A.k.a. Interconnection Study. Process for connecting new generation, transmission, and load facilities to the transmission system.
+aliases:
+  - Interconnection Study
+description: Process for connecting new generation, transmission, and load facilities to the transmission system.
 tags:
   - nyiso
   - process
@@ -10,8 +12,10 @@ related:
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io/
+version: 1.0.2
 date: 2025-11-01
-lastmod: 2025-11-02
+lastmod: 2025-11-03
+generated: 2025-11-03
 ---
 
 ### Definition by NYISO

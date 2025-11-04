@@ -1,16 +1,21 @@
 ---
 title: Common Format for Exchange of Solved Load Flow Data
-description: A.k.a. common data format (CDF)
+aliases:
+  - Common data format (CDF)
+description: Data format
 tags:
   - data-format
   - ieee-standard
   - standard
-related: []
+related:
+  - common-information-model
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
+version: 1.0.1
 date: 2025-06-17
-lastmod: 2025-06-20
+lastmod: 2025-11-03
+generated: 2025-11-03
 ---
 
 ### Definition in an IEEE Standard

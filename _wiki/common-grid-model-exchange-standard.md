@@ -10,8 +10,10 @@ related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
+version: 1.0.0
 date: 2025-06-17
 lastmod: 2025-06-20
+generated: 2025-11-03
 ---
 
 ### Definition in an IEC Standard

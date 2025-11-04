@@ -1,6 +1,8 @@
 ---
 title: Contingency Reserve Service
-description: A.k.a. Primary Reserve. Can be satisfied in 10 minutes or less.
+aliases:
+  - Primary Reserve
+description: Reserve that can be satisfied in 10 minutes or less.
 tags:
   - reserve
   - system-operator
@@ -11,8 +13,10 @@ related:
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
+version: 1.0.1
 date: 2025-03-15
-lastmod: 2025-06-22
+lastmod: 2025-11-03
+generated: 2025-11-03
 ---
 
 ### Definition by PJM

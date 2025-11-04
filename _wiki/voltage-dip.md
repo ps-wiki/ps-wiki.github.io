@@ -1,6 +1,8 @@
 ---
 title: Voltage Dip
-description: A.k.a. Voltage Sag. Short-duration decreases in RMS voltage
+aliases:
+  - Voltage Sag
+description: Short-duration decreases in RMS voltage
 tags:
   - power-quality
   - article
@@ -8,8 +10,10 @@ related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
+version: 1.0.1
 date: 2025-03-15
-lastmod: 2025-06-19
+lastmod: 2025-11-03
+generated: 2025-11-03
 ---
 
 ### Definition in an Article

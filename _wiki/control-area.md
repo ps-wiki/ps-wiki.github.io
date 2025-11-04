@@ -1,6 +1,6 @@
 ---
 title: Control Area
-description: A.k.a. Balancing Authority Area.
+description: Geographical concept.
 tags:
   - geography
   - ferc
@@ -13,8 +13,10 @@ related:
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
+version: 1.0.2
 date: 2025-03-15
-lastmod: 2025-11-02
+lastmod: 2025-11-03
+generated: 2025-11-03
 ---
 
 ### Definition by FERC

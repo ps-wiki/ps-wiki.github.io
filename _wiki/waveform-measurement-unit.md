@@ -1,6 +1,8 @@
 ---
 title: Waveform Measurement Unit
-description: WMU, a.k.a. synchro-waveform measurement units (SMUs). Sensor device to record synchro-waveforms.
+aliases:
+  - Synchro-Waveform Measurement Unit (SMU)
+description: WMU. Sensor device to record synchro-waveforms.
 tags:
   - measurement
   - ieee
@@ -9,8 +11,10 @@ related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
+version: 1.0.1
 date: 2025-03-15
-lastmod: 2025-06-20
+lastmod: 2025-11-03
+generated: 2025-11-03
 ---
 
 ### Definition in an IEEE Standard
