@@ -62,6 +62,12 @@ Convert a single JSON file to a Markdown file:
 python database/pyscripts/json2md.py --input database/json/stability.json --output _wiki/stability.md
 ```
 
+Format a single MD file:
+
+```bash
+python database/pyscripts/md_format.py -i _wiki/automatic-generation-control.md
+```
+
 ## License
 
 This project is licensed under the [CC-BY-NC 4.0](./LICENSE).
