@@ -13,6 +13,12 @@ There are two ways to add a new term to the wiki: using a Markdown file or a JSO
 
 Use [stability.md](https://github.com/ps-wiki/ps-wiki.github.io/blob/main/_wiki/stability.md) as a reference for creating new term entries.
 
+It is good to format the Markdown file using the provided script:
+
+```bash
+python database/pyscripts/md_format.py -i _wiki/stability.md
+```
+
 After creating the Markdown file, convert it back to JSON format using the provided script:
 
 ```bash
