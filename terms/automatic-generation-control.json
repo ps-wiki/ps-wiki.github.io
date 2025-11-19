@@ -44,7 +44,7 @@
         "type": "definition",
         "source_keys": ["sun2021frequency"],
         "page": "p32",
-        "body_md": "> Adding supplementary control on load reference set-points of selected generators:\n> − Controlling prime-mover power to match load variations\n> − As system load is continually changing, it is necessary to change the output of generators automatically\n\n> Primary objective: LFC\n> – Regulating frequency to the specified nominal value, e.g. 60Hz, and maintaining the interchange power between control areas at the scheduled values by adjusting the output of selected generators\n\n> Secondary objective: Generation Dispatch\n> – Distributing the required change in generation among generators to minimize operation costs.\n\n> During large disturbances and emergencies, AGC is bypassed and other emergency controls are applied.\n"
+        "body_md": "> Adding supplementary control on load reference set-points of selected generators:\n>\n> − Controlling prime-mover power to match load variations\n>\n> − As system load is continually changing, it is necessary to change the output of generators automatically\n\n> Primary objective: LFC\n> – Regulating frequency to the specified nominal value, e.g. 60Hz, and maintaining the interchange power between control areas at the scheduled values by adjusting the output of selected generators\n\n> Secondary objective: Generation Dispatch\n> – Distributing the required change in generation among generators to minimize operation costs.\n\n> During large disturbances and emergencies, AGC is bypassed and other emergency controls are applied.\n"
       }
     ]
   }
