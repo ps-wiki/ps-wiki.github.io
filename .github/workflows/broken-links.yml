@@ -65,5 +65,6 @@ jobs:
             --exclude-path _pages/publications.md
             --exclude-path _pages/wiki.md
             --exclude-path _pages/wiki-tag.md
+            --exclude-path worker/README.md
             --exclude-path database/schema/CHANGELOG.md
             --verbose --no-progress './**/*.md' './**/*.html'
