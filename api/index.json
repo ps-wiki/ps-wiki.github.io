@@ -63,7 +63,7 @@
         "ferc",
         "nerc"
       ],
-      "updated_at": "2025-06-22"
+      "updated_at": "2025-11-19"
     },
     {
       "id": "balancing-authority-area",
@@ -1676,5 +1676,5 @@
       "updated_at": "2025-11-02"
     }
   ],
-  "generated_at": "2025-11-06T20:12:56Z"
+  "generated_at": "2025-11-19T08:28:20Z"
 }
