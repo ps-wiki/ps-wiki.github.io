@@ -38,7 +38,9 @@ Source: <d-cite key="ferc2020glossary"></d-cite>
 Source: <d-cite key="sun2021frequency"></d-cite> p32
 
 > Adding supplementary control on load reference set-points of selected generators:
+>
 > − Controlling prime-mover power to match load variations
+>
 > − As system load is continually changing, it is necessary to change the output of generators automatically
 
 > Primary objective: LFC
