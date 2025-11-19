@@ -282,6 +282,7 @@ def build_json_from_md(md_path: Path, override_id: Optional[str] = None) -> Dict
     front, body = split_front_matter(text)
     title = (front.get("title") or "").strip()
     description = (front.get("description") or "").strip()
+    version = (front.get("version") or "1.0.0").strip()
     tags = ensure_list(front.get("tags"))
     related = ensure_list(front.get("related"))
     authors = ensure_list(front.get("authors"))
@@ -306,7 +307,7 @@ def build_json_from_md(md_path: Path, override_id: Optional[str] = None) -> Dict
         "language": "en",
         "tags": tags,
         "related": related,
-        "version": "1.0.0",
+        "version": version,
         "breaking": False,
         "dates": {"created": created_str, "last_modified": lastmod_str},
         "authors": authors,
