@@ -65,6 +65,7 @@ lastmod: 2025-11-19
 
 Figures should use this format:
 
+{% raw %}
 ```html
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -77,6 +78,8 @@ Figures should use this format:
 
 <br>
 ```
+{% endraw %}
+
 
 **Figure Guidelines:**
 - Store figures in `assets/img/pswiki/` directory
