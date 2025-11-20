@@ -1,6 +1,6 @@
 ---
 title: Autonomous
-description:
+description: A dynamic system's property.
 tags:
   - control-theory
 related:
@@ -10,6 +10,8 @@ authors:
     url: https://jinningwang.github.io
 version: 1.0.0
 date: 2025-11-19
+lastmod: 2025-11-19
+generated: 2025-11-19
 ---
 
 ### Definition in a Book
