@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-Add $schema field to all JSON files in ./pswiki/json/
+Add $schema field to all JSON files in database/json
 if it doesn't already exist.
 
 Usage:
-    python add_schema_reference.py
+    python database/pyscripts/add_schema_reference.py
 """
 
 import json
