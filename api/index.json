@@ -516,6 +516,18 @@
       "updated_at": "2025-06-22"
     },
     {
+      "id": "emt-modeling-guideline",
+      "title": "EMT Modeling Guideline",
+      "summary": "ISO/RTO/TSO guidelines on EMT modeling.",
+      "tags": [
+        "transmission",
+        "system-operator",
+        "EMT",
+        "nyiso"
+      ],
+      "updated_at": "2025-11-19"
+    },
+    {
       "id": "equal-area-criterion",
       "title": "Equal Area Criterion",
       "summary": "To determine the maximum permissible increase in mechanical power input for system stability.",
@@ -1685,5 +1697,5 @@
       "updated_at": "2025-11-02"
     }
   ],
-  "generated_at": "2025-11-20T00:30:41Z"
+  "generated_at": "2025-11-20T23:47:12Z"
 }

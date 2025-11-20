@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-Add $schema field to all JSON files in ./pswiki/json/
+Add $schema field to all JSON files in database/json
 if it doesn't already exist.
 
 Usage:
-    python add_schema_reference.py
+    python database/pyscripts/add_schema_reference.py
 """
 
 import json
@@ -13,6 +13,7 @@ from pathlib import Path
 # Adjust if needed
 BASE_DIR = Path(__file__).resolve().parent.parent / "json"
 SCHEMA_URL = "https://ps-wiki.github.io/schema/v1/term.schema.json"
+
 
 def main():
     updated = 0
@@ -40,7 +41,10 @@ def main():
         except Exception as e:
             print(f"[!] Failed to write {file.name}: {e}")
 
-    print(f"✔ Added $schema to {updated} file(s). Skipped {skipped} already containing it.")
+    print(
+        f"✔ Added $schema to {updated} file(s). Skipped {skipped} already containing it."
+    )
+
 
 if __name__ == "__main__":
     main()

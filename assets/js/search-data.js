@@ -824,6 +824,11 @@ ninja.data = [{
           description: "A dynamic system&#39;s property.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/autonomous/";
+            },},{id: "wiki-emt-modeling-guideline",
+          title: 'EMT Modeling Guideline',
+          description: "ISO/RTO/TSO guidelines on EMT modeling.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/emt-modeling-guideline/";
             },},{
         id: 'social-email',
         title: 'email',
