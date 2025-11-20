@@ -66,22 +66,21 @@ lastmod: 2025-11-19
 Figures should use this format:
 
 {% raw %}
+
 ```html
 <div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid
-        path="/assets/img/pswiki/example-figure.png"
-        zoomable=true %}
-        Caption with <d-cite key="source-key"></d-cite>
-    </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid path="/assets/img/pswiki/example-figure.png" zoomable=true %} Caption with <d-cite key="source-key"></d-cite>
+  </div>
 </div>
 
-<br>
+<br />
 ```
+
 {% endraw %}
 
-
 **Figure Guidelines:**
+
 - Store figures in `assets/img/pswiki/` directory
 - Use relative paths starting with `/assets/img/pswiki/`
 - Include concise captions in Markdown format
@@ -215,4 +214,3 @@ python database/pyscripts/add_schema_reference.py
 During website deployment, JSON files are automatically converted back to Markdown for rendering. The JSON files serve as the canonical source of truth for the data.
 
 **Note:** There may be minor formatting differences between your original Markdown and the deployed version due to the conversion process. This is normal and ensures consistency across all terms.
-
