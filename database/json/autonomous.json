@@ -3,12 +3,8 @@
   "title": "Autonomous",
   "description": "A dynamic system's property.",
   "language": "en",
-  "tags": [
-    "control-theory"
-  ],
-  "related": [
-    "stability"
-  ],
+  "tags": ["control-theory"],
+  "related": ["stability"],
   "version": "1.0.0",
   "breaking": false,
   "dates": {
@@ -28,9 +24,7 @@
         "id": "definition-in-a-book",
         "title": "Definition in a Book",
         "type": "definition",
-        "source_keys": [
-          "slotine1990appliednonlinear"
-        ],
+        "source_keys": ["slotine1990appliednonlinear"],
         "page": "p42",
         "body_md": "> A nonlinear system $ \\dot{x} = f(x, t) $ is said to be <u>autonomous</u> if $ f $ does **not** depend explicitly on time, i.e., if the state equation can be written as $\\dot{x} = f(x)$.\n>\n> Otherwise, the system is called <u>non-autonomous</u>.\n\n> Obviously, linear time-invariant (LTI) systems are autonomous, and linear time-varying (LTV) systems are non-autonomous. The second-order systems studied in Chapter 2 are all autonomous.\n> \n> Strictly speaking, all physical systems are non-autonomous, because none of their dynamic characteristics is strictly time-invariant. The concept of an autonomous system is an idealized notion, like the concept of a linear system. In practice, however, system properties often change very slowly, and we can neglect their time variation without causing any practically meaningful error.\n> \n> It is important to note that for control systems, the above definition is made on the closed-loop dynamics. Since a control system is composed of a controller and a plant (including sensor and actuator dynamics), the non-autonomous nature of a control system may be due to time-variation either in the plant or in the control law. Specifically, a time-invariant plant with dynamics $ \\dot{x} = f(x, u) $ may lead to a non-autonomous closed-loop system if a controller dependent on time $ t $ is chosen, i.e., if $ u = g(x, t) $. For example, the closed-loop system of the simple plant $ \\dot{x} = -x + u $ can be nonlinear and non-autonomous by choosing $ u $ to be nonlinear and time-varying (e.g., $ u = -x^2 \\sin t $). In fact, adaptive controllers for linear time-invariant plants usually make the closed-loop control systems nonlinear and non-autonomous.\n> \n> The fundamental difference between autonomous and non-autonomous systems lies in the fact that the state trajectory of an autonomous system is independent of the initial time, while the trajectory of a non-autonomous system generally is not. As will be seen in the next chapter, this difference requires us to consider the initial time explicitly when defining stability concepts for non-autonomous systems, and it makes the analysis more difficult than that of autonomous systems.\n> \n> It is well known that the analysis of linear time-invariant systems is much easier than that of linear time-varying systems. The same is true for nonlinear systems. Generally speaking, autonomous systems have relatively simpler properties and their analysis is much easier. For this reason, in the remainder of this chapter, we will concentrate on the analysis of autonomous systems, represented by (3.2). Extensions of the concepts and results to non-autonomous systems will be studied in Chapter 4.\n"
       }
