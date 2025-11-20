@@ -8,8 +8,8 @@ Optional:
   - Ensure filename (without .json) == `id`
 
 Usage:
-  python ./database/pyscripts/validate_terms.py
-  python ./database/pyscripts/validate_terms.py --dir ./database/json --schema ./database/schema/v1/term.schema.json
+  python database/pyscripts/validate_terms.py
+  python database/pyscripts/validate_terms.py --dir database/json --schema database/schema/v1/term.schema.json
 """
 
 import argparse
