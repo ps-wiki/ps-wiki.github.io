@@ -819,6 +819,11 @@ ninja.data = [{
           description: "Process for connecting new generation, transmission, and load facilities to the transmission system.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/interconnection-process/";
+            },},{id: "wiki-autonomous",
+          title: 'Autonomous',
+          description: "A dynamic system&#39;s property.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/autonomous/";
             },},{
         id: 'social-email',
         title: 'email',

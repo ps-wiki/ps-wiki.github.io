@@ -66,6 +66,15 @@
       "updated_at": "2025-11-19"
     },
     {
+      "id": "autonomous",
+      "title": "Autonomous",
+      "summary": "A dynamic system's property.",
+      "tags": [
+        "control-theory"
+      ],
+      "updated_at": "2025-11-19"
+    },
+    {
       "id": "balancing-authority-area",
       "title": "Balancing Authority Area",
       "summary": "The collection of generation, transmission, and loads within the metered boundaries of the Balancing Authority.",
@@ -1676,5 +1685,5 @@
       "updated_at": "2025-11-02"
     }
   ],
-  "generated_at": "2025-11-19T08:45:49Z"
+  "generated_at": "2025-11-20T00:30:41Z"
 }
