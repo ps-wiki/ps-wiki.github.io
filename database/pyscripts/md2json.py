@@ -524,7 +524,8 @@ def main():
         epilog="Examples:\n"
         "  Single file:  %(prog)s -i _wiki/stability.md -o database/json/stability.json\n"
         "  By term ID:   %(prog)s --terms stability frequency-control\n"
-        "  With force:   %(prog)s --terms stability --force",
+        "  All files:    %(prog)s --all\n"
+        "  With force:   %(prog)s --all --force",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
 
@@ -540,6 +541,11 @@ def main():
     # Multi-term mode arguments
     ap.add_argument(
         "--terms", nargs="+", help="Process specific terms by ID (multi-term mode)."
+    )
+    ap.add_argument(
+        "--all",
+        action="store_true",
+        help="Process all Markdown files in wiki directory.",
     )
 
     # Directory arguments (used in multi-term mode)
@@ -565,11 +571,11 @@ def main():
 
     # Validate argument combinations
     single_file_mode = args.input or args.output
-    multi_term_mode = args.terms
+    multi_term_mode = args.terms or args.all
 
     if single_file_mode and multi_term_mode:
         print(
-            "ERROR: Cannot use both single-file mode (-i/-o) and multi-term mode (--terms).",
+            "ERROR: Cannot use both single-file mode (-i/-o) and multi-term mode (--terms/--all).",
             file=sys.stderr,
         )
         sys.exit(1)
@@ -583,7 +589,7 @@ def main():
 
     if not single_file_mode and not multi_term_mode:
         print(
-            "ERROR: Must specify either -i/-o (single-file mode) or --terms (multi-term mode).",
+            "ERROR: Must specify either -i/-o (single-file mode) or --terms/--all (multi-term mode).",
             file=sys.stderr,
         )
         ap.print_help()
@@ -623,12 +629,24 @@ def main():
 
     args.json_dir.mkdir(parents=True, exist_ok=True)
 
+    # Get list of terms to process
+    if args.all:
+        # Process all .md files in wiki directory
+        md_files = sorted(args.wiki_dir.glob("*.md"))
+        term_ids = [f.stem for f in md_files]
+        if not term_ids:
+            print(f"No Markdown files found in {args.wiki_dir}", file=sys.stderr)
+            sys.exit(0)
+    else:
+        # Process specific terms
+        term_ids = args.terms
+
     total = 0
     written = 0
     skipped = 0
     errors = 0
 
-    for term_id in args.terms:
+    for term_id in term_ids:
         total += 1
         md_path = args.wiki_dir / f"{term_id}.md"
         out_path = args.json_dir / f"{term_id}.json"
