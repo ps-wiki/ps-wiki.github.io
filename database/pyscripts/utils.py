@@ -20,6 +20,12 @@ from typing import Any, Dict, List, Optional
 # Schema URL constant
 SCHEMA_URL = "https://ps-wiki.github.io/schema/v1/term.schema.json"
 
+# Directory constants
+DEFAULT_WIKI_DIR = Path("_wiki")
+DEFAULT_JSON_DIR = Path("database/json")
+DEFAULT_SCHEMA_PATH = Path("database/schema/v1/term.schema.json")
+DEFAULT_BUILD_DIR = Path("database/build")
+
 
 # ---------- JSON I/O ----------
 
