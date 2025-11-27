@@ -8,7 +8,7 @@ Rules:
 - Front matter: title, description, tags, related, authors{name,url}, date (created), lastmod.
 - Sections sorted by `order` ascending (missing order go last).
 - tags/related/authors may be missing or empty -> emit [].
-- dates.created / dates.last_modified may be missing or empty -> derive 
+- dates.created / dates.last_modified may be missing or empty -> derive
 - Each section:
   - Figures (if any) appear BEFORE text, each figure block followed by a literal <br>.
   - Then a "Source: <d-cite key="..."></d-cite>" line; append page if provided.
@@ -26,8 +26,17 @@ from pathlib import Path
 from typing import List, Dict, Any
 from datetime import datetime
 
+# Import shared constants and utilities from utils module
+from utils import (
+    DEFAULT_WIKI_DIR,
+    DEFAULT_JSON_DIR,
+    iso_date_from_ts,
+    derive_file_dates,
+)
+
 
 # ---------- YAML helpers (very small, purpose-built) ----------
+
 
 def yaml_list_block(key: str, items: List[str], indent: int = 0) -> str:
     """Render a simple YAML list block: key:\n  - item1\n  - item2\n"""
@@ -59,31 +68,8 @@ def yaml_authors_block(authors: List[Dict[str, Any]], indent: int = 0) -> str:
     return "\n".join(lines) + "\n"
 
 
-# ---------- file timestamp helpers ----------
-
-def iso_date_from_ts(ts: float) -> str:
-    """Return YYYY-MM-DD string from a POSIX timestamp (local time)."""
-    return datetime.fromtimestamp(ts).date().isoformat()
-
-
-def derive_file_dates(json_path: Path) -> Dict[str, str]:
-    """
-    Derive dates from the JSON file:
-      - created: st_birthtime if available (macOS), else st_ctime
-      - last_modified: st_mtime
-    """
-    st = json_path.stat()
-    created_ts = getattr(st, "st_birthtime", None)
-    if created_ts is None:  # Linux typically lacks birthtime
-        created_ts = st.st_ctime
-    lastmod_ts = st.st_mtime
-    return {
-        "created": iso_date_from_ts(created_ts),
-        "last_modified": iso_date_from_ts(lastmod_ts),
-    }
-
-
 # ---------- front matter ----------
+
 
 def render_front_matter(term: Dict[str, Any]) -> str:
     """Build the Jekyll front matter from the JSON term."""
@@ -117,6 +103,7 @@ def render_front_matter(term: Dict[str, Any]) -> str:
 
 # ---------- Section/figure rendering ----------
 
+
 def render_figure_block(fig: Dict[str, Any]) -> str:
     """Render one figure include block; add a literal <br> after it."""
     path = fig.get("path", "")
@@ -135,9 +122,9 @@ def render_figure_block(fig: Dict[str, Any]) -> str:
         lines.append(f"        {caption}")
     lines.append("    </div>")
     lines.append("</div>")
-    lines.append("")   # blank line
+    lines.append("")  # blank line
     lines.append("<br>")
-    lines.append("")   # blank line
+    lines.append("")  # blank line
     return "\n".join(lines)
 
 
@@ -187,7 +174,11 @@ def convert_term_to_md(term: Dict[str, Any]) -> str:
     # Sort: by order (missing order -> end), tie-break by title
     sections_sorted = sorted(
         sections,
-        key=lambda s: (s.get("order") is None, s.get("order", 10**9), s.get("title", "")),
+        key=lambda s: (
+            s.get("order") is None,
+            s.get("order", 10**9),
+            s.get("title", ""),
+        ),
     )
 
     for sec in sections_sorted:
@@ -198,57 +189,211 @@ def convert_term_to_md(term: Dict[str, Any]) -> str:
 
 # ---------- CLI ----------
 
+
 def main():
     parser = argparse.ArgumentParser(
-        description="Convert a term JSON (lean schema) into a Jekyll Markdown file."
+        description="Convert term JSON (lean schema) into Jekyll Markdown file(s).",
+        epilog="Examples:\n"
+        "  Single file:  %(prog)s -i database/json/stability.json -o _wiki/stability.md\n"
+        "  By term ID:   %(prog)s --terms stability frequency-control\n"
+        "  All files:    %(prog)s --all\n"
+        "  With force:   %(prog)s --all --force",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    parser.add_argument("-i", "--input", required=True, help="Path to the term JSON file.")
-    parser.add_argument("-o", "--output", required=True, help="Output Markdown file path.")
+
+    # Single-file mode arguments
     parser.add_argument(
-        "--overwrite",
-        action="store_true",
-        help="Rewrite output even if it already exists (force consistency).",
+        "-i", "--input", help="Path to the term JSON file (single-file mode)."
     )
+    parser.add_argument(
+        "-o", "--output", help="Output Markdown file path (single-file mode)."
+    )
+
+    # Multi-term mode arguments
+    parser.add_argument(
+        "--terms", nargs="+", help="Process specific terms by ID (multi-term mode)."
+    )
+    parser.add_argument(
+        "--all", action="store_true", help="Process all JSON files in json directory."
+    )
+
+    # Directory arguments (used in multi-term mode)
+    parser.add_argument(
+        "--wiki-dir",
+        type=Path,
+        default=DEFAULT_WIKI_DIR,
+        help="Output directory for Markdown files (default: _wiki).",
+    )
+    parser.add_argument(
+        "--json-dir",
+        type=Path,
+        default=DEFAULT_JSON_DIR,
+        help="Directory with JSON files (default: database/json).",
+    )
+
+    # Behavior flags
+    parser.add_argument(
+        "--force", action="store_true", help="Force write even if content is identical."
+    )
+
     args = parser.parse_args()
 
-    in_path = Path(args.input)
-    out_path = Path(args.output)
+    # Validate argument combinations
+    single_file_mode = args.input or args.output
+    multi_term_mode = args.terms or args.all
 
-    if not in_path.exists():
-        print(f"ERROR: JSON file not found: {in_path}", file=sys.stderr)
+    if single_file_mode and multi_term_mode:
+        print(
+            "ERROR: Cannot use both single-file mode (-i/-o) and multi-term mode (--terms/--all).",
+            file=sys.stderr,
+        )
         sys.exit(1)
-    # --- Skip if exists and not overwrite ---
-    if out_path.exists() and not args.overwrite:
-        print(f"Skipping {out_path} (exists, use --overwrite to force).")
+
+    if single_file_mode and not (args.input and args.output):
+        print(
+            "ERROR: Both -i/--input and -o/--output are required for single-file mode.",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
+    if not single_file_mode and not multi_term_mode:
+        print(
+            "ERROR: Must specify either -i/-o (single-file mode) or --terms/--all (multi-term mode).",
+            file=sys.stderr,
+        )
+        parser.print_help()
+        sys.exit(1)
+
+    # Single-file mode
+    if single_file_mode:
+        in_path = Path(args.input)
+        out_path = Path(args.output)
+
+        if not in_path.exists():
+            print(f"ERROR: JSON file not found: {in_path}", file=sys.stderr)
+            sys.exit(1)
+
+        try:
+            term = json.loads(in_path.read_text(encoding="utf-8"))
+        except Exception as e:
+            print(f"ERROR: Failed to read/parse JSON: {e}", file=sys.stderr)
+            sys.exit(1)
+
+        # Normalize optional fields
+        if not term.get("tags"):
+            term["tags"] = []
+        if not term.get("related"):
+            term["related"] = []
+        if not term.get("authors"):
+            term["authors"] = []
+
+        # Dates may be missing/empty -> derive from file timestamps
+        file_dates = derive_file_dates(in_path)
+        dates = term.get("dates", {}) or {}
+        created = dates.get("created") or file_dates["created"]
+        lastmod = dates.get("last_modified") or file_dates["last_modified"]
+        term["dates"] = {"created": created, "last_modified": lastmod}
+
+        md = convert_term_to_md(term)
+
+        # Check if content differs (unless --force)
+        if not args.force and out_path.exists():
+            try:
+                old_md = out_path.read_text(encoding="utf-8")
+                if old_md == md:
+                    print(f"SKIP   {in_path.name} (content identical)")
+                    return
+            except Exception:
+                pass  # If we can't read, just write
+
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(md, encoding="utf-8")
+        print(f"WROTE  {out_path}")
         return
 
-    try:
-        term = json.loads(in_path.read_text(encoding="utf-8"))
-    except Exception as e:
-        print(f"ERROR: Failed to read/parse JSON: {e}", file=sys.stderr)
+    # Multi-term mode
+    if not args.json_dir.exists():
+        print(f"ERROR: JSON directory not found: {args.json_dir}", file=sys.stderr)
         sys.exit(1)
 
-    # ---- normalize optional fields ----
-    # tags/related/authors may be missing or None -> default to []
-    if not term.get("tags"):
-        term["tags"] = []
-    if not term.get("related"):
-        term["related"] = []
-    if not term.get("authors"):
-        term["authors"] = []
+    args.wiki_dir.mkdir(parents=True, exist_ok=True)
 
-    # dates may be missing/empty -> derive from file timestamps
-    file_dates = derive_file_dates(in_path)
-    dates = term.get("dates", {}) or {}
-    created = dates.get("created") or file_dates["created"]
-    lastmod = dates.get("last_modified") or file_dates["last_modified"]
-    term["dates"] = {"created": created, "last_modified": lastmod}
+    # Get list of terms to process
+    if args.all:
+        # Process all .json files in json directory
+        json_files = sorted(args.json_dir.glob("*.json"))
+        term_ids = [f.stem for f in json_files]
+        if not term_ids:
+            print(f"No JSON files found in {args.json_dir}", file=sys.stderr)
+            sys.exit(0)
+    else:
+        # Process specific terms
+        term_ids = args.terms
 
-    md = convert_term_to_md(term)
+    total = 0
+    written = 0
+    skipped = 0
+    errors = 0
 
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(md, encoding="utf-8")
-    print(f"Wrote: {out_path}")
+    for term_id in term_ids:
+        total += 1
+        in_path = args.json_dir / f"{term_id}.json"
+        out_path = args.wiki_dir / f"{term_id}.md"
+
+        if not in_path.exists():
+            print(f"ERROR  {term_id}: JSON file not found: {in_path}", file=sys.stderr)
+            errors += 1
+            continue
+
+        try:
+            term = json.loads(in_path.read_text(encoding="utf-8"))
+
+            # Normalize optional fields
+            if not term.get("tags"):
+                term["tags"] = []
+            if not term.get("related"):
+                term["related"] = []
+            if not term.get("authors"):
+                term["authors"] = []
+
+            # Dates may be missing/empty -> derive from file timestamps
+            file_dates = derive_file_dates(in_path)
+            dates = term.get("dates", {}) or {}
+            created = dates.get("created") or file_dates["created"]
+            lastmod = dates.get("last_modified") or file_dates["last_modified"]
+            term["dates"] = {"created": created, "last_modified": lastmod}
+
+            md = convert_term_to_md(term)
+
+            # Check if content differs (unless --force)
+            if not args.force and out_path.exists():
+                try:
+                    old_md = out_path.read_text(encoding="utf-8")
+                    if old_md == md:
+                        print(
+                            f"SKIP   {term_id}.json -> {term_id}.md (content identical)"
+                        )
+                        skipped += 1
+                        continue
+                except Exception:
+                    pass  # If we can't read, just write
+
+            out_path.write_text(md, encoding="utf-8")
+            print(f"WROTE  {term_id}.json -> {term_id}.md")
+            written += 1
+        except Exception as e:
+            print(f"ERROR  {term_id}: {e}", file=sys.stderr)
+            errors += 1
+
+    # Print summary for multi-term mode
+    print(f"\nSummary:")
+    print(f"  Total terms : {total}")
+    print(f"  Written     : {written}")
+    print(f"  Skipped     : {skipped}")
+    print(f"  Errors      : {errors}")
+
+    if errors > 0:
+        sys.exit(1)
 
 
 if __name__ == "__main__":

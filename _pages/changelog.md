@@ -13,6 +13,14 @@ This page records major changes in this wiki.
 
 ## 2025
 
+### 11-26
+
+- Improve pyscript support
+
+### 11-03
+
+- Add REST API for term search
+
 ### 11-01
 
 - Add JSON based database, now the term is mainly stored in JSON files

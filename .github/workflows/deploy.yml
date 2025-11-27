@@ -98,20 +98,21 @@ jobs:
           pip3 install -r database/requirements.txt
       - name: Validate JSON terms ✅
         run: |
-          python database/pyscripts/validate_terms.py \
+          python database/pyscripts/validate.py \
             --dir database/json \
             --schema database/schema/v1/term.schema.json \
             --filename-match
       - name: Convert JSON → Markdown 📝
         run: |
-          python database/pyscripts/json2md_all.py \
-            --in-dir database/json \
-            --out-dir _wiki \
-            --pattern "*.json" \
-            --fail-fast
+          python database/pyscripts/json2md.py --all \
+            --json-dir database/json \
+            --wiki-dir _wiki \
+            --force
       - name: Build search index 🔍
         run: |
-          python database/pyscripts/build_index.py
+          python database/pyscripts/process.py --index-only \
+            --json-dir database/json \
+            --build-dir database/build
       - name: Build Jekyll site 🏗️
         run: |
           export JEKYLL_ENV=production

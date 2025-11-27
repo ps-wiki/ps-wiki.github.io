@@ -12,7 +12,7 @@ authors:
 version: 1.0.0
 date: 2025-06-17
 lastmod: 2025-06-20
-generated: 2025-11-03
+generated: 2025-11-26
 ---
 
 ### Definition by an IEEE Working Group

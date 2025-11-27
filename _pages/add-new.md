@@ -7,7 +7,7 @@ nav: false
 horizontal: false
 ---
 
-The PS-Wiki uses **Markdown files as the editing interface** and **JSON files for storage**. You should always edit Markdown files; the conversion to JSON happens automatically.
+The PS-Wiki uses **Markdown files as the editing interface** and **JSON files for storage**. You should always edit Markdown files; the conversion to JSON is handled by the processing script.
 
 # Quick Start
 
@@ -17,7 +17,7 @@ The PS-Wiki uses **Markdown files as the editing interface** and **JSON files fo
 2. **Edit the content** following the conventions below
 3. **Run the processing script**:
    ```bash
-   python database/pyscripts/process_all_terms.py
+   python database/pyscripts/process.py --terms <term-id>
    ```
 4. **Commit both files**: `_wiki/<term-id>.md` and `database/json/<term-id>.json`
 
@@ -26,7 +26,7 @@ The PS-Wiki uses **Markdown files as the editing interface** and **JSON files fo
 1. **Edit the Markdown file** in `_wiki/<term-id>.md`
 2. **Run the processing script**:
    ```bash
-   python database/pyscripts/process_all_terms.py
+   python database/pyscripts/process.py --terms <term-id>
    ```
 3. **Commit the updated files**
 
@@ -97,25 +97,86 @@ Source: <d-cite key="citation-key"></d-cite> p42
 
 The citation keys must correspond to entries in `assets/bibliography/papers.bib`.
 
-# Processing Script Options
+# Processing Scripts
 
-The `process_all_terms.py` script provides several options:
+The PS-Wiki provides several scripts for managing terms:
+
+## Main Processing Script
+
+The `process.py` script runs the complete pipeline (format, convert, validate, build index):
 
 ```bash
-# Process all terms (recommended)
-python database/pyscripts/process_all_terms.py
+# Process all terms
+python database/pyscripts/process.py
 
-# Process only specific terms
-python database/pyscripts/process_all_terms.py --only stability frequency-control
+# Process specific terms by ID
+python database/pyscripts/process.py --terms stability frequency-control
+
+# Build index files only (skip term processing)
+python database/pyscripts/process.py --index-only
+
+# Skip validation for faster processing
+python database/pyscripts/process.py --no-validate
 
 # Dry-run mode (see what would be done)
-python database/pyscripts/process_all_terms.py --dry-run
+python database/pyscripts/process.py --dry-run --verbose
+```
 
-# Verbose output
-python database/pyscripts/process_all_terms.py --verbose
+## Individual Conversion Scripts
 
-# Skip validation (not recommended)
-python database/pyscripts/process_all_terms.py --no-validate
+For more granular control, use these scripts:
+
+### Markdown to JSON
+
+```bash
+# Convert all Markdown files to JSON
+python database/pyscripts/md2json.py --all
+
+# Convert specific terms
+python database/pyscripts/md2json.py --terms stability frequency-control
+
+# Convert single file
+python database/pyscripts/md2json.py -i _wiki/stability.md -o database/json/stability.json
+```
+
+### JSON to Markdown
+
+```bash
+# Convert all JSON files to Markdown
+python database/pyscripts/json2md.py --all
+
+# Convert specific terms
+python database/pyscripts/json2md.py --terms stability frequency-control
+
+# Convert single file
+python database/pyscripts/json2md.py -i database/json/stability.json -o _wiki/stability.md
+```
+
+### Format Markdown Files
+
+Normalize Markdown formatting via MD → JSON → MD roundtrip:
+
+```bash
+# Format all files
+python database/pyscripts/format.py --all
+
+# Format specific terms
+python database/pyscripts/format.py --terms stability frequency-control
+
+# Format single file
+python database/pyscripts/format.py -i _wiki/stability.md
+```
+
+### Validate Terms
+
+Validate JSON files against the schema:
+
+```bash
+# Validate all files
+python database/pyscripts/validate.py
+
+# Validate specific terms
+python database/pyscripts/validate.py --terms stability frequency-control
 ```
 
 # Advanced: Working with JSON Directly
@@ -167,17 +228,13 @@ Each term is stored as `database/json/<term-id>.json` with this structure:
 }
 ```
 
-## Regenerating Markdown from JSON
+## Field Preservation
 
-If you need to regenerate Markdown files from JSON (e.g., after a schema migration):
+The conversion scripts automatically preserve important fields:
 
-```bash
-# Regenerate all Markdown files
-python database/pyscripts/json2md_all.py --in-dir database/json --out-dir _wiki --overwrite
-
-# Regenerate a single file
-python database/pyscripts/json2md.py --input database/json/stability.json --output _wiki/stability.md --overwrite
-```
+- `$schema` - Always added/preserved
+- `aliases` - Preserved from existing JSON
+- Field order - Maintained to minimize git diffs
 
 # Troubleshooting
 
@@ -191,23 +248,33 @@ If you encounter validation errors:
 4. Verify figure paths are correct
 5. Check that related term IDs exist
 
-## Formatting Issues
-
-To format a Markdown file:
+Run validation on specific terms to debug:
 
 ```bash
-python database/pyscripts/md_format.py -i _wiki/<term-id>.md
+python database/pyscripts/validate.py --terms <term-id>
+```
+
+## Formatting Issues
+
+To format a Markdown file and normalize its structure:
+
+```bash
+# Format single file
+python database/pyscripts/format.py -i _wiki/<term-id>.md
+
+# Format all files
+python database/pyscripts/format.py --all
 ```
 
 This performs a roundtrip conversion (MD → JSON → MD) to normalize formatting.
 
-## Schema Reference Missing
+## Conversion Invariance
 
-The processing script automatically adds the `$schema` field to JSON files. If needed manually:
+The scripts ensure **conversion invariance**: running MD → JSON → MD → JSON produces identical results. This guarantees:
 
-```bash
-python database/pyscripts/add_schema_reference.py
-```
+- No data loss during conversions
+- Consistent formatting
+- Minimal git diffs
 
 # Deployment
 

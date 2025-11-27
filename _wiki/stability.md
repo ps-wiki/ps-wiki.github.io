@@ -17,7 +17,7 @@ authors:
 version: 1.0.0
 date: 2025-03-15
 lastmod: 2025-11-01
-generated: 2025-11-03
+generated: 2025-11-26
 ---
 
 ### Revised Definition in an Article by a Task Force
@@ -27,7 +27,7 @@ generated: 2025-11-03
         {% include figure.liquid
         path="/assets/img/pswiki/power-system-time-scales.png"
         zoomable=true %}
-                Fig. 1. Power system times scales. (from <d-cite key="hatziargyriou2020stabilityreport"></d-cite>)
+        Fig. 1. Power system times scales. (from <d-cite key="hatziargyriou2020stabilityreport"></d-cite>)
     </div>
 </div>
 
@@ -38,16 +38,13 @@ generated: 2025-11-03
         {% include figure.liquid
         path="/assets/img/pswiki/classification-of-power-system-stability.png"
         zoomable=true %}
-                Fig. 4. Classification of power system stability (from <d-cite key="hatziargyriou2020stabilityreport"></d-cite>)
+        Fig. 4. Classification of power system stability (from <d-cite key="hatziargyriou2020stabilityreport"></d-cite>)
     </div>
 </div>
 
 <br>
 
 Source: <d-cite key="hatziargyriou2021stability"></d-cite>
-
-<br>
-
 
 > Stability is the ability of an electric power system, for a given initial operating condition, to regain a state of operating equilibrium after being subjected to a physical disturbance, with most system variables bounded so that practically the entire system remains intact.
 

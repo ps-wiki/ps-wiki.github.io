@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Unified workflow script for processing all PS-Wiki terms.
+Unified workflow script for processing PS-Wiki terms.
 
 This script provides a complete pipeline for:
 1. Formatting Markdown files (MD → JSON → MD roundtrip)
@@ -11,75 +11,79 @@ This script provides a complete pipeline for:
 4. Validating against JSON schema
 5. Building index files for API
 
+Processing Philosophy:
+- Format & Convert: Always run (keeps files in sync)
+- Validate: Optional (checking only, use --no-validate to skip)
+- Index: Always run (or use --index-only to build just the index)
+
 Usage:
-    # Process all terms (full pipeline)
-    python database/pyscripts/process_all_terms.py
+    # Process all terms (default - full pipeline)
+    python database/pyscripts/process.py
+
+    # Process specific terms by ID
+    python database/pyscripts/process.py --terms stability frequency-control
+
+    # Build index files only (skip term processing)
+    python database/pyscripts/process.py --index-only
+
+    # Skip validation for faster processing
+    python database/pyscripts/process.py --no-validate
 
     # Dry-run mode (show what would be done)
-    python database/pyscripts/process_all_terms.py --dry-run
+    python database/pyscripts/process.py --dry-run
 
     # Verbose output
-    python database/pyscripts/process_all_terms.py --verbose
-
-    # Process only specific terms
-    python database/pyscripts/process_all_terms.py --only stability frequency-control
-
-    # Skip certain steps
-    python database/pyscripts/process_all_terms.py --no-validate --no-index
+    python database/pyscripts/process.py --verbose
 """
 
 import argparse
 import sys
 from pathlib import Path
-from typing import List, Set
+from typing import List
+from collections import Counter
+from datetime import datetime
 
-# Import from existing scripts
-try:
-    from md2json import build_json_from_md
-    from json2md import convert_term_to_md
-    from utils import (
-        load_term_json,
-        write_json,
-        write_if_changed,
-        validate_term_schema,
-        ensure_schema_reference,
-        ProgressReporter,
-        Colors,
-    )
-except ImportError as e:
-    print(f"ERROR: Failed to import required modules: {e}", file=sys.stderr)
-    print(
-        "Ensure md2json.py, json2md.py, and utils.py are in the same directory.",
-        file=sys.stderr,
-    )
-    sys.exit(1)
-
-
-# ---------- Configuration ----------
-
-DEFAULT_WIKI_DIR = Path("_wiki")
-DEFAULT_JSON_DIR = Path("database/json")
-DEFAULT_SCHEMA_PATH = Path("database/schema/v1/term.schema.json")
-DEFAULT_BUILD_DIR = Path("database/build")
+# Import from existing scripts and shared utilities
+from md2json import build_json_from_md
+from json2md import convert_term_to_md
+from utils import (
+    DEFAULT_WIKI_DIR,
+    DEFAULT_JSON_DIR,
+    DEFAULT_SCHEMA_PATH,
+    DEFAULT_BUILD_DIR,
+    load_json,
+    load_term_json,
+    write_json,
+    write_if_changed,
+    validate_term_schema,
+    ensure_schema_reference,
+    ProgressReporter,
+    Colors,
+)
 
 
 # ---------- Pipeline Steps ----------
 
 
-def format_markdown(md_path: Path, dry_run: bool = False) -> bool:
+def format_markdown(md_path: Path, json_dir: Path, dry_run: bool = False) -> bool:
     """
     Format a Markdown file via MD → JSON → MD roundtrip.
 
     Args:
         md_path: Path to Markdown file
+        json_dir: Directory for JSON files (for field preservation)
         dry_run: If True, don't actually write files
 
     Returns:
         True if successful, False otherwise
     """
     try:
-        # Convert to JSON (in memory)
-        term_json = build_json_from_md(md_path, override_id=None)
+        # Determine corresponding JSON path for field preservation
+        term_id = md_path.stem
+        json_path = json_dir / f"{term_id}.json"
+
+        # Convert to JSON (in memory, with field preservation)
+        term_json = build_json_from_md(md_path, override_id=None, json_path=json_path)
 
         # Normalize fields
         term_json.setdefault("tags", [])
@@ -92,8 +96,7 @@ def format_markdown(md_path: Path, dry_run: bool = False) -> bool:
 
         # Write if changed (unless dry-run)
         if not dry_run:
-            changed = write_if_changed(md_path, formatted_md)
-            return True
+            write_if_changed(md_path, formatted_md)
         return True
     except Exception as e:
         print(Colors.error(f"  Format failed: {e}"), file=sys.stderr)
@@ -113,9 +116,8 @@ def convert_to_json(md_path: Path, json_dir: Path, dry_run: bool = False) -> boo
         True if successful, False otherwise
     """
     try:
-        term_json = build_json_from_md(md_path, override_id=None)
-        term_id = term_json.get("id", md_path.stem)
-        json_path = json_dir / f"{term_id}.json"
+        json_path = json_dir / f"{md_path.stem}.json"
+        term_json = build_json_from_md(md_path, override_id=None, json_path=json_path)
 
         if not dry_run:
             write_json(json_path, term_json)
@@ -183,9 +185,6 @@ def build_index_files(json_dir: Path, build_dir: Path, dry_run: bool = False) ->
         True if successful, False otherwise
     """
     try:
-        from collections import Counter
-        from datetime import datetime
-
         items = []
         tags_counter = Counter()
 
@@ -263,7 +262,7 @@ def process_term(
 
     # Step 1: Format Markdown
     if not skip_format:
-        if not format_markdown(md_path, dry_run):
+        if not format_markdown(md_path, json_dir, dry_run):
             result["success"] = False
             result["errors"].append("Formatting failed")
             return result
@@ -294,8 +293,29 @@ def process_term(
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Process all PS-Wiki terms through the complete pipeline."
+        description="Process PS-Wiki terms through the complete pipeline.",
+        epilog="Examples:\n"
+        "  All terms:        %(prog)s\n"
+        "  Specific terms:   %(prog)s --terms stability frequency-control\n"
+        "  Index only:       %(prog)s --index-only\n"
+        "  Skip validation:  %(prog)s --no-validate\n"
+        "  Dry run:          %(prog)s --dry-run --verbose",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
     )
+
+    # Term selection arguments
+    parser.add_argument(
+        "--terms",
+        nargs="+",
+        help="Process specific terms by ID",
+    )
+    parser.add_argument(
+        "--all",
+        action="store_true",
+        help="Explicitly process all terms (default behavior)",
+    )
+
+    # Directory arguments
     parser.add_argument(
         "--wiki-dir",
         type=Path,
@@ -320,10 +340,12 @@ def main():
         default=DEFAULT_BUILD_DIR,
         help=f"Output directory for index files (default: {DEFAULT_BUILD_DIR})",
     )
+
+    # Behavior flags
     parser.add_argument(
-        "--only",
-        nargs="+",
-        help="Process only specific terms (by ID)",
+        "--index-only",
+        action="store_true",
+        help="Only build index files (skip term processing)",
     )
     parser.add_argument(
         "--dry-run",
@@ -337,22 +359,32 @@ def main():
         help="Show verbose output",
     )
     parser.add_argument(
-        "--no-format",
-        action="store_true",
-        help="Skip Markdown formatting step",
-    )
-    parser.add_argument(
         "--no-validate",
         action="store_true",
-        help="Skip validation step",
-    )
-    parser.add_argument(
-        "--no-index",
-        action="store_true",
-        help="Skip index building step",
+        help="Skip validation step (checking only)",
     )
 
     args = parser.parse_args()
+
+    # Handle index-only mode
+    if args.index_only:
+        print(Colors.info(f"\n{'='*60}"))
+        print(Colors.info(f"Building Index Files Only"))
+        print(Colors.info(f"{'='*60}\n"))
+
+        if not args.json_dir.exists():
+            print(
+                Colors.error(f"ERROR: JSON directory not found: {args.json_dir}"),
+                file=sys.stderr,
+            )
+            sys.exit(1)
+
+        if build_index_files(args.json_dir, args.build_dir, args.dry_run):
+            print(Colors.success("\n✓ Index files built successfully!"))
+            sys.exit(0)
+        else:
+            print(Colors.error("\n✗ Index build failed"))
+            sys.exit(1)
 
     # Validate paths
     if not args.wiki_dir.exists():
@@ -369,13 +401,23 @@ def main():
         )
         sys.exit(1)
 
-    # Find Markdown files
-    md_files = sorted(args.wiki_dir.glob("*.md"))
-
-    # Filter if --only specified
-    if args.only:
-        only_set = set(args.only)
-        md_files = [f for f in md_files if f.stem in only_set]
+    # Get list of Markdown files to process
+    if args.terms:
+        # Process specific terms
+        md_files = []
+        for term_id in args.terms:
+            md_file = args.wiki_dir / f"{term_id}.md"
+            if not md_file.exists():
+                print(
+                    Colors.error(f"ERROR: Markdown file not found: {md_file}"),
+                    file=sys.stderr,
+                )
+                sys.exit(1)
+            md_files.append(md_file)
+        md_files = sorted(md_files)
+    else:
+        # Process all files (default or --all)
+        md_files = sorted(args.wiki_dir.glob("*.md"))
 
     if not md_files:
         print(Colors.warning("No Markdown files found to process."))
@@ -406,7 +448,7 @@ def main():
             args.json_dir,
             args.schema,
             dry_run=args.dry_run,
-            skip_format=args.no_format,
+            skip_format=False,  # Always format
             skip_validate=args.no_validate,
         )
 
@@ -424,8 +466,8 @@ def main():
             for warning in result["warnings"]:
                 print(Colors.warning(f"    {warning}"))
 
-    # Build index files
-    if not args.no_index and not args.dry_run:
+    # Build index files (always run unless dry-run)
+    if not args.dry_run:
         print(f"\n{Colors.info('Building index files...')}")
         if build_index_files(args.json_dir, args.build_dir, args.dry_run):
             print(Colors.success("✓ Index files built successfully"))

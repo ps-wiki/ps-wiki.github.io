@@ -12,7 +12,7 @@ authors:
 version: 1.0.1
 date: 2025-03-15
 lastmod: 2025-11-02
-generated: 2025-11-03
+generated: 2025-11-26
 ---
 
 ### Definition by MISO
