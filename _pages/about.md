@@ -93,7 +93,7 @@ curl "https://pswiki-api.jinninggm.workers.dev/v1/changes?since=2025-07-01"
 
 ## Why This Wiki Exists
 
-Language is inherently ambiguous, and power system terminologies are no exception. Inspired by an email titled “Definitions of Smart Grids a Decade Ago – What Has Changed?” on Power-Globe in 2024, I decided to compile terminologies from papers, standards, reports, and other traceable sources to build this wiki.
+Language is inherently ambiguous, and power system terminologies are no exception. Inspired by an email titled “Definitions of Smart Grids a Decade Ago – What Has Changed?” on [Power-Globe](https://pages.mtu.edu/~ljbohman/peec/globe/) in 2024, I decided to compile terminologies from papers, standards, reports, and other traceable sources to build this wiki.
 
 ## Disclaimer
 
