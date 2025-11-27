@@ -9,6 +9,7 @@ This module provides common functions used across multiple scripts to:
 - Validate terms against JSON schema
 - Handle file dates and timestamps
 - Provide string manipulation utilities
+- Define shared directory constants and paths
 """
 
 import json
@@ -19,6 +20,12 @@ from typing import Any, Dict, List, Optional
 
 # Schema URL constant
 SCHEMA_URL = "https://ps-wiki.github.io/schema/v1/term.schema.json"
+
+# Directory constants
+DEFAULT_WIKI_DIR = Path("_wiki")
+DEFAULT_JSON_DIR = Path("database/json")
+DEFAULT_SCHEMA_PATH = Path("database/schema/v1/term.schema.json")
+DEFAULT_BUILD_DIR = Path("database/build")
 
 
 # ---------- JSON I/O ----------
@@ -108,6 +115,50 @@ def write_if_changed(path: Path, content: str) -> bool:
 
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
+    return True
+
+
+def json_content_differs(path: Path, new_content: Dict[str, Any]) -> bool:
+    """
+    Check if new JSON content differs from existing file.
+    
+    Compares at the dictionary level to avoid false positives from
+    formatting differences (whitespace, key order, etc.).
+    
+    Args:
+        path: Path to existing JSON file
+        new_content: New content as dictionary
+        
+    Returns:
+        True if content differs or file doesn't exist, False if identical
+    """
+    if not path.exists():
+        return True
+    
+    try:
+        existing = json.loads(path.read_text(encoding="utf-8"))
+        return existing != new_content
+    except Exception:
+        # If we can't read/parse, assume it differs
+        return True
+
+
+def write_json_if_changed(path: Path, data: Dict[str, Any], indent: int = 2) -> bool:
+    """
+    Write JSON file only if content differs from existing file.
+    
+    Args:
+        path: Output path
+        data: Data to write
+        indent: Indentation level (default: 2)
+        
+    Returns:
+        True if file was written, False if skipped (unchanged)
+    """
+    if not json_content_differs(path, data):
+        return False
+    
+    write_json(path, data, indent)
     return True
 
 

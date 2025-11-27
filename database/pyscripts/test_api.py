@@ -28,14 +28,21 @@ try:
         RootModel,
     )
 except Exception:
-    print("ERROR: pydantic v2 is required. Install with `pip install pydantic>=2`.", file=sys.stderr)
+    print(
+        "ERROR: pydantic v2 is required. Install with `pip install pydantic>=2`.",
+        file=sys.stderr,
+    )
     sys.exit(2)
 
 try:
     from urllib3.util.retry import Retry
 except Exception:
-    print("ERROR: urllib3 is required. Install with `pip install urllib3`.", file=sys.stderr)
+    print(
+        "ERROR: urllib3 is required. Install with `pip install urllib3`.",
+        file=sys.stderr,
+    )
     sys.exit(2)
+
 
 # --- Pretty printing helpers ---
 class Style:
@@ -47,14 +54,18 @@ class Style:
     DIM = "\033[2m"
     END = "\033[0m"
 
+
 def ok(msg: str) -> None:
     print(f"{Style.GREEN}✓ PASS{Style.END} {msg}")
+
 
 def fail(msg: str) -> None:
     print(f"{Style.RED}✗ FAIL{Style.END} {msg}")
 
+
 def warn(msg: str) -> None:
     print(f"{Style.YELLOW}! WARN{Style.END} {msg}")
+
 
 def header(title: str) -> None:
     line = "═" * max(40, len(title) + 10)
@@ -62,9 +73,11 @@ def header(title: str) -> None:
     print(f"{Style.BLUE}║{Style.END}  {Style.BOLD}{title}{Style.END}")
     print(f"{Style.BLUE}╚{line}╝{Style.END}\n")
 
+
 # --- Pydantic models reflecting the OpenAPI schemas ---
 
 DATE_RX = re.compile(r"^\d{4}-\d{2}-\d{2}$")  # ISO date (YYYY-MM-DD)
+
 
 class TermSummary(BaseModel):
     id: str
@@ -80,6 +93,7 @@ class TermSummary(BaseModel):
             raise ValueError("updated_at must be ISO date YYYY-MM-DD")
         return v
 
+
 # In v2, use RootModel for "arbitrary JSON object" payloads
 class Term(RootModel[Dict[str, Any]]):
     @model_validator(mode="before")
@@ -89,12 +103,15 @@ class Term(RootModel[Dict[str, Any]]):
             raise ValueError("Term payload must be an object")
         return v
 
+
 class TagItem(BaseModel):
     tag: str
     count: int
 
+
 class TagsResponse(BaseModel):
     tags: List[TagItem]
+
 
 class ChangesItem(BaseModel):
     id: str
@@ -107,12 +124,15 @@ class ChangesItem(BaseModel):
             raise ValueError("updated_at must be ISO date YYYY-MM-DD")
         return v
 
+
 class ChangesResponse(BaseModel):
     items: List[ChangesItem]
+
 
 class TermsResponse(BaseModel):
     items: List[TermSummary]
     next_cursor: Optional[str] = None  # string or null
+
 
 # --- HTTP client with retries ---
 def make_session(timeout_s: int = 10, total_retries: int = 2) -> requests.Session:
@@ -129,15 +149,21 @@ def make_session(timeout_s: int = 10, total_retries: int = 2) -> requests.Sessio
     sess.request = _wrap_with_timeout(sess.request, timeout_s)  # type: ignore
     return sess
 
+
 def _wrap_with_timeout(fn, timeout_s: int):
     def inner(method, url, **kwargs):
         kwargs.setdefault("timeout", timeout_s)
         return fn(method, url, **kwargs)
+
     return inner
+
 
 # --- Validators corresponding to each endpoint ---
 
-def validate_terms_payload(payload: Dict[str, Any], do_schema: bool) -> Tuple[bool, str, List[TermSummary]]:
+
+def validate_terms_payload(
+    payload: Dict[str, Any], do_schema: bool
+) -> Tuple[bool, str, List[TermSummary]]:
     try:
         if do_schema:
             parsed = TermsResponse.model_validate(payload)
@@ -159,6 +185,7 @@ def validate_terms_payload(payload: Dict[str, Any], do_schema: bool) -> Tuple[bo
     except (ValidationError, ValueError) as e:
         return False, f"/v1/terms schema mismatch: {e}", []
 
+
 def validate_term_payload(payload: Dict[str, Any], do_schema: bool) -> Tuple[bool, str]:
     try:
         if do_schema:
@@ -169,6 +196,7 @@ def validate_term_payload(payload: Dict[str, Any], do_schema: bool) -> Tuple[boo
         return True, "Valid /v1/terms/{id} payload"
     except (ValidationError, ValueError) as e:
         return False, f"/v1/terms/{{id}} schema mismatch: {e}"
+
 
 def validate_tags_payload(payload: Dict[str, Any], do_schema: bool) -> Tuple[bool, str]:
     try:
@@ -181,7 +209,10 @@ def validate_tags_payload(payload: Dict[str, Any], do_schema: bool) -> Tuple[boo
     except (ValidationError, ValueError) as e:
         return False, f"/v1/tags schema mismatch: {e}"
 
-def validate_changes_payload(payload: Dict[str, Any], do_schema: bool) -> Tuple[bool, str]:
+
+def validate_changes_payload(
+    payload: Dict[str, Any], do_schema: bool
+) -> Tuple[bool, str]:
     try:
         if do_schema:
             _ = ChangesResponse.model_validate(payload)
@@ -192,7 +223,9 @@ def validate_changes_payload(payload: Dict[str, Any], do_schema: bool) -> Tuple[
     except (ValidationError, ValueError) as e:
         return False, f"/v1/changes schema mismatch: {e}"
 
+
 # --- Test runner ---
+
 
 @dataclass
 class TestConfig:
@@ -203,7 +236,10 @@ class TestConfig:
     validate_schema: bool
     limit_for_page: int = 3
 
-def get_json(session: requests.Session, url: str, params: Dict[str, Any] | None = None) -> Tuple[int, Dict[str, Any]]:
+
+def get_json(
+    session: requests.Session, url: str, params: Dict[str, Any] | None = None
+) -> Tuple[int, Dict[str, Any]]:
     r = session.get(url, params=params)
     status = r.status_code
     try:
@@ -212,7 +248,10 @@ def get_json(session: requests.Session, url: str, params: Dict[str, Any] | None 
         data = {}
     return status, data
 
-def test_terms_list(sess: requests.Session, cfg: TestConfig) -> Tuple[bool, Optional[str], List[TermSummary]]:
+
+def test_terms_list(
+    sess: requests.Session, cfg: TestConfig
+) -> Tuple[bool, Optional[str], List[TermSummary]]:
     url = urljoin(cfg.base_url.rstrip("/") + "/", "v1/terms")
     params = {"limit": cfg.limit_for_page}
     if cfg.query:
@@ -235,14 +274,18 @@ def test_terms_list(sess: requests.Session, cfg: TestConfig) -> Tuple[bool, Opti
 
     next_cursor = data.get("next_cursor", None)
     if next_cursor:
-        status2, data2 = get_json(sess, url, params={"cursor": next_cursor, "limit": cfg.limit_for_page})
+        status2, data2 = get_json(
+            sess, url, params={"cursor": next_cursor, "limit": cfg.limit_for_page}
+        )
         if status2 == 200:
             ok("GET /v1/terms (pagination) -> HTTP 200")
             v2, m2, items2 = validate_terms_payload(data2, cfg.validate_schema)
             if v2:
                 ok("Pagination payload valid")
                 if items and items2 and items[0].id == items2[0].id:
-                    warn("First items of page1 and page2 are identical; verify cursor behavior")
+                    warn(
+                        "First items of page1 and page2 are identical; verify cursor behavior"
+                    )
             else:
                 fail(m2)
         else:
@@ -250,7 +293,10 @@ def test_terms_list(sess: requests.Session, cfg: TestConfig) -> Tuple[bool, Opti
 
     return True, (items[0].id if items else None), items
 
-def test_term_detail(sess: requests.Session, cfg: TestConfig, any_id: Optional[str]) -> bool:
+
+def test_term_detail(
+    sess: requests.Session, cfg: TestConfig, any_id: Optional[str]
+) -> bool:
     if not any_id:
         warn("Skip GET /v1/terms/{id}: no id from listing")
         return True
@@ -269,6 +315,7 @@ def test_term_detail(sess: requests.Session, cfg: TestConfig, any_id: Optional[s
         fail(msg)
         return False
 
+
 def test_tags(sess: requests.Session, cfg: TestConfig) -> bool:
     url = urljoin(cfg.base_url.rstrip("/") + "/", "v1/tags")
     status, data = get_json(sess, url)
@@ -284,6 +331,7 @@ def test_tags(sess: requests.Session, cfg: TestConfig) -> bool:
     else:
         fail(msg)
         return False
+
 
 def test_changes(sess: requests.Session, cfg: TestConfig) -> bool:
     url = urljoin(cfg.base_url.rstrip("/") + "/", "v1/changes")
@@ -301,14 +349,29 @@ def test_changes(sess: requests.Session, cfg: TestConfig) -> bool:
         fail(msg)
         return False
 
+
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description="PS-Wiki API Contract Test Suite")
-    parser.add_argument("--base-url", required=True, help="Base URL, e.g., http://localhost:8787 or https://pswiki-api.jinninggm.workers.dev")
+    parser.add_argument(
+        "--base-url",
+        default="https://ps-wiki.github.io",
+        help="Base URL (default: https://ps-wiki.github.io). Examples: http://localhost:8787 or https://pswiki-api.jinninggm.workers.dev",
+    )
     parser.add_argument("--query", help="Optional free-text query for /v1/terms")
     parser.add_argument("--tag", help="Optional tag filter for /v1/terms")
-    parser.add_argument("--since", default="2024-01-01", help="ISO date (YYYY-MM-DD) for /v1/changes (default: 2024-01-01)")
-    parser.add_argument("--validate-schema", action="store_true", help="Enable strict schema validation with Pydantic")
-    parser.add_argument("--timeout", type=int, default=10, help="HTTP timeout seconds (default 10)")
+    parser.add_argument(
+        "--since",
+        default="2024-01-01",
+        help="ISO date (YYYY-MM-DD) for /v1/changes (default: 2024-01-01)",
+    )
+    parser.add_argument(
+        "--validate-schema",
+        action="store_true",
+        help="Enable strict schema validation with Pydantic",
+    )
+    parser.add_argument(
+        "--timeout", type=int, default=10, help="HTTP timeout seconds (default 10)"
+    )
     args = parser.parse_args(argv)
 
     header("PS-Wiki API Contract Test Suite")
@@ -338,6 +401,7 @@ def main(argv=None) -> int:
     else:
         print(f"{Style.BOLD}{Style.RED}One or more tests failed ❌{Style.END}")
         return 1
+
 
 if __name__ == "__main__":
     sys.exit(main())
