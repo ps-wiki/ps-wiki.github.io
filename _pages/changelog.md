@@ -13,6 +13,10 @@ This page records major changes in this wiki.
 
 ## 2025
 
+### 11-26
+
+- Improve pyscript support
+
 ### 11-03
 
 - Add REST API for term search
