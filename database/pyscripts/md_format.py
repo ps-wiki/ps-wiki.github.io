@@ -26,18 +26,10 @@ import sys
 from pathlib import Path
 from typing import List
 
-# Import conversion functions and shared constants
-try:
-    from md2json import build_json_from_md
-    from json2md import convert_term_to_md
-    from utils import DEFAULT_WIKI_DIR, DEFAULT_JSON_DIR
-except ImportError as e:
-    print(f"ERROR: Failed to import required modules: {e}", file=sys.stderr)
-    print(
-        "Ensure md2json.py, json2md.py, and utils.py are in the same directory.",
-        file=sys.stderr,
-    )
-    sys.exit(1)
+# Import conversion functions and shared constants from utils module
+from md2json import build_json_from_md
+from json2md import convert_term_to_md
+from utils import DEFAULT_WIKI_DIR, DEFAULT_JSON_DIR
 
 
 def format_markdown_file(md_path: Path, json_dir: Path, dry_run: bool = False) -> bool:

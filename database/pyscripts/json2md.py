@@ -26,13 +26,13 @@ from pathlib import Path
 from typing import List, Dict, Any
 from datetime import datetime
 
-# Import shared constants
-try:
-    from utils import DEFAULT_WIKI_DIR, DEFAULT_JSON_DIR
-except ImportError:
-    # Fallback if utils not available
-    DEFAULT_WIKI_DIR = Path("_wiki")
-    DEFAULT_JSON_DIR = Path("database/json")
+# Import shared constants and utilities from utils module
+from utils import (
+    DEFAULT_WIKI_DIR,
+    DEFAULT_JSON_DIR,
+    iso_date_from_ts,
+    derive_file_dates,
+)
 
 
 # ---------- YAML helpers (very small, purpose-built) ----------
@@ -66,31 +66,6 @@ def yaml_authors_block(authors: List[Dict[str, Any]], indent: int = 0) -> str:
         if url:
             lines.append(f"{ind}    url: {url}")
     return "\n".join(lines) + "\n"
-
-
-# ---------- file timestamp helpers ----------
-
-
-def iso_date_from_ts(ts: float) -> str:
-    """Return YYYY-MM-DD string from a POSIX timestamp (local time)."""
-    return datetime.fromtimestamp(ts).date().isoformat()
-
-
-def derive_file_dates(json_path: Path) -> Dict[str, str]:
-    """
-    Derive dates from the JSON file:
-      - created: st_birthtime if available (macOS), else st_ctime
-      - last_modified: st_mtime
-    """
-    st = json_path.stat()
-    created_ts = getattr(st, "st_birthtime", None)
-    if created_ts is None:  # Linux typically lacks birthtime
-        created_ts = st.st_ctime
-    lastmod_ts = st.st_mtime
-    return {
-        "created": iso_date_from_ts(created_ts),
-        "last_modified": iso_date_from_ts(lastmod_ts),
-    }
 
 
 # ---------- front matter ----------

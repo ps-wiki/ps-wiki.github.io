@@ -30,14 +30,16 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 import yaml
 
-# Import shared constants
-try:
-    from utils import DEFAULT_WIKI_DIR, DEFAULT_JSON_DIR, SCHEMA_URL
-except ImportError:
-    # Fallback if utils not available
-    DEFAULT_WIKI_DIR = Path("_wiki")
-    DEFAULT_JSON_DIR = Path("database/json")
-    SCHEMA_URL = "https://ps-wiki.github.io/schema/v1/term.schema.json"
+# Import shared constants and utilities from utils module
+from utils import (
+    DEFAULT_WIKI_DIR,
+    DEFAULT_JSON_DIR,
+    SCHEMA_URL,
+    json_content_differs,
+    iso_date_from_ts,
+    derive_file_dates,
+)
+
 
 H3_RE = re.compile(r"^###\s+(.*)\s*$")
 DCITE_RE = re.compile(r'<d-cite\s+key="([^"]+)"></d-cite>')
@@ -89,34 +91,6 @@ def merge_preserved_fields(
         new_term["aliases"] = existing_term["aliases"]
 
     return new_term
-
-
-def json_content_differs(path: Path, new_content: Dict[str, Any]) -> bool:
-    """
-    Check if new JSON content differs from existing file.
-    Uses JSON comparison to avoid formatting differences.
-    """
-    existing = load_existing_json(path)
-    if existing is None:
-        return True  # File doesn't exist, so it differs
-
-    # Compare as dictionaries, not strings
-    return existing != new_content
-
-
-def iso_date_from_ts(ts: float) -> str:
-    return datetime.fromtimestamp(ts).date().isoformat()
-
-
-def derive_file_dates(path: Path) -> Dict[str, str]:
-    st = path.stat()
-    created_ts = getattr(st, "st_birthtime", None)
-    if created_ts is None:  # linux fallback
-        created_ts = st.st_ctime
-    return {
-        "created": iso_date_from_ts(created_ts),
-        "last_modified": iso_date_from_ts(st.st_mtime),
-    }
 
 
 def coerce_date_str(v: Any) -> str:
