@@ -63,7 +63,16 @@
         "ferc",
         "nerc"
       ],
-      "updated_at": "2025-06-22"
+      "updated_at": "2025-11-19"
+    },
+    {
+      "id": "autonomous",
+      "title": "Autonomous",
+      "summary": "A dynamic system's property.",
+      "tags": [
+        "control-theory"
+      ],
+      "updated_at": "2025-11-19"
     },
     {
       "id": "balancing-authority-area",
@@ -187,13 +196,13 @@
     {
       "id": "common-format-for-exchange-of-solved-load-flow-data",
       "title": "Common Format for Exchange of Solved Load Flow Data",
-      "summary": "A.k.a. common data format (CDF)",
+      "summary": "Data format",
       "tags": [
         "data-format",
         "ieee-standard",
         "standard"
       ],
-      "updated_at": "2025-06-20"
+      "updated_at": "2025-11-03"
     },
     {
       "id": "common-format-for-transient-data-exchange",
@@ -267,14 +276,14 @@
     {
       "id": "contingency-reserve-service",
       "title": "Contingency Reserve Service",
-      "summary": "A.k.a. Primary Reserve. Can be satisfied in 10 minutes or less.",
+      "summary": "Reserve that can be satisfied in 10 minutes or less.",
       "tags": [
         "reserve",
         "system-operator",
         "contingency",
         "pjm"
       ],
-      "updated_at": "2025-06-22"
+      "updated_at": "2025-11-03"
     },
     {
       "id": "contingency-reserve",
@@ -300,12 +309,12 @@
     {
       "id": "control-area",
       "title": "Control Area",
-      "summary": "A.k.a. Balancing Authority Area.",
+      "summary": "Geographical concept.",
       "tags": [
         "geography",
         "ferc"
       ],
-      "updated_at": "2025-11-02"
+      "updated_at": "2025-11-03"
     },
     {
       "id": "control-performance-standard-1",
@@ -442,12 +451,12 @@
     {
       "id": "dynamic-line-ratings",
       "title": "Dynamic Line Ratings",
-      "summary": "DLR. A grid enhancing technology (GET) that provides real-time ratings of transmission lines based on current weather conditions.",
+      "summary": "A grid enhancing technology (GET) that provides real-time ratings of transmission lines based on current weather conditions.",
       "tags": [
         "system-operator",
         "grid-enhancing-technology"
       ],
-      "updated_at": "2025-11-02"
+      "updated_at": "2025-11-03"
     },
     {
       "id": "dynamic-operating-envelope",
@@ -507,6 +516,18 @@
       "updated_at": "2025-06-22"
     },
     {
+      "id": "emt-modeling-guideline",
+      "title": "EMT Modeling Guideline",
+      "summary": "ISO/RTO/TSO guidelines on EMT modeling.",
+      "tags": [
+        "transmission",
+        "system-operator",
+        "EMT",
+        "nyiso"
+      ],
+      "updated_at": "2025-11-19"
+    },
+    {
       "id": "equal-area-criterion",
       "title": "Equal Area Criterion",
       "summary": "To determine the maximum permissible increase in mechanical power input for system stability.",
@@ -533,7 +554,7 @@
         "stability",
         "article"
       ],
-      "updated_at": "2025-11-01"
+      "updated_at": "2025-11-03"
     },
     {
       "id": "facility-rating",
@@ -719,12 +740,12 @@
     {
       "id": "interconnection-process",
       "title": "Interconnection Process",
-      "summary": "A.k.a. Interconnection Study. Process for connecting new generation, transmission, and load facilities to the transmission system.",
+      "summary": "Process for connecting new generation, transmission, and load facilities to the transmission system.",
       "tags": [
         "nyiso",
         "process"
       ],
-      "updated_at": "2025-11-02"
+      "updated_at": "2025-11-03"
     },
     {
       "id": "interconnection-reliability-operating-limit",
@@ -921,7 +942,7 @@
         "nerc",
         "generation"
       ],
-      "updated_at": "2025-06-20"
+      "updated_at": "2025-11-03"
     },
     {
       "id": "non-storm-resilience-metric",
@@ -932,7 +953,7 @@
         "metrics",
         "ieee"
       ],
-      "updated_at": "2025-06-20"
+      "updated_at": "2025-11-03"
     },
     {
       "id": "non-synchronized-reserve",
@@ -1030,13 +1051,13 @@
     {
       "id": "performance-based-metrics",
       "title": "Performance-Based Metrics",
-      "summary": "A.k.a. consequence-based metrics. Quantitative approaches for assessing system resilience.",
+      "summary": "Quantitative approaches for assessing system resilience.",
       "tags": [
         "resilience",
         "metrics",
         "ieee"
       ],
-      "updated_at": "2025-06-20"
+      "updated_at": "2025-11-03"
     },
     {
       "id": "power-transfer-distribution-factor",
@@ -1071,12 +1092,12 @@
     {
       "id": "ramp",
       "title": "Ramp",
-      "summary": "A.k.a. <u>Ramp Rate</u>. The rate at which the interchange schedule or generator output is attained.",
+      "summary": "The rate at which the interchange schedule or generator output is attained.",
       "tags": [
         "ramp",
         "generator"
       ],
-      "updated_at": "2025-06-18"
+      "updated_at": "2025-11-03"
     },
     {
       "id": "real-time-energy-market",
@@ -1092,14 +1113,14 @@
     {
       "id": "real-time-reliability-model",
       "title": "Real-Time Reliability Model",
-      "summary": "A.k.a. <u>EMS model</u>. A computer representation of the power system facilities.",
+      "summary": "A computer representation of the power system facilities.",
       "tags": [
         "reliability",
         "transmission",
         "system-operator",
         "pjm"
       ],
-      "updated_at": "2025-06-22"
+      "updated_at": "2025-11-03"
     },
     {
       "id": "region",
@@ -1188,7 +1209,7 @@
         "ferc",
         "nerc"
       ],
-      "updated_at": "2025-06-19"
+      "updated_at": "2025-11-03"
     },
     {
       "id": "resonance-stability",
@@ -1337,7 +1358,7 @@
     {
       "id": "spinning-reserve",
       "title": "Spinning Reserve",
-      "summary": "A.k.a. Synchronized Reserve. Synchronized generation and ready to serve additional demand.",
+      "summary": "Synchronized generation and ready to serve additional demand.",
       "tags": [
         "reserve",
         "system-operator",
@@ -1400,7 +1421,7 @@
         "metrics",
         "ieee"
       ],
-      "updated_at": "2025-06-20"
+      "updated_at": "2025-11-03"
     },
     {
       "id": "subregions",
@@ -1594,12 +1615,12 @@
     {
       "id": "voltage-dip",
       "title": "Voltage Dip",
-      "summary": "A.k.a. Voltage Sag. Short-duration decreases in RMS voltage",
+      "summary": "Short-duration decreases in RMS voltage",
       "tags": [
         "power-quality",
         "article"
       ],
-      "updated_at": "2025-06-19"
+      "updated_at": "2025-11-03"
     },
     {
       "id": "voltage-limits",
@@ -1636,13 +1657,13 @@
     {
       "id": "waveform-measurement-unit",
       "title": "Waveform Measurement Unit",
-      "summary": "WMU, a.k.a. synchro-waveform measurement units (SMUs). Sensor device to record synchro-waveforms.",
+      "summary": "WMU. Sensor device to record synchro-waveforms.",
       "tags": [
         "measurement",
         "ieee",
         "ieee-standard"
       ],
-      "updated_at": "2025-06-20"
+      "updated_at": "2025-11-03"
     },
     {
       "id": "wholesale-markets",
@@ -1676,5 +1697,5 @@
       "updated_at": "2025-11-02"
     }
   ],
-  "generated_at": "2025-11-03T07:40:46Z"
+  "generated_at": "2025-11-27T07:20:34Z"
 }
