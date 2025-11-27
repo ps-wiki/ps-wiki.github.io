@@ -12,13 +12,13 @@ This script now leverages the enhanced md2json and json2md modules with:
 
 Usage:
   # Format a single file
-  python database/pyscripts/md_format.py -i _wiki/stability.md
+  python database/pyscripts/format.py -i _wiki/stability.md
 
   # Format specific terms by ID
-  python database/pyscripts/md_format.py --terms stability frequency-control
+  python database/pyscripts/format.py --terms stability frequency-control
 
   # Format all files
-  python database/pyscripts/md_format.py --all
+  python database/pyscripts/format.py --all
 """
 
 import argparse
