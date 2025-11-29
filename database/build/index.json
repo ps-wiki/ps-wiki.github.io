@@ -692,9 +692,9 @@
       "updated_at": "2025-11-28"
     },
     {
-      "id": "frequency-restoration-reserves",
-      "title": "Frequency Restoration Reserves",
-      "summary": "The active power reserves available to restore system frequency to the nominal frequency",
+      "id": "frequency-containment-reserves",
+      "title": "Frequency Containment Reserves",
+      "summary": "The active power reserves available to contain system frequency after the occurrence of an imbalance.",
       "tags": [
         "frequency-control",
         "reserve",
@@ -746,9 +746,9 @@
       "updated_at": "2025-06-22"
     },
     {
-      "id": "frequency-containment-reserves",
-      "title": "Frequency Containment Reserves",
-      "summary": "The active power reserves available to contain system frequency after the occurrence of an imbalance.",
+      "id": "frequency-restoration-reserves",
+      "title": "Frequency Restoration Reserves",
+      "summary": "The active power reserves available to restore system frequency to the nominal frequency",
       "tags": [
         "frequency-control",
         "reserve",
@@ -1787,5 +1787,5 @@
       "updated_at": "2025-11-02"
     }
   ],
-  "generated_at": "2025-11-29T04:10:55Z"
+  "generated_at": "2025-11-29T04:18:08Z"
 }

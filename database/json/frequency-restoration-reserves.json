@@ -1,8 +1,8 @@
 {
   "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
-  "id": "frequency-containment-reserves",
-  "title": "Frequency Containment Reserves",
-  "description": "The active power reserves available to contain system frequency after the occurrence of an imbalance.",
+  "id": "frequency-restoration-reserves",
+  "title": "Frequency Restoration Reserves",
+  "description": "The active power reserves available to restore system frequency to the nominal frequency",
   "language": "en",
   "tags": [
     "frequency-control",
@@ -12,7 +12,7 @@
   ],
   "related": [
     "contingency-reserve",
-    "frequency-restoration-reserves",
+    "frequency-containment-reserves",
     "replacement-reserves"
   ],
   "version": "1.0.0",
@@ -38,7 +38,7 @@
           "eu2017guideline"
         ],
         "page": "p5",
-        "body_md": "> ‘frequency containment reserves’ or ‘FCR’ means the active power reserves available to contain system frequency after the occurrence of an imbalance.\n"
+        "body_md": "> ‘frequency restoration reserves’ or ‘FRR’ means the active power reserves available to restore system frequency to the nominal frequency and, for a synchronous area consisting of more than one LFC area, to restore power balance to the scheduled value\n"
       }
     ]
   }
