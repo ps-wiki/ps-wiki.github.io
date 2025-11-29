@@ -4,7 +4,7 @@ description: ISO/RTO/TSO guidelines on EMT modeling.
 tags:
   - transmission
   - system-operator
-  - EMT
+  - emt
   - nyiso
 related: []
 authors:
@@ -12,8 +12,8 @@ authors:
     url: https://jinningwang.github.io
 version: 1.0.0
 date: 2025-11-19
-lastmod: 2025-11-19
-generated: 2025-11-26
+lastmod: 2025-11-28
+generated: 2025-11-28
 ---
 
 ### Definition by NYISO

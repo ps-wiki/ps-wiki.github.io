@@ -4,7 +4,10 @@
   "title": "Futures Market",
   "description": "For contracts for future delivery of a commodity or security.",
   "language": "en",
-  "tags": ["market", "ferc"],
+  "tags": [
+    "market",
+    "ferc"
+  ],
   "related": [],
   "version": "1.0.0",
   "breaking": false,
@@ -25,7 +28,9 @@
         "id": "definition-by-ferc",
         "title": "Definition by FERC",
         "type": "definition",
-        "source_keys": ["ferc2020glossary"],
+        "source_keys": [
+          "ferc2020glossary"
+        ],
         "page": null,
         "body_md": "> A market in which contracts for future delivery of a commodity or a security are bought and sold. Nymex is the primary futures market for energy commodities in the United States.\n"
       }

@@ -4,7 +4,10 @@
   "title": "Control Performance Standard 2",
   "description": "CPS2. A standard intended to limit unscheduled flows.",
   "language": "en",
-  "tags": ["frequency-control", "nerc"],
+  "tags": [
+    "frequency-control",
+    "nerc"
+  ],
   "related": [],
   "version": "1.0.0",
   "breaking": false,
@@ -25,7 +28,9 @@
         "id": "definition-by-nerc",
         "title": "Definition by NERC",
         "type": "definition",
-        "source_keys": ["nerc2015bal001"],
+        "source_keys": [
+          "nerc2015bal001"
+        ],
         "page": "p22",
         "body_md": "> Initially, a 10-minute metric called CPS2 was developed to keep average ACE within specific bounds.\n> CPS2 was originally used to help prevent excessive transmission flows due to large values of ACE.\n> The problem with CPS2 was that it was not dependent on ACE’s impact on frequency.\n> Additionally, CPS2 could cause control actions that moved against frequency.\n> If a BA had very bad performance in one direction for five minutes, the BA could correct this by having equally bad performance in the opposite direction for the next five minutes.\n> Finally, ACE could be totally unbounded for 10% of the month and it didn’t matter whether it was 1 or 1000 MW over the limit.\n> CPS2 did not provide the correct signal for maintaining frequency.\n"
       },
@@ -34,7 +39,9 @@
         "id": "calculation-by-nerc",
         "title": "Calculation by NERC",
         "type": "note",
-        "source_keys": ["nerc2015bal0011"],
+        "source_keys": [
+          "nerc2015bal0011"
+        ],
         "page": "p3",
         "body_md": "$$\nCPS2 = \\left[ 1 - \\frac{\\text{Violations}_{\\text{month}}}{\\text{Total Periods}_{\\text{month}} - \\text{Unavailable Periods}_{\\text{month}}} \\right] \\times 100\n$$\n"
       }

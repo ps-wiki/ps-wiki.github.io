@@ -10,7 +10,7 @@ authors:
 version: 1.0.0
 date: 2025-03-15
 lastmod: 2025-06-19
-generated: 2025-11-26
+generated: 2025-11-28
 ---
 
 ### Definition by IBM
@@ -26,7 +26,7 @@ Source: <d-cite key="ibm2021what"></d-cite>
         {% include figure.liquid
         path="https://uploads.disquscdn.com/images/d7a8c9970fa1766cba46a0c38bf445e70f78ed6afff3a76af9e4cbbfb9444ebd.jpg?w=800&h=453"
         zoomable=true %}
-            Digital model, shadow and twin.
+        Digital model, shadow and twin.
     </div>
 </div>
 
@@ -38,7 +38,6 @@ Source: <d-cite key="fuller2020digital"></d-cite>
 
 <div class="col-sm mt-3 mt-md-0">
 
-<br>
 
 Some other definitions collected in the review paper:
 

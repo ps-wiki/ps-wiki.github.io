@@ -4,7 +4,11 @@
   "title": "Compliance Factor",
   "description": "CF.",
   "language": "en",
-  "tags": ["frequency-control", "system-operator", "pjm"],
+  "tags": [
+    "frequency-control",
+    "system-operator",
+    "pjm"
+  ],
   "related": [],
   "version": "1.0.0",
   "breaking": false,
@@ -25,7 +29,9 @@
         "id": "definition-by-pjm",
         "title": "Definition by PJM",
         "type": "definition",
-        "source_keys": ["pjm2024m12"],
+        "source_keys": [
+          "pjm2024m12"
+        ],
         "page": "p94, Revision 54",
         "body_md": "> PJM calculates clock-minute averages of the instantaneous data and stores the one minute averages for the following:\n>\n> - ACE (one minute)\n> - Frequency (one minute)\n> - CF (compliance factor)\n"
       }

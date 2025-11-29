@@ -4,8 +4,13 @@
   "title": "Operating Envelope",
   "description": "Allowed power to be transferred to/from the network.",
   "language": "en",
-  "tags": ["operation", "article"],
-  "related": ["dynamic-operating-envelope"],
+  "tags": [
+    "operation",
+    "article"
+  ],
+  "related": [
+    "dynamic-operating-envelope"
+  ],
   "version": "1.0.0",
   "breaking": false,
   "dates": {
@@ -25,7 +30,9 @@
         "id": "definition-in-an-article",
         "title": "Definition in an Article",
         "type": "definition",
-        "source_keys": ["attarha2022networksecure"],
+        "source_keys": [
+          "attarha2022networksecure"
+        ],
         "page": null,
         "body_md": "> An operating envelope is a convex set that defines the real and reactive power allowed to be transferred to/from the network at\n> a given customer connection point, or for an aggregate of customers in a region.\n> Envelopes are calculated so that any joint combination of consumption or generation within the envelope will not violate any\n> network constraints.\n"
       }

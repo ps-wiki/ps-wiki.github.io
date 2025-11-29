@@ -15,7 +15,7 @@ authors:
 version: 1.0.2
 date: 2025-11-01
 lastmod: 2025-11-03
-generated: 2025-11-26
+generated: 2025-11-28
 ---
 
 ### Definition by NYISO

@@ -11,7 +11,7 @@ authors:
 version: 1.0.0
 date: 2025-03-15
 lastmod: 2025-11-01
-generated: 2025-11-26
+generated: 2025-11-28
 ---
 
 ### Definition in a Textbook
@@ -21,7 +21,7 @@ generated: 2025-11-26
         {% include figure.liquid
         path="/assets/img/pswiki/response-to-a-step-change-in-mechanical-power-input.png"
         zoomable=false %}
-                Fig. 13.14 Response to a step change in mechanical power input (from <d-cite key="kundur1994Power"></d-cite>)
+        Fig. 13.14 Response to a step change in mechanical power input (from <d-cite key="kundur1994Power"></d-cite>)
     </div>
 </div>
 

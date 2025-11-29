@@ -4,9 +4,17 @@
   "title": "Interconnection Process",
   "description": "Process for connecting new generation, transmission, and load facilities to the transmission system.",
   "language": "en",
-  "tags": ["nyiso", "process"],
-  "related": ["interconnection", "transmission-interconnection-procedures"],
-  "aliases": ["Interconnection Study"],
+  "tags": [
+    "nyiso",
+    "process"
+  ],
+  "related": [
+    "interconnection",
+    "transmission-interconnection-procedures"
+  ],
+  "aliases": [
+    "Interconnection Study"
+  ],
   "version": "1.0.2",
   "breaking": false,
   "dates": {
@@ -26,10 +34,11 @@
         "id": "definition-by-nyiso",
         "title": "Definition by NYISO",
         "type": "definition",
-        "source_keys": ["nyiso2025interconnectionprocess"],
+        "source_keys": [
+          "nyiso2025interconnectionprocess"
+        ],
         "page": null,
-        "body_md": "> The NYISO's Interconnection processes enable parties to pursue construction and interconnection of new and materially modified generation, transmission, and load facilities to the NYS Transmission System and Distribution System.\n",
-        "figures": []
+        "body_md": "> The NYISO's Interconnection processes enable parties to pursue construction and interconnection of new and materially modified generation, transmission, and load facilities to the NYS Transmission System and Distribution System.\n"
       }
     ]
   }

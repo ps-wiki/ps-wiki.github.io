@@ -4,8 +4,17 @@
   "title": "Control Area",
   "description": "Geographical concept.",
   "language": "en",
-  "tags": ["geography", "ferc"],
-  "related": ["balancing-authority-area", "region", "zone", "subregions", "reliability-coordinator-area"],
+  "tags": [
+    "geography",
+    "ferc"
+  ],
+  "related": [
+    "balancing-authority-area",
+    "region",
+    "zone",
+    "subregions",
+    "reliability-coordinator-area"
+  ],
   "version": "1.0.2",
   "breaking": false,
   "dates": {
@@ -25,7 +34,9 @@
         "id": "definition-by-ferc",
         "title": "Definition by FERC",
         "type": "definition",
-        "source_keys": ["ferc2020glossary"],
+        "source_keys": [
+          "ferc2020glossary"
+        ],
         "page": null,
         "body_md": "> An electric power system or combination of electric power systems to which a common automatic control scheme is applied in order to:\n>\n> - Match, at all times, the power output of the generators within the electric power system(s) and capacity and energy purchased from entities outside the electric power system(s), with the load in the electric power system(s).\n> - Maintain, within the limits of Good Utility Practice, scheduled interchange with other Control Areas.\n> - Maintain the frequency of the electric power system(s) within reasonable limits in accordance with Good Utility Practice.\n> - Provide sufficient generating capacity to maintain operating reserves in accordance with Good Utility Practice.\n"
       },

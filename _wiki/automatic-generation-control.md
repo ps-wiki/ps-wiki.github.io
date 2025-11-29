@@ -15,10 +15,10 @@ related:
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.1
+version: 1.0.2
 date: 2025-03-15
-lastmod: 2025-11-19
-generated: 2025-11-26
+lastmod: 2025-11-26
+generated: 2025-11-28
 ---
 
 ### Definition by NERC
@@ -50,3 +50,9 @@ Source: <d-cite key="sun2021frequency"></d-cite> p32
 > – Distributing the required change in generation among generators to minimize operation costs.
 
 > During large disturbances and emergencies, AGC is bypassed and other emergency controls are applied.
+
+### Definition in a Book
+
+Source: <d-cite key="kundur1994Power"></d-cite> p601, first edition
+
+> The primary objectives of automatic generation control (AGC) are to regulate frequency to the specified nominal value and to maintain the interchange power between control areas at the scheduled values by adjusting the output of selected generators. This function is commonly referred to as load-frequency control (LFC). A secondary objective is to distribute the required change in generation among units to minimize operating costs.

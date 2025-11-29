@@ -12,7 +12,7 @@ authors:
 version: 1.0.0
 date: 2025-10-30
 lastmod: 2025-10-30
-generated: 2025-11-26
+generated: 2025-11-28
 ---
 
 ### Definition in an Article

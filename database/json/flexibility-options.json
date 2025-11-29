@@ -4,8 +4,18 @@
   "title": "Flexibility Options",
   "description": "Voluntary market products that  manage imbalances across electricity markets.",
   "language": "en",
-  "tags": ["markets", "flexibility", "operation", "article"],
-  "related": ["system-flexibility", "flexibility-reserve", "day-ahead-energy-market", "real-time-energy-market"],
+  "tags": [
+    "markets",
+    "flexibility",
+    "operation",
+    "article"
+  ],
+  "related": [
+    "system-flexibility",
+    "flexibility-reserve",
+    "day-ahead-energy-market",
+    "real-time-energy-market"
+  ],
   "version": "1.0.0",
   "breaking": false,
   "dates": {
@@ -25,7 +35,9 @@
         "id": "definition-in-an-article",
         "title": "Definition in an Article",
         "type": "definition",
-        "source_keys": ["spyrou2025flexibilityoptions"],
+        "source_keys": [
+          "spyrou2025flexibilityoptions"
+        ],
         "page": null,
         "body_md": "> Flexibility Options could be introduced as a class of products with voluntary participation in systems where operators want to\n> efficiently manage imbalances between at least two electricity markets, including DA and RT.\n"
       }

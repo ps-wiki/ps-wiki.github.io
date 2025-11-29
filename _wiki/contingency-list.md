@@ -8,16 +8,18 @@ tags:
   - pjm
   - entsoe
   - article
+  - european-union
+  - europe
 related:
   - contingency-analysis
   - contingency
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.0
+version: 1.0.1
 date: 2025-03-15
-lastmod: 2025-06-22
-generated: 2025-11-26
+lastmod: 2025-11-28
+generated: 2025-11-28
 ---
 
 ### Definition by ISO-NE
@@ -40,3 +42,9 @@ Source: <d-cite key="baranowski2012operational"></d-cite>
 >
 > A separate contingency list is utilized for each application.
 > Many of the contingencies are common however each application may use a subset of contingencies and may also have contingencies that are of special interest.
+
+### Definition in a European Union Regulation
+
+Source: <d-cite key="eu2017guideline"></d-cite> p4
+
+> ‘contingency list’ means the list of contingencies to be simulated in order to test the compliance with the operational security limits;

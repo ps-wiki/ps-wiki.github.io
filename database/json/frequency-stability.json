@@ -4,7 +4,12 @@
   "title": "Frequency Stability",
   "description": "The ability of a power system to maintain steady frequency following a severe system upset.",
   "language": "en",
-  "tags": ["stability", "ieee", "ieee-task-force", "article"],
+  "tags": [
+    "stability",
+    "ieee",
+    "ieee-task-force",
+    "article"
+  ],
   "related": [
     "fast-frequency-response",
     "primary-control",
@@ -32,7 +37,9 @@
         "id": "definition-in-an-article-by-a-task-force",
         "title": "Definition in an Article by a Task Force",
         "type": "definition",
-        "source_keys": ["kundur2004stability"],
+        "source_keys": [
+          "kundur2004stability"
+        ],
         "page": null,
         "body_md": "> Frequency Stability refers to the ability of a power system to maintain steady frequency following a severe system upset resulting in a significant imbalance between generation and load.\n"
       }
