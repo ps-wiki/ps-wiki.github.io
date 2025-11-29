@@ -1149,7 +1149,7 @@
     {
       "id": "power-systems-optimization",
       "title": "Power Systems Optimization",
-      "summary": "The ability to maintain equilibrium during normal and abnormal conditions.",
+      "summary": "It includes investment problems, operation planning problems, operations problems, and control problems.",
       "tags": [
         "optimization"
       ],
@@ -1812,5 +1812,5 @@
       "updated_at": "2025-11-02"
     }
   ],
-  "generated_at": "2025-11-29T08:56:32Z"
+  "generated_at": "2025-11-29T22:13:56Z"
 }

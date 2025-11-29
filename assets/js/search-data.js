@@ -871,7 +871,7 @@ ninja.data = [{
               window.location.href = "/wiki/replacement-reserves/";
             },},{id: "wiki-power-systems-optimization",
           title: 'Power Systems Optimization',
-          description: "The ability to maintain equilibrium during normal and abnormal conditions.",
+          description: "It includes investment problems, operation planning problems, operations problems, and control problems.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/power-systems-optimization/";
             },},{
