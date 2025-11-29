@@ -152,7 +152,7 @@ def main():
                     break
 
     # Second pass: related references (only for docs that passed schema)
-    if not args.no_related_check and not args.fail_fast and not all_errors:
+    if not args.no_related_check and not (args.fail_fast and all_errors):
         # Build set of ALL known IDs in the directory (not just validated files)
         all_json_files = sorted(args.dir.glob("*.json"))
         known_ids = set()
