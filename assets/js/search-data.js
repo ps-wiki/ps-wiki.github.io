@@ -859,6 +859,11 @@ ninja.data = [{
           description: "The active power reserves available to restore system frequency to the nominal frequency",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/frequency-restoration-reserves/";
+            },},{id: "wiki-n-situation",
+          title: 'N-Situation',
+          description: "No transmission system element is unavailable due to occurrence of a contingency.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/n-situation/";
             },},{id: "wiki-replacement-reserves",
           title: 'Replacement Reserves',
           description: "The active power reserves available to restore or support the required level of frequency restoration reserves (FRR) to be prepared for additional system imbalances, including generation reserves.",

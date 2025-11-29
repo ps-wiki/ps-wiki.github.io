@@ -33,6 +33,17 @@
         ],
         "page": null,
         "body_md": "> The ability of the electricity system to supply the aggregate electrical demand and energy requirements of the end-use customers at all times, taking into account scheduled and reasonably expected unscheduled outages of system elements.\n"
+      },
+      {
+        "order": 2,
+        "id": "definition-in-a-european-union-regulation",
+        "title": "Definition in a European Union Regulation",
+        "type": "definition",
+        "source_keys": [
+          "eu2017guideline"
+        ],
+        "page": "p8",
+        "body_md": "> 'adequacy' means the ability of in-feeds into an area to meet the load in that area;\n"
       }
     ]
   }

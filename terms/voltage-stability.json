@@ -8,9 +8,16 @@
     "stability",
     "ieee",
     "ieee-task-force",
-    "article"
+    "article",
+    "european-union",
+    "europe"
   ],
-  "related": [],
+  "related": [
+    "stability",
+    "frequency-stability",
+    "rotor-angle-stability",
+    "n-situation"
+  ],
   "version": "1.0.0",
   "breaking": false,
   "dates": {
@@ -35,6 +42,17 @@
         ],
         "page": null,
         "body_md": "> Voltage stability refers to the ability of a power system to maintain steady voltages close to nominal value at all buses in the system after being subjected to a disturbance.\n"
+      },
+      {
+        "order": 2,
+        "id": "definition-in-a-european-union-regulation",
+        "title": "Definition in a European Union Regulation",
+        "type": "definition",
+        "source_keys": [
+          "eu2017guideline"
+        ],
+        "page": "p6",
+        "body_md": "> 'voltage stability' means the ability of a transmission system to maintain acceptable voltages at all nodes in the transmission system in the N-situation and after being subjected to a disturbance;\n"
       }
     ]
   }
