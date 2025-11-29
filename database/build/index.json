@@ -250,6 +250,16 @@
       "updated_at": "2025-06-22"
     },
     {
+      "id": "composite-short-circuit-ratio",
+      "title": "Composite Short-Circuit Ratio",
+      "summary": "CSCR. The equivalent system impedance seen by multiple inverter-based resources by creating a common medium voltage bus and tying all inverter-based resources of interest together at that common bus.",
+      "tags": [
+        "stability",
+        "nerc"
+      ],
+      "updated_at": "2025-11-29"
+    },
+    {
       "id": "contingency-analysis",
       "title": "Contingency Analysis",
       "summary": "Procedures to study a contingency.",
@@ -782,6 +792,15 @@
       "updated_at": "2025-06-20"
     },
     {
+      "id": "generalized-short-circuit-ratio",
+      "title": "Generalized Short-Circuit Ratio",
+      "summary": "gSCR. Geeneralized representation of SCR for single-infeed power electronic systems (SIPESs) in multi-infeed power electronic systems (MIPESs).",
+      "tags": [
+        "stability"
+      ],
+      "updated_at": "2025-11-29"
+    },
+    {
       "id": "generation-redispatch",
       "title": "Generation Redispatch",
       "summary": "Generators are adjusted away (off-cost) from their normal assignments (on-cost).",
@@ -802,6 +821,16 @@
         "nerc"
       ],
       "updated_at": "2025-06-20"
+    },
+    {
+      "id": "grid-strength",
+      "title": "Grid Strength",
+      "summary": "How \"stiff\" the grid is in response to small perturbations.",
+      "tags": [
+        "reliability",
+        "nerc"
+      ],
+      "updated_at": "2025-11-29"
     },
     {
       "id": "interchange",
@@ -1460,6 +1489,26 @@
       "updated_at": "2025-06-20"
     },
     {
+      "id": "short-circuit-ratio-with-interaction-factors",
+      "title": "Short-Circuit Ratio with Interaction Factors",
+      "summary": "SCRIF. The ratio between short circuit apparent power from a 3LG fault at a given location in the power system to the rating of the location.",
+      "tags": [
+        "reliability",
+        "nerc"
+      ],
+      "updated_at": "2025-11-29"
+    },
+    {
+      "id": "short-circuit-ratio",
+      "title": "Short-Circuit Ratio",
+      "summary": "SCR. The ratio between short circuit apparent power from a 3LG fault at a given location in the power system to the rating of the location.",
+      "tags": [
+        "stability",
+        "nerc"
+      ],
+      "updated_at": "2025-11-29"
+    },
+    {
       "id": "small-signal-stability",
       "title": "Small Signal Stability",
       "summary": "The ability to maintain synchronism when subjected to small disturbances.",
@@ -1781,6 +1830,15 @@
       "updated_at": "2025-11-03"
     },
     {
+      "id": "weighted-short-circuit-ratio",
+      "title": "Weighted Short-Circuit Ratio",
+      "summary": "WSCR. It takes interactions between wind plants into account. The WSCR can better reflect the actual system strength when integrating a large amount of wind plants in a weak system.",
+      "tags": [
+        "stability"
+      ],
+      "updated_at": "2025-11-29"
+    },
+    {
       "id": "wholesale-markets",
       "title": "Wholesale Markets",
       "summary": "The purchase and sale from generators to resellers.",
@@ -1812,5 +1870,5 @@
       "updated_at": "2025-11-02"
     }
   ],
-  "generated_at": "2025-11-29T22:08:04Z"
+  "generated_at": "2025-11-29T23:40:56Z"
 }

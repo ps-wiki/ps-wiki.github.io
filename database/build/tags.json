@@ -2,7 +2,7 @@
   "tags": [
     {
       "tag": "nerc",
-      "count": 50
+      "count": 54
     },
     {
       "tag": "system-operator",
@@ -17,6 +17,10 @@
       "count": 24
     },
     {
+      "tag": "stability",
+      "count": 23
+    },
+    {
       "tag": "frequency-control",
       "count": 21
     },
@@ -25,7 +29,7 @@
       "count": 21
     },
     {
-      "tag": "stability",
+      "tag": "reliability",
       "count": 19
     },
     {
@@ -38,10 +42,6 @@
     },
     {
       "tag": "ferc",
-      "count": 17
-    },
-    {
-      "tag": "reliability",
       "count": 17
     },
     {
