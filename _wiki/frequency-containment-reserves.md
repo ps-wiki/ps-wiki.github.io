@@ -1,5 +1,5 @@
 ---
-title: Frequency Containment Reserve
+title: Frequency Containment Reserves
 description: The active power reserves available to contain system frequency after the occurrence of an imbalance.
 tags:
   - frequency-control
