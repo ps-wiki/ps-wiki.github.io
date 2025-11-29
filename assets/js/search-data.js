@@ -829,6 +829,41 @@ ninja.data = [{
           description: "ISO/RTO/TSO guidelines on EMT modeling.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/emt-modeling-guideline/";
+            },},{id: "wiki-dynamic-regulating-reserve",
+          title: 'Dynamic Regulating Reserve',
+          description: "Reserve for AGC to provide normal regulating margin.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/dynamic-regulating-reserve/";
+            },},{id: "wiki-dynamic-study-model",
+          title: 'Dynamic Study Model',
+          description: "Reserve for AGC to provide normal regulating margin.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/dynamic-study-model/";
+            },},{id: "wiki-energy-reserve",
+          title: 'Energy Reserve',
+          description: "A generalized notion of reserves to address the issues of storage unit reserve provision.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/energy-reserve/";
+            },},{id: "wiki-frequency-containment-reserve",
+          title: 'Frequency Containment Reserve',
+          description: "The active power reserves available to contain system frequency after the occurrence of an imbalance.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/frequency-containment-reserve/";
+            },},{id: "wiki-frequency-containment-reserves",
+          title: 'Frequency Containment Reserves',
+          description: "The active power reserves available to contain system frequency after the occurrence of an imbalance.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/frequency-containment-reserves/";
+            },},{id: "wiki-frequency-restoration-reserves",
+          title: 'Frequency Restoration Reserves',
+          description: "The active power reserves available to restore system frequency to the nominal frequency",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/frequency-restoration-reserves/";
+            },},{id: "wiki-replacement-reserves",
+          title: 'Replacement Reserves',
+          description: "The active power reserves available to restore or support the required level of frequency restoration reserves (FRR) to be prepared for additional system imbalances, including generation reserves.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/replacement-reserves/";
             },},{
         id: 'social-email',
         title: 'email',

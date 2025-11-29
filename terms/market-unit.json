@@ -4,8 +4,13 @@
   "title": "Market Unit",
   "description": "The unit sets the price of next increment or decrement of energy.",
   "language": "en",
-  "tags": ["market", "ferc"],
-  "related": ["wholesale-markets"],
+  "tags": [
+    "market",
+    "ferc"
+  ],
+  "related": [
+    "wholesale-markets"
+  ],
   "version": "1.0.0",
   "breaking": false,
   "dates": {
@@ -25,7 +30,9 @@
         "id": "definition-by-ferc",
         "title": "Definition by FERC",
         "type": "definition",
-        "source_keys": ["ferc2020glossary"],
+        "source_keys": [
+          "ferc2020glossary"
+        ],
         "page": null,
         "body_md": "> Marginal Electric Generating Unit is, in organized wholesale markets, the price of the marginal source of electricity usually sets the price of the unit providing the next increment or decrement of energy, which price usually sets the price for all generation.\n"
       }

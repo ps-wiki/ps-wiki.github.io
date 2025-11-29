@@ -4,7 +4,13 @@
   "title": "Common Format for Transient Data Exchange",
   "description": "COMTRADE. Inactive.",
   "language": "en",
-  "tags": ["data-format", "inactive", "ieee", "ieee-standard", "standard"],
+  "tags": [
+    "data-format",
+    "inactive",
+    "ieee",
+    "ieee-standard",
+    "standard"
+  ],
   "related": [],
   "version": "1.0.0",
   "breaking": false,
@@ -25,7 +31,9 @@
         "id": "definition-in-an-ieee-standard",
         "title": "Definition in an IEEE Standard",
         "type": "definition",
-        "source_keys": ["ieee1999comtrade"],
+        "source_keys": [
+          "ieee1999comtrade"
+        ],
         "page": null,
         "body_md": "> A common format for data files and exchange medium used for the interchange of various types of fault, test, or simulation data for electrical power systems is defined. Sources of transient data are described, and the case of disketts as an exchange medium is recommended. issues of sampling rates, filters, and sample rate conversions for transient data being exchanged are discussed. Files for data exchange are specified, as is the organization of the data. **A sample file is given in the source file.**\n\n<!-- prettier-ignore-start -->\n\n> Versions: Superseded\n> - C37.111-1999 - Oct 15, 1999\n> - C37.111-1991 - Oct 21, 1991\n{: .block-warning }\n\n> Inactive\n> - Reserved: C37.111-2013 - Apr 30, 2013\n> - Redline: C37.111-2013 - Apr 30, 2013\n> - Draft: PC37.111/D4, Jan 2012 - Jul 24, 2012\n{: .block-warning }\n<!-- prettier-ignore-end -->\n"
       }

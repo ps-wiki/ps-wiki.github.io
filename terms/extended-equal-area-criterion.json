@@ -4,9 +4,16 @@
   "title": "Extended Equal Area Criterion",
   "description": "Extend EAC to multi-machine systems.",
   "language": "en",
-  "tags": ["stability", "article"],
-  "related": ["equal-area-criterion"],
-  "aliases": ["EEAC"],
+  "tags": [
+    "stability",
+    "article"
+  ],
+  "related": [
+    "equal-area-criterion"
+  ],
+  "aliases": [
+    "EEAC"
+  ],
   "version": "1.0.1",
   "breaking": false,
   "dates": {
@@ -26,7 +33,9 @@
         "id": "definition-in-an-article",
         "title": "Definition in an Article",
         "type": "definition",
-        "source_keys": ["xue1988eeca"],
+        "source_keys": [
+          "xue1988eeca"
+        ],
         "page": null,
         "body_md": "> Y. Xue, Th. Van Cutsem, and M. Ribbens-Pavella: We are thankful to the discussers for their valuable and constructive comments. In order to answer their questions in detail, it is useful to first clarify some aspects of our method to which we henceforth refer to as the **“Extended Equal Area Criterion”** (EEAC). The EEAC essentially pursues two objectives:\n> i) Devise an ultrafast technique to assess transient stability (in terms of CCT’s or margins as appropriate); this goal was met in this paper.\n> ii) Provide analytical means of sensitivity analysis and control; initiated here, this study is developed in Ref. [A].\n> To reach these objectives, the EEAC method has called upon one conjecture and one simplifying assumption. It is worth restating them and examining their implications in some detail.\n\nCompared to EAC, EEAC uses an approximate one-machine-infinite-bus (OMIB) equivalent of the multi-machine system.\nOMIB is a.k.a. <u>single machine infinite bus</u> (SIMB).\nThe term \"Extended Equal Area Criterion\" comes from the authors' response to a discussion on the paper.\n"
       }

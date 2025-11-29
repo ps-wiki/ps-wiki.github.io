@@ -4,7 +4,10 @@
   "title": "Bilateral Transaction",
   "description": "A direct contract between a seller and buyer outside of a centralized market.",
   "language": "en",
-  "tags": ["market", "ferc"],
+  "tags": [
+    "market",
+    "ferc"
+  ],
   "related": [],
   "version": "1.0.0",
   "breaking": false,
@@ -25,7 +28,9 @@
         "id": "definition-by-ferc",
         "title": "Definition by FERC",
         "type": "definition",
-        "source_keys": ["ferc2020glossary"],
+        "source_keys": [
+          "ferc2020glossary"
+        ],
         "page": null,
         "body_md": "> A direct contract between a seller and buyer outside of a centralized market or exchange (e.g. Nymex or an RTO/ISO). In energy markets, the buyer or seller usually finds his or her matching counter-party through a broker (e.g. voice brokers, ICE, etc.).\n"
       }

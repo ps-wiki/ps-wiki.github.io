@@ -4,7 +4,10 @@
   "title": "Synchronous Machine",
   "description": "SM. An AC electrical machine operated with a constant electromagnetic field.",
   "language": "en",
-  "tags": ["ieee", "ieee-standard"],
+  "tags": [
+    "ieee",
+    "ieee-standard"
+  ],
   "related": [],
   "version": "1.0.0",
   "breaking": false,
@@ -25,7 +28,9 @@
         "id": "definition-in-an-ieee-standard",
         "title": "Definition in an IEEE Standard",
         "type": "definition",
-        "source_keys": ["ieee2025std2988"],
+        "source_keys": [
+          "ieee2025std2988"
+        ],
         "page": "p15",
         "body_md": "> A synchronous machine is an ac electrical machine operated with a constant electromagnetic field. Its instantaneous speed of normal operation is exactly proportional to the frequency of its ac voltage.\n> An SM with a round rotor has a uniform air gap, so that the reluctance does not depend on the flux position. Contrarily, the air gap of an SM with a salient-pole rotor varies circumferentially around the rotor, resulting in a non-uniform reluctance.\n"
       }

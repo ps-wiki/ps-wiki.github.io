@@ -1,0 +1,45 @@
+{
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
+  "id": "frequency-containment-reserves",
+  "title": "Frequency Containment Reserves",
+  "description": "The active power reserves available to contain system frequency after the occurrence of an imbalance.",
+  "language": "en",
+  "tags": [
+    "frequency-control",
+    "reserve",
+    "european-union",
+    "europe"
+  ],
+  "related": [
+    "contingency-reserve",
+    "frequency-restoration-reserves",
+    "replacement-reserves"
+  ],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-11-28",
+    "last_modified": "2025-11-28"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-in-a-european-union-regulation",
+        "title": "Definition in a European Union Regulation",
+        "type": "definition",
+        "source_keys": [
+          "eu2017guideline"
+        ],
+        "page": "p5",
+        "body_md": "> ‘frequency containment reserves’ or ‘FCR’ means the active power reserves available to contain system frequency after the occurrence of an imbalance.\n"
+      }
+    ]
+  }
+}

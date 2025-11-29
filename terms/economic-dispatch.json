@@ -4,7 +4,10 @@
   "title": "Economic Dispatch",
   "description": "Allocation of generating units for economical production.",
   "language": "en",
-  "tags": ["dispatch", "nerc"],
+  "tags": [
+    "dispatch",
+    "nerc"
+  ],
   "related": [],
   "version": "1.0.0",
   "breaking": false,
@@ -25,7 +28,9 @@
         "id": "definition-by-nerc",
         "title": "Definition by NERC",
         "type": "definition",
-        "source_keys": ["nerc2024glossary"],
+        "source_keys": [
+          "nerc2024glossary"
+        ],
         "page": null,
         "body_md": "> The allocation of demand to individual generating units on line to effect the most economical production of electricity.\n"
       }

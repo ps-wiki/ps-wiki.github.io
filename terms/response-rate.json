@@ -4,7 +4,10 @@
   "title": "Response Rate",
   "description": "The Ramp Rate that a generating unit can achieve under normal conditions.",
   "language": "en",
-  "tags": ["generation", "nerc"],
+  "tags": [
+    "generation",
+    "nerc"
+  ],
   "related": [],
   "version": "1.0.0",
   "breaking": false,
@@ -25,7 +28,9 @@
         "id": "definition-by-nerc",
         "title": "Definition by NERC",
         "type": "definition",
-        "source_keys": ["nerc2024glossary"],
+        "source_keys": [
+          "nerc2024glossary"
+        ],
         "page": null,
         "body_md": "> The [Ramp Rate](/wiki/ramp) that a generating unit can achieve under normal operating conditions expressed in megawatts per minute (MW/Min).\n"
       }

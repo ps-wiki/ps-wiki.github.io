@@ -4,7 +4,12 @@
   "title": "Secondary Reserve",
   "description": "Reserve capability within a 10-to-30 minute interval.",
   "language": "en",
-  "tags": ["reserve", "contingency", "system-operator", "pjm"],
+  "tags": [
+    "reserve",
+    "contingency",
+    "system-operator",
+    "pjm"
+  ],
   "related": [],
   "version": "1.0.0",
   "breaking": false,
@@ -25,7 +30,9 @@
         "id": "definition-in-by-pjm",
         "title": "Definition in by PJM",
         "type": "definition",
-        "source_keys": ["pjm2024m10"],
+        "source_keys": [
+          "pjm2024m10"
+        ],
         "page": "p27, Revision 45",
         "body_md": "> Secondary Reserve is reserve capability that can be fully converted into energy or load that can be removed from the system within a 10-to-30 minute interval following the request of the PJM dispatcher. Resources providing Secondary Reserve need not be electrically synchronized to the system. Resources committed to the Secondary Reserve product meet only the 30-Minute Reserve Service.\n"
       }
