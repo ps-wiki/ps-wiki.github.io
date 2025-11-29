@@ -1,8 +1,8 @@
 {
   "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
-  "id": "frequency-restoration-reserves",
-  "title": "Frequency Restoration Reserves",
-  "description": "The active power reserves available to restore system frequency to the nominal frequency",
+  "id": "replacement-reserves",
+  "title": "Replacement Reserves",
+  "description": "The active power reserves available to restore or support the required level of frequency restoration reserves (FRR) to be prepared for additional system imbalances, including generation reserves.",
   "language": "en",
   "tags": [
     "frequency-control",
@@ -13,8 +13,7 @@
   "related": [
     "contingency-reserve",
     "frequency-containment-reserves",
-    "frequency-restoration-reserves",
-    "replacement-reserves"
+    "frequency-restoration-reserves"
   ],
   "version": "1.0.0",
   "breaking": false,
@@ -39,7 +38,7 @@
           "eu2017guideline"
         ],
         "page": "p5",
-        "body_md": "> ‘frequency restoration reserves’ or ‘FRR’ means the active power reserves available to restore system frequency to the nominal frequency and, for a synchronous area consisting of more than one LFC area, to restore power balance to the scheduled value\n"
+        "body_md": "> ‘replacement reserves’ or ‘RR’ means the active power reserves available to restore or support the required level of FRR to be prepared for additional system imbalances, including generation reserves;\n"
       }
     ]
   }

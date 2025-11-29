@@ -1,6 +1,6 @@
 ---
-title: Frequency Containment Reserves
-description: The active power reserves available to contain system frequency after the occurrence of an imbalance.
+title: Frequency Restoration Reserves
+description: The active power reserves available to restore system frequency to the nominal frequency
 tags:
   - frequency-control
   - reserve
@@ -8,6 +8,9 @@ tags:
   - europe
 related:
   - contingency-reserve
+  - frequency-containment-reserves
+  - frequency-restoration-reserves
+  - replacement-reserves
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
@@ -21,4 +24,4 @@ generated: 2025-11-28
 
 Source: <d-cite key="eu2017guideline"></d-cite> p5
 
-> ‘frequency containment reserves’ or ‘FCR’ means the active power reserves available to contain system frequency after the occurrence of an imbalance.
+> ‘frequency restoration reserves’ or ‘FRR’ means the active power reserves available to restore system frequency to the nominal frequency and, for a synchronous area consisting of more than one LFC area, to restore power balance to the scheduled value
