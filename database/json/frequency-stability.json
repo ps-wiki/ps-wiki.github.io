@@ -8,21 +8,25 @@
     "stability",
     "ieee",
     "ieee-task-force",
-    "article"
+    "article",
+    "european-union",
+    "europe"
   ],
   "related": [
+    "stability",
     "fast-frequency-response",
     "primary-control",
     "secondary-control",
     "tertiary-control",
     "frequency-regulation",
-    "automatic-generation-control"
+    "automatic-generation-control",
+    "n-situation"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-06-22"
+    "last_modified": "2025-11-28"
   },
   "authors": [
     {
@@ -42,6 +46,17 @@
         ],
         "page": null,
         "body_md": "> Frequency Stability refers to the ability of a power system to maintain steady frequency following a severe system upset resulting in a significant imbalance between generation and load.\n"
+      },
+      {
+        "order": 2,
+        "id": "definition-in-a-european-union-regulation",
+        "title": "Definition in a European Union Regulation",
+        "type": "definition",
+        "source_keys": [
+          "eu2017guideline"
+        ],
+        "page": "p6",
+        "body_md": "> 'frequency stability' means the ability of the transmission system to maintain frequency stable in the N-situation and after being subjected to a disturbance;\n"
       }
     ]
   }

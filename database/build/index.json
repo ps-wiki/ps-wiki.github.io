@@ -765,9 +765,11 @@
         "stability",
         "ieee",
         "ieee-task-force",
-        "article"
+        "article",
+        "european-union",
+        "europe"
       ],
-      "updated_at": "2025-06-22"
+      "updated_at": "2025-11-28"
     },
     {
       "id": "futures-market",
@@ -1007,6 +1009,16 @@
         "ieee"
       ],
       "updated_at": "2025-06-20"
+    },
+    {
+      "id": "n-situation",
+      "title": "N-Situation",
+      "summary": "No transmission system element is unavailable due to occurrence of a contingency.",
+      "tags": [
+        "european-union",
+        "europe"
+      ],
+      "updated_at": "2025-11-28"
     },
     {
       "id": "non-spinning-reserve",
@@ -1364,7 +1376,9 @@
         "stability",
         "ieee",
         "ieee-task-force",
-        "article"
+        "article",
+        "european-union",
+        "europe"
       ],
       "updated_at": "2025-06-19"
     },
@@ -1740,7 +1754,9 @@
         "stability",
         "ieee",
         "ieee-task-force",
-        "article"
+        "article",
+        "european-union",
+        "europe"
       ],
       "updated_at": "2025-06-20"
     },
@@ -1787,5 +1803,5 @@
       "updated_at": "2025-11-02"
     }
   ],
-  "generated_at": "2025-11-29T04:18:08Z"
+  "generated_at": "2025-11-29T08:38:25Z"
 }
