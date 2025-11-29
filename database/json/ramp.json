@@ -4,14 +4,22 @@
   "title": "Ramp",
   "description": "The rate at which the interchange schedule or generator output is attained.",
   "language": "en",
-  "tags": ["ramp", "generator"],
+  "tags": [
+    "ramp",
+    "generator",
+    "nerc",
+    "european-union",
+    "europe"
+  ],
   "related": [],
-  "aliases": ["Ramp Rate"],
-  "version": "1.0.1",
+  "aliases": [
+    "Ramp Rate"
+  ],
+  "version": "1.0.2",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-11-03"
+    "last_modified": "2025-11-28"
   },
   "authors": [
     {
@@ -26,9 +34,22 @@
         "id": "definition-by-nerc",
         "title": "Definition by NERC",
         "type": "definition",
-        "source_keys": ["nerc2024glossary"],
+        "source_keys": [
+          "nerc2024glossary"
+        ],
         "page": null,
         "body_md": "> (Schedule) The rate, expressed in megawatts per minute, at which the interchange schedule is attained during the ramp period.\n>\n> (Generator) The rate, expressed in megawatts per minute, that a generator changes its output.\n"
+      },
+      {
+        "order": 2,
+        "id": "definition-in-a-european-union-regulation",
+        "title": "Definition in a European Union Regulation",
+        "type": "definition",
+        "source_keys": [
+          "eu2017guideline"
+        ],
+        "page": "p7",
+        "body_md": "> ‘ramping rate’ means the rate of change of active power by a power generating module, demand facility or HVDC system;\n"
       }
     ]
   }
