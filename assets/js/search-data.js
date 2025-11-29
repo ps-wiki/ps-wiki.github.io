@@ -869,6 +869,11 @@ ninja.data = [{
           description: "The active power reserves available to restore or support the required level of frequency restoration reserves (FRR) to be prepared for additional system imbalances, including generation reserves.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/replacement-reserves/";
+            },},{id: "wiki-power-systems-optimization",
+          title: 'Power Systems Optimization',
+          description: "The ability to maintain equilibrium during normal and abnormal conditions.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/power-systems-optimization/";
             },},{
         id: 'social-email',
         title: 'email',
