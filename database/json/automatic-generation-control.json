@@ -4,13 +4,24 @@
   "title": "Automatic Generation Control",
   "description": "AGC. Automatic regulation of the power output of generators.",
   "language": "en",
-  "tags": ["frequency-control", "ferc", "nerc"],
-  "related": ["fast-frequency-response", "primary-control", "secondary-control", "tertiary-control", "frequency-regulation", "frequency-stability"],
-  "version": "1.0.1",
+  "tags": [
+    "frequency-control",
+    "ferc",
+    "nerc"
+  ],
+  "related": [
+    "fast-frequency-response",
+    "primary-control",
+    "secondary-control",
+    "tertiary-control",
+    "frequency-regulation",
+    "frequency-stability"
+  ],
+  "version": "1.0.2",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-11-19"
+    "last_modified": "2025-11-26"
   },
   "authors": [
     {
@@ -25,7 +36,9 @@
         "id": "definition-by-nerc",
         "title": "Definition by NERC",
         "type": "definition",
-        "source_keys": ["nerc2024glossary"],
+        "source_keys": [
+          "nerc2024glossary"
+        ],
         "page": null,
         "body_md": "> Means equipment that automatically adjusts a Control Area’s generation from a central location to maintain its interchange schedule plus Frequency Bias.\n"
       },
@@ -34,7 +47,9 @@
         "id": "definition-by-ferc",
         "title": "Definition by FERC",
         "type": "definition",
-        "source_keys": ["ferc2020glossary"],
+        "source_keys": [
+          "ferc2020glossary"
+        ],
         "page": null,
         "body_md": "> The automatic regulation of the power output of electric generators within a prescribed range in response to a change in system frequency, or tie-line loading, to maintain system frequency or scheduled interchange with other areas within predetermined limits.\n"
       },
@@ -43,9 +58,22 @@
         "id": "definition-in-a-course",
         "title": "Definition in a Course",
         "type": "definition",
-        "source_keys": ["sun2021frequency"],
+        "source_keys": [
+          "sun2021frequency"
+        ],
         "page": "p32",
         "body_md": "> Adding supplementary control on load reference set-points of selected generators:\n>\n> − Controlling prime-mover power to match load variations\n>\n> − As system load is continually changing, it is necessary to change the output of generators automatically\n\n> Primary objective: LFC\n> – Regulating frequency to the specified nominal value, e.g. 60Hz, and maintaining the interchange power between control areas at the scheduled values by adjusting the output of selected generators\n\n> Secondary objective: Generation Dispatch\n> – Distributing the required change in generation among generators to minimize operation costs.\n\n> During large disturbances and emergencies, AGC is bypassed and other emergency controls are applied.\n"
+      },
+      {
+        "order": 4,
+        "id": "definition-in-a-book",
+        "title": "Definition in a Book",
+        "type": "definition",
+        "source_keys": [
+          "kundur1994Power"
+        ],
+        "page": "p601, first edition",
+        "body_md": "> The primary objectives of automatic generation control (AGC) are to regulate frequency to the specified nominal value and to maintain the interchange power between control areas at the scheduled values by adjusting the output of selected generators. This function is commonly referred to as load-frequency control (LFC). A secondary objective is to distribute the required change in generation among units to minimize operating costs.\n"
       }
     ]
   }

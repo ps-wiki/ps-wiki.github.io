@@ -63,7 +63,7 @@
         "ferc",
         "nerc"
       ],
-      "updated_at": "2025-11-19"
+      "updated_at": "2025-11-26"
     },
     {
       "id": "autonomous",
@@ -1697,5 +1697,5 @@
       "updated_at": "2025-11-02"
     }
   ],
-  "generated_at": "2025-11-27T07:20:34Z"
+  "generated_at": "2025-11-29T02:46:27Z"
 }
