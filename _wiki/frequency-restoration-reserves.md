@@ -8,6 +8,8 @@ tags:
   - europe
 related:
   - contingency-reserve
+  - frequency-restoration-reserves
+  - replacement-reserves
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
