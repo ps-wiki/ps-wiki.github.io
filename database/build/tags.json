@@ -53,8 +53,16 @@
       "count": 13
     },
     {
+      "tag": "europe",
+      "count": 12
+    },
+    {
       "tag": "ieee-standard",
       "count": 12
+    },
+    {
+      "tag": "european-union",
+      "count": 11
     },
     {
       "tag": "metrics",
@@ -69,16 +77,8 @@
       "count": 9
     },
     {
-      "tag": "europe",
-      "count": 8
-    },
-    {
       "tag": "generation",
       "count": 8
-    },
-    {
-      "tag": "european-union",
-      "count": 7
     },
     {
       "tag": "geography",

@@ -6,14 +6,18 @@ tags:
   - system-operator
   - stability
   - pjm
-related: []
+related:
+  - stability
+  - frequency-stability
+  - voltage-stability
+  - rotor-angle-stability
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 version: 1.0.0
 date: 2025-03-15
 lastmod: 2025-06-22
-generated: 2025-11-28
+generated: 2025-11-29
 ---
 
 ### Definition by PJM
@@ -45,3 +49,9 @@ Source: <d-cite key="pjm2024m3"></d-cite> p40, Revision 67
 > - Voltage Limits – High, Low, and Load Dump actual voltage limits, High and Low emergency voltage limits for contingency simulation, and voltage drop limits for wide area transfer simulations to protect against wide area voltage collapse.
 > - Transfer Limits – The MW flow limitation across an interface to protect the system from large voltage drops or collapse caused by any viable contingency.
 > - Stability Limits – limit based on **voltage phase angle difference** to protect portions of the PJM RTO from separation or unstable operation.
+
+### Definition in a European Union Regulation
+
+Source: <d-cite key="eu2017guideline"></d-cite> p7
+
+> 'stability limits' means the permitted boundaries for the operation of the transmission system in terms of respecting the limits of voltage stability, rotor angle stability and frequency stability;

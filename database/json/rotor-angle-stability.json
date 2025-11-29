@@ -8,9 +8,16 @@
     "stability",
     "ieee",
     "ieee-task-force",
-    "article"
+    "article",
+    "european-union",
+    "europe"
   ],
-  "related": [],
+  "related": [
+    "stability",
+    "frequency-stability",
+    "voltage-stability",
+    "n-situation"
+  ],
   "version": "1.0.0",
   "breaking": false,
   "dates": {
@@ -35,6 +42,17 @@
         ],
         "page": null,
         "body_md": "> Rotor angle stability is concerned with the ability of the interconnected synchronous machines in a power system to **remain in synchronism** under normal operating conditions and to regain synchronism after being subjected to a small or large disturbance.\n"
+      },
+      {
+        "order": 2,
+        "id": "definition-in-a-european-union-regulation",
+        "title": "Definition in a European Union Regulation",
+        "type": "definition",
+        "source_keys": [
+          "eu2017guideline"
+        ],
+        "page": "p7",
+        "body_md": "> 'rotor angle stability' means the ability of synchronous machines to remain in synchronism under N-situation and after being subject to a disturbance;\n"
       }
     ]
   }

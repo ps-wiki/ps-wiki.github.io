@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
+  "id": "n-situation",
+  "title": "N-Situation",
+  "description": "No transmission system element is unavailable due to occurrence of a contingency.",
+  "language": "en",
+  "tags": [
+    "european-union",
+    "europe"
+  ],
+  "related": [],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-11-28",
+    "last_modified": "2025-11-28"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-in-a-european-union-regulation",
+        "title": "Definition in a European Union Regulation",
+        "type": "definition",
+        "source_keys": [
+          "eu2017guideline"
+        ],
+        "page": "p5",
+        "body_md": "> ‘N-situation’ means the situation where no transmission system element is unavailable due to occurrence of a contingency;\n"
+      }
+    ]
+  }
+}
