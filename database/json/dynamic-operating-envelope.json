@@ -4,8 +4,14 @@
   "title": "Dynamic Operating Envelope",
   "description": "DOE. Available capacity to import/export power without violating constraints.",
   "language": "en",
-  "tags": ["distribution", "operation", "article"],
-  "related": ["operating-envelope"],
+  "tags": [
+    "distribution",
+    "operation",
+    "article"
+  ],
+  "related": [
+    "operating-envelope"
+  ],
   "version": "1.0.0",
   "breaking": false,
   "dates": {
@@ -25,7 +31,9 @@
         "id": "definition-by-epri",
         "title": "Definition by EPRI",
         "type": "definition",
-        "source_keys": ["epri2022operatingenvelopes"],
+        "source_keys": [
+          "epri2022operatingenvelopes"
+        ],
         "page": "p3",
         "body_md": "> Put simply, a dynamic operating envelope establishes the bounds within which a controlled resource (load or generation) can\n> operate for a given period of time and avoid adverse grid impacts.\n> The operating envelope is created by allocating the grid’s marginal hosting capacity amongst the flexible resources.\n> Allocation of the marginal hosting capacity may utilize a uniform, proportional, or economic based approach.\n"
       },
@@ -34,7 +42,9 @@
         "id": "definition-in-an-article",
         "title": "Definition in an Article",
         "type": "definition",
-        "source_keys": ["alam2024dynamicenvelopes"],
+        "source_keys": [
+          "alam2024dynamicenvelopes"
+        ],
         "page": null,
         "body_md": "> A Dynamic Operating Envelope (DOE) specifies the available capacity to import/export power for Distributed Energy Resources (DERs)\n> or connection points of a distribution network in a time interval without violating its physical and operational constraints.\n"
       }

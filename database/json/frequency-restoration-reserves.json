@@ -11,7 +11,9 @@
     "europe"
   ],
   "related": [
-    "contingency-reserve"
+    "contingency-reserve",
+    "frequency-restoration-reserves",
+    "replacement-reserves"
   ],
   "version": "1.0.0",
   "breaking": false,

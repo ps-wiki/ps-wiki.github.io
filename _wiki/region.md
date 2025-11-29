@@ -15,7 +15,7 @@ authors:
 version: 1.0.0
 date: 2025-03-15
 lastmod: 2025-06-17
-generated: 2025-11-26
+generated: 2025-11-28
 ---
 
 ### Definition by NERC
@@ -25,7 +25,7 @@ generated: 2025-11-26
         {% include figure.liquid
         path="/assets/img/pswiki/six_region.png"
         zoomable=true %}
-                Regional Maps (from <d-cite key="nerc2024tpl"></d-cite>)
+        Regional Maps (from <d-cite key="nerc2024tpl"></d-cite>)
     </div>
 </div>
 

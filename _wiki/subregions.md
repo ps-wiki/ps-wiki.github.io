@@ -16,7 +16,7 @@ authors:
 version: 1.0.0
 date: 2025-03-15
 lastmod: 2025-06-20
-generated: 2025-11-26
+generated: 2025-11-28
 ---
 
 ### Definition by EPA
@@ -26,7 +26,7 @@ generated: 2025-11-26
         {% include figure.liquid
         path="/assets/img/pswiki/egrid_subregions_map.png"
         zoomable=true %}
-                Map of eGRID Subregions (from <d-cite key="epa2024gridregions"></d-cite>)
+        Map of eGRID Subregions (from <d-cite key="epa2024gridregions"></d-cite>)
     </div>
 </div>
 

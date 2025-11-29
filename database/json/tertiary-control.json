@@ -4,8 +4,17 @@
   "title": "Tertiary Control",
   "description": "Actions taken to handle current and future contingencies.",
   "language": "en",
-  "tags": ["frequency-control", "nerc"],
-  "related": ["primary-control", "secondary-control", "frequency-regulation", "automatic-generation-control", "frequency-stability"],
+  "tags": [
+    "frequency-control",
+    "nerc"
+  ],
+  "related": [
+    "primary-control",
+    "secondary-control",
+    "frequency-regulation",
+    "automatic-generation-control",
+    "frequency-stability"
+  ],
   "version": "1.0.0",
   "breaking": false,
   "dates": {
@@ -25,7 +34,9 @@
         "id": "definition-by-nerc",
         "title": "Definition by NERC",
         "type": "definition",
-        "source_keys": ["nerc2021balancing"],
+        "source_keys": [
+          "nerc2021balancing"
+        ],
         "page": null,
         "body_md": "> Encompasses actions taken to get resources in place to handle current and future contingencies. Reserve deployment and Reserve restoration following a disturbance are common types of Tertiary Control.\n"
       }

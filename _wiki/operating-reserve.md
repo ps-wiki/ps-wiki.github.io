@@ -15,7 +15,7 @@ authors:
 version: 1.0.0
 date: 2025-03-15
 lastmod: 2025-06-22
-generated: 2025-11-26
+generated: 2025-11-28
 ---
 
 ### Definition by NERC
@@ -25,7 +25,7 @@ generated: 2025-11-26
         {% include figure.liquid
         path="/assets/img/pswiki/operating_reserve.png"
         zoomable=true %}
-                Operating Reserves (from <d-cite key="nerc2021reserve"></d-cite>)
+        Operating Reserves (from <d-cite key="nerc2021reserve"></d-cite>)
     </div>
 </div>
 

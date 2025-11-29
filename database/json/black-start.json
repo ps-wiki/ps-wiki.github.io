@@ -4,7 +4,11 @@
   "title": "Black Start",
   "description": "Establishing the voltage from around zero",
   "language": "en",
-  "tags": ["operation", "ieee", "ieee-standard"],
+  "tags": [
+    "operation",
+    "ieee",
+    "ieee-standard"
+  ],
   "related": [],
   "version": "1.0.0",
   "breaking": false,
@@ -25,7 +29,9 @@
         "id": "definition-in-an-ieee-standard",
         "title": "Definition in an IEEE Standard",
         "type": "definition",
-        "source_keys": ["ieee2025std2988"],
+        "source_keys": [
+          "ieee2025std2988"
+        ],
         "page": "p14",
         "body_md": "> Black-start is the process of establishing the voltage from around zero, in terms of root mean square (rms), when an energy source is available.\n"
       }

@@ -2,7 +2,7 @@
   "tags": [
     {
       "tag": "nerc",
-      "count": 49
+      "count": 50
     },
     {
       "tag": "system-operator",
@@ -14,7 +14,19 @@
     },
     {
       "tag": "ieee",
-      "count": 23
+      "count": 24
+    },
+    {
+      "tag": "frequency-control",
+      "count": 21
+    },
+    {
+      "tag": "reserve",
+      "count": 21
+    },
+    {
+      "tag": "stability",
+      "count": 19
     },
     {
       "tag": "article",
@@ -25,24 +37,12 @@
       "count": 18
     },
     {
-      "tag": "stability",
-      "count": 18
-    },
-    {
       "tag": "ferc",
       "count": 17
     },
     {
       "tag": "reliability",
       "count": 17
-    },
-    {
-      "tag": "frequency-control",
-      "count": 16
-    },
-    {
-      "tag": "reserve",
-      "count": 15
     },
     {
       "tag": "transmission",
@@ -69,8 +69,16 @@
       "count": 9
     },
     {
+      "tag": "europe",
+      "count": 8
+    },
+    {
       "tag": "generation",
       "count": 8
+    },
+    {
+      "tag": "european-union",
+      "count": 7
     },
     {
       "tag": "geography",
@@ -133,6 +141,14 @@
       "count": 3
     },
     {
+      "tag": "regulation",
+      "count": 3
+    },
+    {
+      "tag": "entsoe",
+      "count": 2
+    },
+    {
       "tag": "grid-enhancing-technology",
       "count": 2
     },
@@ -145,11 +161,11 @@
       "count": 2
     },
     {
-      "tag": "neso",
+      "tag": "isone",
       "count": 2
     },
     {
-      "tag": "regulation",
+      "tag": "neso",
       "count": 2
     },
     {
@@ -161,10 +177,6 @@
       "count": 2
     },
     {
-      "tag": "EMT",
-      "count": 1
-    },
-    {
       "tag": "control-theory",
       "count": 1
     },
@@ -173,7 +185,11 @@
       "count": 1
     },
     {
-      "tag": "entsoe",
+      "tag": "emt",
+      "count": 1
+    },
+    {
+      "tag": "energy-storage",
       "count": 1
     },
     {
@@ -205,10 +221,6 @@
       "count": 1
     },
     {
-      "tag": "isone",
-      "count": 1
-    },
-    {
       "tag": "load",
       "count": 1
     },
@@ -218,6 +230,10 @@
     },
     {
       "tag": "measurement",
+      "count": 1
+    },
+    {
+      "tag": "miso",
       "count": 1
     },
     {

@@ -4,7 +4,10 @@
   "title": "Distribution",
   "description": "The act of distributing gas or electric power to customers.",
   "language": "en",
-  "tags": ["distribution", "ferc"],
+  "tags": [
+    "distribution",
+    "ferc"
+  ],
   "related": [],
   "version": "1.0.0",
   "breaking": false,

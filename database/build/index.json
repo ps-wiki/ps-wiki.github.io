@@ -255,9 +255,12 @@
       "summary": "Procedures to study a contingency.",
       "tags": [
         "contingency",
-        "system-operator"
+        "system-operator",
+        "isone",
+        "european-union",
+        "europe"
       ],
-      "updated_at": "2025-06-22"
+      "updated_at": "2025-11-28"
     },
     {
       "id": "contingency-list",
@@ -269,9 +272,11 @@
         "isone",
         "pjm",
         "entsoe",
-        "article"
+        "article",
+        "european-union",
+        "europe"
       ],
-      "updated_at": "2025-06-22"
+      "updated_at": "2025-11-28"
     },
     {
       "id": "contingency-reserve-service",
@@ -470,6 +475,29 @@
       "updated_at": "2025-10-30"
     },
     {
+      "id": "dynamic-regulating-reserve",
+      "title": "Dynamic Regulating Reserve",
+      "summary": "Reserve for AGC to provide normal regulating margin.",
+      "tags": [
+        "reserve",
+        "regulation",
+        "frequency-control",
+        "miso"
+      ],
+      "updated_at": "2025-11-28"
+    },
+    {
+      "id": "dynamic-study-model",
+      "title": "Dynamic Study Model",
+      "summary": "Reserve for AGC to provide normal regulating margin.",
+      "tags": [
+        "stability",
+        "europe",
+        "entsoe"
+      ],
+      "updated_at": "2025-11-28"
+    },
+    {
       "id": "economic-dispatch",
       "title": "Economic Dispatch",
       "summary": "Allocation of generating units for economical production.",
@@ -522,10 +550,21 @@
       "tags": [
         "transmission",
         "system-operator",
-        "EMT",
+        "emt",
         "nyiso"
       ],
-      "updated_at": "2025-11-19"
+      "updated_at": "2025-11-28"
+    },
+    {
+      "id": "energy-reserve",
+      "title": "Energy Reserve",
+      "summary": "A generalized notion of reserves to address the issues of storage unit reserve provision.",
+      "tags": [
+        "reserve",
+        "ieee",
+        "energy-storage"
+      ],
+      "updated_at": "2025-11-28"
     },
     {
       "id": "equal-area-criterion",
@@ -641,6 +680,30 @@
       "updated_at": "2025-06-20"
     },
     {
+      "id": "frequency-containment-reserve",
+      "title": "Frequency Containment Reserve",
+      "summary": "The active power reserves available to contain system frequency after the occurrence of an imbalance.",
+      "tags": [
+        "frequency-control",
+        "reserve",
+        "european-union",
+        "europe"
+      ],
+      "updated_at": "2025-11-28"
+    },
+    {
+      "id": "frequency-restoration-reserves",
+      "title": "Frequency Restoration Reserves",
+      "summary": "The active power reserves available to restore system frequency to the nominal frequency",
+      "tags": [
+        "frequency-control",
+        "reserve",
+        "european-union",
+        "europe"
+      ],
+      "updated_at": "2025-11-28"
+    },
+    {
       "id": "frequency-deviation",
       "title": "Frequency Deviation",
       "summary": "A change in Interconnection frequency.",
@@ -681,6 +744,18 @@
         "nerc"
       ],
       "updated_at": "2025-06-22"
+    },
+    {
+      "id": "frequency-containment-reserves",
+      "title": "Frequency Containment Reserves",
+      "summary": "The active power reserves available to contain system frequency after the occurrence of an imbalance.",
+      "tags": [
+        "frequency-control",
+        "reserve",
+        "european-union",
+        "europe"
+      ],
+      "updated_at": "2025-11-28"
     },
     {
       "id": "frequency-stability",
@@ -1095,9 +1170,12 @@
       "summary": "The rate at which the interchange schedule or generator output is attained.",
       "tags": [
         "ramp",
-        "generator"
+        "generator",
+        "nerc",
+        "european-union",
+        "europe"
       ],
-      "updated_at": "2025-11-03"
+      "updated_at": "2025-11-28"
     },
     {
       "id": "real-time-energy-market",
@@ -1173,6 +1251,18 @@
         "pjm"
       ],
       "updated_at": "2025-06-22"
+    },
+    {
+      "id": "replacement-reserves",
+      "title": "Replacement Reserves",
+      "summary": "The active power reserves available to restore or support the required level of frequency restoration reserves (FRR) to be prepared for additional system imbalances, including generation reserves.",
+      "tags": [
+        "frequency-control",
+        "reserve",
+        "european-union",
+        "europe"
+      ],
+      "updated_at": "2025-11-28"
     },
     {
       "id": "reserve-markets",
@@ -1697,5 +1787,5 @@
       "updated_at": "2025-11-02"
     }
   ],
-  "generated_at": "2025-11-29T02:46:27Z"
+  "generated_at": "2025-11-29T04:10:55Z"
 }

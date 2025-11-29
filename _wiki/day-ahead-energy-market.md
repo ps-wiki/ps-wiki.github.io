@@ -14,7 +14,7 @@ authors:
 version: 1.0.0
 date: 2025-03-15
 lastmod: 2025-06-22
-generated: 2025-11-26
+generated: 2025-11-28
 ---
 
 ### Definition by PJM
@@ -32,7 +32,7 @@ A brief graph is given in <d-cite key="pjm2023dam"></d-cite>.
         {% include figure.liquid
         path="/assets/img/pswiki/day-ahead-scheduling-data-flow.png"
         zoomable=true %}
-                Figure 3: Day-Ahead Scheduling Data Flow (from <d-cite key="nyiso2024dayahead"></d-cite>)
+        Figure 3: Day-Ahead Scheduling Data Flow (from <d-cite key="nyiso2024dayahead"></d-cite>)
     </div>
 </div>
 

@@ -17,7 +17,7 @@ authors:
 version: 1.0.1
 date: 2025-03-15
 lastmod: 2025-11-02
-generated: 2025-11-26
+generated: 2025-11-28
 ---
 
 ### Definition by PJM
@@ -27,7 +27,7 @@ generated: 2025-11-26
         {% include figure.liquid
         path="/assets/img/pswiki/PJM_zone_map.png"
         zoomable=true %}
-                PJM Transmission Zones Map (from <d-cite key="pjm2023transmission"></d-cite>)
+        PJM Transmission Zones Map (from <d-cite key="pjm2023transmission"></d-cite>)
     </div>
 </div>
 

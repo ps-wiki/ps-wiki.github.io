@@ -4,7 +4,10 @@
   "title": "Most Severe Single Contingency",
   "description": "A single contingency that would result in the greatest loss of resource output.",
   "language": "en",
-  "tags": ["event", "nerc"],
+  "tags": [
+    "event",
+    "nerc"
+  ],
   "related": [],
   "version": "1.0.0",
   "breaking": false,
@@ -25,7 +28,9 @@
         "id": "definition-by-nerc",
         "title": "Definition by NERC",
         "type": "definition",
-        "source_keys": ["nerc2024glossary"],
+        "source_keys": [
+          "nerc2024glossary"
+        ],
         "page": null,
         "body_md": "> The Balancing Contingency Event, due to a single contingency identified using system models maintained within the Reserve Sharing Group (RSG) or a Balancing Authority’s area that is not part of a Reserve Sharing Group, that would result in **the greatest loss** (measured in MW) of resource output used by the RSG or a Balancing Authority that is not participating as a member of a RSG at the time of the event to meet Firm Demand and export obligation (excluding export obligation for which Contingency Reserve obligations are being met by the Sink Balancing Authority).\n"
       }

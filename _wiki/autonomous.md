@@ -11,7 +11,7 @@ authors:
 version: 1.0.0
 date: 2025-11-19
 lastmod: 2025-11-19
-generated: 2025-11-26
+generated: 2025-11-28
 ---
 
 ### Definition in a Book

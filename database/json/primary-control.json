@@ -4,7 +4,11 @@
   "title": "Primary Control",
   "description": "A.k.a. <u>Frequency Response</u>.",
   "language": "en",
-  "tags": ["frequency-control", "generation", "nerc"],
+  "tags": [
+    "frequency-control",
+    "generation",
+    "nerc"
+  ],
   "related": [
     "fast-frequency-response",
     "secondary-control",
@@ -13,7 +17,9 @@
     "automatic-generation-control",
     "frequency-stability"
   ],
-  "aliases": ["Frequency Response"],
+  "aliases": [
+    "Frequency Response"
+  ],
   "version": "1.0.0",
   "breaking": false,
   "dates": {
@@ -33,7 +39,9 @@
         "id": "definition-by-nerc",
         "title": "Definition by NERC",
         "type": "definition",
-        "source_keys": ["nerc2021balancing"],
+        "source_keys": [
+          "nerc2021balancing"
+        ],
         "page": null,
         "body_md": "> More commonly known as **Frequency Response**.\n> Frequency Response occurs within the first few seconds following a change in system frequency (disturbance) to stabilize the Interconnection.\n"
       }
