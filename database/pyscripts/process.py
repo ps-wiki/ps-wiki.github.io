@@ -207,7 +207,7 @@ def build_index_files(json_dir: Path, build_dir: Path, dry_run: bool = False) ->
 
         index = {
             "items": items,
-            "generated_at": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "generated_at": datetime.now(datetime.UTC).strftime("%Y-%m-%dT%H:%M:%SZ"),
         }
 
         tags = {
