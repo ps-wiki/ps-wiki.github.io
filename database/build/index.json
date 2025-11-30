@@ -19,7 +19,7 @@
         "reliability",
         "nerc"
       ],
-      "updated_at": "2025-06-20"
+      "updated_at": "2025-11-29"
     },
     {
       "id": "ambient-adjusted-ratings",
@@ -52,7 +52,7 @@
         "frequency-control",
         "nerc"
       ],
-      "updated_at": "2025-06-20"
+      "updated_at": "2025-11-29"
     },
     {
       "id": "automatic-generation-control",
@@ -340,7 +340,7 @@
         "interconnection",
         "nerc"
       ],
-      "updated_at": "2025-06-20"
+      "updated_at": "2025-11-29"
     },
     {
       "id": "control-performance-standard-2",
@@ -466,12 +466,12 @@
     {
       "id": "dynamic-line-ratings",
       "title": "Dynamic Line Ratings",
-      "summary": "A grid enhancing technology (GET) that provides real-time ratings of transmission lines based on current weather conditions.",
+      "summary": "DLR. A grid enhancing technology (GET) that provides real-time ratings of transmission lines based on current weather conditions.",
       "tags": [
         "system-operator",
         "grid-enhancing-technology"
       ],
-      "updated_at": "2025-11-03"
+      "updated_at": "2025-11-29"
     },
     {
       "id": "dynamic-operating-envelope",
@@ -566,6 +566,15 @@
       "updated_at": "2025-11-28"
     },
     {
+      "id": "energy-equity",
+      "title": "Energy Equity",
+      "summary": "The ability to supply the demand and energy requirements of the end-use customers.",
+      "tags": [
+        "sociology"
+      ],
+      "updated_at": "2025-11-29"
+    },
+    {
       "id": "energy-reserve",
       "title": "Energy Reserve",
       "summary": "A generalized notion of reserves to address the issues of storage unit reserve provision.",
@@ -598,12 +607,12 @@
     {
       "id": "extended-equal-area-criterion",
       "title": "Extended Equal Area Criterion",
-      "summary": "Extend EAC to multi-machine systems.",
+      "summary": "EEAC. Extend EAC to multi-machine systems.",
       "tags": [
         "stability",
         "article"
       ],
-      "updated_at": "2025-11-03"
+      "updated_at": "2025-11-28"
     },
     {
       "id": "facility-rating",
@@ -1870,5 +1879,5 @@
       "updated_at": "2025-11-02"
     }
   ],
-  "generated_at": "2025-11-29T23:40:56Z"
+  "generated_at": "2025-11-30T00:31:51Z"
 }

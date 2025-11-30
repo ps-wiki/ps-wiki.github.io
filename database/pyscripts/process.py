@@ -41,7 +41,7 @@ import sys
 from pathlib import Path
 from typing import List
 from collections import Counter
-from datetime import datetime
+from datetime import datetime, timezone
 
 # Import from existing scripts and shared utilities
 from md2json import build_json_from_md
@@ -207,7 +207,7 @@ def build_index_files(json_dir: Path, build_dir: Path, dry_run: bool = False) ->
 
         index = {
             "items": items,
-            "generated_at": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         }
 
         tags = {
