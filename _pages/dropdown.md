@@ -7,8 +7,8 @@ dropdown: true
 children:
   - title: rest api
     permalink: /rest-api/
-  - title: mcp
-    permalink: /mcp/
+  # - title: mcp
+  #   permalink: /mcp/
   - title: add new term
     permalink: /add-new/
   - title: change log

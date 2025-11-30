@@ -32,7 +32,7 @@ Whenever a concept has multiple interpretations—whether in academic papers, te
 1. **Stay current**: Terminology evolves as the field advances. We update entries regularly; check back for the latest additions and revisions.
 1. **Contribute**: Spot an error, omission, or new term? Please open an issue or submit a pull request on our GitHub repository.
 
-Refer to [rest api](/rest-api/) and [mcp](/mcp/) for advanced usages.
+For advanced usages, refer to [rest api](/rest-api/).
 
 ## Why This Wiki Exists
 

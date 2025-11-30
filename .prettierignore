@@ -15,3 +15,4 @@ database/schema/
 worker/
 database/build/
 database/json/
+mcp/examples/claude_desktop_config.json
