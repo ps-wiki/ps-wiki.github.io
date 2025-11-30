@@ -23,19 +23,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/references/";
           },
-        },{id: "dropdown-archive",
-              title: "archive",
+        },{id: "nav-archive",
+          title: "archive",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/wiki-tag/";
+          },
+        },{id: "dropdown-rest-api",
+              title: "rest api",
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/wiki-tag/";
-              },
-            },{id: "dropdown-change-log",
-              title: "change log",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/changelog/";
+                window.location.href = "/rest-api/";
               },
             },{id: "dropdown-add-new-term",
               title: "add new term",
@@ -43,6 +43,13 @@ ninja.data = [{
               section: "Dropdown",
               handler: () => {
                 window.location.href = "/add-new/";
+              },
+            },{id: "dropdown-change-log",
+              title: "change log",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/changelog/";
               },
             },{id: "wiki-30-minute-reserve-service",
           title: '30-Minute Reserve Service',
