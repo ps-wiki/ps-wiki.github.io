@@ -32,6 +32,8 @@ Whenever a concept has multiple interpretations—whether in academic papers, te
 1. **Stay current**: Terminology evolves as the field advances. We update entries regularly; check back for the latest additions and revisions.
 1. **Contribute**: Spot an error, omission, or new term? Please open an issue or submit a pull request on our GitHub repository.
 
+Refer to [rest api](/rest-api/) and [mcp](/mcp/) for advanced usages.
+
 ## Why This Wiki Exists
 
 Language is inherently ambiguous, and power system terminologies are no exception. Inspired by an email titled “Definitions of Smart Grids a Decade Ago – What Has Changed?” on [Power-Globe](https://pages.mtu.edu/~ljbohman/peec/globe/) in 2024, I decided to compile terminologies from papers, standards, reports, and other traceable sources to build this wiki.

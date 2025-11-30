@@ -183,7 +183,7 @@ console.log(`Title: ${term.title}`);
 console.log(`Description: ${term.description}`);
 ```
 
-## cURL with jq
+## curl with jq
 
 ```bash
 # Pretty-print search results
