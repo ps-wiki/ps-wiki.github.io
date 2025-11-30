@@ -2,7 +2,7 @@
   "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "extended-equal-area-criterion",
   "title": "Extended Equal Area Criterion",
-  "description": "Extend EAC to multi-machine systems.",
+  "description": "EEAC. Extend EAC to multi-machine systems.",
   "language": "en",
   "tags": [
     "stability",
@@ -11,14 +11,11 @@
   "related": [
     "equal-area-criterion"
   ],
-  "aliases": [
-    "EEAC"
-  ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-11-03"
+    "last_modified": "2025-11-28"
   },
   "authors": [
     {

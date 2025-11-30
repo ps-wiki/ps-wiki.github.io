@@ -226,7 +226,7 @@ ninja.data = [{
               window.location.href = "/wiki/disturbance/";
             },},{id: "wiki-dynamic-line-ratings",
           title: 'Dynamic Line Ratings',
-          description: "A grid enhancing technology (GET) that provides real-time ratings of transmission lines based on current weather conditions.",
+          description: "DLR. A grid enhancing technology (GET) that provides real-time ratings of transmission lines based on current weather conditions.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/dynamic-line-ratings/";
             },},{id: "wiki-economic-dispatch",
@@ -261,7 +261,7 @@ ninja.data = [{
               window.location.href = "/wiki/expected-unserved-energy/";
             },},{id: "wiki-extended-equal-area-criterion",
           title: 'Extended Equal Area Criterion',
-          description: "Extend EAC to multi-machine systems.",
+          description: "EEAC. Extend EAC to multi-machine systems.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/extended-equal-area-criterion/";
             },},{id: "wiki-facility-rating",
@@ -874,6 +874,11 @@ ninja.data = [{
           description: "CSCR. The equivalent system impedance seen by multiple inverter-based resources by creating a common medium voltage bus and tying all inverter-based resources of interest together at that common bus.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/composite-short-circuit-ratio/";
+            },},{id: "wiki-energy-equity",
+          title: 'Energy Equity',
+          description: "The ability to supply the demand and energy requirements of the end-use customers.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/energy-equity/";
             },},{id: "wiki-generalized-short-circuit-ratio",
           title: 'Generalized Short-Circuit Ratio',
           description: "gSCR. Geeneralized representation of SCR for single-infeed power electronic systems (SIPESs) in multi-infeed power electronic systems (MIPESs).",

@@ -13,7 +13,7 @@
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-06-20"
+    "last_modified": "2025-11-29"
   },
   "authors": [
     {
@@ -26,7 +26,7 @@
       {
         "order": 1,
         "id": "definition-by-nerc",
-        "title": "Definition By NERC",
+        "title": "Definition by NERC",
         "type": "definition",
         "source_keys": [
           "nerc2024glossary"
