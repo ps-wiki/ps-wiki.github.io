@@ -26,6 +26,7 @@ curl "https://pswiki-api.jinninggm.workers.dev/v1/terms?query=stability&limit=5"
 ```
 
 **Response**:
+
 ```json
 {
   "items": [
@@ -56,6 +57,7 @@ Returns the complete term data including definition, equations, citations, and m
 Search or list term summaries.
 
 **Query Parameters**:
+
 - `query` (string, optional) - Free-text search across ID, title, description, and tags
 - `tag` (string, optional) - Filter by exact tag (case-insensitive)
 - `limit` (integer, optional) - Max results per page (1-100, default: 20)
@@ -82,6 +84,7 @@ curl "https://pswiki-api.jinninggm.workers.dev/v1/terms?query=power+flow&limit=5
 Retrieve full details for a specific term.
 
 **Path Parameters**:
+
 - `id` (string, required) - Term identifier (e.g., `voltage-stability`)
 
 **Example**:
@@ -91,6 +94,7 @@ curl "https://pswiki-api.jinninggm.workers.dev/v1/terms/automatic-generation-con
 ```
 
 **Response**: Complete term JSON including:
+
 - Full definition and description
 - Mathematical equations (LaTeX)
 - Citations and references
@@ -109,12 +113,13 @@ curl "https://pswiki-api.jinninggm.workers.dev/v1/tags"
 ```
 
 **Response**:
+
 ```json
 {
   "tags": [
-    {"tag": "stability", "count": 15},
-    {"tag": "control", "count": 23},
-    {"tag": "protection", "count": 8}
+    { "tag": "stability", "count": 15 },
+    { "tag": "control", "count": 23 },
+    { "tag": "protection", "count": 8 }
   ]
 }
 ```
@@ -124,6 +129,7 @@ curl "https://pswiki-api.jinninggm.workers.dev/v1/tags"
 Get terms updated since a specific date.
 
 **Query Parameters**:
+
 - `since` (string, required) - ISO 8601 date or datetime (e.g., `2025-11-01` or `2025-11-01T00:00:00Z`)
 
 **Example**:
@@ -133,11 +139,12 @@ curl "https://pswiki-api.jinninggm.workers.dev/v1/changes?since=2025-11-01"
 ```
 
 **Response**:
+
 ```json
 {
   "items": [
-    {"id": "voltage-stability", "updated_at": "2025-11-19"},
-    {"id": "frequency-control", "updated_at": "2025-11-15"}
+    { "id": "voltage-stability", "updated_at": "2025-11-19" },
+    { "id": "frequency-control", "updated_at": "2025-11-15" }
   ]
 }
 ```
@@ -169,15 +176,11 @@ print(f"Description: {term['description']}")
 
 ```javascript
 // Search for terms
-const response = await fetch(
-  'https://pswiki-api.jinninggm.workers.dev/v1/terms?query=stability&limit=10'
-);
+const response = await fetch("https://pswiki-api.jinninggm.workers.dev/v1/terms?query=stability&limit=10");
 const data = await response.json();
 
 // Get specific term
-const term = await fetch(
-  'https://pswiki-api.jinninggm.workers.dev/v1/terms/voltage-stability'
-).then(r => r.json());
+const term = await fetch("https://pswiki-api.jinninggm.workers.dev/v1/terms/voltage-stability").then((r) => r.json());
 
 console.log(`Title: ${term.title}`);
 console.log(`Description: ${term.description}`);
@@ -234,6 +237,7 @@ All endpoints return JSON with appropriate HTTP status codes:
 Currently **no rate limits** on the free Cloudflare Workers tier. Please use responsibly.
 
 For high-volume usage (>100k requests/day), consider:
+
 - Caching responses locally
 - Using the [MCP server](/mcp/) for AI integrations
 - Hosting your own instance (see [GitHub](https://github.com/ps-wiki/ps-wiki.github.io/tree/main/worker))
@@ -241,6 +245,7 @@ For high-volume usage (>100k requests/day), consider:
 # Data Source
 
 The API serves data from:
+
 - **Term Data**: [`database/json/`](https://github.com/ps-wiki/ps-wiki.github.io/tree/main/database/json)
 - **Index**: [`database/build/index.json`](https://github.com/ps-wiki/ps-wiki.github.io/blob/main/database/build/index.json)
 - **Tags**: [`database/build/tags.json`](https://github.com/ps-wiki/ps-wiki.github.io/blob/main/database/build/tags.json)

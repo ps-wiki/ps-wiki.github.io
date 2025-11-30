@@ -52,9 +52,10 @@ Add to `claude_desktop_config.json`:
 ```
 
 Restart Claude Desktop, then ask:
-- *"Search for power systems stability terms"*
-- *"Explain voltage stability in detail"*
-- *"What are related concepts to automatic generation control?"*
+
+- _"Search for power systems stability terms"_
+- _"Explain voltage stability in detail"_
+- _"What are related concepts to automatic generation control?"_
 
 ### Option 2: Ollama (Open-Source)
 
@@ -67,11 +68,13 @@ For local, private AI using Ollama:
 
 ```json
 {
-  "models": [{
-    "title": "Llama 3.2",
-    "provider": "ollama",
-    "model": "llama3.2"
-  }],
+  "models": [
+    {
+      "title": "Llama 3.2",
+      "provider": "ollama",
+      "model": "llama3.2"
+    }
+  ],
   "mcpServers": {
     "pswiki": {
       "command": "python",
@@ -102,26 +105,31 @@ This demonstrates the complete workflow: MCP fetches data, Ollama explains it.
 The MCP server provides 5 tools for AI assistants:
 
 ## search_terms
+
 Search terminology by keyword, phrase, or concept.
 
 **Example**: `search_terms(query="frequency control", limit=10)`
 
 ## get_term
+
 Retrieve full details for a specific term.
 
 **Example**: `get_term(term_id="voltage-stability")`
 
 ## get_related_terms
+
 Find related concepts with configurable depth.
 
 **Example**: `get_related_terms(term_id="power-flow", depth=2)`
 
 ## list_tags
+
 List all available tags with usage counts.
 
 **Example**: `list_tags()`
 
 ## get_terms_by_tag
+
 Filter terms by category.
 
 **Example**: `get_terms_by_tag(tag="stability")`
@@ -132,13 +140,13 @@ Filter terms by category.
 
 > **You**: "Explain the difference between voltage stability and frequency stability"
 
-> **Claude**: *[Uses `search_terms` and `get_term` tools to fetch PS-Wiki data, then provides accurate explanation with citations]*
+> **Claude**: _[Uses `search_terms` and `get_term` tools to fetch PS-Wiki data, then provides accurate explanation with citations]_
 
 ## With Ollama
 
 > **You**: "What is automatic generation control?"
 
-> **AI**: *[Fetches AGC definition from PS-Wiki via MCP, explains using local Llama model]*
+> **AI**: _[Fetches AGC definition from PS-Wiki via MCP, explains using local Llama model]_
 
 **Advantage**: Complete privacy - all processing happens on your machine.
 
@@ -157,7 +165,7 @@ async with stdio_client(server_params) as (read, write):
     async with ClientSession(read, write) as session:
         await session.initialize()
         result = await session.call_tool(
-            "search_terms", 
+            "search_terms",
             {"query": "stability", "limit": 5}
         )
 ```
@@ -172,7 +180,7 @@ The MCP server fetches data from the [PS-Wiki REST API](https://pswiki-api.jinni
 ✅ **Accurate**: Cited definitions from standards and papers  
 ✅ **Private**: Use with Ollama for complete local processing  
 ✅ **Free**: No API costs, no rate limits  
-✅ **Extensible**: Works with any MCP-compatible client  
+✅ **Extensible**: Works with any MCP-compatible client
 
 # Resources
 

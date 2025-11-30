@@ -35,6 +35,7 @@ pip install -e ".[dev]"
 ```
 
 This installs the package in editable mode with development dependencies:
+
 - `pytest` - Testing framework
 - `pytest-asyncio` - Async test support
 - `black` - Code formatter
@@ -81,11 +82,13 @@ python tests/test_server_manual.py
 ### Integration Testing with Claude Desktop
 
 1. Install the package:
+
    ```bash
    pip install -e .
    ```
 
 2. Configure Claude Desktop (see `examples/claude_desktop_config.json`):
+
    ```json
    {
      "mcpServers": {
@@ -147,6 +150,7 @@ mypy src/pswiki_mcp
 5. Update `README.md` documentation
 
 Example:
+
 ```python
 # In tools.py
 async def my_new_tool(client: APIClient, args: dict[str, Any]) -> dict[str, Any]:
@@ -252,16 +256,19 @@ mcp-inspector python -m pswiki_mcp
 ### Common Issues
 
 **Server won't start:**
+
 - Check Python version (requires 3.10+)
 - Verify dependencies: `pip list | grep mcp`
 - Check for syntax errors: `python -m py_compile src/pswiki_mcp/*.py`
 
 **API calls failing:**
+
 - Verify API is accessible: `curl https://pswiki-api.jinninggm.workers.dev/v1/terms`
 - Check network connectivity
 - Look for rate limiting issues
 
 **Claude Desktop not seeing server:**
+
 - Verify config file location
 - Check JSON syntax in config
 - Restart Claude Desktop completely
@@ -279,10 +286,10 @@ name: Test MCP Server
 on:
   push:
     paths:
-      - 'mcp/**'
+      - "mcp/**"
   pull_request:
     paths:
-      - 'mcp/**'
+      - "mcp/**"
 
 jobs:
   test:
@@ -291,7 +298,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
-          python-version: '3.12'
+          python-version: "3.12"
       - name: Install dependencies
         working-directory: ./mcp
         run: |
@@ -317,7 +324,7 @@ name: Publish MCP to PyPI
 on:
   push:
     tags:
-      - 'mcp-v*'
+      - "mcp-v*"
 
 jobs:
   publish:
@@ -326,7 +333,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
-          python-version: '3.12'
+          python-version: "3.12"
       - name: Install build tools
         run: pip install build twine
       - name: Build package

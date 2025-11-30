@@ -13,6 +13,7 @@ MCP (Model Context Protocol) server for [PS-Wiki](https://ps-wiki.github.io) - p
 ## Installation
 
 ### Prerequisites
+
 - Python 3.10 or higher
 - An MCP-compatible client:
   - [Claude Desktop](https://claude.ai/download) (commercial, easy setup)
@@ -76,11 +77,13 @@ For local, open-source AI models, you can use Ollama with MCP-compatible fronten
 
 ```json
 {
-  "models": [{
-    "title": "Llama 3.2",
-    "provider": "ollama",
-    "model": "llama3.2"
-  }],
+  "models": [
+    {
+      "title": "Llama 3.2",
+      "provider": "ollama",
+      "model": "llama3.2"
+    }
+  ],
   "mcpServers": {
     "pswiki": {
       "command": "python",
@@ -102,6 +105,7 @@ npm install -g @modelcontextprotocol/server-ollama
 ```
 
 Example configuration:
+
 ```json
 {
   "mcpServers": {
@@ -128,55 +132,69 @@ The server uses stdio transport and can be integrated with any MCP-compatible cl
 ## Available Tools
 
 ### `search_terms`
+
 Search power systems terminology by keyword, phrase, or concept.
 
 **Parameters:**
+
 - `query` (string, required): Search query
 - `limit` (integer, optional): Max results (default: 10, max: 50)
 
 **Example:**
+
 ```
 Search for "frequency control" → Returns terms related to AGC, governor response, inertia, etc.
 ```
 
 ### `get_term`
+
 Retrieve full details for a specific term by ID.
 
 **Parameters:**
+
 - `term_id` (string, required): Term identifier (e.g., "automatic-generation-control")
 
 **Example:**
+
 ```
 Get term "voltage-stability" → Returns definition, equations, citations, related terms
 ```
 
 ### `get_related_terms`
+
 Find terms related to a given term.
 
 **Parameters:**
+
 - `term_id` (string, required): Term identifier
 - `depth` (integer, optional): Relationship depth (default: 1, max: 2)
 
 **Example:**
+
 ```
 Get related terms for "power-flow" → Returns load-flow, optimal-power-flow, etc.
 ```
 
 ### `list_tags`
+
 List all available tags with usage counts.
 
 **Example:**
+
 ```
 List tags → Returns: stability (15), control (23), protection (8), etc.
 ```
 
 ### `get_terms_by_tag`
+
 Get all terms with a specific tag.
 
 **Parameters:**
+
 - `tag` (string, required): Tag name (case-insensitive)
 
 **Example:**
+
 ```
 Get terms by tag "stability" → Returns all stability-related terms
 ```
@@ -184,12 +202,15 @@ Get terms by tag "stability" → Returns all stability-related terms
 ## Available Resources
 
 ### `term:///{term_id}`
+
 Access individual term as a resource.
 
 ### `tags://all`
+
 List of all tags with counts.
 
 ### `index://terms`
+
 Complete term index with metadata.
 
 ## Usage Examples
@@ -212,11 +233,11 @@ If using Ollama with Continue.dev or another MCP-compatible frontend:
 
 > **User**: "Search for power systems stability terms"
 
-> **AI**: *Uses `search_terms` tool to find stability-related terminology*
+> **AI**: _Uses `search_terms` tool to find stability-related terminology_
 
 > **User**: "Explain voltage stability in detail"
 
-> **AI**: *Uses `get_term` tool to fetch the full definition with equations and citations*
+> **AI**: _Uses `get_term` tool to fetch the full definition with equations and citations_
 
 The advantage of Ollama is complete privacy - all processing happens locally on your machine.
 
@@ -234,7 +255,7 @@ server_params = StdioServerParameters(
 async with stdio_client(server_params) as (read, write):
     async with ClientSession(read, write) as session:
         await session.initialize()
-        
+
         # Search for terms
         result = await session.call_tool("search_terms", {"query": "stability"})
         print(result)

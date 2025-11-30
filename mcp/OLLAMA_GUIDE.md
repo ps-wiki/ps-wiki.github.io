@@ -5,6 +5,7 @@ Complete step-by-step guide to use your PS-Wiki MCP server with Ollama for local
 ## Prerequisites
 
 ✅ You have:
+
 - Mac with Ollama installed
 - PS-Wiki MCP server installed (`cd mcp && pip install -e .`)
 
@@ -113,6 +114,7 @@ Close and reopen VS Code for changes to take effect.
 5. It will fetch the term and explain it!
 
 **Example conversation:**
+
 ```
 You: "What is automatic generation control?"
 
@@ -155,7 +157,7 @@ from mcp.client.stdio import stdio_client
 
 async def search_and_explain(topic: str):
     """Search PS-Wiki and get data for Ollama to explain."""
-    
+
     # Start MCP server
     server_params = StdioServerParameters(
         command="python",
@@ -165,60 +167,60 @@ async def search_and_explain(topic: str):
     async with stdio_client(server_params) as (read, write):
         async with ClientSession(read, write) as session:
             await session.initialize()
-            
+
             print(f"\n🔍 Searching PS-Wiki for: {topic}")
-            
+
             # Search for terms
             result = await session.call_tool(
                 "search_terms",
                 arguments={"query": topic, "limit": 3}
             )
-            
+
             data = json.loads(result.content[0].text)
-            
+
             if not data['results']:
                 print("No results found!")
                 return
-            
+
             # Get first term details
             term_id = data['results'][0]['id']
             print(f"\n📖 Fetching details for: {term_id}")
-            
+
             result = await session.call_tool(
                 "get_term",
                 arguments={"term_id": term_id}
             )
-            
+
             term = json.loads(result.content[0].text)
-            
+
             print(f"\n{'='*60}")
             print(f"Term: {term['title']}")
             print(f"{'='*60}")
             print(f"\nDescription:\n{term.get('description', 'N/A')}")
-            
+
             if term.get('related'):
                 print(f"\nRelated terms: {', '.join(term['related'][:5])}")
-            
+
             # Now you can pass this to Ollama
             print(f"\n{'='*60}")
             print("Now calling Ollama to explain this...")
             print(f"{'='*60}\n")
-            
+
             # Call Ollama (requires ollama Python package)
             try:
                 import subprocess
                 prompt = f"Based on this definition: {term.get('description', '')}\n\nExplain '{term['title']}' to a graduate student in power systems engineering."
-                
+
                 result = subprocess.run(
                     ["ollama", "run", "llama3.2", prompt],
                     capture_output=True,
                     text=True,
                     timeout=30
                 )
-                
+
                 print("Ollama's Explanation:")
                 print(result.stdout)
-                
+
             except Exception as e:
                 print(f"Note: Install ollama CLI to see AI explanation")
                 print(f"You can manually ask Ollama: 'Explain {term['title']}'")
@@ -246,6 +248,7 @@ python test_ollama_mcp.py "renewable energy integration"
 ```
 
 This will:
+
 1. Search PS-Wiki via MCP
 2. Get the term definition
 3. Pass it to Ollama for explanation
@@ -265,6 +268,7 @@ npx @modelcontextprotocol/inspector python -m pswiki_mcp
 ```
 
 This opens a web UI where you can:
+
 - See all available tools
 - Call tools manually
 - Inspect responses
@@ -275,6 +279,7 @@ This opens a web UI where you can:
 ## Quick Test Commands
 
 ### Test 1: Search Terms
+
 ```bash
 cd /Users/jinningwang/work/pswiki/mcp
 python examples/ollama_integration.py
@@ -312,20 +317,26 @@ ollama run llama3.2
 ## Troubleshooting
 
 ### Issue: "command not found: ollama"
+
 **Solution**: Ollama not in PATH. Try:
+
 ```bash
 /Applications/Ollama.app/Contents/MacOS/ollama list
 ```
 
 ### Issue: "Connection refused" from Ollama
+
 **Solution**: Start Ollama:
+
 ```bash
 # Open Ollama app from Applications
 # Or run: ollama serve
 ```
 
 ### Issue: MCP server not found
+
 **Solution**: Make sure you're in the right environment:
+
 ```bash
 cd /Users/jinningwang/work/pswiki/mcp
 pip install -e .
@@ -333,7 +344,9 @@ python -m pswiki_mcp  # Should start without error
 ```
 
 ### Issue: Tests failing
+
 **Solution**: Install pytest-asyncio:
+
 ```bash
 pip install pytest-asyncio
 pytest tests/ -v
