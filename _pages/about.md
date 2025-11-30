@@ -27,69 +27,10 @@ Whenever a concept has multiple interpretations—whether in academic papers, te
 
 ## How to Use
 
-### Basic Usage
-
 1. **Browse or search**: Navigate via the wiki or use the search bar to locate terms instantly.
 1. **Compare definitions**: Some entries include excerpts from multiple sources—standards, peer-reviewed papers, and industry guidelines—so you can see how usage varies.
 1. **Stay current**: Terminology evolves as the field advances. We update entries regularly; check back for the latest additions and revisions.
 1. **Contribute**: Spot an error, omission, or new term? Please open an issue or submit a pull request on our GitHub repository.
-
-### REST API
-
-The [PS-Wiki REST API](https://github.com/ps-wiki/ps-wiki.github.io/blob/main/database/openapi/pswiki.v1.yaml) provides read-only access to term data in JSON format.
-It is deployed via [Cloudflare Workers](https://github.com/ps-wiki/ps-wiki.github.io/tree/main/worker) and documented using the [OpenAPI 3.1.0](https://pswiki-api.jinninggm.workers.dev/openapi.json).
-Base URL: <https://pswiki-api.jinninggm.workers.dev>
-
-No authentication is required — all endpoints are public and read-only.
-
-#### Endpoints Overview
-
-| Method | Endpoint         | Description                                |
-| ------ | ---------------- | ------------------------------------------ |
-| GET    | `/v1/terms`      | Search or list PS-Wiki terms               |
-| GET    | `/v1/terms/{id}` | Retrieve a specific term by ID             |
-| GET    | `/v1/tags`       | List all tags and their term counts        |
-| GET    | `/v1/changes`    | List terms updated since a given timestamp |
-
-<br>
-
-#### Example Usage
-
-List terms
-
-```bash
-curl "https://pswiki-api.jinninggm.workers.dev/v1/terms?limit=5"
-```
-
-Search terms by keyword "stability"
-
-```bash
-curl "https://pswiki-api.jinninggm.workers.dev/v1/terms?query=stability&limit=5"
-```
-
-Get a term by ID
-
-```bash
-curl "https://pswiki-api.jinninggm.workers.dev/v1/terms/stability"
-```
-
-List all tags
-
-```bash
-curl "https://pswiki-api.jinninggm.workers.dev/v1/tags"
-```
-
-Filter terms by tag "stability"
-
-```bash
-curl "https://pswiki-api.jinninggm.workers.dev/v1/terms?tag=stability"
-```
-
-List terms updated since a date
-
-```bash
-curl "https://pswiki-api.jinninggm.workers.dev/v1/changes?since=2025-07-01"
-```
 
 ## Why This Wiki Exists
 
