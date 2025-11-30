@@ -19,6 +19,8 @@ on:
       - "!.github/workflows/lighthouse-badger.yml"
       - "!.github/workflows/prettier.yml"
       - "!lighthouse_results/**"
+      - "!mcp/**"
+      - "!worker/**"
   pull_request:
     branches:
       - master
@@ -37,6 +39,8 @@ on:
       - "!.github/workflows/lighthouse-badger.yml"
       - "!.github/workflows/prettier.yml"
       - "!lighthouse_results/**"
+      - "!mcp/**"
+      - "!worker/**"
 
 jobs:
   link-checker:
@@ -66,5 +70,8 @@ jobs:
             --exclude-path _pages/wiki.md
             --exclude-path _pages/wiki-tag.md
             --exclude-path worker/README.md
+            --exclude-path mcp/README.md
+            --exclude-path mcp/DEVELOPMENT.md
+            --exclude-path mcp/OLLAMA_GUIDE.md
             --exclude-path database/schema/CHANGELOG.md
             --verbose --no-progress './**/*.md' './**/*.html'
