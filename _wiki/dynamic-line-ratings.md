@@ -1,8 +1,6 @@
 ---
 title: Dynamic Line Ratings
-aliases:
-  - DLR
-description: A grid enhancing technology (GET) that provides real-time ratings of transmission lines based on current weather conditions.
+description: DLR. A grid enhancing technology (GET) that provides real-time ratings of transmission lines based on current weather conditions.
 tags:
   - system-operator
   - grid-enhancing-technology
@@ -12,10 +10,10 @@ related:
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.2
+version: 1.0.3
 date: 2025-03-15
-lastmod: 2025-11-03
-generated: 2025-11-28
+lastmod: 2025-11-29
+generated: 2025-11-29
 ---
 
 ### Definition by MISO
