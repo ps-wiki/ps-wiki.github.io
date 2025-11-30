@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "pswiki": {
+      "command": "python",
+      "args": [
+        "-m",
+        "pswiki_mcp"
+      ]
+    }
+  }
+}

@@ -12,8 +12,33 @@ node_modules/
 vendor
 .idea
 
-# Ignore python cache files
+# Python cache and build files
 __pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
 
 # local test wiki markdown files
 _wikitest/
