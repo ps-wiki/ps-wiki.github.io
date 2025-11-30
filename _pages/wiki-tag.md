@@ -3,7 +3,8 @@ layout: page
 title: archive
 permalink: /wiki-tag/
 description:
-nav: false
+nav: true
+nav_order: 4
 horizontal: false
 ---
 
