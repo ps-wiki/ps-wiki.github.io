@@ -869,11 +869,41 @@ ninja.data = [{
           description: "The active power reserves available to restore or support the required level of frequency restoration reserves (FRR) to be prepared for additional system imbalances, including generation reserves.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/replacement-reserves/";
+            },},{id: "wiki-composite-short-circuit-ratio",
+          title: 'Composite Short-Circuit Ratio',
+          description: "CSCR. The equivalent system impedance seen by multiple inverter-based resources by creating a common medium voltage bus and tying all inverter-based resources of interest together at that common bus.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/composite-short-circuit-ratio/";
+            },},{id: "wiki-generalized-short-circuit-ratio",
+          title: 'Generalized Short-Circuit Ratio',
+          description: "gSCR. Geeneralized representation of SCR for single-infeed power electronic systems (SIPESs) in multi-infeed power electronic systems (MIPESs).",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/generalized-short-circuit-ratio/";
+            },},{id: "wiki-grid-strength",
+          title: 'Grid Strength',
+          description: "How &quot;stiff&quot; the grid is in response to small perturbations.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/grid-strength/";
             },},{id: "wiki-power-systems-optimization",
           title: 'Power Systems Optimization',
           description: "It includes investment problems, operation planning problems, operations problems, and control problems.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/power-systems-optimization/";
+            },},{id: "wiki-short-circuit-ratio-with-interaction-factors",
+          title: 'Short-Circuit Ratio with Interaction Factors',
+          description: "SCRIF. The ratio between short circuit apparent power from a 3LG fault at a given location in the power system to the rating of the location.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/short-circuit-ratio-with-interaction-factors/";
+            },},{id: "wiki-short-circuit-ratio",
+          title: 'Short-Circuit Ratio',
+          description: "SCR. The ratio between short circuit apparent power from a 3LG fault at a given location in the power system to the rating of the location.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/short-circuit-ratio/";
+            },},{id: "wiki-weighted-short-circuit-ratio",
+          title: 'Weighted Short-Circuit Ratio',
+          description: "WSCR. It takes interactions between wind plants into account. The WSCR can better reflect the actual system strength when integrating a large amount of wind plants in a weak system.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/weighted-short-circuit-ratio/";
             },},{
         id: 'social-email',
         title: 'email',
