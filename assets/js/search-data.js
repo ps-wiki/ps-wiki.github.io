@@ -916,6 +916,11 @@ ninja.data = [{
           description: "WSCR. It takes interactions between wind plants into account. The WSCR can better reflect the actual system strength when integrating a large amount of wind plants in a weak system.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/weighted-short-circuit-ratio/";
+            },},{id: "wiki-quasi-static-simulation",
+          title: 'Quasi-Static Simulation',
+          description: "A sequence of power flow analysis.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/quasi-static-simulation/";
             },},{
         id: 'social-email',
         title: 'email',
