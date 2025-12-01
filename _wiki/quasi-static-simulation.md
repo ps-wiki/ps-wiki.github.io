@@ -1,6 +1,6 @@
 ---
 title: Quasi-Static Simulation
-description: A sequence of power flow.
+description: A sequence of power flow analysis.
 tags:
   - stability
   - nerc

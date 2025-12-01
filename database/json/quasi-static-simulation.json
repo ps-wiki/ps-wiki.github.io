@@ -2,7 +2,7 @@
   "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "quasi-static-simulation",
   "title": "Quasi-Static Simulation",
-  "description": "A sequence of power flow.",
+  "description": "A sequence of power flow analysis.",
   "language": "en",
   "tags": [
     "stability",
