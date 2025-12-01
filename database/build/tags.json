@@ -101,6 +101,10 @@
       "count": 5
     },
     {
+      "tag": "book",
+      "count": 5
+    },
+    {
       "tag": "data-format",
       "count": 5
     },
@@ -175,10 +179,6 @@
     {
       "tag": "synchronization",
       "count": 2
-    },
-    {
-      "tag": "book",
-      "count": 1
     },
     {
       "tag": "control-theory",

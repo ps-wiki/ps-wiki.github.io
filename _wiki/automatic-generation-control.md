@@ -5,6 +5,7 @@ tags:
   - frequency-control
   - ferc
   - nerc
+  - book
 related:
   - fast-frequency-response
   - primary-control
@@ -18,7 +19,7 @@ authors:
 version: 1.0.2
 date: 2025-03-15
 lastmod: 2025-11-26
-generated: 2025-11-28
+generated: 2025-11-30
 ---
 
 ### Definition by NERC

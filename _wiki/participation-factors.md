@@ -3,6 +3,7 @@ title: Participation Factors
 description: One definition is about dispath and another is about small-signal stability.
 tags:
   - sensitivity
+  - book
 related: []
 authors:
   - name: Jinning Wang
@@ -10,7 +11,7 @@ authors:
 version: 1.0.0
 date: 2025-03-15
 lastmod: 2025-06-18
-generated: 2025-11-28
+generated: 2025-11-30
 ---
 
 ### Definition by NERC
