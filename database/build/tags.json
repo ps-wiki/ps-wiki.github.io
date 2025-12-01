@@ -2,7 +2,7 @@
   "tags": [
     {
       "tag": "nerc",
-      "count": 55
+      "count": 54
     },
     {
       "tag": "system-operator",
@@ -18,7 +18,7 @@
     },
     {
       "tag": "stability",
-      "count": 24
+      "count": 23
     },
     {
       "tag": "frequency-control",
@@ -65,16 +65,16 @@
       "count": 11
     },
     {
-      "tag": "ieee-task-force",
-      "count": 10
-    },
-    {
       "tag": "metrics",
       "count": 10
     },
     {
       "tag": "nyiso",
       "count": 10
+    },
+    {
+      "tag": "ieee-task-force",
+      "count": 9
     },
     {
       "tag": "generation",
@@ -113,12 +113,12 @@
       "count": 4
     },
     {
-      "tag": "cigre",
+      "tag": "standard",
       "count": 4
     },
     {
-      "tag": "standard",
-      "count": 4
+      "tag": "cigre",
+      "count": 3
     },
     {
       "tag": "dispatch",
@@ -175,6 +175,10 @@
     {
       "tag": "synchronization",
       "count": 2
+    },
+    {
+      "tag": "book",
+      "count": 1
     },
     {
       "tag": "control-theory",
@@ -266,6 +270,10 @@
     },
     {
       "tag": "security",
+      "count": 1
+    },
+    {
+      "tag": "simulation",
       "count": 1
     },
     {

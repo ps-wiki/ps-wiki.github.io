@@ -1228,12 +1228,10 @@
       "title": "Quasi-Static Simulation",
       "summary": "A sequence of power flow analysis.",
       "tags": [
-        "stability",
-        "nerc",
+        "simulation",
         "ieee",
-        "ieee-task-force",
-        "cigre",
-        "article"
+        "article",
+        "book"
       ],
       "updated_at": "2025-11-30"
     },
@@ -1893,5 +1891,5 @@
       "updated_at": "2025-11-02"
     }
   ],
-  "generated_at": "2025-12-01T05:15:13Z"
+  "generated_at": "2025-12-01T05:17:45Z"
 }
