@@ -2,7 +2,7 @@
   "tags": [
     {
       "tag": "nerc",
-      "count": 54
+      "count": 55
     },
     {
       "tag": "system-operator",
@@ -14,11 +14,11 @@
     },
     {
       "tag": "ieee",
-      "count": 24
+      "count": 25
     },
     {
       "tag": "stability",
-      "count": 23
+      "count": 24
     },
     {
       "tag": "frequency-control",
@@ -29,12 +29,12 @@
       "count": 21
     },
     {
-      "tag": "reliability",
+      "tag": "article",
       "count": 19
     },
     {
-      "tag": "article",
-      "count": 18
+      "tag": "reliability",
+      "count": 19
     },
     {
       "tag": "market",
@@ -65,16 +65,16 @@
       "count": 11
     },
     {
+      "tag": "ieee-task-force",
+      "count": 10
+    },
+    {
       "tag": "metrics",
       "count": 10
     },
     {
       "tag": "nyiso",
       "count": 10
-    },
-    {
-      "tag": "ieee-task-force",
-      "count": 9
     },
     {
       "tag": "generation",
@@ -113,12 +113,12 @@
       "count": 4
     },
     {
-      "tag": "standard",
+      "tag": "cigre",
       "count": 4
     },
     {
-      "tag": "cigre",
-      "count": 3
+      "tag": "standard",
+      "count": 4
     },
     {
       "tag": "dispatch",

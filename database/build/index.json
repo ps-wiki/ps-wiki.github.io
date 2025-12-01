@@ -1224,6 +1224,20 @@
       "updated_at": "2025-06-22"
     },
     {
+      "id": "quasi-static-simulation",
+      "title": "Quasi-Static Simulation",
+      "summary": "A sequence of power flow analysis.",
+      "tags": [
+        "stability",
+        "nerc",
+        "ieee",
+        "ieee-task-force",
+        "cigre",
+        "article"
+      ],
+      "updated_at": "2025-11-30"
+    },
+    {
       "id": "ramp",
       "title": "Ramp",
       "summary": "The rate at which the interchange schedule or generator output is attained.",
@@ -1879,5 +1893,5 @@
       "updated_at": "2025-11-02"
     }
   ],
-  "generated_at": "2025-11-30T00:31:51Z"
+  "generated_at": "2025-12-01T05:15:13Z"
 }
