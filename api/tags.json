@@ -173,6 +173,10 @@
       "count": 2
     },
     {
+      "tag": "simulation",
+      "count": 2
+    },
+    {
       "tag": "software",
       "count": 2
     },
@@ -270,10 +274,6 @@
     },
     {
       "tag": "security",
-      "count": 1
-    },
-    {
-      "tag": "simulation",
       "count": 1
     },
     {

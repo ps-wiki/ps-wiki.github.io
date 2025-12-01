@@ -562,9 +562,10 @@
         "transmission",
         "system-operator",
         "emt",
-        "nyiso"
+        "nyiso",
+        "simulation"
       ],
-      "updated_at": "2025-11-28"
+      "updated_at": "2025-11-30"
     },
     {
       "id": "energy-equity",
@@ -1895,5 +1896,5 @@
       "updated_at": "2025-11-02"
     }
   ],
-  "generated_at": "2025-12-01T05:21:13Z"
+  "generated_at": "2025-12-01T05:56:45Z"
 }
