@@ -6,24 +6,51 @@ tags:
   - system-operator
   - emt
   - nyiso
+  - simulation
 related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.0
+version: 1.0.1
 date: 2025-11-19
-lastmod: 2025-11-28
-generated: 2025-11-28
+lastmod: 2025-11-30
+generated: 2025-11-30
 ---
 
 ### Definition by NYISO
 
 Source: <d-cite key="nyiso2025emtguideline"></d-cite> p7
 
-> **4.7 EMT Model Response Must Align With Positive Sequence Phasor Domain (PSPD) Model**
+> **4. Model Accuracy Guidelines**
 >
-> The behavior of the EMT model and the PSPD model used to represent the plant/equipment is expected to be in close alignment and will be verified by the NYISO. The models are used to represent the same plant and therefore should behave in a similar fashion. Selected tests in Section 7 will be used to verify alignment between the EMT model and the PSPD model. The NYISO and the model submitter must use the same PSPD model for the asset for this comparison. The NYISO will use the latest PSPD model submitted for the facility in this verification. As such, PSPD models do not need to be re-submitted at this stage.
+> 4.1 Represent All Control Loops in Detail
 >
-> Differences that arise from increased modeling bandwidth in EMT domain are known to exist and will be allowed, as long as they can be justified. Differences in model response trends, post-transient steady state settling values, or any behavior in a timeframe that can be accurately captured by PSPD models with typical integration time steps used in those simulations (1-4ms) are not allowed and any discrepancies will require further explanation.
+> 4.2 Represent All Control Features Pertinent to the Type of Study Being Done
 >
-> All EMT and PSPD channels delivered must be overlayed (in the same plot) for each channel type (i.e., active power, reactive power, voltage, etc.). A qualitative criterion will be used to determine if the models are in good alignment and no quantitative criterion (e.g., signal envelopes, peak values, etc.) will be employed at this time
+> 4.3 Include Representation of Plant Level Controls or Multi-Plant Controllers, As Applicable
+>
+> 4.4 Represent All Pertinent Electrical and Mechanical Components
+>
+> 4.5 Have All Pertinent Protections Modeled in Detail
+>
+> 4.6 Model Must Be Configured to Match Site-Specific Equipment Settings
+>
+> 4.7 EMT Model Response Must Align With Positive Sequence Phasor Domain (PSPD) Model
+
+> **5. Model Usability Guidelines**
+>
+> 5.1 Reflect an Aggregate Representation of the Plant
+>
+> 5.2 Have Control or Hardware Options Which Are Pertinent to the Study Accessible to the User
+>
+> 5.3 Able to Operate at a Range of Time Steps
+>
+> 5.4 Include a Model User Guide and a Sample Case
+>
+> 5.5 Accept/Expose Reference Setpoints
+>
+> 5.6 Be Capable of Initializing Itself As Quickly As Possible
+>
+> 5.7 Have the Ability to Scale Plant Capacity
+>
+> 5.8 Have the Ability to Set Plant Active Power Reference Setpoint (Pref) Between Pmax and Pmin
