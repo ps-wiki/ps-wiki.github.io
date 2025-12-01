@@ -5,7 +5,8 @@
   "description": "The ability to maintain synchronism when subjected to small disturbances.",
   "language": "en",
   "tags": [
-    "stability"
+    "stability",
+    "book"
   ],
   "related": [],
   "version": "1.0.0",

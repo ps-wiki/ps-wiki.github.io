@@ -61,7 +61,8 @@
       "tags": [
         "frequency-control",
         "ferc",
-        "nerc"
+        "nerc",
+        "book"
       ],
       "updated_at": "2025-11-26"
     },
@@ -590,7 +591,8 @@
       "title": "Equal Area Criterion",
       "summary": "To determine the maximum permissible increase in mechanical power input for system stability.",
       "tags": [
-        "stability"
+        "stability",
+        "book"
       ],
       "updated_at": "2025-11-01"
     },
@@ -1169,7 +1171,8 @@
       "title": "Participation Factors",
       "summary": "One definition is about dispath and another is about small-signal stability.",
       "tags": [
-        "sensitivity"
+        "sensitivity",
+        "book"
       ],
       "updated_at": "2025-06-18"
     },
@@ -1228,12 +1231,10 @@
       "title": "Quasi-Static Simulation",
       "summary": "A sequence of power flow analysis.",
       "tags": [
-        "stability",
-        "nerc",
+        "simulation",
         "ieee",
-        "ieee-task-force",
-        "cigre",
-        "article"
+        "article",
+        "book"
       ],
       "updated_at": "2025-11-30"
     },
@@ -1536,7 +1537,8 @@
       "title": "Small Signal Stability",
       "summary": "The ability to maintain synchronism when subjected to small disturbances.",
       "tags": [
-        "stability"
+        "stability",
+        "book"
       ],
       "updated_at": "2025-06-19"
     },
@@ -1893,5 +1895,5 @@
       "updated_at": "2025-11-02"
     }
   ],
-  "generated_at": "2025-12-01T05:15:13Z"
+  "generated_at": "2025-12-01T05:19:57Z"
 }

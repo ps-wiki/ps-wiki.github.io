@@ -2,19 +2,15 @@
 title: Quasi-Static Simulation
 description: A sequence of power flow analysis.
 tags:
-  - stability
-  - nerc
+  - simulation
   - ieee
-  - ieee-task-force
-  - cigre
   - article
-related:
-  - security
-  - reliability
+  - book
+related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.0
+version: 1.0.1
 date: 2025-11-30
 lastmod: 2025-11-30
 generated: 2025-11-30

@@ -5,18 +5,13 @@
   "description": "A sequence of power flow analysis.",
   "language": "en",
   "tags": [
-    "stability",
-    "nerc",
+    "simulation",
     "ieee",
-    "ieee-task-force",
-    "cigre",
-    "article"
+    "article",
+    "book"
   ],
-  "related": [
-    "security",
-    "reliability"
-  ],
-  "version": "1.0.0",
+  "related": [],
+  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-11-30",
