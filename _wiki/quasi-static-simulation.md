@@ -15,8 +15,8 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 version: 1.0.0
-date: 2025-03-15
-lastmod: 2025-11-01
+date: 2025-11-30
+lastmod: 2025-11-30
 generated: 2025-11-30
 ---
 
