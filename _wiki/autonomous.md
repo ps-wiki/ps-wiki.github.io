@@ -2,16 +2,17 @@
 title: Autonomous
 description: A dynamic system's property.
 tags:
+  - book
   - control-theory
 related:
   - stability
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.0
+version: 1.0.1
 date: 2025-11-19
-lastmod: 2025-11-19
-generated: 2025-11-28
+lastmod: 2025-11-30
+generated: 2025-11-30
 ---
 
 ### Definition in a Book

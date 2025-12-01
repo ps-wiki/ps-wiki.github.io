@@ -71,9 +71,10 @@
       "title": "Autonomous",
       "summary": "A dynamic system's property.",
       "tags": [
+        "book",
         "control-theory"
       ],
-      "updated_at": "2025-11-19"
+      "updated_at": "2025-11-30"
     },
     {
       "id": "balancing-authority-area",
@@ -1596,9 +1597,11 @@
         "ieee",
         "ieee-task-force",
         "cigre",
-        "article"
+        "article",
+        "book",
+        "control-theory"
       ],
-      "updated_at": "2025-11-01"
+      "updated_at": "2025-11-30"
     },
     {
       "id": "storm-resilience-metric",
@@ -1896,5 +1899,5 @@
       "updated_at": "2025-11-02"
     }
   ],
-  "generated_at": "2025-12-01T05:35:42Z"
+  "generated_at": "2025-12-01T06:24:15Z"
 }

@@ -81,6 +81,10 @@
       "count": 8
     },
     {
+      "tag": "book",
+      "count": 7
+    },
+    {
       "tag": "geography",
       "count": 7
     },
@@ -98,10 +102,6 @@
     },
     {
       "tag": "adequacy",
-      "count": 5
-    },
-    {
-      "tag": "book",
       "count": 5
     },
     {
@@ -149,6 +149,10 @@
       "count": 3
     },
     {
+      "tag": "control-theory",
+      "count": 2
+    },
+    {
       "tag": "entsoe",
       "count": 2
     },
@@ -183,10 +187,6 @@
     {
       "tag": "synchronization",
       "count": 2
-    },
-    {
-      "tag": "control-theory",
-      "count": 1
     },
     {
       "tag": "emergency",
