@@ -1,0 +1,68 @@
+{
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
+  "id": "quasi-static-simulation",
+  "title": "Quasi-Static Simulation",
+  "description": "A sequence of power flow.",
+  "language": "en",
+  "tags": [
+    "stability",
+    "nerc",
+    "ieee",
+    "ieee-task-force",
+    "cigre",
+    "article"
+  ],
+  "related": [
+    "security",
+    "reliability"
+  ],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-03-15",
+    "last_modified": "2025-11-01"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-in-an-ieee-standard",
+        "title": "Definition in an IEEE Standard",
+        "type": "definition",
+        "source_keys": [
+          "ieee2014std1547"
+        ],
+        "page": "p77",
+        "body_md": "> Quasi-static simulation refers to a sequence of steady-state power flow conducted at a time step of no less than 1 second but that can use a time step of up to one hour. Discrete controls, such as capacitor switch controllers, transformer tap changers, automatic switches, and relays may change their state from one step to the next. However, there is no numerical integration of differential equations between time steps. A simple quasi-static simulator can be implemented with existing power flow or short-circuit programs under supervisory control. Open-source quasi-static simulators are also available.\n"
+      },
+      {
+        "order": 2,
+        "id": "definition-in-a-presentation",
+        "title": "Definition in a Presentation",
+        "type": "definition",
+        "source_keys": [
+          "reno2017qsts"
+        ],
+        "page": null,
+        "body_md": "> QSTS (Quasi-Static Time Series) solves a series of sequential steady-state power-flow solutions where the converged state of each iteration is used as the beginning state of the next. This caprtures time-varying parameters such as load, and the time-dependent states in the system such as regulator tap positions.\n"
+      },
+      {
+        "order": 3,
+        "id": "definition-in-a-book",
+        "title": "Definition in a Book",
+        "type": "definition",
+        "source_keys": [
+          "milano2010power"
+        ],
+        "page": "p213",
+        "body_md": "> In some applications, the variations of the inputs are relatively slow with respect to transient dynamics. A relevant example is the study of the eﬀect of long term voltage stability phenomena, such as the daily load ramp or voltage collapse. In this case load powers are modelled as time dependent controllable parameters $\\eta(t)$. Since load variations take from tens of minutes to some hours, any transient dynamic can be considered steady-state. The resulting system equations are obtained by imposing $\\dot{x} = 0$ in (8.12):\n>\n> $0= f(x, y, \\eta(t))$\n>\n> $0= g(x, y, \\eta(t))$\n>\n> which is generally referred to as quasi-static or quasi-steady-state model.\n"
+      }
+    ]
+  }
+}
