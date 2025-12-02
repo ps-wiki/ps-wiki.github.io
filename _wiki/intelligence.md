@@ -4,12 +4,13 @@ description: Human intelligence and artificial intelligence.
 tags:
   - artificial-intelligence
   - large-language-model
+  - semantic
 related:
   - reasoning
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.0
+version: 1.0.1
 date: 2025-12-02
 lastmod: 2025-12-02
 generated: 2025-12-02
