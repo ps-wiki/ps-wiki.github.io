@@ -1,6 +1,6 @@
 ---
 title: Intelligence
-description:
+description: Human intelligence and artificial intelligence.
 tags:
   - artificial-intelligence
   - large-language-model
@@ -10,9 +10,9 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 version: 1.0.0
-date: 2025-11-30
-lastmod: 2025-11-30
-generated: 2025-11-30
+date: 2025-12-02
+lastmod: 2025-12-02
+generated: 2025-12-02
 ---
 
 ### Definition in a Book
@@ -33,7 +33,7 @@ Source: <d-cite key="gignac2024defining"></d-cite>
 
 > We propose that artificial intelligence be defined operationally as an artificial system's maximal capacity to complete a novel standardized task with veridical scoring using computational algorithms.
 
-### Definition in an Online Article
+### Definition in a Website
 
 Source: <d-cite key="fivable2024artificial"></d-cite>
 
