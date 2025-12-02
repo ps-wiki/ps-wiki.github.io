@@ -1568,6 +1568,18 @@
       "updated_at": "2025-06-19"
     },
     {
+      "id": "smart-grid",
+      "title": "Smart Grid",
+      "summary": "Definition of smart grid.",
+      "tags": [
+        "smart-grid",
+        "semantic",
+        "european-union",
+        "europe"
+      ],
+      "updated_at": "2025-12-02"
+    },
+    {
       "id": "spinning-reserve",
       "title": "Spinning Reserve",
       "summary": "Synchronized generation and ready to serve additional demand.",

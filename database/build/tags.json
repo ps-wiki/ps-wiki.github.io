@@ -49,20 +49,20 @@
       "count": 15
     },
     {
+      "tag": "europe",
+      "count": 13
+    },
+    {
       "tag": "operation",
       "count": 13
     },
     {
-      "tag": "europe",
+      "tag": "european-union",
       "count": 12
     },
     {
       "tag": "ieee-standard",
       "count": 12
-    },
-    {
-      "tag": "european-union",
-      "count": 11
     },
     {
       "tag": "metrics",
@@ -185,6 +185,10 @@
       "count": 2
     },
     {
+      "tag": "semantic",
+      "count": 2
+    },
+    {
       "tag": "simulation",
       "count": 2
     },
@@ -289,7 +293,7 @@
       "count": 1
     },
     {
-      "tag": "semantic",
+      "tag": "smart-grid",
       "count": 1
     },
     {
