@@ -121,6 +121,10 @@
       "count": 4
     },
     {
+      "tag": "artificial-intelligence",
+      "count": 3
+    },
+    {
       "tag": "cigre",
       "count": 3
     },
@@ -151,10 +155,6 @@
     {
       "tag": "regulation",
       "count": 3
-    },
-    {
-      "tag": "artificial-intelligence",
-      "count": 2
     },
     {
       "tag": "entsoe",
@@ -195,6 +195,10 @@
     {
       "tag": "synchronization",
       "count": 2
+    },
+    {
+      "tag": "data-center",
+      "count": 1
     },
     {
       "tag": "emergency",

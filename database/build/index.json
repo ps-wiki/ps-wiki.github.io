@@ -926,9 +926,11 @@
       "title": "Large Load",
       "summary": "Load facility or aggregation at a single site that can pose reliability risks to the Bulk Power System.",
       "tags": [
-        "nerc"
+        "nerc",
+        "data-center",
+        "artificial-intelligence"
       ],
-      "updated_at": "2025-10-31"
+      "updated_at": "2025-12-02"
     },
     {
       "id": "line-outage-distribution-factor",
