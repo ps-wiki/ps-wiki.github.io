@@ -5,17 +5,19 @@
   "description": "Load facility or aggregation at a single site that can pose reliability risks to the Bulk Power System.",
   "language": "en",
   "tags": [
-    "nerc"
+    "nerc",
+    "data-center",
+    "artificial-intelligence"
   ],
   "related": [
     "reliability",
     "bulk-power-system"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-10-31",
-    "last_modified": "2025-10-31"
+    "last_modified": "2025-12-02"
   },
   "authors": [
     {

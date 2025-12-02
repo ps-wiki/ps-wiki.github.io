@@ -851,7 +851,8 @@
       "summary": "Human intelligence and artificial intelligence.",
       "tags": [
         "artificial-intelligence",
-        "large-language-model"
+        "large-language-model",
+        "semantic"
       ],
       "updated_at": "2025-12-02"
     },
@@ -926,9 +927,11 @@
       "title": "Large Load",
       "summary": "Load facility or aggregation at a single site that can pose reliability risks to the Bulk Power System.",
       "tags": [
-        "nerc"
+        "nerc",
+        "data-center",
+        "artificial-intelligence"
       ],
-      "updated_at": "2025-10-31"
+      "updated_at": "2025-12-02"
     },
     {
       "id": "line-outage-distribution-factor",
@@ -1565,6 +1568,18 @@
       "updated_at": "2025-06-19"
     },
     {
+      "id": "smart-grid",
+      "title": "Smart Grid",
+      "summary": "Definition of smart grid.",
+      "tags": [
+        "smart-grid",
+        "semantic",
+        "european-union",
+        "europe"
+      ],
+      "updated_at": "2025-12-02"
+    },
+    {
       "id": "spinning-reserve",
       "title": "Spinning Reserve",
       "summary": "Synchronized generation and ready to serve additional demand.",
@@ -1929,5 +1944,5 @@
       "updated_at": "2025-11-02"
     }
   ],
-  "generated_at": "2025-12-02T18:37:03Z"
+  "generated_at": "2025-12-02"
 }

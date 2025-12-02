@@ -936,6 +936,11 @@ ninja.data = [{
           description: "Reasoning involves making inferences, evaluating arguments, and drawing logical conclusions based on available information.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/reasoning/";
+            },},{id: "wiki-smart-grid",
+          title: 'Smart Grid',
+          description: "Definition of smart grid.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/smart-grid/";
             },},{
         id: 'social-email',
         title: 'email',
