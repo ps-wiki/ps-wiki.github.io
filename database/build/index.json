@@ -71,9 +71,10 @@
       "title": "Autonomous",
       "summary": "A dynamic system's property.",
       "tags": [
+        "book",
         "control-theory"
       ],
-      "updated_at": "2025-11-19"
+      "updated_at": "2025-11-30"
     },
     {
       "id": "balancing-authority-area",
@@ -845,6 +846,16 @@
       "updated_at": "2025-11-29"
     },
     {
+      "id": "intelligence",
+      "title": "Intelligence",
+      "summary": "Human intelligence and artificial intelligence.",
+      "tags": [
+        "artificial-intelligence",
+        "large-language-model"
+      ],
+      "updated_at": "2025-12-02"
+    },
+    {
       "id": "interchange",
       "title": "Interchange",
       "summary": "Energy transfers that cross Balancing Authority boundaries.",
@@ -1276,6 +1287,16 @@
       "updated_at": "2025-11-03"
     },
     {
+      "id": "reasoning",
+      "title": "Reasoning",
+      "summary": "Reasoning involves making inferences, evaluating arguments, and drawing logical conclusions based on available information.",
+      "tags": [
+        "artificial-intelligence",
+        "large-language-model"
+      ],
+      "updated_at": "2025-12-02"
+    },
+    {
       "id": "region",
       "title": "Region",
       "summary": "Bulk power system reliability regions in North America.",
@@ -1596,9 +1617,11 @@
         "ieee",
         "ieee-task-force",
         "cigre",
-        "article"
+        "article",
+        "book",
+        "control-theory"
       ],
-      "updated_at": "2025-11-01"
+      "updated_at": "2025-11-30"
     },
     {
       "id": "storm-resilience-metric",
@@ -1672,6 +1695,16 @@
         "ieee-standard"
       ],
       "updated_at": "2025-06-20"
+    },
+    {
+      "id": "synergetic-control",
+      "title": "Synergetic Control",
+      "summary": "A control approach based on the theory of synergetic control.",
+      "tags": [
+        "article",
+        "control-theory"
+      ],
+      "updated_at": "2025-11-30"
     },
     {
       "id": "system-flexibility",
@@ -1896,5 +1929,5 @@
       "updated_at": "2025-11-02"
     }
   ],
-  "generated_at": "2025-12-01T05:35:42Z"
+  "generated_at": "2025-12-02T18:28:23Z"
 }

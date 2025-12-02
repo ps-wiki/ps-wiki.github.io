@@ -5,16 +5,17 @@
   "description": "A dynamic system's property.",
   "language": "en",
   "tags": [
+    "book",
     "control-theory"
   ],
   "related": [
     "stability"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-11-19",
-    "last_modified": "2025-11-19"
+    "last_modified": "2025-11-30"
   },
   "authors": [
     {
