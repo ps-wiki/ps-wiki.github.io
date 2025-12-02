@@ -30,7 +30,7 @@
     },
     {
       "tag": "article",
-      "count": 19
+      "count": 20
     },
     {
       "tag": "reliability",
@@ -81,6 +81,10 @@
       "count": 8
     },
     {
+      "tag": "book",
+      "count": 7
+    },
+    {
       "tag": "geography",
       "count": 7
     },
@@ -101,10 +105,6 @@
       "count": 5
     },
     {
-      "tag": "book",
-      "count": 5
-    },
-    {
       "tag": "data-format",
       "count": 5
     },
@@ -122,6 +122,10 @@
     },
     {
       "tag": "cigre",
+      "count": 3
+    },
+    {
+      "tag": "control-theory",
       "count": 3
     },
     {
@@ -149,6 +153,10 @@
       "count": 3
     },
     {
+      "tag": "artificial-intelligence",
+      "count": 2
+    },
+    {
       "tag": "entsoe",
       "count": 2
     },
@@ -169,6 +177,10 @@
       "count": 2
     },
     {
+      "tag": "large-language-model",
+      "count": 2
+    },
+    {
       "tag": "neso",
       "count": 2
     },
@@ -183,10 +195,6 @@
     {
       "tag": "synchronization",
       "count": 2
-    },
-    {
-      "tag": "control-theory",
-      "count": 1
     },
     {
       "tag": "emergency",

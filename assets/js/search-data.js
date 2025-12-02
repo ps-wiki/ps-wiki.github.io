@@ -921,6 +921,21 @@ ninja.data = [{
           description: "A sequence of power flow analysis.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/quasi-static-simulation/";
+            },},{id: "wiki-synergetic-control",
+          title: 'Synergetic Control',
+          description: "A control approach based on the theory of synergetic control.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/synergetic-control/";
+            },},{id: "wiki-intelligence",
+          title: 'Intelligence',
+          description: "Human intelligence and artificial intelligence.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/intelligence/";
+            },},{id: "wiki-reasoning",
+          title: 'Reasoning',
+          description: "Reasoning involves making inferences, evaluating arguments, and drawing logical conclusions based on available information.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/reasoning/";
             },},{
         id: 'social-email',
         title: 'email',
