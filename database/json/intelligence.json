@@ -6,12 +6,13 @@
   "language": "en",
   "tags": [
     "artificial-intelligence",
-    "large-language-model"
+    "large-language-model",
+    "semantic"
   ],
   "related": [
     "reasoning"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-12-02",
