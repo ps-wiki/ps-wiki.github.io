@@ -499,6 +499,17 @@
       "updated_at": "2025-11-28"
     },
     {
+      "id": "dynamic-stability",
+      "title": "Dynamic Stability",
+      "summary": "The ability to damp oscillations.",
+      "tags": [
+        "stability",
+        "system-operator",
+        "pjm"
+      ],
+      "updated_at": "2025-12-02"
+    },
+    {
       "id": "dynamic-study-model",
       "title": "Dynamic Study Model",
       "summary": "Reserve for AGC to provide normal regulating margin.",
@@ -1636,7 +1647,7 @@
         "book",
         "control-theory"
       ],
-      "updated_at": "2025-11-30"
+      "updated_at": "2025-12-02"
     },
     {
       "id": "state-estimation",
@@ -1785,6 +1796,17 @@
         "pjm"
       ],
       "updated_at": "2025-06-22"
+    },
+    {
+      "id": "transient-stability",
+      "title": "Transient Stability",
+      "summary": "The ability to maintain synchronism.",
+      "tags": [
+        "stability",
+        "system-operator",
+        "pjm"
+      ],
+      "updated_at": "2025-12-02"
     },
     {
       "id": "transmission-expansion",

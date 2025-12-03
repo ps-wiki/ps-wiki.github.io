@@ -1,0 +1,44 @@
+{
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
+  "id": "dynamic-stability",
+  "title": "Dynamic Stability",
+  "description": "The ability to damp oscillations.",
+  "language": "en",
+  "tags": [
+    "stability",
+    "system-operator",
+    "pjm"
+  ],
+  "related": [
+    "stability",
+    "transient-stability-assessment",
+    "transient-stability"
+  ],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-12-02",
+    "last_modified": "2025-12-02"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-by-pjm",
+        "title": "Definition by PJM",
+        "type": "definition",
+        "source_keys": [
+          "pjm2025m3v69"
+        ],
+        "page": "p64, Revision 69",
+        "body_md": "> The ability of a generating unit or a group of generating units to damp oscilations caused by relatively minor disturbances through the action of properly tuned control systems.\n"
+      }
+    ]
+  }
+}

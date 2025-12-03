@@ -23,7 +23,7 @@ authors:
 version: 1.0.1
 date: 2025-03-15
 lastmod: 2025-11-28
-generated: 2025-11-29
+generated: 2025-12-02
 ---
 
 ### Definition in an Article by a Task Force

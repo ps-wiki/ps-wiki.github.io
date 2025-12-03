@@ -6,11 +6,11 @@
     },
     {
       "tag": "system-operator",
-      "count": 44
+      "count": 46
     },
     {
       "tag": "pjm",
-      "count": 27
+      "count": 29
     },
     {
       "tag": "ieee",
@@ -18,7 +18,7 @@
     },
     {
       "tag": "stability",
-      "count": 23
+      "count": 25
     },
     {
       "tag": "frequency-control",
