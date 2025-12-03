@@ -5,14 +5,17 @@ tags:
   - system-operator
   - market
   - pjm
-related: []
+related:
+  - market
+  - spot-market
+  - state-estimation
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.0
+version: 1.0.1
 date: 2025-03-15
-lastmod: 2025-06-22
-generated: 2025-11-28
+lastmod: 2025-12-02
+generated: 2025-12-02
 ---
 
 ### Definition by PJM

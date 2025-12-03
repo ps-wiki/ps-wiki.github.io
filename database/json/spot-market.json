@@ -8,12 +8,16 @@
     "market",
     "ferc"
   ],
-  "related": [],
-  "version": "1.0.0",
+  "related": [
+    "market",
+    "wholesale-markets",
+    "real-time-energy-market"
+  ],
+  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-06-20"
+    "last_modified": "2025-12-02"
   },
   "authors": [
     {
