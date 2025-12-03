@@ -1,0 +1,41 @@
+{
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
+  "id": "test-term",
+  "title": "Test Term",
+  "description": "A test term for validation",
+  "language": "en",
+  "tags": [
+    "test",
+    "validation"
+  ],
+  "related": [
+    "related-term"
+  ],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-12-02",
+    "last_modified": "2025-12-02"
+  },
+  "authors": [
+    {
+      "name": "Test Author",
+      "url": "https://example.com"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition",
+        "title": "Definition",
+        "type": "definition",
+        "source_keys": [
+          "test2024"
+        ],
+        "page": "p. 42",
+        "body_md": "> This is a test definition.\n"
+      }
+    ]
+  }
+}

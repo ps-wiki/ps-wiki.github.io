@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS-Wiki Term Editor</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- PyScript -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🔌 PS-Wiki Term Editor</h1>
+            <p class="subtitle">Create and edit power systems terminology with ease</p>
+        </header>
+
+        <div class="toolbar">
+            <button id="loadExistingBtn" class="btn btn-secondary">📂 Load Existing Term</button>
+            <button id="loadTemplateBtn" class="btn btn-secondary">📋 Load Template</button>
+            <button id="validateBtn" class="btn btn-primary">✓ Validate</button>
+            <button id="downloadMdBtn" class="btn btn-success">⬇ Download Markdown</button>
+            <button id="downloadJsonBtn" class="btn btn-success">⬇ Download JSON</button>
+        </div>
+
+        <div class="main-content">
+            <div class="editor-panel">
+                <h2>Term Information</h2>
+                
+                <div class="form-section">
+                    <h3>Basic Information</h3>
+                    <div class="form-group">
+                        <label for="title">Title *</label>
+                        <input type="text" id="title" placeholder="e.g., Frequency Stability" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="description">Description *</label>
+                        <textarea id="description" rows="2" placeholder="Short description (used in search and summaries)" required></textarea>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="termId">Term ID</label>
+                            <input type="text" id="termId" placeholder="Auto-generated from title">
+                            <small>Kebab-case identifier (e.g., frequency-stability)</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="language">Language *</label>
+                            <input type="text" id="language" value="en" placeholder="e.g., en, en-GB">
+                            <small>BCP-47 language tag</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="version">Version *</label>
+                            <input type="text" id="version" value="1.0.0" placeholder="e.g., 1.0.0">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Tags & Related Terms</h3>
+                    <div class="form-group">
+                        <label for="tags">Tags</label>
+                        <input type="text" id="tags" placeholder="Comma-separated tags (e.g., stability, frequency, control)">
+                        <small>Topic tags for search and categorization</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="related">Related Terms</label>
+                        <input type="text" id="related" placeholder="Comma-separated term IDs (e.g., voltage-stability, rotor-angle-stability)">
+                        <small>IDs of related terms</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="aliases">Aliases (Optional)</label>
+                        <input type="text" id="aliases" placeholder="Alternative names (e.g., freq stability, FS)">
+                        <small>Alternative names or abbreviations</small>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Authors</h3>
+                    <div id="authorsContainer"></div>
+                    <button id="addAuthorBtn" class="btn btn-secondary btn-small">+ Add Author</button>
+                </div>
+
+                <div class="form-section">
+                    <h3>Content Sections</h3>
+                    <div id="sectionsContainer"></div>
+                    <button id="addSectionBtn" class="btn btn-secondary btn-small">+ Add Section</button>
+                </div>
+            </div>
+
+            <div class="preview-panel">
+                <h2>Preview</h2>
+                <div class="preview-tabs">
+                    <button class="tab-btn active" data-tab="markdown">Markdown</button>
+                    <button class="tab-btn" data-tab="json">JSON</button>
+                </div>
+                <div id="validationMessages" class="validation-messages"></div>
+                <div class="preview-content">
+                    <pre id="markdownPreview" class="preview-code active"></pre>
+                    <pre id="jsonPreview" class="preview-code"></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Templates Modal -->
+    <div id="templateModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Select Template</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="template-grid">
+                    <div class="template-card" data-template="definition">
+                        <h3>📖 Definition Term</h3>
+                        <p>Standard term with definitions from various sources</p>
+                    </div>
+                    <div class="template-card" data-template="concept">
+                        <h3>💡 Concept Term</h3>
+                        <p>Explanatory term with notes and examples</p>
+                    </div>
+                    <div class="template-card" data-template="technical">
+                        <h3>⚙️ Technical Term</h3>
+                        <p>Technical term with equations and figures</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load Existing Modal -->
+    <div id="loadModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Load Existing Term</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Paste the JSON content of an existing term:</p>
+                <textarea id="loadJsonInput" rows="15" placeholder='{"id": "term-id", "title": "Term Title", ...}'></textarea>
+                <button id="loadJsonBtn" class="btn btn-primary">Load Term</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="py" src="term_processor.py" config='{"packages": ["pyyaml"]}'></script>
+    <script type="py" src="editor.py"></script>
+    <script src="app.js"></script>
+</body>
+</html>
