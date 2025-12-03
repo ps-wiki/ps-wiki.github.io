@@ -17,12 +17,12 @@ authors:
 version: 1.0.0
 date: 2025-03-15
 lastmod: 2025-06-22
-generated: 2025-11-29
+generated: 2025-12-02
 ---
 
 ### Definition by PJM
 
-Source: <d-cite key="pjm2024m3"></d-cite> p60, Revision 67
+Source: <d-cite key="pjm2024m3v67"></d-cite> p60, Revision 67
 
 > The PJM RTO established stability limits for preventing electrical separation of a generating unit or a portion of the PJM RTO. PJM recognizes three types of stability:
 >
@@ -42,7 +42,7 @@ Source: <d-cite key="pjm2024m11"></d-cite> p82, Revision 133
 
 ### Stability Related Transmission Limits by PJM
 
-Source: <d-cite key="pjm2024m3"></d-cite> p40, Revision 67
+Source: <d-cite key="pjm2024m3v67"></d-cite> p40, Revision 67
 
 > In addition to the thermal limits referenced in Section 2, PJM operates the PJM RTO considering voltage and stability related transmission limits as follows:
 >

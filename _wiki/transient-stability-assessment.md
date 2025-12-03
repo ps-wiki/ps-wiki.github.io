@@ -18,7 +18,7 @@ generated: 2025-11-28
 
 ### Definition by PJM
 
-Source: <d-cite key="pjm2024m3"></d-cite> p61, Revision 67
+Source: <d-cite key="pjm2024m3v67"></d-cite> p61, Revision 67
 
 > In addition to the special operating procedures addressing stability limit issues in Manual-03B, PJM utilizes a real-time Transient Stability Assessment (TSA) tool.
 > TSA can monitor and determine transient stability of the system subject to **a select set of EMS contingencies** for balanced and unbalanced faults.

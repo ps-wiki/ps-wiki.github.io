@@ -13,12 +13,12 @@ authors:
 version: 1.0.0
 date: 2025-03-15
 lastmod: 2025-06-22
-generated: 2025-11-28
+generated: 2025-12-02
 ---
 
 ### Definition by PJM
 
-Source: <d-cite key="pjm2024m3"></d-cite> p17, Revision 67
+Source: <d-cite key="pjm2024m3v67"></d-cite> p17, Revision 67
 
 > PJM's Real-Time Reliability Model is a computer representation of the power system facilities in the PJM RTO and other Balancing Authorities that may impact the reliable operation of the PJM system.
 > The model resides and is maintained by the PJM staff on the PJM Energy Management System (EMS).
