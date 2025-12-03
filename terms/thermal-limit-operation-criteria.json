@@ -30,7 +30,7 @@
         "title": "Definition by PJM",
         "type": "definition",
         "source_keys": [
-          "pjm2024m3"
+          "pjm2024m3v67"
         ],
         "page": "p29, Revision 67",
         "body_md": "> PJM uses the following techniques to control contingency or system violations:\n>\n> - Adjusting PARs.\n> - Switching reactive devices in/out of service or adjusting generator MVAR output.\n> - Switching transmission facilities in/out of service.\n> - Adjusting generation MW output via redispatch.\n> - Adjusting imports/exports.\n> - Issuing a TLR (Transmission Loading Relief).\n"

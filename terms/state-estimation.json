@@ -1,0 +1,40 @@
+{
+  "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
+  "id": "state-estimation",
+  "title": "State Estimation",
+  "description": "A data processing algorithm to estimate the static-state vector of voltage magnitudes and angles at all network buses.",
+  "language": "en",
+  "tags": [
+    "real-time"
+  ],
+  "related": [
+    "real-time-energy-market"
+  ],
+  "version": "1.0.0",
+  "breaking": false,
+  "dates": {
+    "created": "2025-12-02",
+    "last_modified": "2025-12-02"
+  },
+  "authors": [
+    {
+      "name": "Jinning Wang",
+      "url": "https://jinningwang.github.io"
+    }
+  ],
+  "content": {
+    "sections": [
+      {
+        "order": 1,
+        "id": "definition-in-an-article",
+        "title": "Definition in an Article",
+        "type": "definition",
+        "source_keys": [
+          "schweppe1970staticstate"
+        ],
+        "page": null,
+        "body_md": "> The static state of an electric power system is defined as the vector of the voltage magnitudes and angles at all network buses. The static-state estimator is a data processing algorithm for converting redundant meter readings and other available information into an estimate of the static-state vector.\n"
+      }
+    ]
+  }
+}

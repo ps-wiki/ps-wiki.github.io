@@ -926,6 +926,11 @@ ninja.data = [{
           description: "A control approach based on the theory of synergetic control.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/synergetic-control/";
+            },},{id: "wiki-dynamic-stability",
+          title: 'Dynamic Stability',
+          description: "The ability to damp oscillations.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/dynamic-stability/";
             },},{id: "wiki-intelligence",
           title: 'Intelligence',
           description: "Human intelligence and artificial intelligence.",
@@ -941,6 +946,16 @@ ninja.data = [{
           description: "Definition of smart grid.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/smart-grid/";
+            },},{id: "wiki-state-estimation",
+          title: 'State Estimation',
+          description: "A data processing algorithm to estimate the static-state vector of voltage magnitudes and angles at all network buses.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/state-estimation/";
+            },},{id: "wiki-transient-stability",
+          title: 'Transient Stability',
+          description: "The ability to maintain synchronism.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/transient-stability/";
             },},{
         id: 'social-email',
         title: 'email',
