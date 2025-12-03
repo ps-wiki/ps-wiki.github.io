@@ -17,7 +17,7 @@ generated: 2025-11-28
 
 ### Definition by PJM
 
-Source: <d-cite key="pjm2025m3"></d-cite> p25, Revision 68
+Source: <d-cite key="pjm2025m3v68"></d-cite> p25, Revision 68
 
 > Under normal operating conditions, PJM's EMS will perform an N-1 contingency analysis for the loss of each Bulk Electric System line and transformer within the PJM RTO. PJM will then control as indicated in Manual-03 Section 3: Thermal Operating Criteria.
 >

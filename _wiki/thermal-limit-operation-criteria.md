@@ -17,7 +17,7 @@ generated: 2025-11-28
 
 ### Definition by PJM
 
-Source: <d-cite key="pjm2024m3"></d-cite> p29, Revision 67
+Source: <d-cite key="pjm2024m3v67"></d-cite> p29, Revision 67
 
 > PJM uses the following techniques to control contingency or system violations:
 >
