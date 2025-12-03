@@ -16,13 +16,15 @@
   ],
   "related": [
     "security",
-    "reliability"
+    "reliability",
+    "transient-stability",
+    "dynamic-stability"
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-11-30"
+    "last_modified": "2025-12-02"
   },
   "authors": [
     {
