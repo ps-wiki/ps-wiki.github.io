@@ -50,15 +50,15 @@
     },
     {
       "tag": "europe",
+      "count": 14
+    },
+    {
+      "tag": "european-union",
       "count": 13
     },
     {
       "tag": "operation",
       "count": 13
-    },
-    {
-      "tag": "european-union",
-      "count": 12
     },
     {
       "tag": "ieee-standard",
