@@ -46,8 +46,8 @@
       },
       {
         "order": 2,
-        "id": "definition-by-an-ieee-working-group",
-        "title": "Definition by an IEEE Working Group",
+        "id": "definition-by-a-european-union-regulation",
+        "title": "Definition by a European Union Regulation",
         "type": "definition",
         "source_keys": [
           "eu2017guideline"

@@ -29,7 +29,7 @@ Source: <d-cite key="pjm2025m3v69"></d-cite> p64, Revision 69
 
 > The ability of a generating unit or a group of generating units to damp oscilations caused by relatively minor disturbances through the action of properly tuned control systems.
 
-### Definition by an IEEE Working Group
+### Definition by a European Union Regulation
 
 Source: <d-cite key="eu2017guideline"></d-cite> p6
 
