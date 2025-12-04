@@ -461,9 +461,11 @@
       "title": "Disturbance",
       "summary": "Any perturbation or sudden loss of generation or interruption of load.",
       "tags": [
-        "event"
+        "event",
+        "european-union",
+        "europe"
       ],
-      "updated_at": "2025-06-20"
+      "updated_at": "2025-12-03"
     },
     {
       "id": "dynamic-line-ratings",
