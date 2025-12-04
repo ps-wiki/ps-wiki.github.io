@@ -928,7 +928,7 @@ ninja.data = [{
               window.location.href = "/wiki/synergetic-control/";
             },},{id: "wiki-dynamic-stability",
           title: 'Dynamic Stability',
-          description: "The ability to damp oscillations.",
+          description: "The ability to damp oscillations; or the general term for rotor angle stability, frequency stability, and voltage stability.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/dynamic-stability/";
             },},{id: "wiki-intelligence",

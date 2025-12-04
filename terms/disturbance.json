@@ -5,14 +5,16 @@
   "description": "Any perturbation or sudden loss of generation or interruption of load.",
   "language": "en",
   "tags": [
-    "event"
+    "event",
+    "european-union",
+    "europe"
   ],
   "related": [],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-06-20"
+    "last_modified": "2025-12-03"
   },
   "authors": [
     {
@@ -30,6 +32,17 @@
         "source_keys": [],
         "page": null,
         "body_md": "> Means (i) any perturbation to the electric system, or (ii) the unexpected change in ACE that is caused by the sudden loss of generation or interruption of load.\n"
+      },
+      {
+        "order": 2,
+        "id": "definition-in-a-european-union-regulation",
+        "title": "Definition in a European Union Regulation",
+        "type": "definition",
+        "source_keys": [
+          "eu2017guideline"
+        ],
+        "page": "p6",
+        "body_md": "> ‘disturbance’ means an unplanned event that may cause the transmission system to divert from the normal state;\n"
       }
     ]
   }
