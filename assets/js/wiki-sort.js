@@ -4,15 +4,15 @@
  */
 
 (function () {
-  'use strict';
+  "use strict";
 
-  const STORAGE_KEY = 'wiki-sort-preferences';
+  const STORAGE_KEY = "wiki-sort-preferences";
 
   // Initialize sorting when DOM is ready
-  document.addEventListener('DOMContentLoaded', function () {
-    const wikiList = document.querySelector('.wiki-list');
-    const criteriaSelect = document.getElementById('wiki-sort-criteria');
-    const orderSelect = document.getElementById('wiki-sort-order');
+  document.addEventListener("DOMContentLoaded", function () {
+    const wikiList = document.querySelector(".wiki-list");
+    const criteriaSelect = document.getElementById("wiki-sort-criteria");
+    const orderSelect = document.getElementById("wiki-sort-order");
 
     if (!wikiList || !criteriaSelect || !orderSelect) {
       return; // Not on wiki page or controls not found
@@ -22,8 +22,8 @@
     loadSortPreference();
 
     // Add event listeners
-    criteriaSelect.addEventListener('change', handleSortChange);
-    orderSelect.addEventListener('change', handleSortChange);
+    criteriaSelect.addEventListener("change", handleSortChange);
+    orderSelect.addEventListener("change", handleSortChange);
 
     // Apply initial sort
     sortWikiList();
@@ -41,9 +41,9 @@
    * Sort the wiki list based on current criteria and order
    */
   function sortWikiList() {
-    const wikiList = document.querySelector('.wiki-list');
-    const criteriaSelect = document.getElementById('wiki-sort-criteria');
-    const orderSelect = document.getElementById('wiki-sort-order');
+    const wikiList = document.querySelector(".wiki-list");
+    const criteriaSelect = document.getElementById("wiki-sort-criteria");
+    const orderSelect = document.getElementById("wiki-sort-order");
 
     if (!wikiList || !criteriaSelect || !orderSelect) {
       return;
@@ -53,26 +53,26 @@
     const order = orderSelect.value;
 
     // Get all list items
-    const items = Array.from(wikiList.querySelectorAll('li'));
+    const items = Array.from(wikiList.querySelectorAll("li"));
 
     // Sort items
     items.sort(function (a, b) {
       let aValue, bValue;
 
       switch (criteria) {
-        case 'title':
-          aValue = a.dataset.title || '';
-          bValue = b.dataset.title || '';
+        case "title":
+          aValue = a.dataset.title || "";
+          bValue = b.dataset.title || "";
           return compareStrings(aValue, bValue, order);
 
-        case 'date':
-          aValue = a.dataset.date || '1970-01-01';
-          bValue = b.dataset.date || '1970-01-01';
+        case "date":
+          aValue = a.dataset.date || "1970-01-01";
+          bValue = b.dataset.date || "1970-01-01";
           return compareDates(aValue, bValue, order);
 
-        case 'lastmod':
-          aValue = a.dataset.lastmod || '1970-01-01';
-          bValue = b.dataset.lastmod || '1970-01-01';
+        case "lastmod":
+          aValue = a.dataset.lastmod || "1970-01-01";
+          bValue = b.dataset.lastmod || "1970-01-01";
           return compareDates(aValue, bValue, order);
 
         default:
@@ -90,8 +90,8 @@
    * Compare two strings for sorting
    */
   function compareStrings(a, b, order) {
-    const comparison = a.localeCompare(b, undefined, { sensitivity: 'base' });
-    return order === 'asc' ? comparison : -comparison;
+    const comparison = a.localeCompare(b, undefined, { sensitivity: "base" });
+    return order === "asc" ? comparison : -comparison;
   }
 
   /**
@@ -101,15 +101,15 @@
     const dateA = new Date(a);
     const dateB = new Date(b);
     const comparison = dateA - dateB;
-    return order === 'asc' ? comparison : -comparison;
+    return order === "asc" ? comparison : -comparison;
   }
 
   /**
    * Save sort preferences to localStorage
    */
   function saveSortPreference() {
-    const criteriaSelect = document.getElementById('wiki-sort-criteria');
-    const orderSelect = document.getElementById('wiki-sort-order');
+    const criteriaSelect = document.getElementById("wiki-sort-criteria");
+    const orderSelect = document.getElementById("wiki-sort-order");
 
     if (!criteriaSelect || !orderSelect) {
       return;
@@ -117,14 +117,14 @@
 
     const preferences = {
       criteria: criteriaSelect.value,
-      order: orderSelect.value
+      order: orderSelect.value,
     };
 
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(preferences));
     } catch (e) {
       // localStorage might be disabled
-      console.warn('Could not save wiki sort preferences:', e);
+      console.warn("Could not save wiki sort preferences:", e);
     }
   }
 
@@ -132,8 +132,8 @@
    * Load sort preferences from localStorage
    */
   function loadSortPreference() {
-    const criteriaSelect = document.getElementById('wiki-sort-criteria');
-    const orderSelect = document.getElementById('wiki-sort-order');
+    const criteriaSelect = document.getElementById("wiki-sort-criteria");
+    const orderSelect = document.getElementById("wiki-sort-order");
 
     if (!criteriaSelect || !orderSelect) {
       return;
@@ -152,7 +152,7 @@
       }
     } catch (e) {
       // localStorage might be disabled or data corrupted
-      console.warn('Could not load wiki sort preferences:', e);
+      console.warn("Could not load wiki sort preferences:", e);
     }
   }
 })();
