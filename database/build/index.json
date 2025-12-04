@@ -461,9 +461,11 @@
       "title": "Disturbance",
       "summary": "Any perturbation or sudden loss of generation or interruption of load.",
       "tags": [
-        "event"
+        "event",
+        "european-union",
+        "europe"
       ],
-      "updated_at": "2025-06-20"
+      "updated_at": "2025-12-03"
     },
     {
       "id": "dynamic-line-ratings",
@@ -501,13 +503,15 @@
     {
       "id": "dynamic-stability",
       "title": "Dynamic Stability",
-      "summary": "The ability to damp oscillations.",
+      "summary": "The ability to damp oscillations; or the general term for rotor angle stability, frequency stability, and voltage stability.",
       "tags": [
         "stability",
         "system-operator",
-        "pjm"
+        "pjm",
+        "european-union",
+        "europe"
       ],
-      "updated_at": "2025-12-02"
+      "updated_at": "2025-12-03"
     },
     {
       "id": "dynamic-study-model",
@@ -1793,9 +1797,11 @@
         "stability",
         "software",
         "system-operator",
-        "pjm"
+        "pjm",
+        "european-union",
+        "europe"
       ],
-      "updated_at": "2025-06-22"
+      "updated_at": "2025-12-03"
     },
     {
       "id": "transient-stability",
@@ -1975,5 +1981,5 @@
       "updated_at": "2025-11-02"
     }
   ],
-  "generated_at": "2025-12-03"
+  "generated_at": "2025-12-04"
 }
