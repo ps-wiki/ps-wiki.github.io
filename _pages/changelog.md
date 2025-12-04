@@ -13,6 +13,10 @@ This page records major changes in this wiki.
 
 ## 2025
 
+### 12-04
+
+- Add search bar in wiki page
+
 ### 11-26
 
 - Improve pyscript support
