@@ -1797,9 +1797,11 @@
         "stability",
         "software",
         "system-operator",
-        "pjm"
+        "pjm",
+        "european-union",
+        "europe"
       ],
-      "updated_at": "2025-06-22"
+      "updated_at": "2025-12-03"
     },
     {
       "id": "transient-stability",

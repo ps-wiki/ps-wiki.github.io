@@ -6,14 +6,18 @@ tags:
   - software
   - system-operator
   - pjm
-related: []
+  - european-union
+  - europe
+related:
+  - transient-stability
+  - dynamic-stability
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.0
+version: 1.0.1
 date: 2025-03-15
-lastmod: 2025-06-22
-generated: 2025-12-02
+lastmod: 2025-12-03
+generated: 2025-12-03
 ---
 
 ### Definition by PJM
@@ -48,3 +52,9 @@ Source: <d-cite key="pjm2024m3v67"></d-cite> p61, Revision 67
 > For scheduled transmission outages, TSA studies are used to determine the stability limits.
 > For forced outages, the Manual-03B operational procedure limits are used until a real-time TSA run is completed.
 > PJM will also use the Manual-03B operational procedure stability limits in certain cases, such as when TSA is down.
+
+### Definition in a European Union Regulation
+
+Source: <d-cite key="eu2017guideline"></d-cite> p6
+
+> ‘dynamic stability assessment’ means the operational security assessment in terms of dynamic stability;

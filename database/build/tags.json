@@ -46,15 +46,15 @@
     },
     {
       "tag": "europe",
+      "count": 16
+    },
+    {
+      "tag": "european-union",
       "count": 15
     },
     {
       "tag": "transmission",
       "count": 15
-    },
-    {
-      "tag": "european-union",
-      "count": 14
     },
     {
       "tag": "operation",
