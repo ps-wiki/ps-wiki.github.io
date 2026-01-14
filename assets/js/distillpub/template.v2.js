@@ -853,20 +853,33 @@ ${math}
   }
 
   function venue_string(ent) {
-    var cite = ent.journal || ent.booktitle || "";
-    if ("volume" in ent) {
-      var issue = ent.issue || ent.number;
-      issue = issue != undefined ? "(" + issue + ")" : "";
-      cite += ", Vol " + ent.volume + issue;
+    var cite = "";
+    var venue = ent.journal || ent.booktitle || "";
+
+    if (venue) {
+      // IEEE style: journal/conference in italics
+      cite += "<i>" + venue + "</i>";
     }
+
+    // IEEE style: vol. X, no. Y format
+    if ("volume" in ent) {
+      cite += ", vol. " + ent.volume;
+    }
+
+    if ("issue" in ent || "number" in ent) {
+      var issue = ent.issue || ent.number;
+      cite += ", no. " + issue;
+    }
+
     if ("pages" in ent) {
       cite += ", pp. " + ent.pages;
     }
-    if (cite != "") cite += ". ";
+
+    // Add publisher for books/conference proceedings
     if ("publisher" in ent) {
-      cite += ent.publisher;
-      if (cite[cite.length - 1] != ".") cite += ".";
+      cite += ", " + ent.publisher;
     }
+
     return cite;
   }
 
@@ -899,38 +912,49 @@ ${math}
   }
 
   function title_string(ent) {
-    return '<span class="title">' + ent.title + "</span> ";
+    // IEEE style: title in quotes
+    return '"' + ent.title + '," ';
   }
 
   function bibliography_cite(ent, fancy) {
     if (ent) {
-      var cite = title_string(ent);
-      cite += link_string(ent) + "<br>";
+      var cite = "";
+
+      // IEEE style: Authors first (I. Last format)
       if (ent.author) {
-        cite += author_string(ent, "${L}, ${I}", ", ", " and ");
-        if (ent.year || ent.date) {
-          cite += ", ";
-        }
+        cite += author_string(ent, "${I} ${L}", ", ", ", and ");
+        cite += ", ";
       }
+
+      // IEEE style: Title in quotes
+      cite += title_string(ent);
+
+      // IEEE style: Venue (journal/conference) in italics with vol/no/pp
+      var venue = venue_string(ent);
+      if (venue) {
+        cite += venue;
+      }
+
+      // IEEE style: Year at the end
       if (ent.year || ent.date) {
-        cite += (ent.year || ent.date) + ". ";
-      } else {
-        cite += ". ";
+        cite += ", " + (ent.year || ent.date);
       }
-      cite += venue_string(ent);
-      cite += doi_string(ent);
+
+      cite += ".";
+
+      // Add DOI if available
+      var doi = doi_string(ent, false);
+      if (doi) {
+        cite += doi;
+      }
+
+      // Add link if available
+      var link = link_string(ent);
+      if (link) {
+        cite += link;
+      }
+
       return cite;
-      /*var cite =  author_string(ent, "${L}, ${I}", ", ", " and ");
-      if (ent.year || ent.date){
-        cite += ", " + (ent.year || ent.date) + ". "
-      } else {
-        cite += ". "
-      }
-      cite += "<b>" + ent.title + "</b>. ";
-      cite += venue_string(ent);
-      cite += doi_string(ent);
-      cite += link_string(ent);
-      return cite*/
     } else {
       return "?";
     }
@@ -1503,7 +1527,7 @@ ${math}
 `
   );
 
-  class Abstract extends T$1(HTMLElement) {}
+  class Abstract extends T$1(HTMLElement) { }
 
   // Copyright 2018 The Distill Template Authors
 
@@ -1572,7 +1596,7 @@ d-appendix > distill-appendix {
     false
   );
 
-  class Appendix extends T$2(HTMLElement) {}
+  class Appendix extends T$2(HTMLElement) { }
 
   // Copyright 2018 The Distill Template Authors
   //
@@ -1612,7 +1636,7 @@ d-appendix > distill-appendix {
                   if (!isOnlyWhitespace.test(text)) {
                     console.warn(
                       "Use of unwrapped text in distill articles is discouraged as it breaks layout! Please wrap any text in a <span> or <p> tag. We found the following text: " +
-                        text
+                      text
                     );
                     const wrapper = document.createElement("span");
                     wrapper.innerHTML = addedNode.nodeValue;
@@ -2079,22 +2103,21 @@ d-appendix > distill-appendix {
         .map(
           (author) => `
         <p class="author">
-          ${
-            author.personalURL
+          ${author.personalURL
               ? `
             <a class="name" href="${author.personalURL}">${author.name}</a>`
               : `
             <span class="name">${author.name}</span>`
-          }
+            }
         </p>
         <p class="affiliation">
         ${author.affiliations
-          .map((affiliation) =>
-            affiliation.url
-              ? `<a class="affiliation" href="${affiliation.url}">${affiliation.name}</a>`
-              : `<span class="affiliation">${affiliation.name}</span>`
-          )
-          .join(", ")}
+              .map((affiliation) =>
+                affiliation.url
+                  ? `<a class="affiliation" href="${affiliation.url}">${affiliation.name}</a>`
+                  : `<span class="affiliation">${affiliation.name}</span>`
+              )
+              .join(", ")}
         </p>
       `
         )
@@ -2102,11 +2125,10 @@ d-appendix > distill-appendix {
     </div>
     <div>
       <h3>Published</h3>
-      ${
-        frontMatter.publishedDate
-          ? `
+      ${frontMatter.publishedDate
+        ? `
         <p>${frontMatter.publishedMonth} ${frontMatter.publishedDay}, ${frontMatter.publishedYear}</p> `
-          : `
+        : `
         <p><em>Not published yet.</em></p>`
       }
     </div>
@@ -2278,9 +2300,9 @@ ul li:last-of-type {
       if (!this.hoverBox) return;
       this.hoverBox.innerHTML = `<ul>
       ${entries
-        .map(hover_cite)
-        .map((html) => `<li>${html}</li>`)
-        .join("\n")}
+          .map(hover_cite)
+          .map((html) => `<li>${html}</li>`)
+          .join("\n")}
     </ul>`;
     }
   }
@@ -2605,7 +2627,7 @@ d-citation-list .references .title {
 
           _.hooks.run("before-all-elements-highlight", env);
 
-          for (var i = 0, element; (element = env.elements[i++]); ) {
+          for (var i = 0, element; (element = env.elements[i++]);) {
             _.highlightElement(element, async === true, env.callback);
           }
         },
@@ -2727,7 +2749,7 @@ d-citation-list .references .title {
               return;
             }
 
-            for (var i = 0, callback; (callback = callbacks[i++]); ) {
+            for (var i = 0, callback; (callback = callbacks[i++]);) {
               callback(env);
             }
           },
@@ -4471,7 +4493,7 @@ d-footnote-list a.footnote-backlink {
       super();
     }
 
-    connectedCallback() {}
+    connectedCallback() { }
 
     listen(element) {
       // console.log(element)
@@ -4601,7 +4623,7 @@ d-references {
     false
   );
 
-  class References extends T$8(HTMLElement) {}
+  class References extends T$8(HTMLElement) { }
 
   // Copyright 2018 The Distill Template Authors
   //
@@ -5165,7 +5187,7 @@ p small {
     return prototype;
   }
 
-  function Color() {}
+  function Color() { }
 
   var darker = 0.7;
   var brighter = 1 / darker;
@@ -5372,11 +5394,11 @@ p small {
               ? rgba((m >> 24) & 0xff, (m >> 16) & 0xff, (m >> 8) & 0xff, (m & 0xff) / 0xff) // #ff000000
               : l === 4
                 ? rgba(
-                    ((m >> 12) & 0xf) | ((m >> 8) & 0xf0),
-                    ((m >> 8) & 0xf) | ((m >> 4) & 0xf0),
-                    ((m >> 4) & 0xf) | (m & 0xf0),
-                    (((m & 0xf) << 4) | (m & 0xf)) / 0xff
-                  ) // #f000
+                  ((m >> 12) & 0xf) | ((m >> 8) & 0xf0),
+                  ((m >> 8) & 0xf) | ((m >> 4) & 0xf0),
+                  ((m >> 4) & 0xf) | (m & 0xf0),
+                  (((m & 0xf) << 4) | (m & 0xf)) / 0xff
+                ) // #f000
                 : null) // invalid hex
       : (m = reRgbInteger.exec(format))
         ? new Rgb(m[1], m[2], m[3], 1) // rgb(255, 0, 0)
@@ -5780,8 +5802,8 @@ p small {
     return (y = +y) === 1
       ? nogamma
       : function (a, b) {
-          return b - a ? exponential(a, b, y) : constant(isNaN(a) ? b : a);
-        };
+        return b - a ? exponential(a, b, y) : constant(isNaN(a) ? b : a);
+      };
   }
 
   function nogamma(a, b) {
@@ -5958,22 +5980,22 @@ p small {
     return b == null || t === "boolean"
       ? constant(b)
       : (t === "number"
-          ? interpolateNumber
-          : t === "string"
-            ? (c = color(b))
-              ? ((b = c), rgb$1)
-              : string
-            : b instanceof color
-              ? rgb$1
-              : b instanceof Date
-                ? date
-                : isNumberArray(b)
-                  ? numberArray
-                  : Array.isArray(b)
-                    ? genericArray
-                    : (typeof b.valueOf !== "function" && typeof b.toString !== "function") || isNaN(b)
-                      ? object
-                      : interpolateNumber)(a, b);
+        ? interpolateNumber
+        : t === "string"
+          ? (c = color(b))
+            ? ((b = c), rgb$1)
+            : string
+          : b instanceof color
+            ? rgb$1
+            : b instanceof Date
+              ? date
+              : isNumberArray(b)
+                ? numberArray
+                : Array.isArray(b)
+                  ? genericArray
+                  : (typeof b.valueOf !== "function" && typeof b.toString !== "function") || isNaN(b)
+                    ? object
+                    : interpolateNumber)(a, b);
   }
 
   function interpolateRound(a, b) {
@@ -6005,8 +6027,8 @@ p small {
   function normalize(a, b) {
     return (b -= a = +a)
       ? function (x) {
-          return (x - a) / b;
-        }
+        return (x - a) / b;
+      }
       : constant$1(isNaN(b) ? NaN : 0.5);
   }
 
@@ -6312,9 +6334,9 @@ p small {
 
   function formatLocale(locale) {
     var group =
-        locale.grouping === undefined || locale.thousands === undefined
-          ? identity$1
-          : formatGroup(map.call(locale.grouping, Number), locale.thousands + ""),
+      locale.grouping === undefined || locale.thousands === undefined
+        ? identity$1
+        : formatGroup(map.call(locale.grouping, Number), locale.thousands + ""),
       currencyPrefix = locale.currency === undefined ? "" : locale.currency[0] + "",
       currencySuffix = locale.currency === undefined ? "" : locale.currency[1] + "",
       decimal = locale.decimal === undefined ? "." : locale.decimal + "",
@@ -6631,11 +6653,11 @@ p small {
           if (date >= date) {
             if (step < 0)
               while (++step <= 0) {
-                while ((offseti(date, -1), !test(date))) {} // eslint-disable-line no-empty
+                while ((offseti(date, -1), !test(date))) { } // eslint-disable-line no-empty
               }
             else
               while (--step >= 0) {
-                while ((offseti(date, +1), !test(date))) {} // eslint-disable-line no-empty
+                while ((offseti(date, +1), !test(date))) { } // eslint-disable-line no-empty
               }
           }
         }
@@ -6656,14 +6678,14 @@ p small {
           : !(step > 1)
             ? interval
             : interval.filter(
-                field
-                  ? function (d) {
-                      return field(d) % step === 0;
-                    }
-                  : function (d) {
-                      return interval.count(0, d) % step === 0;
-                    }
-              );
+              field
+                ? function (d) {
+                  return field(d) % step === 0;
+                }
+                : function (d) {
+                  return interval.count(0, d) % step === 0;
+                }
+            );
       };
     }
 
@@ -6826,15 +6848,15 @@ p small {
     return !isFinite((k = Math.floor(k))) || !(k > 0)
       ? null
       : newInterval(
-          function (date) {
-            date.setFullYear(Math.floor(date.getFullYear() / k) * k);
-            date.setMonth(0, 1);
-            date.setHours(0, 0, 0, 0);
-          },
-          function (date, step) {
-            date.setFullYear(date.getFullYear() + step * k);
-          }
-        );
+        function (date) {
+          date.setFullYear(Math.floor(date.getFullYear() / k) * k);
+          date.setMonth(0, 1);
+          date.setHours(0, 0, 0, 0);
+        },
+        function (date, step) {
+          date.setFullYear(date.getFullYear() + step * k);
+        }
+      );
   };
 
   var utcMinute = newInterval(
@@ -6942,15 +6964,15 @@ p small {
     return !isFinite((k = Math.floor(k))) || !(k > 0)
       ? null
       : newInterval(
-          function (date) {
-            date.setUTCFullYear(Math.floor(date.getUTCFullYear() / k) * k);
-            date.setUTCMonth(0, 1);
-            date.setUTCHours(0, 0, 0, 0);
-          },
-          function (date, step) {
-            date.setUTCFullYear(date.getUTCFullYear() + step * k);
-          }
-        );
+        function (date) {
+          date.setUTCFullYear(Math.floor(date.getUTCFullYear() / k) * k);
+          date.setUTCMonth(0, 1);
+          date.setUTCHours(0, 0, 0, 0);
+        },
+        function (date, step) {
+          date.setUTCFullYear(date.getUTCFullYear() + step * k);
+        }
+      );
   };
 
   function localDate(d) {
@@ -7654,7 +7676,7 @@ p small {
 
   var parseIso = +new Date("2000-01-01T00:00:00.000Z") ? parseIsoNative : utcParse(isoSpecifier);
 
-  var noop = { value: function () {} };
+  var noop = { value: function () { } };
 
   function dispatch() {
     for (var i = 0, n = arguments.length, _ = {}, t; i < n; ++i) {
@@ -7778,14 +7800,14 @@ p small {
     return (fullname.local ? creatorFixed : creatorInherit)(fullname);
   }
 
-  function none() {}
+  function none() { }
 
   function selector(selector) {
     return selector == null
       ? none
       : function () {
-          return this.querySelector(selector);
-        };
+        return this.querySelector(selector);
+      };
   }
 
   function selection_select(select) {
@@ -7811,8 +7833,8 @@ p small {
     return selector == null
       ? empty
       : function () {
-          return this.querySelectorAll(selector);
-        };
+        return this.querySelectorAll(selector);
+      };
   }
 
   function selection_selectAll(select) {
@@ -8023,12 +8045,12 @@ p small {
   function selection_merge(selection) {
     for (
       var groups0 = this._groups,
-        groups1 = selection._groups,
-        m0 = groups0.length,
-        m1 = groups1.length,
-        m = Math.min(m0, m1),
-        merges = new Array(m0),
-        j = 0;
+      groups1 = selection._groups,
+      m0 = groups0.length,
+      m1 = groups1.length,
+      m = Math.min(m0, m1),
+      merges = new Array(m0),
+      j = 0;
       j < m;
       ++j
     ) {
@@ -8047,8 +8069,8 @@ p small {
   }
 
   function selection_order() {
-    for (var groups = this._groups, j = -1, m = groups.length; ++j < m; ) {
-      for (var group = groups[j], i = group.length - 1, next = group[i], node; --i >= 0; ) {
+    for (var groups = this._groups, j = -1, m = groups.length; ++j < m;) {
+      for (var group = groups[j], i = group.length - 1, next = group[i], node; --i >= 0;) {
         if ((node = group[i])) {
           if (next && node.compareDocumentPosition(next) ^ 4) next.parentNode.insertBefore(node, next);
           next = node;
@@ -8225,8 +8247,8 @@ p small {
   function selection_style(name, value, priority) {
     return arguments.length > 1
       ? this.each(
-          (value == null ? styleRemove : typeof value === "function" ? styleFunction : styleConstant)(name, value, priority == null ? "" : priority)
-        )
+        (value == null ? styleRemove : typeof value === "function" ? styleFunction : styleConstant)(name, value, priority == null ? "" : priority)
+      )
       : styleValue(this.node(), name);
   }
 
@@ -9346,7 +9368,7 @@ distill-header .nav a {
 
   const T$b = Template("distill-header", headerTemplate, false);
 
-  class DistillHeader extends T$b(HTMLElement) {}
+  class DistillHeader extends T$b(HTMLElement) { }
 
   // Copyright 2018 The Distill Template Authors
 
@@ -9501,7 +9523,7 @@ distill-header .nav a {
 
   const T$c = Template("distill-footer", footerTemplate);
 
-  class DistillFooter extends T$c(HTMLElement) {}
+  class DistillFooter extends T$c(HTMLElement) { }
 
   // Copyright 2018 The Distill Template Authors
 
