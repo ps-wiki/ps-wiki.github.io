@@ -24,6 +24,11 @@ Source: <d-cite key="xue1988eeca"></d-cite>
 > ii) Provide analytical means of sensitivity analysis and control; initiated here, this study is developed in Ref. [A].
 > To reach these objectives, the EEAC method has called upon one conjecture and one simplifying assumption. It is worth restating them and examining their implications in some detail.
 
-Compared to EAC, EEAC uses an approximate one-machine-infinite-bus (OMIB) equivalent of the multi-machine system.
-OMIB is a.k.a. <u>single machine infinite bus</u> (SIMB).
-The term "Extended Equal Area Criterion" comes from the authors' response to a discussion on the paper.
+<!-- prettier-ignore-start -->
+> Compared to EAC, EEAC uses an approximate one-machine-infinite-bus (OMIB) equivalent of the multi-machine system.
+>
+> OMIB, a.k.a. <u>single machine infinite bus</u> (SIMB).
+>
+> The term "Extended Equal Area Criterion" comes from the authors' response to a discussion on the paper.
+{: .block-tip }
+<!-- prettier-ignore-end -->

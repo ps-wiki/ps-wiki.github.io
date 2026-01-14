@@ -23,7 +23,10 @@ Source: <d-cite key="kahneman2011thinking"></d-cite> p26, Revision 45
 >
 > System 2 allocates attention to the effortful mental activities that demand it, including complex computations. The operations of System 2 are often associated with the subjective experience of agency, choice, and concentration.
 
-Note: System 1 is considered automatic thinking, and System 2 is considered reasoning.
+<!-- prettier-ignore-start -->
+> System 1 is considered automatic thinking, and System 2 is considered reasoning.
+{: .block-tip }
+<!-- prettier-ignore-end -->
 
 ### Definition in an Article
 
