@@ -34,7 +34,7 @@
           "kahneman2011thinking"
         ],
         "page": "p26, Revision 45",
-        "body_md": "> System 1 operates automatically and quickly, with little or no effort and no sense of voluntary control.\n>\n> System 2 allocates attention to the effortful mental activities that demand it, including complex computations. The operations of System 2 are often associated with the subjective experience of agency, choice, and concentration.\n\nNote: System 1 is considered automatic thinking, and System 2 is considered reasoning.\n"
+        "body_md": "> System 1 operates automatically and quickly, with little or no effort and no sense of voluntary control.\n>\n> System 2 allocates attention to the effortful mental activities that demand it, including complex computations. The operations of System 2 are often associated with the subjective experience of agency, choice, and concentration.\n\n<!-- prettier-ignore-start -->\n> System 1 is considered automatic thinking, and System 2 is considered reasoning.\n{: .block-tip }\n<!-- prettier-ignore-end -->\n"
       },
       {
         "order": 2,

@@ -48,25 +48,7 @@ The folder `database` contains the source data and scripts for generating the wi
 
 Python dependencies are described in `database/requirements.txt`
 
-Common commands for using the scripts are as follows:
-
-Convert all JSON files to Markdown files in the `_wiki` folder:
-
-```bash
-python database/pyscripts/json2md_all.py --in-dir database/json --out-dir _wiki --pattern "*.json"
-```
-
-Convert a single JSON file to a Markdown file:
-
-```bash
-python database/pyscripts/json2md.py --input database/json/stability.json --output _wiki/stability.md
-```
-
-Format a single MD file:
-
-```bash
-python database/pyscripts/md_format.py -i _wiki/automatic-generation-control.md
-```
+Check page [add-new](./_pages/add-new.md) for instructions on how to edit or add new terms.
 
 ## License
 

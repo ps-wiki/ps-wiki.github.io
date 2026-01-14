@@ -22,6 +22,6 @@ Source: <d-cite key="powerworld2025manual"></d-cite> Sensitivities > Line Outage
 Calculations can be found in the source reference.
 
 <!-- prettier-ignore-start -->
->  LODF is a.k.a. <u>Branch Outage Distribution Factor</u> (BODF) in some references.
+>  LODF, a.k.a. <u>Branch Outage Distribution Factor</u> (BODF) in some references.
 {: .block-tip }
 <!-- prettier-ignore-end -->
