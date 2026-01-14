@@ -48,7 +48,7 @@ The folder `database` contains the source data and scripts for generating the wi
 
 Python dependencies are described in `database/requirements.txt`
 
-Check page [_pages/add-new.md](./_pages/add-new.md) for instructions on how to edit or add new terms.
+Check page [add-new](./_pages/add-new.md) for instructions on how to edit or add new terms.
 
 ## License
 
