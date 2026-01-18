@@ -29,7 +29,7 @@ Source: <d-cite key="kundur2004stability"></d-cite>
 
 ### Definition in China grid operation code
 
-Source: <d-cite key="gbt2022"></d-cite>
+Source: <d-cite key="gbt2022"></d-cite> p8
 
 > 电力系统安全性：电力系统在运行中承受扰动（例如突然失去电力系统的元件，较大功率波动或短路故障等）的能力。 通过两个特性表征：
 >
