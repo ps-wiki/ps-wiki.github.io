@@ -22,10 +22,8 @@ Source: <d-cite key="nerc2024glossary"></d-cite>
 > The ability of the electric system to supply the aggregate electrical demand and energy requirements of the end-use customers at all times, taking into account scheduled and reasonably expected unscheduled outages of system elements.
 
 <!-- prettier-ignore-start -->
-
 > The previous reference <d-cite key="nerc2013terminology"></d-cite> is no longer available.
 {: .block-danger }
-
 <!-- prettier-ignore-end -->
 
 ### Definition in a European Union Regulation
