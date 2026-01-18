@@ -4,14 +4,16 @@ description: The ability to maintain synchronism when subjected to small disturb
 tags:
   - stability
   - book
-related: []
+related:
+  - dynamic-stability
+  - participation-factor
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.0
+version: 1.0.1
 date: 2025-03-15
-lastmod: 2025-06-19
-generated: 2025-12-02
+lastmod: 2026-01-18
+generated: 2026-01-18
 ---
 
 ### Definition in a Textbook

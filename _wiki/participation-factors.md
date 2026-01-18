@@ -4,14 +4,15 @@ description: One definition is about dispath and another is about small-signal s
 tags:
   - sensitivity
   - book
-related: []
+related:
+  - small-signal-stability
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.0
+version: 1.0.1
 date: 2025-03-15
-lastmod: 2025-06-18
-generated: 2025-12-02
+lastmod: 2026-01-18
+generated: 2026-01-18
 ---
 
 ### Definition by NERC
@@ -26,7 +27,9 @@ Source: <d-cite key="kundur1994Power"></d-cite> p716-717, first edition
 
 > One problem in using right and left eigenvectors individually for identifying the relationship between the states and the modes is that the elements of the eigenvectors are dependent on units and scaling associated with the state variables. As a solution to this problem, a matrix called the **participation matrix** ($P$), which combines the right and left eigenvectors as follows is proposed in reference 2 as a measure of the association between the state variables and the modes.
 
-More details from the book are excerpted below for reference:
+More elaboration can be found in <d-cite key="sun2021smallsignal"></d-cite>.
+
+More details from the book are also excerpted below for reference:
 
 $$ P = [ P_1 \quad P_2 \quad \dots \quad P_n ] $$ (12.49A)
 

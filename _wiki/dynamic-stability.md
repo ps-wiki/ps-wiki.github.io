@@ -14,13 +14,15 @@ related:
   - frequency-stability
   - voltage-stability
   - rotor-angle-stability
+  - small-signal-stability
+  - participation-factor
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.1
+version: 1.0.2
 date: 2025-12-02
-lastmod: 2025-12-03
-generated: 2025-12-03
+lastmod: 2026-01-18
+generated: 2026-01-18
 ---
 
 ### Definition by PJM
