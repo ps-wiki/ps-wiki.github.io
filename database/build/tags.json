@@ -121,6 +121,10 @@
       "count": 4
     },
     {
+      "tag": "China",
+      "count": 3
+    },
+    {
       "tag": "artificial-intelligence",
       "count": 3
     },
@@ -155,10 +159,6 @@
     {
       "tag": "regulation",
       "count": 3
-    },
-    {
-      "tag": "China",
-      "count": 2
     },
     {
       "tag": "entsoe",
