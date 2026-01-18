@@ -1686,6 +1686,15 @@
       "updated_at": "2025-06-20"
     },
     {
+      "id": "subsynchronous-oscillation",
+      "title": "Subsynchronous Oscillation",
+      "summary": "SSO.",
+      "tags": [
+        "stability"
+      ],
+      "updated_at": "2026-01-18"
+    },
+    {
       "id": "subsynchronous-resonance",
       "title": "Subsynchronous Resonance",
       "summary": "SSR. A condition involving energy exchange at natural frequencies below the synchronous frequency.",
