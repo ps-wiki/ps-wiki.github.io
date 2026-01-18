@@ -23,11 +23,11 @@
     "automatic-generation-control",
     "n-situation"
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-11-28"
+    "last_modified": "2026-01-18"
   },
   "authors": [
     {
