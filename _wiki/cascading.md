@@ -12,7 +12,7 @@ authors:
 version: 1.0.0
 date: 2025-03-15
 lastmod: 2025-06-20
-generated: 2025-12-02
+generated: 2026-01-18
 ---
 
 ### Definition by NERC
@@ -24,6 +24,6 @@ Source: <d-cite key="nerc2024glossary"></d-cite>
 <!-- prettier-ignore-start -->
 
 > This version is approved by FERC on 1/21/2016. Another version of the term "Cascading" was approved by FERC on 3/16/2007 and became inactive on 6/30/2016. The term "Cascading Outages" was remanded by FERC on 12/27/2007.
-> {: .block-tip }
+{: .block-tip }
 
 <!-- prettier-ignore-end -->
