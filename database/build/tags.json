@@ -157,6 +157,10 @@
       "count": 3
     },
     {
+      "tag": "China",
+      "count": 2
+    },
+    {
       "tag": "entsoe",
       "count": 2
     },
@@ -199,10 +203,6 @@
     {
       "tag": "synchronization",
       "count": 2
-    },
-    {
-      "tag": "China",
-      "count": 1
     },
     {
       "tag": "data-center",
