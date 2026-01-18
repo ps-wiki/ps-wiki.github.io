@@ -4,13 +4,16 @@ description: A repetitive motion that can be either undamped, positively damped,
 tags:
   - event
   - oscillation
-related: []
+related:
+  - resonance-stability
+  - subsynchronous-resonance
+  - subsynchronous-oscillation
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.0
+version: 1.0.1
 date: 2025-03-15
-lastmod: 2025-06-18
+lastmod: 2026-01-18
 generated: 2025-12-02
 ---
 
@@ -27,3 +30,8 @@ Source: <d-cite key="powerworld2020oscillations"></d-cite>
 > - Inter-area oscillations: From 0.15 to 1 Hz
 > - Slower dynamics: Such as AGC, less than 0.15 Hz
 > - Subsynchronous resonance: 10 to 50 Hz (less than synchronous)
+
+<!-- prettier-ignore-start -->
+In the context of power systems, Oscillation is an umbrella term that includes resonance.
+{: .block-tip }
+<!-- prettier-ignore-end -->

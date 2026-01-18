@@ -13,11 +13,11 @@
       "count": 29
     },
     {
-      "tag": "ieee",
-      "count": 25
+      "tag": "stability",
+      "count": 26
     },
     {
-      "tag": "stability",
+      "tag": "ieee",
       "count": 25
     },
     {
@@ -119,6 +119,10 @@
     {
       "tag": "standard",
       "count": 4
+    },
+    {
+      "tag": "China",
+      "count": 3
     },
     {
       "tag": "artificial-intelligence",

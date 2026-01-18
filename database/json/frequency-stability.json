@@ -10,7 +10,8 @@
     "ieee-task-force",
     "article",
     "european-union",
-    "europe"
+    "europe",
+    "China"
   ],
   "related": [
     "stability",
@@ -22,11 +23,11 @@
     "automatic-generation-control",
     "n-situation"
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-11-28"
+    "last_modified": "2026-01-18"
   },
   "authors": [
     {
@@ -57,6 +58,17 @@
         ],
         "page": "p6",
         "body_md": "> 'frequency stability' means the ability of the transmission system to maintain frequency stable in the N-situation and after being subjected to a disturbance;\n"
+      },
+      {
+        "order": 3,
+        "id": "definition-in-china-grid-operation-code",
+        "title": "Definition in China grid operation code",
+        "type": "definition",
+        "source_keys": [
+          "gbt2022"
+        ],
+        "page": "p8",
+        "body_md": "> 频率稳定：电力系统受到扰动后，系统频率能够保持或恢复到允许的范围内，不发生频率振荡或崩溃的能力。\n\nTranslation:\n\nFrequency Stability: The ability of a power system to maintain or restore system frequency within an allowable range after being subjected to a disturbance, without the occurrence of frequency oscillation or collapse.\n"
       }
     ]
   }

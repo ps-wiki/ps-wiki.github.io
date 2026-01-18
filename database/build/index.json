@@ -19,7 +19,7 @@
         "reliability",
         "nerc"
       ],
-      "updated_at": "2025-11-29"
+      "updated_at": "2026-01-18"
     },
     {
       "id": "ambient-adjusted-ratings",
@@ -511,7 +511,7 @@
         "european-union",
         "europe"
       ],
-      "updated_at": "2025-12-03"
+      "updated_at": "2026-01-18"
     },
     {
       "id": "dynamic-study-model",
@@ -805,9 +805,10 @@
         "ieee-task-force",
         "article",
         "european-union",
-        "europe"
+        "europe",
+        "China"
       ],
-      "updated_at": "2025-11-28"
+      "updated_at": "2026-01-18"
     },
     {
       "id": "futures-market",
@@ -1204,7 +1205,7 @@
         "sensitivity",
         "book"
       ],
-      "updated_at": "2025-06-18"
+      "updated_at": "2026-01-18"
     },
     {
       "id": "performance-based-metrics",
@@ -1353,7 +1354,7 @@
         "operation",
         "article"
       ],
-      "updated_at": "2025-06-22"
+      "updated_at": "2026-01-18"
     },
     {
       "id": "remedial-action-scheme",
@@ -1538,7 +1539,8 @@
         "ieee",
         "ieee-task-force",
         "cigre",
-        "article"
+        "article",
+        "China"
       ],
       "updated_at": "2025-06-22"
     },
@@ -1580,7 +1582,7 @@
         "stability",
         "book"
       ],
-      "updated_at": "2025-06-19"
+      "updated_at": "2026-01-18"
     },
     {
       "id": "smart-grid",
@@ -1682,6 +1684,15 @@
         "epa"
       ],
       "updated_at": "2025-06-20"
+    },
+    {
+      "id": "subsynchronous-oscillation",
+      "title": "Subsynchronous Oscillation",
+      "summary": "SSO.",
+      "tags": [
+        "stability"
+      ],
+      "updated_at": "2026-01-18"
     },
     {
       "id": "subsynchronous-resonance",
@@ -1925,9 +1936,10 @@
         "ieee-task-force",
         "article",
         "european-union",
-        "europe"
+        "europe",
+        "China"
       ],
-      "updated_at": "2025-06-20"
+      "updated_at": "2026-01-18"
     },
     {
       "id": "waveform-measurement-unit",
@@ -1981,5 +1993,5 @@
       "updated_at": "2025-11-02"
     }
   ],
-  "generated_at": "2025-12-04"
+  "generated_at": "2026-01-18"
 }

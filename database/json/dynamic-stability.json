@@ -17,13 +17,15 @@
     "transient-stability",
     "frequency-stability",
     "voltage-stability",
-    "rotor-angle-stability"
+    "rotor-angle-stability",
+    "small-signal-stability",
+    "participation-factor"
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "breaking": false,
   "dates": {
     "created": "2025-12-02",
-    "last_modified": "2025-12-03"
+    "last_modified": "2026-01-18"
   },
   "authors": [
     {
