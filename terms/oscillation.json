@@ -8,12 +8,16 @@
     "event",
     "oscillation"
   ],
-  "related": [],
-  "version": "1.0.0",
+  "related": [
+    "resonance-stability",
+    "subsynchronous-resonance",
+    "subsynchronous-oscillation"
+  ],
+  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-06-18"
+    "last_modified": "2026-01-18"
   },
   "authors": [
     {
@@ -32,7 +36,7 @@
           "powerworld2020oscillations"
         ],
         "page": null,
-        "body_md": "> An oscillation is just a repetitive motion that can be either undamped, positively damped (decaying with time), or negatively damped (growing with time).\n>\n> Types of oscillations include:\n>\n> - Transients: Usually high frequency and highly damped\n> - Local plant: Usually from 1 to 5 Hz\n> - Inter-area oscillations: From 0.15 to 1 Hz\n> - Slower dynamics: Such as AGC, less than 0.15 Hz\n> - Subsynchronous resonance: 10 to 50 Hz (less than synchronous)\n"
+        "body_md": "> An oscillation is just a repetitive motion that can be either undamped, positively damped (decaying with time), or negatively damped (growing with time).\n>\n> Types of oscillations include:\n>\n> - Transients: Usually high frequency and highly damped\n> - Local plant: Usually from 1 to 5 Hz\n> - Inter-area oscillations: From 0.15 to 1 Hz\n> - Slower dynamics: Such as AGC, less than 0.15 Hz\n> - Subsynchronous resonance: 10 to 50 Hz (less than synchronous)\n\n<!-- prettier-ignore-start -->\nIn the context of power systems, Oscillation is an umbrella term that includes resonance.\n{: .block-tip }\n<!-- prettier-ignore-end -->\n"
       }
     ]
   }

@@ -13,11 +13,11 @@
     "stability",
     "security"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-06-22"
+    "last_modified": "2026-01-18"
   },
   "authors": [
     {
@@ -48,6 +48,28 @@
         ],
         "page": null,
         "body_md": "> NERC defines the reliability of the interconnected Bulk-Power System in terms of two basic and functional aspects, [adequacy](/wiki/adequacy), and [operating reliability](/wiki/operating-reliability).\n"
+      },
+      {
+        "order": 3,
+        "id": "definition-by-nrel",
+        "title": "Definition by NREL",
+        "type": "definition",
+        "source_keys": [
+          "geocaris2022assessing"
+        ],
+        "page": null,
+        "body_md": "> To frame the issue of reliability, researchers at the National Renewable Energy Laboratory (NREL) use the \"three Rs of power system reliability\": resource adequacy, operational reliability, and resilience.\n"
+      },
+      {
+        "order": 4,
+        "id": "definition-by-ferc",
+        "title": "Definition by FERC",
+        "type": "definition",
+        "source_keys": [
+          "ferc2023reliability"
+        ],
+        "page": null,
+        "body_md": "> The grid remains functional even during unanticipated but common system disturbances, such as loss of a source of energy generation from an energy provider or failure of some other system element. When something fails, the grid has to be able to isolate the problem and keep functioning.\n>\n> Grid reliability is based on two key elements:\n>\n> 1. Reliable operation – A reliable power grid has the ability to withstand sudden electric system disturbances that can lead to blackouts.\n> 2. Resource adequacy - Generally speaking, resource adequacy is the ability of the electric system to meet the energy needs of electricity consumers. This means having sufficient generation to meet projected electric demand.\n"
       }
     ]
   }

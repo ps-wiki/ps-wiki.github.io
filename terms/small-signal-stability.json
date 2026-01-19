@@ -8,12 +8,15 @@
     "stability",
     "book"
   ],
-  "related": [],
-  "version": "1.0.0",
+  "related": [
+    "dynamic-stability",
+    "participation-factors"
+  ],
+  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-06-19"
+    "last_modified": "2026-01-18"
   },
   "authors": [
     {

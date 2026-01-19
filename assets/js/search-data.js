@@ -956,6 +956,11 @@ ninja.data = [{
           description: "The ability to maintain synchronism.",
           section: "Wiki",handler: () => {
               window.location.href = "/wiki/transient-stability/";
+            },},{id: "wiki-subsynchronous-oscillation",
+          title: 'Subsynchronous Oscillation',
+          description: "SSO.",
+          section: "Wiki",handler: () => {
+              window.location.href = "/wiki/subsynchronous-oscillation/";
             },},{
         id: 'social-email',
         title: 'email',

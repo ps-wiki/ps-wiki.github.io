@@ -8,12 +8,14 @@
     "reliability",
     "nerc"
   ],
-  "related": [],
-  "version": "1.0.0",
+  "related": [
+    "reliability"
+  ],
+  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-11-29"
+    "last_modified": "2026-01-18"
   },
   "authors": [
     {
@@ -29,10 +31,10 @@
         "title": "Definition by NERC",
         "type": "definition",
         "source_keys": [
-          "nerc2013terminology"
+          "nerc2024glossary"
         ],
         "page": null,
-        "body_md": "> The ability of the electricity system to supply the aggregate electrical demand and energy requirements of the end-use customers at all times, taking into account scheduled and reasonably expected unscheduled outages of system elements.\n"
+        "body_md": "> The ability of the electric system to supply the aggregate electrical demand and energy requirements of the end-use customers at all times, taking into account scheduled and reasonably expected unscheduled outages of system elements.\n\n<!-- prettier-ignore-start -->\n> The previous reference <d-cite key=\"nerc2013terminology\"></d-cite> is no longer available.\n{: .block-danger }\n<!-- prettier-ignore-end -->\n"
       },
       {
         "order": 2,
