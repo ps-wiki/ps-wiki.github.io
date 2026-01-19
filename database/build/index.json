@@ -1186,7 +1186,7 @@
         "event",
         "oscillation"
       ],
-      "updated_at": "2025-06-18"
+      "updated_at": "2026-01-18"
     },
     {
       "id": "outage-transfer-distribution-factor",
@@ -1701,7 +1701,7 @@
       "tags": [
         "stability"
       ],
-      "updated_at": "2025-06-20"
+      "updated_at": "2026-01-18"
     },
     {
       "id": "synchronization-process",
@@ -1993,5 +1993,5 @@
       "updated_at": "2025-11-02"
     }
   ],
-  "generated_at": "2026-01-18"
+  "generated_at": "2026-01-19"
 }

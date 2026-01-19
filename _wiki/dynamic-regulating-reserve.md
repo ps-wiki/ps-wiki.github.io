@@ -14,7 +14,7 @@ authors:
 version: 1.0.0
 date: 2025-11-28
 lastmod: 2025-11-28
-generated: 2025-12-02
+generated: 2026-01-18
 ---
 
 ### Definition by NERC

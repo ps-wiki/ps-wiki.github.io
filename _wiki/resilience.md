@@ -16,7 +16,7 @@ authors:
 version: 1.0.1
 date: 2025-03-15
 lastmod: 2025-11-03
-generated: 2025-12-02
+generated: 2026-01-18
 ---
 
 ### Definition by FERC in an NERC Report
