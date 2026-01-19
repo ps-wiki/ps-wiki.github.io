@@ -6,7 +6,7 @@ tags:
   - book
 related:
   - dynamic-stability
-  - participation-factor
+  - participation-factors
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

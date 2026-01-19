@@ -15,7 +15,7 @@ related:
   - voltage-stability
   - rotor-angle-stability
   - small-signal-stability
-  - participation-factor
+  - participation-factors
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io

@@ -19,7 +19,7 @@
     "voltage-stability",
     "rotor-angle-stability",
     "small-signal-stability",
-    "participation-factor"
+    "participation-factors"
   ],
   "version": "1.0.2",
   "breaking": false,
