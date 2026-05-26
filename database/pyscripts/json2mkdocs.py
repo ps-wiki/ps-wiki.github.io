@@ -86,7 +86,7 @@ def _load_index() -> list[dict]:
 # Per-term page generation
 # ---------------------------------------------------------------------------
 
-def _generate_term_page(term: dict, bib_entries: dict) -> str:
+def _generate_term_page(term: dict, bib_entries: dict, prev_item: dict | None, next_item: dict | None) -> str:
     """Return the full Markdown text for a single term page."""
     tid = term["id"]
     title = term["title"]
@@ -222,6 +222,15 @@ def _generate_term_page(term: dict, bib_entries: dict) -> str:
         lines.append(f"**Related:** {related_links}")
         lines.append("")
 
+    nav_parts = []
+    if prev_item:
+        nav_parts.append(f"[← {prev_item['title']}]({prev_item['id']}.md)")
+    if next_item:
+        nav_parts.append(f"[{next_item['title']} →]({next_item['id']}.md)")
+    if nav_parts:
+        lines.append(" · ".join(nav_parts))
+        lines.append("")
+
     return "\n".join(lines)
 
 
@@ -243,24 +252,6 @@ def _generate_index_page(index_items: list[dict]) -> str:
         tags = ", ".join(item.get("tags", []))
         updated = item.get("updated_at", "")
         lines.append(f"| [{title}]({tid}.md) | {tags} | {updated} |")
-    lines.append("")
-    return "\n".join(lines)
-
-
-# ---------------------------------------------------------------------------
-# SUMMARY.md generation (literate-nav)
-# ---------------------------------------------------------------------------
-
-def _generate_summary(index_items: list[dict]) -> str:
-    """Return a SUMMARY.md consumed by mkdocs-literate-nav.
-
-    index.md is listed first so it acts as the section index page
-    (shown when clicking 'Wiki' in the nav). All terms follow alphabetically.
-    """
-    lines: list[str] = []
-    lines.append("* [All Terms](index.md)")
-    for item in index_items:
-        lines.append(f"* [{item['title']}]({item['id']}.md)")
     lines.append("")
     return "\n".join(lines)
 
@@ -297,25 +288,26 @@ def main() -> None:
     bib_entries = _load_bib()
     terms = _load_terms(args.terms)
 
+    # Build prev/next lookup from the full alphabetical index.
+    index_items = _load_index()
+    id_to_index_pos = {item["id"]: i for i, item in enumerate(index_items)}
+
     for term in terms:
         tid = term["id"]
-        page_content = _generate_term_page(term, bib_entries)
+        pos = id_to_index_pos.get(tid)
+        prev_item = index_items[pos - 1] if pos is not None and pos > 0 else None
+        next_item = index_items[pos + 1] if pos is not None and pos < len(index_items) - 1 else None
+        page_content = _generate_term_page(term, bib_entries, prev_item, next_item)
         out_path = os.path.join(out_dir, f"{tid}.md")
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(page_content)
         print(f"  wrote {out_path}")
 
-    # Always regenerate the index and SUMMARY from the full index.json
-    index_items = _load_index()
+    # Always regenerate the index from the full index.json
     index_path = os.path.join(out_dir, "index.md")
     with open(index_path, "w", encoding="utf-8") as f:
         f.write(_generate_index_page(index_items))
     print(f"  wrote {index_path}")
-
-    summary_path = os.path.join(out_dir, "SUMMARY.md")
-    with open(summary_path, "w", encoding="utf-8") as f:
-        f.write(_generate_summary(index_items))
-    print(f"  wrote {summary_path}")
 
 
 if __name__ == "__main__":
