@@ -7,15 +7,15 @@ on:
       - main
     paths:
       - "assets/**"
-      - "_sass/**"
+      - "database/json/**"
+      - "database/build/**"
+      - "database/pyscripts/**"
+      - "database/schema/**"
+      - "docs/**"
       - "**.bib"
-      - "**.html"
-      - "**.js"
-      - "**.liquid"
       - "**/*.md"
       - "**.yml"
-      - "Gemfile"
-      - "Gemfile.lock"
+      - "requirements-docs.txt"
       - "!.github/workflows/axe.yml"
       - "!.github/workflows/broken-links.yml"
       - "!.github/workflows/deploy-docker-tag.yml"
@@ -36,15 +36,15 @@ on:
       - main
     paths:
       - "assets/**"
-      - "_sass/**"
+      - "database/json/**"
+      - "database/build/**"
+      - "database/pyscripts/**"
+      - "database/schema/**"
+      - "docs/**"
       - "**.bib"
-      - "**.html"
-      - "**.js"
-      - "**.liquid"
       - "**/*.md"
       - "**.yml"
-      - "Gemfile"
-      - "Gemfile.lock"
+      - "requirements-docs.txt"
       - "!.github/workflows/axe.yml"
       - "!.github/workflows/broken-links.yml"
       - "!.github/workflows/deploy-docker-tag.yml"
@@ -66,75 +66,53 @@ permissions:
 
 jobs:
   deploy:
-    # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
-      - name: Setup Ruby 💎
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: "3.3.5"
-          bundler-cache: true
+
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
         with:
           python-version: "3.13"
-          cache: "pip" # caching pip dependencies
-      - name: Update _config.yml ⚙️
-        uses: fjogeleit/yaml-update-action@main
-        with:
-          commitChange: false
-          valueFile: "_config.yml"
-          propertyPath: "giscus.repo"
-          value: ${{ github.repository }}
-      - name: Install OS packages (ImageMagick)
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y imagemagick
+          cache: "pip"
+
       - name: Install Python deps
         run: |
-          pip3 install --upgrade nbconvert
-          pip3 install -r database/requirements.txt
+          pip install -r database/requirements.txt
+          pip install -r requirements-docs.txt
+
       - name: Validate JSON terms ✅
         run: |
           python database/pyscripts/validate.py \
             --dir database/json \
             --schema database/schema/v1/term.schema.json \
             --filename-match
-      - name: Convert JSON → Markdown 📝
-        run: |
-          python database/pyscripts/json2md.py --all \
-            --json-dir database/json \
-            --wiki-dir _wiki \
-            --force
+
       - name: Build search index 🔍
         run: |
           python database/pyscripts/process.py --index-only \
             --json-dir database/json \
             --build-dir database/build
-      - name: Build Jekyll site 🏗️
-        run: |
-          export JEKYLL_ENV=production
-          bundle exec jekyll build
-      - name: Purge unused CSS 🧹
-        run: |
-          npm install -g purgecss
-          purgecss -c purgecss.config.js
+
+      - name: Generate MkDocs pages 📝
+        run: python database/pyscripts/json2mkdocs.py
+
+      - name: Build MkDocs site 🏗️
+        run: mkdocs build --strict
 
       - name: Publish API & schema artifacts 📦
         run: |
-          mkdir -p _site/api _site/schema/v1 _site/terms
-          cp database/openapi/pswiki.v1.yaml _site/api/openapi.yaml
-          if [ -f database/build/index.json ]; then cp database/build/index.json _site/api/; fi
-          if [ -f database/build/tags.json  ]; then cp database/build/tags.json  _site/api/; fi
-          cp database/schema/v1/term.schema.json _site/schema/v1/
-          if [ -f database/schema/CHANGELOG.md ]; then cp database/schema/CHANGELOG.md _site/schema/; fi
-          # Optional: publish raw term JSONs
-          cp database/json/*.json _site/terms/
+          mkdir -p site/api site/schema/v1 site/terms
+          cp database/openapi/pswiki.v1.yaml site/api/openapi.yaml
+          if [ -f database/build/index.json ]; then cp database/build/index.json site/api/; fi
+          if [ -f database/build/tags.json ]; then cp database/build/tags.json site/api/; fi
+          cp database/schema/v1/term.schema.json site/schema/v1/
+          if [ -f database/schema/CHANGELOG.md ]; then cp database/schema/CHANGELOG.md site/schema/; fi
+          cp database/json/*.json site/terms/
 
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: _site
+          folder: site

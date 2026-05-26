@@ -24,7 +24,7 @@ theme:
     - content.action.edit
 repo_url: https://github.com/ps-wiki/pswiki
 repo_name: ps-wiki/pswiki
-edit_uri: edit/main/_wiki/  # "Edit this page" links to _wiki/<id>.md on GitHub
+edit_uri: edit/main/_wiki/ # "Edit this page" links to _wiki/<id>.md on GitHub
 
 plugins:
   - search
