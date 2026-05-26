@@ -248,6 +248,24 @@ def _generate_index_page(index_items: list[dict]) -> str:
 
 
 # ---------------------------------------------------------------------------
+# SUMMARY.md generation (literate-nav)
+# ---------------------------------------------------------------------------
+
+def _generate_summary(index_items: list[dict]) -> str:
+    """Return a SUMMARY.md consumed by mkdocs-literate-nav.
+
+    index.md is listed first so it acts as the section index page
+    (shown when clicking 'Wiki' in the nav). All terms follow alphabetically.
+    """
+    lines: list[str] = []
+    lines.append("* [All Terms](index.md)")
+    for item in index_items:
+        lines.append(f"* [{item['title']}]({item['id']}.md)")
+    lines.append("")
+    return "\n".join(lines)
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -287,12 +305,17 @@ def main() -> None:
             f.write(page_content)
         print(f"  wrote {out_path}")
 
-    # Always regenerate the index from the full index.json
+    # Always regenerate the index and SUMMARY from the full index.json
     index_items = _load_index()
     index_path = os.path.join(out_dir, "index.md")
     with open(index_path, "w", encoding="utf-8") as f:
         f.write(_generate_index_page(index_items))
     print(f"  wrote {index_path}")
+
+    summary_path = os.path.join(out_dir, "SUMMARY.md")
+    with open(summary_path, "w", encoding="utf-8") as f:
+        f.write(_generate_summary(index_items))
+    print(f"  wrote {summary_path}")
 
 
 if __name__ == "__main__":

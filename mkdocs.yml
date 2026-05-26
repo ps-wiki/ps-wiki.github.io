@@ -20,6 +20,8 @@ theme:
   features:
     - navigation.instant
     - navigation.top
+    - navigation.indexes
+    - navigation.prune
     - search.highlight
     - content.action.edit
 repo_url: https://github.com/ps-wiki/pswiki
@@ -30,6 +32,8 @@ plugins:
   - search
   - tags
   - glightbox
+  - literate-nav:
+      nav_file: SUMMARY.md
 
 markdown_extensions:
   - admonition
@@ -48,9 +52,8 @@ markdown_extensions:
 
 nav:
   - About: index.md
-  - Wiki:
-      - All Terms: wiki/index.md
-      - By Tags: tags.md
+  - Wiki: wiki/
+  - By Tags: tags.md
   - REST API: rest-api.md
   - Development: development.md
 
