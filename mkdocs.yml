@@ -46,6 +46,14 @@ markdown_extensions:
   - toc:
       permalink: true
 
+nav:
+  - About: index.md
+  - Wiki:
+      - All Terms: wiki/index.md
+      - By Tags: tags.md
+  - REST API: rest-api.md
+  - Development: development.md
+
 extra_javascript:
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js

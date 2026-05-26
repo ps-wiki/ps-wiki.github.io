@@ -1,5 +1,5 @@
 ---
-title: Power Systems Wiki
+title: About
 ---
 
 # Power Systems Wiki
