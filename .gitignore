@@ -50,3 +50,7 @@ worker/.wrangler
 .claude/
 CLAUDE.md
 AGENTS.md
+docs/wiki/
+
+# MkDocs build output
+site/

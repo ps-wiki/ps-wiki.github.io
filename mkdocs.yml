@@ -1,0 +1,49 @@
+site_name: Power Systems Wiki
+site_url: https://ps-wiki.github.io/
+docs_dir: docs
+site_dir: site
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.top
+    - search.highlight
+    - content.action.edit
+repo_url: https://github.com/ps-wiki/pswiki
+repo_name: ps-wiki/pswiki
+edit_uri: edit/main/_wiki/  # "Edit this page" links to _wiki/<id>.md on GitHub
+
+plugins:
+  - search
+  - tags
+  - glightbox
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
