@@ -43,7 +43,7 @@ def test_cite_known_key_reference_inserted():
     assert "[^smith2020]" in out
     assert "<d-cite" not in out
     assert len(defs) == 1
-    assert defs[0] == "[^smith2020]: J. Smith (2020). *Power Systems*. https://example.com"
+    assert defs[0] == "[^smith2020]: J. Smith (2020). *Power Systems*. [https://example.com](https://example.com)"
 
 
 def test_cite_missing_key_fallback():

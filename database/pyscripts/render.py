@@ -52,7 +52,7 @@ def cite_to_footnotes(body_md: str, bib_entries: dict) -> tuple[str, list[str]]:
             parts.append(f"*{title}*.")
 
         if url:
-            parts.append(url)
+            parts.append(f"[{url}]({url})")
 
         body = " ".join(parts) if parts else f"[{key}]"
         footnote_defs.append(f"[^{key}]: {body}")
