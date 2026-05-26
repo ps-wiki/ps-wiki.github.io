@@ -21,7 +21,7 @@ Whenever a concept has multiple interpretations—whether in academic papers, te
 1. **Stay current**: Terminology evolves as the field advances. We update entries regularly; check back for the latest additions and revisions.
 1. **Contribute**: Spot an error, omission, or new term? Please open an issue or submit a pull request on our [GitHub repository](https://github.com/ps-wiki/pswiki).
 
-For programmatic access, see the REST API documentation (coming soon).
+For programmatic access, see the [REST API](rest-api.md).
 
 ## Why This Wiki Exists
 
