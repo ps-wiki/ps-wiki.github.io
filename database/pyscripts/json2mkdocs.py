@@ -156,11 +156,13 @@ def _generate_term_page(term: dict, bib_entries: dict) -> str:
             # Image alt text: strip d-cite and HTML tags
             alt_text = _strip_citations_and_html(caption_md)
 
-            # Relative path: strip leading '/' and prepend ../../
-            if fig_path.startswith("/"):
-                fig_path_rel = "../../" + fig_path[1:]
+            # External URLs used as-is; local paths kept as absolute site-root refs
+            if fig_path.startswith("http://") or fig_path.startswith("https://"):
+                fig_path_rel = fig_path
+            elif not fig_path.startswith("/"):
+                fig_path_rel = "/" + fig_path
             else:
-                fig_path_rel = "../../" + fig_path
+                fig_path_rel = fig_path
 
             lines.append(f"![{alt_text}]({fig_path_rel})")
             lines.append("")
@@ -216,7 +218,7 @@ def _generate_term_page(term: dict, bib_entries: dict) -> str:
     lines.append("")
 
     if related:
-        related_links = " · ".join(f"[{r}](../{r}.md)" for r in related)
+        related_links = " · ".join(f"[{r}]({r}.md)" for r in related)
         lines.append(f"**Related:** {related_links}")
         lines.append("")
 
