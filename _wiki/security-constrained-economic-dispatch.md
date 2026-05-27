@@ -1,5 +1,5 @@
 ---
-title: Security Constraiend Economic Dispatch
+title: Security Constrained Economic Dispatch
 description: The dispatch of all generators to minimize cost while meeting security constraints in real time.
 tags:
   - dispatch
