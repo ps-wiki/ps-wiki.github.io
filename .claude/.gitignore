@@ -1,0 +1,5 @@
+worktrees/
+settings.local.json
+__pycache__/
+projects/
+MAINTAINER.md

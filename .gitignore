@@ -46,10 +46,7 @@ _wikitest/
 # Cloudflare Worker build cache
 worker/.wrangler
 
-# Local AI assistant workspace (Claude Code / Codex) — personal, not for the public repo
-.claude/
-CLAUDE.md
-AGENTS.md
+# Generated MkDocs wiki pages — do not hand-edit
 docs/wiki/
 
 # MkDocs build output
