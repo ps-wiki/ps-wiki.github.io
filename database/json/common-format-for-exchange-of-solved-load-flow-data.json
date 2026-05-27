@@ -15,7 +15,6 @@
   "aliases": [
     "Common data format (CDF)"
   ],
-  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-06-17",

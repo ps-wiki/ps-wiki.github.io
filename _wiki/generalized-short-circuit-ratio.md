@@ -1,6 +1,6 @@
 ---
 title: Generalized Short-Circuit Ratio
-description: gSCR. Geeneralized representation of SCR for single-infeed power electronic systems (SIPESs) in multi-infeed power electronic systems (MIPESs).
+description: Generalized representation of SCR for single-infeed systems in multi-infeed power electronic configurations.
 tags:
   - stability
 related:
@@ -12,10 +12,9 @@ related:
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.0
 date: 2025-11-29
 lastmod: 2025-11-29
-generated: 2026-01-18
+generated: 2026-05-26
 ---
 
 ### Definition in an Article

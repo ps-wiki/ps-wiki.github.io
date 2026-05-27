@@ -26,55 +26,42 @@ import sys
 from pathlib import Path
 from typing import List
 
-# Import conversion functions and shared constants from utils module
 from md2json import build_json_from_md
 from json2md import convert_term_to_md
 from utils import DEFAULT_WIKI_DIR, DEFAULT_JSON_DIR
 
 
-def format_markdown_file(md_path: Path, json_dir: Path, dry_run: bool = False) -> bool:
+def format_markdown_file(
+    md_path: Path, json_dir: Path, dry_run: bool = False
+) -> tuple[bool, bool]:
     """
     Format a single Markdown file via MD → JSON → MD roundtrip.
 
-    Args:
-        md_path: Path to Markdown file
-        json_dir: Directory where corresponding JSON file exists (for field preservation)
-        dry_run: If True, don't actually write the file
-
     Returns:
-        True if successful, False otherwise
+        (success, changed) — changed is True when the file content was or would be updated.
     """
     try:
-        # Determine corresponding JSON path for field preservation
         term_id = md_path.stem
         json_path = json_dir / f"{term_id}.json"
 
-        # MD → JSON (with field preservation from existing JSON)
         term_json = build_json_from_md(md_path, override_id=None, json_path=json_path)
-
-        # Normalize optional fields
         term_json.setdefault("tags", [])
         term_json.setdefault("related", [])
         term_json.setdefault("authors", [])
         term_json.setdefault("dates", {})
 
-        # JSON → MD
         formatted_md = convert_term_to_md(term_json)
 
-        # Check if content changed
-        if md_path.exists():
-            existing_md = md_path.read_text(encoding="utf-8")
-            if existing_md == formatted_md:
-                return True  # No changes needed
+        existing_md = md_path.read_text(encoding="utf-8") if md_path.exists() else ""
+        changed = existing_md != formatted_md
 
-        # Write formatted content
-        if not dry_run:
+        if changed and not dry_run:
             md_path.write_text(formatted_md, encoding="utf-8")
 
-        return True
+        return True, changed
     except Exception as e:
         print(f"ERROR  {md_path.name}: {e}", file=sys.stderr)
-        return False
+        return False, False
 
 
 def main():
@@ -152,8 +139,11 @@ def main():
             print(f"ERROR: Markdown file not found: {md_path}", file=sys.stderr)
             sys.exit(1)
 
-        if format_markdown_file(md_path, args.json_dir, args.dry_run):
-            status = "DRY RUN" if args.dry_run else "FORMATTED"
+        success, changed = format_markdown_file(md_path, args.json_dir, args.dry_run)
+        if success:
+            status = "WOULD FORMAT" if args.dry_run and changed else (
+                "FORMATTED" if changed else "SKIP (already formatted)"
+            )
             print(f"{status}: {md_path}")
         else:
             sys.exit(1)
@@ -191,34 +181,15 @@ def main():
             errors += 1
             continue
 
-        # Check if content would change
-        try:
-            term_id_name = md_path.stem
-            json_path = args.json_dir / f"{term_id_name}.json"
-            term_json = build_json_from_md(
-                md_path, override_id=None, json_path=json_path
-            )
-            term_json.setdefault("tags", [])
-            term_json.setdefault("related", [])
-            term_json.setdefault("authors", [])
-            term_json.setdefault("dates", {})
-            formatted_md = convert_term_to_md(term_json)
-
-            existing_md = md_path.read_text(encoding="utf-8")
-            if existing_md == formatted_md:
-                print(f"SKIP   {term_id}.md (already formatted)")
-                unchanged += 1
-                continue
-
-            if not args.dry_run:
-                md_path.write_text(formatted_md, encoding="utf-8")
-                print(f"FORMAT {term_id}.md")
-            else:
-                print(f"WOULD FORMAT {term_id}.md")
-            formatted += 1
-        except Exception as e:
-            print(f"ERROR  {term_id}: {e}", file=sys.stderr)
+        success, changed = format_markdown_file(md_path, args.json_dir, args.dry_run)
+        if not success:
             errors += 1
+        elif changed:
+            print(f"{'WOULD FORMAT' if args.dry_run else 'FORMAT'} {term_id}.md")
+            formatted += 1
+        else:
+            print(f"SKIP   {term_id}.md (already formatted)")
+            unchanged += 1
 
     # Print summary
     print(f"\nSummary:")

@@ -12,26 +12,20 @@ related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.0
 date: 2025-03-15
 lastmod: 2025-06-22
-generated: 2026-01-18
+generated: 2026-05-26
 ---
 
 ### Definition by NERC
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid
-        path="/assets/img/pswiki/operating_reserve.png"
-        zoomable=true %}
-        Operating Reserves (from <d-cite key="nerc2021reserve"></d-cite>)
-    </div>
-</div>
-
-<br>
-
 Source: <d-cite key="nerc2024glossary"></d-cite>
+
+![Operating Reserves (from <d-cite key="nerc2021reserve"></d-cite>)](/assets/img/pswiki/operating_reserve.png)
+
+*Operating Reserves (from <d-cite key="nerc2021reserve"></d-cite>)*
+
+
 
 > That capability above firm system demand required to provide for regulation, load forecasting error, equipment forced and scheduled outages and local area protection.
 > It consists of spinning and non-spinning reserve.

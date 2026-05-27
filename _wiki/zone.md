@@ -14,26 +14,18 @@ related:
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.1
 date: 2025-03-15
 lastmod: 2025-11-02
-generated: 2026-01-18
+generated: 2026-05-26
 ---
 
 ### Definition by PJM
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid
-        path="/assets/img/pswiki/PJM_zone_map.png"
-        zoomable=true %}
-        PJM Transmission Zones Map (from <d-cite key="pjm2023transmission"></d-cite>)
-    </div>
-</div>
-
-<br>
-
 Source: <d-cite key="pjm2023transmission"></d-cite>
+
+![PJM Transmission Zones Map (from <d-cite key="pjm2023transmission"></d-cite>)](/assets/img/pswiki/PJM_zone_map.png)
+
+*PJM Transmission Zones Map (from <d-cite key="pjm2023transmission"></d-cite>)*
 
 ### Definition by MATPOWER
 

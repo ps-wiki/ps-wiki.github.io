@@ -16,7 +16,6 @@
     "short-circuit-ratio-with-interaction-factors",
     "generalized-short-circuit-ratio"
   ],
-  "version": "1.0.0",
   "breaking": false,
   "dates": {
     "created": "2025-11-29",
@@ -39,7 +38,7 @@
           "nerc2017integrating"
         ],
         "page": "p1",
-        "body_md": "> SCR is defined as the ratio between short circuit apparent power (SCMVA) from a 3LG fault at a given location in the power system to the rating of the inverter-based resource connected to that location. Since the numerator of the SCR metric is dependent on the specific measurement location, this location is usually stated along with the SCR number.\n>\n> $ SCR_{POI} = \\frac{SCMVA_{POI}}{MW_{VER}} $\n>\n> Where $SCMVA_{POI}$ is the short circuit MVA level at the POI without the current contribution of the inverter-based resource, and $MW_{VER}$ is the nominal power rating of the inverter-based resource being connected at the POI.\n"
+        "body_md": "> SCR is defined as the ratio between short circuit apparent power (SCMVA) from a 3LG fault at a given location in the power system to the rating of the inverter-based resource connected to that location. Since the numerator of the SCR metric is dependent on the specific measurement location, this location is usually stated along with the SCR number.\n>\n> $SCR_{POI} = \\frac{SCMVA_{POI}}{MW_{VER}}$\n>\n> Where $SCMVA_{POI}$ is the short circuit MVA level at the POI without the current contribution of the inverter-based resource, and $MW_{VER}$ is the nominal power rating of the inverter-based resource being connected at the POI.\n"
       }
     ]
   }

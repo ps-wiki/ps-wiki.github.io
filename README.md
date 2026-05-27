@@ -17,12 +17,10 @@ We welcome contributions from the community! If you have suggestions, correction
 
 ## Website Overview
 
-Built upon the [al-folio](https://github.com/alshedivat/al-folio) Jekyll theme, this website introduces significant enhancements, particularly in its new wiki section.
-
-A custom [wiki layout](./_layouts/wiki.liquid) adapted from the `distill` layout, has been developed to effectively host item-based terminologies. Key features include:
+Built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/), the site is driven by a JSON term database and generated at deploy time. Key features include:
 
 - **Metadata Display**: Last update date, tags, and related term links
-- **Navigation**: Previous/Next term links for easy Browse
+- **Navigation**: Previous/Next term links for easy browsing
 - **Direct Editing**: A link to edit the term directly on GitHub
 - **Community Engagement**: Integrated Giscus comments
 
@@ -37,18 +35,26 @@ It is deployed via [Cloudflare Workers](./worker) and documented using the OpenA
 - Pagination uses opaque cursors; pass `next_cursor` to retrieve the next page.
 - The `/v1/terms` and `/v1/terms/{id}` endpoints are suitable for integration with external AI clients.
 
-## Database
+## Development
 
-The folder `database` contains the source data and scripts for generating the wiki:
+All developer workflows go through the `pswiki.py` CLI at the repo root:
 
-- Folder `database/json` contains the source JSON files for the wiki.
-- Folder `database/pyscripts` contains Python scripts for processing the data.
+```bash
+python pswiki.py new <term-id>        # scaffold a new term
+python pswiki.py process <term-id>    # run the full pipeline for one term
+python pswiki.py process              # process all terms
+python pswiki.py validate             # validate all term JSON files
+python pswiki.py serve                # local preview at http://localhost:8000
+python pswiki.py build                # production build
+```
 
-### Python scripts
+Install Python dependencies before first use:
 
-Python dependencies are described in `database/requirements.txt`
+```bash
+pip install -r requirements-dev.txt -r requirements-docs.txt
+```
 
-Check page [add-new](./_pages/add-new.md) for instructions on how to edit or add new terms.
+Terms are authored in `_wiki/<term-id>.md` and stored as JSON in `database/json/`. Never hand-edit the JSON files directly — run `python pswiki.py process` to regenerate them.
 
 ## License
 

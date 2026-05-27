@@ -1,6 +1,6 @@
 ---
 title: Security Constrained Unit Commitment
-description: SCUC.
+description: Optimization that determines generating unit commitment schedules subject to security constraints.
 tags:
   - system-operator
   - nyiso
@@ -8,10 +8,9 @@ related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.0
 date: 2025-03-15
 lastmod: 2025-06-22
-generated: 2026-01-18
+generated: 2026-05-26
 ---
 
 ### Definition by NYISO

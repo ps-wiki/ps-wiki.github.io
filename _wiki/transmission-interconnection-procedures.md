@@ -1,6 +1,6 @@
 ---
 title: Transmission Interconnection Procedures
-description: TIP.
+description: A NYISO process evaluating network upgrades needed to accommodate new transmission projects.
 tags:
   - transmission
   - system-operator
@@ -11,10 +11,9 @@ related:
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.0
 date: 2025-03-15
 lastmod: 2025-11-01
-generated: 2026-01-18
+generated: 2026-05-26
 ---
 
 ### Definition by NYISO

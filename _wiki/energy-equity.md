@@ -1,16 +1,15 @@
 ---
 title: Energy Equity
-description: The ability to supply the demand and energy requirements of the end-use customers.
+description: Equal access to energy, equal affordability, and equal ability to restore energy supply regardless of race, income, or social status.
 tags:
   - sociology
 related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.0
 date: 2025-11-29
 lastmod: 2025-11-29
-generated: 2026-01-18
+generated: 2026-05-26
 ---
 
 ### Definition in an Article

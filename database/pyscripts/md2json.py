@@ -25,7 +25,6 @@ import json
 import re
 import sys
 from dataclasses import dataclass
-from datetime import datetime, date as date_cls
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 import yaml
@@ -38,6 +37,9 @@ from utils import (
     json_content_differs,
     iso_date_from_ts,
     derive_file_dates,
+    coerce_date_str,
+    slugify_kebab,
+    ensure_list,
 )
 
 
@@ -46,15 +48,6 @@ DCITE_RE = re.compile(r'<d-cite\s+key="([^"]+)"></d-cite>')
 INCLUDE_FIG_RE = re.compile(r"{%\s*include\s+figure\.liquid")
 PATH_RE = re.compile(r'path="([^"]+)"')
 ZOOM_RE = re.compile(r"zoomable\s*=\s*(true|false)", re.IGNORECASE)
-
-# ---------- utils ----------
-
-
-def slugify_kebab(s: str) -> str:
-    s = s.strip().lower()
-    s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
-    return s or "untitled"
-
 
 def load_existing_json(json_path: Path) -> Optional[Dict[str, Any]]:
     """Load existing JSON file if it exists, return None otherwise."""
@@ -91,27 +84,6 @@ def merge_preserved_fields(
         new_term["aliases"] = existing_term["aliases"]
 
     return new_term
-
-
-def coerce_date_str(v: Any) -> str:
-    """Return an ISO YYYY-MM-DD string for date-like values; empty string otherwise."""
-    if isinstance(v, datetime):
-        return v.date().isoformat()
-    if isinstance(v, date_cls):
-        return v.isoformat()
-    if isinstance(v, str):
-        return v.strip()
-    return ""
-
-
-def ensure_list(v: Any) -> List[Any]:
-    """Normalize YAML field that may be missing/None/singleton into a list."""
-    if v is None:
-        return []
-    if isinstance(v, list):
-        return v
-    # If someone wrote a single string instead of a list
-    return [v]
 
 
 # ---------- parsing front matter ----------
@@ -409,7 +381,6 @@ def build_json_from_md(
     front, body = split_front_matter(text)
     title = (front.get("title") or "").strip()
     description = (front.get("description") or "").strip()
-    version = (front.get("version") or "1.0.0").strip()
     tags = ensure_list(front.get("tags"))
     related = ensure_list(front.get("related"))
     authors = ensure_list(front.get("authors"))
@@ -434,7 +405,6 @@ def build_json_from_md(
         "language": "en",
         "tags": tags,
         "related": related,
-        "version": version,
         "breaking": False,
         "dates": {"created": created_str, "last_modified": lastmod_str},
         "authors": authors,

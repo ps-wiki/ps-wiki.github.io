@@ -12,7 +12,6 @@
     "ferc"
   ],
   "related": [],
-  "version": "1.0.0",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
@@ -41,22 +40,12 @@
         "order": 2,
         "id": "definition-by-nyiso",
         "title": "Definition by NYISO",
-        "type": "definition",
+        "type": "note",
         "source_keys": [
           "nyiso2024dayahead"
         ],
         "page": "p7, Version 8.0",
-        "body_md": "> The following figure shows the interaction and data flow between the various functional components that involve the Day-Ahead process. Each of the blocks and major data flows is described after the figure.\n",
-        "figures": [
-          {
-            "path": "/assets/img/pswiki/day-ahead-scheduling-data-flow.png",
-            "caption_md": "Figure 3: Day-Ahead Scheduling Data Flow (from <d-cite key=\"nyiso2024dayahead\"></d-cite>)",
-            "zoomable": true,
-            "source_keys": [
-              "nyiso2024dayahead"
-            ]
-          }
-        ]
+        "body_md": "![Figure 3: Day-Ahead Scheduling Data Flow (from <d-cite key=\"nyiso2024dayahead\"></d-cite>)](/assets/img/pswiki/day-ahead-scheduling-data-flow.png)\n\n*Figure 3: Day-Ahead Scheduling Data Flow (from <d-cite key=\"nyiso2024dayahead\"></d-cite>)*\n\n\n\n> The following figure shows the interaction and data flow between the various functional components that involve the Day-Ahead process. Each of the blocks and major data flows is described after the figure.\n"
       },
       {
         "order": 3,

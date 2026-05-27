@@ -9,13 +9,12 @@ related:
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.0
 date: 2026-01-18
 lastmod: 2026-01-18
-generated: 2026-01-18
+generated: 2026-05-26
 ---
 
-### Defintion in an Article
+### Definition in an Article
 
 Source: <d-cite key="ieee1985terms"></d-cite>
 

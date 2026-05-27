@@ -8,69 +8,57 @@ Usage:
 
 import json
 import argparse
-import re
 from typing import Dict, List, Any
 from pathlib import Path
+
+import bibtexparser
+from bibtexparser.bparser import BibTexParser
+
+_EXCLUDED_FIELDS = {"abstract", "bibtex_show", "abbr"}
+_BIBTEX_RESERVED = {"ENTRYTYPE", "ID"}
 
 
 def parse_bibtex_file(filepath: str) -> Dict[str, Dict[str, Any]]:
     """
     Parse a BibTeX file and convert to structured JSON format.
-    
+
     Args:
         filepath: Path to the .bib file
-        
+
     Returns:
         Dictionary mapping citation keys to entry data
     """
-    with open(filepath, 'r', encoding='utf-8') as f:
-        content = f.read()
-    
+    parser = BibTexParser(common_strings=True)
+    parser.ignore_nonstandard_types = False
+
+    with open(filepath, "r", encoding="utf-8") as f:
+        bib_database = bibtexparser.load(f, parser=parser)
+
     entries = {}
-    
-    # Pattern to match BibTeX entries
-    # Matches: @type{key, field = {value}, ...}
-    entry_pattern = r'@(\w+)\{([^,]+),\s*(.*?)\n\}'
-    
-    # Fields to exclude from the JSON output
-    excluded_fields = {'abstract', 'bibtex_show', 'abbr'}
-    
-    for match in re.finditer(entry_pattern, content, re.DOTALL):
-        entry_type = match.group(1).lower()
-        key = match.group(2).strip()
-        fields_str = match.group(3)
-        
-        # Parse fields
-        fields = {}
-        field_pattern = r'(\w+)\s*=\s*\{([^}]*)\}'
-        
-        for field_match in re.finditer(field_pattern, fields_str, re.DOTALL):
-            field_name = field_match.group(1).strip()
-            field_value = field_match.group(2).strip()
-            
-            # Skip excluded fields
-            if field_name in excluded_fields:
-                continue
-            
-            # Clean up multiline values
-            field_value = re.sub(r'\s+', ' ', field_value)
-            fields[field_name] = field_value
-        
-        # Reconstruct BibTeX entry for the 'bibtex' field (without excluded fields)
+    for entry in bib_database.entries:
+        key = entry["ID"]
+        entry_type = entry["ENTRYTYPE"].lower()
+
+        fields = {
+            k: v
+            for k, v in entry.items()
+            if k not in _BIBTEX_RESERVED and k not in _EXCLUDED_FIELDS
+        }
+
         bibtex_lines = [f"@{entry_type}{{{key},"]
         for field_name, field_value in fields.items():
             bibtex_lines.append(f"  {field_name} = {{{field_value}}},")
-        if bibtex_lines[-1].endswith(','):
-            bibtex_lines[-1] = bibtex_lines[-1].rstrip(',')  # Remove trailing comma
+        if bibtex_lines[-1].endswith(","):
+            bibtex_lines[-1] = bibtex_lines[-1].rstrip(",")
         bibtex_lines.append("}")
-        
+
         entries[key] = {
             "key": key,
             "type": entry_type,
             "fields": fields,
-            "bibtex": "\n".join(bibtex_lines)
+            "bibtex": "\n".join(bibtex_lines),
         }
-    
+
     return entries
 
 
@@ -113,95 +101,81 @@ def validate_entries(entries: Dict[str, Dict[str, Any]]) -> List[str]:
     return warnings
 
 
-def main():
-    parser = argparse.ArgumentParser(
-        description='Convert BibTeX file to JSON for PS-Wiki API'
-    )
-    parser.add_argument(
-        '--input',
-        required=True,
-        help='Input BibTeX file path'
-    )
-    parser.add_argument(
-        '--output',
-        required=True,
-        help='Output JSON file path'
-    )
-    parser.add_argument(
-        '--validate',
-        action='store_true',
-        help='Validate entries and show warnings'
-    )
-    parser.add_argument(
-        '--pretty',
-        action='store_true',
-        help='Pretty-print JSON output'
-    )
-    
-    args = parser.parse_args()
-    
-    # Parse BibTeX file
-    print(f"Parsing {args.input}...")
-    entries = parse_bibtex_file(args.input)
-    print(f"Found {len(entries)} entries")
-    
-    # Validate if requested
-    if args.validate:
-        warnings = validate_entries(entries)
-        if warnings:
-            print("\nValidation warnings:")
-            for warning in warnings:
-                print(f"  - {warning}")
-        else:
-            print("\nAll entries valid!")
-    
-    # Write JSON output
-    all_entries = list(set(e['type'] for e in entries.values()))
-    sorted_entry_types = sorted(all_entries)
+def _write_bib_json(
+    entries: Dict[str, Dict[str, Any]], output_path: str, pretty: bool = True
+) -> None:
+    """Write parsed bib entries to a JSON file."""
+    sorted_entry_types = sorted(set(e["type"] for e in entries.values()))
     output_data = {
         "metadata": {
             "total_entries": len(entries),
-            "source_file": Path(args.input).name,
-            "entry_types": sorted_entry_types
+            "source_file": Path(output_path).name,
+            "entry_types": sorted_entry_types,
         },
-        "entries": entries
+        "entries": entries,
     }
-    
-    # Create output directory if it doesn't exist
-    output_path = Path(args.output)
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    
-    with open(args.output, 'w', encoding='utf-8') as f:
-        if args.pretty:
-            # Custom JSON formatting with line breaks between entries
+
+    out = Path(output_path)
+    out.parent.mkdir(parents=True, exist_ok=True)
+
+    with open(out, "w", encoding="utf-8") as f:
+        if pretty:
             f.write('{\n')
             f.write('  "metadata": ')
             json.dump(output_data["metadata"], f, indent=4, ensure_ascii=False)
             f.write(',\n  "entries": {')
-            
-            # Write each entry with a blank line separator
             entry_items = list(output_data["entries"].items())
             for i, (key, entry) in enumerate(entry_items):
                 f.write(f'    "{key}": ')
                 entry_json = json.dumps(entry, indent=6, ensure_ascii=False)
-                # Adjust indentation for nested content
-                entry_json = entry_json.replace('\n', '\n    ')
+                entry_json = entry_json.replace("\n", "\n    ")
                 f.write(entry_json.rstrip())
-                
-                # Add comma if not the last entry
-                if i < len(entry_items) - 1:
-                    f.write(',\n\n')  # Double newline for spacing between entries
-                else:
-                    f.write('\n')
-            
-            f.write('  }\n')
-            f.write('}\n')
+                f.write(",\n\n" if i < len(entry_items) - 1 else "\n")
+            f.write("  }\n}\n")
         else:
             json.dump(output_data, f, ensure_ascii=False)
-    
+
+
+def build_bib_json(
+    input_path: str, output_path: str, pretty: bool = True
+) -> int:
+    """Parse a .bib file and write bib.json. Returns the number of entries written."""
+    entries = parse_bibtex_file(input_path)
+    _write_bib_json(entries, output_path, pretty)
+    return len(entries)
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Convert BibTeX file to JSON for PS-Wiki API"
+    )
+    parser.add_argument("--input", required=True, help="Input BibTeX file path")
+    parser.add_argument("--output", required=True, help="Output JSON file path")
+    parser.add_argument(
+        "--validate", action="store_true", help="Validate entries and show warnings"
+    )
+    parser.add_argument(
+        "--pretty", action="store_true", help="Pretty-print JSON output"
+    )
+    args = parser.parse_args()
+
+    entries = parse_bibtex_file(args.input)
+    print(f"Found {len(entries)} entries")
+
+    if args.validate:
+        warnings = validate_entries(entries)
+        if warnings:
+            print("\nValidation warnings:")
+            for w in warnings:
+                print(f"  - {w}")
+        else:
+            print("\nAll entries valid!")
+
+    _write_bib_json(entries, args.output, args.pretty)
+    sorted_types = sorted(set(e["type"] for e in entries.values()))
     print(f"\nWritten to {args.output}")
-    print(f"Entry types: {', '.join(output_data['metadata']['entry_types'])}")
+    print(f"Entry types: {', '.join(sorted_types)}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

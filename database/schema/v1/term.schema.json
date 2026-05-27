@@ -8,7 +8,7 @@
   "type": "object",
   "additionalProperties": false,
 
-  "required": ["id", "title", "description", "language", "version", "breaking", "dates", "authors", "content"],
+  "required": ["id", "title", "description", "language", "breaking", "dates", "authors", "content"],
 
   "properties": {
     "$schema": { "type": "string", "format": "uri" },
@@ -57,7 +57,6 @@
       "uniqueItems": true
     },
 
-    "version": { "type": "string", "minLength": 1 },
     "breaking": { "type": "boolean" },
 
     "status": {

@@ -12,13 +12,12 @@ related:
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.1
 date: 2025-03-15
 lastmod: 2025-11-03
-generated: 2026-01-18
+generated: 2026-05-26
 ---
 
-### Definition in an IEEE Techical Report
+### Definition in an IEEE Technical Report
 
 Source: <d-cite key="chiu2020resilience"></d-cite> p13
 

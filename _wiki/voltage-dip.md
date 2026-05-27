@@ -10,10 +10,9 @@ related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.1
 date: 2025-03-15
 lastmod: 2025-11-03
-generated: 2026-01-18
+generated: 2026-05-26
 ---
 
 ### Definition in an Article
@@ -32,4 +31,4 @@ Source: <d-cite key="specialists2023voltage"></d-cite>
 
 > What causes a voltage dip or sag?
 >
-> Voltage dips are typically caused by faults in the power distribution system. These faults can be caused by naturally occurring events, such as lightning strikes, or created by mad made interference. Given the size and scale of the distribution grid, there are many types of faults that can cause voltage dips.
+> Voltage dips are typically caused by faults in the power distribution system. These faults can be caused by naturally occurring events, such as lightning strikes, or created by man-made interference. Given the size and scale of the distribution grid, there are many types of faults that can cause voltage dips.

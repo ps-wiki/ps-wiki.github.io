@@ -1,6 +1,6 @@
 ---
 title: Resource Scheduling & Commitment
-description: RSC. Security-constrained resource commitment.
+description: Security-constrained resource commitment program used for Day-ahead Market scheduling.
 tags:
   - system-operator
   - pjm
@@ -10,10 +10,9 @@ related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.0
 date: 2025-03-15
 lastmod: 2025-06-19
-generated: 2026-01-18
+generated: 2026-05-26
 ---
 
 ### Definition by PJM

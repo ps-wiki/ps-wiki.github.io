@@ -1,6 +1,6 @@
 ---
 title: Loss-of-Load Probability
-description: LOLP.
+description: The probability that system demand will exceed generating capacity during a given period.
 tags:
   - adequacy
   - nerc
@@ -10,10 +10,9 @@ related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.0
 date: 2025-03-15
 lastmod: 2025-06-20
-generated: 2026-01-18
+generated: 2026-05-26
 ---
 
 ### Definition by NERC

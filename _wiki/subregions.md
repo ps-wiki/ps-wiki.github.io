@@ -13,26 +13,20 @@ related:
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.0
 date: 2025-03-15
 lastmod: 2025-06-20
-generated: 2026-01-18
+generated: 2026-05-26
 ---
 
 ### Definition by EPA
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid
-        path="/assets/img/pswiki/egrid_subregions_map.png"
-        zoomable=true %}
-        Map of eGRID Subregions (from <d-cite key="epa2024gridregions"></d-cite>)
-    </div>
-</div>
-
-<br>
-
 Source: <d-cite key="epa2024gridregions"></d-cite>
+
+![Map of eGRID Subregions (from <d-cite key="epa2024gridregions"></d-cite>)](/assets/img/pswiki/egrid_subregions_map.png)
+
+*Map of eGRID Subregions (from <d-cite key="epa2024gridregions"></d-cite>)*
+
+
 
 > For U.S. grid regions’ emission data, EPA provides recent and historic air emissions, including carbon dioxide (CO2), for U.S. portions of grid regions, States, and Puerto Rico.
 

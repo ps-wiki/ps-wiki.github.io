@@ -15,7 +15,6 @@
     "composite-short-circuit-ratio",
     "short-circuit-ratio-with-interaction-factors"
   ],
-  "version": "1.0.0",
   "breaking": false,
   "dates": {
     "created": "2025-11-29",

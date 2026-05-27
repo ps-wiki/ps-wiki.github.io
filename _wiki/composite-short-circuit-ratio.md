@@ -14,10 +14,9 @@ related:
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.0
 date: 2025-11-29
 lastmod: 2025-11-29
-generated: 2026-01-18
+generated: 2026-05-26
 ---
 
 ### Definition in an Article
@@ -26,6 +25,6 @@ Source: <d-cite key="nerc2017integrating"></d-cite> p2
 
 > Composite short circuit ratio (CSCR) estimates the equivalent system impedance seen by multiple inverter-based resources by creating a common medium voltage bus and tying all inverter-based resources of interest together at that common bus. The composite short circuit MVA at the common bus without current contribution from the inverter-based resources, $CSC_{MVA}$, is then calculated. CSCR can then be calculated as
 >
-> $ CSCR = \frac{CSC_{MVA}}{MW_{VER}} $
+> $CSCR = \frac{CSC_{MVA}}{MW_{VER}}$
 >
 > where $MW_{VER}$ is the sum of the nominal power rating of all inverter-based resources considered. This method calculates an aggregate SCR for multiple inverter-based resources, rather than each resource like the conventional SCR approach.
