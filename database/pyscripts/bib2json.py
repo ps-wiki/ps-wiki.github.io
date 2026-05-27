@@ -8,69 +8,57 @@ Usage:
 
 import json
 import argparse
-import re
 from typing import Dict, List, Any
 from pathlib import Path
+
+import bibtexparser
+from bibtexparser.bparser import BibTexParser
+
+_EXCLUDED_FIELDS = {"abstract", "bibtex_show", "abbr"}
+_BIBTEX_RESERVED = {"ENTRYTYPE", "ID"}
 
 
 def parse_bibtex_file(filepath: str) -> Dict[str, Dict[str, Any]]:
     """
     Parse a BibTeX file and convert to structured JSON format.
-    
+
     Args:
         filepath: Path to the .bib file
-        
+
     Returns:
         Dictionary mapping citation keys to entry data
     """
-    with open(filepath, 'r', encoding='utf-8') as f:
-        content = f.read()
-    
+    parser = BibTexParser(common_strings=True)
+    parser.ignore_nonstandard_types = False
+
+    with open(filepath, "r", encoding="utf-8") as f:
+        bib_database = bibtexparser.load(f, parser=parser)
+
     entries = {}
-    
-    # Pattern to match BibTeX entries
-    # Matches: @type{key, field = {value}, ...}
-    entry_pattern = r'@(\w+)\{([^,]+),\s*(.*?)\n\}'
-    
-    # Fields to exclude from the JSON output
-    excluded_fields = {'abstract', 'bibtex_show', 'abbr'}
-    
-    for match in re.finditer(entry_pattern, content, re.DOTALL):
-        entry_type = match.group(1).lower()
-        key = match.group(2).strip()
-        fields_str = match.group(3)
-        
-        # Parse fields
-        fields = {}
-        field_pattern = r'(\w+)\s*=\s*\{([^}]*)\}'
-        
-        for field_match in re.finditer(field_pattern, fields_str, re.DOTALL):
-            field_name = field_match.group(1).strip()
-            field_value = field_match.group(2).strip()
-            
-            # Skip excluded fields
-            if field_name in excluded_fields:
-                continue
-            
-            # Clean up multiline values
-            field_value = re.sub(r'\s+', ' ', field_value)
-            fields[field_name] = field_value
-        
-        # Reconstruct BibTeX entry for the 'bibtex' field (without excluded fields)
+    for entry in bib_database.entries:
+        key = entry["ID"]
+        entry_type = entry["ENTRYTYPE"].lower()
+
+        fields = {
+            k: v
+            for k, v in entry.items()
+            if k not in _BIBTEX_RESERVED and k not in _EXCLUDED_FIELDS
+        }
+
         bibtex_lines = [f"@{entry_type}{{{key},"]
         for field_name, field_value in fields.items():
             bibtex_lines.append(f"  {field_name} = {{{field_value}}},")
-        if bibtex_lines[-1].endswith(','):
-            bibtex_lines[-1] = bibtex_lines[-1].rstrip(',')  # Remove trailing comma
+        if bibtex_lines[-1].endswith(","):
+            bibtex_lines[-1] = bibtex_lines[-1].rstrip(",")
         bibtex_lines.append("}")
-        
+
         entries[key] = {
             "key": key,
             "type": entry_type,
             "fields": fields,
-            "bibtex": "\n".join(bibtex_lines)
+            "bibtex": "\n".join(bibtex_lines),
         }
-    
+
     return entries
 
 

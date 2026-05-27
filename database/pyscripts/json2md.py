@@ -22,6 +22,7 @@ Usage:
 import argparse
 import json
 import sys
+import yaml
 from pathlib import Path
 from typing import List, Dict, Any
 from datetime import datetime
@@ -36,6 +37,11 @@ from utils import (
 
 
 # ---------- YAML helpers (very small, purpose-built) ----------
+
+
+def _yaml_str(key: str, value: str) -> str:
+    """Emit one 'key: value' YAML line, quoting the value if it contains special chars."""
+    return yaml.dump({key: value}, default_flow_style=False, allow_unicode=True).strip()
 
 
 def yaml_list_block(key: str, items: List[str], indent: int = 0) -> str:
@@ -62,9 +68,11 @@ def yaml_authors_block(authors: List[Dict[str, Any]], indent: int = 0) -> str:
     for a in authors:
         name = a.get("name", "")
         url = a.get("url", "")
-        lines.append(f"{ind}  - name: {name}")
+        name_val = yaml.dump({"name": name}, default_flow_style=False, allow_unicode=True).strip()
+        lines.append(f"{ind}  - {name_val}")
         if url:
-            lines.append(f"{ind}    url: {url}")
+            url_val = yaml.dump({"url": url}, default_flow_style=False, allow_unicode=True).strip()
+            lines.append(f"{ind}    {url_val}")
     return "\n".join(lines) + "\n"
 
 
@@ -85,10 +93,10 @@ def render_front_matter(term: Dict[str, Any]) -> str:
     generated = datetime.now().strftime("%Y-%m-%d")
 
     fm = ["---"]
-    fm.append(f"title: {title}")
+    fm.append(_yaml_str("title", title))
     if aliases:
         fm.append(yaml_list_block("aliases", aliases).rstrip())
-    fm.append(f"description: {description}")
+    fm.append(_yaml_str("description", description))
     fm.append(yaml_list_block("tags", tags).rstrip())
     fm.append(yaml_list_block("related", related).rstrip())
     fm.append(yaml_authors_block(authors).rstrip())
