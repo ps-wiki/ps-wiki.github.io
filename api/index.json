@@ -516,7 +516,7 @@
     {
       "id": "dynamic-study-model",
       "title": "Dynamic Study Model",
-      "summary": "Reserve for AGC to provide normal regulating margin.",
+      "summary": "A common dynamic model of the Continental European power system used for multi-TSO simulation studies.",
       "tags": [
         "stability",
         "europe",
@@ -586,7 +586,7 @@
     {
       "id": "energy-equity",
       "title": "Energy Equity",
-      "summary": "The ability to supply the demand and energy requirements of the end-use customers.",
+      "summary": "Equal access to energy, equal affordability, and equal ability to restore energy supply regardless of race, income, or social status.",
       "tags": [
         "sociology"
       ],
@@ -718,18 +718,6 @@
       "updated_at": "2025-06-20"
     },
     {
-      "id": "frequency-containment-reserve",
-      "title": "Frequency Containment Reserve",
-      "summary": "The active power reserves available to contain system frequency after the occurrence of an imbalance.",
-      "tags": [
-        "frequency-control",
-        "reserve",
-        "european-union",
-        "europe"
-      ],
-      "updated_at": "2025-11-28"
-    },
-    {
       "id": "frequency-containment-reserves",
       "title": "Frequency Containment Reserves",
       "summary": "The active power reserves available to contain system frequency after the occurrence of an imbalance.",
@@ -823,7 +811,7 @@
     {
       "id": "generalized-short-circuit-ratio",
       "title": "Generalized Short-Circuit Ratio",
-      "summary": "gSCR. Geeneralized representation of SCR for single-infeed power electronic systems (SIPESs) in multi-infeed power electronic systems (MIPESs).",
+      "summary": "Generalized representation of SCR for single-infeed systems in multi-infeed power electronic configurations.",
       "tags": [
         "stability"
       ],
@@ -844,7 +832,7 @@
     {
       "id": "generation-shift-factor",
       "title": "Generation Shift Factor",
-      "summary": "GSF.",
+      "summary": "A factor expressing a generator's output-change contribution to the flow on a specific transmission facility.",
       "tags": [
         "sensitivity",
         "nerc"
@@ -952,15 +940,15 @@
     {
       "id": "line-outage-distribution-factor",
       "title": "Line Outage Distribution Factor",
-      "summary": "LODF.",
+      "summary": "A sensitivity measure of how a line outage affects the flows on other lines in the system.",
       "tags": [
         "sensitivity"
       ],
       "updated_at": "2025-06-20"
     },
     {
-      "id": "localtional-marginal-price",
-      "title": "Localtional Marginal Price",
+      "id": "locational-marginal-price",
+      "title": "Locational Marginal Price",
       "summary": "LMP. Marginal price for energy at the location delivered or received.",
       "tags": [
         "market",
@@ -1007,7 +995,7 @@
     {
       "id": "loss-of-load-probability",
       "title": "Loss-of-Load Probability",
-      "summary": "LOLP.",
+      "summary": "The probability that system demand will exceed generating capacity during a given period.",
       "tags": [
         "adequacy",
         "nerc",
@@ -1191,7 +1179,7 @@
     {
       "id": "outage-transfer-distribution-factor",
       "title": "Outage Transfer Distribution Factor",
-      "summary": "OTDF.",
+      "summary": "A PTDF applied to the post-contingency configuration after one or more facilities are removed from service.",
       "tags": [
         "sensitivity"
       ],
@@ -1200,7 +1188,7 @@
     {
       "id": "participation-factors",
       "title": "Participation Factors",
-      "summary": "One definition is about dispath and another is about small-signal stability.",
+      "summary": "Factors used to assign load-frequency control or dynamic mode contributions to individual generators.",
       "tags": [
         "sensitivity",
         "book"
@@ -1230,7 +1218,7 @@
     {
       "id": "power-transfer-distribution-factor",
       "title": "Power Transfer Distribution Factor",
-      "summary": "PTDF.",
+      "summary": "A measure of the change in electrical loading on transmission facilities due to a power transfer between areas.",
       "tags": [
         "sensitivity"
       ],
@@ -1359,7 +1347,7 @@
     {
       "id": "remedial-action-scheme",
       "title": "Remedial Action Scheme",
-      "summary": "RAS.",
+      "summary": "A pre-planned operational scheme that responds to specific contingencies to preserve system reliability.",
       "tags": [
         "reliability",
         "system-operator",
@@ -1431,7 +1419,7 @@
     {
       "id": "resource-scheduling-commitment",
       "title": "Resource Scheduling & Commitment",
-      "summary": "RSC. Security-constrained resource commitment.",
+      "summary": "Security-constrained resource commitment program used for Day-ahead Market scheduling.",
       "tags": [
         "system-operator",
         "pjm",
@@ -1509,9 +1497,9 @@
       "updated_at": "2025-06-22"
     },
     {
-      "id": "security-constraiend-economic-dispatch",
-      "title": "Security Constraiend Economic Dispatch",
-      "summary": "SCED.",
+      "id": "security-constrained-economic-dispatch",
+      "title": "Security Constrained Economic Dispatch",
+      "summary": "The dispatch of all generators to minimize cost while meeting security constraints in real time.",
       "tags": [
         "dispatch",
         "operation",
@@ -1523,7 +1511,7 @@
     {
       "id": "security-constrained-unit-commitment",
       "title": "Security Constrained Unit Commitment",
-      "summary": "SCUC.",
+      "summary": "Optimization that determines generating unit commitment schedules subject to security constraints.",
       "tags": [
         "system-operator",
         "nyiso"
@@ -1587,7 +1575,7 @@
     {
       "id": "smart-grid",
       "title": "Smart Grid",
-      "summary": "Definition of smart grid.",
+      "summary": "A modernized electricity grid using digital technology to improve reliability, security, and efficiency.",
       "tags": [
         "smart-grid",
         "semantic",
@@ -1839,7 +1827,7 @@
     {
       "id": "transmission-interconnection-procedures",
       "title": "Transmission Interconnection Procedures",
-      "summary": "TIP.",
+      "summary": "A NYISO process evaluating network upgrades needed to accommodate new transmission projects.",
       "tags": [
         "transmission",
         "system-operator",
@@ -1862,7 +1850,10 @@
       "id": "uncertainty",
       "title": "Uncertainty",
       "summary": "Two types of uncertainty.",
-      "tags": [],
+      "tags": [
+        "modeling",
+        "article"
+      ],
       "updated_at": "2025-06-20"
     },
     {
@@ -1920,7 +1911,7 @@
     {
       "id": "voltage-reductions",
       "title": "Voltage Reductions",
-      "summary": "A.k.a brownouts",
+      "summary": "Intentional voltage reductions used to reduce system load, also known as brownouts.",
       "tags": [
         "nerc"
       ],
@@ -1944,7 +1935,7 @@
     {
       "id": "waveform-measurement-unit",
       "title": "Waveform Measurement Unit",
-      "summary": "WMU. Sensor device to record synchro-waveforms.",
+      "summary": "A sensor device that records time-synchronized synchro-waveform measurements of voltage and current.",
       "tags": [
         "measurement",
         "ieee",
@@ -1955,7 +1946,7 @@
     {
       "id": "weighted-short-circuit-ratio",
       "title": "Weighted Short-Circuit Ratio",
-      "summary": "WSCR. It takes interactions between wind plants into account. The WSCR can better reflect the actual system strength when integrating a large amount of wind plants in a weak system.",
+      "summary": "A metric that accounts for interactions between wind plants to better estimate system strength.",
       "tags": [
         "stability"
       ],
@@ -1993,5 +1984,5 @@
       "updated_at": "2025-11-02"
     }
   ],
-  "generated_at": "2026-01-19"
+  "generated_at": "2026-05-27"
 }

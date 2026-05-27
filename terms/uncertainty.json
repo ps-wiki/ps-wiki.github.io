@@ -4,9 +4,11 @@
   "title": "Uncertainty",
   "description": "Two types of uncertainty.",
   "language": "en",
-  "tags": [],
+  "tags": [
+    "modeling",
+    "article"
+  ],
   "related": [],
-  "version": "1.0.0",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",

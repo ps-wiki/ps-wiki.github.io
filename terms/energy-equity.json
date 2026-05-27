@@ -2,13 +2,12 @@
   "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "energy-equity",
   "title": "Energy Equity",
-  "description": "The ability to supply the demand and energy requirements of the end-use customers.",
+  "description": "Equal access to energy, equal affordability, and equal ability to restore energy supply regardless of race, income, or social status.",
   "language": "en",
   "tags": [
     "sociology"
   ],
   "related": [],
-  "version": "1.0.0",
   "breaking": false,
   "dates": {
     "created": "2025-11-29",

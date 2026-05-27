@@ -2,7 +2,7 @@
   "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "generalized-short-circuit-ratio",
   "title": "Generalized Short-Circuit Ratio",
-  "description": "gSCR. Geeneralized representation of SCR for single-infeed power electronic systems (SIPESs) in multi-infeed power electronic systems (MIPESs).",
+  "description": "Generalized representation of SCR for single-infeed systems in multi-infeed power electronic configurations.",
   "language": "en",
   "tags": [
     "stability"
@@ -14,7 +14,6 @@
     "composite-short-circuit-ratio",
     "short-circuit-ratio-with-interaction-factors"
   ],
-  "version": "1.0.0",
   "breaking": false,
   "dates": {
     "created": "2025-11-29",

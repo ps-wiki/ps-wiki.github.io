@@ -17,7 +17,6 @@
   "aliases": [
     "Consequence-Based Metrics"
   ],
-  "version": "1.0.1",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
@@ -33,8 +32,8 @@
     "sections": [
       {
         "order": 1,
-        "id": "definition-in-an-ieee-techical-report-by-doe-gmlc",
-        "title": "Definition in an IEEE Techical Report by DOE GMLC",
+        "id": "definition-in-an-ieee-technical-report-by-doe-gmlc",
+        "title": "Definition in an IEEE Technical Report by DOE GMLC",
         "type": "definition",
         "source_keys": [
           "chiu2020resilience"

@@ -10,7 +10,6 @@
     "pjm"
   ],
   "related": [],
-  "version": "1.0.0",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
@@ -28,22 +27,12 @@
         "order": 1,
         "id": "definition-by-pjm",
         "title": "Definition by PJM",
-        "type": "definition",
+        "type": "note",
         "source_keys": [
           "pjm2024m10"
         ],
         "page": "p26, Revision 45",
-        "body_md": "> Reserves represent the generating capability that is “standing by” ready for service in the event that something happens on the power system, such as the loss of a large generator. (Reference NERC Performance Standard BAL-002-1, Disturbance Control Performance, and PJM Manual 12, Attachment D). The severity of the event determines how quickly the reserves have to be picked up. Exhibit 6 illustrates how PJM classifies the different types of reserve services.\n",
-        "figures": [
-          {
-            "path": "/assets/img/pswiki/graphic-representation-reserves.png",
-            "caption_md": "Exhibit 6: Graphic Representation of Reserves (from <d-cite key=\"pjm2024m10\"></d-cite>)",
-            "zoomable": true,
-            "source_keys": [
-              "pjm2024m10"
-            ]
-          }
-        ]
+        "body_md": "![Exhibit 6: Graphic Representation of Reserves (from <d-cite key=\"pjm2024m10\"></d-cite>)](/assets/img/pswiki/graphic-representation-reserves.png)\n\n*Exhibit 6: Graphic Representation of Reserves (from <d-cite key=\"pjm2024m10\"></d-cite>)*\n\n\n\n> Reserves represent the generating capability that is “standing by” ready for service in the event that something happens on the power system, such as the loss of a large generator. (Reference NERC Performance Standard BAL-002-1, Disturbance Control Performance, and PJM Manual 12, Attachment D). The severity of the event determines how quickly the reserves have to be picked up. Exhibit 6 illustrates how PJM classifies the different types of reserve services.\n"
       }
     ]
   }

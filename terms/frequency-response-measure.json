@@ -9,7 +9,6 @@
     "balancing-authority"
   ],
   "related": [],
-  "version": "1.0.0",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
@@ -32,7 +31,7 @@
           "nerc2024glossary"
         ],
         "page": null,
-        "body_md": "> The median of all the [Frequency Response](/wiki/frequnecy-response) observations reported **annually** by [Balancing Authorities](/wiki/balancing-authority) or Frequency Response Sharing Groups for frequency events specified by the ERO. This will be calculated as **MW/0.1Hz**.\n"
+        "body_md": "> The median of all the [Frequency Response](/wiki/frequency-response) observations reported **annually** by [Balancing Authorities](/wiki/balancing-authority) or Frequency Response Sharing Groups for frequency events specified by the ERO. This will be calculated as **MW/0.1Hz**.\n"
       }
     ]
   }

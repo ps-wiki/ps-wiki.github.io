@@ -11,7 +11,6 @@
     "oscillation",
     "subsynchronous-resonance"
   ],
-  "version": "1.0.0",
   "breaking": false,
   "dates": {
     "created": "2026-01-18",
@@ -27,8 +26,8 @@
     "sections": [
       {
         "order": 1,
-        "id": "defintion-in-an-article",
-        "title": "Defintion in an Article",
+        "id": "definition-in-an-article",
+        "title": "Definition in an Article",
         "type": "definition",
         "source_keys": [
           "ieee1985terms"

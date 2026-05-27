@@ -11,7 +11,6 @@
     "pjm"
   ],
   "related": [],
-  "version": "1.0.0",
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
@@ -27,8 +26,8 @@
     "sections": [
       {
         "order": 1,
-        "id": "definition-in-by-pjm",
-        "title": "Definition in by PJM",
+        "id": "definition-by-pjm",
+        "title": "Definition by PJM",
         "type": "definition",
         "source_keys": [
           "pjm2024m10"
