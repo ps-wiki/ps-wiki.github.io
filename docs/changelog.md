@@ -7,14 +7,22 @@ This page records major changes in this wiki.
 
 ## 2026
 
+### 05-27
+
+- Added MCP Server documentation page
+- Completed Jekyll/al-folio cleanup: removed Docker configs, Ruby plugins, 9 stale CI workflows, and `_config.yml` (repo is now Python-only)
+- Consolidated Python dependencies into `requirements-dev.txt` at repo root
+- Added `pswiki.py` centralized CLI — all developer workflows (`new`, `process`, `validate`, `serve`, `build`) go through one entry point
+
 ### 05-26
 
 - Migrated site from al-folio/Jekyll to MkDocs Material
 - Added prev/next alphabetical navigation on each term page
 - Added sortable All Terms table
-- Added Development guide page
+- Added Development and REST API documentation pages
 - Removed per-term `version` field; term pages now show last-modified date only (`version` no longer appears in `/v1/terms/{id}` API responses)
-- Ported REST API documentation
+- Citation footnotes now link to `https://doi.org/{doi}` when a DOI is available
+- Fixed edit-page button to link directly to the source `_wiki/<id>.md` file on GitHub
 
 ## 2025
 
