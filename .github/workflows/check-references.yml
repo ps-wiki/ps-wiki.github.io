@@ -1,0 +1,172 @@
+name: Reference Health
+
+on:
+  schedule:
+    # 8th of Jan / Apr / Jul / Oct at 08:00 UTC — mid-month, reliably a weekday
+    - cron: "0 8 8 1,4,7,10 *"
+  push:
+    branches: [main]
+    paths:
+      - "assets/bibliography/papers.bib"
+  workflow_dispatch:
+    inputs:
+      recover:
+        description: "Query Wayback Machine for broken NERC URLs"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  # -------------------------------------------------------------------------
+  # Job 1: run the scanner and upload the report as an artifact
+  # -------------------------------------------------------------------------
+  scan:
+    name: Scan references
+    runs-on: ubuntu-latest
+    outputs:
+      broken_count: ${{ steps.count.outputs.broken_count }}
+      artifact_url: ${{ steps.upload.outputs.artifact-url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install deps
+        run: pip install -r requirements-dev.txt
+
+      - name: Run reference scan
+        # Always use --recover (Wayback lookup) unless manually triggered with recover=false
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ inputs.recover }}" == "false" ]]; then
+            python pswiki.py check-refs
+          else
+            python pswiki.py check-refs --recover
+          fi
+          # The CLI exits 1 if broken links found; we capture that in the next step
+          # so we don't fail the workflow here — reporting job handles it
+        continue-on-error: true
+
+      - name: Extract broken count
+        id: count
+        run: |
+          BROKEN=$(python -c "
+          import json
+          r = json.load(open('database/build/reference_check.json'))
+          s = r['summary']
+          print(s.get('broken', 0) + s.get('server_error', 0))
+          ")
+          echo "broken_count=$BROKEN" >> "$GITHUB_OUTPUT"
+
+      - name: Upload report artifact
+        id: upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: reference_check
+          path: database/build/reference_check.json
+          retention-days: 90
+
+  # -------------------------------------------------------------------------
+  # Job 2: update the persistent tracking issue
+  # -------------------------------------------------------------------------
+  report:
+    name: Update tracking issue
+    needs: scan
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      BROKEN: ${{ needs.scan.outputs.broken_count }}
+      ARTIFACT_URL: ${{ needs.scan.outputs.artifact_url }}
+      RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Download scan artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: reference_check
+          path: database/build
+
+      - name: Render issue body
+        run: |
+          python database/pyscripts/render_ref_issue.py \
+            --report database/build/reference_check.json \
+            --artifact-url "$ARTIFACT_URL" \
+            --sha "${{ github.sha }}" \
+            --trigger "${{ github.event_name }}" \
+            --run-url "$RUN_URL" \
+            > /tmp/issue_body.md
+
+      - name: Find or create tracking issue
+        id: issue
+        run: |
+          # Search for the persistent tracker issue (open or closed)
+          ISSUE_NUMBER=$(gh issue list \
+            --repo "${{ github.repository }}" \
+            --label ref-health \
+            --state all \
+            --json number,title \
+            --jq '.[] | select(.title == "[CI] Reference Health Tracker") | .number' \
+            | head -1)
+
+          if [ -z "$ISSUE_NUMBER" ]; then
+            ISSUE_NUMBER=$(gh issue create \
+              --repo "${{ github.repository }}" \
+              --title "[CI] Reference Health Tracker" \
+              --body-file /tmp/issue_body.md \
+              --label ref-health \
+              --json number \
+              --jq '.number')
+            echo "Created issue #$ISSUE_NUMBER"
+          else
+            gh issue edit "$ISSUE_NUMBER" \
+              --repo "${{ github.repository }}" \
+              --body-file /tmp/issue_body.md
+            echo "Updated issue #$ISSUE_NUMBER"
+          fi
+
+          echo "issue_number=$ISSUE_NUMBER" >> "$GITHUB_OUTPUT"
+
+      - name: Post run comment
+        run: |
+          SCAN_DATE=$(date -u +%Y-%m-%d)
+          if [ "$BROKEN" -gt 0 ]; then
+            STATUS_LINE="⚠️ **$BROKEN broken link(s)** detected — see tables above"
+          else
+            STATUS_LINE="✅ All references OK"
+          fi
+
+          SHA_SHORT="${{ github.sha }}"
+          SHA_SHORT="${SHA_SHORT:0:7}"
+
+          gh issue comment "${{ steps.issue.outputs.issue_number }}" \
+            --repo "${{ github.repository }}" \
+            --body "**Scan — ${SCAN_DATE}** · ${STATUS_LINE}
+          Trigger: \`${{ github.event_name }}\` · commit \`${SHA_SHORT}\` · [view run](${RUN_URL}) · [download report](${ARTIFACT_URL})"
+
+      - name: Open or close issue based on scan result
+        run: |
+          if [ "$BROKEN" -gt 0 ]; then
+            gh issue reopen "${{ steps.issue.outputs.issue_number }}" \
+              --repo "${{ github.repository }}" 2>/dev/null || true
+          else
+            gh issue close "${{ steps.issue.outputs.issue_number }}" \
+              --repo "${{ github.repository }}" \
+              --comment "All references OK as of $(date -u +%Y-%m-%d). Closing automatically." \
+              2>/dev/null || true
+          fi

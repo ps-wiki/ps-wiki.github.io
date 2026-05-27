@@ -9,6 +9,9 @@ This page records major changes in this wiki.
 
 ### 05-27
 
+- Added reference URL health scanner (`python pswiki.py check-refs`) — checks all citation URLs in `papers.bib` for broken links, with optional Wayback Machine recovery for NERC entries
+- Added quarterly CI workflow for automated reference health scanning; results are surfaced in a persistent GitHub Issue
+- Fixed 7 broken citations in `papers.bib`: 5 NERC URLs replaced with Wayback Machine archive snapshots, 2 PJM manual entries pinned from floating current-doc URLs to versioned archive paths
 - Removed per-term `version` field; term pages now show last-modified date only (`version` no longer appears in `/v1/terms/{id}` API responses)
 - Fixed edit-page button to link to the correct GitHub repo (`ps-wiki.github.io`) and source file (`_wiki/<id>.md`)
 - Added MCP Server documentation page

@@ -14,6 +14,7 @@ Usage:
 
 import argparse
 import json
+import re
 import sys
 import time
 import urllib.error
@@ -28,6 +29,9 @@ from bibtexparser.bparser import BibTexParser
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_BIB = REPO_ROOT / "assets" / "bibliography" / "papers.bib"
 DEFAULT_OUT = REPO_ROOT / "database" / "build" / "reference_check.json"
+DEFAULT_WIKI_DIR = REPO_ROOT / "_wiki"
+
+_DCITE_RE = re.compile(r'<d-cite\b[^>]*key="([^"]*)"')
 
 URL_FIELDS = ("url", "pdf", "html")
 NERC_DOMAIN = "nerc.com"
@@ -75,6 +79,24 @@ def collect_urls(entries: list[dict]) -> list[dict]:
                 }
             )
     return records
+
+
+# ---------------------------------------------------------------------------
+# Wiki cross-reference
+# ---------------------------------------------------------------------------
+
+def find_citing_terms(key: str, wiki_dir: Path) -> list[str]:
+    """Return sorted _wiki/*.md relative paths that contain a <d-cite> for key."""
+    if not wiki_dir.exists():
+        return []
+    matches = []
+    for md_file in sorted(wiki_dir.glob("*.md")):
+        text = md_file.read_text(encoding="utf-8")
+        for m in _DCITE_RE.finditer(text):
+            if key in [k.strip() for k in m.group(1).split(",")]:
+                matches.append(f"_wiki/{md_file.name}")
+                break
+    return matches
 
 
 # ---------------------------------------------------------------------------
@@ -182,10 +204,13 @@ def scan(records: list[dict], recover: bool) -> list[dict]:
 # Reporting
 # ---------------------------------------------------------------------------
 
-def build_report(results: list[dict], bib_path: Path) -> dict:
+def build_report(
+    results: list[dict], bib_path: Path, wiki_dir: Path = DEFAULT_WIKI_DIR
+) -> dict:
     categories = {"ok": [], "redirect": [], "broken": [], "server_error": []}
     for r in results:
         categories.setdefault(r["category"], []).append(r)
+        r["used_by"] = find_citing_terms(r["key"], wiki_dir)
 
     return {
         "scanned_at": datetime.now(timezone.utc).isoformat(),
@@ -221,12 +246,13 @@ def print_summary(report: dict) -> None:
             return
         print(f"--- {label} ({len(items)}) ---")
         for r in items:
-            archive_note = f"  archive: {r['archive_url']}" if r.get("archive_url") else ""
             code_note = f" [{r['status_code']}]" if r["status_code"] else f" [{r['error']}]"
             print(f"  {r['key']} ({r['field']}){code_note}")
             print(f"    {r['url']}")
-            if archive_note:
-                print(f"    {archive_note}")
+            if r.get("archive_url"):
+                print(f"    archive: {r['archive_url']}")
+            if r.get("used_by"):
+                print(f"    used by: {', '.join(r['used_by'])}")
         print()
 
     _print_group("NERC broken", nerc_broken)
@@ -241,6 +267,8 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Check reference URLs in papers.bib")
     parser.add_argument("--bib", type=Path, default=DEFAULT_BIB)
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT)
+    parser.add_argument("--wiki-dir", type=Path, default=DEFAULT_WIKI_DIR,
+                        help="Path to _wiki/ directory for used-by lookup")
     parser.add_argument(
         "--recover",
         action="store_true",
@@ -262,7 +290,7 @@ def main() -> None:
     print("Scanning URLs ...")
     results = scan(records, recover=args.recover)
 
-    report = build_report(results, args.bib)
+    report = build_report(results, args.bib, wiki_dir=args.wiki_dir)
     args.out.write_text(json.dumps(report, indent=2), encoding="utf-8")
     print(f"\nReport written to {args.out}")
 
