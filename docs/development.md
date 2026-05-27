@@ -223,7 +223,7 @@ Contributions are welcome. The preferred workflow is:
 4. Run `npx prettier --write .` before committing.
 5. Open a pull request — CI will validate, build, and check formatting automatically.
 
-For questions or to report issues: [GitHub Issues](https://github.com/ps-wiki/pswiki/issues).
+For questions or to report issues: [GitHub Issues](https://github.com/ps-wiki/ps-wiki.github.io/issues).
 
 ---
 

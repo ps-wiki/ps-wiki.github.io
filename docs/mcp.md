@@ -145,6 +145,6 @@ The MCP server fetches data from the [PS-Wiki REST API](rest-api.md). All data i
 
 ## Resources
 
-- **GitHub**: [ps-wiki/pswiki/mcp](https://github.com/ps-wiki/pswiki/tree/main/mcp)
+- **GitHub**: [ps-wiki/ps-wiki.github.io/mcp](https://github.com/ps-wiki/ps-wiki.github.io/tree/main/mcp)
 - **MCP Specification**: [modelcontextprotocol.io](https://modelcontextprotocol.io)
-- **Issues**: [GitHub Issues](https://github.com/ps-wiki/pswiki/issues)
+- **Issues**: [GitHub Issues](https://github.com/ps-wiki/ps-wiki.github.io/issues)

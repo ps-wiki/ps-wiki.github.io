@@ -222,9 +222,9 @@ For high-volume usage (>100k requests/day), consider caching responses locally o
 
 The API serves data from the repository's JSON database:
 
-- **Term data**: [`database/json/`](https://github.com/ps-wiki/pswiki/tree/main/database/json)
-- **Index**: [`database/build/index.json`](https://github.com/ps-wiki/pswiki/blob/main/database/build/index.json)
-- **Tags**: [`database/build/tags.json`](https://github.com/ps-wiki/pswiki/blob/main/database/build/tags.json)
+- **Term data**: [`database/json/`](https://github.com/ps-wiki/ps-wiki.github.io/tree/main/database/json)
+- **Index**: [`database/build/index.json`](https://github.com/ps-wiki/ps-wiki.github.io/blob/main/database/build/index.json)
+- **Tags**: [`database/build/tags.json`](https://github.com/ps-wiki/ps-wiki.github.io/blob/main/database/build/tags.json)
 
 Data is fetched directly from GitHub, so repository updates are reflected immediately without redeploying the API.
 
@@ -238,7 +238,7 @@ npm install
 npx wrangler deploy
 ```
 
-See [`worker/README.md`](https://github.com/ps-wiki/pswiki/blob/main/worker/README.md) for full deployment instructions.
+See [`worker/README.md`](https://github.com/ps-wiki/ps-wiki.github.io/blob/main/worker/README.md) for full deployment instructions.
 
 ## License
 
