@@ -20,6 +20,23 @@ description: How to contribute terms, run the pipeline, and build the site local
 
 ---
 
+## Pipeline Design
+
+Content flows through three layers:
+
+```
+_wiki/<id>.md  →  database/json/<id>.json  →  docs/wiki/<id>.md  →  site/
+  (you edit)         (canonical storage)        (build artifact)
+```
+
+**`_wiki/` → JSON** is the load-bearing step. The JSON is the single source of truth consumed by the site, the REST API, and the MCP server — it needs to exist regardless of which static site generator is used.
+
+**JSON → `docs/wiki/`** is MkDocs scaffolding: `json2mkdocs.py` resolves citations to footnotes, converts callout syntax to admonitions, and writes MkDocs-ready Markdown. These files are generated at build time and should never be hand-edited.
+
+This means you must run `python pswiki.py process <term-id>` after editing a term before the site picks up your changes.
+
+---
+
 ## Developer CLI
 
 All workflows go through `pswiki.py` at the repo root:
