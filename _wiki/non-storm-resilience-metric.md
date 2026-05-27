@@ -17,7 +17,7 @@ lastmod: 2025-11-03
 generated: 2026-05-26
 ---
 
-### Definition in an IEEE Techical Report
+### Definition in an IEEE Technical Report
 
 Source: <d-cite key="chiu2020resilience"></d-cite> p13
 

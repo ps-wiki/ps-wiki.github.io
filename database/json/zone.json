@@ -38,17 +38,7 @@
           "pjm2023transmission"
         ],
         "page": null,
-        "body_md": "",
-        "figures": [
-          {
-            "path": "/assets/img/pswiki/PJM_zone_map.png",
-            "caption_md": "PJM Transmission Zones Map (from <d-cite key=\"pjm2023transmission\"></d-cite>)",
-            "zoomable": true,
-            "source_keys": [
-              "pjm2023transmission"
-            ]
-          }
-        ]
+        "body_md": "![PJM Transmission Zones Map (from <d-cite key=\"pjm2023transmission\"></d-cite>)](/assets/img/pswiki/PJM_zone_map.png)\n\n*PJM Transmission Zones Map (from <d-cite key=\"pjm2023transmission\"></d-cite>)*\n"
       },
       {
         "order": 2,

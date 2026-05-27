@@ -21,4 +21,4 @@ generated: 2026-05-26
 
 Source: <d-cite key="pjm2025m3v69"></d-cite> p64, Revision 69
 
-> The ability of a generating unit or a group of generating units to maintain synchronism folowing a relatively severe and sudden system disturbance. The first few cycles are the most critical time period.
+> The ability of a generating unit or a group of generating units to maintain synchronism following a relatively severe and sudden system disturbance. The first few cycles are the most critical time period.

@@ -1,6 +1,6 @@
 ---
 title: Smart Grid
-description: Definition of smart grid.
+description: A modernized electricity grid using digital technology to improve reliability, security, and efficiency.
 tags:
   - smart-grid
   - semantic

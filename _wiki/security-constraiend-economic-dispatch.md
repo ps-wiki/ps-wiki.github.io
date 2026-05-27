@@ -1,6 +1,6 @@
 ---
 title: Security Constraiend Economic Dispatch
-description: SCED.
+description: The dispatch of all generators to minimize cost while meeting security constraints in real time.
 tags:
   - dispatch
   - operation

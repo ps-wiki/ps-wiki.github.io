@@ -26,8 +26,8 @@
     "sections": [
       {
         "order": 1,
-        "id": "definition-in-by-pjm",
-        "title": "Definition in by PJM",
+        "id": "definition-by-pjm",
+        "title": "Definition by PJM",
         "type": "definition",
         "source_keys": [
           "pjm2024m10"

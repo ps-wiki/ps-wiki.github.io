@@ -1,6 +1,6 @@
 ---
 title: Participation Factors
-description: One definition is about dispath and another is about small-signal stability.
+description: Factors used to assign load-frequency control or dynamic mode contributions to individual generators.
 tags:
   - sensitivity
   - book

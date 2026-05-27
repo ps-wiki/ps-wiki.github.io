@@ -1,6 +1,6 @@
 ---
 title: Weighted Short-Circuit Ratio
-description: WSCR. It takes interactions between wind plants into account. The WSCR can better reflect the actual system strength when integrating a large amount of wind plants in a weak system.
+description: A metric that accounts for interactions between wind plants to better estimate system strength.
 tags:
   - stability
 related:

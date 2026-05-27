@@ -1,6 +1,6 @@
 ---
 title: Power Transfer Distribution Factor
-description: PTDF.
+description: A measure of the change in electrical loading on transmission facilities due to a power transfer between areas.
 tags:
   - sensitivity
 related: []

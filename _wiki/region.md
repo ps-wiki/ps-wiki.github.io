@@ -19,18 +19,13 @@ generated: 2026-05-26
 
 ### Definition by NERC
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid
-        path="/assets/img/pswiki/six_region.png"
-        zoomable=true %}
-        Regional Maps (from <d-cite key="nerc2024tpl"></d-cite>)
-    </div>
-</div>
-
-<br>
-
 Source: <d-cite key="nerc2024glossary"></d-cite>
+
+![Regional Maps (from <d-cite key="nerc2024tpl"></d-cite>)](/assets/img/pswiki/six_region.png)
+
+*Regional Maps (from <d-cite key="nerc2024tpl"></d-cite>)*
+
+
 
 > NERC divides North America into several regions for the purpose of reliability and coordination. Each region is responsible for ensuring the reliability of the bulk power system within its boundaries. The six regions are:
 >

@@ -26,18 +26,13 @@ A brief graph is given in <d-cite key="pjm2023dam"></d-cite>.
 
 ### Definition by NYISO
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid
-        path="/assets/img/pswiki/day-ahead-scheduling-data-flow.png"
-        zoomable=true %}
-        Figure 3: Day-Ahead Scheduling Data Flow (from <d-cite key="nyiso2024dayahead"></d-cite>)
-    </div>
-</div>
-
-<br>
-
 Source: <d-cite key="nyiso2024dayahead"></d-cite> p7, Version 8.0
+
+![Figure 3: Day-Ahead Scheduling Data Flow (from <d-cite key="nyiso2024dayahead"></d-cite>)](/assets/img/pswiki/day-ahead-scheduling-data-flow.png)
+
+*Figure 3: Day-Ahead Scheduling Data Flow (from <d-cite key="nyiso2024dayahead"></d-cite>)*
+
+
 
 > The following figure shows the interaction and data flow between the various functional components that involve the Day-Ahead process. Each of the blocks and major data flows is described after the figure.
 

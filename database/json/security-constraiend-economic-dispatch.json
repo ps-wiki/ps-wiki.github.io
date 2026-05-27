@@ -2,7 +2,7 @@
   "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "security-constraiend-economic-dispatch",
   "title": "Security Constraiend Economic Dispatch",
-  "description": "SCED.",
+  "description": "The dispatch of all generators to minimize cost while meeting security constraints in real time.",
   "language": "en",
   "tags": [
     "dispatch",

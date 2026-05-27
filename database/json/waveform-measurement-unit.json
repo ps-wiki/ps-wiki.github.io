@@ -2,7 +2,7 @@
   "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "waveform-measurement-unit",
   "title": "Waveform Measurement Unit",
-  "description": "WMU. Sensor device to record synchro-waveforms.",
+  "description": "A sensor device that records time-synchronized synchro-waveform measurements of voltage and current.",
   "language": "en",
   "tags": [
     "measurement",

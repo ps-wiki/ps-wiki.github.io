@@ -1,6 +1,6 @@
 ---
 title: Dynamic Study Model
-description: Reserve for AGC to provide normal regulating margin.
+description: A common dynamic model of the Continental European power system used for multi-TSO simulation studies.
 tags:
   - stability
   - europe
@@ -16,18 +16,13 @@ generated: 2026-05-26
 
 ### Definition by ENTSO-E
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid
-        path="/assets/img/pswiki/dynamic-study-model.png"
-        zoomable=true %}
-        Fig. 1.1: The concept of the Dynamic Study Model (from <d-cite key="entsoe2015dsm"></d-cite>)
-    </div>
-</div>
-
-<br>
-
 Source: <d-cite key="entsoe2015dsm"></d-cite> p3
+
+![Fig. 1.1: The concept of the Dynamic Study Model (from <d-cite key="entsoe2015dsm"></d-cite>)](/assets/img/pswiki/dynamic-study-model.png)
+
+*Fig. 1.1: The concept of the Dynamic Study Model (from <d-cite key="entsoe2015dsm"></d-cite>)*
+
+
 
 > The main target of the Dynamic Study Model was to setup a robust, simple, transparent and easily transferable dynamic model able to reproduce the same results with a high variety of dynamic simulation tools available and in use at the different CE TSOs.
 > 

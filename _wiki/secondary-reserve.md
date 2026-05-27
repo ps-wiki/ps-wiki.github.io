@@ -15,7 +15,7 @@ lastmod: 2025-06-22
 generated: 2026-05-26
 ---
 
-### Definition in by PJM
+### Definition by PJM
 
 Source: <d-cite key="pjm2024m10"></d-cite> p27, Revision 45
 

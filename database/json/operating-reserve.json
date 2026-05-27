@@ -30,22 +30,12 @@
         "order": 1,
         "id": "definition-by-nerc",
         "title": "Definition by NERC",
-        "type": "definition",
+        "type": "note",
         "source_keys": [
           "nerc2024glossary"
         ],
         "page": null,
-        "body_md": "> That capability above firm system demand required to provide for regulation, load forecasting error, equipment forced and scheduled outages and local area protection.\n> It consists of spinning and non-spinning reserve.\n",
-        "figures": [
-          {
-            "path": "/assets/img/pswiki/operating_reserve.png",
-            "caption_md": "Operating Reserves (from <d-cite key=\"nerc2021reserve\"></d-cite>)",
-            "zoomable": true,
-            "source_keys": [
-              "nerc2021reserve"
-            ]
-          }
-        ]
+        "body_md": "![Operating Reserves (from <d-cite key=\"nerc2021reserve\"></d-cite>)](/assets/img/pswiki/operating_reserve.png)\n\n*Operating Reserves (from <d-cite key=\"nerc2021reserve\"></d-cite>)*\n\n\n\n> That capability above firm system demand required to provide for regulation, load forecasting error, equipment forced and scheduled outages and local area protection.\n> It consists of spinning and non-spinning reserve.\n"
       },
       {
         "order": 2,

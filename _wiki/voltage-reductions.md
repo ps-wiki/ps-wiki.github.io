@@ -1,6 +1,6 @@
 ---
 title: Voltage Reductions
-description: A.k.a brownouts
+description: Intentional voltage reductions used to reduce system load, also known as brownouts.
 tags:
   - nerc
 related: []

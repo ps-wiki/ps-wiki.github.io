@@ -25,8 +25,8 @@
     "sections": [
       {
         "order": 1,
-        "id": "definition-in-an-ieee-techical-report-by-doe-gmlc",
-        "title": "Definition in an IEEE Techical Report by DOE GMLC",
+        "id": "definition-in-an-ieee-technical-report-by-doe-gmlc",
+        "title": "Definition in an IEEE Technical Report by DOE GMLC",
         "type": "definition",
         "source_keys": [
           "chiu2020resilience"

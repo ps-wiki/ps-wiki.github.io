@@ -14,7 +14,7 @@ lastmod: 2025-06-20
 generated: 2026-05-26
 ---
 
-### Definition in an IEEE Techical Report by DOE GMLC
+### Definition in an IEEE Technical Report by DOE GMLC
 
 Source: <d-cite key="chiu2020resilience"></d-cite> p13
 

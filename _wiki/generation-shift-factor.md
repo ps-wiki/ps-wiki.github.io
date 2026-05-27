@@ -1,6 +1,6 @@
 ---
 title: Generation Shift Factor
-description: GSF.
+description: A factor expressing a generator's output-change contribution to the flow on a specific transmission facility.
 tags:
   - sensitivity
   - nerc

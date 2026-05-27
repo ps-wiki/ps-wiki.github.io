@@ -18,4 +18,4 @@ generated: 2026-05-26
 
 Source: <d-cite key="nerc2024glossary"></d-cite>
 
-> Provides and operates the “wires” between the transmission system and the end-use customer. For those end-use customers who are served at transmission voltages, the Transmission Owner also serves as the Distribution Provider. Thus, theDistribution Provider is not defined by a specific voltage, but rather as performing the distribution function at any voltage.
+> Provides and operates the “wires” between the transmission system and the end-use customer. For those end-use customers who are served at transmission voltages, the Transmission Owner also serves as the Distribution Provider. Thus, the Distribution Provider is not defined by a specific voltage, but rather as performing the distribution function at any voltage.

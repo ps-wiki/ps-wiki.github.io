@@ -1,6 +1,6 @@
 ---
 title: Remedial Action Scheme
-description: RAS.
+description: A pre-planned operational scheme that responds to specific contingencies to preserve system reliability.
 tags:
   - reliability
   - system-operator

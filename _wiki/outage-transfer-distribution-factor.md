@@ -1,6 +1,6 @@
 ---
 title: Outage Transfer Distribution Factor
-description: OTDF.
+description: A PTDF applied to the post-contingency configuration after one or more facilities are removed from service.
 tags:
   - sensitivity
 related: []

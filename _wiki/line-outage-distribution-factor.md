@@ -1,6 +1,6 @@
 ---
 title: Line Outage Distribution Factor
-description: LODF.
+description: A sensitivity measure of how a line outage affects the flows on other lines in the system.
 tags:
   - sensitivity
 related: []

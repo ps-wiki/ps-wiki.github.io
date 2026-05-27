@@ -45,7 +45,7 @@
           "specialists2023voltage"
         ],
         "page": null,
-        "body_md": "> What are Voltage Dips or Sags?\n>\n> Voltage dips or sags are short-duration decreases in RMS voltage where the voltage levels return to normal levels after a given number of cycles or amount of time. This power quality-related event is commonly categorized by the duration and percentage decrease in the voltage level.\n\n> What causes a voltage dip or sag?\n>\n> Voltage dips are typically caused by faults in the power distribution system. These faults can be caused by naturally occurring events, such as lightning strikes, or created by mad made interference. Given the size and scale of the distribution grid, there are many types of faults that can cause voltage dips.\n"
+        "body_md": "> What are Voltage Dips or Sags?\n>\n> Voltage dips or sags are short-duration decreases in RMS voltage where the voltage levels return to normal levels after a given number of cycles or amount of time. This power quality-related event is commonly categorized by the duration and percentage decrease in the voltage level.\n\n> What causes a voltage dip or sag?\n>\n> Voltage dips are typically caused by faults in the power distribution system. These faults can be caused by naturally occurring events, such as lightning strikes, or created by man-made interference. Given the size and scale of the distribution grid, there are many types of faults that can cause voltage dips.\n"
       }
     ]
   }

@@ -14,7 +14,7 @@ lastmod: 2026-01-18
 generated: 2026-05-26
 ---
 
-### Defintion in an Article
+### Definition in an Article
 
 Source: <d-cite key="ieee1980subsynchronous"></d-cite>
 

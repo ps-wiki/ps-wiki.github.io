@@ -1,6 +1,6 @@
 ---
 title: Resource Scheduling & Commitment
-description: RSC. Security-constrained resource commitment.
+description: Security-constrained resource commitment program used for Day-ahead Market scheduling.
 tags:
   - system-operator
   - pjm
