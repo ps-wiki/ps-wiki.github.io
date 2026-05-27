@@ -11,10 +11,9 @@ related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.1
 date: 2025-11-19
 lastmod: 2025-11-30
-generated: 2026-01-18
+generated: 2026-05-26
 ---
 
 ### Definition by NYISO

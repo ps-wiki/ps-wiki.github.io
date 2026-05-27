@@ -16,7 +16,6 @@
     "short-circuit-ratio-with-interaction-factors",
     "generalized-short-circuit-ratio"
   ],
-  "version": "1.0.0",
   "breaking": false,
   "dates": {
     "created": "2025-11-29",

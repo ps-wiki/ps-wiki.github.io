@@ -15,7 +15,6 @@
     "weighted-short-circuit-ratio",
     "composite-short-circuit-ratio"
   ],
-  "version": "1.0.0",
   "breaking": false,
   "dates": {
     "created": "2025-11-29",

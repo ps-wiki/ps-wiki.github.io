@@ -13,10 +13,9 @@ related: []
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.2
 date: 2025-03-15
 lastmod: 2025-11-28
-generated: 2026-01-18
+generated: 2026-05-26
 ---
 
 ### Definition by NERC

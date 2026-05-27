@@ -14,10 +14,9 @@ related:
 authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
-version: 1.0.0
 date: 2025-10-31
 lastmod: 2025-10-31
-generated: 2026-01-18
+generated: 2026-05-26
 ---
 
 ### Definition in an Article
