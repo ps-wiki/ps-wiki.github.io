@@ -13,6 +13,7 @@ This page records major changes in this wiki.
 - Added prev/next alphabetical navigation on each term page
 - Added sortable All Terms table
 - Added Development guide page
+- Removed per-term `version` field; term pages now show last-modified date only (`version` no longer appears in `/v1/terms/{id}` API responses)
 - Ported REST API documentation
 
 ## 2025

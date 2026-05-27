@@ -93,7 +93,6 @@ def _generate_term_page(term: dict, bib_entries: dict, prev_item: dict | None, n
     description = term["description"]
     tags = term.get("tags", [])
     related = term.get("related", [])
-    version = term.get("version", "")
     last_modified = term.get("dates", {}).get("last_modified", "")
     sections = term.get("content", {}).get("sections", [])
 
@@ -212,7 +211,7 @@ def _generate_term_page(term: dict, bib_entries: dict, prev_item: dict | None, n
     lines.append("")
     github_edit_url = f"{GITHUB_EDIT_BASE}{tid}.md"
     lines.append(
-        f"**Version:** {version} · **Last modified:** {last_modified} · "
+        f"**Last modified:** {last_modified} · "
         f"[Edit this term]({github_edit_url})"
     )
     lines.append("")
