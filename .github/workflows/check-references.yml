@@ -44,9 +44,13 @@ jobs:
         run: pip install -r requirements-dev.txt
 
       - name: Run reference scan
-        # Always use --recover (Wayback lookup) unless manually triggered with recover=false
+        # --recover (Wayback lookup) is for the periodic sweep, not push validation.
+        # Push runs just validate that the URLs in the edited bib are reachable;
+        # recovery (finding archives for dead links) belongs to the scheduled/manual sweep.
         run: |
-          if [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ inputs.recover }}" == "false" ]]; then
+          if [[ "${{ github.event_name }}" == "push" ]]; then
+            python pswiki.py check-refs
+          elif [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ inputs.recover }}" == "false" ]]; then
             python pswiki.py check-refs
           else
             python pswiki.py check-refs --recover
@@ -143,6 +147,9 @@ jobs:
           echo "issue_number=$ISSUE_NUMBER" >> "$GITHUB_OUTPUT"
 
       - name: Post run comment
+        # Skip the per-run comment on push so iterative bib edits don't spam the
+        # tracker; the issue body + open/close state below still reflect push results.
+        if: github.event_name != 'push'
         run: |
           SCAN_DATE=$(date -u +%Y-%m-%d)
           if [ "$BROKEN" -gt 0 ]; then
