@@ -41,7 +41,9 @@ from utils import (
 
 def _yaml_str(key: str, value: str) -> str:
     """Emit one 'key: value' YAML line, quoting the value if it contains special chars."""
-    return yaml.dump({key: value}, default_flow_style=False, allow_unicode=True).strip()
+    return yaml.dump(
+        {key: value}, default_flow_style=False, allow_unicode=True, width=float("inf")
+    ).strip()
 
 
 def yaml_list_block(key: str, items: List[str], indent: int = 0) -> str:
@@ -68,10 +70,11 @@ def yaml_authors_block(authors: List[Dict[str, Any]], indent: int = 0) -> str:
     for a in authors:
         name = a.get("name", "")
         url = a.get("url", "")
-        name_val = yaml.dump({"name": name}, default_flow_style=False, allow_unicode=True).strip()
+        _kw = dict(default_flow_style=False, allow_unicode=True, width=float("inf"))
+        name_val = yaml.dump({"name": name}, **_kw).strip()
         lines.append(f"{ind}  - {name_val}")
         if url:
-            url_val = yaml.dump({"url": url}, default_flow_style=False, allow_unicode=True).strip()
+            url_val = yaml.dump({"url": url}, **_kw).strip()
             lines.append(f"{ind}    {url_val}")
     return "\n".join(lines) + "\n"
 
