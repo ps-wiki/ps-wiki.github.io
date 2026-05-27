@@ -79,10 +79,18 @@ jobs:
           retention-days: 90
 
   # -------------------------------------------------------------------------
-  # Job 2: update the persistent tracking issue
+  # Job 2: report results as a GitHub issue (one issue per breakage incident)
+  #
+  # Model: at most one OPEN ref-health issue at a time.
+  #   - broken found, none open  -> open a new dated incident issue
+  #   - broken found, one open   -> ongoing incident: refresh body (+ comment)
+  #   - all clean, one open      -> resolved: close it (stays as a record)
+  #   - all clean, none open     -> healthy steady state: do nothing
+  # This gives discrete, trackable incidents without spawning a new issue on
+  # every re-scan of the same breakage, and no noise while references are OK.
   # -------------------------------------------------------------------------
   report:
-    name: Update tracking issue
+    name: Report reference health
     needs: scan
     runs-on: ubuntu-latest
     env:
@@ -116,64 +124,53 @@ jobs:
             --run-url "$RUN_URL" \
             > /tmp/issue_body.md
 
-      - name: Find or create tracking issue
-        id: issue
-        run: |
-          # Search for the persistent tracker issue (open or closed)
-          ISSUE_NUMBER=$(gh issue list \
-            --repo "${{ github.repository }}" \
-            --label ref-health \
-            --state all \
-            --json number,title \
-            --jq '.[] | select(.title == "[CI] Reference Health Tracker") | .number' \
-            | head -1)
-
-          if [ -z "$ISSUE_NUMBER" ]; then
-            ISSUE_NUMBER=$(gh issue create \
-              --repo "${{ github.repository }}" \
-              --title "[CI] Reference Health Tracker" \
-              --body-file /tmp/issue_body.md \
-              --label ref-health \
-              --json number \
-              --jq '.number')
-            echo "Created issue #$ISSUE_NUMBER"
-          else
-            gh issue edit "$ISSUE_NUMBER" \
-              --repo "${{ github.repository }}" \
-              --body-file /tmp/issue_body.md
-            echo "Updated issue #$ISSUE_NUMBER"
-          fi
-
-          echo "issue_number=$ISSUE_NUMBER" >> "$GITHUB_OUTPUT"
-
-      - name: Post run comment
-        # Skip the per-run comment on push so iterative bib edits don't spam the
-        # tracker; the issue body + open/close state below still reflect push results.
-        if: github.event_name != 'push'
+      - name: Report incident
+        env:
+          IS_PUSH: ${{ github.event_name == 'push' }}
         run: |
           SCAN_DATE=$(date -u +%Y-%m-%d)
-          if [ "$BROKEN" -gt 0 ]; then
-            STATUS_LINE="⚠️ **$BROKEN broken link(s)** detected — see tables above"
-          else
-            STATUS_LINE="✅ All references OK"
-          fi
-
           SHA_SHORT="${{ github.sha }}"
           SHA_SHORT="${SHA_SHORT:0:7}"
 
-          gh issue comment "${{ steps.issue.outputs.issue_number }}" \
+          # At most one open incident at a time — find it, if any.
+          OPEN_ISSUE=$(gh issue list \
             --repo "${{ github.repository }}" \
-            --body "**Scan — ${SCAN_DATE}** · ${STATUS_LINE}
-          Trigger: \`${{ github.event_name }}\` · commit \`${SHA_SHORT}\` · [view run](${RUN_URL}) · [download report](${ARTIFACT_URL})"
+            --label ref-health \
+            --state open \
+            --json number \
+            --jq '.[0].number // empty')
 
-      - name: Open or close issue based on scan result
-        run: |
           if [ "$BROKEN" -gt 0 ]; then
-            gh issue reopen "${{ steps.issue.outputs.issue_number }}" \
-              --repo "${{ github.repository }}" 2>/dev/null || true
+            if [ -n "$OPEN_ISSUE" ]; then
+              # Ongoing incident — refresh the body; note the re-scan (skip on push).
+              gh issue edit "$OPEN_ISSUE" \
+                --repo "${{ github.repository }}" \
+                --body-file /tmp/issue_body.md
+              if [ "$IS_PUSH" != "true" ]; then
+                gh issue comment "$OPEN_ISSUE" \
+                  --repo "${{ github.repository }}" \
+                  --body "**Re-scan — ${SCAN_DATE}** · ⚠️ still **${BROKEN} broken link(s)** · trigger \`${{ github.event_name }}\` · commit \`${SHA_SHORT}\` · [view run](${RUN_URL}) · [report](${ARTIFACT_URL})"
+              fi
+              echo "Updated open incident #$OPEN_ISSUE"
+            else
+              # New incident — open a fresh, dated issue.
+              # NOTE: gh issue create prints the issue URL (no --json), so parse the number from it.
+              ISSUE_URL=$(gh issue create \
+                --repo "${{ github.repository }}" \
+                --title "[CI] Reference Health — ${BROKEN} broken link(s) (${SCAN_DATE})" \
+                --body-file /tmp/issue_body.md \
+                --label ref-health)
+              echo "Opened new incident ${ISSUE_URL##*/}"
+            fi
           else
-            gh issue close "${{ steps.issue.outputs.issue_number }}" \
-              --repo "${{ github.repository }}" \
-              --comment "All references OK as of $(date -u +%Y-%m-%d). Closing automatically." \
-              2>/dev/null || true
+            if [ -n "$OPEN_ISSUE" ]; then
+              # Resolved — close the incident; it remains as a historical record.
+              gh issue close "$OPEN_ISSUE" \
+                --repo "${{ github.repository }}" \
+                --comment "✅ All references OK as of ${SCAN_DATE} (trigger \`${{ github.event_name }}\`, commit \`${SHA_SHORT}\`). Resolved automatically." \
+                2>/dev/null || true
+              echo "Closed resolved incident #$OPEN_ISSUE"
+            else
+              echo "All references OK and no open incident — nothing to do."
+            fi
           fi
