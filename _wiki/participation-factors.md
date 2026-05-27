@@ -30,7 +30,7 @@ More elaboration can be found in <d-cite key="sun2021smallsignal"></d-cite>.
 
 More details from the book are also excerpted below for reference:
 
-$$ P = [ P_1 \quad P_2 \quad \dots \quad P_n ] $$ (12.49A)
+$$P = [P_1 \quad P_2 \quad \dots \quad P_n] \qquad\text{(12.49A)}$$
 
 with
 
@@ -48,8 +48,8 @@ p_{ni}
 \phi_{2i} \psi_{i2} \\
 \vdots \\
 \phi_{ni} \psi_{in}
-\end{bmatrix}
-$$ (12.49B)
+\end{bmatrix} \qquad\text{(12.49B)}
+$$
 
 where
 
@@ -69,7 +69,6 @@ In view of the eigenvector normalization, the sum of the participation factors a
 
 From Equation 12.48, we see that the participation factor $p_{ki}$ is actually equal to the sensitivity of the eigenvalue $\lambda_i$ to the diagonal element $a_{kk}$ of the state matrix $A$:
 
-$$ p_{ki} = \frac{\partial \lambda_i}{\partial a_{kk}} $$ (12.50)
+$$p_{ki} = \frac{\partial \lambda_i}{\partial a_{kk}} \qquad\text{(12.50)}$$
 
 As we will see in a number of examples in this chapter, the **participation factors are generally indicative of the relative participations** of the respective states in the corresponding modes.
-$$

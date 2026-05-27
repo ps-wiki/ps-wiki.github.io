@@ -27,7 +27,9 @@
         "id": "definition-by-ferc",
         "title": "Definition by FERC",
         "type": "definition",
-        "source_keys": [],
+        "source_keys": [
+          "ferc2020glossary"
+        ],
         "page": null,
         "body_md": "> For natural gas - the act of distributing gas from the city gate or plant to the customer.\n\n> For electric - the act of distributing electric power using low voltage transmission lines that deliver power to retail customers.\n"
       }
