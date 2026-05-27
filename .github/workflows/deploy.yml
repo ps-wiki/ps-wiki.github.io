@@ -15,6 +15,7 @@ on:
       - "**.bib"
       - "**/*.md"
       - "**.yml"
+      - "requirements-dev.txt"
       - "requirements-docs.txt"
       - "!.github/workflows/axe.yml"
       - "!.github/workflows/broken-links.yml"
@@ -44,6 +45,7 @@ on:
       - "**.bib"
       - "**/*.md"
       - "**.yml"
+      - "requirements-dev.txt"
       - "requirements-docs.txt"
       - "!.github/workflows/axe.yml"
       - "!.github/workflows/broken-links.yml"
@@ -79,7 +81,7 @@ jobs:
 
       - name: Install Python deps
         run: |
-          pip install -r database/requirements.txt
+          pip install -r requirements-dev.txt
           pip install -r requirements-docs.txt
 
       - name: Validate JSON terms ✅

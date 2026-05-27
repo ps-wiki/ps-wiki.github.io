@@ -1,4 +1,0 @@
-pyyaml
-jsonschema
-pydantic
-bibtexparser>=1.1,<2

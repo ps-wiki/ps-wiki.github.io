@@ -51,7 +51,7 @@ python pswiki.py build                # production build
 Install Python dependencies before first use:
 
 ```bash
-pip install -r database/requirements.txt -r requirements-docs.txt
+pip install -r requirements-dev.txt -r requirements-docs.txt
 ```
 
 Terms are authored in `_wiki/<term-id>.md` and stored as JSON in `database/json/`. Never hand-edit the JSON files directly — run `python pswiki.py process` to regenerate them.

@@ -36,7 +36,7 @@ python pswiki.py build                # production build (mkdocs --strict)
 Install Python dependencies before first use:
 
 ```bash
-pip install -r database/requirements.txt -r requirements-docs.txt
+pip install -r requirements-dev.txt -r requirements-docs.txt
 ```
 
 ---
