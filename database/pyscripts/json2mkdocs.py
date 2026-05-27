@@ -256,6 +256,57 @@ def _generate_index_page(index_items: list[dict]) -> str:
 
 
 # ---------------------------------------------------------------------------
+# Public API
+# ---------------------------------------------------------------------------
+
+def generate(
+    term_ids: list[str] | None = None, out_dir: str | None = None
+) -> int:
+    """Generate docs/wiki/ pages from JSON term files.
+
+    Args:
+        term_ids: Term IDs to generate (default: all).
+        out_dir: Output directory (default: docs/wiki/).
+
+    Returns:
+        Number of term pages written.
+    """
+    if out_dir is None:
+        out_dir = DEFAULT_OUT_DIR
+
+    os.makedirs(out_dir, exist_ok=True)
+    os.makedirs(DOCS_DIR, exist_ok=True)
+    _ensure_symlink()
+
+    bib_entries = _load_bib()
+    terms = _load_terms(term_ids)
+    index_items = _load_index()
+    id_to_index_pos = {item["id"]: i for i, item in enumerate(index_items)}
+
+    for term in terms:
+        tid = term["id"]
+        pos = id_to_index_pos.get(tid)
+        prev_item = index_items[pos - 1] if pos is not None and pos > 0 else None
+        next_item = (
+            index_items[pos + 1]
+            if pos is not None and pos < len(index_items) - 1
+            else None
+        )
+        page_content = _generate_term_page(term, bib_entries, prev_item, next_item)
+        out_path = os.path.join(out_dir, f"{tid}.md")
+        with open(out_path, "w", encoding="utf-8") as f:
+            f.write(page_content)
+        print(f"  wrote {out_path}")
+
+    index_path = os.path.join(out_dir, "index.md")
+    with open(index_path, "w", encoding="utf-8") as f:
+        f.write(_generate_index_page(index_items))
+    print(f"  wrote {index_path}")
+
+    return len(terms)
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -264,10 +315,7 @@ def main() -> None:
         description="Generate MkDocs wiki pages from JSON term files."
     )
     parser.add_argument(
-        "--terms",
-        nargs="+",
-        metavar="ID",
-        help="Term IDs to process (default: all).",
+        "--terms", nargs="+", metavar="ID", help="Term IDs to process (default: all)."
     )
     parser.add_argument(
         "--out-dir",
@@ -276,37 +324,7 @@ def main() -> None:
         help=f"Output directory for generated pages (default: {DEFAULT_OUT_DIR}).",
     )
     args = parser.parse_args()
-
-    out_dir = args.out_dir
-    os.makedirs(out_dir, exist_ok=True)
-    os.makedirs(DOCS_DIR, exist_ok=True)
-
-    # Ensure docs/assets symlink exists
-    _ensure_symlink()
-
-    bib_entries = _load_bib()
-    terms = _load_terms(args.terms)
-
-    # Build prev/next lookup from the full alphabetical index.
-    index_items = _load_index()
-    id_to_index_pos = {item["id"]: i for i, item in enumerate(index_items)}
-
-    for term in terms:
-        tid = term["id"]
-        pos = id_to_index_pos.get(tid)
-        prev_item = index_items[pos - 1] if pos is not None and pos > 0 else None
-        next_item = index_items[pos + 1] if pos is not None and pos < len(index_items) - 1 else None
-        page_content = _generate_term_page(term, bib_entries, prev_item, next_item)
-        out_path = os.path.join(out_dir, f"{tid}.md")
-        with open(out_path, "w", encoding="utf-8") as f:
-            f.write(page_content)
-        print(f"  wrote {out_path}")
-
-    # Always regenerate the index from the full index.json
-    index_path = os.path.join(out_dir, "index.md")
-    with open(index_path, "w", encoding="utf-8") as f:
-        f.write(_generate_index_page(index_items))
-    print(f"  wrote {index_path}")
+    generate(args.terms, args.out_dir)
 
 
 if __name__ == "__main__":
