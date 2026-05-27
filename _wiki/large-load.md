@@ -13,7 +13,6 @@ authors:
     url: https://jinningwang.github.io
 date: 2025-10-31
 lastmod: 2025-12-02
-generated: 2026-05-26
 ---
 
 ### Definition by NERC

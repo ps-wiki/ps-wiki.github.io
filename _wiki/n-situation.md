@@ -10,7 +10,6 @@ authors:
     url: https://jinningwang.github.io
 date: 2025-11-28
 lastmod: 2025-11-28
-generated: 2026-05-26
 ---
 
 ### Definition in a European Union Regulation

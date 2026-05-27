@@ -16,7 +16,6 @@ authors:
     url: https://jinningwang.github.io
 date: 2025-03-15
 lastmod: 2025-06-22
-generated: 2026-05-26
 ---
 
 ### Definition in an Article by a Joint Task Force of IEEE and CIGRE

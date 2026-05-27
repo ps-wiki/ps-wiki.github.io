@@ -21,7 +21,6 @@ authors:
     url: https://jinningwang.github.io
 date: 2025-12-02
 lastmod: 2026-01-18
-generated: 2026-05-26
 ---
 
 ### Definition by PJM

@@ -10,7 +10,6 @@ authors:
     url: https://jinningwang.github.io
 date: 2025-11-30
 lastmod: 2025-11-30
-generated: 2026-05-26
 ---
 
 ### Definition in an Article

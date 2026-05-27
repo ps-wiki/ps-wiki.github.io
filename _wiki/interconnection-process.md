@@ -14,7 +14,6 @@ authors:
     url: https://jinningwang.github.io/
 date: 2025-11-01
 lastmod: 2025-11-03
-generated: 2026-05-26
 ---
 
 ### Definition by NYISO

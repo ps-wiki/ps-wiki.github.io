@@ -11,7 +11,6 @@ authors:
     url: https://jinningwang.github.io
 date: 2025-06-17
 lastmod: 2025-06-20
-generated: 2026-05-26
 ---
 
 ### Definition by an IEEE Working Group

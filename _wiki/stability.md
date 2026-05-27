@@ -20,7 +20,6 @@ authors:
     url: https://jinningwang.github.io
 date: 2025-03-15
 lastmod: 2025-12-02
-generated: 2026-05-26
 ---
 
 ### Revised Definition in an Article by a Task Force

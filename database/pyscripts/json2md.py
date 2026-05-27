@@ -25,7 +25,6 @@ import sys
 import yaml
 from pathlib import Path
 from typing import List, Dict, Any
-from datetime import datetime
 
 # Import shared constants and utilities from utils module
 from utils import (
@@ -93,8 +92,6 @@ def render_front_matter(term: Dict[str, Any]) -> str:
     dates = term.get("dates", {})
     created = dates.get("created", "")
     lastmod = dates.get("last_modified", "")
-    generated = datetime.now().strftime("%Y-%m-%d")
-
     fm = ["---"]
     fm.append(_yaml_str("title", title))
     if aliases:
@@ -105,7 +102,6 @@ def render_front_matter(term: Dict[str, Any]) -> str:
     fm.append(yaml_authors_block(authors).rstrip())
     fm.append(f"date: {created}")
     fm.append(f"lastmod: {lastmod}")
-    fm.append(f"generated: {generated}")
     fm.append("---")
     return "\n".join(fm) + "\n\n"
 
