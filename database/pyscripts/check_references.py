@@ -145,6 +145,8 @@ def check_url(url: str) -> dict:
         result["category"] = "ok"
     elif 300 <= code < 400:
         result["category"] = "redirect"
+    elif code == 403:
+        result["category"] = "server_error"  # bot-blocking indistinguishable from real 403
     elif 400 <= code < 500:
         result["category"] = "broken"
     else:

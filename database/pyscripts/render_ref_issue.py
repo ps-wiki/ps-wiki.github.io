@@ -46,9 +46,18 @@ def render_issue_body(
     all_results = report["results"]
 
     broken_results = [r for r in all_results if r["category"] in ("broken", "server_error")]
-    recoverable = [r for r in broken_results if r.get("archive_url")]
-    temporary = [r for r in broken_results if not r.get("archive_url") and r["category"] == "server_error"]
-    needs_review = [r for r in broken_results if not r.get("archive_url") and r["category"] == "broken"]
+    recoverable = sorted(
+        [r for r in broken_results if r.get("archive_url")],
+        key=lambda r: (not r.get("used_by"), r["key"]),
+    )
+    temporary = sorted(
+        [r for r in broken_results if not r.get("archive_url") and r["category"] == "server_error"],
+        key=lambda r: (not r.get("used_by"), r["key"]),
+    )
+    needs_review = sorted(
+        [r for r in broken_results if not r.get("archive_url") and r["category"] == "broken"],
+        key=lambda r: (not r.get("used_by"), r["key"]),
+    )
 
     broken_count = len(broken_results)
     status = "✅ All references OK" if broken_count == 0 else f"⚠️ {broken_count} broken link(s) detected"
@@ -108,7 +117,7 @@ def render_issue_body(
 
         if temporary:
             L += [
-                "#### Possibly temporary (5xx / timeout — recheck before acting)",
+                "#### Possibly temporary (5xx / 403 / timeout — recheck before acting)",
                 "",
                 "| Key | Field | Error | Involved terms |",
                 "|-----|-------|-------|----------------|",
