@@ -22,8 +22,8 @@ theme:
     - navigation.top
     - search.highlight
     - content.action.edit
-repo_url: https://github.com/ps-wiki/pswiki
-repo_name: ps-wiki/pswiki
+repo_url: https://github.com/ps-wiki/ps-wiki.github.io
+repo_name: ps-wiki/ps-wiki.github.io
 edit_uri: edit/main/docs/ # hand-authored pages in docs/; wiki pages override with edit_url in frontmatter
 
 plugins:
