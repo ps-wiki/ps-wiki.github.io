@@ -89,7 +89,7 @@ Retrieve full details for a specific term.
 curl "https://pswiki-api.jinninggm.workers.dev/v1/terms/automatic-generation-control"
 ```
 
-**Response**: Complete term JSON including full definition and description, mathematical equations (LaTeX), citations and references, related terms, tags and metadata, and version history.
+**Response**: Complete term JSON including full definition and description, mathematical equations (LaTeX), citations and references, related terms, tags and metadata.
 
 ### GET /v1/tags
 
