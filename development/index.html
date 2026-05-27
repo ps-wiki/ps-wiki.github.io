@@ -1110,6 +1110,8 @@ python<span class="w"> </span>pswiki.py<span class="w"> </span>process<span clas
 python<span class="w"> </span>pswiki.py<span class="w"> </span>validate<span class="w">             </span><span class="c1"># validate all term JSON files</span>
 python<span class="w"> </span>pswiki.py<span class="w"> </span>serve<span class="w">                </span><span class="c1"># local preview at http://localhost:8000</span>
 python<span class="w"> </span>pswiki.py<span class="w"> </span>build<span class="w">                </span><span class="c1"># production build (mkdocs --strict)</span>
+python<span class="w"> </span>pswiki.py<span class="w"> </span>check-refs<span class="w">           </span><span class="c1"># scan papers.bib for broken URLs</span>
+python<span class="w"> </span>pswiki.py<span class="w"> </span>check-refs<span class="w"> </span>--recover<span class="w"> </span><span class="c1"># also query Wayback Machine for broken NERC URLs</span>
 </code></pre></div>
 <p>Install Python dependencies before first use:</p>
 <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements-dev.txt<span class="w"> </span>-r<span class="w"> </span>requirements-docs.txt

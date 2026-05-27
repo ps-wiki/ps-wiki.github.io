@@ -2,7 +2,7 @@
   "$schema": "https://ps-wiki.github.io/schema/v1/term.schema.json",
   "id": "control-performance-standard-2",
   "title": "Control Performance Standard 2",
-  "description": "CPS2. A standard intended to limit unscheduled flows.",
+  "description": "CPS2. Inactive. A standard intended to limit unscheduled flows.",
   "language": "en",
   "tags": [
     "frequency-control",
@@ -12,7 +12,7 @@
   "breaking": false,
   "dates": {
     "created": "2025-03-15",
-    "last_modified": "2025-06-20"
+    "last_modified": "2026-05-27"
   },
   "authors": [
     {
@@ -41,7 +41,7 @@
         "source_keys": [
           "nerc2015bal0011"
         ],
-        "page": "p3",
+        "page": null,
         "body_md": "$$\nCPS2 = \\left[ 1 - \\frac{\\text{Violations}_{\\text{month}}}{\\text{Total Periods}_{\\text{month}} - \\text{Unavailable Periods}_{\\text{month}}} \\right] \\times 100\n$$\n"
       }
     ]

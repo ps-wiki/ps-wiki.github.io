@@ -347,12 +347,12 @@
     {
       "id": "control-performance-standard-2",
       "title": "Control Performance Standard 2",
-      "summary": "CPS2. A standard intended to limit unscheduled flows.",
+      "summary": "CPS2. Inactive. A standard intended to limit unscheduled flows.",
       "tags": [
         "frequency-control",
         "nerc"
       ],
-      "updated_at": "2025-06-20"
+      "updated_at": "2026-05-27"
     },
     {
       "id": "converter-driven-stability",

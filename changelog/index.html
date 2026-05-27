@@ -945,12 +945,16 @@
 <h2 id="2026">2026<a class="headerlink" href="#2026" title="Permanent link">¶</a></h2>
 <h3 id="05-27">05-27<a class="headerlink" href="#05-27" title="Permanent link">¶</a></h3>
 <ul>
+<li>Added reference URL health scanner (<code>python pswiki.py check-refs</code>) — checks all citation URLs in <code>papers.bib</code> for broken links, with optional Wayback Machine recovery for NERC entries; reduced false positives by reclassifying HTTP 403 (bot-blocking CDNs) as temporary rather than broken</li>
+<li>Added quarterly CI workflow for automated reference health scanning; results are surfaced in a persistent GitHub Issue</li>
+<li>Fixed 7 broken citations in <code>papers.bib</code>: 5 NERC URLs replaced with Wayback Machine archive snapshots, 2 PJM manual entries pinned from floating current-doc URLs to versioned archive paths</li>
+<li>Sanitized <code>papers.bib</code>: removed al-folio display fields (<code>pdf</code>, <code>html</code>, <code>bibtex_show</code>) no longer used by MkDocs renderer</li>
 <li>Removed per-term <code>version</code> field; term pages now show last-modified date only (<code>version</code> no longer appears in <code>/v1/terms/{id}</code> API responses)</li>
 <li>Fixed edit-page button to link to the correct GitHub repo (<code>ps-wiki.github.io</code>) and source file (<code>_wiki/&lt;id&gt;.md</code>)</li>
 <li>Added MCP Server documentation page</li>
 <li>Completed Jekyll/al-folio cleanup: removed Docker configs, Ruby plugins, 9 stale CI workflows, and <code>_config.yml</code> (repo is now Python-only)</li>
 <li>Consolidated Python dependencies into <code>requirements-dev.txt</code> at repo root</li>
-<li>Added <code>pswiki.py</code> centralized CLI — all developer workflows (<code>new</code>, <code>process</code>, <code>validate</code>, <code>serve</code>, <code>build</code>) go through one entry point</li>
+<li>Added <code>pswiki.py</code> centralized CLI — all developer workflows (<code>new</code>, <code>process</code>, <code>validate</code>, <code>serve</code>, <code>build</code>, <code>check-refs</code>) go through one entry point</li>
 </ul>
 <h3 id="05-26">05-26<a class="headerlink" href="#05-26" title="Permanent link">¶</a></h3>
 <ul>
