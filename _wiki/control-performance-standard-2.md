@@ -1,6 +1,6 @@
 ---
 title: Control Performance Standard 2
-description: CPS2. A standard intended to limit unscheduled flows.
+description: CPS2. Inactive. A standard intended to limit unscheduled flows.
 tags:
   - frequency-control
   - nerc
@@ -9,7 +9,7 @@ authors:
   - name: Jinning Wang
     url: https://jinningwang.github.io
 date: 2025-03-15
-lastmod: 2025-06-20
+lastmod: 2026-05-27
 ---
 
 ### Definition by NERC
@@ -26,7 +26,7 @@ Source: <d-cite key="nerc2015bal001"></d-cite> p22
 
 ### Calculation by NERC
 
-Source: <d-cite key="nerc2015bal0011"></d-cite> p3
+Source: <d-cite key="nerc2015bal0011"></d-cite>
 
 $$
 CPS2 = \left[ 1 - \frac{\text{Violations}_{\text{month}}}{\text{Total Periods}_{\text{month}} - \text{Unavailable Periods}_{\text{month}}} \right] \times 100
