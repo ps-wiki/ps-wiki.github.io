@@ -38,7 +38,9 @@ def cite_to_footnotes(body_md: str, bib_entries: dict) -> tuple[str, list[str]]:
         author = fields.get("author", "")
         year = fields.get("year", "")
         title = fields.get("title", "")
+        doi = fields.get("doi", "")
         url = fields.get("url", "")
+        link = f"https://doi.org/{doi}" if doi else url
 
         parts: list[str] = []
         if author and year:
@@ -51,8 +53,8 @@ def cite_to_footnotes(body_md: str, bib_entries: dict) -> tuple[str, list[str]]:
         if title:
             parts.append(f"*{title}*.")
 
-        if url:
-            parts.append(f"[{url}]({url})")
+        if link:
+            parts.append(f"[{link}]({link})")
 
         body = " ".join(parts) if parts else f"[{key}]"
         footnote_defs.append(f"[^{key}]: {body}")
