@@ -326,7 +326,7 @@ def build_ordered_dict(
     Otherwise, use standard schema order.
 
     Standard order: $schema, id, title, description, language, tags, related,
-                   aliases, version, breaking, dates, authors, content
+                   aliases, breaking, dates, authors, content
 
     Args:
         term_data: Dictionary with all term data
@@ -345,7 +345,6 @@ def build_ordered_dict(
         "tags",
         "related",
         "aliases",
-        "version",
         "breaking",
         "dates",
         "authors",
