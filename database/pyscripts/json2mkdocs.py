@@ -104,6 +104,7 @@ def _generate_term_page(term: dict, bib_entries: dict, prev_item: dict | None, n
     lines.append(f'title: "{title}"')
     if tags:
         lines.append(f"tags: [{tags_yaml}]")
+    lines.append(f"edit_url: {GITHUB_EDIT_BASE}{tid}.md")
     lines.append("---")
     lines.append("")
 
@@ -112,11 +113,6 @@ def _generate_term_page(term: dict, bib_entries: dict, prev_item: dict | None, n
     lines.append("")
     lines.append(f"> {description}")
     lines.append("")
-
-    # --- Tags line ---
-    if tags:
-        lines.append("Tags: " + " · ".join(tags))
-        lines.append("")
 
     # --- Sections ---
     # Sort: sections with order come first (ascending), then those without (by title).
@@ -209,11 +205,7 @@ def _generate_term_page(term: dict, bib_entries: dict, prev_item: dict | None, n
     # --- Footer ---
     lines.append("---")
     lines.append("")
-    github_edit_url = f"{GITHUB_EDIT_BASE}{tid}.md"
-    lines.append(
-        f"**Last modified:** {last_modified} · "
-        f"[Edit this term]({github_edit_url})"
-    )
+    lines.append(f"**Last modified:** {last_modified}")
     lines.append("")
 
     if related:
