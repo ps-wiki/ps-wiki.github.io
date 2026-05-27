@@ -52,6 +52,7 @@ nav:
       - All Terms: wiki/index.md
       - By Tags: tags.md
   - REST API: rest-api.md
+  - MCP Server: mcp.md
   - Development: development.md
   - Changelog: changelog.md
 
