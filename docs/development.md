@@ -18,34 +18,64 @@ description: How to contribute terms, run the pipeline, and build the site local
 | `worker/`                             | Cloudflare Worker REST API (TypeScript).                                              |
 | `mcp/`                                | MCP server (Python).                                                                  |
 
+---
+
+## Developer CLI
+
+All workflows go through `pswiki.py` at the repo root:
+
+```bash
+python pswiki.py new <term-id>        # scaffold a new term
+python pswiki.py process <term-id>    # run the full pipeline for one term
+python pswiki.py process              # process all terms
+python pswiki.py validate             # validate all term JSON files
+python pswiki.py serve                # local preview at http://localhost:8000
+python pswiki.py build                # production build (mkdocs --strict)
+```
+
+Install Python dependencies before first use:
+
+```bash
+pip install -r database/requirements.txt -r requirements-docs.txt
+```
+
+---
+
 ## Adding or Editing a Term
 
-### 1. Edit the Markdown file
+### 1. Scaffold or create the Markdown file
 
-Create or edit `_wiki/<term-id>.md`. Use `_wiki/adequacy.md` or `_wiki/stability.md` as templates.
+For a new term, scaffold it:
+
+```bash
+python pswiki.py new <term-id>
+```
+
+This creates `_wiki/<term-id>.md` with all required front matter pre-filled. For an existing term, edit `_wiki/<term-id>.md` directly.
 
 Term IDs are **kebab-case** and must match the filename stem (e.g. `frequency-stability` → `_wiki/frequency-stability.md`).
 
 ### 2. Run the pipeline
 
 ```bash
-python database/pyscripts/process.py --terms <term-id>
+python pswiki.py process <term-id>
 ```
 
-This runs format → convert → validate → rebuild the index. Omit `--terms` to process all 181 terms.
+This runs format → convert → validate → rebuild the index and `bib.json`. Omit the ID to process all terms.
 
 ```bash
-python database/pyscripts/process.py              # all terms
-python database/pyscripts/process.py --index-only # rebuild index only
-python database/pyscripts/process.py --dry-run --verbose  # preview, no writes
+python pswiki.py process              # all terms
+python pswiki.py process --dry-run    # preview without writing
+python pswiki.py process --no-validate  # skip schema validation (faster, for drafting)
 ```
 
 ### 3. Preview locally
 
 ```bash
-python database/pyscripts/json2mkdocs.py --terms <term-id>   # regenerate that term's page
-mkdocs serve                                                   # live preview at localhost:8000
+python pswiki.py serve
 ```
+
+Builds the full site and starts a live-reload server at <http://localhost:8000>. To pick up edits to a term while the server is running, run `python pswiki.py process <term-id>` in a second terminal — mkdocs detects the regenerated page and reloads.
 
 ### 4. Commit both files
 
@@ -54,7 +84,7 @@ _wiki/<term-id>.md
 database/json/<term-id>.json
 ```
 
-Never commit changes to `docs/wiki/` (generated) or `database/build/` (regenerated in CI).
+Never commit `docs/wiki/` (generated) or `database/build/` (regenerated at build time).
 
 ---
 
@@ -71,14 +101,12 @@ related: [related-term-id-1, related-term-id-2]
 authors:
   - name: Author Name
     url: https://author-url.com
-version: 1.0.0
 date: 2025-03-15
 lastmod: 2025-11-19
 ---
 ```
 
-`lastmod` and the `generated` comment are managed by the pipeline — don't set them manually.  
-Bump `version` (semver) on meaningful content changes.
+`lastmod` and `generated` are managed by the pipeline — do not set them manually.
 
 ### Sections
 
@@ -104,7 +132,7 @@ Source: <d-cite key="nerc2024glossary"></d-cite> p42
 
 For multiple sources: `Source: <d-cite key="key1"></d-cite> <d-cite key="key2"></d-cite>`
 
-The pipeline resolves citations to footnotes in the rendered site.
+The pipeline resolves citations to footnotes in the rendered site. If a BibTeX entry has a `doi` field, the footnote links to `https://doi.org/{doi}`; otherwise it uses the `url` field.
 
 ### Callouts
 
@@ -117,73 +145,17 @@ Use kramdown block attributes for highlighted notes:
 <!-- prettier-ignore-end -->
 ```
 
-Available types: `block-danger`, `block-warning`, `block-tip`, `block-note`.
-The `<!-- prettier-ignore -->` wrappers are required to prevent CI formatting errors.
+Available types: `block-danger`, `block-warning`, `block-tip`, `block-note`. The pipeline converts these to MkDocs admonitions at build time. The `<!-- prettier-ignore -->` wrappers are required to prevent CI formatting errors.
 
 ### Figures
 
-Store images in `assets/img/pswiki/` then reference them in the section body:
+Store images in `assets/img/pswiki/` then embed them with standard Markdown:
 
-```html
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="/assets/img/pswiki/your-figure.png" zoomable=true %} Caption text with optional <d-cite key="source-key"></d-cite>
-  </div>
-</div>
-<br />
+```markdown
+![Caption text (from <d-cite key="source-key"></d-cite>)](/assets/img/pswiki/your-figure.png)
 ```
 
 The pipeline extracts figures into the JSON and the site generator renders them with lightbox zoom.
-
----
-
-## Pipeline Scripts
-
-### `process.py` — main orchestrator
-
-```bash
-python database/pyscripts/process.py [--terms id1 id2] [--index-only] [--dry-run] [--no-validate] [--verbose]
-```
-
-Runs the full chain: `format.py` → `md2json.py` → `validate.py` → index rebuild.
-
-### Individual scripts
-
-```bash
-# Markdown → JSON
-python database/pyscripts/md2json.py --terms stability
-
-# JSON → Markdown (normalise / roundtrip)
-python database/pyscripts/json2md.py --terms stability
-
-# Format (MD → JSON → MD roundtrip to normalise)
-python database/pyscripts/format.py --terms stability
-
-# Validate JSON against schema
-python database/pyscripts/validate.py --terms stability
-
-# Generate MkDocs pages from JSON
-python database/pyscripts/json2mkdocs.py --terms stability
-```
-
----
-
-## Local Site Build
-
-```bash
-# Install dependencies (once)
-pip install -r database/requirements.txt -r requirements-docs.txt
-
-# Generate all term pages, then serve with live reload
-python database/pyscripts/json2mkdocs.py
-mkdocs serve
-
-# Production build (mirrors CI)
-python database/pyscripts/json2mkdocs.py
-mkdocs build --strict
-```
-
-The site builds in ~1.3 s for all 181 terms.
 
 ---
 
@@ -191,15 +163,13 @@ The site builds in ~1.3 s for all 181 terms.
 
 1. Add the BibTeX entry to `assets/bibliography/papers.bib`.
 2. Use the key in `<d-cite key="your-key"></d-cite>` in `_wiki/<term-id>.md`.
-3. Run `python database/pyscripts/process.py --terms <term-id>` to rebuild.
-
-The pipeline's `bib2json.py` exports `papers.bib` → `database/build/bib.json` which the site generator uses to render footnotes.
+3. Run `python pswiki.py process <term-id>` to rebuild.
 
 ---
 
 ## Formatting & CI
 
-The CI pipeline enforces [Prettier](https://prettier.io/) formatting (print width 150, Liquid plugin). Run before pushing:
+The CI pipeline enforces [Prettier](https://prettier.io/) formatting (print width 150). Run before pushing:
 
 ```bash
 npx prettier --write .
@@ -220,7 +190,6 @@ All term JSON files conform to `database/schema/v1/term.schema.json`. Key fields
 | `description`                    | string   | One-sentence summary                                |
 | `tags`                           | string[] | Lowercase kebab-case                                |
 | `related`                        | string[] | IDs of related terms                                |
-| `version`                        | string   | Semver (bump on content change)                     |
 | `content.sections`               | array    | Ordered list of definition sections                 |
 | `content.sections[].source_keys` | string[] | BibTeX keys for this section                        |
 | `content.sections[].body_md`     | string   | Markdown body (may contain `<d-cite>` and callouts) |
@@ -233,7 +202,7 @@ Contributions are welcome. The preferred workflow is:
 
 1. Fork the repository and create a branch.
 2. Add or edit terms following the conventions above.
-3. Run the pipeline and confirm `mkdocs build --strict` passes with 0 warnings.
+3. Run the pipeline and confirm `python pswiki.py build` passes with 0 warnings.
 4. Run `npx prettier --write .` before committing.
 5. Open a pull request — CI will validate, build, and check formatting automatically.
 
