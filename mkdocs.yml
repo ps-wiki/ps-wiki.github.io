@@ -49,8 +49,8 @@ markdown_extensions:
 nav:
   - About: index.md
   - Wiki:
-    - All Terms: wiki/index.md
-    - By Tags: tags.md
+      - All Terms: wiki/index.md
+      - By Tags: tags.md
   - REST API: rest-api.md
   - Development: development.md
   - Changelog: changelog.md
