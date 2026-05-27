@@ -9,6 +9,7 @@ This page records major changes in this wiki.
 
 ### 05-27
 
+- Fixed edit-page button to link to the correct GitHub repo (`ps-wiki.github.io`) and source file (`_wiki/<id>.md`)
 - Added MCP Server documentation page
 - Completed Jekyll/al-folio cleanup: removed Docker configs, Ruby plugins, 9 stale CI workflows, and `_config.yml` (repo is now Python-only)
 - Consolidated Python dependencies into `requirements-dev.txt` at repo root

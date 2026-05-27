@@ -2,6 +2,8 @@ site_name: Power Systems Wiki
 site_url: https://ps-wiki.github.io/
 docs_dir: docs
 site_dir: site
+hooks:
+  - docs/hooks/edit_url_override.py
 theme:
   name: material
   palette:

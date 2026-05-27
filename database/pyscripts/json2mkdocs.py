@@ -29,7 +29,7 @@ DOCS_DIR = os.path.join(REPO_ROOT, "docs")
 ASSETS_LINK = os.path.join(DOCS_DIR, "assets")
 ASSETS_TARGET = os.path.join("..", "assets")  # relative symlink
 
-GITHUB_EDIT_BASE = "https://github.com/ps-wiki/pswiki/edit/main/_wiki/"
+GITHUB_EDIT_BASE = "https://github.com/ps-wiki/ps-wiki.github.io/edit/main/_wiki/"
 
 _DCITE_RE = re.compile(r'<d-cite key="([^"]+)"></d-cite>')
 _HTML_TAG_RE = re.compile(r"<[^>]+>")
