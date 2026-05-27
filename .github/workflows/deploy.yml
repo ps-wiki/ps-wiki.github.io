@@ -95,6 +95,13 @@ jobs:
             --json-dir database/json \
             --build-dir database/build
 
+      - name: Build bibliography JSON 📚
+        run: |
+          python database/pyscripts/bib2json.py \
+            --input assets/bibliography/papers.bib \
+            --output database/build/bib.json \
+            --pretty
+
       - name: Generate MkDocs pages 📝
         run: python database/pyscripts/json2mkdocs.py
 
