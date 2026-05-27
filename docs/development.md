@@ -48,6 +48,8 @@ python pswiki.py process              # process all terms
 python pswiki.py validate             # validate all term JSON files
 python pswiki.py serve                # local preview at http://localhost:8000
 python pswiki.py build                # production build (mkdocs --strict)
+python pswiki.py check-refs           # scan papers.bib for broken URLs
+python pswiki.py check-refs --recover # also query Wayback Machine for broken NERC URLs
 ```
 
 Install Python dependencies before first use:
