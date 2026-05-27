@@ -8,6 +8,8 @@ Usage:
     python pswiki.py validate [<id> ...]  Validate JSON against schema
     python pswiki.py serve                Build and serve site locally
     python pswiki.py build                Production build (mkdocs --strict)
+    python pswiki.py check-refs           Check bibliography URLs for broken links
+    python pswiki.py check-refs --recover Also query Wayback Machine for broken NERC URLs
 """
 
 import argparse
@@ -131,6 +133,40 @@ def _cmd_build(args: argparse.Namespace) -> None:
     cmd_build()
 
 
+def _cmd_check_refs(args: argparse.Namespace) -> None:
+    from check_references import (
+        build_report,
+        collect_urls,
+        load_bib,
+        print_summary,
+        scan,
+    )
+
+    bib_path = Path(args.bib) if args.bib else _REPO_ROOT / "assets" / "bibliography" / "papers.bib"
+    out_path = Path(args.out) if args.out else _REPO_ROOT / "database" / "build" / "reference_check.json"
+
+    print(f"Parsing {bib_path} ...")
+    entries = load_bib(bib_path)
+    records = collect_urls(entries)
+    print(f"Found {len(records)} unique URLs across {len(entries)} entries.\n")
+
+    print("Scanning URLs ...")
+    results = scan(records, recover=args.recover)
+
+    import json
+
+    report = build_report(results, bib_path)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    print(f"\nReport written to {out_path}")
+
+    print_summary(report)
+
+    broken = report["summary"].get("broken", 0) + report["summary"].get("server_error", 0)
+    if broken:
+        sys.exit(1)
+
+
 # ---------------------------------------------------------------------------
 # Argument parser
 # ---------------------------------------------------------------------------
@@ -149,6 +185,8 @@ def _build_parser() -> argparse.ArgumentParser:
             "  python pswiki.py validate\n"
             "  python pswiki.py serve\n"
             "  python pswiki.py build\n"
+            "  python pswiki.py check-refs\n"
+            "  python pswiki.py check-refs --recover\n"
         ),
     )
 
@@ -194,6 +232,20 @@ def _build_parser() -> argparse.ArgumentParser:
         "build", help="Production build (mkdocs build --strict)"
     )
     p_build.set_defaults(func=_cmd_build)
+
+    # check-refs
+    p_chk = sub.add_parser(
+        "check-refs",
+        help="Check bibliography URLs for broken links",
+    )
+    p_chk.add_argument(
+        "--recover",
+        action="store_true",
+        help="Query Wayback Machine for broken NERC URLs",
+    )
+    p_chk.add_argument("--bib", metavar="PATH", help="Path to .bib file (default: papers.bib)")
+    p_chk.add_argument("--out", metavar="PATH", help="Path for JSON report (default: database/build/reference_check.json)")
+    p_chk.set_defaults(func=_cmd_check_refs)
 
     return parser
 
