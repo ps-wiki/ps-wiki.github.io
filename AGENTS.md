@@ -86,6 +86,16 @@ For any non-trivial change, **write a plan before writing code**:
 
 Trivial fixes (a typo, a single term edit) don't need a project folder — use judgment.
 
+## Agent skills
+
+Reusable workflow guides live in `skills/`. Each file is a self-contained, agent-agnostic
+step-by-step guide for a common task. Claude Code exposes them as slash commands via
+symlinks in `.claude/commands/`.
+
+| Skill | File | Purpose |
+|---|---|---|
+| `/new-term` | `skills/new-term.md` | Add a new wiki term end-to-end |
+
 ## Project history & locked decisions
 
 Key decisions already made — don't re-open these without a strong reason.
