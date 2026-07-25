@@ -5,16 +5,16 @@ body:
   - type: markdown
     attributes:
       value: >
-        Use this form to request a new wiki term or a close synonym/alias that should
-        become a standalone page. Please search the wiki and existing issues first.
+        Use this form to request a new wiki term or a close synonym/alias that should become a standalone page.
+        If you are using an agent, read [AGENTS.md](https://github.com/ps-wiki/ps-wiki.github.io/blob/main/AGENTS.md)
+        and the [/new-term skill](https://github.com/ps-wiki/ps-wiki.github.io/blob/main/skills/new-term.md) first.
 
   - type: checkboxes
     id: requirements
     attributes:
       label: Have you checked that this term is not already covered?
       description: >
-        Please check the wiki for existing terms, and search through past issues
-        before filing a new request.
+        Please check the wiki and past issues before filing a new request.
       options:
         - label: I searched the wiki and did not find an exact match.
           required: true

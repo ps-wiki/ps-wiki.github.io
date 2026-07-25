@@ -5,22 +5,17 @@ body:
   - type: markdown
     attributes:
       value: >
-        Before you go any further. Is this really a **🐛 bug**?
-
-        If it's a question about how al-folio works, have a look at our [documentation](https://github.com/alshedivat/al-folio/blob/main/README.md),
-        [frequently asked questions](https://github.com/alshedivat/al-folio/blob/main/FAQ.md),
-        [past questions](https://github.com/alshedivat/al-folio/discussions/categories/q-a),
-        or [ask a question](https://github.com/alshedivat/al-folio/discussions/new?category=q-a).
+        Before you go any further, is this really a **🐛 bug**?
+        If this is a usage question, please read the [README](https://github.com/ps-wiki/ps-wiki.github.io/blob/main/README.md) and the docs first.
 
   - type: checkboxes
     id: requirements
     attributes:
       label: Have you checked that your issue isn't already filed?
       description: >
-        Please check if somebody else has already filed the same issue.
-        If you find a similar issue, please add a 👍 reaction or comment on the original post.
+        Please check whether somebody else has already filed the same issue.
       options:
-        - label: I read through [FAQ](https://github.com/alshedivat/al-folio/blob/main/FAQ.md) and searched through the [past issues](https://github.com/alshedivat/al-folio/issues), none of which addressed my issue.
+        - label: I searched the wiki docs and past issues, none of which addressed my bug.
           required: true
         - label: Yes, I have checked that this issue isn't already filed.
           required: true

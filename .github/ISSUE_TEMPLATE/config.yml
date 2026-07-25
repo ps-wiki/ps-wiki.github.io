@@ -1,8 +1,11 @@
 blank_issues_enabled: false
 contact_links:
-  - name: ❓ Ask a Question
-    url: https://github.com/alshedivat/al-folio/discussions/categories/q-a
-    about: Ask and answer al-folio related questions.
+  - name: 🤖 Read the agent guide
+    url: https://github.com/ps-wiki/ps-wiki.github.io/blob/main/AGENTS.md
+    about: Repo workflow rules, including the `/new-term` skill.
+  - name: 🧾 Open the new-term skill
+    url: https://github.com/ps-wiki/ps-wiki.github.io/blob/main/skills/new-term.md
+    about: Step-by-step guidance for adding a new wiki term.
   - name: 📖 Read the documentation
-    url: https://github.com/alshedivat/al-folio/blob/main/README.md
-    about: Please consult the documentation before opening any issues!
+    url: https://github.com/ps-wiki/ps-wiki.github.io/blob/main/README.md
+    about: Please consult the docs before opening an issue.
