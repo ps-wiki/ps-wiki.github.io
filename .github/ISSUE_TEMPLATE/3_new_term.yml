@@ -1,0 +1,80 @@
+name: 🧾 New term request
+description: Request a new glossary term or concept page
+labels: ["needs triage", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Use this form to request a new wiki term or a close synonym/alias that should
+        become a standalone page. Please search the wiki and existing issues first.
+
+  - type: checkboxes
+    id: requirements
+    attributes:
+      label: Have you checked that this term is not already covered?
+      description: >
+        Please check the wiki for existing terms, and search through past issues
+        before filing a new request.
+      options:
+        - label: I searched the wiki and did not find an exact match.
+          required: true
+        - label: I searched past issues and did not find an existing request for this term.
+          required: true
+
+  - type: input
+    id: term_title
+    attributes:
+      label: Term title
+      description: The title you want the wiki page to use.
+      placeholder: Auction Revenue Rights
+    validations:
+      required: true
+
+  - type: input
+    id: term_id
+    attributes:
+      label: Proposed term ID
+      description: Kebab-case slug for `_wiki/<term-id>.md`.
+      placeholder: auction-revenue-rights
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Why this term belongs in the wiki
+      description: A short summary of the concept and why it deserves its own page.
+      placeholder: Explain the concept and how it is used in power systems practice.
+    validations:
+      required: true
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Source links or citations
+      description: Links to papers, standards, manuals, or authoritative pages that define the term.
+      placeholder: |
+        - https://...
+        - <bib key if already known>
+    validations:
+      required: true
+
+  - type: textarea
+    id: related
+    attributes:
+      label: Related existing terms
+      description: List any close matches, broader terms, or likely redirects already in the wiki.
+      placeholder: |
+        - financial-transmission-right
+        - reserve
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes
+      description: Anything else maintainers should know, including whether this is an acronym, synonym, or separate concept.
+      placeholder: Add any extra context here.
+    validations:
+      required: false
