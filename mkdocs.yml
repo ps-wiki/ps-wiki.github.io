@@ -59,7 +59,13 @@ nav:
   - Changelog: changelog.md
 
 extra_javascript:
+  - javascripts/analytics.js
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - javascripts/tablesort.js
+
+extra:
+  analytics:
+    provider: google
+    property: G-VHPLN0DS16
