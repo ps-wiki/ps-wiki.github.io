@@ -987,12 +987,12 @@
 
 <p>The <strong>PS-Wiki REST API</strong> provides programmatic access to 173+ power systems terminology definitions via a simple HTTP interface. Hosted on Cloudflare Workers for global low-latency access.</p>
 <h2 id="base-url">Base URL<a class="headerlink" href="#base-url" title="Permanent link">¶</a></h2>
-<div class="highlight"><pre><span></span><code>https://pswiki-api.jinninggm.workers.dev
+<div class="highlight"><pre><span></span><code>https://pswiki-api.jinning.workers.dev
 </code></pre></div>
-<p><strong>OpenAPI Specification</strong>: <a href="https://pswiki-api.jinninggm.workers.dev/openapi.json">/openapi.json</a></p>
+<p><strong>OpenAPI Specification</strong>: <a href="https://pswiki-api.jinning.workers.dev/openapi.json">/openapi.json</a></p>
 <h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">¶</a></h2>
 <h3 id="search-for-terms">Search for Terms<a class="headerlink" href="#search-for-terms" title="Permanent link">¶</a></h3>
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span><span class="s2">"https://pswiki-api.jinninggm.workers.dev/v1/terms?query=stability&amp;limit=5"</span>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span><span class="s2">"https://pswiki-api.jinning.workers.dev/v1/terms?query=stability&amp;limit=5"</span>
 </code></pre></div>
 <p><strong>Response</strong>:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -1009,7 +1009,7 @@
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="get-a-specific-term">Get a Specific Term<a class="headerlink" href="#get-a-specific-term" title="Permanent link">¶</a></h3>
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span><span class="s2">"https://pswiki-api.jinninggm.workers.dev/v1/terms/voltage-stability"</span>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span><span class="s2">"https://pswiki-api.jinning.workers.dev/v1/terms/voltage-stability"</span>
 </code></pre></div>
 <p>Returns the complete term data including definition, equations, citations, and metadata.</p>
 <h2 id="api-endpoints">API Endpoints<a class="headerlink" href="#api-endpoints" title="Permanent link">¶</a></h2>
@@ -1024,16 +1024,16 @@
 </ul>
 <p><strong>Examples</strong>:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># List all terms (paginated)</span>
-curl<span class="w"> </span><span class="s2">"https://pswiki-api.jinninggm.workers.dev/v1/terms?limit=10"</span>
+curl<span class="w"> </span><span class="s2">"https://pswiki-api.jinning.workers.dev/v1/terms?limit=10"</span>
 
 <span class="c1"># Search by keyword</span>
-curl<span class="w"> </span><span class="s2">"https://pswiki-api.jinninggm.workers.dev/v1/terms?query=frequency+control"</span>
+curl<span class="w"> </span><span class="s2">"https://pswiki-api.jinning.workers.dev/v1/terms?query=frequency+control"</span>
 
 <span class="c1"># Filter by tag</span>
-curl<span class="w"> </span><span class="s2">"https://pswiki-api.jinninggm.workers.dev/v1/terms?tag=stability"</span>
+curl<span class="w"> </span><span class="s2">"https://pswiki-api.jinning.workers.dev/v1/terms?tag=stability"</span>
 
 <span class="c1"># Combine search and limit</span>
-curl<span class="w"> </span><span class="s2">"https://pswiki-api.jinninggm.workers.dev/v1/terms?query=power+flow&amp;limit=5"</span>
+curl<span class="w"> </span><span class="s2">"https://pswiki-api.jinning.workers.dev/v1/terms?query=power+flow&amp;limit=5"</span>
 </code></pre></div>
 <h3 id="get-v1termsid">GET /v1/terms/{id}<a class="headerlink" href="#get-v1termsid" title="Permanent link">¶</a></h3>
 <p>Retrieve full details for a specific term.</p>
@@ -1042,12 +1042,12 @@ curl<span class="w"> </span><span class="s2">"https://pswiki-api.jinninggm.worke
 <li><code>id</code> (string, required) — Term identifier (e.g., <code>voltage-stability</code>)</li>
 </ul>
 <p><strong>Example</strong>:</p>
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span><span class="s2">"https://pswiki-api.jinninggm.workers.dev/v1/terms/automatic-generation-control"</span>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span><span class="s2">"https://pswiki-api.jinning.workers.dev/v1/terms/automatic-generation-control"</span>
 </code></pre></div>
 <p><strong>Response</strong>: Complete term JSON including full definition and description, mathematical equations (LaTeX), citations and references, related terms, tags and metadata.</p>
 <h3 id="get-v1tags">GET /v1/tags<a class="headerlink" href="#get-v1tags" title="Permanent link">¶</a></h3>
 <p>List all available tags with usage counts.</p>
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span><span class="s2">"https://pswiki-api.jinninggm.workers.dev/v1/tags"</span>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span><span class="s2">"https://pswiki-api.jinning.workers.dev/v1/tags"</span>
 </code></pre></div>
 <p><strong>Response</strong>:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -1064,7 +1064,7 @@ curl<span class="w"> </span><span class="s2">"https://pswiki-api.jinninggm.worke
 <ul>
 <li><code>since</code> (string, required) — ISO 8601 date or datetime (e.g., <code>2025-11-01</code>)</li>
 </ul>
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span><span class="s2">"https://pswiki-api.jinninggm.workers.dev/v1/changes?since=2025-11-01"</span>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span><span class="s2">"https://pswiki-api.jinning.workers.dev/v1/changes?since=2025-11-01"</span>
 </code></pre></div>
 <p><strong>Response</strong>:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -1082,14 +1082,14 @@ curl<span class="w"> </span><span class="s2">"https://pswiki-api.jinninggm.worke
 
 <span class="c1"># Search for terms</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
-    <span class="s2">"https://pswiki-api.jinninggm.workers.dev/v1/terms"</span><span class="p">,</span>
+    <span class="s2">"https://pswiki-api.jinning.workers.dev/v1/terms"</span><span class="p">,</span>
     <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s2">"query"</span><span class="p">:</span> <span class="s2">"stability"</span><span class="p">,</span> <span class="s2">"limit"</span><span class="p">:</span> <span class="mi">10</span><span class="p">}</span>
 <span class="p">)</span>
 <span class="n">terms</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 
 <span class="c1"># Get specific term</span>
 <span class="n">term</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
-    <span class="s2">"https://pswiki-api.jinninggm.workers.dev/v1/terms/voltage-stability"</span>
+    <span class="s2">"https://pswiki-api.jinning.workers.dev/v1/terms/voltage-stability"</span>
 <span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Title: </span><span class="si">{</span><span class="n">term</span><span class="p">[</span><span class="s1">'title'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -1099,13 +1099,13 @@ curl<span class="w"> </span><span class="s2">"https://pswiki-api.jinninggm.worke
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="c1">// Search for terms</span>
 <span class="kd">const</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span>
-<span class="w">  </span><span class="s2">"https://pswiki-api.jinninggm.workers.dev/v1/terms?query=stability&amp;limit=10"</span>
+<span class="w">  </span><span class="s2">"https://pswiki-api.jinning.workers.dev/v1/terms?query=stability&amp;limit=10"</span>
 <span class="p">);</span>
 <span class="kd">const</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
 
 <span class="c1">// Get specific term</span>
 <span class="kd">const</span><span class="w"> </span><span class="nx">term</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span>
-<span class="w">  </span><span class="s2">"https://pswiki-api.jinninggm.workers.dev/v1/terms/voltage-stability"</span>
+<span class="w">  </span><span class="s2">"https://pswiki-api.jinning.workers.dev/v1/terms/voltage-stability"</span>
 <span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">r</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">r</span><span class="p">.</span><span class="nx">json</span><span class="p">());</span>
 
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Title: </span><span class="si">${</span><span class="nx">term</span><span class="p">.</span><span class="nx">title</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
@@ -1114,15 +1114,15 @@ curl<span class="w"> </span><span class="s2">"https://pswiki-api.jinninggm.worke
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="c1"># Pretty-print search results</span>
-curl<span class="w"> </span>-s<span class="w"> </span><span class="s2">"https://pswiki-api.jinninggm.workers.dev/v1/terms?query=stability"</span><span class="w"> </span><span class="se">\</span>
+curl<span class="w"> </span>-s<span class="w"> </span><span class="s2">"https://pswiki-api.jinning.workers.dev/v1/terms?query=stability"</span><span class="w"> </span><span class="se">\</span>
 <span class="w">  </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span><span class="s1">'.items[] | {id, title}'</span>
 
 <span class="c1"># Extract just the description</span>
-curl<span class="w"> </span>-s<span class="w"> </span><span class="s2">"https://pswiki-api.jinninggm.workers.dev/v1/terms/voltage-stability"</span><span class="w"> </span><span class="se">\</span>
+curl<span class="w"> </span>-s<span class="w"> </span><span class="s2">"https://pswiki-api.jinning.workers.dev/v1/terms/voltage-stability"</span><span class="w"> </span><span class="se">\</span>
 <span class="w">  </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span>-r<span class="w"> </span><span class="s1">'.description'</span>
 
 <span class="c1"># List all tags</span>
-curl<span class="w"> </span>-s<span class="w"> </span><span class="s2">"https://pswiki-api.jinninggm.workers.dev/v1/tags"</span><span class="w"> </span><span class="se">\</span>
+curl<span class="w"> </span>-s<span class="w"> </span><span class="s2">"https://pswiki-api.jinning.workers.dev/v1/tags"</span><span class="w"> </span><span class="se">\</span>
 <span class="w">  </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span><span class="s1">'.tags[] | "\(.tag): \(.count)"'</span>
 </code></pre></div>
 </div>
