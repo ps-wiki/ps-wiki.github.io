@@ -355,7 +355,7 @@ def main(argv=None) -> int:
     parser.add_argument(
         "--base-url",
         default="https://ps-wiki.github.io",
-        help="Base URL (default: https://ps-wiki.github.io). Examples: http://localhost:8787 or https://pswiki-api.jinninggm.workers.dev",
+        help="Base URL (default: https://ps-wiki.github.io). Examples: http://localhost:8787 or https://pswiki-api.jinning.workers.dev",
     )
     parser.add_argument("--query", help="Optional free-text query for /v1/terms")
     parser.add_argument("--tag", help="Optional tag filter for /v1/terms")

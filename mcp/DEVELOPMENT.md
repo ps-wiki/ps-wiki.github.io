@@ -263,7 +263,7 @@ mcp-inspector python -m pswiki_mcp
 
 **API calls failing:**
 
-- Verify API is accessible: `curl https://pswiki-api.jinninggm.workers.dev/v1/terms`
+- Verify API is accessible: `curl https://pswiki-api.jinning.workers.dev/v1/terms`
 - Check network connectivity
 - Look for rate limiting issues
 
@@ -351,6 +351,6 @@ jobs:
 
 - [MCP Specification](https://modelcontextprotocol.io)
 - [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)
-- [PS-Wiki REST API](https://pswiki-api.jinninggm.workers.dev/openapi.json)
+- [PS-Wiki REST API](https://pswiki-api.jinning.workers.dev/openapi.json)
 - [Pydantic Documentation](https://docs.pydantic.dev/)
 - [pytest Documentation](https://docs.pytest.org/)

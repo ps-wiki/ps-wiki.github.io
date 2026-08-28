@@ -31,7 +31,7 @@ Built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/), the 
 ## REST API
 
 The PS-Wiki REST API provides read-only access to term data in JSON format.
-It is deployed via [Cloudflare Workers](./worker) and documented using the OpenAPI 3.1.0 specification at <https://pswiki-api.jinninggm.workers.dev/openapi.json>
+It is deployed via [Cloudflare Workers](./worker) and documented using the OpenAPI 3.1.0 specification at <https://pswiki-api.jinning.workers.dev/openapi.json>
 
 ### Developer Notes
 

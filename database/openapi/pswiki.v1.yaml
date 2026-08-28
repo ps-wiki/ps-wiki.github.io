@@ -7,7 +7,7 @@ info:
     name: CC BY-NC 4.0
     url: https://creativecommons.org/licenses/by-nc/4.0/
 servers:
-  - url: https://pswiki-api.jinninggm.workers.dev
+  - url: https://pswiki-api.jinning.workers.dev
     description: Production server
   - url: http://localhost:8787
     description: Local development server
