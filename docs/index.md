@@ -25,8 +25,8 @@ For programmatic access, see the [REST API](rest-api.md).
 
 ## Why This Wiki Exists
 
-Language is inherently ambiguous, and power system terminologies are no exception.
-Inspired by an email titled "Definitions of Smart Grids a Decade Ago – What Has Changed?" on [Power-Globe](https://pages.mtu.edu/~ljbohman/peec/globe/) in 2024, this wiki was started to compile terminologies from papers, standards, reports, and other traceable sources.
+Power-system language is inherently ambiguous, and terminology is no exception.
+This wiki was initiated by [Jinning Wang](https://jinningwang.github.io/) following a 2024 email on [Power-Globe](https://pages.mtu.edu/~ljbohman/peec/globe/) titled "Definitions of Smart Grids a Decade Ago – What Has Changed?" with the aim of compiling clear, traceable terminology from papers, standards, reports, and other authoritative sources.
 
 ## Disclaimer
 
