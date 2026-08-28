@@ -265,6 +265,10 @@ async with stdio_client(server_params) as (read, write):
 
 The MCP server fetches data from the [PS-Wiki REST API](https://pswiki-api.jinning.workers.dev) hosted on Cloudflare Workers. All data is read-only and licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
+> **API URL changed:** The API hostname changed from
+> `pswiki-api.jinninggm.workers.dev` to `pswiki-api.jinning.workers.dev`.
+> Update any custom MCP client configuration that still uses the former URL.
+
 ## Development
 
 ### Setup Development Environment

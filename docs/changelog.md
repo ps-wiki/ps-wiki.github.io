@@ -7,6 +7,10 @@ This page records major changes in this wiki.
 
 ## 2026
 
+### 08-28
+
+- Changed the public REST API hostname to `https://pswiki-api.jinning.workers.dev`; clients using `pswiki-api.jinninggm.workers.dev` should update their configuration
+
 ### 05-27
 
 - Added reference URL health scanner (`python pswiki.py check-refs`) — checks all citation URLs in `papers.bib` for broken links, with optional Wayback Machine recovery for NERC entries; reduced false positives by reclassifying HTTP 403 (bot-blocking CDNs) as temporary rather than broken

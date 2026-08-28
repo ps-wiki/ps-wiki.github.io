@@ -5,6 +5,12 @@ description: Read-only REST API for accessing PS-Wiki terminology data
 
 The **PS-Wiki REST API** provides programmatic access to 173+ power systems terminology definitions via a simple HTTP interface. Hosted on Cloudflare Workers for global low-latency access.
 
+<!-- prettier-ignore-start -->
+!!! warning "API URL changed"
+    The PS-Wiki API is now available at `https://pswiki-api.jinning.workers.dev`.
+    Update clients using the former `pswiki-api.jinninggm.workers.dev` URL.
+<!-- prettier-ignore-end -->
+
 ## Base URL
 
 ```
