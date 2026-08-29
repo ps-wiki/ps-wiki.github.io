@@ -1,0 +1,27 @@
+# Power Systems Wiki
+
+> An open, cited reference for power systems engineering terminology, created by Jinning Wang and maintained with community contributions.
+
+Canonical site: https://ps-wiki.github.io/
+
+Power Systems Wiki compares definitions from papers, standards, and industry reports. Term pages are secondary reference pages; follow their citations when a primary source is required.
+
+## Browse
+
+- [All terms](https://ps-wiki.github.io/wiki/): Alphabetical index of terminology pages.
+- [Tags](https://ps-wiki.github.io/tags/): Terms grouped by subject.
+- [About and usage guidance](https://ps-wiki.github.io/): Purpose, scope, and suggestions for using the wiki.
+
+## Machine-readable access
+
+- [Term index](https://ps-wiki.github.io/api/index.json): Searchable metadata for all terms.
+- [Term JSON](https://ps-wiki.github.io/terms/voltage-stability.json): Example complete term record. Replace `voltage-stability` with a term ID.
+- [OpenAPI specification](https://ps-wiki.github.io/api/openapi.yaml): REST API contract.
+- [REST API documentation](https://ps-wiki.github.io/rest-api/): Endpoints and examples.
+- [MCP server documentation](https://ps-wiki.github.io/mcp/): Tools for AI assistants and MCP clients.
+
+## Attribution and interpretation
+
+- Preserve links or citations to the original sources when summarizing a definition.
+- Distinguish between definitions from different organizations instead of merging them into a single authoritative definition.
+- The wiki content is available under [CC BY-NC 4.0](https://github.com/ps-wiki/ps-wiki.github.io/blob/main/LICENSE).
