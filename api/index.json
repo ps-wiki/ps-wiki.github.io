@@ -1164,7 +1164,7 @@
         "system-operator",
         "nyiso"
       ],
-      "updated_at": "2025-06-22"
+      "updated_at": "2026-05-27"
     },
     {
       "id": "oscillation",
@@ -1984,5 +1984,5 @@
       "updated_at": "2025-11-02"
     }
   ],
-  "generated_at": "2026-08-28"
+  "generated_at": "2026-08-29"
 }

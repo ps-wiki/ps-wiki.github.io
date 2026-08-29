@@ -1192,9 +1192,12 @@ Source: &lt;d-cite key="nerc2024glossary"&gt;&lt;/d-cite&gt;
 <p>Available types: <code>block-danger</code>, <code>block-warning</code>, <code>block-tip</code>, <code>block-note</code>. The pipeline converts these to MkDocs admonitions at build time. The <code>&lt;!-- prettier-ignore --&gt;</code> wrappers are required to prevent CI formatting errors.</p>
 <h3 id="figures">Figures<a class="headerlink" href="#figures" title="Permanent link">¶</a></h3>
 <p>Store images in <code>assets/img/pswiki/</code> then embed them with standard Markdown:</p>
-<div class="highlight"><pre><span></span><code>![<span class="nt">Caption text (from &lt;d-cite key="source-key"&gt;&lt;/d-cite&gt;)</span>](<span class="na">/assets/img/pswiki/your-figure.png</span>)
+<div class="highlight"><pre><span></span><code>![<span class="nt">Concise description of the figure</span>](<span class="na">/assets/img/pswiki/your-figure.png</span>)
+
+<span class="ge">_Caption text (from &lt;d-cite key="source-key"&gt;&lt;/d-cite&gt;)_</span>
 </code></pre></div>
-<p>The pipeline extracts figures into the JSON and the site generator renders them with lightbox zoom.</p>
+<p>Keep citations in the visible caption rather than the image alt text.
+The pipeline extracts the image and optional caption into structured JSON, and the site generator renders the figure with lightbox zoom.</p>
 <hr>
 <h2 id="adding-a-citation">Adding a Citation<a class="headerlink" href="#adding-a-citation" title="Permanent link">¶</a></h2>
 <ol>
