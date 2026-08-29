@@ -1,0 +1,27 @@
+# Search and user-triggered access for OpenAI products.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Model-training access for OpenAI products.
+User-agent: GPTBot
+Allow: /
+
+# Search and user-triggered access for Anthropic products.
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Model-training access for Anthropic products.
+User-agent: ClaudeBot
+Allow: /
+
+# Preserve the site's existing open-crawl policy for other agents.
+User-agent: *
+Allow: /
+
+Sitemap: https://ps-wiki.github.io/sitemap.xml

@@ -1,5 +1,6 @@
 ---
 title: About
+description: An open, cited reference for power systems engineering terminology.
 ---
 
 # Power Systems Wiki
@@ -21,7 +22,15 @@ Whenever a concept has multiple interpretations—whether in academic papers, te
 1. **Stay current**: Terminology evolves as the field advances. We update entries regularly; check back for the latest additions and revisions.
 1. **Contribute**: Spot an error, omission, or new term? Please open an issue or submit a pull request on our [GitHub repository](https://github.com/ps-wiki/pswiki).
 
-For programmatic access, see the [REST API](rest-api.md).
+## Use with AI Assistants
+
+You can share this site or an individual term page with a web-enabled AI assistant and ask it to compare definitions, summarize differences, or follow the cited sources.
+For example:
+
+> Using the Power Systems Wiki, explain voltage stability, compare the definitions on the term page, and retain links to the original sources.
+
+For reliable machine-readable access, use the [term JSON files](https://ps-wiki.github.io/terms/voltage-stability.json), [REST API](rest-api.md), or [MCP server](mcp.md).
+The [`llms.txt`](llms.txt) file gives assistants a concise map of these resources.
 
 ## Why This Wiki Exists
 

@@ -1,11 +1,14 @@
 site_name: Power Systems Wiki
 site_url: https://ps-wiki.github.io/
+site_description: An open, cited reference for power systems terminology.
+site_author: Jinning Wang
 docs_dir: docs
 site_dir: site
 hooks:
   - docs/hooks/edit_url_override.py
 theme:
   name: material
+  custom_dir: overrides
   palette:
     - scheme: default
       primary: blue

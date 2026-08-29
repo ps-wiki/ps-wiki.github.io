@@ -1,0 +1,84 @@
+{% extends "base.html" %} {% block site_meta %}
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+{% if page.meta and page.meta.description %}
+<meta name="description" content="{{ page.meta.description | e }}" />
+{% elif config.site_description %}
+<meta name="description" content="{{ config.site_description | e }}" />
+{% endif %} {% if page.meta and page.meta.author %}
+<meta name="author" content="{{ page.meta.author | e }}" />
+{% elif config.site_author %}
+<meta name="author" content="{{ config.site_author | e }}" />
+{% endif %} {% if page.canonical_url %}
+<link rel="canonical" href="{{ page.canonical_url | e }}" />
+{% endif %} {% if page.previous_page %}
+<link rel="prev" href="{{ page.previous_page.url | url }}" />
+{% endif %} {% if page.next_page %}
+<link rel="next" href="{{ page.next_page.url | url }}" />
+{% endif %} {% if config.extra.alternate is iterable %} {% for alt in config.extra.alternate %}
+<link rel="alternate" href="{{ alt.link | url }}" hreflang="{{ alt.lang | d(lang.t('language')) }}" />
+{% endfor %} {% endif %} {% if "rss" in config.plugins %}
+<link rel="alternate" type="application/rss+xml" title="{{ lang.t('rss.created') }}" href="{{ 'feed_rss_created.xml' | url }}" />
+<link rel="alternate" type="application/rss+xml" title="{{ lang.t('rss.updated') }}" href="{{ 'feed_rss_updated.xml' | url }}" />
+{% endif %}
+<link rel="icon" href="{{ config.theme.favicon | url }}" />
+<meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-9.7.6" />
+{% endblock %} {% block extrahead %} {{ super() }} {% if page %} {% set description = page.meta.description if page.meta and page.meta.description
+else config.site_description %} {% set page_title = config.site_name if page.is_homepage else page.title %}
+<meta property="og:site_name" content="{{ config.site_name }}" />
+<meta property="og:title" content="{{ page_title | e }}" />
+<meta property="og:description" content="{{ description | e }}" />
+<meta property="og:type" content="{{ 'article' if page.meta and page.meta.term_id else 'website' }}" />
+<meta property="og:url" content="{{ page.canonical_url | e }}" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="{{ page_title | e }}" />
+<meta name="twitter:description" content="{{ description | e }}" />
+{% if page.meta and page.meta.json_url %}
+<link rel="alternate" type="application/json" title="{{ page_title | e }} as JSON" href="{{ page.meta.json_url | e }}" />
+{% endif %}
+<script type="application/ld+json">
+  {% if page.meta and page.meta.term_id %}
+    {
+      "@context": "https://schema.org",
+      "@type": "DefinedTerm",
+      "name": {{ page_title | tojson }},
+      "description": {{ description | tojson }},
+      "termCode": {{ page.meta.term_id | tojson }},
+      "url": {{ page.canonical_url | tojson }},
+      "sameAs": {{ page.meta.json_url | tojson }},
+      "inDefinedTermSet": {
+        "@type": "DefinedTermSet",
+        "name": "Power Systems Wiki",
+        "url": "https://ps-wiki.github.io/"
+      }
+    }
+  {% elif page.is_homepage %}
+    {
+      "@context": "https://schema.org",
+      "@type": "DefinedTermSet",
+      "name": "Power Systems Wiki",
+      "description": {{ description | tojson }},
+      "url": "https://ps-wiki.github.io/",
+      "creator": {
+        "@type": "Person",
+        "name": "Jinning Wang",
+        "url": "https://jinningwang.github.io/"
+      },
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/"
+    }
+  {% else %}
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": {{ page_title | tojson }},
+      "description": {{ description | tojson }},
+      "url": {{ page.canonical_url | tojson }},
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Power Systems Wiki",
+        "url": "https://ps-wiki.github.io/"
+      }
+    }
+  {% endif %}
+</script>
+{% endif %} {% endblock %}

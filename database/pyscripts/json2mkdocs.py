@@ -30,6 +30,7 @@ ASSETS_LINK = os.path.join(DOCS_DIR, "assets")
 ASSETS_TARGET = os.path.join("..", "assets")  # relative symlink
 
 GITHUB_EDIT_BASE = "https://github.com/ps-wiki/ps-wiki.github.io/edit/main/_wiki/"
+TERM_JSON_BASE = "https://ps-wiki.github.io/terms/"
 
 _DCITE_RE = re.compile(r'<d-cite key="([^"]+)"></d-cite>')
 _HTML_TAG_RE = re.compile(r"<[^>]+>")
@@ -143,7 +144,10 @@ def _generate_term_page(term: dict, bib_entries: dict, prev_item: dict | None, n
     # --- Front matter ---
     tags_yaml = ", ".join(tags)
     lines.append("---")
-    lines.append(f'title: "{title}"')
+    lines.append(f"title: {json.dumps(title, ensure_ascii=False)}")
+    lines.append(f"description: {json.dumps(description, ensure_ascii=False)}")
+    lines.append(f"term_id: {json.dumps(tid)}")
+    lines.append(f"json_url: {TERM_JSON_BASE}{tid}.json")
     if tags:
         lines.append(f"tags: [{tags_yaml}]")
     lines.append(f"edit_url: {GITHUB_EDIT_BASE}{tid}.md")
@@ -242,6 +246,8 @@ def _generate_term_page(term: dict, bib_entries: dict, prev_item: dict | None, n
     lines.append("---")
     lines.append("")
     lines.append(f"**Last modified:** {last_modified}")
+    lines.append("")
+    lines.append(f"**Machine-readable:** [JSON]({TERM_JSON_BASE}{tid}.json)")
     lines.append("")
 
     if related:
