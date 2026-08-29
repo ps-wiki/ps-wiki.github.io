@@ -1,6 +1,8 @@
 **/*.map
 **/*.min.css
 **/*.min.js
+AGENTS.md
+skills/
 _wiki/
 database/schema/
 database/build/
