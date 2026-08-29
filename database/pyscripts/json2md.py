@@ -10,7 +10,7 @@ Rules:
 - tags/related/authors may be missing or empty -> emit [].
 - dates.created / dates.last_modified may be missing or empty -> derive
 - Each section:
-  - Figures (if any) appear BEFORE text, each figure block followed by a literal <br>.
+  - Figures (if any) appear before text as standard Markdown images with optional captions.
   - Then a "Source: <d-cite key="..."></d-cite>" line; append page if provided.
   - Then the section body_md verbatim.
 - No new prose is introduced; body_md and caption_md are passed through as-is.
@@ -21,6 +21,7 @@ Usage:
 
 import argparse
 import json
+import re
 import sys
 import yaml
 from pathlib import Path
@@ -109,28 +110,29 @@ def render_front_matter(term: Dict[str, Any]) -> str:
 # ---------- Section/figure rendering ----------
 
 
-def render_figure_block(fig: Dict[str, Any]) -> str:
-    """Render one figure include block; add a literal <br> after it."""
-    path = fig.get("path", "")
-    zoomable = fig.get("zoomable", True)
-    zoom_val = "true" if zoomable else "false"
-    caption = fig.get("caption_md", "")  # verbatim
+_DCITE_RE = re.compile(r'<d-cite\s+key="[^"]+"></d-cite>')
+_HTML_TAG_RE = re.compile(r"<[^>]+>")
 
-    lines = []
-    lines.append('<div class="row mt-3">')
-    lines.append('    <div class="col-sm mt-3 mt-md-0">')
-    lines.append("        {% include figure.liquid")
-    lines.append(f'        path="{path}"')
-    # Avoid f-string braces issue by concatenating the closing `%}`
-    lines.append(f"        zoomable={zoom_val} " + "%}")
+
+def _plain_figure_alt(text: str) -> str:
+    """Return concise, citation-free text for an image alt attribute."""
+    text = _DCITE_RE.sub("", text)
+    text = re.sub(r"\s*\(\s*from\s*\)\s*", "", text, flags=re.IGNORECASE)
+    text = _HTML_TAG_RE.sub("", text)
+    text = re.sub(r"[*_`]", "", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def render_figure_block(fig: Dict[str, Any]) -> str:
+    """Render one structured figure as portable Markdown."""
+    path = fig.get("path", "")
+    caption = fig.get("caption_md", "") or ""
+    alt = _plain_figure_alt(fig.get("alt") or caption)
+
+    lines = [f"![{alt}]({path})"]
     if caption:
-        lines.append(f"        {caption}")
-    lines.append("    </div>")
-    lines.append("</div>")
-    lines.append("")  # blank line
-    lines.append("<br>")
-    lines.append("")  # blank line
-    return "\n".join(lines)
+        lines.extend(["", f"*{caption}*"])
+    return "\n".join(lines) + "\n"
 
 
 def render_cite_line(source_keys: List[str], page: Any) -> str:
@@ -154,7 +156,7 @@ def render_section(sec: Dict[str, Any]) -> str:
     # H3 heading
     out.append(f"### {title}\n")
 
-    # Figures first (each followed by <br>)
+    # Figures first
     if figures:
         for fig in figures:
             out.append(render_figure_block(fig))

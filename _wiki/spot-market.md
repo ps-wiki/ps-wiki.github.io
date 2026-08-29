@@ -21,4 +21,4 @@ Source: <d-cite key="ferc2020glossary"></d-cite>
 
 > The natural gas market for contractual commitments that are short term (usually a month or less) and that begin in the near future (often the next day, or within days).
 >
-> In electricity, spot markets are usually organized markets for [day-ahead](/wiki/day-ahead-markets) and real-time electricity run by an independent system operator or regional transmission organization.
+> In electricity, spot markets are usually organized markets for [day-ahead](/wiki/day-ahead-energy-market) and real-time electricity run by an independent system operator or regional transmission organization.

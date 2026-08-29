@@ -8,7 +8,7 @@ Rules:
 - Parse YAML front matter for: title, description, tags, related, authors, date, lastmod.
 - Body is split into sections by '### ' headings (H3).
 - For each section block:
-  - Extract figure blocks that contain '{% include figure.liquid ... %}' inside the <div class="row mt-3"> wrapper.
+  - Extract standard Markdown figures and legacy '{% include figure.liquid ... %}' blocks.
   - Extract a 'Source:' line with one or more '<d-cite key="..."></d-cite>' tags; trailing text on that same line becomes 'page'.
   - Remaining text is 'body_md' verbatim.
   - Section 'type' is 'definition' if the first non-empty body line starts with '>'; otherwise 'note'.
@@ -48,6 +48,24 @@ DCITE_RE = re.compile(r'<d-cite\s+key="([^"]+)"></d-cite>')
 INCLUDE_FIG_RE = re.compile(r"{%\s*include\s+figure\.liquid")
 PATH_RE = re.compile(r'path="([^"]+)"')
 ZOOM_RE = re.compile(r"zoomable\s*=\s*(true|false)", re.IGNORECASE)
+MARKDOWN_FIG_RE = re.compile(
+    r"^\s*!\[(?P<alt>.*)\]\((?P<path>\S+?)"
+    r"(?:\s+(?:\"[^\"]*\"|'[^']*'))?\)\s*$"
+)
+ITALIC_CAPTION_RE = re.compile(
+    r"^\s*(?:\*(?P<asterisk>.+)\*|_(?P<underscore>.+)_)\s*$"
+)
+HTML_TAG_RE = re.compile(r"<[^>]+>")
+
+
+def _plain_figure_alt(text: str) -> str:
+    """Return concise, citation-free text for an image alt attribute."""
+    text = DCITE_RE.sub("", text)
+    text = re.sub(r"\s*\(\s*from\s*\)\s*", "", text, flags=re.IGNORECASE)
+    text = HTML_TAG_RE.sub("", text)
+    text = re.sub(r"[*_`]", "", text)
+    return re.sub(r"\s+", " ", text).strip()
+
 
 def load_existing_json(json_path: Path) -> Optional[Dict[str, Any]]:
     """Load existing JSON file if it exists, return None otherwise."""
@@ -121,8 +139,57 @@ def split_front_matter(text: str) -> (Dict[str, Any], str):
 class Figure:
     path: str
     caption_md: str
+    alt: str
     zoomable: bool
     source_keys: List[str]
+
+
+def extract_markdown_figure(
+    lines: List[str], start_idx: int
+) -> tuple[Optional[Figure], int]:
+    """Extract a standalone Markdown image and optional italic caption."""
+    if start_idx >= len(lines):
+        return None, start_idx
+
+    match = MARKDOWN_FIG_RE.match(lines[start_idx])
+    if not match:
+        return None, start_idx
+
+    alt_md = match.group("alt").strip()
+    path = match.group("path")
+    next_idx = start_idx + 1
+
+    while next_idx < len(lines) and not lines[next_idx].strip():
+        next_idx += 1
+
+    caption_md = ""
+    if next_idx < len(lines):
+        caption_match = ITALIC_CAPTION_RE.match(lines[next_idx])
+        if caption_match:
+            caption_md = (
+                caption_match.group("asterisk")
+                or caption_match.group("underscore")
+                or ""
+            ).strip()
+            next_idx += 1
+
+    # Preserve a cited image label as a visible caption even when an explicit
+    # caption line is absent. Footnote citations must never remain in alt text.
+    if not caption_md and DCITE_RE.search(alt_md):
+        caption_md = alt_md
+
+    while next_idx < len(lines) and not lines[next_idx].strip():
+        next_idx += 1
+
+    source_keys = DCITE_RE.findall(caption_md)
+    figure = Figure(
+        path=path,
+        caption_md=caption_md,
+        alt=_plain_figure_alt(alt_md),
+        zoomable=True,
+        source_keys=source_keys,
+    )
+    return figure, next_idx
 
 
 def extract_figures_from_section(
@@ -189,7 +256,11 @@ def extract_figures_from_section(
 
     source_keys = DCITE_RE.findall(caption_md) if caption_md else []
     fig = Figure(
-        path=path, caption_md=caption_md, zoomable=zoomable, source_keys=source_keys
+        path=path,
+        caption_md=caption_md,
+        alt=_plain_figure_alt(caption_md),
+        zoomable=zoomable,
+        source_keys=source_keys,
     )
     return fig, (k if found_close else include_idx + 1)
 
@@ -254,6 +325,12 @@ def parse_sections(body_md: str) -> List[Section]:
         i = 0
         while i < len(content_lines):
             line = content_lines[i]
+            if MARKDOWN_FIG_RE.match(line):
+                fig, next_i = extract_markdown_figure(content_lines, i)
+                if fig:
+                    figures.append(fig)
+                    i = next_i
+                    continue
             if INCLUDE_FIG_RE.search(line) or line.strip().startswith(
                 '<div class="row'
             ):
@@ -423,6 +500,7 @@ def build_json_from_md(
                                 {
                                     "path": f.path,
                                     "caption_md": f.caption_md,
+                                    "alt": f.alt,
                                     "zoomable": f.zoomable,
                                     "source_keys": f.source_keys,
                                 }

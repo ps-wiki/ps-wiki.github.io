@@ -21,13 +21,11 @@ lastmod: 2025-06-22
 
 ### Definition by NERC
 
-Source: <d-cite key="nerc2021balancing"></d-cite>
-
-![Typical Frequency Trend for the Loss of a Generating Resource (from <d-cite key="nerc2021balancing"></d-cite>).](/assets/img/pswiki/frequency_trend.png)
+![Typical Frequency Trend for the Loss of a Generating Resource.](/assets/img/pswiki/frequency_trend.png)
 
 *Typical Frequency Trend for the Loss of a Generating Resource (from <d-cite key="nerc2021balancing"></d-cite>).*
 
-
+Source: <d-cite key="nerc2021balancing"></d-cite>
 
 > Typically includes the balancing services deployed in the “minutes” time frame. Some resources, such as hydroelectric generation, can respond faster in many cases.
 > This control is accomplished using the Balancing Authority’s control computer (terms most often associated with this are **“Load-Frequency Control”** or [**“Automatic Generation Control”**](/wiki/automatic-generation-control/)) and the manual actions taken by the dispatcher to provide additional adjustments. Secondary Control also includes initial reserve deployment for disturbances.

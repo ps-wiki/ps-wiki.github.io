@@ -20,11 +20,11 @@ lastmod: 2025-11-02
 
 ### Definition by PJM
 
-Source: <d-cite key="pjm2023transmission"></d-cite>
-
-![PJM Transmission Zones Map (from <d-cite key="pjm2023transmission"></d-cite>)](/assets/img/pswiki/PJM_zone_map.png)
+![PJM Transmission Zones Map](/assets/img/pswiki/PJM_zone_map.png)
 
 *PJM Transmission Zones Map (from <d-cite key="pjm2023transmission"></d-cite>)*
+
+Source: <d-cite key="pjm2023transmission"></d-cite>
 
 ### Definition by MATPOWER
 

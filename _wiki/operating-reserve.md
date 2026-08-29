@@ -18,13 +18,11 @@ lastmod: 2026-05-27
 
 ### Definition by NERC
 
-Source: <d-cite key="nerc2024glossary"></d-cite>
-
-![Operating Reserves (from <d-cite key="nerc2021reserve"></d-cite>)](/assets/img/pswiki/operating_reserve.png)
+![Operating Reserves](/assets/img/pswiki/operating_reserve.png)
 
 *Operating Reserves (from <d-cite key="nerc2021reserve"></d-cite>)*
 
-
+Source: <d-cite key="nerc2024glossary"></d-cite>
 
 > That capability above firm system demand required to provide for regulation, load forecasting error, equipment forced and scheduled outages and local area protection.
 > It consists of spinning and non-spinning reserve.

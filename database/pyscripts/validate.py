@@ -4,6 +4,8 @@ Validate term JSON files in ./database/json/ against:
   - JSON Schema (./database/schema/v1/term.schema.json)
   - Unique IDs across files
   - Existence of IDs referenced in `related` (always checks against full directory)
+  - Existence of site-root `/wiki/` and `/assets/` targets in term content
+  - Absence of citations inside image alt text
 
 Supports validating all files (default) or specific terms by ID.
 
@@ -25,11 +27,67 @@ in the directory, not just the subset being validated.
 """
 
 import argparse
+import re
 import sys
 from pathlib import Path
 from typing import Any, Dict, List, Set
 
 from utils import DEFAULT_JSON_DIR, DEFAULT_SCHEMA_PATH, load_json, validate_term_schema
+
+
+WIKI_LINK_RE = re.compile(r"/wiki/(?P<term_id>[a-z0-9]+(?:[a-z0-9-]*[a-z0-9])?)/?")
+ASSET_LINK_RE = re.compile(r"/assets/(?P<path>[^)\s\"']+)")
+CITED_IMAGE_ALT_RE = re.compile(
+    r"!\[[^\]\n]*<d-cite\s+key=\"[^\"]+\"></d-cite>[^\]\n]*\]"
+)
+DCITE_RE = re.compile(r'<d-cite\s+key="[^"]+"></d-cite>')
+
+
+def _content_reference_errors(
+    term_id: str,
+    data: Dict[str, Any],
+    known_ids: Set[str],
+    assets_dir: Path,
+) -> List[str]:
+    """Return invalid internal-link, asset, and image-alt errors for one term."""
+    errors: List[str] = []
+    sections = data.get("content", {}).get("sections", [])
+
+    for section in sections:
+        section_id = section.get("id", "unknown-section")
+        context = f"{term_id}.json: section '{section_id}'"
+        body_md = section.get("body_md", "") or ""
+
+        for match in WIKI_LINK_RE.finditer(body_md):
+            target = match.group("term_id")
+            if target not in known_ids:
+                errors.append(f"{context}: wiki target '{target}' not found")
+
+        for match in ASSET_LINK_RE.finditer(body_md):
+            relative_path = match.group("path").split("#", 1)[0].split("?", 1)[0]
+            if not (assets_dir / relative_path).is_file():
+                errors.append(f"{context}: asset '/assets/{relative_path}' not found")
+
+        if CITED_IMAGE_ALT_RE.search(body_md):
+            errors.append(f"{context}: image alt text must not contain <d-cite>")
+
+        for figure in section.get("figures", []) or []:
+            figure_path = figure.get("path", "") or ""
+            if figure_path.startswith("/assets/"):
+                relative_path = (
+                    figure_path.removeprefix("/assets/")
+                    .split("#", 1)[0]
+                    .split("?", 1)[0]
+                )
+                if not (assets_dir / relative_path).is_file():
+                    errors.append(
+                        f"{context}: asset '/assets/{relative_path}' not found"
+                    )
+
+            if DCITE_RE.search(figure.get("alt", "") or ""):
+                errors.append(f"{context}: figure alt text must not contain <d-cite>")
+
+    return errors
 
 
 def validate_corpus(
@@ -39,6 +97,7 @@ def validate_corpus(
     no_related_check: bool = False,
     filename_match: bool = False,
     fail_fast: bool = False,
+    assets_dir: Path | None = None,
 ) -> List[str]:
     """Validate term JSON files against schema and cross-file constraints.
 
@@ -49,6 +108,7 @@ def validate_corpus(
         no_related_check: Skip checking that `related` IDs exist.
         filename_match: Also verify filename stem matches the `id` field.
         fail_fast: Stop collecting errors after the first failure group.
+        assets_dir: Asset root (default: infer `<repo>/assets` from json_dir).
 
     Returns:
         List of error strings. Empty list means all files are valid.
@@ -106,17 +166,17 @@ def validate_corpus(
             if fail_fast:
                 return all_errors
 
-    if not no_related_check and not (fail_fast and all_errors):
-        all_json_files = sorted(json_dir.glob("*.json"))
-        known_ids: Set[str] = set()
-        for jf in all_json_files:
-            try:
-                d = load_json(jf)
-                if "id" in d:
-                    known_ids.add(str(d["id"]))
-            except Exception:
-                pass
+    all_json_files = sorted(json_dir.glob("*.json"))
+    known_ids: Set[str] = set()
+    for jf in all_json_files:
+        try:
+            d = load_json(jf)
+            if "id" in d:
+                known_ids.add(str(d["id"]))
+        except Exception:
+            pass
 
+    if not no_related_check and not (fail_fast and all_errors):
         for term_id, data in valid_docs.items():
             for rid in (data.get("related") or []):
                 if rid not in known_ids:
@@ -124,6 +184,17 @@ def validate_corpus(
                     all_errors.append(
                         f"{src}: related id '{rid}' not found among JSON files"
                     )
+
+    if not (fail_fast and all_errors):
+        if assets_dir is None:
+            assets_dir = json_dir.resolve().parent.parent / "assets"
+        for term_id, data in valid_docs.items():
+            reference_errors = _content_reference_errors(
+                term_id, data, known_ids, assets_dir
+            )
+            all_errors.extend(reference_errors)
+            if fail_fast and reference_errors:
+                return all_errors
 
     return all_errors
 
@@ -153,6 +224,11 @@ def main():
                     help="Also check filename stem == `id`")
     ap.add_argument("--fail-fast", action="store_true",
                     help="Stop on first failure group")
+    ap.add_argument(
+        "--assets-dir",
+        type=Path,
+        help="Asset root (default: infer <repo>/assets from --dir)",
+    )
     args = ap.parse_args()
 
     if not args.schema.exists():
@@ -168,6 +244,7 @@ def main():
         no_related_check=args.no_related_check,
         filename_match=args.filename_match,
         fail_fast=args.fail_fast,
+        assets_dir=args.assets_dir,
     )
 
     if errors:

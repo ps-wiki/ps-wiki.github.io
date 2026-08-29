@@ -19,13 +19,11 @@ lastmod: 2025-06-20
 
 ### Definition by EPA
 
-Source: <d-cite key="epa2024gridregions"></d-cite>
-
-![Map of eGRID Subregions (from <d-cite key="epa2024gridregions"></d-cite>)](/assets/img/pswiki/egrid_subregions_map.png)
+![Map of eGRID Subregions](/assets/img/pswiki/egrid_subregions_map.png)
 
 *Map of eGRID Subregions (from <d-cite key="epa2024gridregions"></d-cite>)*
 
-
+Source: <d-cite key="epa2024gridregions"></d-cite>
 
 > For U.S. grid regions’ emission data, EPA provides recent and historic air emissions, including carbon dioxide (CO2), for U.S. portions of grid regions, States, and Puerto Rico.
 

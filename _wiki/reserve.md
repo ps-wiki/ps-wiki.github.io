@@ -15,12 +15,10 @@ lastmod: 2025-06-22
 
 ### Definition by PJM
 
-Source: <d-cite key="pjm2024m10"></d-cite> p26, Revision 45
-
-![Exhibit 6: Graphic Representation of Reserves (from <d-cite key="pjm2024m10"></d-cite>)](/assets/img/pswiki/graphic-representation-reserves.png)
+![Exhibit 6: Graphic Representation of Reserves](/assets/img/pswiki/graphic-representation-reserves.png)
 
 *Exhibit 6: Graphic Representation of Reserves (from <d-cite key="pjm2024m10"></d-cite>)*
 
-
+Source: <d-cite key="pjm2024m10"></d-cite> p26, Revision 45
 
 > Reserves represent the generating capability that is “standing by” ready for service in the event that something happens on the power system, such as the loss of a large generator. (Reference NERC Performance Standard BAL-002-1, Disturbance Control Performance, and PJM Manual 12, Attachment D). The severity of the event determines how quickly the reserves have to be picked up. Exhibit 6 illustrates how PJM classifies the different types of reserve services.

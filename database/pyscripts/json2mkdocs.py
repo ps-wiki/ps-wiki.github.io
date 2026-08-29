@@ -33,6 +33,14 @@ GITHUB_EDIT_BASE = "https://github.com/ps-wiki/ps-wiki.github.io/edit/main/_wiki
 
 _DCITE_RE = re.compile(r'<d-cite key="([^"]+)"></d-cite>')
 _HTML_TAG_RE = re.compile(r"<[^>]+>")
+_ROOT_MARKDOWN_LINK_RE = re.compile(
+    r"(?P<prefix>!?\[[^\]\n]*\]\()"
+    r"(?P<destination>/(?:wiki|assets)/[^)\s]+)"
+)
+_ROOT_HTML_LINK_RE = re.compile(
+    r"(?P<prefix>\b(?:href|src)=[\"'])"
+    r"(?P<destination>/(?:wiki|assets)/[^\"']+)"
+)
 
 
 # ---------------------------------------------------------------------------
@@ -42,8 +50,42 @@ _HTML_TAG_RE = re.compile(r"<[^>]+>")
 def _strip_citations_and_html(text: str) -> str:
     """Return plain text suitable for an image alt attribute."""
     text = _DCITE_RE.sub("", text)
+    text = re.sub(r"\s*\(\s*from\s*\)\s*", "", text, flags=re.IGNORECASE)
     text = _HTML_TAG_RE.sub("", text)
-    return text.strip()
+    text = re.sub(r"[*_`]", "", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def _mkdocs_destination(destination: str) -> str:
+    """Convert a site-root wiki or asset destination for docs/wiki pages."""
+    if destination.startswith("/wiki/"):
+        target = destination.removeprefix("/wiki/")
+        path, separator, fragment = target.partition("#")
+        normalized = f"{path.rstrip('/')}.md"
+        return f"{normalized}{separator}{fragment}" if separator else normalized
+    if destination.startswith("/assets/"):
+        return f"../assets/{destination.removeprefix('/assets/')}"
+    if destination.startswith("assets/"):
+        return f"../{destination}"
+    return destination
+
+
+def _normalize_mkdocs_links(markdown: str) -> str:
+    """Normalize site-root links while leaving canonical term data unchanged."""
+    markdown = _ROOT_MARKDOWN_LINK_RE.sub(
+        lambda match: (
+            f"{match.group('prefix')}"
+            f"{_mkdocs_destination(match.group('destination'))}"
+        ),
+        markdown,
+    )
+    return _ROOT_HTML_LINK_RE.sub(
+        lambda match: (
+            f"{match.group('prefix')}"
+            f"{_mkdocs_destination(match.group('destination'))}"
+        ),
+        markdown,
+    )
 
 
 def _ensure_symlink():
@@ -148,16 +190,9 @@ def _generate_term_page(term: dict, bib_entries: dict, prev_item: dict | None, n
             fig_path = fig.get("path", "")
             caption_md = fig.get("caption_md", "")
 
-            # Image alt text: strip d-cite and HTML tags
-            alt_text = _strip_citations_and_html(caption_md)
-
-            # External URLs used as-is; local paths kept as absolute site-root refs
-            if fig_path.startswith("http://") or fig_path.startswith("https://"):
-                fig_path_rel = fig_path
-            elif not fig_path.startswith("/"):
-                fig_path_rel = "/" + fig_path
-            else:
-                fig_path_rel = fig_path
+            # Image alt text must remain citation-free; citations belong in captions.
+            alt_text = _strip_citations_and_html(fig.get("alt") or caption_md)
+            fig_path_rel = _mkdocs_destination(fig_path)
 
             lines.append(f"![{alt_text}]({fig_path_rel})")
             lines.append("")
@@ -189,7 +224,8 @@ def _generate_term_page(term: dict, bib_entries: dict, prev_item: dict | None, n
 
         # --- Body ---
         if body_md:
-            after_callouts = callouts_to_admonitions(body_md)
+            after_links = _normalize_mkdocs_links(body_md)
+            after_callouts = callouts_to_admonitions(after_links)
             after_cites, body_defs = cite_to_footnotes(after_callouts, bib_entries)
             _collect_defs(body_defs)
             lines.append(after_cites.rstrip("\n"))

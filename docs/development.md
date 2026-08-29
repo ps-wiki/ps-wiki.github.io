@@ -171,10 +171,13 @@ Available types: `block-danger`, `block-warning`, `block-tip`, `block-note`. The
 Store images in `assets/img/pswiki/` then embed them with standard Markdown:
 
 ```markdown
-![Caption text (from <d-cite key="source-key"></d-cite>)](/assets/img/pswiki/your-figure.png)
+![Concise description of the figure](/assets/img/pswiki/your-figure.png)
+
+_Caption text (from <d-cite key="source-key"></d-cite>)_
 ```
 
-The pipeline extracts figures into the JSON and the site generator renders them with lightbox zoom.
+Keep citations in the visible caption rather than the image alt text.
+The pipeline extracts the image and optional caption into structured JSON, and the site generator renders the figure with lightbox zoom.
 
 ---
 
