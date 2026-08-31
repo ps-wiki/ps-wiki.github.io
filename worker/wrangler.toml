@@ -11,5 +11,5 @@ enabled = true
 
 [vars]
 ORIGIN_BASE = "https://raw.githubusercontent.com/ps-wiki/ps-wiki.github.io/main/database/json"
-INDEX_URL   = "https://raw.githubusercontent.com/ps-wiki/ps-wiki.github.io/main/database/build/index.json"
-TAGS_URL    = "https://raw.githubusercontent.com/ps-wiki/ps-wiki.github.io/main/database/build/tags.json"
+INDEX_URL   = "https://ps-wiki.github.io/api/index.json"
+TAGS_URL    = "https://ps-wiki.github.io/api/tags.json"
