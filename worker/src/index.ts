@@ -18,6 +18,16 @@ const CORS = {
 
 export default {
   async fetch(req: Request, env: Env): Promise<Response> {
+    console.log(JSON.stringify({
+      method: req.method,
+      path: new URL(req.url).pathname,
+      country: req.cf?.country ?? "unknown",
+      colo: req.cf?.colo ?? "unknown",
+      userAgent: req.headers.get("User-Agent") ?? "",
+      referer: req.headers.get("Referer") ?? "",
+      accept: req.headers.get("Accept") ?? "",
+      timestamp: new Date().toISOString(),
+    }));
     if (req.method === "OPTIONS") return new Response(null, { headers: CORS });
 
     const u = new URL(req.url);
