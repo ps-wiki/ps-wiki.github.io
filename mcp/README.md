@@ -263,11 +263,11 @@ async with stdio_client(server_params) as (read, write):
 
 ## Data Source
 
-The MCP server fetches data from the [PS-Wiki REST API](https://pswiki-api.jinning.workers.dev) hosted on Cloudflare Workers. All data is read-only and licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+The MCP server fetches data from the [PS-Wiki REST API](https://api.ning.guru) hosted on Cloudflare Workers. All data is read-only and licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
-> **API URL changed:** The API hostname changed from
-> `pswiki-api.jinninggm.workers.dev` to `pswiki-api.jinning.workers.dev`.
-> Update any custom MCP client configuration that still uses the former URL.
+> **API URL:** The production API is now available at `https://api.ning.guru`.
+> The original `pswiki-api.jinning.workers.dev` hostname remains available as a fallback.
+> Update any custom MCP client configuration that uses the old hostname when convenient.
 
 ## Development
 
@@ -302,7 +302,7 @@ This project is licensed under [CC BY-NC 4.0](https://creativecommons.org/licens
 ## Related Projects
 
 - [PS-Wiki Website](https://ps-wiki.github.io) - Main terminology wiki
-- [PS-Wiki REST API](https://pswiki-api.jinning.workers.dev) - Public API
+- [PS-Wiki REST API](https://api.ning.guru) - Public API
 - [MCP Specification](https://modelcontextprotocol.io) - Model Context Protocol
 
 ## Support

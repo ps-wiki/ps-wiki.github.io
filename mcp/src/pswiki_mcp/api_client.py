@@ -18,7 +18,7 @@ class TermSummary(BaseModel):
 class APIClient:
     """Client for PS-Wiki REST API."""
 
-    def __init__(self, base_url: str = "https://pswiki-api.jinning.workers.dev"):
+    def __init__(self, base_url: str = "https://api.ning.guru"):
         """Initialize API client.
 
         Args:
