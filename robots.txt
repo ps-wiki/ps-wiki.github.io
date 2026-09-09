@@ -24,4 +24,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://ps-wiki.github.io/sitemap.xml
+Sitemap: https://ps-wiki.ning.guru/sitemap.xml
