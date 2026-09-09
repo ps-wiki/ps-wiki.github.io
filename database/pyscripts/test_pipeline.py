@@ -123,7 +123,7 @@ def test_mkdocs_generation_normalizes_links_and_keeps_citations_out_of_alt():
 
     assert 'description: "Definition of alpha."' in rendered
     assert 'term_id: "alpha"' in rendered
-    assert "json_url: https://ps-wiki.github.io/terms/alpha.json" in rendered
+    assert "json_url: https://ps-wiki.ning.guru/terms/alpha.json" in rendered
     assert "![Figure 1](../assets/img/figure.png)" in rendered
     assert "*Figure 1 (from [^source])*" in rendered
     assert "![Figure 1 [^source]]" not in rendered
@@ -133,7 +133,7 @@ def test_mkdocs_generation_normalizes_links_and_keeps_citations_out_of_alt():
     assert "](/assets/" not in rendered
     assert (
         "**Machine-readable:** "
-        "[JSON](https://ps-wiki.github.io/terms/alpha.json)" in rendered
+        "[JSON](https://ps-wiki.ning.guru/terms/alpha.json)" in rendered
     )
 
 

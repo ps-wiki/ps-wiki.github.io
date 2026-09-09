@@ -354,8 +354,8 @@ def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description="PS-Wiki API Contract Test Suite")
     parser.add_argument(
         "--base-url",
-        default="https://ps-wiki.github.io",
-        help="Base URL (default: https://ps-wiki.github.io). Examples: http://localhost:8787 or https://api.ning.guru",
+        default="https://api.ning.guru",
+        help="Base URL (default: https://api.ning.guru). Examples: http://localhost:8787 or https://api.ning.guru",
     )
     parser.add_argument("--query", help="Optional free-text query for /v1/terms")
     parser.add_argument("--tag", help="Optional tag filter for /v1/terms")

@@ -39,8 +39,8 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://ps-wiki.github.io"
-Documentation = "https://ps-wiki.github.io"
+Homepage = "https://ps-wiki.ning.guru"
+Documentation = "https://ps-wiki.ning.guru"
 Repository = "https://github.com/ps-wiki/ps-wiki.github.io"
 "Bug Tracker" = "https://github.com/ps-wiki/ps-wiki.github.io/issues"
 
