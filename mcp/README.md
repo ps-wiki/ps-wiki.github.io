@@ -1,6 +1,6 @@
 # PS-Wiki MCP Server
 
-MCP (Model Context Protocol) server for [PS-Wiki](https://ps-wiki.github.io) - providing AI assistants with direct access to power systems terminology and knowledge.
+MCP (Model Context Protocol) server for [PS-Wiki](https://ps-wiki.ning.guru) - providing AI assistants with direct access to power systems terminology and knowledge.
 
 ## Features
 
@@ -301,12 +301,12 @@ This project is licensed under [CC BY-NC 4.0](https://creativecommons.org/licens
 
 ## Related Projects
 
-- [PS-Wiki Website](https://ps-wiki.github.io) - Main terminology wiki
+- [PS-Wiki Website](https://ps-wiki.ning.guru) - Main terminology wiki
 - [PS-Wiki REST API](https://api.ning.guru) - Public API
 - [MCP Specification](https://modelcontextprotocol.io) - Model Context Protocol
 
 ## Support
 
-- 📖 [Documentation](https://ps-wiki.github.io)
+- 📖 [Documentation](https://ps-wiki.ning.guru)
 - 🐛 [Issue Tracker](https://github.com/ps-wiki/ps-wiki.github.io/issues)
 - 💬 [Discussions](https://github.com/ps-wiki/ps-wiki.github.io/discussions)

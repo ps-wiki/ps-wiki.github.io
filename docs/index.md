@@ -29,7 +29,7 @@ For example:
 
 > Using the Power Systems Wiki, explain voltage stability, compare the definitions on the term page, and retain links to the original sources.
 
-For reliable machine-readable access, use the [term JSON files](https://ps-wiki.github.io/terms/voltage-stability.json), [REST API](rest-api.md), or [MCP server](mcp.md).
+For reliable machine-readable access, use the [term JSON files](https://ps-wiki.ning.guru/terms/voltage-stability.json), [REST API](rest-api.md), or [MCP server](mcp.md).
 The [`llms.txt`](llms.txt) file gives assistants a concise map of these resources.
 
 ## Why This Wiki Exists

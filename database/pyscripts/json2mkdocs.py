@@ -30,7 +30,7 @@ ASSETS_LINK = os.path.join(DOCS_DIR, "assets")
 ASSETS_TARGET = os.path.join("..", "assets")  # relative symlink
 
 GITHUB_EDIT_BASE = "https://github.com/ps-wiki/ps-wiki.github.io/edit/main/_wiki/"
-TERM_JSON_BASE = "https://ps-wiki.github.io/terms/"
+TERM_JSON_BASE = "https://ps-wiki.ning.guru/terms/"
 
 _DCITE_RE = re.compile(r'<d-cite key="([^"]+)"></d-cite>')
 _HTML_TAG_RE = re.compile(r"<[^>]+>")

@@ -102,7 +102,7 @@ Key decisions already made — don't re-open these without a strong reason.
 
 ### Rendering stack migration (completed 2026-05-27, PR #36)
 
-The site migrated from **al-folio/Jekyll** to **MkDocs Material**. Live at https://ps-wiki.github.io/.
+The site migrated from **al-folio/Jekyll** to **MkDocs Material**. Live at https://ps-wiki.ning.guru/.
 
 Locked decisions:
 - **Renderer:** MkDocs Material — lowest effort, Python-only, reuses the existing `json→md` pipeline.
