@@ -54,7 +54,7 @@
           "nerc2021balancing"
         ],
         "page": "p24",
-        "body_md": "> CPS1 captures these relationships using statistical measures to determine each BA’s contribution to such “noise” relative to what is deemed permissible.\n> The CPS1 equation can be simplified as follows:\n\n$$\n\\text{CPS1} (\\text{in percent}) = 100 * \\left[ 2 – (\\text{Constant}) * (\\text{frequency error}) * (\\text{ACE}) \\right]\n$$\n\n<!-- prettier-ignore-start -->\n> The size of this constant changes over time for BAs with variable bias, but the effect can be ignored when considering minute-to-minute operation. It is equal to -10 \\* B / ε1^2\n{: .block-tip }\n<!-- prettier-ignore-end -->\n"
+        "body_md": "> CPS1 captures these relationships using statistical measures to determine each BA’s contribution to such “noise” relative to what is deemed permissible.\n> The CPS1 equation can be simplified as follows:\n\n$$\n\\text{CPS1} (\\text{in percent}) = 100 \\times \\left[ 2 - (\\text{Constant}) \\times (\\text{frequency error}) \\times (\\text{ACE}) \\right]\n$$\n\n<!-- prettier-ignore-start -->\n> The size of this constant changes over time for BAs with variable bias, but the effect can be ignored when considering minute-to-minute operation. It is equal to -10 \\* B / ε1^2\n{: .block-tip }\n<!-- prettier-ignore-end -->\n"
       },
       {
         "order": 4,
