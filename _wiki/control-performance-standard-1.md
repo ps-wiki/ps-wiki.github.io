@@ -38,7 +38,7 @@ Source: <d-cite key="nerc2021balancing"></d-cite> p24
 > The CPS1 equation can be simplified as follows:
 
 $$
-\text{CPS1} (\text{in percent}) = 100 * \left[ 2 – (\text{Constant}) * (\text{frequency error}) * (\text{ACE}) \right]
+\text{CPS1} (\text{in percent}) = 100 \times \left[ 2 - (\text{Constant}) \times (\text{frequency error}) \times (\text{ACE}) \right]
 $$
 
 <!-- prettier-ignore-start -->

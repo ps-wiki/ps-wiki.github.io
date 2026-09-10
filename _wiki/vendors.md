@@ -24,14 +24,11 @@ Electromagnetic transients program (EMTP) is the reference for EMT simulations a
 - Steady-State: The electrical network equations are solved using complex phasors. This option can be used in the stand-alone mode or for initializing the time-domain solution. A harmonic steady-state solution can be achieved.
 - Frequency-Scan: A frequency scan simulation is available with EMTP to determine the system impedance and to identify any possible resonance frequencies within the system.
 
-<details>
+<details markdown="1">
 <summary>screenshot on 01-09-2025<br>
 <a href="https://www.emtp.com/products/emtp" target="_blank">https://www.emtp.com/products/emtp</a></summary>
 
-<div style="text-align: left;">
-  <img src="/assets/img/vendors/EMTP.png"
-  style="width: 360px; height: auto;">
-</div>
+![EMTP screenshot](/assets/img/vendors/EMTP.png){ loading=lazy width=360 height=1890 }
 
 </details>
 
@@ -45,24 +42,20 @@ The EasyPower product suite delivers a full lineup of powerful electrical softwa
 - Transient Motor Starting – Solve complex motor starting scenarios to verify system stability.
 - Dynamic Stability: Simulate dynamic interaction between machines, networks, and protective device actions. Keep your system stable & avoid downtime.
 
-<details>
+<details markdown="1">
 <summary>screenshot on 01-09-2025<br>
 <a href="https://www.easypower.com/products/easypower" target="_blank">https://www.easypower.com/products/easypower</a></summary>
-<div style="text-align: left;">
-  <img src="/assets/img/vendors/EasyPower.png" style="width: 360px; height: auto;">
-</div>
+![EasyPower screenshot](/assets/img/vendors/EasyPower.png){ loading=lazy width=360 height=2586 }
 </details>
 
 #### PSCAD
 
 The World's Most Advanced Tool for Power Systems EMT Simulations
 
-<details>
+<details markdown="1">
 <summary>screenshot on 01-09-2025<br>
 <a href="https://www.pscad.com/software/pscad/overview" target="_blank">https://www.pscad.com/software/pscad/overview</a></summary>
-<div style="text-align: left;">
-  <img src="/assets/img/vendors/PSCAD.png" style="width: 360px; height: auto;">
-</div>
+![PSCAD screenshot](/assets/img/vendors/PSCAD.png){ loading=lazy width=360 height=825 }
 </details>
 
 #### ETAP
@@ -81,24 +74,20 @@ by DIgSILENT, is a power system analysis software application for use in analysi
 
 - transmission, distribution and industrial systems. It covers the full range of functionality from standard features to highly sophisticated and advanced applications including windpower, distributed generation, real-time simulation and performance monitoring for system testing and supervision.
 
-<details>
+<details markdown="1">
 <summary>screenshot on 01-09-2025<br>
 <a href="https://www.digsilent.de/en/powerfactory.html" target="_blank">https://www.digsilent.de/en/powerfactory.html</a></summary>
-<div style="text-align: left;">
-  <img src="/assets/img/vendors/PowerFactory.png" style="width: 360px; height: auto;">
-</div>
+![PowerFactory screenshot](/assets/img/vendors/PowerFactory.png){ loading=lazy width=360 height=2625 }
 </details>
 
 #### NEPLAN Electricity
 
 is a software tool to analyse, plan, optimize and simulate electrical networks. The strength of the software is the extremely user-friendly graphical interface with the extensive libraries for the network elements, protection devices and control circuits, which allows the user to perform study cases very efficiently. The software has a modular concept, is based on international standards, such as IEC, ANSI, IEEE, etc. and is customizable for the European and US market. It is used in transmission, distribution, generation / industrial networks amongst others for network and investment planning, power quality, multi-period optimization, protection setting and assessment, dynamic simulation (RMS/EMT). The stationary and dynamic models for 1-2-3 phase (with neutral and earth wire) AC and DC networks have a high accuracy and performance. Very big network (above 500’000 bus bars) could be easily handled by new IT-techniques and algorithm.
 
-<details>
+<details markdown="1">
 <summary>screenshot on 01-09-2025<br>
 <a href="https://neplan.ch/neplanproduct/en-electricity/" target="_blank">https://neplan.ch/neplanproduct/en-electricity/</a></summary>
-<div style="text-align: left;">
-  <img src="/assets/img/vendors/NEPLANElectricity.png" style="width: 360px; height: auto;">
-</div>
+![NEPLAN Electricity screenshot](/assets/img/vendors/NEPLANElectricity.png){ loading=lazy width=360 height=878 }
 </details>
 
 #### PowerWorld Simulator
@@ -116,12 +105,10 @@ PowerWorld offers several optional add-ons in addition to the base Simulator Pac
 - Transient Stability: Utilize powerful dynamic simulation with the simplicity only PowerWorld can deliver.
 - Voltage Stability (PVQV): Analyze a power system’s static voltage stability margins.
 
-<details>
+<details markdown="1">
 <summary>screenshot on 01-09-2025<br>
 <a href="https://www.powerworld.com/solutions" target="_blank">https://www.powerworld.com/solutions</a></summary>
-<div style="text-align: left;">
-  <img src="/assets/img/vendors/PowerWorld.png" style="width: 360px; height: auto;">
-</div>
+![PowerWorld screenshot](/assets/img/vendors/PowerWorld.png){ loading=lazy width=360 height=914 }
 </details>
 
 #### Energy Exemplar
@@ -131,12 +118,10 @@ PowerWorld offers several optional add-ons in addition to the base Simulator Pac
 - Adapt2: streamlines energy operations
 - Simulation-Ready Datasets: Our data teams gather available public and subscribed data, analyzing and calibrating information within each global market for use in your models. Data is updated annually and benchmarked against historical data to demonstrate data quality. Global Datasets are available for the following markets: North America, Latin America, Europe, APAC.
 
-<details>
+<details markdown="1">
 <summary>snapshot on 01-09-2025<br>
 <a href="https://www.energyexemplar.com/products" target="_blank">https://www.energyexemplar.com/products</a></summary>
-<div style="text-align: left;">
-  <img src="/assets/img/vendors/EnergyExemplar.png" style="width: 360px; height: auto;">
-</div>
+![Energy Exemplar screenshot](/assets/img/vendors/EnergyExemplar.png){ loading=lazy width=360 height=818 }
 </details>
 
 #### PSS
@@ -154,12 +139,10 @@ by Siemens, power system simulation and modeling software
 - Gridscale X Protection Data Manager. Powerful and convenient tool for managing protection data.
 - CTDim – Current and voltage transformer dimensioning. With CTDim, efficiently perform instrument transformer dimensioning while considering both protection and measuring cores. It allows you to decrease engineering and production costs by optimizing the CT and VT data.
 
-<details>
+<details markdown="1">
 <summary>snapshot on 01-09-2025<br>
 <a href="https://www.siemens.com/global/en/products/energy/grid-software/planning/pss-software.html" target="_blank">https://www.siemens.com/global/en/products/energy/grid-software/planning/pss-software.html</a></summary>
-<div style="text-align: left;">
-  <img src="/assets/img/vendors/SiemensPSS.png" style="width: 360px; height: auto;">
-</div>
+![Siemens PSS screenshot](/assets/img/vendors/SiemensPSS.png){ loading=lazy width=360 height=2792 }
 </details>
 
 #### PlanOS
@@ -171,10 +154,8 @@ by GE Vernova, a comprehensive software platform to confidently plan for a more 
 - Production Cost (formerly MAPS) Model the economic operation of the power system for informed economic decisions.
 - New: Capacity Expansion Forecast capacity additions considering uncertain (stochastic) variables and generate adaptable plans that reduce costs across many possible future outcomes.
 
-<details>
+<details markdown="1">
 <summary>snapshot on 01-09-2025<br>
 <a href="https://www.gevernova.com/consulting/planos" target="_blank">https://www.gevernova.com/consulting/planos</a></summary>
-<div style="text-align: left;">
-  <img src="/assets/img/vendors/GEVeronaPlanOS.png" style="width: 360px; height: auto;">
-</div>
+![GE Vernova PlanOS screenshot](/assets/img/vendors/GEVeronaPlanOS.png){ loading=lazy width=360 height=3593 }
 </details>
