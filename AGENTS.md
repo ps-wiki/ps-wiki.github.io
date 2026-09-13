@@ -1,6 +1,6 @@
 # PS-Wiki — Agent Guide
 
-Single source of truth for AI assistants (Claude Code & Codex) working in this repo.
+Single source of truth for all AI agents working in this repo.
 
 ## What this project is
 
@@ -79,7 +79,7 @@ npx prettier --write .
 
 For any non-trivial change, **write a plan before writing code**:
 
-1. **Plan.** Create a markdown plan in `.claude/projects/<project-name>/plan.md` (copy `.claude/projects/_template/plan.md`). Capture goal, approach, affected files, steps, and risks. This is the tracking artifact — keep it updated as work progresses.
+1. **Plan.** Create a markdown plan in `plans/<project-name>/plan.md` (copy `plans/_template/plan.md`). Capture goal, approach, affected files, steps, and risks. This is the tracking artifact — keep it updated as work progresses.
 2. **Review.** Confirm the plan with the user before implementing anything with meaningful surface area.
 3. **Code.** Implement against the plan, checking off steps as you go.
 4. **Verify.** Run the relevant build/pipeline/format commands and note results in the plan.
@@ -88,9 +88,9 @@ Trivial fixes (a typo, a single term edit) don't need a project folder — use j
 
 ## Agent skills
 
-Reusable workflow guides live in `skills/`. Each file is a self-contained, agent-agnostic
-step-by-step guide for a common task. Claude Code exposes them as slash commands via
-symlinks in `.claude/commands/`.
+Reusable workflow guides live in `skills/`. Each file is a self-contained,
+agent-agnostic step-by-step guide for a common task. Agents should invoke these
+workflows according to their own integration conventions.
 
 | Skill | File | Purpose |
 |---|---|---|

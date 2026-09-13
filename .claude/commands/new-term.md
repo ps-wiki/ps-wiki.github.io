@@ -1,1 +1,0 @@
-../../skills/new-term.md
