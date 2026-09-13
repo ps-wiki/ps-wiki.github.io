@@ -79,7 +79,7 @@ npx prettier --write .
 
 For any non-trivial change, **write a plan before writing code**:
 
-1. **Plan.** Create a markdown plan in `plans/<project-name>/plan.md` (copy `plans/_template/plan.md`). Capture goal, approach, affected files, steps, and risks. This is the tracking artifact — keep it updated as work progresses.
+1. **Plan.** Create a markdown plan in `.agents/plans/<project-name>/plan.md` (copy `.agents/plans/_template/plan.md`). Capture goal, approach, affected files, steps, and risks. This is the tracking artifact — keep it updated as work progresses.
 2. **Review.** Confirm the plan with the user before implementing anything with meaningful surface area.
 3. **Code.** Implement against the plan, checking off steps as you go.
 4. **Verify.** Run the relevant build/pipeline/format commands and note results in the plan.
