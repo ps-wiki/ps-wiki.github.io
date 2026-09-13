@@ -20,8 +20,8 @@ If you have suggestions, corrections, or new terms to add, please use the issue 
 If you are using an agent to help prepare a new term, start with [`AGENTS.md`](./AGENTS.md) and [`skills/new-term.md`](./skills/new-term.md).
 
 `AGENTS.md` is the shared instruction source for all agents. Reusable workflows
-live in `skills/`; local plans and worktrees belong in the ignored `plans/` and
-`worktrees/` directories.
+live in `skills/`; private local agent metadata and plans belong in the ignored
+`.agents/` directory.
 
 ## Website Overview
 

@@ -1,3 +1,0 @@
-# Agent-local metadata, private maintainer data, and runtime state stay out of Git.
-*
-!.gitignore
