@@ -14,7 +14,7 @@ agents, or web clients.
 | **Data Source** | JSON terms stored in the [`database/json/`](../database/json) directory of this repo |
 | **Index Source** | [`database/build/index.json`](../database/build/index.json) & [`database/build/tags.json`](../database/build/tags.json) |
 | **Schema** | [`database/schema/v1/term.schema.json`](../database/schema/v1/term.schema.json) |
-| **Public Endpoint** | `https://pswiki-api.<your-account>.workers.dev` (free Cloudflare domain) |
+| **Production Endpoint** | `https://api.ning.guru` (custom domain) |
 
 
 ## 🗂 Directory Structure
@@ -71,7 +71,29 @@ Manually deploy:
 npx wrangler deploy
 ```
 
-Cloudflare assigns a free public URL:
+### Continuous deployment with GitHub Actions
+
+The repository deploys the production Worker automatically when a commit is
+merged to `main` with changes to the root Worker's source, configuration, or
+dependencies. The workflow is
+`.github/workflows/deploy-worker.yml`; it does not deploy pull requests or the
+unrelated `worker/pswiki-api/` starter template.
+
+Before the first automated deployment, add these repository Actions secrets in
+GitHub under **Settings → Secrets and variables → Actions**:
+
+| Secret | Description |
+|--------|-------------|
+| `CLOUDFLARE_API_TOKEN` | Cloudflare API token with the minimum required Workers deployment permission |
+| `CLOUDFLARE_ACCOUNT_ID` | Cloudflare account containing the `pswiki-api` Worker |
+
+The workflow can also be rerun safely through **Actions → Deploy Worker → Run
+workflow**. It uses Cloudflare's official Wrangler Action and deploys from the
+root `worker/` directory.
+
+Cloudflare may also expose a free `workers.dev` URL during initial setup. The
+custom domain above is the canonical production endpoint and should be used in
+client configurations.
 
 ```
 https://pswiki-api.<your-account>.workers.dev
