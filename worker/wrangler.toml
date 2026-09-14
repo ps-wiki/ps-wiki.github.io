@@ -18,3 +18,7 @@ ORIGIN_BASE = "https://raw.githubusercontent.com/ps-wiki/ps-wiki.github.io/main/
 INDEX_URL   = "https://ps-wiki.github.io/api/index.json"
 TAGS_URL    = "https://ps-wiki.github.io/api/tags.json"
 SITE_BASE   = "https://ps-wiki.ning.guru"
+
+[[r2_buckets]]
+binding = "TRAFFIC_LOGS"
+bucket_name = "ps-wiki"

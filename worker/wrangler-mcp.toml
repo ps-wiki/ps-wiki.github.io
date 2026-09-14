@@ -20,3 +20,7 @@ MCP_ALLOWED_HOSTS = "mcp.ps-wiki.ning.guru,pswiki-mcp.jinning.workers.dev"
 MCP_ALLOWED_ORIGINS = "mcp.ps-wiki.ning.guru,pswiki-mcp.jinning.workers.dev"
 MCP_TIMEOUT_MS = "5000"
 MCP_MAX_RESPONSE_BYTES = "1000000"
+
+[[r2_buckets]]
+binding = "TRAFFIC_LOGS"
+bucket_name = "ps-wiki"
