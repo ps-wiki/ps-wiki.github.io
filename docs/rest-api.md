@@ -37,10 +37,19 @@ curl "https://api.ning.guru/v1/terms?query=stability&limit=5"
       "title": "Voltage Stability",
       "summary": "The ability of a power system to maintain...",
       "tags": ["stability", "power-quality"],
-      "updated_at": "2025-11-19"
+      "updated_at": "2025-11-19",
+      "url": "https://ps-wiki.ning.guru/wiki/voltage-stability/"
     }
   ],
-  "next_cursor": null
+  "next_cursor": null,
+  "attribution": {
+    "provider": "PS-Wiki",
+    "url": "https://ps-wiki.ning.guru/",
+    "license": {
+      "name": "CC BY-NC 4.0",
+      "url": "https://creativecommons.org/licenses/by-nc/4.0/"
+    }
+  }
 }
 ```
 
@@ -50,7 +59,9 @@ curl "https://api.ning.guru/v1/terms?query=stability&limit=5"
 curl "https://api.ning.guru/v1/terms/voltage-stability"
 ```
 
-Returns the complete term data including definition, equations, citations, and metadata.
+Returns the complete term data including definition, equations, citations, metadata,
+the canonical human-facing `url`, and API attribution metadata. The existing
+`authors` array identifies contributors to the term itself.
 
 ## API Endpoints
 
@@ -113,7 +124,15 @@ curl "https://api.ning.guru/v1/tags"
     { "tag": "stability", "count": 15 },
     { "tag": "control", "count": 23 },
     { "tag": "protection", "count": 8 }
-  ]
+  ],
+  "attribution": {
+    "provider": "PS-Wiki",
+    "url": "https://ps-wiki.ning.guru/",
+    "license": {
+      "name": "CC BY-NC 4.0",
+      "url": "https://creativecommons.org/licenses/by-nc/4.0/"
+    }
+  }
 }
 ```
 
@@ -134,9 +153,25 @@ curl "https://api.ning.guru/v1/changes?since=2025-11-01"
 ```json
 {
   "items": [
-    { "id": "voltage-stability", "updated_at": "2025-11-19" },
-    { "id": "frequency-control", "updated_at": "2025-11-15" }
-  ]
+    {
+      "id": "voltage-stability",
+      "updated_at": "2025-11-19",
+      "url": "https://ps-wiki.ning.guru/wiki/voltage-stability/"
+    },
+    {
+      "id": "frequency-control",
+      "updated_at": "2025-11-15",
+      "url": "https://ps-wiki.ning.guru/wiki/frequency-control/"
+    }
+  ],
+  "attribution": {
+    "provider": "PS-Wiki",
+    "url": "https://ps-wiki.ning.guru/",
+    "license": {
+      "name": "CC BY-NC 4.0",
+      "url": "https://creativecommons.org/licenses/by-nc/4.0/"
+    }
+  }
 }
 ```
 
@@ -217,6 +252,10 @@ All endpoints return JSON with standard HTTP status codes:
 | `500` | Server error       |
 
 **CORS**: All endpoints include `Access-Control-Allow-Origin: *` for browser access.
+
+**Attribution**: Term records expose a canonical human-facing `url`. Successful
+responses also include PS-Wiki provider and license metadata. Individual term
+responses include an HTTP `Link` header with `rel="canonical"`.
 
 ## Rate Limits
 

@@ -7,6 +7,10 @@ This page records major changes in this wiki.
 
 ## 2026
 
+### 09-13
+
+- Prepared the REST API contract for the upcoming `1.1.0` release while retaining the `/v1` routes; added canonical term URLs and structured PS-Wiki attribution and license metadata to API responses
+
 ### 08-28
 
 - Changed the public REST API hostname to `https://pswiki-api.jinning.workers.dev`; clients using `pswiki-api.jinninggm.workers.dev` should update their configuration

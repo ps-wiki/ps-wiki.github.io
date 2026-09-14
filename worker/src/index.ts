@@ -4,11 +4,17 @@ export interface Env {
   ORIGIN_BASE: string; // e.g., https://raw.githubusercontent.com/ps-wiki/ps-wiki.github.io/main/pswiki/json
   INDEX_URL:   string; // e.g., https://raw.githubusercontent.com/ps-wiki/ps-wiki.github.io/main/pswiki/database/build/index.json
   TAGS_URL:    string; // e.g., https://raw.githubusercontent.com/ps-wiki/ps-wiki.github.io/main/pswiki/database/build/tags.json
+  SITE_BASE:   string; // e.g., https://ps-wiki.ning.guru
   OPENAPI_JSON?: string; // optional; can inline or serve static later
 }
 
 type TermSummary = { id: string; title: string; summary?: string; tags?: string[]; updated_at: string };
 type IndexDoc = { items: TermSummary[]; generated_at?: string };
+type Attribution = {
+  provider: string;
+  url: string;
+  license: { name: string; url: string };
+};
 
 const CORS = {
   "Access-Control-Allow-Origin": "*",
@@ -42,7 +48,7 @@ export default {
         const id = decodeURIComponent(p.split("/").pop() || "");
         return getTerm(id, env);
       }
-      if (p === "/v1/tags")       return passthrough(env.TAGS_URL);
+      if (p === "/v1/tags")       return listTags(env);
       if (p === "/v1/changes")    return changes(u, env);
 
       return json({ error: "not_found" }, 404);
@@ -85,7 +91,11 @@ async function listTerms(u: URL, env: Env): Promise<Response> {
   const page = items.slice(offset, offset + limit);
   const next_cursor = offset + limit < items.length ? btoa(JSON.stringify({ o: offset + limit })) : null;
 
-  return json({ items: page, next_cursor });
+  return json({
+    items: page.map((item) => ({ ...item, url: canonicalTermUrl(env.SITE_BASE, item.id) })),
+    next_cursor,
+    attribution: makeAttribution(env.SITE_BASE),
+  });
 }
 
 async function getTerm(id: string, env: Env): Promise<Response> {
@@ -95,11 +105,22 @@ async function getTerm(id: string, env: Env): Promise<Response> {
   if (r.status === 404) return json({ error: "not_found" }, 404);
   if (!r.ok) return json({ error: "upstream_error", status: r.status }, 502);
 
-  // pass-through but add CORS
-  const h = new Headers(r.headers);
-  Object.entries(CORS).forEach(([k, v]) => h.set(k, v as string));
-  h.set("Content-Type", "application/json");
-  return new Response(r.body, { status: 200, headers: h });
+  const data: unknown = await r.json();
+  if (!isRecord(data)) return json({ error: "upstream_error", message: "Term payload is not an object" }, 502);
+
+  const termUrl = canonicalTermUrl(env.SITE_BASE, id);
+  return json(
+    {
+      ...data,
+      url: termUrl,
+      attribution: makeAttribution(env.SITE_BASE),
+    },
+    200,
+    {
+      "Cache-Control": r.headers.get("Cache-Control") ?? "public, max-age=300",
+      Link: `<${termUrl}>; rel="canonical"`,
+    },
+  );
 }
 
 async function changes(u: URL, env: Env): Promise<Response> {
@@ -109,19 +130,39 @@ async function changes(u: URL, env: Env): Promise<Response> {
   const idx: IndexDoc = await fetchJSON(env.INDEX_URL);
   const items = (idx.items || [])
     .filter(t => t.updated_at && new Date(t.updated_at) >= new Date(since))
-    .map(t => ({ id: t.id, updated_at: t.updated_at }))
+    .map(t => ({ id: t.id, updated_at: t.updated_at, url: canonicalTermUrl(env.SITE_BASE, t.id) }))
     .sort((a, b) => b.updated_at.localeCompare(a.updated_at));
 
-  return json({ items });
+  return json({ items, attribution: makeAttribution(env.SITE_BASE) });
 }
 
-async function passthrough(url: string): Promise<Response> {
-  const data = await fetchJSON(url);
-  return json(data);
+async function listTags(env: Env): Promise<Response> {
+  const data = await fetchJSON(env.TAGS_URL);
+  if (!isRecord(data)) return json({ error: "upstream_error", message: "Tags payload is not an object" }, 502);
+  return json({ ...data, attribution: makeAttribution(env.SITE_BASE) });
 }
 
-function json(data: any, status = 200): Response {
-  const h = new Headers({ ...CORS, "Content-Type": "application/json" });
+function canonicalTermUrl(siteBase: string, id: string): string {
+  return `${siteBase.replace(/\/+$/, "")}/wiki/${encodeURIComponent(id)}/`;
+}
+
+function makeAttribution(siteBase: string): Attribution {
+  return {
+    provider: "PS-Wiki",
+    url: `${siteBase.replace(/\/+$/, "")}/`,
+    license: {
+      name: "CC BY-NC 4.0",
+      url: "https://creativecommons.org/licenses/by-nc/4.0/",
+    },
+  };
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+function json(data: unknown, status = 200, extraHeaders: HeadersInit = {}): Response {
+  const h = new Headers({ ...CORS, ...extraHeaders, "Content-Type": "application/json" });
   return new Response(typeof data === "string" ? data : JSON.stringify(data), { status, headers: h });
 }
 function text(s: string, status = 200): Response {
@@ -131,7 +172,7 @@ function text(s: string, status = 200): Response {
 
 const DEFAULT_OPENAPI = JSON.stringify({
   openapi: "3.1.0",
-  info: { title: "PS-Wiki API", version: "1.0.0", description: "Read-only access to PS-Wiki terms and tags." },
+  info: { title: "PS-Wiki API", version: "1.1.0", description: "Read-only access to PS-Wiki terms and tags with attribution metadata." },
   servers: [{ url: "https://api.ning.guru" }],
   paths: {
     "/v1/terms": {
@@ -143,17 +184,99 @@ const DEFAULT_OPENAPI = JSON.stringify({
           { in: "query", name: "limit", schema: { type: "integer", minimum: 1, maximum: 100, default: 20 } },
           { in: "query", name: "cursor",schema: { type: "string" } }
         ],
-        responses: { "200": { description: "OK" } }
+        responses: {
+          "200": {
+            description: "OK",
+            content: {
+              "application/json": { schema: { $ref: "#/components/schemas/TermsResponse" } }
+            }
+          }
+        }
       }
     },
     "/v1/terms/{id}": {
       get: {
         summary: "Get a term",
         parameters: [{ in: "path", name: "id", required: true, schema: { type: "string" } }],
-        responses: { "200": { description: "OK" }, "404": { description: "Not found" } }
+        responses: {
+          "200": {
+            description: "OK",
+            headers: { Link: { schema: { type: "string" }, description: "Canonical PS-Wiki term page" } },
+            content: { "application/json": { schema: { $ref: "#/components/schemas/Term" } } }
+          },
+          "404": { description: "Not found" }
+        }
       }
     },
-    "/v1/tags":    { get: { summary: "List tags",    responses: { "200": { description: "OK" } } } },
-    "/v1/changes": { get: { summary: "Changes since",parameters:[{in:"query",name:"since",required:true,schema:{type:"string",format:"date-time"}}],responses:{"200":{description:"OK"}} } }
+    "/v1/tags": {
+      get: {
+        summary: "List tags",
+        responses: { "200": { description: "OK", content: { "application/json": { schema: { $ref: "#/components/schemas/TagsResponse" } } } } }
+      }
+    },
+    "/v1/changes": {
+      get: {
+        summary: "Changes since",
+        parameters:[{in:"query",name:"since",required:true,schema:{type:"string",format:"date-time"}}],
+        responses: { "200": { description: "OK", content: { "application/json": { schema: { $ref: "#/components/schemas/ChangesResponse" } } } } }
+      }
+    }
+  },
+  components: {
+    schemas: {
+      Attribution: {
+        type: "object",
+        required: ["provider", "url", "license"],
+        properties: {
+          provider: { type: "string", example: "PS-Wiki" },
+          url: { type: "string", format: "uri" },
+          license: {
+            type: "object",
+            required: ["name", "url"],
+            properties: { name: { type: "string" }, url: { type: "string", format: "uri" } }
+          }
+        }
+      },
+      TermSummary: {
+        type: "object",
+        required: ["id", "title", "updated_at", "url"],
+        properties: {
+          id: { type: "string" }, title: { type: "string" }, summary: { type: "string" },
+          tags: { type: "array", items: { type: "string" } }, updated_at: { type: "string" },
+          url: { type: "string", format: "uri" }
+        }
+      },
+      TermsResponse: {
+        type: "object",
+        required: ["items", "next_cursor", "attribution"],
+        properties: {
+          items: { type: "array", items: { $ref: "#/components/schemas/TermSummary" } },
+          next_cursor: { type: ["string", "null"] },
+          attribution: { $ref: "#/components/schemas/Attribution" }
+        }
+      },
+      Term: {
+        type: "object",
+        required: ["url", "attribution"],
+        properties: {
+          url: { type: "string", format: "uri" },
+          attribution: { $ref: "#/components/schemas/Attribution" }
+        },
+        additionalProperties: true
+      },
+      TagsResponse: {
+        type: "object",
+        required: ["tags", "attribution"],
+        properties: { tags: { type: "array" }, attribution: { $ref: "#/components/schemas/Attribution" } }
+      },
+      ChangesResponse: {
+        type: "object",
+        required: ["items", "attribution"],
+        properties: {
+          items: { type: "array", items: { type: "object", required: ["id", "updated_at", "url"], properties: { id: { type: "string" }, updated_at: { type: "string" }, url: { type: "string", format: "uri" } } } },
+          attribution: { $ref: "#/components/schemas/Attribution" }
+        }
+      }
+    }
   }
 });

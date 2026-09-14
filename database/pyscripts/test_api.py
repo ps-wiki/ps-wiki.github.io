@@ -85,6 +85,7 @@ class TermSummary(BaseModel):
     summary: Optional[str] = None
     tags: Optional[List[str]] = None
     updated_at: str = Field(..., description="ISO date (YYYY-MM-DD)")
+    url: str
 
     @field_validator("updated_at")
     @classmethod
@@ -101,7 +102,21 @@ class Term(RootModel[Dict[str, Any]]):
     def ensure_object(cls, v):
         if not isinstance(v, dict):
             raise ValueError("Term payload must be an object")
+        if not isinstance(v.get("url"), str) or not v["url"]:
+            raise ValueError("Term payload must include a canonical url")
+        Attribution.model_validate(v.get("attribution"))
         return v
+
+
+class License(BaseModel):
+    name: str
+    url: str
+
+
+class Attribution(BaseModel):
+    provider: str
+    url: str
+    license: License
 
 
 class TagItem(BaseModel):
@@ -111,11 +126,13 @@ class TagItem(BaseModel):
 
 class TagsResponse(BaseModel):
     tags: List[TagItem]
+    attribution: Attribution
 
 
 class ChangesItem(BaseModel):
     id: str
     updated_at: str
+    url: str
 
     @field_validator("updated_at")
     @classmethod
@@ -127,11 +144,13 @@ class ChangesItem(BaseModel):
 
 class ChangesResponse(BaseModel):
     items: List[ChangesItem]
+    attribution: Attribution
 
 
 class TermsResponse(BaseModel):
     items: List[TermSummary]
     next_cursor: Optional[str] = None  # string or null
+    attribution: Attribution
 
 
 # --- HTTP client with retries ---
@@ -170,7 +189,11 @@ def validate_terms_payload(
         else:
             if "items" not in payload or not isinstance(payload["items"], list):
                 raise ValueError("items[] missing or not a list")
-            parsed = TermsResponse(items=[], next_cursor=payload.get("next_cursor"))
+            parsed = TermsResponse(
+                items=[],
+                next_cursor=payload.get("next_cursor"),
+                attribution=Attribution.model_validate(payload.get("attribution")),
+            )
             for it in payload["items"]:
                 parsed.items.append(
                     TermSummary(
@@ -179,6 +202,7 @@ def validate_terms_payload(
                         summary=it.get("summary"),
                         tags=it.get("tags"),
                         updated_at=str(it.get("updated_at", "1970-01-01")),
+                        url=str(it.get("url", "")),
                     )
                 )
         return True, "Valid /v1/terms payload", parsed.items
@@ -193,6 +217,7 @@ def validate_term_payload(payload: Dict[str, Any], do_schema: bool) -> Tuple[boo
         else:
             if not isinstance(payload, dict):
                 raise ValueError("Payload is not an object")
+            Term.model_validate(payload)
         return True, "Valid /v1/terms/{id} payload"
     except (ValidationError, ValueError) as e:
         return False, f"/v1/terms/{{id}} schema mismatch: {e}"
@@ -205,6 +230,7 @@ def validate_tags_payload(payload: Dict[str, Any], do_schema: bool) -> Tuple[boo
         else:
             if "tags" not in payload or not isinstance(payload["tags"], list):
                 raise ValueError("tags[] missing or not a list")
+            Attribution.model_validate(payload.get("attribution"))
         return True, "Valid /v1/tags payload"
     except (ValidationError, ValueError) as e:
         return False, f"/v1/tags schema mismatch: {e}"
@@ -219,6 +245,7 @@ def validate_changes_payload(
         else:
             if "items" not in payload or not isinstance(payload["items"], list):
                 raise ValueError("items[] missing or not a list")
+            ChangesResponse.model_validate(payload)
         return True, "Valid /v1/changes payload"
     except (ValidationError, ValueError) as e:
         return False, f"/v1/changes schema mismatch: {e}"
