@@ -4,14 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "wrangler dev --port 8787",
+    "mcp:dev": "wrangler dev --config wrangler-mcp.toml --port 8788",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run tests",
+    "check": "npm run typecheck && npm test",
+    "deploy": "wrangler deploy",
+    "deploy:mcp": "wrangler deploy --config wrangler-mcp.toml"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260914.1",
     "typescript": "^5.9.3",
+    "vitest": "^5.0.0",
     "wrangler": "^4.131.1"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.0.0",
+    "agents": "^0.20.1",
+    "zod": "^4.6.5"
   }
 }

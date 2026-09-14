@@ -8,21 +8,18 @@ from mcp.server import Server
 from mcp.server.stdio import stdio_server
 from mcp.types import (
     Resource,
-    Tool,
     TextContent,
-    ImageContent,
-    EmbeddedResource,
+    Tool,
 )
 
 from .api_client import APIClient
 from .tools import (
-    search_terms_tool,
-    get_term_tool,
     get_related_terms_tool,
-    list_tags_tool,
+    get_term_tool,
     get_terms_by_tag_tool,
+    list_tags_tool,
+    search_terms_tool,
 )
-
 
 # Initialize server
 app = Server("pswiki-mcp")

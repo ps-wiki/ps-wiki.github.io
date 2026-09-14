@@ -1,13 +1,14 @@
-name: Deploy Worker
+name: Deploy MCP Worker
 
 on:
   push:
     branches:
       - main
     paths:
-      - "worker/src/index.ts"
+      - "worker/src/mcp.ts"
       - "worker/src/env.ts"
-      - "worker/wrangler.toml"
+      - "worker/mcp-entry.ts"
+      - "worker/wrangler-mcp.toml"
       - "worker/package.json"
       - "worker/package-lock.json"
   workflow_dispatch:
@@ -16,12 +17,12 @@ permissions:
   contents: read
 
 concurrency:
-  group: deploy-worker-production
+  group: deploy-mcp-production
   cancel-in-progress: false
 
 jobs:
   deploy:
-    name: Deploy Cloudflare Worker
+    name: Deploy PS-Wiki MCP Worker
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -40,13 +41,13 @@ jobs:
         run: |
           npm ci
           npm run check
-          npx wrangler deploy --dry-run
+          npx wrangler deploy --config wrangler-mcp.toml --dry-run
 
       - name: Deploy
         uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy
+          command: deploy --config wrangler-mcp.toml
           workingDirectory: worker
           wranglerVersion: "4"

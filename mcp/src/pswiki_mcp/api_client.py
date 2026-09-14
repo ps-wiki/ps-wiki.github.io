@@ -1,7 +1,8 @@
 """REST API client for PS-Wiki."""
 
-import httpx
 from typing import Any, Optional
+
+import httpx
 from pydantic import BaseModel
 
 
@@ -18,18 +19,24 @@ class TermSummary(BaseModel):
 class APIClient:
     """Client for PS-Wiki REST API."""
 
-    def __init__(self, base_url: str = "https://api.ning.guru"):
+    def __init__(
+        self,
+        base_url: str = "https://api.ps-wiki.ning.guru",
+        client: httpx.AsyncClient | None = None,
+    ):
         """Initialize API client.
 
         Args:
             base_url: Base URL for the API (default: production API)
         """
         self.base_url = base_url.rstrip("/")
-        self.client = httpx.AsyncClient(timeout=30.0)
+        self.client = client or httpx.AsyncClient(timeout=10.0)
+        self._owns_client = client is None
 
     async def close(self):
         """Close the HTTP client."""
-        await self.client.aclose()
+        if self._owns_client:
+            await self.client.aclose()
 
     async def search_terms(
         self, query: Optional[str] = None, tag: Optional[str] = None, limit: int = 20

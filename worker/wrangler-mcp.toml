@@ -1,0 +1,22 @@
+name = "pswiki-mcp"
+main = "mcp-entry.ts"
+compatibility_date = "2025-11-02"
+compatibility_flags = ["nodejs_compat"]
+
+[[routes]]
+pattern = "mcp.ps-wiki.ning.guru"
+custom_domain = true
+
+[observability]
+enabled = true
+
+  [observability.logs]
+  invocation_logs = true
+  head_sampling_rate = 1
+
+[vars]
+MCP_API_BASE = "https://api.ps-wiki.ning.guru"
+MCP_ALLOWED_HOSTS = "mcp.ps-wiki.ning.guru,pswiki-mcp.jinning.workers.dev"
+MCP_ALLOWED_ORIGINS = "mcp.ps-wiki.ning.guru,pswiki-mcp.jinning.workers.dev"
+MCP_TIMEOUT_MS = "5000"
+MCP_MAX_RESPONSE_BYTES = "1000000"
