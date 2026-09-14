@@ -11,7 +11,7 @@
  
 <link rel="prev" href="../rest-api/">
  
-<link rel="next" href="../development/">
+<link rel="next" href="../privacy/">
     
 <link rel="icon" href="../assets/images/favicon.png">
 <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
@@ -540,6 +540,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Remote MCP (Streamable HTTP)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chatgpt-and-the-openai-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ChatGPT and the OpenAI API
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#claude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Claude
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#directory-listings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Directory listings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -679,6 +718,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../privacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Privacy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../development/" class="md-nav__link">
         
   
@@ -771,6 +864,45 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Remote MCP (Streamable HTTP)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chatgpt-and-the-openai-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ChatGPT and the OpenAI API
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#claude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Claude
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#directory-listings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Directory listings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -997,22 +1129,66 @@ standard local proxy:</p>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>In ChatGPT or another client with remote MCP/connectors support, add the server
-URL <code>https://mcp.ps-wiki.ning.guru/mcp</code> in that client’s MCP/connector settings. UI
-availability and approval controls depend on the account or workspace. For the
-OpenAI Responses API, the protocol-level shape is:</p>
+<h3 id="chatgpt-and-the-openai-api">ChatGPT and the OpenAI API<a class="headerlink" href="#chatgpt-and-the-openai-api" title="Permanent link">¶</a></h3>
+<p>For a current ChatGPT workspace, an administrator or owner can create a custom
+MCP app in Developer Mode, scan the tools, and publish the app to the
+workspace. Full MCP app support is currently available on ChatGPT Business and
+Enterprise/Edu web workspaces; availability and permissions can change as the
+feature evolves. Use the <a href="https://help.openai.com/en/articles/12584461-developer-mode-and-mcp-apps-in-chatgpt">official ChatGPT MCP app
+instructions</a>
+for the current UI flow.</p>
+<p>For the OpenAI Responses API, the protocol-level shape is:</p>
 <div class="highlight"><pre><span></span><code><span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">responses</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
-    <span class="n">model</span><span class="o">=</span><span class="s2">"gpt-5"</span><span class="p">,</span>
+    <span class="n">model</span><span class="o">=</span><span class="s2">"gpt-6-astra"</span><span class="p">,</span>
     <span class="nb">input</span><span class="o">=</span><span class="s2">"Explain voltage stability using PS-Wiki."</span><span class="p">,</span>
     <span class="n">tools</span><span class="o">=</span><span class="p">[{</span>
         <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"mcp"</span><span class="p">,</span>
         <span class="s2">"server_label"</span><span class="p">:</span> <span class="s2">"pswiki"</span><span class="p">,</span>
+        <span class="s2">"server_description"</span><span class="p">:</span> <span class="s2">"Read-only power-systems terminology from PS-Wiki."</span><span class="p">,</span>
         <span class="s2">"server_url"</span><span class="p">:</span> <span class="s2">"https://mcp.ps-wiki.ning.guru/mcp"</span><span class="p">,</span>
-        <span class="s2">"allowed_tools"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"read_only"</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span>
+        <span class="s2">"allowed_tools"</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">"search_terms"</span><span class="p">,</span>
+            <span class="s2">"get_term"</span><span class="p">,</span>
+            <span class="s2">"get_related_terms"</span><span class="p">,</span>
+            <span class="s2">"list_tags"</span><span class="p">,</span>
+            <span class="s2">"get_terms_by_tag"</span><span class="p">,</span>
+        <span class="p">],</span>
         <span class="s2">"require_approval"</span><span class="p">:</span> <span class="s2">"never"</span><span class="p">,</span>
     <span class="p">}],</span>
 <span class="p">)</span>
 </code></pre></div>
+<p>The current OpenAI API uses an array of tool names for <code>allowed_tools</code>. Replace
+the example model with one currently available to your account. <code>never</code> is
+appropriate here because all five PS-Wiki tools are read-only; use approvals
+if write-capable tools are added later.</p>
+<h3 id="claude">Claude<a class="headerlink" href="#claude" title="Permanent link">¶</a></h3>
+<p>Claude users can add the public endpoint as a custom connector:</p>
+<ol>
+<li>On an individual Pro or Max plan, open <strong>Customize → Connectors</strong>, choose
+   <strong>Add custom connector</strong>, and enter <code>https://mcp.ps-wiki.ning.guru/mcp</code>.</li>
+<li>On Team or Enterprise, an Owner adds it under <strong>Organization settings →
+   Connectors → Add → Custom → Web</strong>; members then connect it from
+   <strong>Customize → Connectors</strong>.</li>
+<li>Enable the connector for the conversation from the <strong>+</strong> menu.</li>
+</ol>
+<p>See <a href="https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp">Claude's current remote MCP connector
+instructions</a>.
+Claude connects to remote connectors from Anthropic's infrastructure, so the
+server must remain publicly reachable.</p>
+<h3 id="directory-listings">Directory listings<a class="headerlink" href="#directory-listings" title="Permanent link">¶</a></h3>
+<p>Direct custom connections do not require a directory listing. A public listing
+is a separate, optional distribution step:</p>
+<ul>
+<li><a href="https://developers.openai.com/plugins/deploy/submission">OpenAI plugin submission</a>
+  accepts a universal public MCP URL, but requires publisher identity
+  verification, domain verification, and public website, support, privacy, and
+  terms URLs.</li>
+<li>Anthropic's <a href="https://support.anthropic.com/en/articles/11596036-anthropic-mcp-directory-faq">Connectors Directory</a>
+  is curated and requires a review submission; inclusion is not guaranteed.</li>
+</ul>
+<p>PS-Wiki is prepared for these paths, but directory submission still requires
+the project owner's account, identity verification, and any reviewer-domain
+challenge.</p>
 <h2 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link">¶</a></h2>
 <h3 id="search_terms"><code>search_terms</code><a class="headerlink" href="#search_terms" title="Permanent link">¶</a></h3>
 <p>Search by keyword, phrase, or concept. Use this to discover candidate terms;
@@ -1090,6 +1266,11 @@ upstream REST status information, a bounded error class, and elapsed time in
 milliseconds. Tool arguments, prompts, query text, response bodies, IP
 addresses, and session identifiers are not logged. A tool that makes multiple
 REST requests records the bounded list of observed upstream statuses.</p>
+<p>The R2 traffic log stores one JSON object per request with the worker, method,
+origin/path, status, duration, request ID, and selected Cloudflare location
+metadata. Query strings are intentionally omitted so REST search text is not
+written to durable traffic logs. See the <a href="../privacy/">privacy policy</a> and
+<a href="../terms/">service terms</a> for the current data-handling and usage details.</p>
 <p>Workers Logs are diagnostic rather than durable usage analytics; retention is
 limited by the Cloudflare plan. The separate monitoring repository stores
 aggregated request data for longer-term reporting.</p>
@@ -1106,7 +1287,9 @@ records.</p>
 <p>The local stdio server also retains its existing read-only resources:
 <code>tags://all</code>, <code>index://terms</code>, and <code>term:///&lt;term-id&gt;</code>.</p>
 <p>PS-Wiki content is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.
-The remote MCP layer delegates data retrieval to the <a href="../rest-api/">PS-Wiki REST API</a>.</p>
+The remote MCP layer delegates data retrieval to the <a href="../rest-api/">PS-Wiki REST API</a>.
+For data handling and support, see the <a href="../privacy/">privacy policy</a> and
+<a href="../terms/">service terms</a>.</p>
 
 
 
