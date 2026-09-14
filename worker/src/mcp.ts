@@ -9,6 +9,19 @@ const DEFAULT_TIMEOUT_MS = 5_000;
 const DEFAULT_MAX_RESPONSE_BYTES = 1_000_000;
 const MAX_SEARCH_LIMIT = 50;
 const MAX_RELATED_TERMS = 25;
+const MAX_LOGGED_UPSTREAM_STATUSES = 100;
+
+type ToolResult = {
+  isError?: boolean;
+  content: Array<{ type: "text"; text: string }>;
+};
+
+type ToolTelemetry = {
+  toolName: string;
+  startedAt: number;
+  upstreamStatuses: number[];
+  errorClasses: string[];
+};
 
 type TermSummary = {
   id: string;
@@ -58,11 +71,11 @@ function jsonText(value: unknown): string {
   return JSON.stringify(value, null, 2);
 }
 
-function success(value: unknown) {
+function success(value: unknown): ToolResult {
   return { content: [{ type: "text" as const, text: jsonText(value) }] };
 }
 
-function failure(error: unknown) {
+function failure(error: unknown): ToolResult {
   if (error instanceof ApiError) {
     return {
       isError: true,
@@ -83,6 +96,60 @@ function failure(error: unknown) {
     isError: true,
     content: [{ type: "text" as const, text: jsonText({ error: "internal_error" }) }],
   };
+}
+
+function createToolTelemetry(toolName: string): ToolTelemetry {
+  return { toolName, startedAt: Date.now(), upstreamStatuses: [], errorClasses: [] };
+}
+
+function recordUpstreamStatus(telemetry: ToolTelemetry | undefined, status: number): void {
+  if (telemetry && telemetry.upstreamStatuses.length < MAX_LOGGED_UPSTREAM_STATUSES) {
+    telemetry.upstreamStatuses.push(status);
+  }
+}
+
+function errorClass(error: unknown): string {
+  if (error instanceof ApiError) return error.code;
+  if (error instanceof Error && error.name) return error.name;
+  return "unknown";
+}
+
+function recordErrorClass(telemetry: ToolTelemetry, error: unknown): void {
+  const className = errorClass(error);
+  if (telemetry.errorClasses.length < MAX_LOGGED_UPSTREAM_STATUSES) {
+    telemetry.errorClasses.push(className);
+  }
+}
+
+function logToolTelemetry(telemetry: ToolTelemetry, error: unknown = undefined): void {
+  const statuses = telemetry.upstreamStatuses;
+  const errorClasses = telemetry.errorClasses;
+  console.log({
+    event: "mcp_tool",
+    tool_name: telemetry.toolName,
+    upstream_status: statuses.length === 1 ? statuses[0] : null,
+    upstream_statuses: statuses,
+    error_class: error === undefined ? (errorClasses.length > 0 ? "partial_failure" : "none") : errorClass(error),
+    ...(errorClasses.length > 0 ? { error_classes: errorClasses } : {}),
+    latency_ms: Math.max(0, Date.now() - telemetry.startedAt),
+  });
+}
+
+async function withToolTelemetry(
+  toolName: string,
+  operation: (telemetry: ToolTelemetry) => Promise<ToolResult>,
+): Promise<ToolResult> {
+  const telemetry = createToolTelemetry(toolName);
+  let failureReason: unknown;
+  try {
+    return await operation(telemetry);
+  } catch (error) {
+    failureReason = error;
+    recordErrorClass(telemetry, error);
+    return failure(error);
+  } finally {
+    logToolTelemetry(telemetry, failureReason);
+  }
 }
 
 async function readJson(response: Response, maxBytes: number): Promise<unknown> {
@@ -125,7 +192,7 @@ async function readJson(response: Response, maxBytes: number): Promise<unknown> 
   }
 }
 
-async function fetchJson(path: string, env: McpEnv): Promise<unknown> {
+async function fetchJson(path: string, env: McpEnv, telemetry?: ToolTelemetry): Promise<unknown> {
   const base = (env.MCP_API_BASE ?? DEFAULT_API_BASE).replace(/\/+$/, "");
   const timeoutMs = parsePositiveInt(env.MCP_TIMEOUT_MS, DEFAULT_TIMEOUT_MS, 30_000);
   const maxBytes = parsePositiveInt(
@@ -154,6 +221,7 @@ async function fetchJson(path: string, env: McpEnv): Promise<unknown> {
       throw new ApiError("upstream_error", 502);
     }
 
+    recordUpstreamStatus(telemetry, response.status);
     if (response.status === 404) throw new ApiError("not_found", 404);
     if (!response.ok) throw new ApiError("upstream_error", 502);
     return await readJson(response, maxBytes);
@@ -177,22 +245,32 @@ function asTermsResponse(value: unknown): ApiTermsResponse {
   return record as ApiTermsResponse;
 }
 
-async function searchTerms(env: McpEnv, query: string, limit: number): Promise<ApiTermsResponse> {
+async function searchTerms(
+  env: McpEnv,
+  query: string,
+  limit: number,
+  telemetry: ToolTelemetry,
+): Promise<ApiTermsResponse> {
   const params = new URLSearchParams({ query, limit: String(limit) });
-  return asTermsResponse(await fetchJson(`/v1/terms?${params}`, env));
+  return asTermsResponse(await fetchJson(`/v1/terms?${params}`, env, telemetry));
 }
 
-async function getTerm(env: McpEnv, termId: string): Promise<Record<string, unknown>> {
-  return asRecord(await fetchJson(`/v1/terms/${encodeURIComponent(termId)}`, env));
+async function getTerm(
+  env: McpEnv,
+  termId: string,
+  telemetry: ToolTelemetry,
+): Promise<Record<string, unknown>> {
+  return asRecord(await fetchJson(`/v1/terms/${encodeURIComponent(termId)}`, env, telemetry));
 }
 
 async function relatedTermSummaries(
   env: McpEnv,
   relatedIds: string[],
+  telemetry: ToolTelemetry,
 ): Promise<Array<{ id: unknown; title: unknown; summary: unknown; url: unknown }>> {
   const results = await Promise.allSettled(
     relatedIds.slice(0, MAX_RELATED_TERMS).map(async (id) => {
-      const term = await getTerm(env, id);
+      const term = await getTerm(env, id, telemetry);
       return {
         id: term.id ?? id,
         title: term.title,
@@ -201,7 +279,10 @@ async function relatedTermSummaries(
       };
     }),
   );
-  return results.flatMap((result) => (result.status === "fulfilled" ? [result.value] : []));
+  return results.flatMap((result) => {
+    if (result.status === "rejected") recordErrorClass(telemetry, result.reason);
+    return result.status === "fulfilled" ? [result.value] : [];
+  });
 }
 
 function createServer(env: McpEnv): McpServer {
@@ -217,14 +298,11 @@ function createServer(env: McpEnv): McpServer {
         limit: z.number().int().min(1).max(MAX_SEARCH_LIMIT).optional().default(10).describe("Maximum number of matching term summaries to return; defaults to 10."),
       },
     },
-    async ({ query, limit }) => {
-      try {
-        const data = await searchTerms(env, query, limit);
+    async ({ query, limit }) =>
+      withToolTelemetry("search_terms", async (telemetry) => {
+        const data = await searchTerms(env, query, limit, telemetry);
         return success({ query, count: data.items?.length ?? 0, results: data.items ?? [], attribution: data.attribution });
-      } catch (error) {
-        return failure(error);
-      }
-    },
+      }),
   );
 
   server.registerTool(
@@ -236,13 +314,8 @@ function createServer(env: McpEnv): McpServer {
         term_id: z.string().trim().min(1).max(200).describe("Kebab-case PS-Wiki term ID, such as voltage-stability."),
       },
     },
-    async ({ term_id }) => {
-      try {
-        return success(await getTerm(env, term_id));
-      } catch (error) {
-        return failure(error);
-      }
-    },
+    async ({ term_id }) =>
+      withToolTelemetry("get_term", async (telemetry) => success(await getTerm(env, term_id, telemetry))),
   );
 
   server.registerTool(
@@ -255,13 +328,13 @@ function createServer(env: McpEnv): McpServer {
         depth: z.number().int().min(1).max(2).optional().default(1).describe("Relationship depth: 1 or 2; defaults to 1."),
       },
     },
-    async ({ term_id, depth }) => {
-      try {
-        const term = await getTerm(env, term_id);
+    async ({ term_id, depth }) =>
+      withToolTelemetry("get_related_terms", async (telemetry) => {
+        const term = await getTerm(env, term_id, telemetry);
         const relatedIds = Array.isArray(term.related)
           ? term.related.filter((value): value is string => typeof value === "string")
           : [];
-        const relatedTerms = await relatedTermSummaries(env, relatedIds);
+        const relatedTerms = await relatedTermSummaries(env, relatedIds, telemetry);
         const result: Record<string, unknown> = {
           term_id,
           term_title: term.title,
@@ -273,24 +346,25 @@ function createServer(env: McpEnv): McpServer {
         if (depth >= 2) {
           const secondLevelIds = new Set<string>();
           const relatedFull = await Promise.allSettled(
-            relatedTerms.map(async (related) => getTerm(env, String(related.id))),
+            relatedTerms.map(async (related) => getTerm(env, String(related.id), telemetry)),
           );
           for (const related of relatedFull) {
-            if (related.status !== "fulfilled" || !Array.isArray(related.value.related)) continue;
+            if (related.status !== "fulfilled") {
+              recordErrorClass(telemetry, related.reason);
+              continue;
+            }
+            if (!Array.isArray(related.value.related)) continue;
             for (const secondId of related.value.related) {
               if (typeof secondId === "string" && secondId !== term_id && !relatedIds.includes(secondId)) {
                 secondLevelIds.add(secondId);
               }
             }
           }
-          result.second_level_terms = await relatedTermSummaries(env, [...secondLevelIds]);
+          result.second_level_terms = await relatedTermSummaries(env, [...secondLevelIds], telemetry);
         }
 
         return success(result);
-      } catch (error) {
-        return failure(error);
-      }
-    },
+      }),
   );
 
   server.registerTool(
@@ -300,15 +374,12 @@ function createServer(env: McpEnv): McpServer {
       annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
       inputSchema: {},
     },
-    async () => {
-      try {
-        const data = asRecord(await fetchJson("/v1/tags", env));
+    async () =>
+      withToolTelemetry("list_tags", async (telemetry) => {
+        const data = asRecord(await fetchJson("/v1/tags", env, telemetry));
         const tags = Array.isArray(data.tags) ? data.tags : [];
         return success({ tags, count: tags.length, attribution: data.attribution });
-      } catch (error) {
-        return failure(error);
-      }
-    },
+      }),
   );
 
   server.registerTool(
@@ -320,15 +391,12 @@ function createServer(env: McpEnv): McpServer {
         tag: z.string().trim().min(1).max(100).describe("Case-insensitive PS-Wiki tag, such as stability or control."),
       },
     },
-    async ({ tag }) => {
-      try {
+    async ({ tag }) =>
+      withToolTelemetry("get_terms_by_tag", async (telemetry) => {
         const params = new URLSearchParams({ tag, limit: "100" });
-        const data = asTermsResponse(await fetchJson(`/v1/terms?${params}`, env));
+        const data = asTermsResponse(await fetchJson(`/v1/terms?${params}`, env, telemetry));
         return success({ tag, count: data.items?.length ?? 0, terms: data.items ?? [], attribution: data.attribution });
-      } catch (error) {
-        return failure(error);
-      }
-    },
+      }),
   );
 
   return server;

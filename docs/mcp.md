@@ -234,6 +234,19 @@ curl -sS "$MCP_URL" \
   --data '{"jsonrpc":"2.0","id":3,"method":"tools/call","params":{"name":"search_terms","arguments":{"query":"stability","limit":3}}}'
 ```
 
+### Operational telemetry
+
+The remote Worker has Cloudflare Workers Logs enabled for short-term diagnosis.
+Each top-level tool call emits one structured event with the tool name,
+upstream REST status information, a bounded error class, and elapsed time in
+milliseconds. Tool arguments, prompts, query text, response bodies, IP
+addresses, and session identifiers are not logged. A tool that makes multiple
+REST requests records the bounded list of observed upstream statuses.
+
+Workers Logs are diagnostic rather than durable usage analytics; retention is
+limited by the Cloudflare plan. The separate monitoring repository stores
+aggregated request data for longer-term reporting.
+
 For a failed deployment, inspect `npx wrangler versions list` and use
 `npx wrangler rollback <VERSION_ID>` from `worker/` after confirming the
 target version. The existing REST routes should be probed after rollback.

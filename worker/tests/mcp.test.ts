@@ -133,6 +133,7 @@ describe("remote MCP Worker", () => {
   });
 
   it("calls search_terms through the REST API", async () => {
+    const log = vi.spyOn(console, "log").mockImplementation(() => {});
     await mcpRequest(initializeRequest());
     const called = await mcpRequest({
       jsonrpc: "2.0",
@@ -144,6 +145,21 @@ describe("remote MCP Worker", () => {
     expect(called.response.status).toBe(200);
     expect(called.body!.result!.isError).toBeUndefined();
     expect(JSON.parse(called.body!.result!.content![0].text).results[0].id).toBe("voltage-stability");
+
+    const telemetry = log.mock.calls
+      .map(([value]) => value)
+      .find((value): value is Record<string, unknown> =>
+        typeof value === "object" && value !== null && (value as Record<string, unknown>).event === "mcp_tool",
+      );
+    expect(telemetry).toMatchObject({
+      event: "mcp_tool",
+      tool_name: "search_terms",
+      upstream_status: 200,
+      upstream_statuses: [200],
+      error_class: "none",
+    });
+    expect(telemetry).toHaveProperty("latency_ms");
+    expect(telemetry).not.toHaveProperty("query");
   });
 
   it("returns a protocol validation error for invalid arguments", async () => {
@@ -160,6 +176,7 @@ describe("remote MCP Worker", () => {
   });
 
   it("returns a safe error for an unknown term", async () => {
+    const log = vi.spyOn(console, "log").mockImplementation(() => {});
     const called = await mcpRequest({
       jsonrpc: "2.0",
       id: 5,
@@ -168,6 +185,20 @@ describe("remote MCP Worker", () => {
     });
     expect(called.body!.result!.isError).toBe(true);
     expect(JSON.parse(called.body!.result!.content![0].text)).toMatchObject({ error: "not_found" });
+
+    const telemetry = log.mock.calls
+      .map(([value]) => value)
+      .find((value): value is Record<string, unknown> =>
+        typeof value === "object" && value !== null && (value as Record<string, unknown>).event === "mcp_tool",
+      );
+    expect(telemetry).toMatchObject({
+      event: "mcp_tool",
+      tool_name: "get_term",
+      upstream_status: 404,
+      upstream_statuses: [404],
+      error_class: "not_found",
+    });
+    expect(telemetry).not.toHaveProperty("term_id");
   });
 
   it("returns a safe error when the REST API times out", async () => {
