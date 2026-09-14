@@ -38,6 +38,10 @@ The schema follows **Semantic Versioning**:
 
 ## [Unreleased]
 
+### API contract
+
+- Added support for the upcoming REST API `1.1.0` release, including Worker-generated canonical term URLs and PS-Wiki attribution metadata; the stored term JSON structure and schema version remain unchanged
+
 ### Planned
 
 - Add schema for reference list entries (`reference.schema.json`).

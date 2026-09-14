@@ -37,6 +37,7 @@ worker/
 | `ORIGIN_BASE` | Base URL of raw JSON term files in GitHub, e.g.<br>`https://raw.githubusercontent.com/ps-wiki/ps-wiki.github.io/main/database/json` |
 | `INDEX_URL` | URL of `index.json` built by `build_index.py` |
 | `TAGS_URL` | URL of `tags.json` built by `build_index.py` |
+| `SITE_BASE` | Canonical human-facing PS-Wiki site URL, e.g. `https://ps-wiki.ning.guru` |
 
 These variables allow the Worker to always fetch the latest data directly
 from GitHub without redeploying the Worker.
@@ -95,6 +96,9 @@ python database/pyscripts/test_api.py --base-url http://localhost:8787 --validat
 | `GET /openapi.json` | Return OpenAPI spec for ChatGPT Actions |
 
 All endpoints return `application/json` and include permissive CORS headers.
+Term records include a canonical `url`, and successful responses include
+structured PS-Wiki attribution and license metadata. Full term responses retain
+the existing `authors` array for term contributors.
 
 ## 🧪 Quick Local Testing Commands
 

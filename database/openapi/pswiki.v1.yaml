@@ -1,7 +1,7 @@
 openapi: 3.1.0
 info:
   title: PS-Wiki API
-  version: 1.0.1
+  version: 1.1.0
   description: Read-only API to browse PS-Wiki terms and bibliography entries.
   license:
     name: CC BY-NC 4.0
@@ -51,6 +51,8 @@ paths:
                       $ref: "#/components/schemas/TermSummary"
                   next_cursor:
                     type: [string, "null"]
+                  attribution:
+                    $ref: "#/components/schemas/Attribution"
         "400":
           description: Bad request (invalid parameter)
           content:
@@ -73,6 +75,10 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Term"
+          headers:
+            Link:
+              description: Canonical PS-Wiki term page.
+              schema: { type: string }
         "404":
           description: Not found
           content:
@@ -103,6 +109,8 @@ paths:
                       properties:
                         tag: { type: string }
                         count: { type: integer }
+                  attribution:
+                    $ref: "#/components/schemas/Attribution"
         "400":
           description: Bad request
           content:
@@ -134,6 +142,9 @@ paths:
                       properties:
                         id: { type: string }
                         updated_at: { type: string }
+                        url: { type: string, format: uri }
+                  attribution:
+                    $ref: "#/components/schemas/Attribution"
         "400":
           description: Bad request (missing/invalid `since`)
           content:
@@ -144,7 +155,7 @@ components:
   schemas:
     TermSummary:
       type: object
-      required: [id, title, updated_at]
+      required: [id, title, updated_at, url]
       additionalProperties: false
       properties:
         id: { type: string }
@@ -154,11 +165,29 @@ components:
           type: array
           items: { type: string }
         updated_at: { type: string, description: "ISO date (YYYY-MM-DD)" }
+        url: { type: string, format: uri, description: Canonical human-facing term page. }
 
     Term:
       type: object
-      description: Full term JSON as stored in database/json/<id>.json.
+      description: Full term JSON with API-generated canonical URL and attribution metadata.
+      required: [url, attribution]
+      properties:
+        url: { type: string, format: uri, description: Canonical human-facing term page. }
+        attribution: { $ref: "#/components/schemas/Attribution" }
       additionalProperties: true
+
+    Attribution:
+      type: object
+      required: [provider, url, license]
+      properties:
+        provider: { type: string, example: PS-Wiki }
+        url: { type: string, format: uri, description: PS-Wiki homepage. }
+        license:
+          type: object
+          required: [name, url]
+          properties:
+            name: { type: string, example: CC BY-NC 4.0 }
+            url: { type: string, format: uri }
 
     Error:
       type: object
