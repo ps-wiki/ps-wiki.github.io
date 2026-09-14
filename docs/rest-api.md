@@ -7,24 +7,23 @@ The **PS-Wiki REST API** provides programmatic access to 173+ power systems term
 
 <!-- prettier-ignore-start -->
 !!! note "Production API URL"
-    The PS-Wiki API is available at `https://api.ning.guru`.
-    The original `pswiki-api.jinning.workers.dev` hostname remains available as a fallback.
+    The PS-Wiki API is available at `https://api.ps-wiki.ning.guru`.
 <!-- prettier-ignore-end -->
 
 ## Base URL
 
 ```
-https://api.ning.guru
+https://api.ps-wiki.ning.guru
 ```
 
-**OpenAPI Specification**: [/openapi.json](https://api.ning.guru/openapi.json)
+**OpenAPI Specification**: [/openapi.json](https://api.ps-wiki.ning.guru/openapi.json)
 
 ## Quick Start
 
 ### Search for Terms
 
 ```bash
-curl "https://api.ning.guru/v1/terms?query=stability&limit=5"
+curl "https://api.ps-wiki.ning.guru/v1/terms?query=stability&limit=5"
 ```
 
 **Response**:
@@ -56,7 +55,7 @@ curl "https://api.ning.guru/v1/terms?query=stability&limit=5"
 ### Get a Specific Term
 
 ```bash
-curl "https://api.ning.guru/v1/terms/voltage-stability"
+curl "https://api.ps-wiki.ning.guru/v1/terms/voltage-stability"
 ```
 
 Returns the complete term data including definition, equations, citations, metadata,
@@ -80,16 +79,16 @@ Search or list term summaries.
 
 ```bash
 # List all terms (paginated)
-curl "https://api.ning.guru/v1/terms?limit=10"
+curl "https://api.ps-wiki.ning.guru/v1/terms?limit=10"
 
 # Search by keyword
-curl "https://api.ning.guru/v1/terms?query=frequency+control"
+curl "https://api.ps-wiki.ning.guru/v1/terms?query=frequency+control"
 
 # Filter by tag
-curl "https://api.ning.guru/v1/terms?tag=stability"
+curl "https://api.ps-wiki.ning.guru/v1/terms?tag=stability"
 
 # Combine search and limit
-curl "https://api.ning.guru/v1/terms?query=power+flow&limit=5"
+curl "https://api.ps-wiki.ning.guru/v1/terms?query=power+flow&limit=5"
 ```
 
 ### GET /v1/terms/{id}
@@ -103,7 +102,7 @@ Retrieve full details for a specific term.
 **Example**:
 
 ```bash
-curl "https://api.ning.guru/v1/terms/automatic-generation-control"
+curl "https://api.ps-wiki.ning.guru/v1/terms/automatic-generation-control"
 ```
 
 **Response**: Complete term JSON including full definition and description, mathematical equations (LaTeX), citations and references, related terms, tags and metadata.
@@ -113,7 +112,7 @@ curl "https://api.ning.guru/v1/terms/automatic-generation-control"
 List all available tags with usage counts.
 
 ```bash
-curl "https://api.ning.guru/v1/tags"
+curl "https://api.ps-wiki.ning.guru/v1/tags"
 ```
 
 **Response**:
@@ -145,7 +144,7 @@ Get terms updated since a specific date.
 - `since` (string, required) — ISO 8601 date or datetime (e.g., `2025-11-01`)
 
 ```bash
-curl "https://api.ning.guru/v1/changes?since=2025-11-01"
+curl "https://api.ps-wiki.ning.guru/v1/changes?since=2025-11-01"
 ```
 
 **Response**:
@@ -184,14 +183,14 @@ curl "https://api.ning.guru/v1/changes?since=2025-11-01"
 
     # Search for terms
     response = requests.get(
-        "https://api.ning.guru/v1/terms",
+        "https://api.ps-wiki.ning.guru/v1/terms",
         params={"query": "stability", "limit": 10}
     )
     terms = response.json()
 
     # Get specific term
     term = requests.get(
-        "https://api.ning.guru/v1/terms/voltage-stability"
+        "https://api.ps-wiki.ning.guru/v1/terms/voltage-stability"
     ).json()
 
     print(f"Title: {term['title']}")
@@ -203,13 +202,13 @@ curl "https://api.ning.guru/v1/changes?since=2025-11-01"
     ```javascript
     // Search for terms
     const response = await fetch(
-      "https://api.ning.guru/v1/terms?query=stability&limit=10"
+      "https://api.ps-wiki.ning.guru/v1/terms?query=stability&limit=10"
     );
     const data = await response.json();
 
     // Get specific term
     const term = await fetch(
-      "https://api.ning.guru/v1/terms/voltage-stability"
+      "https://api.ps-wiki.ning.guru/v1/terms/voltage-stability"
     ).then((r) => r.json());
 
     console.log(`Title: ${term.title}`);
@@ -220,15 +219,15 @@ curl "https://api.ning.guru/v1/changes?since=2025-11-01"
 
     ```bash
     # Pretty-print search results
-    curl -s "https://api.ning.guru/v1/terms?query=stability" \
+    curl -s "https://api.ps-wiki.ning.guru/v1/terms?query=stability" \
       | jq '.items[] | {id, title}'
 
     # Extract just the description
-    curl -s "https://api.ning.guru/v1/terms/voltage-stability" \
+    curl -s "https://api.ps-wiki.ning.guru/v1/terms/voltage-stability" \
       | jq -r '.description'
 
     # List all tags
-    curl -s "https://api.ning.guru/v1/tags" \
+    curl -s "https://api.ps-wiki.ning.guru/v1/tags" \
       | jq '.tags[] | "\(.tag): \(.count)"'
     ```
 

@@ -1,172 +1,81 @@
-# PS-Wiki API (Cloudflare Worker)
+# PS-Wiki Cloudflare Worker
 
-This directory contains the **Cloudflare Worker** that exposes the PS-Wiki database
-as a read-only REST API, suitable for integration with **ChatGPT Actions**, other AI
-agents, or web clients.
+The root `pswiki-api` Worker serves the existing read-only REST API. A separate
+lightweight `pswiki-mcp` Worker serves remote MCP and calls that REST API at
+`MCP_API_BASE`; it does not duplicate the PS-Wiki database.
 
+| Surface | Production URL |
+| --- | --- |
+| REST API | `https://api.ps-wiki.ning.guru` |
+| OpenAPI | `https://api.ps-wiki.ning.guru/openapi.json` |
+| Remote MCP | `https://mcp.ps-wiki.ning.guru/mcp` |
 
-## 🌐 Overview
+## Development
 
-| Component | Description |
-|------------|--------------|
-| **Platform** | Cloudflare Workers (TypeScript) |
-| **Purpose**  | Serve Power Systems Wiki term data as JSON |
-| **Data Source** | JSON terms stored in the [`database/json/`](../database/json) directory of this repo |
-| **Index Source** | [`database/build/index.json`](../database/build/index.json) & [`database/build/tags.json`](../database/build/tags.json) |
-| **Schema** | [`database/schema/v1/term.schema.json`](../database/schema/v1/term.schema.json) |
-| **Production Endpoint** | `https://api.ning.guru` (custom domain) |
-
-
-## 🗂 Directory Structure
-
-```
-worker/
-├── src/
-│   └── index.ts           # Main Worker script (REST API)
-├── wrangler.toml          # Worker configuration (entry point, env vars)
-├── package.json           # Node project metadata
-├── tsconfig.json          # TypeScript compiler settings
-└── README.md              # This file
-```
-
-
-## ⚙️ Environment Variables (set in `wrangler.toml`)
-
-| Name | Description |
-|------|--------------|
-| `ORIGIN_BASE` | Base URL of raw JSON term files in GitHub, e.g.<br>`https://raw.githubusercontent.com/ps-wiki/ps-wiki.github.io/main/database/json` |
-| `INDEX_URL` | URL of `index.json` built by `build_index.py` |
-| `TAGS_URL` | URL of `tags.json` built by `build_index.py` |
-| `SITE_BASE` | Canonical human-facing PS-Wiki site URL, e.g. `https://ps-wiki.ning.guru` |
-
-These variables allow the Worker to always fetch the latest data directly
-from GitHub without redeploying the Worker.
-
-
-## 🚀 Deployment
-
-### One-time setup
 ```bash
-npm install --save-dev wrangler typescript
-npx wrangler login
+npm ci
+npm run mcp:dev
 ```
 
-### Local development
+The REST Worker listens on `http://localhost:8787`; the MCP Worker listens on
+`http://localhost:8788`. Use `http://localhost:8788/mcp` with MCP Inspector.
+
+Checks:
+
 ```bash
-cd worker
-npx wrangler dev
+npm run check
+npx wrangler deploy --config wrangler.toml --dry-run
+npx wrangler deploy --config wrangler-mcp.toml --dry-run
 ```
 
-Local development server URL: <http://localhost:8787>
+The root Worker tests are intentionally scoped to `tests/`; the nested
+`worker/pswiki-api/` directory is an unrelated starter template and is not the
+deployed API.
 
-Example test:
+## Configuration
+
+Existing REST variables remain unchanged:
+
+- `ORIGIN_BASE` — raw term JSON base URL.
+- `INDEX_URL` — generated term index URL.
+- `TAGS_URL` — generated tag index URL.
+- `SITE_BASE` — human-facing canonical site URL.
+
+MCP variables are:
+
+- `MCP_API_BASE` — REST base used by MCP tools; production uses
+  `https://api.ps-wiki.ning.guru`.
+- `MCP_ALLOWED_HOSTS` — comma-separated MCP Host allowlist.
+- `MCP_ALLOWED_ORIGINS` — comma-separated browser Origin allowlist.
+- `MCP_TIMEOUT_MS` — upstream REST timeout, bounded by the Worker code.
+- `MCP_MAX_RESPONSE_BYTES` — maximum upstream JSON response size.
+
+The initial deployment is public and read-only. It uses no OAuth, accounts, or
+Durable Objects. Cloudflare’s MCP handler validates Host and present Origin
+headers; non-browser clients without Origin remain supported.
+
+## Deployment and rollback
+
 ```bash
-curl 'http://localhost:8787/v1/terms?query=stability'
-```
-
-### Deploy to Cloudflare
-
-Manually deploy:
-```bash
+npm run check
 npx wrangler deploy
+npm run deploy:mcp
 ```
 
-### Continuous deployment with GitHub Actions
+Two GitHub Actions workflows deploy these Workers independently on approved
+changes to `main`, using `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`.
+The MCP config declares `mcp.ps-wiki.ning.guru` as its single Cloudflare custom
+domain; the REST config declares `api.ps-wiki.ning.guru` for `pswiki-api`.
+If the account requires dashboard confirmation for the first custom-domain
+attachment, approve only that hostname.
 
-The repository deploys the production Worker automatically when a commit is
-merged to `main` with changes to the root Worker's source, configuration, or
-dependencies. The workflow is
-`.github/workflows/deploy-worker.yml`; it does not deploy pull requests or the
-unrelated `worker/pswiki-api/` starter template.
-
-Before the first automated deployment, add these repository Actions secrets in
-GitHub under **Settings → Secrets and variables → Actions**:
-
-| Secret | Description |
-|--------|-------------|
-| `CLOUDFLARE_API_TOKEN` | Cloudflare API token with the minimum required Workers deployment permission |
-| `CLOUDFLARE_ACCOUNT_ID` | Cloudflare account containing the `pswiki-api` Worker |
-
-The workflow can also be rerun safely through **Actions → Deploy Worker → Run
-workflow**. It uses Cloudflare's official Wrangler Action and deploys from the
-root `worker/` directory.
-
-Cloudflare may also expose a free `workers.dev` URL during initial setup. The
-custom domain above is the canonical production endpoint and should be used in
-client configurations.
-
-```
-https://pswiki-api.<your-account>.workers.dev
-```
-
-### Local API contracts testing
-
-After local development server is running, you can test the OpenAPI spec with:
+Inspect or roll back versions with:
 
 ```bash
-python database/pyscripts/test_api.py --base-url http://localhost:8787 --validate-schema
+npx wrangler versions list
+npx wrangler rollback <VERSION_ID>
 ```
 
-## 🔍 API Endpoints
-
-| Endpoint | Description |
-|-----------|--------------|
-| `GET /v1/terms?query=&tag=&limit=&cursor=` | Search or list term summaries |
-| `GET /v1/terms/{id}` | Retrieve a single term (full JSON) |
-| `GET /v1/tags` | List all tags and counts |
-| `GET /v1/changes?since=YYYY-MM-DD` | List terms modified since a given date |
-| `GET /openapi.json` | Return OpenAPI spec for ChatGPT Actions |
-
-All endpoints return `application/json` and include permissive CORS headers.
-Term records include a canonical `url`, and successful responses include
-structured PS-Wiki attribution and license metadata. Full term responses retain
-the existing `authors` array for term contributors.
-
-## 🧪 Quick Local Testing Commands
-
-```bash
-# check OpenAPI spec
-curl "http://localhost:8787/openapi.json"
-
-# List terms
-curl "http://localhost:8787/v1/terms?limit=5"
-
-# Search by keyword
-curl "http://localhost:8787/v1/terms?query=stability&limit=5"
-
-# filter by tag
-curl "http://localhost:8787/v1/terms?tag=stability"
-
-# get single term by ID
-curl "http://localhost:8787/v1/terms/ambient-adjusted-ratings"
-
-# Changes since October 2025
-curl "http://localhost:8787/v1/changes?since=2025-10-01"
-```
-
-
-## 🧰 Troubleshooting
-
-| Symptom | Likely Cause / Fix |
-|----------|--------------------|
-| `Missing entry-point` | Run `wrangler dev` *inside* the `worker` folder or add `--config worker/wrangler.toml` |
-| `404 on /v1/terms/{id}` | Check `ORIGIN_BASE` path and ensure the file `<id>.json` exists in `database/json` |
-| Empty results | Ensure `database/build/index.json` is committed and `INDEX_URL` matches its GitHub raw URL |
-| CORS error | The Worker includes `Access-Control-Allow-Origin: *`; if you modified headers, re-add it |
-| OpenAPI invalid | Hit `/openapi.json` in browser; it must return valid JSON for ChatGPT Actions |
-
-
-## 🧾 License
-
-The PS-Wiki API code follows the same license as the repository:  
-**CC BY-NC 4.0** for content, and MIT-style for supporting scripts unless otherwise noted.
-
-
-## 🧩 Future Enhancements
-
-- `/v1/tags/{tag}` endpoint for direct tag lookup  
-- `/v1/references` to expose citation metadata  
-- Cache invalidation hooks (GitHub webhook trigger)
-
-
-_Last updated: 2025-11-03_
+After deployment, run the MCP Inspector against
+`https://mcp.ps-wiki.ning.guru/mcp`, or follow the initialize/tools-list/tools-call curl
+examples in [docs/mcp.md](https://ps-wiki.ning.guru/mcp/).
