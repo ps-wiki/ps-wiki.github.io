@@ -7,6 +7,10 @@ This page records major changes in this wiki.
 
 ## 2026
 
+### 09-14
+
+- Added the public, read-only remote MCP service at `https://mcp.ps-wiki.ning.guru/mcp`, backed by the REST API at `https://api.ps-wiki.ning.guru`; documented local stdio and remote MCP usage, deployment, verification, and attribution
+
 ### 09-13
 
 - Prepared the REST API contract for the upcoming `1.1.0` release while retaining the `/v1` routes; added canonical term URLs and structured PS-Wiki attribution and license metadata to API responses

@@ -1,7 +1,7 @@
 # PS-Wiki MCP Server
 
 This package provides the local stdio MCP server for PS-Wiki. The production
-remote endpoint is hosted by the existing Cloudflare REST Worker:
+remote endpoint is hosted by the dedicated Cloudflare MCP Worker:
 
 ```text
 https://mcp.ps-wiki.ning.guru/mcp
