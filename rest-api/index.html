@@ -1030,16 +1030,27 @@ The original <code>pswiki-api.jinning.workers.dev</code> hostname remains availa
 <span class="w">      </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Voltage Stability"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"summary"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The ability of a power system to maintain..."</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"stability"</span><span class="p">,</span><span class="w"> </span><span class="s2">"power-quality"</span><span class="p">],</span>
-<span class="w">      </span><span class="nt">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2025-11-19"</span>
+<span class="w">      </span><span class="nt">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2025-11-19"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ps-wiki.ning.guru/wiki/voltage-stability/"</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">],</span>
-<span class="w">  </span><span class="nt">"next_cursor"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">  </span><span class="nt">"next_cursor"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"attribution"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PS-Wiki"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ps-wiki.ning.guru/"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"license"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CC BY-NC 4.0"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://creativecommons.org/licenses/by-nc/4.0/"</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="get-a-specific-term">Get a Specific Term<a class="headerlink" href="#get-a-specific-term" title="Permanent link">¶</a></h3>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span><span class="s2">"https://api.ning.guru/v1/terms/voltage-stability"</span>
 </code></pre></div>
-<p>Returns the complete term data including definition, equations, citations, and metadata.</p>
+<p>Returns the complete term data including definition, equations, citations, metadata,
+the canonical human-facing <code>url</code>, and API attribution metadata. The existing
+<code>authors</code> array identifies contributors to the term itself.</p>
 <h2 id="api-endpoints">API Endpoints<a class="headerlink" href="#api-endpoints" title="Permanent link">¶</a></h2>
 <h3 id="get-v1terms">GET /v1/terms<a class="headerlink" href="#get-v1terms" title="Permanent link">¶</a></h3>
 <p>Search or list term summaries.</p>
@@ -1083,7 +1094,15 @@ curl<span class="w"> </span><span class="s2">"https://api.ning.guru/v1/terms?que
 <span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"tag"</span><span class="p">:</span><span class="w"> </span><span class="s2">"stability"</span><span class="p">,</span><span class="w"> </span><span class="nt">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="w"> </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"tag"</span><span class="p">:</span><span class="w"> </span><span class="s2">"control"</span><span class="p">,</span><span class="w"> </span><span class="nt">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">23</span><span class="w"> </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"tag"</span><span class="p">:</span><span class="w"> </span><span class="s2">"protection"</span><span class="p">,</span><span class="w"> </span><span class="nt">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="p">}</span>
-<span class="w">  </span><span class="p">]</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">"attribution"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PS-Wiki"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ps-wiki.ning.guru/"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"license"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CC BY-NC 4.0"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://creativecommons.org/licenses/by-nc/4.0/"</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="get-v1changes">GET /v1/changes<a class="headerlink" href="#get-v1changes" title="Permanent link">¶</a></h3>
@@ -1097,9 +1116,25 @@ curl<span class="w"> </span><span class="s2">"https://api.ning.guru/v1/terms?que
 <p><strong>Response</strong>:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">"items"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"voltage-stability"</span><span class="p">,</span><span class="w"> </span><span class="nt">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2025-11-19"</span><span class="w"> </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"frequency-control"</span><span class="p">,</span><span class="w"> </span><span class="nt">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2025-11-15"</span><span class="w"> </span><span class="p">}</span>
-<span class="w">  </span><span class="p">]</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"voltage-stability"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2025-11-19"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ps-wiki.ning.guru/wiki/voltage-stability/"</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"frequency-control"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2025-11-15"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ps-wiki.ning.guru/wiki/frequency-control/"</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">"attribution"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PS-Wiki"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://ps-wiki.ning.guru/"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"license"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CC BY-NC 4.0"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://creativecommons.org/licenses/by-nc/4.0/"</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="integration-examples">Integration Examples<a class="headerlink" href="#integration-examples" title="Permanent link">¶</a></h2>
@@ -1189,6 +1224,9 @@ curl<span class="w"> </span>-s<span class="w"> </span><span class="s2">"https://
 </tbody>
 </table>
 <p><strong>CORS</strong>: All endpoints include <code>Access-Control-Allow-Origin: *</code> for browser access.</p>
+<p><strong>Attribution</strong>: Term records expose a canonical human-facing <code>url</code>. Successful
+responses also include PS-Wiki provider and license metadata. Individual term
+responses include an HTTP <code>Link</code> header with <code>rel="canonical"</code>.</p>
 <h2 id="rate-limits">Rate Limits<a class="headerlink" href="#rate-limits" title="Permanent link">¶</a></h2>
 <p>Currently no rate limits on the free Cloudflare Workers tier. Please use responsibly.</p>
 <p>For high-volume usage (&gt;100k requests/day), consider caching responses locally or using the MCP server for AI integrations.</p>
