@@ -20,7 +20,16 @@ const context = {
 type McpReply = {
   result?: {
     serverInfo?: { name?: string };
-    tools?: Array<{ name: string }>;
+    tools?: Array<{
+      name: string;
+      annotations?: {
+        title?: string;
+        readOnlyHint?: boolean;
+        openWorldHint?: boolean;
+        destructiveHint?: boolean;
+        idempotentHint?: boolean;
+      };
+    }>;
     isError?: boolean;
     content?: Array<{ text: string }>;
   };
@@ -130,6 +139,13 @@ describe("remote MCP Worker", () => {
       "get_related_terms",
       "list_tags",
       "get_terms_by_tag",
+    ]);
+    expect(listed.body!.result!.tools!.map((tool) => tool.annotations)).toEqual([
+      { title: "Search PS-Wiki terms", readOnlyHint: true, openWorldHint: false, destructiveHint: false, idempotentHint: true },
+      { title: "Get a PS-Wiki term", readOnlyHint: true, openWorldHint: false, destructiveHint: false, idempotentHint: true },
+      { title: "Get related PS-Wiki terms", readOnlyHint: true, openWorldHint: false, destructiveHint: false, idempotentHint: true },
+      { title: "List PS-Wiki tags", readOnlyHint: true, openWorldHint: false, destructiveHint: false, idempotentHint: true },
+      { title: "List PS-Wiki terms by tag", readOnlyHint: true, openWorldHint: false, destructiveHint: false, idempotentHint: true },
     ]);
   });
 

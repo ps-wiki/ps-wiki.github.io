@@ -111,24 +111,75 @@ standard local proxy:
 }
 ```
 
-In ChatGPT or another client with remote MCP/connectors support, add the server
-URL `https://mcp.ps-wiki.ning.guru/mcp` in that client’s MCP/connector settings. UI
-availability and approval controls depend on the account or workspace. For the
-OpenAI Responses API, the protocol-level shape is:
+### ChatGPT and the OpenAI API
+
+For a current ChatGPT workspace, an administrator or owner can create a custom
+MCP app in Developer Mode, scan the tools, and publish the app to the
+workspace. Full MCP app support is currently available on ChatGPT Business and
+Enterprise/Edu web workspaces; availability and permissions can change as the
+feature evolves. Use the [official ChatGPT MCP app
+instructions](https://help.openai.com/en/articles/12584461-developer-mode-and-mcp-apps-in-chatgpt)
+for the current UI flow.
+
+For the OpenAI Responses API, the protocol-level shape is:
 
 ```python
 response = client.responses.create(
-    model="gpt-5",
+    model="gpt-6-astra",
     input="Explain voltage stability using PS-Wiki.",
     tools=[{
         "type": "mcp",
         "server_label": "pswiki",
+        "server_description": "Read-only power-systems terminology from PS-Wiki.",
         "server_url": "https://mcp.ps-wiki.ning.guru/mcp",
-        "allowed_tools": {"read_only": True},
+        "allowed_tools": [
+            "search_terms",
+            "get_term",
+            "get_related_terms",
+            "list_tags",
+            "get_terms_by_tag",
+        ],
         "require_approval": "never",
     }],
 )
 ```
+
+The current OpenAI API uses an array of tool names for `allowed_tools`. Replace
+the example model with one currently available to your account. `never` is
+appropriate here because all five PS-Wiki tools are read-only; use approvals
+if write-capable tools are added later.
+
+### Claude
+
+Claude users can add the public endpoint as a custom connector:
+
+1. On an individual Pro or Max plan, open **Customize → Connectors**, choose
+   **Add custom connector**, and enter `https://mcp.ps-wiki.ning.guru/mcp`.
+2. On Team or Enterprise, an Owner adds it under **Organization settings →
+   Connectors → Add → Custom → Web**; members then connect it from
+   **Customize → Connectors**.
+3. Enable the connector for the conversation from the **+** menu.
+
+See [Claude's current remote MCP connector
+instructions](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp).
+Claude connects to remote connectors from Anthropic's infrastructure, so the
+server must remain publicly reachable.
+
+### Directory listings
+
+Direct custom connections do not require a directory listing. A public listing
+is a separate, optional distribution step:
+
+- [OpenAI plugin submission](https://developers.openai.com/plugins/deploy/submission)
+  accepts a universal public MCP URL, but requires publisher identity
+  verification, domain verification, and public website, support, privacy, and
+  terms URLs.
+- Anthropic's [Connectors Directory](https://support.anthropic.com/en/articles/11596036-anthropic-mcp-directory-faq)
+  is curated and requires a review submission; inclusion is not guaranteed.
+
+PS-Wiki is prepared for these paths, but directory submission still requires
+the project owner's account, identity verification, and any reviewer-domain
+challenge.
 
 ## Tools
 
@@ -243,6 +294,12 @@ milliseconds. Tool arguments, prompts, query text, response bodies, IP
 addresses, and session identifiers are not logged. A tool that makes multiple
 REST requests records the bounded list of observed upstream statuses.
 
+The R2 traffic log stores one JSON object per request with the worker, method,
+origin/path, status, duration, request ID, and selected Cloudflare location
+metadata. Query strings are intentionally omitted so REST search text is not
+written to durable traffic logs. See the [privacy policy](privacy.md) and
+[service terms](terms.md) for the current data-handling and usage details.
+
 Workers Logs are diagnostic rather than durable usage analytics; retention is
 limited by the Cloudflare plan. The separate monitoring repository stores
 aggregated request data for longer-term reporting.
@@ -265,3 +322,5 @@ The local stdio server also retains its existing read-only resources:
 
 PS-Wiki content is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 The remote MCP layer delegates data retrieval to the [PS-Wiki REST API](rest-api.md).
+For data handling and support, see the [privacy policy](privacy.md) and
+[service terms](terms.md).
