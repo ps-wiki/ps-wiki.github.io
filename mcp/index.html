@@ -634,6 +634,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Deployment and rollback">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operational-telemetry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operational telemetry
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -849,6 +866,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Deployment and rollback">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operational-telemetry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operational telemetry
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1049,6 +1083,16 @@ curl<span class="w"> </span>-sS<span class="w"> </span><span class="s2">"</span>
 <span class="w">  </span>-H<span class="w"> </span><span class="s1">'Content-Type: application/json'</span><span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>--data<span class="w"> </span><span class="s1">'{"jsonrpc":"2.0","id":3,"method":"tools/call","params":{"name":"search_terms","arguments":{"query":"stability","limit":3}}}'</span>
 </code></pre></div>
+<h3 id="operational-telemetry">Operational telemetry<a class="headerlink" href="#operational-telemetry" title="Permanent link">¶</a></h3>
+<p>The remote Worker has Cloudflare Workers Logs enabled for short-term diagnosis.
+Each top-level tool call emits one structured event with the tool name,
+upstream REST status information, a bounded error class, and elapsed time in
+milliseconds. Tool arguments, prompts, query text, response bodies, IP
+addresses, and session identifiers are not logged. A tool that makes multiple
+REST requests records the bounded list of observed upstream statuses.</p>
+<p>Workers Logs are diagnostic rather than durable usage analytics; retention is
+limited by the Cloudflare plan. The separate monitoring repository stores
+aggregated request data for longer-term reporting.</p>
 <p>For a failed deployment, inspect <code>npx wrangler versions list</code> and use
 <code>npx wrangler rollback &lt;VERSION_ID&gt;</code> from <code>worker/</code> after confirming the
 target version. The existing REST routes should be probed after rollback.</p>
