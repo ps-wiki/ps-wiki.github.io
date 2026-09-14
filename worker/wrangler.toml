@@ -2,6 +2,10 @@ name = "pswiki-api"
 main = "src/index.ts"
 compatibility_date = "2025-11-02"
 
+[[routes]]
+pattern = "api.ps-wiki.ning.guru"
+custom_domain = true
+
 [observability]
 enabled = true
 

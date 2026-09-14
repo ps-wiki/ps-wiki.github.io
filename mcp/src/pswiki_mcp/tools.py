@@ -1,6 +1,7 @@
 """Tool implementations for PS-Wiki MCP server."""
 
 from typing import Any
+
 from .api_client import APIClient
 
 

@@ -1,12 +1,6 @@
-export interface Env {
-  // Point these to your GitHub raw files in main branch.
-  // If your JSONs live in ./pswiki/json -> append that path.
-  ORIGIN_BASE: string; // e.g., https://raw.githubusercontent.com/ps-wiki/ps-wiki.github.io/main/pswiki/json
-  INDEX_URL:   string; // e.g., https://raw.githubusercontent.com/ps-wiki/ps-wiki.github.io/main/pswiki/database/build/index.json
-  TAGS_URL:    string; // e.g., https://raw.githubusercontent.com/ps-wiki/ps-wiki.github.io/main/pswiki/database/build/tags.json
-  SITE_BASE:   string; // e.g., https://ps-wiki.ning.guru
-  OPENAPI_JSON?: string; // optional; can inline or serve static later
-}
+import type { Env } from "./env";
+
+export type { Env } from "./env";
 
 type TermSummary = { id: string; title: string; summary?: string; tags?: string[]; updated_at: string };
 type IndexDoc = { items: TermSummary[]; generated_at?: string };
@@ -180,7 +174,7 @@ function text(s: string, status = 200): Response {
 const DEFAULT_OPENAPI = JSON.stringify({
   openapi: "3.1.0",
   info: { title: "PS-Wiki API", version: "1.1.0", description: "Read-only access to PS-Wiki terms and tags with attribution metadata." },
-  servers: [{ url: "https://api.ning.guru" }],
+  servers: [{ url: "https://api.ps-wiki.ning.guru" }],
   paths: {
     "/v1/terms": {
       get: {

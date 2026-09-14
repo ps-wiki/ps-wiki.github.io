@@ -3,11 +3,12 @@
 
 import asyncio
 import json
+
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 
 
-async def test_server():
+async def run_server_smoke_test():
     """Test basic server functionality."""
     server_params = StdioServerParameters(
         command="python",
@@ -50,4 +51,4 @@ async def test_server():
 
 
 if __name__ == "__main__":
-    asyncio.run(test_server())
+    asyncio.run(run_server_smoke_test())
