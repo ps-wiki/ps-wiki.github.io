@@ -4,6 +4,7 @@ import worker from "../mcp-entry";
 import type { McpEnv } from "../src/env";
 
 const env: McpEnv = {
+  TRAFFIC_LOGS: { put: vi.fn(async () => undefined) } as unknown as R2Bucket,
   MCP_API_BASE: "https://api.ps-wiki.ning.guru",
   MCP_ALLOWED_HOSTS: "mcp.ps-wiki.ning.guru",
   MCP_ALLOWED_ORIGINS: "mcp.ps-wiki.ning.guru",

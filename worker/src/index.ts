@@ -1,4 +1,5 @@
 import type { Env } from "./env";
+import { logTrafficWithRequest } from "./shared/traffic-logger";
 
 export type { Env } from "./env";
 
@@ -17,39 +18,41 @@ const CORS = {
 };
 
 export default {
-  async fetch(req: Request, env: Env): Promise<Response> {
-    console.log(JSON.stringify({
-      method: req.method,
-      path: new URL(req.url).pathname,
-      country: req.cf?.country ?? "unknown",
-      colo: req.cf?.colo ?? "unknown",
-      userAgent: req.headers.get("User-Agent") ?? "",
-      referer: req.headers.get("Referer") ?? "",
-      accept: req.headers.get("Accept") ?? "",
-      timestamp: new Date().toISOString(),
-    }));
-    if (req.method === "OPTIONS") return new Response(null, { headers: CORS });
+  async fetch(req: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
+    return logTrafficWithRequest("rest-api", env, ctx, req, async () => {
+      console.log(JSON.stringify({
+        method: req.method,
+        path: new URL(req.url).pathname,
+        country: req.cf?.country ?? "unknown",
+        colo: req.cf?.colo ?? "unknown",
+        userAgent: req.headers.get("User-Agent") ?? "",
+        referer: req.headers.get("Referer") ?? "",
+        accept: req.headers.get("Accept") ?? "",
+        timestamp: new Date().toISOString(),
+      }));
+      if (req.method === "OPTIONS") return new Response(null, { headers: CORS });
 
-    const u = new URL(req.url);
-    const p = u.pathname.replace(/\/+$/, "");
+      const u = new URL(req.url);
+      const p = u.pathname.replace(/\/+$/, "");
 
-    try {
-      if (p === "/" || p === "") return text("PS-Wiki API v1");
-      if (p === "/openapi.json")  return json(env.OPENAPI_JSON ?? DEFAULT_OPENAPI, 200);
+      try {
+        if (p === "/" || p === "") return text("PS-Wiki API v1");
+        if (p === "/openapi.json")  return json(env.OPENAPI_JSON ?? DEFAULT_OPENAPI, 200);
 
-      if (p === "/v1/terms")      return listTerms(u, env);
-      if (p.startsWith("/v1/terms/")) {
-        const id = decodeURIComponent(p.split("/").pop() || "");
-        return getTerm(id, env);
+        if (p === "/v1/terms")      return listTerms(u, env);
+        if (p.startsWith("/v1/terms/")) {
+          const id = decodeURIComponent(p.split("/").pop() || "");
+          return getTerm(id, env);
+        }
+        if (p === "/v1/tags")       return listTags(env);
+        if (p === "/v1/changes")    return changes(u, env);
+
+        return json({ error: "not_found" }, 404);
+      } catch (e: unknown) {
+        console.error("Unhandled request error", e);
+        return json({ error: "internal_error" }, 500);
       }
-      if (p === "/v1/tags")       return listTags(env);
-      if (p === "/v1/changes")    return changes(u, env);
-
-      return json({ error: "not_found" }, 404);
-    } catch (e: unknown) {
-      console.error("Unhandled request error", e);
-      return json({ error: "internal_error" }, 500);
-    }
+    });
   }
 };
 

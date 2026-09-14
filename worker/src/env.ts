@@ -1,4 +1,5 @@
 export interface McpEnv {
+  TRAFFIC_LOGS: R2Bucket;
   OPENAPI_JSON?: string;
   MCP_API_BASE?: string;
   MCP_ALLOWED_HOSTS?: string;
