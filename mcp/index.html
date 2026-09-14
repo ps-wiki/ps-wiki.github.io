@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<meta name="description" content="AI-native access to PS-Wiki terminology via Model Context Protocol">
+<meta name="description" content="Local and remote AI-agent access to PS-Wiki terminology">
  
 <meta name="author" content="Jinning Wang">
  
@@ -62,12 +62,12 @@
         
 <meta property="og:site_name" content="Power Systems Wiki">
 <meta property="og:title" content="MCP Server">
-<meta property="og:description" content="AI-native access to PS-Wiki terminology via Model Context Protocol">
+<meta property="og:description" content="Local and remote AI-agent access to PS-Wiki terminology">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ps-wiki.ning.guru/mcp/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MCP Server">
-<meta name="twitter:description" content="AI-native access to PS-Wiki terminology via Model Context Protocol">
+<meta name="twitter:description" content="Local and remote AI-agent access to PS-Wiki terminology">
 
 <script type="application/ld+json">
   
@@ -75,7 +75,7 @@
       "@context": "https://schema.org",
       "@type": "WebPage",
       "name": "MCP Server",
-      "description": "AI-native access to PS-Wiki terminology via Model Context Protocol",
+      "description": "Local and remote AI-agent access to PS-Wiki terminology",
       "url": "https://ps-wiki.ning.guru/mcp/",
       "isPartOf": {
         "@type": "WebSite",
@@ -115,7 +115,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#features" class="md-skip">
+        <a href="#ps-wiki-mcp-server" class="md-skip">
           Skip to content
         </a>
       
@@ -467,6 +467,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -509,6 +511,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -517,10 +521,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
+  <a href="#local-mcp-stdio" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Features
+        Local MCP (stdio)
       
     </span>
   </a>
@@ -528,54 +532,26 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
+  <a href="#remote-mcp-streamable-http" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Quick Start
+        Remote MCP (Streamable HTTP)
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Quick Start">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Installation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Configuration
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#available-tools" class="md-nav__link">
+  <a href="#tools" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Available Tools
+        Tools
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Available Tools">
+    <nav class="md-nav" aria-label="Tools">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -639,10 +615,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#programmatic-usage" class="md-nav__link">
+  <a href="#local-development-and-verification" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Programmatic Usage
+        Local development and verification
       
     </span>
   </a>
@@ -650,10 +626,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-source" class="md-nav__link">
+  <a href="#deployment-and-rollback" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Data Source
+        Deployment and rollback
       
     </span>
   </a>
@@ -661,10 +637,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
+  <a href="#resources-and-attribution" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Resources
+        Resources and attribution
       
     </span>
   </a>
@@ -750,6 +726,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -758,10 +736,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
+  <a href="#local-mcp-stdio" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Features
+        Local MCP (stdio)
       
     </span>
   </a>
@@ -769,54 +747,26 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
+  <a href="#remote-mcp-streamable-http" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Quick Start
+        Remote MCP (Streamable HTTP)
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Quick Start">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Installation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Configuration
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#available-tools" class="md-nav__link">
+  <a href="#tools" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Available Tools
+        Tools
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Available Tools">
+    <nav class="md-nav" aria-label="Tools">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -880,10 +830,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#programmatic-usage" class="md-nav__link">
+  <a href="#local-development-and-verification" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Programmatic Usage
+        Local development and verification
       
     </span>
   </a>
@@ -891,10 +841,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-source" class="md-nav__link">
+  <a href="#deployment-and-rollback" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Data Source
+        Deployment and rollback
       
     </span>
   </a>
@@ -902,10 +852,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
+  <a href="#resources-and-attribution" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Resources
+        Resources and attribution
       
     </span>
   </a>
@@ -937,121 +887,182 @@
   
 
 
-  <h1>MCP Server</h1>
-
-<p>The <strong>PS-Wiki MCP Server</strong> provides AI assistants with direct access to power systems terminology through the <a href="https://modelcontextprotocol.io">Model Context Protocol</a>. This enables natural language queries with accurate, cited responses.</p>
-<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">¶</a></h2>
+<h1 id="ps-wiki-mcp-server">PS-Wiki MCP Server<a class="headerlink" href="#ps-wiki-mcp-server" title="Permanent link">¶</a></h1>
+<p>PS-Wiki exposes the same read-only terminology through two MCP transports:</p>
 <ul>
-<li>Search 180+ power systems terms by keyword or concept</li>
-<li>Retrieve detailed definitions with equations and citations</li>
-<li>Explore related concepts and build knowledge graphs</li>
-<li>Browse by tags (stability, control, protection, market, etc.)</li>
-<li>Works with Claude Desktop, Ollama, and other MCP clients</li>
+<li><strong>Local MCP:</strong> a Python package launched over stdio.</li>
+<li><strong>Remote MCP:</strong> a dedicated Cloudflare Worker endpoint at <code>https://mcp.ps-wiki.ning.guru/mcp</code>.</li>
 </ul>
-<h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">¶</a></h2>
-<h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">¶</a></h3>
-<div class="highlight"><pre><span></span><code><span class="c1"># Install from source</span>
-git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ps-wiki/pswiki.git
-<span class="nb">cd</span><span class="w"> </span>pswiki/mcp
-pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
+<p>The REST API remains the canonical programmatic data interface. MCP is a thin,
+agent-facing semantic adapter:</p>
+<div class="highlight"><pre><span></span><code>LLM / AI agent
+      ↓
+PS-Wiki MCP
+      ↓
+PS-Wiki REST API
+      ↓
+PS-Wiki data
 </code></pre></div>
-<h3 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">¶</a></h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Claude Desktop</label><label for="__tabbed_1_2">Ollama (Continue.dev)</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>Add to <code>claude_desktop_config.json</code>:</p>
-<p><strong>macOS</strong>: <code>~/Library/Application Support/Claude/claude_desktop_config.json</code>
-<strong>Windows</strong>: <code>%APPDATA%\Claude\claude_desktop_config.json</code></p>
+<p>All tools are read-only. Responses include concise structured JSON and, where
+available, canonical PS-Wiki URLs and attribution metadata.</p>
+<h2 id="local-mcp-stdio">Local MCP (stdio)<a class="headerlink" href="#local-mcp-stdio" title="Permanent link">¶</a></h2>
+<p>Install from source:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ps-wiki/ps-wiki.github.io.git
+<span class="nb">cd</span><span class="w"> </span>ps-wiki.github.io/mcp
+python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+<span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s2">".[dev]"</span>
+</code></pre></div>
+<p>Run the server directly:</p>
+<div class="highlight"><pre><span></span><code>pswiki-mcp
+<span class="c1"># equivalent:</span>
+python<span class="w"> </span>-m<span class="w"> </span>pswiki_mcp
+</code></pre></div>
+<p>For a live smoke test against the REST API:</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>tests/test_server_manual.py
+</code></pre></div>
+<p>Example Claude Desktop configuration:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">"mcpServers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">"pswiki"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"python"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"args"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"-m"</span><span class="p">,</span><span class="w"> </span><span class="s2">"pswiki_mcp"</span><span class="p">]</span>
+<span class="w">      </span><span class="nt">"command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/absolute/path/to/ps-wiki.github.io/mcp/.venv/bin/pswiki-mcp"</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Restart Claude Desktop, then ask:</p>
-<ul>
-<li><em>"Search for power systems stability terms"</em></li>
-<li><em>"Explain voltage stability in detail"</em></li>
-<li><em>"What are related concepts to automatic generation control?"</em></li>
-</ul>
-</div>
-<div class="tabbed-block">
-<ol>
-<li>Install the <a href="https://continue.dev">Continue</a> extension for VS Code.</li>
-<li>Configure <code>~/.continue/config.json</code>:</li>
-</ol>
+<p>The same stdio configuration shape works for other local MCP clients that
+launch a child process. The automated Python tests use mocked HTTP responses:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>mcp
+<span class="nv">PYTHONPATH</span><span class="o">=</span>src<span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>-q
+</code></pre></div>
+<h2 id="remote-mcp-streamable-http">Remote MCP (Streamable HTTP)<a class="headerlink" href="#remote-mcp-streamable-http" title="Permanent link">¶</a></h2>
+<p>No installation is required for a client that supports remote MCP:</p>
+<div class="highlight"><pre><span></span><code>https://mcp.ps-wiki.ning.guru/mcp
+</code></pre></div>
+<p>The endpoint is stateless, public, and read-only. It supports MCP initialization,
+tool discovery, and tool calls over the current Streamable HTTP handler, with
+compatibility for ordinary stateless 2025-era clients. Clients should send
+<code>Accept: application/json, text/event-stream</code> and <code>Content-Type: application/json</code>.</p>
+<p>Generic client configuration:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">"models"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Llama 3.2"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ollama"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"model"</span><span class="p">:</span><span class="w"> </span><span class="s2">"llama3.2"</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">"mcpServers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">"pswiki"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"python"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"args"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"-m"</span><span class="p">,</span><span class="w"> </span><span class="s2">"pswiki_mcp"</span><span class="p">]</span>
+<span class="w">      </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://mcp.ps-wiki.ning.guru/mcp"</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<ol>
-<li>Open the Continue sidebar (<code>⌘+L</code>) and start asking questions.</li>
-</ol>
-</div>
-</div>
-</div>
-<h2 id="available-tools">Available Tools<a class="headerlink" href="#available-tools" title="Permanent link">¶</a></h2>
-<p>The MCP server exposes five tools to AI assistants:</p>
-<h3 id="search_terms">search_terms<a class="headerlink" href="#search_terms" title="Permanent link">¶</a></h3>
-<p>Search terminology by keyword, phrase, or concept.</p>
-<div class="highlight"><pre><span></span><code><span class="n">search_terms</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="s2">"frequency control"</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<p>Claude Desktop versions that do not accept a remote URL directly can use the
+standard local proxy:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">"mcpServers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"pswiki"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"npx"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"args"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"-y"</span><span class="p">,</span><span class="w"> </span><span class="s2">"mcp-remote"</span><span class="p">,</span><span class="w"> </span><span class="s2">"https://mcp.ps-wiki.ning.guru/mcp"</span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div>
-<h3 id="get_term">get_term<a class="headerlink" href="#get_term" title="Permanent link">¶</a></h3>
-<p>Retrieve full details for a specific term.</p>
-<div class="highlight"><pre><span></span><code><span class="n">get_term</span><span class="p">(</span><span class="n">term_id</span><span class="o">=</span><span class="s2">"voltage-stability"</span><span class="p">)</span>
-</code></pre></div>
-<h3 id="get_related_terms">get_related_terms<a class="headerlink" href="#get_related_terms" title="Permanent link">¶</a></h3>
-<p>Find related concepts with configurable depth.</p>
-<div class="highlight"><pre><span></span><code><span class="n">get_related_terms</span><span class="p">(</span><span class="n">term_id</span><span class="o">=</span><span class="s2">"power-flow"</span><span class="p">,</span> <span class="n">depth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div>
-<h3 id="list_tags">list_tags<a class="headerlink" href="#list_tags" title="Permanent link">¶</a></h3>
-<p>List all available tags with usage counts.</p>
-<div class="highlight"><pre><span></span><code><span class="n">list_tags</span><span class="p">()</span>
-</code></pre></div>
-<h3 id="get_terms_by_tag">get_terms_by_tag<a class="headerlink" href="#get_terms_by_tag" title="Permanent link">¶</a></h3>
-<p>Filter terms by category.</p>
-<div class="highlight"><pre><span></span><code><span class="n">get_terms_by_tag</span><span class="p">(</span><span class="n">tag</span><span class="o">=</span><span class="s2">"stability"</span><span class="p">)</span>
-</code></pre></div>
-<h2 id="programmatic-usage">Programmatic Usage<a class="headerlink" href="#programmatic-usage" title="Permanent link">¶</a></h2>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">mcp</span><span class="w"> </span><span class="kn">import</span> <span class="n">ClientSession</span><span class="p">,</span> <span class="n">StdioServerParameters</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">mcp.client.stdio</span><span class="w"> </span><span class="kn">import</span> <span class="n">stdio_client</span>
-
-<span class="n">server_params</span> <span class="o">=</span> <span class="n">StdioServerParameters</span><span class="p">(</span>
-    <span class="n">command</span><span class="o">=</span><span class="s2">"python"</span><span class="p">,</span>
-    <span class="n">args</span><span class="o">=</span><span class="p">[</span><span class="s2">"-m"</span><span class="p">,</span> <span class="s2">"pswiki_mcp"</span><span class="p">]</span>
+<p>In ChatGPT or another client with remote MCP/connectors support, add the server
+URL <code>https://mcp.ps-wiki.ning.guru/mcp</code> in that client’s MCP/connector settings. UI
+availability and approval controls depend on the account or workspace. For the
+OpenAI Responses API, the protocol-level shape is:</p>
+<div class="highlight"><pre><span></span><code><span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">responses</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+    <span class="n">model</span><span class="o">=</span><span class="s2">"gpt-5"</span><span class="p">,</span>
+    <span class="nb">input</span><span class="o">=</span><span class="s2">"Explain voltage stability using PS-Wiki."</span><span class="p">,</span>
+    <span class="n">tools</span><span class="o">=</span><span class="p">[{</span>
+        <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"mcp"</span><span class="p">,</span>
+        <span class="s2">"server_label"</span><span class="p">:</span> <span class="s2">"pswiki"</span><span class="p">,</span>
+        <span class="s2">"server_url"</span><span class="p">:</span> <span class="s2">"https://mcp.ps-wiki.ning.guru/mcp"</span><span class="p">,</span>
+        <span class="s2">"allowed_tools"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"read_only"</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span>
+        <span class="s2">"require_approval"</span><span class="p">:</span> <span class="s2">"never"</span><span class="p">,</span>
+    <span class="p">}],</span>
 <span class="p">)</span>
-
-<span class="k">async</span> <span class="k">with</span> <span class="n">stdio_client</span><span class="p">(</span><span class="n">server_params</span><span class="p">)</span> <span class="k">as</span> <span class="p">(</span><span class="n">read</span><span class="p">,</span> <span class="n">write</span><span class="p">):</span>
-    <span class="k">async</span> <span class="k">with</span> <span class="n">ClientSession</span><span class="p">(</span><span class="n">read</span><span class="p">,</span> <span class="n">write</span><span class="p">)</span> <span class="k">as</span> <span class="n">session</span><span class="p">:</span>
-        <span class="k">await</span> <span class="n">session</span><span class="o">.</span><span class="n">initialize</span><span class="p">()</span>
-        <span class="n">result</span> <span class="o">=</span> <span class="k">await</span> <span class="n">session</span><span class="o">.</span><span class="n">call_tool</span><span class="p">(</span>
-            <span class="s2">"search_terms"</span><span class="p">,</span>
-            <span class="p">{</span><span class="s2">"query"</span><span class="p">:</span> <span class="s2">"stability"</span><span class="p">,</span> <span class="s2">"limit"</span><span class="p">:</span> <span class="mi">5</span><span class="p">}</span>
-        <span class="p">)</span>
 </code></pre></div>
-<h2 id="data-source">Data Source<a class="headerlink" href="#data-source" title="Permanent link">¶</a></h2>
-<p>The MCP server fetches data from the <a href="../rest-api/">PS-Wiki REST API</a>. All data is read-only and licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.</p>
-<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">¶</a></h2>
-<ul>
-<li><strong>GitHub</strong>: <a href="https://github.com/ps-wiki/ps-wiki.github.io/tree/main/mcp">ps-wiki/ps-wiki.github.io/mcp</a></li>
-<li><strong>MCP Specification</strong>: <a href="https://modelcontextprotocol.io">modelcontextprotocol.io</a></li>
-<li><strong>Issues</strong>: <a href="https://github.com/ps-wiki/ps-wiki.github.io/issues">GitHub Issues</a></li>
-</ul>
+<h2 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link">¶</a></h2>
+<h3 id="search_terms"><code>search_terms</code><a class="headerlink" href="#search_terms" title="Permanent link">¶</a></h3>
+<p>Search by keyword, phrase, or concept. Use this to discover candidate terms;
+results are bounded summaries with IDs, tags, update times, and canonical URLs.</p>
+<p>Arguments: <code>query</code> (required string), <code>limit</code> (optional integer, 1–50,
+default 10).</p>
+<h3 id="get_term"><code>get_term</code><a class="headerlink" href="#get_term" title="Permanent link">¶</a></h3>
+<p>Retrieve the complete definition for a known term ID, including description,
+equations, citations, related terms, canonical URL, and attribution.</p>
+<p>Argument: <code>term_id</code> (required kebab-case string, for example
+<code>voltage-stability</code>).</p>
+<h3 id="get_related_terms"><code>get_related_terms</code><a class="headerlink" href="#get_related_terms" title="Permanent link">¶</a></h3>
+<p>Explore direct relationships for a known term. Use <code>depth: 1</code> for direct
+relationships or <code>depth: 2</code> for a bounded second-level exploration.</p>
+<p>Arguments: <code>term_id</code> (required string), <code>depth</code> (optional integer, 1–2,
+default 1).</p>
+<h3 id="list_tags"><code>list_tags</code><a class="headerlink" href="#list_tags" title="Permanent link">¶</a></h3>
+<p>List the PS-Wiki taxonomy and usage counts. Use this to browse categories.</p>
+<h3 id="get_terms_by_tag"><code>get_terms_by_tag</code><a class="headerlink" href="#get_terms_by_tag" title="Permanent link">¶</a></h3>
+<p>List terms in a specific category/tag. Use this for taxonomy-based browsing
+rather than free-text concept search.</p>
+<p>Argument: <code>tag</code> (required string, case-insensitive).</p>
+<h2 id="local-development-and-verification">Local development and verification<a class="headerlink" href="#local-development-and-verification" title="Permanent link">¶</a></h2>
+<p>Run the remote Worker locally:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>worker
+npm<span class="w"> </span>ci
+npm<span class="w"> </span>run<span class="w"> </span>mcp:dev
+<span class="c1"># endpoint: http://localhost:8788/mcp</span>
+</code></pre></div>
+<p>Run deterministic checks:</p>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>run<span class="w"> </span>check
+npx<span class="w"> </span>wrangler<span class="w"> </span>deploy<span class="w"> </span>--config<span class="w"> </span>wrangler-mcp.toml<span class="w"> </span>--dry-run
+</code></pre></div>
+<p>For interactive verification, start the <a href="https://github.com/modelcontextprotocol/inspector">MCP Inspector</a>:</p>
+<div class="highlight"><pre><span></span><code>npx<span class="w"> </span>@modelcontextprotocol/inspector@latest
+</code></pre></div>
+<p>Connect it to <code>http://localhost:8788/mcp</code>, select <strong>List Tools</strong>, and invoke
+<code>search_terms</code> with <code>{"query":"stability","limit":3}</code>.</p>
+<h2 id="deployment-and-rollback">Deployment and rollback<a class="headerlink" href="#deployment-and-rollback" title="Permanent link">¶</a></h2>
+<p>From the Worker directory:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>worker
+npm<span class="w"> </span>ci
+npm<span class="w"> </span>run<span class="w"> </span>check
+npm<span class="w"> </span>run<span class="w"> </span>deploy:mcp
+</code></pre></div>
+<p>The MCP Worker deployment uses the Cloudflare account configured in
+Wrangler or the repository’s <code>CLOUDFLARE_API_TOKEN</code> and
+<code>CLOUDFLARE_ACCOUNT_ID</code> Actions secrets. No new secret, OAuth provider,
+or Durable Object is required.</p>
+<p>After deployment, verify the endpoint with MCP Inspector or by sending the
+following JSON-RPC requests:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">MCP_URL</span><span class="o">=</span>https://mcp.ps-wiki.ning.guru/mcp
+curl<span class="w"> </span>-sS<span class="w"> </span><span class="s2">"</span><span class="nv">$MCP_URL</span><span class="s2">"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s1">'Accept: application/json, text/event-stream'</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s1">'Content-Type: application/json'</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--data<span class="w"> </span><span class="s1">'{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"curl","version":"1.0"}}}'</span>
+
+curl<span class="w"> </span>-sS<span class="w"> </span><span class="s2">"</span><span class="nv">$MCP_URL</span><span class="s2">"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s1">'Accept: application/json, text/event-stream'</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s1">'Content-Type: application/json'</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--data<span class="w"> </span><span class="s1">'{"jsonrpc":"2.0","id":2,"method":"tools/list","params":{}}'</span>
+
+curl<span class="w"> </span>-sS<span class="w"> </span><span class="s2">"</span><span class="nv">$MCP_URL</span><span class="s2">"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s1">'Accept: application/json, text/event-stream'</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s1">'Content-Type: application/json'</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--data<span class="w"> </span><span class="s1">'{"jsonrpc":"2.0","id":3,"method":"tools/call","params":{"name":"search_terms","arguments":{"query":"stability","limit":3}}}'</span>
+</code></pre></div>
+<p>For a failed deployment, inspect <code>npx wrangler versions list</code> and use
+<code>npx wrangler rollback &lt;VERSION_ID&gt;</code> from <code>worker/</code> after confirming the
+target version. The existing REST routes should be probed after rollback.</p>
+<p>The MCP Worker config declares the dedicated <code>pswiki-mcp</code> Worker at the
+<code>mcp.ps-wiki.ning.guru</code> custom hostname. If Cloudflare asks for dashboard
+confirmation on the first deployment, approve only that hostname. The REST
+Worker uses <code>api.ps-wiki.ning.guru</code>. A rate-limit rule scoped to <code>/mcp</code> can be
+added later if traffic warrants it. Do not change nameservers or unrelated DNS
+records.</p>
+<h2 id="resources-and-attribution">Resources and attribution<a class="headerlink" href="#resources-and-attribution" title="Permanent link">¶</a></h2>
+<p>The local stdio server also retains its existing read-only resources:
+<code>tags://all</code>, <code>index://terms</code>, and <code>term:///&lt;term-id&gt;</code>.</p>
+<p>PS-Wiki content is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.
+The remote MCP layer delegates data retrieval to the <a href="../rest-api/">PS-Wiki REST API</a>.</p>
 
 
 

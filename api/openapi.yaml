@@ -7,7 +7,7 @@ info:
     name: CC BY-NC 4.0
     url: https://creativecommons.org/licenses/by-nc/4.0/
 servers:
-  - url: https://api.ning.guru
+  - url: https://api.ps-wiki.ning.guru
     description: Production server
   - url: http://localhost:8787
     description: Local development server
