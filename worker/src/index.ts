@@ -52,8 +52,9 @@ export default {
       if (p === "/v1/changes")    return changes(u, env);
 
       return json({ error: "not_found" }, 404);
-    } catch (e: any) {
-      return json({ error: "internal_error", message: String(e?.message ?? e) }, 500);
+    } catch (e: unknown) {
+      console.error("Unhandled request error", e);
+      return json({ error: "internal_error" }, 500);
     }
   }
 };
@@ -143,18 +144,24 @@ async function listTags(env: Env): Promise<Response> {
 }
 
 function canonicalTermUrl(siteBase: string, id: string): string {
-  return `${siteBase.replace(/\/+$/, "")}/wiki/${encodeURIComponent(id)}/`;
+  return `${withoutTrailingSlashes(siteBase)}/wiki/${encodeURIComponent(id)}/`;
 }
 
 function makeAttribution(siteBase: string): Attribution {
   return {
     provider: "PS-Wiki",
-    url: `${siteBase.replace(/\/+$/, "")}/`,
+    url: `${withoutTrailingSlashes(siteBase)}/`,
     license: {
       name: "CC BY-NC 4.0",
       url: "https://creativecommons.org/licenses/by-nc/4.0/",
     },
   };
+}
+
+function withoutTrailingSlashes(value: string): string {
+  let end = value.length;
+  while (end > 0 && value[end - 1] === "/") end -= 1;
+  return value.slice(0, end);
 }
 
 function isRecord(value: unknown): value is Record<string, unknown> {
