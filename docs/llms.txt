@@ -19,9 +19,12 @@ Power Systems Wiki compares definitions from papers, standards, and industry rep
 - [OpenAPI specification](https://ps-wiki.ning.guru/api/openapi.yaml): REST API contract.
 - [REST API documentation](https://ps-wiki.ning.guru/rest-api/): Endpoints and examples.
 - [MCP server documentation](https://ps-wiki.ning.guru/mcp/): Tools for AI assistants and MCP clients.
+- [Privacy policy](https://ps-wiki.ning.guru/privacy/): Request telemetry and data handling.
+- [Service terms](https://ps-wiki.ning.guru/terms/): Read-only API and MCP usage terms.
 
 ## Attribution and interpretation
 
 - Preserve links or citations to the original sources when summarizing a definition.
 - Distinguish between definitions from different organizations instead of merging them into a single authoritative definition.
+- The remote MCP server is public, read-only, and available at `https://mcp.ps-wiki.ning.guru/mcp` over Streamable HTTP.
 - The wiki content is available under [CC BY-NC 4.0](https://github.com/ps-wiki/ps-wiki.github.io/blob/main/LICENSE).

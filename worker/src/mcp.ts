@@ -292,7 +292,13 @@ function createServer(env: McpEnv): McpServer {
     "search_terms",
     {
       description: "Search PS-Wiki terminology by keyword, phrase, or concept. Use this to discover candidate terms before requesting a complete definition.",
-      annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
+      annotations: {
+        title: "Search PS-Wiki terms",
+        readOnlyHint: true,
+        openWorldHint: false,
+        destructiveHint: false,
+        idempotentHint: true,
+      },
       inputSchema: {
         query: z.string().trim().min(1).max(200).describe("Keyword, phrase, or concept to search for."),
         limit: z.number().int().min(1).max(MAX_SEARCH_LIMIT).optional().default(10).describe("Maximum number of matching term summaries to return; defaults to 10."),
@@ -309,7 +315,13 @@ function createServer(env: McpEnv): McpServer {
     "get_term",
     {
       description: "Retrieve the complete PS-Wiki definition for one known term ID, including description, equations, citations, related terms, canonical URL, and attribution.",
-      annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
+      annotations: {
+        title: "Get a PS-Wiki term",
+        readOnlyHint: true,
+        openWorldHint: false,
+        destructiveHint: false,
+        idempotentHint: true,
+      },
       inputSchema: {
         term_id: z.string().trim().min(1).max(200).describe("Kebab-case PS-Wiki term ID, such as voltage-stability."),
       },
@@ -322,7 +334,13 @@ function createServer(env: McpEnv): McpServer {
     "get_related_terms",
     {
       description: "Explore concepts related to a known PS-Wiki term. Use depth 1 for direct relationships; depth 2 also includes a bounded set of second-level concepts.",
-      annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
+      annotations: {
+        title: "Get related PS-Wiki terms",
+        readOnlyHint: true,
+        openWorldHint: false,
+        destructiveHint: false,
+        idempotentHint: true,
+      },
       inputSchema: {
         term_id: z.string().trim().min(1).max(200).describe("Kebab-case PS-Wiki term ID."),
         depth: z.number().int().min(1).max(2).optional().default(1).describe("Relationship depth: 1 or 2; defaults to 1."),
@@ -371,7 +389,13 @@ function createServer(env: McpEnv): McpServer {
     "list_tags",
     {
       description: "List PS-Wiki categories/tags and their usage counts. Use this to browse the taxonomy before filtering terms by a tag.",
-      annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
+      annotations: {
+        title: "List PS-Wiki tags",
+        readOnlyHint: true,
+        openWorldHint: false,
+        destructiveHint: false,
+        idempotentHint: true,
+      },
       inputSchema: {},
     },
     async () =>
@@ -386,7 +410,13 @@ function createServer(env: McpEnv): McpServer {
     "get_terms_by_tag",
     {
       description: "Browse PS-Wiki terms in one category/tag. Use this when the user wants a taxonomy-based list rather than a free-text concept search.",
-      annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true },
+      annotations: {
+        title: "List PS-Wiki terms by tag",
+        readOnlyHint: true,
+        openWorldHint: false,
+        destructiveHint: false,
+        idempotentHint: true,
+      },
       inputSchema: {
         tag: z.string().trim().min(1).max(100).describe("Case-insensitive PS-Wiki tag, such as stability or control."),
       },

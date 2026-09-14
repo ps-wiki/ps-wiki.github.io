@@ -105,12 +105,14 @@ function writeLogEntry(
 ): void {
   const durationMs = Date.now() - startMs;
 
+  const requestUrl = request ? new URL(request.url) : undefined;
   const entry: TrafficLogEntry = {
     timestamp,
     worker: workerName,
     method: request?.method ?? "UNKNOWN",
-    url: request?.url ?? "",
-    pathname: request ? new URL(request.url).pathname : "",
+    // Keep the route for traffic analysis without persisting query text.
+    url: requestUrl ? `${requestUrl.origin}${requestUrl.pathname}` : "",
+    pathname: requestUrl?.pathname ?? "",
     status,
     durationMs,
     requestId,

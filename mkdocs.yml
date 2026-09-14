@@ -58,6 +58,8 @@ nav:
       - By Tags: tags.md
   - REST API: rest-api.md
   - MCP Server: mcp.md
+  - Privacy: privacy.md
+  - Terms: terms.md
   - Development: development.md
   - Changelog: changelog.md
 
